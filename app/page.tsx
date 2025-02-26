@@ -5,12 +5,12 @@ import { EpisodeList } from '@/app/components/podcast/EpisodeList';
 import JekaterinaNovikova from '@/public/images/jekaterina-novikova.jpg';
 import MalikehEhghaghi from '@/public/images/malikeh-ehghaghi.jpg';
 import { useState } from 'react';
-
+import { getPageUrl } from '@/app/components/common/urls';
 
 
 export default function Page() {
-    const RSS_URL = 'https://feeds.megaphone.fm/GLT1412515089'; // Women in AI Research podcast feed
-    const { episodes, loading, error } = usePodcastFeed(RSS_URL, 5);
+    const RSS_URL = 'https://anchor.fm/s/1e4a0eac/podcast/rss'; // Women in AI Research podcast feed
+    const { episodes, loading, error } = usePodcastFeed(RSS_URL, 3);
     
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900">
@@ -28,27 +28,27 @@ export default function Page() {
                         </div>
                         <div className="flex items-center space-x-8" data-oid=".a0cuk8">
                             <a
-                                href="#episodes"
+                                href={getPageUrl('#episodes')}
                                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
                                 data-oid="-t7f49u"
                             >
                                 Episodes
                             </a>
                             <a
-                                href="/guests"
+                                href={getPageUrl('/guests')}
                                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
                             >
                                 Guests
                             </a>
                             <a
-                                href="#about"
+                                href={getPageUrl('#about')}
                                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
                                 data-oid="ienusfe"
                             >
                                 About Us
                             </a>
                             <a
-                                href="#subscribe"
+                                href={getPageUrl('#subscribe')}
                                 className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2.5 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
                                 data-oid="lh.u22g"
                             >
@@ -218,7 +218,7 @@ export default function Page() {
                         </h3>
                         <div className="space-y-4" data-oid="bcmdifv">
                             <a
-                                href="/blog/post-1"
+                                href={getPageUrl('/blog/post-1')}
                                 className="block hover:bg-white/5 p-4 rounded-lg transition-colors duration-300"
                                 data-oid="wzzwz1y"
                             >
@@ -234,7 +234,7 @@ export default function Page() {
                                 </p>
                             </a>
                             <a
-                                href="/blog/post-2"
+                                href={getPageUrl('/blog/post-2')}
                                 className="block hover:bg-white/5 p-4 rounded-lg transition-colors duration-300"
                                 data-oid="it1eyjn"
                             >
@@ -250,7 +250,7 @@ export default function Page() {
                             </a>
                         </div>
                         <a
-                            href="/blog"
+                            href={getPageUrl('/blog')}
                             className="inline-block mt-6 text-purple-400 hover:text-purple-300"
                             data-oid="81cc2:r"
                         >
@@ -302,7 +302,7 @@ export default function Page() {
                             </div>
                         </div>
                         <a
-                            href="/reviews"
+                            href={getPageUrl('/reviews')}
                             className="inline-block mt-6 text-purple-400 hover:text-purple-300"
                             data-oid="6cc8fi-"
                         >

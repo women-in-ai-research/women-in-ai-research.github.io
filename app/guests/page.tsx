@@ -4,7 +4,7 @@ import { useGuestData } from '@/app/hooks/useGuestData';
 import { GuestCard } from '@/app/components/guests/GuestCard';
 import { Pagination } from '@/app/components/common/Pagination';
 import { useState } from 'react';
-
+import { getPageUrl } from '@/app/components/common/urls';
 export default function GuestsPage() {
   const GUESTS_PER_PAGE = 6;
   const { guests, loading, error, currentPage, totalPages, setCurrentPage } = useGuestData(GUESTS_PER_PAGE);
@@ -16,7 +16,7 @@ export default function GuestsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
-              <a href="/">
+              <a href={getPageUrl('/')}>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 text-transparent bg-clip-text">
                   Women in AI Research
                 </h1>
@@ -24,25 +24,25 @@ export default function GuestsPage() {
             </div>
             <div className="flex items-center space-x-8">
               <a
-                href="/#episodes"
+                href={getPageUrl('#episodes')}
                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
               >
                 Episodes
               </a>
               <a
-                href="/guests"
+                href={getPageUrl('/guests')}
                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg border-b-2 border-purple-400"
               >
                 Guests
               </a>
               <a
-                href="/#about"
+                href={getPageUrl('#about')}
                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
               >
                 About Us
               </a>
               <a
-                href="/#subscribe"
+                href={getPageUrl('#subscribe')}
                 className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2.5 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
               >
                 Subscribe
@@ -119,13 +119,13 @@ export default function GuestsPage() {
             <div>
               <h3 className="text-xl font-bold mb-4">Connect</h3>
               <div className="space-y-2">
-                <a href="#" className="block text-teal-200 hover:text-white transition-colors duration-300">
+                <a href={getPageUrl('#twitter')} className="block text-teal-200 hover:text-white transition-colors duration-300">
                   Twitter
                 </a>
-                <a href="#" className="block text-gray-400 hover:text-white">
+                <a href={getPageUrl('#linkedin')} className="block text-gray-400 hover:text-white">
                   LinkedIn
                 </a>
-                <a href="#" className="block text-gray-400 hover:text-white">
+                <a href={getPageUrl('#email')} className="block text-gray-400 hover:text-white">
                   Email
                 </a>
               </div>
