@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 interface Guest {
@@ -16,12 +16,49 @@ interface GuestCardProps {
 }
 
 export function GuestCard({ guest }: GuestCardProps) {  
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [imageLoading, setImageLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchImageUrl = async () => {
+      try {
+        // Check if the URL is from 100k-faces.glitch.me
+        if (guest.imageUrl.includes('100k-faces.glitch.me')) {
+          // Fetch a random image URL from the API
+          const response = await fetch('https://100k-faces.glitch.me/random-image-url');
+          
+          if (!response.ok) {
+            throw new Error('Failed to fetch random image');
+          }
+          
+          const data = await response.json();
+          setImageUrl(data.url);
+        } else {
+          // Use the provided image URL directly
+          setImageUrl(guest.imageUrl);
+        }
+      } catch (error) {
+        console.error('Error fetching image URL:', error);
+        // Fallback to a placeholder if there's an issue
+        setImageUrl(null);
+      } finally {
+        setImageLoading(false);
+      }
+    };
+
+    fetchImageUrl();
+  }, [guest.imageUrl]);
+
   return (
     <div className="backdrop-blur-xl bg-white/10 rounded-xl overflow-hidden border border-purple-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:-translate-y-1">
       <div className="h-64 bg-gradient-to-br from-purple-400/20 to-pink-400/20 relative">
-        {guest.imageUrl ? (
+        {imageLoading ? (
+          <div className="w-full h-full flex items-center justify-center">
+            <div className="animate-pulse w-full h-full bg-purple-300/20"></div>
+          </div>
+        ) : imageUrl ? (
           <img 
-            src={guest.imageUrl} 
+            src={imageUrl} 
             alt={guest.name} 
             className="w-full h-full object-cover"
           />
