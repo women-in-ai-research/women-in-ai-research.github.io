@@ -58,6 +58,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
 
       - name: Add .nojekyll file
         run: touch out/.nojekyll
