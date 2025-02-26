@@ -2,6 +2,8 @@
 
 import { usePodcastFeed } from '@/app/hooks/usePodcastFeed';
 import { EpisodeList } from '@/app/components/podcast/EpisodeList';
+import JekaterinaNovikova from '@/public/images/jekaterina-novikova.jpg';
+import MalikehEhghaghi from '@/public/images/malikeh-ehghaghi.jpg';
 import { useState } from 'react';
 
 
@@ -154,10 +156,13 @@ export default function Page() {
                     </h2>
                     <div className="grid md:grid-cols-2 gap-12" data-oid="p-ke-i0">
                         <div className="bg-white p-8 rounded-lg shadow-md" data-oid="3b9c9ww">
-                            <div
-                                className="w-32 h-32 bg-purple-200 rounded-full mx-auto mb-6"
-                                data-oid="p5.4nvz"
-                            ></div>
+                            <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full">
+                                <img 
+                                    src={JekaterinaNovikova.src}
+                                    alt="Dr. Jekaterina Novikova" 
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
                             <h3
                                 className="text-2xl font-bold text-gray-900 text-center mb-4"
                                 data-oid="li-oejl"
@@ -173,10 +178,13 @@ export default function Page() {
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-lg shadow-md" data-oid="3lyymr8">
-                            <div
-                                className="w-32 h-32 bg-purple-200 rounded-full mx-auto mb-6"
-                                data-oid="nch66w2"
-                            ></div>
+                            <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full">
+                                <img 
+                                    src={MalikehEhghaghi.src}
+                                    alt="Malikeh Ehghaghi" 
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
                             <h3
                                 className="text-2xl font-bold text-gray-900 text-center mb-4"
                                 data-oid="-2wp_ca"
