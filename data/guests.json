@@ -1,0 +1,172 @@
+{
+  "guests": [
+    {
+      "id": 1,
+      "name": "Dr. Emily Chen",
+      "title": "AI Research Scientist",
+      "organization": "Stanford University",
+      "bio": "Dr. Emily Chen is a leading researcher in natural language processing and machine learning. Her work focuses on developing more interpretable AI systems that can explain their reasoning processes.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Emily+Chen",
+      "episodes": [3, 8, 12],
+      "socialLinks": {
+        "twitter": "https://twitter.com/emilychen",
+        "linkedin": "https://linkedin.com/in/emilychen",
+        "website": "https://emilychen.ai"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sophia Rodriguez",
+      "title": "Director of AI Ethics",
+      "organization": "MIT Media Lab",
+      "bio": "Dr. Rodriguez specializes in the ethical implications of AI deployment in society. Her research examines how AI systems can be designed to promote fairness, accountability, and transparency.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Sophia+Rodriguez",
+      "episodes": [5, 14],
+      "socialLinks": {
+        "twitter": "https://twitter.com/sophiarodriguez",
+        "linkedin": "https://linkedin.com/in/sophiarodriguez",
+        "website": "https://sophiarodriguez.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dr. Aisha Johnson",
+      "title": "Lead AI Researcher",
+      "organization": "Google DeepMind",
+      "bio": "Dr. Johnson's work focuses on reinforcement learning and its applications in robotics. She has pioneered several breakthrough approaches to teaching AI systems to learn from minimal human feedback.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Aisha+Johnson",
+      "episodes": [2, 9],
+      "socialLinks": {
+        "twitter": "https://twitter.com/aishajohnson",
+        "linkedin": "https://linkedin.com/in/aishajohnson",
+        "website": "https://aishajohnson.dev"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dr. Mei Zhang",
+      "title": "Professor of Computer Science",
+      "organization": "UC Berkeley",
+      "bio": "Dr. Zhang specializes in computer vision and generative AI. Her research has led to significant advancements in how AI systems can understand and generate visual content.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Mei+Zhang",
+      "episodes": [6, 11, 15],
+      "socialLinks": {
+        "twitter": "https://twitter.com/meizhang",
+        "linkedin": "https://linkedin.com/in/meizhang",
+        "website": "https://meizhang.berkeley.edu"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Dr. Priya Patel",
+      "title": "AI Safety Researcher",
+      "organization": "OpenAI",
+      "bio": "Dr. Patel's research focuses on ensuring AI systems remain aligned with human values as they become more capable. She develops techniques to make AI systems more robust and interpretable.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Priya+Patel",
+      "episodes": [4, 10],
+      "socialLinks": {
+        "twitter": "https://twitter.com/priyapatel",
+        "linkedin": "https://linkedin.com/in/priyapatel",
+        "website": "https://priyapatel.io"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Dr. Fatima Al-Mansoori",
+      "title": "Head of AI Research",
+      "organization": "KAUST",
+      "bio": "Dr. Al-Mansoori specializes in applying AI to climate science and sustainability challenges. Her work has been instrumental in developing more efficient prediction models for climate patterns.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Fatima+Al-Mansoori",
+      "episodes": [7, 13],
+      "socialLinks": {
+        "twitter": "https://twitter.com/fatimamansoori",
+        "linkedin": "https://linkedin.com/in/fatimamansoori",
+        "website": "https://fatimamansoori.org"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Dr. Gabriela Santos",
+      "title": "AI for Healthcare Lead",
+      "organization": "Harvard Medical School",
+      "bio": "Dr. Santos develops AI systems that can assist in medical diagnosis and treatment planning. Her research focuses on making healthcare AI more accurate, explainable, and accessible.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Gabriela+Santos",
+      "episodes": [1, 16],
+      "socialLinks": {
+        "twitter": "https://twitter.com/gabrielasantos",
+        "linkedin": "https://linkedin.com/in/gabrielasantos",
+        "website": "https://gabrielasantos.med.harvard.edu"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Dr. Leila Nguyen",
+      "title": "NLP Research Scientist",
+      "organization": "Microsoft Research",
+      "bio": "Dr. Nguyen's work focuses on multilingual NLP and making language models more accessible across different languages and cultures. She has developed innovative techniques for low-resource languages.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Leila+Nguyen",
+      "episodes": [3, 12],
+      "socialLinks": {
+        "twitter": "https://twitter.com/leilanguyen",
+        "linkedin": "https://linkedin.com/in/leilanguyen",
+        "website": "https://leilanguyen.com"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Dr. Zara Williams",
+      "title": "Robotics AI Researcher",
+      "organization": "Carnegie Mellon University",
+      "bio": "Dr. Williams specializes in the intersection of robotics and AI. Her research focuses on developing robots that can learn from and adapt to human behavior in collaborative settings.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Zara+Williams",
+      "episodes": [5, 14],
+      "socialLinks": {
+        "twitter": "https://twitter.com/zarawilliams",
+        "linkedin": "https://linkedin.com/in/zarawilliams",
+        "website": "https://zarawilliams.cmu.edu"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Dr. Kimberly Park",
+      "title": "AI and Cognitive Science Researcher",
+      "organization": "University of Toronto",
+      "bio": "Dr. Park's research bridges AI and cognitive science, exploring how insights from human cognition can inform more intuitive and human-like AI systems.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Kimberly+Park",
+      "episodes": [8, 15],
+      "socialLinks": {
+        "twitter": "https://twitter.com/kimberlypark",
+        "linkedin": "https://linkedin.com/in/kimberlypark",
+        "website": "https://kimberlypark.ca"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Dr. Amara Okafor",
+      "title": "AI for Social Good Lead",
+      "organization": "AI for Humanity Initiative",
+      "bio": "Dr. Okafor focuses on applying AI to address social challenges, from education to healthcare access. Her work emphasizes community-centered approaches to AI development.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Amara+Okafor",
+      "episodes": [2, 11],
+      "socialLinks": {
+        "twitter": "https://twitter.com/amaraokafor",
+        "linkedin": "https://linkedin.com/in/amaraokafor",
+        "website": "https://amaraokafor.org"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Dr. Valentina Rossi",
+      "title": "AI and Human-Computer Interaction Researcher",
+      "organization": "ETH Zurich",
+      "bio": "Dr. Rossi's research explores how AI can enhance human capabilities through intuitive interfaces and collaborative systems. She develops AI tools that adapt to individual user needs.",
+      "image": "https://via.placeholder.com/300x300?text=Dr.+Valentina+Rossi",
+      "episodes": [7, 16],
+      "socialLinks": {
+        "twitter": "https://twitter.com/valentinarossi",
+        "linkedin": "https://linkedin.com/in/valentinarossi",
+        "website": "https://valentinarossi.ch"
+      }
+    }
+  ]
+} 
