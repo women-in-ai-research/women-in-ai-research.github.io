@@ -1,14 +1,19 @@
-import path from 'path';
-/** @type {import('next').NextConfig} */
+// Determine if we're in production or local testing mode
+const isProd = process.env.NODE_ENV === 'production';
+const isLocalTesting = process.env.LOCAL_TESTING === 'true';
+
+// Only apply the base path and asset prefix in production, not for local testing
+const basePath = isProd && !isLocalTesting ? '/women-in-ai-research.github.io' : '';
+const assetPrefix = isProd && !isLocalTesting ? '/women-in-ai-research.github.io/' : '';
+
 const nextConfig = {
-    output: 'export',  // This ensures Next.js builds static HTML files
-    // Add this if you're deploying to a GitHub organization site
-    // No need for basePath since you're using the organization.github.io format
-    images: {
-        unoptimized: true, // Required for static export
-    },
-    // Disable trailing slashes
-    trailingSlash: false,
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, // Disable default image optimization
+  },
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  output: 'export'
 };
 
 export default nextConfig;

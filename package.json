@@ -1,16 +1,19 @@
 {
     "name": "@onlook/next-template",
     "version": "0.1.0",
+    "homepage": "https://women-in-ai-research.github.io/women-in-ai-research.github.io",
     "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "build:local": "LOCAL_TESTING=true next build",
         "start": "next start",
         "lint": "next lint",
         "format": "prettier --write .",
         "export": "next build",
-        "deploy": "npm run export && touch out/.nojekyll && gh-pages -d out"
-        },
+        "deploy": "gh-pages -d out",
+        "serve": "serve out -l 3000"
+    },
     "dependencies": {
         "@radix-ui/react-slot": "^1.1.0",
         "class-variance-authority": "^0.7.0",
