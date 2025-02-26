@@ -1,12 +1,14 @@
 import path from 'path';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',  // Change from 'standalone' to 'export'
-    // Add this if you're deploying to a subdirectory (like username.github.io/repo-name)
-    basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
-    // Disable image optimization since GitHub Pages doesn't support it
+    output: 'export',  // This ensures Next.js builds static HTML files
+    // Add this if you're deploying to a GitHub organization site
+    // No need for basePath since you're using the organization.github.io format
     images: {
-        unoptimized: true,
+        unoptimized: true, // Required for static export
     },
+    // Disable trailing slashes
+    trailingSlash: false,
 };
+
 export default nextConfig;
