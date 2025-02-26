@@ -1,7 +1,7 @@
 {
     "name": "@onlook/next-template",
     "version": "0.1.0",
-    "homepage": "https://women-in-ai-research.github.io/women-in-ai-research.github.io",
+    "homepage": "https://women-in-ai-research.github.io/women-in-ai-research",
     "private": true,
     "scripts": {
         "dev": "next dev",

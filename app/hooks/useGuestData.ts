@@ -26,6 +26,9 @@ export function useGuestData(guestsPerPage: number) {
         // Import data from guests.json
         const importedGuests = guestsData.guests;
         
+        // Get the base path from the environment or use an empty string
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        
         // Transform the data to match our display format
         const transformedGuests: GuestDisplay[] = importedGuests.map(guest => ({
           id: guest.id.toString(),
@@ -34,7 +37,7 @@ export function useGuestData(guestsPerPage: number) {
           organization: guest.organization,
           bio: guest.bio,
           imageUrl: guest.image,
-          episodeLink: `/episodes/${guest.episodes[0]}` // Link to first episode
+          episodeLink: `${basePath}/episodes/${guest.episodes[0]}` // Link to first episode with base path
         }));
         
         // Calculate total pages

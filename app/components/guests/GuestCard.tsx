@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface Guest {
   id: string;
@@ -42,12 +43,12 @@ export function GuestCard({ guest }: GuestCardProps) {
         <p className="text-gray-300 text-sm mb-4 line-clamp-3">
           {guest.bio}
         </p>
-        <a 
-          href={guest.episodeLink} 
+        <Link 
+          href={guest.episodeLink.replace(/^\//, '')}
           className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
         >
           Listen to Episode
-        </a>
+        </Link>
       </div>
     </div>
   );
