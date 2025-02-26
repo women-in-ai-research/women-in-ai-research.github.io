@@ -24,7 +24,7 @@ export default function GuestsPage() {
             </div>
             <div className="flex items-center space-x-8">
               <a
-                href={getPageUrl('#episodes')}
+                href={getPageUrl('/#episodes')}
                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
               >
                 Episodes
@@ -36,13 +36,13 @@ export default function GuestsPage() {
                 Guests
               </a>
               <a
-                href={getPageUrl('#about')}
+                href={getPageUrl('/#about')}
                 className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
               >
                 About Us
               </a>
               <a
-                href={getPageUrl('#subscribe')}
+                href={getPageUrl('/#subscribe')}
                 className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2.5 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
               >
                 Subscribe
