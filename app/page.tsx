@@ -4,8 +4,6 @@ import { Navbar } from '@/app/components/navigation/Navbar';
 import { Hero } from '@/app/components/hero/Hero';
 import { EpisodeList } from '@/app/components/podcast/EpisodeList';
 import { AboutSection } from '@/app/components/about/AboutSection';
-import { BlogSection } from '@/app/components/blog/BlogSection';
-import { ReviewsSection } from '@/app/components/reviews/ReviewsSection';
 import { Footer } from '@/app/components/footer/Footer';
 import { usePodcastFeed } from '@/app/hooks/usePodcastFeed';
 
