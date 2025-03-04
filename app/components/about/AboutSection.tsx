@@ -27,17 +27,17 @@ export function AboutSection() {
                     <HostCard
                         image={MaryMcCarthy}
                         name="Mary McCarthy"
-                        bio="Mary McCarthy | Product Designer"
+                        bio="Mary McCarthy | Lead Producer & Marketing"
                     />
                     <HostCard
                         image={AnaisHristea}
                         name="Anais Hristea"
-                        bio="Anais Hristea | Product Designer"
+                        bio="Anais Hristea | Lead Illustrator & Designer"
                     />
                     <HostCard
                         image={AliAkram}
                         name="Ali Akram"
-                        bio="Ali Akram | Backend Developer"
+                        bio="Ali Akram | Technical Producer"
                     />
                     
                 </div>
