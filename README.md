@@ -14,7 +14,7 @@ With the WiAIR podcast, our goal is to empower early career researchers, especia
 - ⁠**Connect**: Join a community of like-minded early career researchers and build your network.
 
 ## 🌐 Socials
-- LinkedIn
+- [LinkedIn](https://www.linkedin.com/company/women-in-ai-research)
 - [X (Twitter)](https://x.com/WiAIR_podcast )
 - [Bluesky](https://bsky.app/profile/wiair.bsky.social)
 - [YouTube](https://www.youtube.com/@WomeninAIResearch)
@@ -26,21 +26,4 @@ New episodes are released every three weeks.
 
 ## 👥💬 Join our Discord
 
-[Invitation link](https://discord.gg/jAhsar3z)
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in Onlook to see the result.
-
+[Invitation link](https://discord.gg/ekRReqPWnP)
