@@ -1,4 +1,4 @@
-import { SpotifyIcon, RSSIcon } from './icons';
+import { SpotifyIcon, RSSIcon } from './Icons';
 
 export function SpotifyButton() {
     return (
