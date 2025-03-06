@@ -1,4 +1,4 @@
-import { SpotifyButton, RSSButton } from '@/app/components/common/Buttons';
+import { SpotifyButton, YouTubeButton, RSSButton} from "@/app/components/common/Buttons";
 
 export function Hero() {
     return (
@@ -9,28 +9,87 @@ export function Hero() {
                     <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-[120px]"></div>
                 </div>
                 <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-8 leading-normal py-1">
-                    Amplifying Women's Voices in AI
+                    Welcome to Women in AI Research
                 </h1>
-                <p className="text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
-                    Join Jekaterina Novikova and Malikeh Ehghaghi as they explore the frontiers
-                    of artificial intelligence research
+                <h4 className="text-xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
+                    New episodes are released every three weeks.
+                </h4>
+                <p className="text-xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
+                    Women in AI Research (WiAIR) is a podcast dedicated to celebrating the remarkable
+                    contributions of female AI researchers from around the globe. Our mission is to challenge the
+                    prevailing perception that AI research is predominantly male-driven.
                 </p>
-                <HeroButtons />
+                <div className="flex justify-center space-x-6 mb-12">
+                    <YouTubeButton />
+                    <SpotifyButton />
+                </div>
+                <div className="text-white text-md max-w-4xl mx-auto mb-12">
+                    <p className="mb-6">
+                        In WiAIR, we interview successful female AI researchers coming from diverse cultural
+                        backgrounds, showcasing their inspirational cutting-edge research and insights into the future
+                        of AI. Through these conversations, we explore their personal journeys - how they overcome
+                        unique challenges, balance careers and family life, and make difficult decisions when
+                        necessary. We aim to understand how women in AI research perceive success and what it
+                        takes to achieve their goals.
+                    </p>
+                    <p className="mb-6">
+                        With the WiAIR podcast, our goal is to empower early career researchers, especially women, to
+                        pursue their passion for AI and make an impact in this exciting rapidly growing field. You will
+                        learn from women at different career stages, stay updated on the latest research and
+                        advancements, hear powerful stories of overcoming obstacles and breaking stereotypes, and
+                        become part of the community that values diversity and inclusion in AI.
+                    </p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-purple-500/20 max-w-4xl mx-auto">
+                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
+                        Why Listen?
+                    </h2>
+                    <ul className="text-white text-left space-y-4 mb-8">
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Gain Insights:</strong> Learn from leading women in AI and stay updated on the latest research and developments.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Be Inspired:</strong> Hear powerful stories of overcoming obstacles and breaking stereotypes.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Connect:</strong> Join the community of like-minded early career researchers and build your network.</span>
+                        </li>
+                    </ul>
+                    
+                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
+                        Stay Connected
+                    </h2>
+                    <ul className="text-white text-left space-y-4 mb-8">
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Social Media Links:</strong> Follow us on Bluesky, LinkedIn, YouTube and Twitter for updates and behind-the-scenes content.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Subscription Information:</strong> Subscribe to WiAIR on Spotify and join our Discord.</span>
+                        </li>
+                    </ul>
+                    
+                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
+                        Call to Action
+                    </h2>
+                    <ul className="text-white text-left space-y-4">
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Subscribe Now:</strong> Don't miss an episode! Subscribe to Women in AI Research (WiAIR) today.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-purple-400 mr-2">•</span>
+                            <span><strong>Share:</strong> Spread the word and share our podcast with your network.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
 }
-
-function HeroButtons() {
-    return (
-        <div className="flex justify-center space-x-6">
-            <SpotifyButton />
-            <RSSButton />
-        </div>
-    );
-}
-
-
-
 
 

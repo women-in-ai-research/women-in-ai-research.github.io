@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface Guest {
   id: string;
@@ -15,39 +15,10 @@ interface GuestCardProps {
   guest: Guest;
 }
 
-export function GuestCard({ guest }: GuestCardProps) {  
+export function GuestCard({ guest }: GuestCardProps) {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [imageLoading, setImageLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchImageUrl = async () => {
-      try {
-        // Check if the URL is from 100k-faces.glitch.me
-        if (guest.imageUrl.includes('100k-faces.glitch.me')) {
-          // Fetch a random image URL from the API
-          const response = await fetch('https://100k-faces.glitch.me/random-image-url');
-          
-          if (!response.ok) {
-            throw new Error('Failed to fetch random image');
-          }
-          
-          const data = await response.json();
-          setImageUrl(data.url);
-        } else {
-          // Use the provided image URL directly
-          setImageUrl(guest.imageUrl);
-        }
-      } catch (error) {
-        console.error('Error fetching image URL:', error);
-        // Fallback to a placeholder if there's an issue
-        setImageUrl(null);
-      } finally {
-        setImageLoading(false);
-      }
-    };
-
-    fetchImageUrl();
-  }, [guest.imageUrl]);
 
   return (
     <div className="backdrop-blur-xl bg-white/10 rounded-xl overflow-hidden border border-purple-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:-translate-y-1">
@@ -57,15 +28,23 @@ export function GuestCard({ guest }: GuestCardProps) {
             <div className="animate-pulse w-full h-full bg-purple-300/20"></div>
           </div>
         ) : imageUrl ? (
-          <img 
-            src={imageUrl} 
-            alt={guest.name} 
+          <img
+            src={imageUrl}
+            alt={guest.name}
             className="w-full h-full object-cover"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
-            <svg className="w-24 h-24 text-purple-300/50" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+            <svg
+              className="w-24 h-24 text-purple-300/50"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clipRule="evenodd"
+              />
             </svg>
           </div>
         )}
@@ -77,11 +56,9 @@ export function GuestCard({ guest }: GuestCardProps) {
         <p className="text-purple-200 text-sm mb-3">
           {guest.title} at {guest.organization}
         </p>
-        <p className="text-gray-300 text-sm mb-4 line-clamp-3">
-          {guest.bio}
-        </p>
-        <Link 
-          href={guest.episodeLink.replace(/^\//, '')}
+        <p className="text-gray-300 text-sm mb-4 line-clamp-3">{guest.bio}</p>
+        <Link
+          href={guest.episodeLink.replace(/^\//, "")}
           className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
         >
           Listen to Episode
