@@ -15,10 +15,11 @@ With the WiAIR podcast, our goal is to empower early career researchers, especia
 
 ## 🌐 Socials
 - [LinkedIn](https://www.linkedin.com/company/women-in-ai-research)
-- [X (Twitter)](https://x.com/WiAIR_podcast )
+- [X (Twitter)](https://x.com/WiAIR_podcast)
 - [Bluesky](https://bsky.app/profile/wiair.bsky.social)
 - [YouTube](https://www.youtube.com/@WomeninAIResearch)
-- Website
+- [Spotify](https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M)
+- [Website](https://women-in-ai-research.github.io/)
 
 ## ⁠📅 Release Schedule 
 
@@ -26,4 +27,4 @@ New episodes are released every three weeks.
 
 ## 👥💬 Join our Discord
 
-[Invitation link](https://discord.gg/ekRReqPWnP)
+[Invitation link](https://discord.gg/267DPacHT5)

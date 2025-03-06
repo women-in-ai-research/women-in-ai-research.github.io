@@ -82,7 +82,7 @@ export function usePodcastFeed(feedUrl: string, limit: number = 5) {
             audioUrl,
             duration,
             imageUrl,
-            spotify: 'https://spotify.link' // Placeholder
+            spotify: 'https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M' 
           });
         });
        
@@ -100,7 +100,7 @@ export function usePodcastFeed(feedUrl: string, limit: number = 5) {
             title: 'The Future of AI Ethics',
             date: 'Oct 15, 2023',
             description: 'Exploring the ethical implications of AI development with special guest Dr. Sarah Johnson from MIT.',
-            spotify: 'https://spotify.link',
+            spotify: 'https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M',
             audioUrl: '',
             duration: '54:22',
             imageUrl: 'https://via.placeholder.com/400x400?text=AI+Ethics'
@@ -109,7 +109,7 @@ export function usePodcastFeed(feedUrl: string, limit: number = 5) {
             title: 'Breaking Barriers in Machine Learning',
             date: 'Oct 1, 2023',
             description: 'Discussing groundbreaking ML research and its impact on society with Prof. Maria Garcia.',
-            spotify: 'https://spotify.link',
+            spotify: 'https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M',
             audioUrl: '',
             duration: '48:15',
             imageUrl: 'https://via.placeholder.com/400x400?text=ML+Barriers'
@@ -118,7 +118,7 @@ export function usePodcastFeed(feedUrl: string, limit: number = 5) {
             title: 'AI in Healthcare: A Female Perspective',
             date: 'Sep 15, 2023',
             description: 'Examining how women researchers are revolutionizing healthcare AI applications.',
-            spotify: 'https://spotify.link',
+            spotify: 'https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M',
             audioUrl: '',
             duration: '51:30',
             imageUrl: 'https://via.placeholder.com/400x400?text=AI+Healthcare'

@@ -5,7 +5,7 @@ import { SpotifyIcon, RSSIcon, YouTubeIcon } from "./Icons";
 export function YouTubeButton() {
   return (
       <a
-          href="https://youtube.com/channel/your-channel"
+          href="https://www.youtube.com/@WomeninAIResearch"
           className="group relative px-8 py-4 bg-gradient-to-r from-red-500 to-red-700 rounded-full hover:from-red-600 hover:to-red-800 transition-all duration-300 shadow-lg hover:shadow-red-500/25"
       >
           <span className="flex items-center space-x-2 text-white">
@@ -19,7 +19,7 @@ export function YouTubeButton() {
 export function SpotifyButton() {
   return (
       <a
-          href="https://spotify.link"
+          href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M"
           className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300 shadow-lg hover:shadow-green-500/25"
       >
           <span className="flex items-center space-x-2 text-white">
@@ -33,7 +33,7 @@ export function SpotifyButton() {
 export function RSSButton() {
     return (
       <a
-        href="https://rss.link"
+        href="https://anchor.fm/s/1e4a0eac/podcast/rss"
         className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full hover:from-orange-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-orange-500/25"
       >
         <span className="flex items-center space-x-2 text-white">

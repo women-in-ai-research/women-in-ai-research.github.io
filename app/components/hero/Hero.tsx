@@ -81,7 +81,7 @@ export function Hero() {
                             <span className="text-purple-400 mr-2">•</span>
                             <span>
                                 <strong>Subscription Information:</strong> Subscribe to WiAIR on{" "}
-                                <a href="https://spotify.link" className="text-green-500 hover:underline" target="_blank" rel="noopener noreferrer">Spotify</a> and join our{" "}
+                                <a href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M" className="text-green-500 hover:underline" target="_blank" rel="noopener noreferrer">Spotify</a> and join our{" "}
                                 <a href="https://discord.gg/267DPacHT5" className="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">Discord</a>.
                             </span>
                         </li>
