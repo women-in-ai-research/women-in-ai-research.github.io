@@ -8,6 +8,29 @@ export const metadata: Metadata = {
   title: "Women in AI Research Podcast",
   description:
     "Celebrating the remarkable contributions of female AI researchers from around the globe",
+  openGraph: {
+    title: "Women in AI Research Podcast",
+    description: "Celebrating the remarkable contributions of female AI researchers from around the globe",
+    url: "https://women-in-ai-research.github.io/",
+    siteName: "Women in AI Research",
+    images: [
+      {
+        url: "https://women-in-ai-research.github.io/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Women in AI Research Podcast Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Women in AI Research Podcast",
+    description: "Celebrating the remarkable contributions of female AI researchers from around the globe",
+    images: ["https://women-in-ai-research.github.io/images/logo.png"],
+    creator: "@WiAIR_podcast",
+  },
 };
 
 export default function RootLayout({
