@@ -2,8 +2,12 @@
 
 import { getPageUrl } from "@/app/components/common/urls";
 import Logo from '@/public/images/logo.png'; // Make sure to add your logo image
+import { usePathname } from 'next/navigation';
 
 export function Navbar() {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+  
   return (
     <nav className="backdrop-blur-xl bg-slate-900/90 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,13 +23,13 @@ export function Navbar() {
           </div>
           <div className="flex items-center space-x-8">
             <a
-              href={getPageUrl("#episodes")}
+              href={getPageUrl(isHomePage ? "#episodes" : "/#episodes")}
               className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
             >
               Episodes
             </a>
             <a
-              href={getPageUrl("#about")}
+              href={getPageUrl(isHomePage ? "#about" : "/#about")}
               className="text-white hover:text-purple-300 transition-colors duration-300 text-lg"
             >
               About Us

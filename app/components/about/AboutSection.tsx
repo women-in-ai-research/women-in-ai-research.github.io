@@ -1,75 +1,130 @@
+"use client";
+
+import { useState, useRef, useEffect } from 'react';
 import JekaterinaNovikova from "@/public/images/about/jekaterina-novikova.jpg";
 import MalikehEhghaghi from "@/public/images/about/malikeh-ehghaghi.jpg";
 import MaryMcCarthy from "@/public/images/about/mary-maccarthy.jpg";
 import AnaisHristea from "@/public/images/about/anais-hristea.jpg";
 import AliAkram from "@/public/images/about/ali-akram.jpg";
 
-export function AboutSection() {
+interface TeamMemberCardProps {
+  image?: any;
+  name: string;
+  title?: string;
+  bio: string;
+}
+
+function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
+  const [expanded, setExpanded] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(false);
+  const bioRef = useRef<HTMLParagraphElement>(null);
+  
+  useEffect(() => {
+    const checkTruncation = () => {
+      if (bioRef.current) {
+        const { scrollHeight, clientHeight } = bioRef.current;
+        setIsTruncated(scrollHeight > clientHeight);
+      }
+    };
+    
+    checkTruncation();
+    window.addEventListener('resize', checkTruncation);
+    
+    return () => {
+      window.removeEventListener('resize', checkTruncation);
+    };
+  }, [bio]);
+
   return (
-    <div
-      id="about"
-      className="bg-gradient-to-b from-slate-900 via-purple-900/50 to-slate-900 py-32"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center pt-8">
-          About Us
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <TeamMemberCard
-            image={JekaterinaNovikova}
-            name="Jekaterina Novikova"
-            bio="Dr. Jekaterina Novikova is a renowned AI researcher with over 15 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science and has led numerous groundbreaking research projects at prestigious institutions."
-          />
-          <TeamMemberCard
-            image={MalikehEhghaghi}
-            name="Malikeh Ehghaghi"
-            bio="Malikeh is a machine learning researcher at the Vector Institute, and an incoming PhD student at the University of Toronto, where she works under the supervision of Prof. Colin Raffel. Born and raised in Iran, she is a bilingual researcher fluent in Farsi and English who immigrated to Canada in 2019. She earned an MScAC degree in Computer Science from the University of Toronto and has over five years of industry research experience at companies such as Winterlight Labs, Cambridge Cognition, and Arcee AI."
-          />
-          <TeamMemberCard
-            image={MaryMcCarthy}
-            name="Mary"
-            bio="Head of Growth & Marketing @ Arcee.ai | AI, Data, & Growth Advisor | Host of the Tech Bros Show"
-          />
-          <TeamMemberCard
-            image={AnaisHristea}
-            name="Anais"
-            bio="Graphic Designer / Illustrator"
-          />
-          <TeamMemberCard
-            image={AliAkram}
-            name="Ali Akram"
-            bio="AI Engineer / Technical Producer"
-          />
+    <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-purple-500/20">
+      <div className="flex flex-col md:flex-row gap-5 items-start">
+        {/* Fixed square image - left side */}
+        <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
+          {image ? (
+            <img 
+              src={image.src}
+              alt={name} 
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full bg-purple-400/30 flex items-center justify-center text-white text-2xl">
+              {name.charAt(0)}
+            </div>
+          )}
+        </div>
+        
+        {/* Content container - right side */}
+        <div className="flex-1 flex flex-col md:pl-1">
+          <h3 className="text-2xl font-bold text-white text-center md:text-left mb-1">
+            {name}
+          </h3>
+          {title && (
+            <p className="text-purple-300 mb-3 text-center md:text-left">
+              {title}
+            </p>
+          )}
+          <div className="text-gray-300 text-center md:text-left">
+            <div className={`relative ${expanded ? '' : 'max-h-24 overflow-hidden'}`}>
+              <p ref={bioRef} className={expanded ? '' : 'line-clamp-3'}>
+                {bio}
+              </p>
+              {!expanded && isTruncated && (
+                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+              )}
+            </div>
+            {isTruncated && (
+              <button 
+                onClick={() => setExpanded(!expanded)} 
+                className="text-cyan-400 hover:text-cyan-300 mt-2 transition-colors font-medium"
+              >
+                {expanded ? 'See less' : 'See more'}
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-interface TeamMemberCardProps {
-  image?: any;
-  name: string;
-  bio: string;
-}
-
-function TeamMemberCard({ image, name, bio }: TeamMemberCardProps) {
+export function AboutSection() {
   return (
-    <div className="bg-white/10 backdrop-blur-xl p-8 rounded-lg shadow-md border border-purple-500/20">
-      <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full">
-        {image ? (
-          <img
-            src={image.src}
-            alt={name}
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <div className="w-full h-full bg-purple-400/30 flex items-center justify-center text-white">
-            {name.charAt(0)}
-          </div>
-        )}
+    <div id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-12 text-center">
+        About Us
+      </h2>
+      <div className="grid grid-cols-1 gap-8">
+        <TeamMemberCard
+          image={JekaterinaNovikova}
+          name="Jekaterina Novikova"
+          title="Founder & Host"
+          bio="Dr. Jekaterina Novikova is a renowned AI researcher with over 15 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science and has led numerous groundbreaking research projects at prestigious institutions."
+        />
+        <TeamMemberCard
+          image={MalikehEhghaghi}
+          name="Malikeh Ehghaghi"
+          title="Co-Host & Researcher"
+          bio="Malikeh is a machine learning researcher at the Vector Institute, and an incoming PhD student at the University of Toronto, where she works under the supervision of Prof. Colin Raffel. Born and raised in Iran, she is a bilingual researcher fluent in Farsi and English who immigrated to Canada in 2019. She earned an MScAC degree in Computer Science from the University of Toronto and has over five years of industry research experience at companies such as Winterlight Labs, Cambridge Cognition, and Arcee AI."
+        />
+        <TeamMemberCard
+          image={MaryMcCarthy}
+          name="Mary McCarthy"
+          title="Head of Growth & Marketing"
+          bio="Head of Growth & Marketing @ Arcee.ai | AI, Data, & Growth Advisor | Host of the Tech Bros Show"
+        />
+        <TeamMemberCard
+          image={AnaisHristea}
+          name="Anais Hristea"
+          title="Graphic Designer / Illustrator"
+          bio="Anais is a talented graphic designer and illustrator who creates all the visual assets for the Women in AI Research podcast. With a background in digital art and design, she brings a unique aesthetic to the podcast's brand identity."
+        />
+        <TeamMemberCard
+          image={AliAkram}
+          name="Ali Akram"
+          title="AI Engineer / Technical Producer"
+          bio="Ali is an experienced AI engineer and technical producer who ensures the podcast's technical quality. He handles audio editing, production, and technical aspects of the podcast, bringing years of experience in audio engineering and AI development."
+        />
       </div>
-      <h3 className="text-2xl font-bold text-white text-center mb-4">{name}</h3>
-      <p className="text-gray-300 mb-4 text-center">{bio}</p>
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import { getPageUrl } from "@/app/components/common/urls";
+import { SocialLinks } from "@/app/components/common/SocialLinks";
 
 export function Footer() {
   return (
     <footer className="backdrop-blur-xl bg-black/50 text-white py-16 border-t border-purple-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <FooterBrand />
-          <FooterConnect />
+          <FooterSocial />
           <FooterSubscribe />
-          
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
           <p>&copy; 2025 Women in AI Research Podcast. All rights reserved.</p>
@@ -31,32 +31,13 @@ function FooterBrand() {
   );
 }
 
-function FooterConnect() {
+function FooterSocial() {
   return (
-    <div>
+    <div className="text-center md:text-left">
       <h3 className="text-xl font-bold mb-4">
-        Connect
+        Follow Us
       </h3>
-      <div className="space-y-2">
-        <a
-          href="https://bsky.app/profile/wiair.bsky.social"
-          className="block text-gray-400 hover:text-white"
-        >
-          Bluesky
-        </a>
-        <a
-          href="https://www.linkedin.com/company/women-in-ai-research/"
-          className="block text-gray-400 hover:text-white"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://x.com/WiAIR_podcast"
-          className="block text-gray-400 hover:text-white"
-        >
-          Twitter
-        </a>
-      </div>
+      <SocialLinks className="justify-center md:justify-start" />
     </div>
   );
 }
@@ -65,27 +46,20 @@ function FooterSubscribe() {
   return (
     <div>
       <h3 className="text-xl font-bold mb-4">
-        Subscribe
+        Subscribe to Our Newsletter
       </h3>
-      <div className="space-y-2">
-        <a
-          href="https://www.youtube.com/@WomeninAIResearch"
-          className="block text-gray-400 hover:text-white"
-        >
-          YouTube
-        </a>
-        <a
-          href="https://spotify.link"
-          className="block text-gray-400 hover:text-white"
-        >
-          Spotify
-        </a>
-        <a
-          href="https://discord.gg/267DPacHT5"
-          className="block text-gray-400 hover:text-white"
-        >
-          Discord
-        </a>
+      <p className="text-gray-400 mb-4">
+        Stay updated with our latest episodes and events
+      </p>
+      <div className="flex">
+        <input
+          type="email"
+          placeholder="Your email"
+          className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
+        />
+        <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-r-md hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+          Subscribe
+        </button>
       </div>
     </div>
   );

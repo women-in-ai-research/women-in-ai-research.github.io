@@ -35,10 +35,10 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
     }, [bio]);
 
     return (
-        <div className="bg-white/10 backdrop-blur-xl p-6 rounded-lg shadow-md border border-purple-500/20">
-            <div className="flex flex-col md:flex-row gap-6 items-start">
+        <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-purple-500/20">
+            <div className="flex flex-col md:flex-row gap-5 items-start">
                 {/* Fixed square image - left side */}
-                <div className="w-32 h-32 md:w-48 md:h-48 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
+                <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
                     {image ? (
                         <img 
                             src={image.src}
@@ -53,11 +53,11 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
                 </div>
                 
                 {/* Content container - right side */}
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1 flex flex-col md:pl-1">
                     <h3 className="text-2xl font-bold text-white text-center md:text-left mb-1">
                         {name}
                     </h3>
-                    <p className="text-purple-300 mb-4 text-center md:text-left">
+                    <p className="text-purple-300 mb-3 text-center md:text-left">
                         {title}
                     </p>
                     <div className="text-gray-300 text-center md:text-left">
@@ -87,7 +87,7 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
 
 export function GuestsSection() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div className="grid grid-cols-1 gap-8">
                 <GuestCard
                     image={NouhaDziriPhoto}

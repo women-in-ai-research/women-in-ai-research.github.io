@@ -1,4 +1,5 @@
 import { SpotifyButton, YouTubeButton, RSSButton} from "@/app/components/common/Buttons";
+import { SocialLinks } from "@/app/components/common/SocialLinks";
 
 export function Hero() {
     return (
@@ -24,7 +25,7 @@ export function Hero() {
                     <SpotifyButton />
                 </div>
                 <div className="text-white text-md max-w-4xl mx-auto mb-12">
-                    <p className="mb-6">
+                    <p className="mb-6 text-justify">
                         In WiAIR, we interview successful female AI researchers coming from diverse cultural
                         backgrounds, showcasing their inspirational cutting-edge research and insights into the future
                         of AI. Through these conversations, we explore their personal journeys - how they overcome
@@ -32,7 +33,7 @@ export function Hero() {
                         necessary. We aim to understand how women in AI research perceive success and what it
                         takes to achieve their goals.
                     </p>
-                    <p className="mb-6">
+                    <p className="mb-6 text-justify">
                         With the WiAIR podcast, our goal is to empower early career researchers, especially women, to
                         pursue their passion for AI and make an impact in this exciting rapidly growing field. You will
                         learn from women at different career stages, stay updated on the latest research and
@@ -62,18 +63,30 @@ export function Hero() {
                     <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
                         Stay Connected
                     </h2>
+                    <div className="flex justify-center mb-8">
+                        <SocialLinks className="justify-center" />
+                    </div>
                     <ul className="text-white text-left space-y-4 mb-8">
                         <li className="flex items-start">
                             <span className="text-purple-400 mr-2">•</span>
-                            <span><strong>Social Media Links:</strong> Follow us on Bluesky, LinkedIn, YouTube and Twitter for updates and behind-the-scenes content.</span>
+                            <span>
+                                <strong>Social Media Links:</strong> Follow us on{" "}
+                                <a href="https://bsky.app/profile/wiair.bsky.social" className="text-cyan-400 hover:underline" target="_blank" rel="noopener noreferrer">Bluesky</a>,{" "}
+                                <a href="https://www.linkedin.com/company/women-in-ai-research/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>,{" "}
+                                <a href="https://www.youtube.com/@WomeninAIResearch" className="text-red-600 hover:underline" target="_blank" rel="noopener noreferrer">YouTube</a> and{" "}
+                                <strong><a href="https://x.com/WiAIR_podcast" className="text-gray-200 hover:underline" target="_blank" rel="noopener noreferrer">Twitter</a></strong> for updates and behind-the-scenes content.
+                            </span>
                         </li>
                         <li className="flex items-start">
                             <span className="text-purple-400 mr-2">•</span>
-                            <span><strong>Subscription Information:</strong> Subscribe to WiAIR on Spotify and join our Discord.</span>
+                            <span>
+                                <strong>Subscription Information:</strong> Subscribe to WiAIR on{" "}
+                                <a href="https://spotify.link" className="text-green-500 hover:underline" target="_blank" rel="noopener noreferrer">Spotify</a> and join our{" "}
+                                <a href="https://discord.gg/267DPacHT5" className="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">Discord</a>.
+                            </span>
                         </li>
                     </ul>
-                    
-                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
+                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6 mt-8">
                         Call to Action
                     </h2>
                     <ul className="text-white text-left space-y-4">

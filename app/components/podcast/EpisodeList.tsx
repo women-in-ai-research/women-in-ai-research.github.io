@@ -1,6 +1,8 @@
-import { Episode } from '@/app/types/podcast';
-import Logo from '@/public/images/logo.png'; // Use your logo as a placeholder
-import BiasInAIImage from '@/public/images/episodes/ep-2-bias-in-ai.jpg'; // Make sure to add this image
+"use client";
+
+import { useState, useRef, useEffect } from 'react';
+import { Episode } from '@/lib/types/podcast.types';
+import episodeData from '@/app/data/episodes.json';
 
 interface EpisodeListProps {
     episodes: Episode[];
@@ -8,67 +10,151 @@ interface EpisodeListProps {
     error: string | null;
 }
 
-export function EpisodeList({ episodes, loading, error }: EpisodeListProps) {
-    // Instead of using the fetched episodes, we'll use our predefined upcoming episodes
-    const upcomingEpisodes = [
-        {
-            id: '1',
-            title: 'Limits of Transformers',
-            description: 'Interview with Dr. Nouha Dziri, a research scientist at Allen Institute for AI (AI2), USA.',
-            publishDate: 'Mar 12, 2025',
-            imageUrl: Logo.src // Placeholder for now
-        },
-        {
-            id: '2',
-            title: 'Bias in AI',
-            description: 'Interview with Dr. Amanda Cercas Curry, a postdoc researcher at MilaNLP in Bocconi University, Italy.',
-            publishDate: 'April 02, 2025',
-            imageUrl: BiasInAIImage.src // Use the specific image for this episode
-        },
-        {
-            id: '3',
-            title: 'Responsible AI for Health',
-            description: 'Interview with Aparna Balagopalan, a PhD student at MIT, USA.',
-            publishDate: 'April 23, 2025',
-            imageUrl: Logo.src // Use logo as thumbnail
-        },
-        {
-            id: '4',
-            title: 'Robots with Empathy',
-            description: 'Interview with Dr. Angelica Lim, Assistant Professor at Simon Fraser University, Canada.',
-            publishDate: 'TBD',
-            imageUrl: Logo.src // Use logo as thumbnail
-        }
-    ];
+interface EpisodeCardProps {
+    id: string;
+    title: string;
+    description: string;
+    publishDate: string;
+    imageUrl: string;
+    longDescription?: string;
+    episodeLink?: string | null;
+    youtubeLink?: string | null;
+    spotifyLink?: string | null;
+}
+
+function EpisodeCard({ 
+    id, 
+    title, 
+    description, 
+    publishDate, 
+    imageUrl, 
+    longDescription,
+    episodeLink,
+    youtubeLink,
+    spotifyLink
+}: EpisodeCardProps) {
+    const [expanded, setExpanded] = useState(false);
+    const [isTruncated, setIsTruncated] = useState(false);
+    const descriptionRef = useRef<HTMLParagraphElement>(null);
+    
+    // Use the longDescription if provided, otherwise use the regular description
+    const fullDescription = longDescription || description;
+    
+    useEffect(() => {
+        const checkTruncation = () => {
+            if (descriptionRef.current) {
+                const { scrollHeight, clientHeight } = descriptionRef.current;
+                setIsTruncated(scrollHeight > clientHeight);
+            }
+        };
+        
+        checkTruncation();
+        window.addEventListener('resize', checkTruncation);
+        
+        return () => {
+            window.removeEventListener('resize', checkTruncation);
+        };
+    }, [fullDescription]);
 
     return (
-        <div className="space-y-8">
-            {upcomingEpisodes.map((episode) => (
-                <div key={episode.id} className="bg-white/10 backdrop-blur-xl p-6 rounded-xl border border-purple-500/20 flex flex-col md:flex-row gap-6">
-                    <div className="w-full md:w-48 h-48 overflow-hidden rounded-lg shrink-0">
-                        <img 
-                            src={episode.imageUrl} 
-                            alt={episode.title} 
-                            className="w-full h-full object-cover"
-                        />
+        <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-purple-500/20">
+            <div className="flex flex-col md:flex-row gap-5 items-start">
+                {/* Episode image - left side */}
+                <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
+                    <img 
+                        src={imageUrl} 
+                        alt={title} 
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+                
+                {/* Content container - right side */}
+                <div className="flex-1 flex flex-col md:pl-1">
+                    <h3 className="text-2xl font-bold text-white text-center md:text-left mb-1">
+                        {title}
+                    </h3>
+                    <p className="text-purple-300 mb-3 text-center md:text-left">
+                        {publishDate}
+                    </p>
+                    <div className="text-gray-300 text-center md:text-left">
+                        <div className={`relative ${expanded ? '' : 'max-h-24 overflow-hidden'}`}>
+                            <p ref={descriptionRef} className={expanded ? '' : 'line-clamp-3'}>
+                                {fullDescription}
+                            </p>
+                            {!expanded && isTruncated && (
+                                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                            )}
+                        </div>
+                        {isTruncated && (
+                            <button 
+                                onClick={() => setExpanded(!expanded)} 
+                                className="text-cyan-400 hover:text-cyan-300 mt-2 transition-colors font-medium"
+                            >
+                                {expanded ? 'See less' : 'See more'}
+                            </button>
+                        )}
                     </div>
-                    <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-white mb-2">{episode.title}</h3>
-                        <p className="text-purple-300 mb-2">{episode.publishDate}</p>
-                        <p className="text-gray-300 mb-6">{episode.description}</p>
-                        <div className="flex flex-wrap gap-3">
-                            <a href="#" className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+                    
+                    <div className="flex flex-wrap gap-3 mt-4">
+                        {episodeLink && (
+                            <a 
+                                href={episodeLink} 
+                                className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 Listen Now
                             </a>
-                            <a href="#" className="px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white rounded-full hover:from-red-600 hover:to-red-800 transition-all duration-300">
+                        )}
+                        {youtubeLink && (
+                            <a 
+                                href={youtubeLink} 
+                                className="px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white rounded-full hover:from-red-600 hover:to-red-800 transition-all duration-300"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 YouTube
                             </a>
-                            <a href="#" className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300">
+                        )}
+                        {spotifyLink && (
+                            <a 
+                                href={spotifyLink} 
+                                className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 Spotify
                             </a>
-                        </div>
+                        )}
+                        {!episodeLink && !youtubeLink && !spotifyLink && (
+                            <span className="px-4 py-2 bg-gray-700 text-gray-300 rounded-full cursor-not-allowed">
+                                Coming Soon
+                            </span>
+                        )}
                     </div>
                 </div>
+            </div>
+        </div>
+    );
+}
+
+export function EpisodeList({ episodes, loading, error }: EpisodeListProps) {
+    // Use the episodes from the JSON file instead of the fetched ones
+    return (
+        <div className="grid grid-cols-1 gap-8">
+            {episodeData.map((episode) => (
+                <EpisodeCard 
+                    key={episode.id}
+                    id={episode.id}
+                    title={episode.title}
+                    description={episode.description}
+                    publishDate={episode.publishDate}
+                    imageUrl={episode.imageUrl}
+                    longDescription={episode.longDescription}
+                    episodeLink={episode.episodeLink}
+                    youtubeLink={episode.youtubeLink}
+                    spotifyLink={episode.spotifyLink}
+                />
             ))}
         </div>
     );
