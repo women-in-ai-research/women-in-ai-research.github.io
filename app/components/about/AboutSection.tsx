@@ -1,17 +1,21 @@
 "use client";
 
 import { useState, useRef, useEffect } from 'react';
-import JekaterinaNovikova from "@/public/images/about/jekaterina-novikova.jpg";
-import MalikehEhghaghi from "@/public/images/about/malikeh-ehghaghi.jpg";
-import MaryMacCarthy from "@/public/images/about/mary-maccarthy.jpg";
-import AnaisHristea from "@/public/images/about/anais-hristea.jpg";
-import AliAkram from "@/public/images/about/ali-akram.jpg";
+import teamData from '@/app/data/team.json';
 
 interface TeamMemberCardProps {
-  image?: any;
+  image?: string;
   name: string;
   title?: string;
   bio: string;
+}
+
+interface TeamMember {
+  id: string;
+  name: string;
+  title: string;
+  bio: string;
+  imageUrl: string;
 }
 
 function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
@@ -36,18 +40,18 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
   }, [bio]);
 
   return (
-    <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-purple-500/20">
+    <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-wiair-medium/20">
       <div className="flex flex-col md:flex-row gap-5 items-start">
         {/* Fixed square image - left side */}
         <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
           {image ? (
             <img 
-              src={image.src}
+              src={image}
               alt={name} 
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full bg-purple-400/30 flex items-center justify-center text-white text-2xl">
+            <div className="w-full h-full bg-wiair-medium/30 flex items-center justify-center text-white text-2xl">
               {name.charAt(0)}
             </div>
           )}
@@ -59,7 +63,7 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
             {name}
           </h3>
           {title && (
-            <p className="text-purple-300 mb-3 text-center md:text-left">
+            <p className="text-wiair-light mb-3 text-center md:text-left">
               {title}
             </p>
           )}
@@ -75,7 +79,7 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
             {isTruncated && (
               <button 
                 onClick={() => setExpanded(!expanded)} 
-                className="text-purple-300 hover:text-purple-200 mt-2 transition-colors font-medium"
+                className="text-wiair-light hover:text-wiair-lightest mt-2 transition-colors font-medium"
               >
                 {expanded ? 'See less' : 'See more'}
               </button>
@@ -94,36 +98,15 @@ export function AboutSection() {
         About Us
       </h2>
       <div className="grid grid-cols-1 gap-8">
-        <TeamMemberCard
-          image={JekaterinaNovikova}
-          name="Jekaterina Novikova"
-          title="Founder & Co-Host"
-          bio={"Dr. Jekaterina Novikova is the AI researcher with over 10 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science from the University of Bath and has an extensive international experience working in the academia, industry and non-profits. She was recognized as one of the Top 50 Most Extraordinary Women Advancing AI In 2024, Top 25 Women in AI in Canada in 2022, received the \"Industry Icon Award\" by the University of Toronto in 2021, and included in the list of 30 Influential Women Advancing AI in Canada in 2018."}
-        />
-        <TeamMemberCard
-          image={MalikehEhghaghi}
-          name="Malikeh Ehghaghi"
-          title="Co-Host"
-          bio="Malikeh is a machine learning researcher at the Vector Institute, and an incoming PhD student at the University of Toronto, where she works under the supervision of Prof. Colin Raffel. Born and raised in Iran, she is a bilingual researcher fluent in Farsi and English who immigrated to Canada in 2019. She earned an MScAC degree in Computer Science from the University of Toronto and has over five years of industry research experience at companies such as Winterlight Labs, Cambridge Cognition, and Arcee AI."
-        />
-        <TeamMemberCard
-          image={MaryMacCarthy}
-          name="Mary MacCarthy"
-          title="Lead Producer & Marketing"
-          bio="Mary is the Head of Product Marketing at Arcee AI, a fast-growing startup that pioneered small language models (SLMs) and intelligent model routing. She pivoted into tech after a long career as an international news correspondent. A proud solo mom, Mary is a fierce advocate for women in tech and is known for bringing a critical eye to the ethics (or lack thereof) in the industry."
-        />
-        <TeamMemberCard
-          image={AnaisHristea}
-          name="Anais Hristea"
-          title="Lead Illustrator & Designer"
-          bio="Anais is a talented graphic designer and illustrator who creates all the visual assets for the Women in AI Research podcast. With a background in digital art and design, she brings a unique aesthetic to the podcast's brand identity, from logo design to branding, ensuring a strong and professional look."
-        />
-        <TeamMemberCard
-          image={AliAkram}
-          name="Ali Akram"
-          title="Technical Producer"
-          bio="Ali is an experienced AI engineer and technical producer who ensures the podcast's technical quality. He handles audio editing, production, and technical aspects of the podcast, bringing years of experience in audio engineering and AI development. Ali also develops and maintains the podcast's website."
-        />
+        {teamData.map((member: TeamMember) => (
+          <TeamMemberCard
+            key={member.id}
+            name={member.name}
+            title={member.title}
+            bio={member.bio}
+            image={member.imageUrl}
+          />
+        ))}
       </div>
     </div>
   );
