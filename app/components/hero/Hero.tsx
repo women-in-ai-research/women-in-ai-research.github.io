@@ -10,7 +10,7 @@ export function Hero() {
                     <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-[120px]"></div>
                 </div>
                 <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-wiair-medium to-wiair-light mb-8 leading-normal py-1 relative">
-                    <!-- <span className="absolute -inset-1 blur-xl bg-gradient-to-r from-purple-400 to-purple-500 opacity-30 rounded-lg"></span> -->
+                    
                     <span className="relative">Welcome to Women in AI Research</span>
                 </h1>
                 <h4 className="text-1xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
