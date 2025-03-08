@@ -17,6 +17,7 @@ interface EpisodeCardProps {
     description: string;
     publishDate: string;
     imageUrl: string;
+    imagePosition?: string;
     longDescription?: string;
     episodeLink?: string | null;
     youtubeLink?: string | null;
@@ -29,6 +30,7 @@ function EpisodeCard({
     description, 
     publishDate, 
     imageUrl, 
+    imagePosition = "object-center",
     longDescription,
     episodeLink,
     youtubeLink,
@@ -59,13 +61,17 @@ function EpisodeCard({
 
     return (
         <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-purple-500/20">
-            <div className="flex flex-col md:flex-row gap-5 items-start">
+            <div className="flex flex-col md:flex-row gap-5 items-stretch">
                 {/* Episode image - left side */}
-                <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
+                <div className="w-full md:w-64 h-48 md:h-auto mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
                     <img 
                         src={imageUrl} 
                         alt={title} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full"
+                        style={{ 
+                            objectFit: 'cover', 
+                            objectPosition: imagePosition 
+                        }}
                     />
                 </div>
                 
@@ -153,6 +159,7 @@ export function EpisodeList({ episodes, loading, error }: EpisodeListProps) {
                     description={episode.description}
                     publishDate={episode.publishDate}
                     imageUrl={episode.imageUrl}
+                    imagePosition={episode.imagePosition}
                     longDescription={episode.longDescription}
                     episodeLink={episode.episodeLink}
                     youtubeLink={episode.youtubeLink}
