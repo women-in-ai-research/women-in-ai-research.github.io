@@ -11,7 +11,7 @@ export function Hero() {
                 </div>
                 <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
                     
-                    <span className="relative">Welcome to Women in AI Research</span>
+                    Welcome to Women in AI Research
                 </h1>
                 <h4 className="text-1xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
                     New episodes released every three weeks on Wednesday.
