@@ -99,7 +99,7 @@ export function GuestsSection() {
                     image={AmandaCercasCurryPhoto}
                     name="Dr. Amanda Cercas Curry"
                     title="Researcher at CENTAI Institute, Italy."
-                    bio="Dr. Amanda Cercas Curry is a researcher in CENTAI, where she is working on applied NLP, fairness and evaluation. Her research interests lie at the intersection of Natural Language Processing (NLP), Human-Computer Interaction (HCI) and Feminism with the aim of building more just NLP systems. She is particularly interested in ethics, with a strong influence from feminism. Previously she was a postdoctoral researcher at MilaNLP in Bocconi University. She completed her PhD at Heriot-Watt University in Edinburgh. She also co-hosts a podcast where she discusses all things tech ethics, called Let's Chat Ethics."
+                    bio="Dr. Amanda Cercas Curry is a researcher at CENTAI Institute, where she is working on applied NLP, fairness and evaluation. Her research interests lie at the intersection of Natural Language Processing (NLP), Human-Computer Interaction (HCI) and Feminism with the aim of building more just NLP systems. She is particularly interested in ethics, with a strong influence from feminism. Previously she was a postdoctoral researcher at MilaNLP in Bocconi University. She completed her PhD at Heriot-Watt University in Edinburgh. She also co-hosts a podcast where she discusses all things tech ethics, called Let's Chat Ethics."
                 />
                 <GuestCard
                     image={AparnaBalagopalanPhoto}
