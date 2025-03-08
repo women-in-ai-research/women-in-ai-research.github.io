@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import JekaterinaNovikova from "@/public/images/about/jekaterina-novikova.jpg";
 import MalikehEhghaghi from "@/public/images/about/malikeh-ehghaghi.jpg";
-import MaryMcCarthy from "@/public/images/about/mary-maccarthy.jpg";
+import MaryMacCarthy from "@/public/images/about/mary-maccarthy.jpg";
 import AnaisHristea from "@/public/images/about/anais-hristea.jpg";
 import AliAkram from "@/public/images/about/ali-akram.jpg";
 
@@ -97,32 +97,32 @@ export function AboutSection() {
         <TeamMemberCard
           image={JekaterinaNovikova}
           name="Jekaterina Novikova"
-          title="Founder & Host"
+          title="Founder & Co-Host"
           bio={"Dr. Jekaterina Novikova is the AI researcher with over 10 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science from the University of Bath and has an extensive international experience working in the academia, industry and non-profits. She was recognized as one of the Top 50 Most Extraordinary Women Advancing AI In 2024, Top 25 Women in AI in Canada in 2022, received the \"Industry Icon Award\" by the University of Toronto in 2021, and included in the list of 30 Influential Women Advancing AI in Canada in 2018."}
         />
         <TeamMemberCard
           image={MalikehEhghaghi}
           name="Malikeh Ehghaghi"
-          title="Co-Host & Researcher"
+          title="Co-Host"
           bio="Malikeh is a machine learning researcher at the Vector Institute, and an incoming PhD student at the University of Toronto, where she works under the supervision of Prof. Colin Raffel. Born and raised in Iran, she is a bilingual researcher fluent in Farsi and English who immigrated to Canada in 2019. She earned an MScAC degree in Computer Science from the University of Toronto and has over five years of industry research experience at companies such as Winterlight Labs, Cambridge Cognition, and Arcee AI."
         />
         <TeamMemberCard
-          image={MaryMcCarthy}
-          name="Mary McCarthy"
-          title="Head of Growth & Marketing"
-          bio="Head of Growth & Marketing @ Arcee.ai | AI, Data, & Growth Advisor | Host of the Tech Bros Show"
+          image={MaryMacCarthy}
+          name="Mary MacCarthy"
+          title="Lead Producer & Marketing"
+          bio="Mary is the Head of Product Marketing at Arcee AI, a fast-growing startup that pioneered small language models (SLMs) and intelligent model routing. She pivoted into tech after a long career as an international news correspondent. A proud solo mom, Mary is a fierce advocate for women in tech and is known for bringing a critical eye to the ethics (or lack thereof) in the industry."
         />
         <TeamMemberCard
           image={AnaisHristea}
           name="Anais Hristea"
-          title="Graphic Designer / Illustrator"
-          bio="Anais is a talented graphic designer and illustrator who creates all the visual assets for the Women in AI Research podcast. With a background in digital art and design, she brings a unique aesthetic to the podcast's brand identity."
+          title="Lead Illustrator & Designer"
+          bio="Anais is a talented graphic designer and illustrator who creates all the visual assets for the Women in AI Research podcast. With a background in digital art and design, she brings a unique aesthetic to the podcast's brand identity, from logo design to branding, ensuring a strong and professional look."
         />
         <TeamMemberCard
           image={AliAkram}
           name="Ali Akram"
-          title="AI Engineer / Technical Producer"
-          bio="Ali is an experienced AI engineer and technical producer who ensures the podcast's technical quality. He handles audio editing, production, and technical aspects of the podcast, bringing years of experience in audio engineering and AI development."
+          title="Technical Producer"
+          bio="Ali is an experienced AI engineer and technical producer who ensures the podcast's technical quality. He handles audio editing, production, and technical aspects of the podcast, bringing years of experience in audio engineering and AI development. Ali also develops and maintains the podcast's website."
         />
       </div>
     </div>
