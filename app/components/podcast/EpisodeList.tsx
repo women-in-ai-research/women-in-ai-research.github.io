@@ -146,12 +146,12 @@ function EpisodeCard({
 }
 
 export function EpisodeList({ episodes, loading, error }: EpisodeListProps) {
-    // Use only the first three episodes from the JSON file
-    const firstThreeEpisodes = episodeData.slice(0, 3);
+    // Filter episodes to only show those with visible=true
+    const visibleEpisodes = episodeData.filter(episode => episode.visible);
     
     return (
         <div className="grid grid-cols-1 gap-8">
-            {firstThreeEpisodes.map((episode) => (
+            {visibleEpisodes.map((episode) => (
                 <EpisodeCard 
                     key={episode.id}
                     id={episode.id}

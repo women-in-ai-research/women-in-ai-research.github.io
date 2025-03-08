@@ -17,6 +17,7 @@ interface Guest {
     title: string;
     bio: string;
     imageUrl: string;
+    visible: boolean;
 }
 
 function GuestCard({ image, name, title, bio }: GuestCardProps) {
@@ -91,13 +92,13 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
 } 
 
 export function GuestsSection() {
-    // Use only the first three guests from the JSON file
-    const firstThreeGuests = guestsData.slice(0, 3);
+    // Filter guests to only show those with visible=true
+    const visibleGuests = guestsData.filter(guest => guest.visible);
     
     return (
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 gap-8">
-                {firstThreeGuests.map((guest: Guest) => (
+                {visibleGuests.map((guest: Guest) => (
                     <GuestCard 
                         key={guest.id}
                         name={guest.name}

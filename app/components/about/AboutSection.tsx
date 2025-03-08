@@ -16,6 +16,7 @@ interface TeamMember {
   title: string;
   bio: string;
   imageUrl: string;
+  visible: boolean;
 }
 
 function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
@@ -92,13 +93,16 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
 }
 
 export function AboutSection() {
+  // Filter team members to only show those with visible=true
+  const visibleTeamMembers = teamData.filter(member => member.visible);
+  
   return (
     <div id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-wiair-medium to-wiair-light mb-12 text-center">
         About Us
       </h2>
       <div className="grid grid-cols-1 gap-8">
-        {teamData.map((member: TeamMember) => (
+        {visibleTeamMembers.map((member: TeamMember) => (
           <TeamMemberCard
             key={member.id}
             name={member.name}

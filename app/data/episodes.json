@@ -9,7 +9,8 @@
     "imagePosition": "70% 30%",
     "episodeLink": null,
     "youtubeLink": null,
-    "spotifyLink": null
+    "spotifyLink": null,
+    "visible": true
   },
   {
     "id": "2",
@@ -21,7 +22,8 @@
     "imagePosition": "60% 40%",
     "episodeLink": null,
     "youtubeLink": null,
-    "spotifyLink": null
+    "spotifyLink": null,
+    "visible": true
   },
   {
     "id": "3",
@@ -33,7 +35,8 @@
     "imagePosition": "60% 40%",
     "episodeLink": null,
     "youtubeLink": null,
-    "spotifyLink": null
+    "spotifyLink": null,
+    "visible": true
   },
   {
     "id": "4",
@@ -45,6 +48,7 @@
     "imagePosition": "60% 40%",
     "episodeLink": null,
     "youtubeLink": null,
-    "spotifyLink": null
+    "spotifyLink": null,
+    "visible": false
   }
 ] 
