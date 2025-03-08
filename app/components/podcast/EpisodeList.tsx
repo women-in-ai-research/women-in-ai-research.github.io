@@ -95,7 +95,7 @@ function EpisodeCard({
                         {isTruncated && (
                             <button 
                                 onClick={() => setExpanded(!expanded)} 
-                                className="text-purple-300 hover:text-purple-200 mt-2 transition-colors font-medium"
+                                className="text-wiair-light hover:text-wiair-lightest mt-2 transition-colors font-medium"
                             >
                                 {expanded ? 'See less' : 'See more'}
                             </button>
@@ -106,7 +106,7 @@ function EpisodeCard({
                         {episodeLink && (
                             <a 
                                 href={episodeLink} 
-                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -116,7 +116,7 @@ function EpisodeCard({
                         {youtubeLink && (
                             <a 
                                 href={youtubeLink} 
-                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -126,7 +126,7 @@ function EpisodeCard({
                         {spotifyLink && (
                             <a 
                                 href={spotifyLink} 
-                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

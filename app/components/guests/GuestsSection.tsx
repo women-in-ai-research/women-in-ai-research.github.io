@@ -57,7 +57,7 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
                     <h3 className="text-2xl font-bold text-white text-center md:text-left mb-1">
                         {name}
                     </h3>
-                    <p className="text-purple-300 mb-3 text-center md:text-left">
+                    <p className="text-wiair-light mb-3 text-center md:text-left">
                         {title}
                     </p>
                     <div className="text-gray-300 text-center md:text-left">
@@ -72,7 +72,7 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
                         {isTruncated && (
                             <button 
                                 onClick={() => setExpanded(!expanded)} 
-                                className="text-purple-300 hover:text-purple-200 mt-2 transition-colors font-medium"
+                                className="text-wiair-light hover:text-wiair-lightest mt-2 transition-colors font-medium"
                             >
                                 {expanded ? 'See less' : 'See more'}
                             </button>
@@ -87,7 +87,7 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
 
 export function GuestsSection() {
     return (
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 gap-8">
                 <GuestCard
                     image={NouhaDziriPhoto}

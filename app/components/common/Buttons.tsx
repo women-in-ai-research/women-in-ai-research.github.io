@@ -6,7 +6,7 @@ export function YouTubeButton() {
   return (
       <a
           href="https://www.youtube.com/@WomeninAIResearch"
-          className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+          className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
       >
           <span className="flex items-center space-x-2 text-white">
               <YouTubeIcon />
@@ -20,7 +20,7 @@ export function SpotifyButton() {
   return (
       <a
           href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M"
-          className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+          className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
       >
           <span className="flex items-center space-x-2 text-white">
               <SpotifyIcon />
@@ -34,7 +34,7 @@ export function RSSButton() {
     return (
       <a
         href="https://anchor.fm/s/1e4a0eac/podcast/rss"
-        className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+        className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
       >
         <span className="flex items-center space-x-2 text-white">
           <RSSIcon />

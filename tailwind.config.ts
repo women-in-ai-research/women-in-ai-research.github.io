@@ -18,7 +18,15 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {
+      colors: {
+			// Custom color palette
+			wiair: {
+			darkest: '#1D0933',  // Darkest purple
+			dark: '#591B9B',     // Dark purple
+			medium: '#A56EE3',   // Medium purple
+			light: '#B380F2',    // Light purple
+			lightest: '#DACFE3', // Lightest purple
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
