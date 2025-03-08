@@ -1,5 +1,6 @@
 "use client";
 
+
 import { useState, useRef, useEffect } from 'react';
 import { Episode } from '@/lib/types/podcast.types';
 import episodeData from '@/app/data/episodes.json';
@@ -88,7 +89,7 @@ function EpisodeCard({
                         {isTruncated && (
                             <button 
                                 onClick={() => setExpanded(!expanded)} 
-                                className="text-cyan-400 hover:text-cyan-300 mt-2 transition-colors font-medium"
+                                className="text-purple-300 hover:text-purple-200 mt-2 transition-colors font-medium"
                             >
                                 {expanded ? 'See less' : 'See more'}
                             </button>
@@ -99,7 +100,7 @@ function EpisodeCard({
                         {episodeLink && (
                             <a 
                                 href={episodeLink} 
-                                className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -109,7 +110,7 @@ function EpisodeCard({
                         {youtubeLink && (
                             <a 
                                 href={youtubeLink} 
-                                className="px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white rounded-full hover:from-red-600 hover:to-red-800 transition-all duration-300"
+                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -119,7 +120,7 @@ function EpisodeCard({
                         {spotifyLink && (
                             <a 
                                 href={spotifyLink} 
-                                className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300"
+                                className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -139,10 +140,12 @@ function EpisodeCard({
 }
 
 export function EpisodeList({ episodes, loading, error }: EpisodeListProps) {
-    // Use the episodes from the JSON file instead of the fetched ones
+    // Use only the first three episodes from the JSON file
+    const firstThreeEpisodes = episodeData.slice(0, 3);
+    
     return (
         <div className="grid grid-cols-1 gap-8">
-            {episodeData.map((episode) => (
+            {firstThreeEpisodes.map((episode) => (
                 <EpisodeCard 
                     key={episode.id}
                     id={episode.id}

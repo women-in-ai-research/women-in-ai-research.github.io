@@ -12,7 +12,7 @@ export default function GuestsPage() {
 
       {/* Page Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8">
-        <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 text-center">
+        <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-500 text-center">
           Our Guests
         </h1>
         <p className="text-xl text-gray-300 text-center mt-6 max-w-3xl mx-auto">

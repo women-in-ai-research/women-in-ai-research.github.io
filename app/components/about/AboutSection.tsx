@@ -75,7 +75,7 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
             {isTruncated && (
               <button 
                 onClick={() => setExpanded(!expanded)} 
-                className="text-cyan-400 hover:text-cyan-300 mt-2 transition-colors font-medium"
+                className="text-purple-300 hover:text-purple-200 mt-2 transition-colors font-medium"
               >
                 {expanded ? 'See less' : 'See more'}
               </button>
@@ -90,7 +90,7 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
 export function AboutSection() {
   return (
     <div id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-12 text-center">
+      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-500 mb-12 text-center">
         About Us
       </h2>
       <div className="grid grid-cols-1 gap-8">
@@ -98,7 +98,7 @@ export function AboutSection() {
           image={JekaterinaNovikova}
           name="Jekaterina Novikova"
           title="Founder & Host"
-          bio="Dr. Jekaterina Novikova is a renowned AI researcher with over 15 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science and has led numerous groundbreaking research projects at prestigious institutions."
+          bio={"Dr. Jekaterina Novikova is the AI researcher with over 10 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science from the University of Bath and has an extensive international experience working in the academia, industry and non-profits. She was recognized as one of the Top 50 Most Extraordinary Women Advancing AI In 2024, Top 25 Women in AI in Canada in 2022, received the \"Industry Icon Award\" by the University of Toronto in 2021, and included in the list of 30 Influential Women Advancing AI in Canada in 2018."}
         />
         <TeamMemberCard
           image={MalikehEhghaghi}

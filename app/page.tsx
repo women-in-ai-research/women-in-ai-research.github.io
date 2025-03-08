@@ -20,7 +20,7 @@ export default function Page() {
         id="episodes"
         className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
       >
-                <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-12 text-center">
+                <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-500 mb-12 text-center">
           Upcoming Episodes
                 </h2>
                 <EpisodeList episodes={episodes} loading={loading} error={error} />

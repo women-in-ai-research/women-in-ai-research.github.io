@@ -24,7 +24,7 @@ function FooterBrand() {
       <h3 className="text-xl font-bold mb-4">
         Women in AI Research
       </h3>
-      <p className="text-teal-200">
+      <p className="text-purple-300">
         Highlighting the women shaping the future of AI research
       </p>
     </div>
@@ -57,7 +57,7 @@ function FooterSubscribe() {
           placeholder="Your email"
           className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
-        <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-r-md hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+        <button className="bg-gray-700 text-white px-4 py-2 rounded-r-md hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
           Subscribe
         </button>
       </div>

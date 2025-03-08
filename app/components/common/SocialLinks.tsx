@@ -5,7 +5,7 @@ export function SocialLinks({ className = "" }: { className?: string }) {
     <div className={`flex flex-wrap gap-4 ${className}`}>
       <a
         href="https://bsky.app/profile/wiair.bsky.social"
-        className="group text-gray-400 hover:text-cyan-400 transition-colors"
+        className="group text-gray-400 hover:text-purple-400 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Bluesky"
@@ -20,13 +20,13 @@ export function SocialLinks({ className = "" }: { className?: string }) {
             src={bskyIcon.src} 
             alt="" 
             className="w-8 h-8 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity"
-            style={{ filter: 'invert(48%) sepia(38%) saturate(3867%) hue-rotate(165deg) brightness(101%) contrast(101%)' }}
+            style={{ filter: 'invert(48%) sepia(38%) saturate(3867%) hue-rotate(280deg) brightness(101%) contrast(101%)' }}
           />
         </div>
       </a>
       <a
         href="https://www.linkedin.com/company/women-in-ai-research/"
-        className="text-gray-400 hover:text-blue-500 transition-colors"
+        className="text-gray-400 hover:text-purple-400 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"

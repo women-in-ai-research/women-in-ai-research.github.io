@@ -12,13 +12,13 @@ export function Navbar() {
   return (
     <nav className="backdrop-blur-xl bg-slate-900/90 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
+        <div className="flex justify-between h-28 py-2">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <img 
                 src={Logo.src} 
                 alt="Women in AI Research" 
-                className="h-12 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
           </div>
@@ -64,7 +64,7 @@ export function Navbar() {
             
             <a
               href="https://discord.gg/267DPacHT5"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2.5 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+              className="bg-gray-700 text-white px-6 py-2.5 rounded-full hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
               target="_blank"
               rel="noopener noreferrer"
             >

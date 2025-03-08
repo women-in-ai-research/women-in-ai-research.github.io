@@ -72,7 +72,7 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
                         {isTruncated && (
                             <button 
                                 onClick={() => setExpanded(!expanded)} 
-                                className="text-cyan-400 hover:text-cyan-300 mt-2 transition-colors font-medium"
+                                className="text-purple-300 hover:text-purple-200 mt-2 transition-colors font-medium"
                             >
                                 {expanded ? 'See less' : 'See more'}
                             </button>
@@ -98,7 +98,7 @@ export function GuestsSection() {
                 <GuestCard
                     image={AmandaCercasCurryPhoto}
                     name="Dr. Amanda Cercas Curry"
-                    title="Researcher at MilaNLP in Bocconi University, Italy."
+                    title="Researcher at CENTAI Institute, Italy."
                     bio="Dr. Amanda Cercas Curry is a researcher in CENTAI, where she is working on applied NLP, fairness and evaluation. Her research interests lie at the intersection of Natural Language Processing (NLP), Human-Computer Interaction (HCI) and Feminism with the aim of building more just NLP systems. She is particularly interested in ethics, with a strong influence from feminism. Previously she was a postdoctoral researcher at MilaNLP in Bocconi University. She completed her PhD at Heriot-Watt University in Edinburgh. She also co-hosts a podcast where she discusses all things tech ethics, called Let's Chat Ethics."
                 />
                 <GuestCard
@@ -106,12 +106,6 @@ export function GuestsSection() {
                     name="Aparna Balagopalan"
                     title="PhD student at MIT, USA."
                     bio="Aparna Balagopalan is a PhD student in the Department of Electrical Engineering and Computer Science (EECS) at MIT. Her research broadly focuses on developing fair, interpretable, and robust models by carefully re-evaluating and surfacing assumptions in machine learning-based measurements in socially-relevant contexts. Aparna has held research intern positions at the Stanford RegLab, the Max Planck Institute for Security and Privacy, the Technische Universität, Dresden as a DAAD-WISE scholar, and at the Philips Innovation Campus, Bengaluru in the healthcare R&D team."
-                />
-                <GuestCard
-                    image={AngelicaLimPhoto}
-                    name="Dr. Angelica Lim"
-                    title="Assistant Professor at Simon Fraser University, Canada."
-                    bio="Dr. Angelica Lim is an A.I. roboticist. She is an Assistant Professor in Computing Science at Simon Fraser University and leads the SFU Rosie Lab, where she builds artificial intelligence software for robots to interact with social intelligence and empathy. Her research addresses the question 'Could a robot have feelings?' by combining neuroscience, machine learning and developmental psychology. Angelica has a Ph.D. and M.Sc. in Computer Science from Kyoto University, Japan, specializing in AI applied to Robotics, and a B.Sc. in Computing Science (specializing in Artificial Intelligence) from Simon Fraser University in Canada. Before founding the Rosie Lab, Angelica worked on software teams at SoftBank and Aldebaran Robotics, where she assisted in the development of the infamous Pepper robot. She also previously worked as an intern software engineer and researcher at Google, Honda Research Institute Japan, and I3S-CNRS, France. She also served as a journalist for the IEEE Spectrum Automaton Robotics Blog. Passionate about diversity, she is also Director of the Invent the Future (AI4ALL) program for Canada. She has also developed the SFU Computer Science Teaching Toolkit, with the goal of inspiring people of all backgrounds to pursue Computing Science."
                 />
             </div>
         </div>
