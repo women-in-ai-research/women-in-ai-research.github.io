@@ -14,7 +14,7 @@ export function Hero() {
                     <span className="relative">Welcome to Women in AI Research</span>
                 </h1>
                 <h4 className="text-1xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
-                    New episodes released every three weeks on Wednesday at 12 pm EST.
+                    New episodes released every three weeks on Wednesday.
                 </h4>
                 <p className="text-md text-white mb-8 max-w-4xl mx-auto leading-relaxed text-justify">
                     Women in AI Research (WiAIR) is a podcast dedicated to celebrating the remarkable
