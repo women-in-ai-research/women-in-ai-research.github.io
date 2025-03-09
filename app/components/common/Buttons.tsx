@@ -7,6 +7,7 @@ export function YouTubeButton() {
       <a
           href="https://www.youtube.com/@WomeninAIResearch"
           className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
+          target="_blank"
       >
           <span className="flex items-center space-x-2 text-white">
               <YouTubeIcon />
@@ -19,8 +20,9 @@ export function YouTubeButton() {
 export function SpotifyButton() {
   return (
       <a
-          href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M"
+          href="https://creators.spotify.com/pod/show/wiair"
           className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
+          target="_blank"
       >
           <span className="flex items-center space-x-2 text-white">
               <SpotifyIcon />
