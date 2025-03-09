@@ -18,7 +18,7 @@ With the WiAIR podcast, our goal is to empower early career researchers, especia
 - [X (Twitter)](https://x.com/WiAIR_podcast)
 - [Bluesky](https://bsky.app/profile/wiair.bsky.social)
 - [YouTube](https://www.youtube.com/@WomeninAIResearch)
-- [Spotify](https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M)
+- [Spotify](https://creators.spotify.com/pod/show/wiair)
 - [Website](https://women-in-ai-research.github.io/)
 
 ## ⁠📅 Release Schedule 
