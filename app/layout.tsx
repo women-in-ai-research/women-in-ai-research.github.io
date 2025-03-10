@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://women-in-ai-research.github.io/images/logo.png",
-        width: 1200,
-        height: 630,
+        width: 2400,
+        height: 1260,
         alt: "Women in AI Research Podcast Logo",
       },
     ],
