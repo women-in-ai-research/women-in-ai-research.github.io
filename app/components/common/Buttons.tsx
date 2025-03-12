@@ -20,7 +20,7 @@ export function YouTubeButton() {
 export function SpotifyButton() {
   return (
       <a
-          href="https://creators.spotify.com/pod/show/wiair"
+          href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M"
           className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
           target="_blank"
       >
