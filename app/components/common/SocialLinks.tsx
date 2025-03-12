@@ -61,7 +61,7 @@ export function SocialLinks({ className = "" }: { className?: string }) {
         <i className="fa-brands fa-discord fa-2x"></i>
       </a>
       <a
-        href="https://creators.spotify.com/pod/show/wiair"
+        href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M"
         className="text-gray-400 hover:text-green-500 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
