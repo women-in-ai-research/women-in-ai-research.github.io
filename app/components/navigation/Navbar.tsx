@@ -18,9 +18,9 @@ export function Navbar() {
               <img 
                 src={Logo.src} 
                 alt="Women in AI Research" 
-                className="h-28 w-auto opacity-80 py-2"
-                width={200}
-                height={200}
+                className="h-40 w-auto opacity-80 -mt-4 pb-2"
+                width={400}
+                height={400}
               />
             </Link>
           </div>
