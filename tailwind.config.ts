@@ -22,7 +22,7 @@ const config: Config = {
 			// Custom color palette
 			wiair: {
 			darkest: '#1D0933',  // Darkest purple
-			dark: '#591B9B',     // Dark purple
+			dark: '#522095',     // Dark purple
 			medium: '#A56EE3',   // Medium purple
 			light: '#B380F2',    // Light purple
 			lightest: '#DACFE3', // Lightest purple

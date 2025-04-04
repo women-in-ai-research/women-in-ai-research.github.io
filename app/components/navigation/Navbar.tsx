@@ -1,7 +1,7 @@
 "use client";
 
 import { getPageUrl } from "@/app/components/common/urls";
-import Logo from '@/public/images/logo.svg'; // Make sure to add your logo image
+import Logo from '@/public/images/logo.png'; // Make sure to add your logo image
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
@@ -10,17 +10,15 @@ export function Navbar() {
   const isHomePage = pathname === '/';
   
   return (
-    <nav className="backdrop-blur-xl bg-wiair-dark/95 sticky top-0 z-50 shadow-xl border-b border-wiair-medium/30">
+    <nav className="backdrop-blur-xl bg-wiair-dark sticky top-0 z-50 shadow-xl border-b border-wiair-medium/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-auto py-2">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center justify-center">
               <img 
                 src={Logo.src} 
                 alt="Women in AI Research" 
-                className="h-40 w-auto opacity-80 -mt-4 pb-2"
-                width={400}
-                height={400}
+                className="h-40 w-auto opacity-100 my-auto"
               />
             </Link>
           </div>
