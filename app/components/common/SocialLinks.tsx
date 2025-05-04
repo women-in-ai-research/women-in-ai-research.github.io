@@ -69,6 +69,15 @@ export function SocialLinks({ className = "" }: { className?: string }) {
       >
         <i className="fa-brands fa-spotify fa-2x"></i>
       </a>
+      <a
+        href="https://podcasts.apple.com/ca/podcast/women-in-ai-research-wiair/id1805993416"
+        className="text-gray-400 hover:text-pink-500 transition-colors"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Apple Podcasts"
+      >
+        <i className="fa-brands fa-apple fa-2x"></i>
+      </a>
     </div>
   );
 } 

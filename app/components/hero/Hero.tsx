@@ -1,4 +1,4 @@
-import { SpotifyButton, YouTubeButton, RSSButton} from "@/app/components/common/Buttons";
+import { SpotifyButton, YouTubeButton, RSSButton, ApplePodcastsButton} from "@/app/components/common/Buttons";
 import { SocialLinks } from "@/app/components/common/SocialLinks";
 
 export function Hero() {
@@ -24,6 +24,7 @@ export function Hero() {
                 <div className="flex justify-center space-x-6 mb-12">
                     <YouTubeButton />
                     <SpotifyButton />
+                    <ApplePodcastsButton />
                 </div>
                 <div className="text-white text-md max-w-4xl mx-auto mb-12">
                     <p className="mb-6 text-justify text-md">
@@ -82,7 +83,8 @@ export function Hero() {
                             <span className="text-purple-400 mr-2">•</span>
                             <span>
                                 <strong>Subscription Information:</strong> Subscribe to WiAIR on{" "}
-                                <a href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M" className="text-green-500 hover:underline" target="_blank" rel="noopener noreferrer">Spotify</a> and join our{" "}
+                                <a href="https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M" className="text-green-500 hover:underline" target="_blank" rel="noopener noreferrer">Spotify</a>,{" "}
+                                <a href="https://podcasts.apple.com/ca/podcast/women-in-ai-research-wiair/id1805993416" className="text-pink-500 hover:underline" target="_blank" rel="noopener noreferrer">Apple Podcasts</a> and join our{" "}
                                 <a href="https://discord.gg/267DPacHT5" className="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">Discord</a>.
                             </span>
                         </li>

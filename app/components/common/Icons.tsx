@@ -22,3 +22,8 @@ export function RSSIcon() {
     </svg>
   );
 }
+export function AppleIcon() {
+  return (
+    <i className="fa-brands fa-apple fa-lg"></i>
+  );
+}

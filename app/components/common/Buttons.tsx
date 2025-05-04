@@ -1,5 +1,4 @@
-import { SpotifyIcon, RSSIcon, YouTubeIcon } from "./Icons";
-
+import { SpotifyIcon, RSSIcon, YouTubeIcon, AppleIcon } from "./Icons";
 
 
 export function YouTubeButton() {
@@ -27,6 +26,21 @@ export function SpotifyButton() {
           <span className="flex items-center space-x-2 text-white">
               <SpotifyIcon />
               <span>Listen on Spotify</span>
+          </span>
+      </a>
+  );
+}
+
+export function ApplePodcastsButton() {
+  return (
+      <a
+          href="https://podcasts.apple.com/ca/podcast/women-in-ai-research-wiair/id1805993416"
+          className="group relative px-8 py-4 bg-gray-700 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
+          target="_blank"
+      >
+          <span className="flex items-center space-x-2 text-white">
+              <AppleIcon />
+              <span>Listen on Apple Podcasts</span>
           </span>
       </a>
   );
