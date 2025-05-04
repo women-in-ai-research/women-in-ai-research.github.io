@@ -63,6 +63,14 @@ export function Navbar() {
             >
               Episodes
             </Link>
+            <Link
+              href="/announcements"
+              className={`text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
+                pathname === '/announcements' ? 'font-bold text-wiair-light' : ''
+              }`}
+            >
+              Announcements
+            </Link>
             
             {isHomePage ? (
               <a
@@ -120,6 +128,15 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Episodes
+            </Link>
+            <Link
+              href="/announcements"
+              className={`block text-center text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
+                pathname === '/announcements' ? 'font-bold text-wiair-light' : ''
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Announcements
             </Link>
             
             {isHomePage ? (
