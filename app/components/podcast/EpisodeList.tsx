@@ -9,6 +9,7 @@ interface EpisodeListProps {
     episodes: Episode[];
     loading: boolean;
     error: string | null;
+    limit?: number; // Add limit prop to control how many episodes to show
 }
 
 interface EpisodeCardProps {
@@ -145,13 +146,22 @@ function EpisodeCard({
     );
 }
 
-export function EpisodeList({ episodes, loading, error }: EpisodeListProps) {
-    // Filter episodes to only show those with visible=true
-    const visibleEpisodes = episodeData.filter(episode => episode.visible);
+export function EpisodeList({ episodes, loading, error, limit }: EpisodeListProps) {
+    // Filter episodes to only show those with visible=true and sort by newest first
+    // To sort by newest first, we're reversing the array (assuming the data is ordered chronologically)
+    const visibleEpisodes = episodeData
+        .filter(episode => episode.visible)
+        .sort((a, b) => {
+            // Sort by ID in descending order (assuming higher ID = newer episode)
+            return parseInt(b.id) - parseInt(a.id);
+        });
+    
+    // Apply limit if specified
+    const displayEpisodes = limit ? visibleEpisodes.slice(0, limit) : visibleEpisodes;
     
     return (
         <div className="grid grid-cols-1 gap-8">
-            {visibleEpisodes.map((episode) => (
+            {displayEpisodes.map((episode) => (
                 <EpisodeCard 
                     key={episode.id}
                     id={episode.id}

@@ -23,21 +23,12 @@ export function Navbar() {
             </Link>
           </div>
           <div className="flex items-center space-x-8">
-            {isHomePage ? (
-              <a
-                href="#episodes"
-                className="text-white hover:text-wiair-light transition-colors duration-300 text-lg"
-              >
-                Episodes
-              </a>
-            ) : (
-              <Link
-                href="/#episodes"
-                className="text-white hover:text-wiair-light transition-colors duration-300 text-lg"
-              >
-                Episodes
-              </Link>
-            )}
+            <Link
+              href="/episodes"
+              className="text-white hover:text-wiair-light transition-colors duration-300 text-lg"
+            >
+              Episodes
+            </Link>
             
             {isHomePage ? (
               <a
