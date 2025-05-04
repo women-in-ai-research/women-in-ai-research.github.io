@@ -1,19 +1,39 @@
 import { SpotifyButton, YouTubeButton, RSSButton, ApplePodcastsButton} from "@/app/components/common/Buttons";
 import { SocialLinks } from "@/app/components/common/SocialLinks";
+import { useState, useRef, useEffect } from "react";
 
 export function Hero() {
+    const [expanded, setExpanded] = useState(false);
+    const [isTruncated, setIsTruncated] = useState(false);
+    const descriptionRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const checkTruncation = () => {
+            if (descriptionRef.current) {
+                const { scrollHeight, clientHeight } = descriptionRef.current;
+                setIsTruncated(scrollHeight > clientHeight);
+            }
+        };
+        
+        checkTruncation();
+        window.addEventListener('resize', checkTruncation);
+        
+        return () => {
+            window.removeEventListener('resize', checkTruncation);
+        };
+    }, []);
+
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div className="text-center relative">
                 <div className="absolute inset-0 -z-10">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/30 rounded-full blur-[120px]"></div>
                     <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-[120px]"></div>
                 </div>
-                <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
-                    
+                <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
                     Welcome to Women in AI Research
                 </h1>
-                <h4 className="text-1xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
+                <h4 className="text-lg text-white mb-6 max-w-4xl mx-auto leading-relaxed">
                     New episodes released every three weeks on Wednesday.
                 </h4>
                 <p className="text-md text-white mb-8 max-w-4xl mx-auto leading-relaxed text-justify">
@@ -21,29 +41,42 @@ export function Hero() {
                     contributions of female AI researchers from around the globe. Our mission is to challenge the
                     prevailing perception that AI research is predominantly male-driven.
                 </p>
-                <div className="flex justify-center space-x-6 mb-12">
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-12">
                     <YouTubeButton />
                     <SpotifyButton />
                     <ApplePodcastsButton />
                 </div>
                 <div className="text-white text-md max-w-4xl mx-auto mb-12">
-                    <p className="mb-6 text-justify text-md">
-                        In WiAIR, we interview successful female AI researchers coming from diverse cultural
-                        backgrounds, showcasing their inspirational cutting-edge research and insights into the future
-                        of AI. Through these conversations, we explore their personal journeys - how they overcome
-                        unique challenges, balance careers and family life, and make difficult decisions when
-                        necessary. We aim to understand how women in AI research perceive success and what it
-                        takes to achieve their goals.
-                    </p>
-                    <p className="mb-6 text-justify text-md">
-                        With the WiAIR podcast, our goal is to empower early career researchers, especially women, to
-                        pursue their passion for AI and make an impact in this exciting rapidly growing field. You will
-                        learn from women at different career stages, stay updated on the latest research and
-                        advancements, hear powerful stories of overcoming obstacles and breaking stereotypes, and
-                        become part of the community that values diversity and inclusion in AI.
-                    </p>
+                    <div ref={descriptionRef} className={`relative ${expanded ? '' : 'max-h-24 sm:max-h-none overflow-hidden sm:overflow-visible'}`}>
+                        <p className="mb-6 text-justify text-md">
+                            In WiAIR, we interview successful female AI researchers coming from diverse cultural
+                            backgrounds, showcasing their inspirational cutting-edge research and insights into the future
+                            of AI. Through these conversations, we explore their personal journeys - how they overcome
+                            unique challenges, balance careers and family life, and make difficult decisions when
+                            necessary. We aim to understand how women in AI research perceive success and what it
+                            takes to achieve their goals.
+                        </p>
+                        <p className={`mb-6 text-justify text-md ${expanded ? '' : 'sm:block hidden'}`}>
+                            With the WiAIR podcast, our goal is to empower early career researchers, especially women, to
+                            pursue their passion for AI and make an impact in this exciting rapidly growing field. You will
+                            learn from women at different career stages, stay updated on the latest research and
+                            advancements, hear powerful stories of overcoming obstacles and breaking stereotypes, and
+                            become part of the community that values diversity and inclusion in AI.
+                        </p>
+                        {!expanded && isTruncated && (
+                            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-wiair-darkest to-transparent sm:hidden"></div>
+                        )}
+                    </div>
+                    {isTruncated && (
+                        <button 
+                            onClick={() => setExpanded(!expanded)} 
+                            className="text-wiair-light hover:text-wiair-lightest mt-2 transition-colors font-medium sm:hidden"
+                        >
+                            {expanded ? 'See less' : 'See more'}
+                        </button>
+                    )}
                 </div>
-                <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-purple-500/20 max-w-4xl mx-auto">
+                <div className="bg-white/10 backdrop-blur-md p-6 md:p-8 rounded-xl border border-purple-500/20 max-w-4xl mx-auto">
                     <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
                         Why Listen?
                     </h2>

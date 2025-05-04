@@ -53,6 +53,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100vw;
+    max-width: 100%;
   }
 }
 
