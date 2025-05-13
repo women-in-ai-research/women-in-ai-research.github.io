@@ -6,7 +6,7 @@ import { AnnouncementsList } from "@/app/components/announcements/AnnouncementsL
 import { useSocialFeed } from "@/app/hooks/useSocialFeed";
 
 export default function AnnouncementsPage() {
-    const FEED_URL = "https://rss.app/feeds/v1.1/BBtC4gdIy74rf6sf.json";
+    const FEED_URL = "https://rss.app/feeds/v1.1/ZT7xuOD7Yal2ZdQv.json";
     const { items, loading, error } = useSocialFeed(FEED_URL);
 
     return (

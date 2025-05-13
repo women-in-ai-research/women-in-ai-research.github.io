@@ -1,5 +1,5 @@
 import { FeedItem } from '@/app/types/socialFeed.types';
-import { format } from 'date-fns';
+import { format, isValid } from 'date-fns';
 import { useState } from 'react';
 
 interface AnnouncementCardProps {
@@ -8,7 +8,11 @@ interface AnnouncementCardProps {
 
 export function AnnouncementCard({ item }: AnnouncementCardProps) {
     const [imageLoadError, setImageLoadError] = useState(false);
-    const formattedDate = format(new Date(item.date_published), 'MMMM d, yyyy');
+    
+    // Add date validation
+    const dateObj = new Date(item.date_published);
+    const formattedDate = isValid(dateObj) ? format(dateObj, 'MMMM d, yyyy') : 'Date unavailable';
+    
     const authorName = item.authors[0]?.name || 'Unknown Author'; 
     const postUrl = item.url;
 
