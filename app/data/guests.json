@@ -29,6 +29,6 @@
     "title": "Assistant Professor at Simon Fraser University, Canada.",
     "bio": "Dr. Angelica Lim is an A.I. roboticist. She is an Assistant Professor in Computing Science at Simon Fraser University and leads the SFU Rosie Lab, where she builds artificial intelligence software for robots to interact with social intelligence and empathy. Her research addresses the question 'Could a robot have feelings?' by combining neuroscience, machine learning and developmental psychology. Angelica has a Ph.D. and M.Sc. in Computer Science from Kyoto University, Japan, specializing in AI applied to Robotics, and a B.Sc. in Computing Science (specializing in Artificial Intelligence) from Simon Fraser University in Canada.",
     "imageUrl": "/images/guests/headshot-angelica.png",
-    "visible": false
+    "visible": true
   }
 ] 
