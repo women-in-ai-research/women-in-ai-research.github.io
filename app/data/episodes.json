@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Ep.1: Limits of Transformers with Dr. Nouha Dziri",
+    "title": "Ep.1: Limits of Transformers, with Dr. Nouha Dziri",
     "description": "Interview with Dr. Nouha Dziri, a research scientist at Allen Institute for AI (AI2), USA.",
     "longDescription": "In this episode, we dive deep into the limitations of transformer models with Dr. Nouha Dziri, a research scientist at Allen Institute for AI (AI2). Dr. Dziri shares insights from her groundbreaking research on understanding the capabilities and constraints of large language models. We discuss the challenges in reasoning, factuality, and ethical considerations that come with deploying these powerful AI systems. This conversation explores both technical aspects and broader implications for the future of AI research.",
     "publishDate": "Mar 12, 2025",
@@ -14,7 +14,7 @@
   },
   {
     "id": "2",
-    "title": "Ep.2: Bias in AI with Dr. Amanda Cercas Curry",
+    "title": "Ep.2: Bias in AI, with Dr. Amanda Cercas Curry",
     "description": "Interview with Dr. Amanda Cercas Curry, a researcher at CENTAI Institute, Italy.",
     "longDescription": "Join us for an insightful conversation with Dr. Amanda Cercas Curry, a researcher at CENTAI Institute, as we explore the critical issue of bias in AI systems. Dr. Cercas Curry shares her expertise on identifying, measuring, and mitigating various forms of bias in language models and other AI applications. We discuss the social and ethical implications of biased AI, and how researchers are working to create more fair and inclusive systems. This episode highlights the importance of diverse perspectives in AI development and the ongoing challenges in the field.",
     "publishDate": "April 02, 2025",
@@ -27,7 +27,7 @@
   },
   {
     "id": "3",
-    "title": "Ep.3: Responsible AI for Health with Aparna Balagopalan",
+    "title": "Ep.3: Responsible AI for Health, with Aparna Balagopalan",
     "description": "Interview with Aparna Balagopalan, a PhD student at MIT, USA.",
     "longDescription": "This episode features Aparna Balagopalan, a brilliant PhD student at MIT, discussing the intersection of AI and healthcare. Aparna shares her research on developing fair, interpretable, and robust models for healthcare applications. We explore the unique challenges of applying AI in medical contexts, including data privacy, regulatory considerations, and the critical importance of model transparency. The conversation covers both technical innovations and ethical frameworks necessary for responsible AI deployment in healthcare settings.",
     "publishDate": "April 23, 2025",
@@ -40,12 +40,12 @@
   },
   {
     "id": "4",
-    "title": "Robots with Empathy with Dr. Angelica Lim",
+    "title": "Ep.4: Robots with Empathy, with Dr. Angelica Lim",
     "description": "Interview with Dr. Angelica Lim, Assistant Professor at Simon Fraser University, Canada.",
     "longDescription": "Can robots have feelings? In this fascinating episode, we speak with Dr. Angelica Lim, Assistant Professor at Simon Fraser University and leader of the SFU Rosie Lab. Dr. Lim discusses her pioneering work on developing artificial intelligence software that enables robots to interact with social intelligence and empathy. We explore the intersection of robotics, neuroscience, machine learning, and developmental psychology, and consider both the technical challenges and philosophical questions surrounding emotional AI. This conversation offers a glimpse into the future of human-robot interaction and the potential for machines to understand and respond to human emotions.",
-    "publishDate": "TBD",
-    "imageUrl": "/images/logo.png",
-    "imagePosition": "60% 40%",
+    "publishDate": "May 14, 2025",
+    "imageUrl": "/images/episodes/ep04-Angelica-snapshot.png",
+    "imagePosition": "70% 30%",
     "episodeLink": null,
     "youtubeLink": null,
     "spotifyLink": null,
