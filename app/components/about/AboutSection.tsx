@@ -24,6 +24,7 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
   const [isTruncated, setIsTruncated] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const bioRef = useRef<HTMLParagraphElement>(null);
+  const hiddenBioRef = useRef<HTMLParagraphElement>(null);
   
   useEffect(() => {
     const checkMobile = () => {
@@ -31,14 +32,21 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
     };
     
     const checkTruncation = () => {
-      if (bioRef.current) {
-        const { scrollHeight, clientHeight } = bioRef.current;
-        setIsTruncated(scrollHeight > clientHeight);
+      // Use a more reliable method to detect truncation
+      if (hiddenBioRef.current && bioRef.current) {
+        const fullHeight = hiddenBioRef.current.scrollHeight;
+        const visibleHeight = bioRef.current.clientHeight;
+        setIsTruncated(fullHeight > visibleHeight);
+      } else {
+        // Fallback: assume long text needs truncation
+        setIsTruncated(bio.length > 200);
       }
     };
     
     checkMobile();
-    checkTruncation();
+    
+    // Small delay to ensure DOM is ready
+    setTimeout(checkTruncation, 10);
     
     window.addEventListener('resize', checkMobile);
     window.addEventListener('resize', checkTruncation);
@@ -78,22 +86,36 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
             </p>
           )}
           <div className="text-gray-300 text-center md:text-left w-full">
+            {/* Hidden reference for measuring full text height */}
+            <p ref={hiddenBioRef} className="absolute opacity-0 pointer-events-none" aria-hidden="true">
+              {bio}
+            </p>
+            
             {/* Show nothing on mobile unless expanded */}
-            <div className={`relative ${!expanded && isMobile ? 'hidden sm:block' : ''} ${!expanded && !isMobile ? 'max-h-24 overflow-hidden' : ''}`}>
-              <p ref={bioRef} className={expanded || !isMobile ? '' : 'line-clamp-3'}>
+            <div className={`relative ${!expanded && isMobile ? 'hidden sm:block' : ''}`}>
+              <p 
+                ref={bioRef} 
+                className={
+                  expanded 
+                    ? '' 
+                    : isMobile 
+                      ? 'hidden' 
+                      : 'line-clamp-3'
+                }
+              >
                 {bio}
               </p>
               {!expanded && !isMobile && isTruncated && (
-                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-purple-900/60 to-transparent pointer-events-none"></div>
               )}
             </div>
             
-            {/* Always show the button on mobile, centered */}
+            {/* Show button when text is truncated or on mobile */}
             {(isTruncated || isMobile) && (
               <div className="flex justify-center md:justify-start">
                 <button 
                   onClick={() => setExpanded(!expanded)} 
-                  className="text-wiair-light hover:text-wiair-lightest mt-2 transition-colors font-medium"
+                  className="text-wiair-light hover:text-wiair-lightest mt-3 transition-colors font-medium text-sm"
                 >
                   {expanded ? 'See less' : 'See more'}
                 </button>
