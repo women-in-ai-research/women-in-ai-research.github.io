@@ -56,12 +56,12 @@
     "title": "Ep.5: Interpretable AI, with Dr. Faiza Khan Khattak",
     "description": "Interview with Dr. Faiza Khan Khattak, CTO at Monark Health, Canada.",
     "longDescription": "In this episode, we speak with Dr. Faiza Khan Khattak, , the CTO of an innovative AI startup, with a rich background in both academia and industry. We dive deep into her journey and expertise across: fairness, explainability, and social bias in AI; reasoning and interpretability in LLMs; operationalizing ML in healthcare, machine unlearning and adversarial attacks. This is a must-listen for anyone passionate about building ethical, transparent, and impactful AI systems.",
-    "publishDate": "May 14, 2025",
-    "imageUrl": "/images/episodes/ep04-Angelica-snapshot.png",
+    "publishDate": "June 4, 2025",
+    "imageUrl": "/images/episodes/ep05-Faiza-snapshot.png",
     "imagePosition": "70% 30%",
     "episodeLink": null,
-    "youtubeLink": "https://youtu.be/Z8VBnZmSUto?si=oH8BxWUDXKD47-8E",
-    "spotifyLink": "https://open.spotify.com/episode/4uUmVY6rnogOdIuctv8QGc",
+    "youtubeLink": "https://youtu.be/osHrYXwCvpQ?si=MRDU1yPer46QPe2Z",
+    "spotifyLink": "https://open.spotify.com/episode/24N4ntUwFG50YZS0V2XuwZ",
     "visible": true
-  },
+  }
 ] 
