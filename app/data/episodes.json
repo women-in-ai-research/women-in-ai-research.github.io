@@ -63,5 +63,18 @@
     "youtubeLink": "https://youtu.be/osHrYXwCvpQ?si=MRDU1yPer46QPe2Z",
     "spotifyLink": "https://open.spotify.com/episode/24N4ntUwFG50YZS0V2XuwZ",
     "visible": true
+  },
+  {
+    "id": "6",
+    "title": "Ep.6: Decentralized AI, with Wanru Zhao",
+    "description": "Interview with Wanru Zhao, PhD student at the University of Cambridge, UK.",
+    "longDescription": "In this episode, Wanru Zhao discusses decentralized and collaborative AI methods, the limitations of scaling laws, fine-tuning strategies, data attribution challenges in LLMs, and multilingual learning in federated settings—all while reflecting on her experiences across UK and Canadian research ecosystems. She also shares her academic journey, vision for the future of AI, and how she navigates research roadblocks with creativity and curiosity.",
+    "publishDate": "June 25, 2025",
+    "imageUrl": "/images/episodes/ep06-Wanru-snapshot.png",
+    "imagePosition": "70% 30%",
+    "episodeLink": null,
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ] 
