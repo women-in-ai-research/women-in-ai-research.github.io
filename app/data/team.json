@@ -16,7 +16,7 @@
     "visible": true
   },
   {
-    "id": "3",
+    "id": "5",
     "name": "Mary MacCarthy",
     "title": "Lead Producer & Marketing",
     "bio": "Mary is the Head of Product Marketing at Arcee AI, a fast-growing startup that pioneered small language models (SLMs) and intelligent model routing. She pivoted into tech after a long career as an international news correspondent. A proud solo mom, Mary is a fierce advocate for women in tech and is known for bringing a critical eye to the ethics (or lack thereof) in the industry.",
@@ -24,7 +24,7 @@
     "visible": true
   },
   {
-    "id": "4",
+    "id": "3",
     "name": "Anais Hristea",
     "title": "Lead Illustrator & Designer",
     "bio": "Anais is a talented graphic designer and illustrator who creates all the visual assets for the Women in AI Research podcast. With a background in digital art and design, she brings a unique aesthetic to the podcast's brand identity, from logo design to branding, ensuring a strong and professional look.",
@@ -32,7 +32,7 @@
     "visible": true
   },
   {
-    "id": "5",
+    "id": "4",
     "name": "Ali Akram",
     "title": "Technical Producer",
     "bio": "Ali is an experienced AI engineer and technical producer who ensures the podcast's technical quality. He handles audio editing, production, and technical aspects of the podcast, bringing years of experience in audio engineering and AI development. Ali also develops and maintains the podcast's website.",
