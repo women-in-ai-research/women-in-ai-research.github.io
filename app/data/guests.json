@@ -46,5 +46,13 @@
     "bio": "Wanru Zhao is a Ph.D. candidate in the Department of Computer Science and Technology at the University of Cambridge, where she is supervised by Prof. Nic Lane in the Cambridge Machine Learning Systems Lab (CaMLSys). Her research focuses on democratizing large model development through distributed learning, data curation, and modular model design. She develops frameworks that enable organizations to jointly train and adapt models across data silos and heterogenous compute, with the goal of making AI more accessible, efficient, and inclusive. Previously, she completed her M.Phil. in Advanced Computer Science from the University of Cambridge, graduating with Distinction.",
     "imageUrl": "/images/guests/wanru-headshot-sm.png",
     "visible": true
+  },
+  {
+    "id": "7",
+    "name": "Dr. Dieuwke Hupkes",
+    "title": "Research scientist at Meta AI Research",
+    "bio": "Dr. Dieuwke Hupkes is a research scientist at Meta AI Research. She completed her PhD in computational linguistics at the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam under Willem Zuidema, followed by a postdoc at the Amsterdam unit of ELLIS. Her PhD at the University of Amsterdam focused on hierarchy and interpretability in neural models, exploring how AI systems can help us understand human language processing. And when she is not researching computational linguistics, she is competing in pole dancing championships, where she won the Dutch national title in doubles in 2018.",
+    "imageUrl": "/images/guests/headshot-dieuwke.jpg",
+    "visible": true
   }
 ] 
