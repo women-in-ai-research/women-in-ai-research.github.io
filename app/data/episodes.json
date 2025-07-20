@@ -76,5 +76,31 @@
     "youtubeLink": "https://youtu.be/pq4km-unw_M?si=8cqtrtKJXVElPAhv",
     "spotifyLink": "https://open.spotify.com/episode/3qWkVdIu7PEsFWTaON1dK6",
     "visible": true
+  },
+    {
+    "id": "7",
+    "title": "Ep.7: Generalization in AI, with Dr. Dieuwke Hupkes",
+    "description": "Interview with Dr. Dieuwke Hupkes, Research Scientist at Meta AI Research.",
+    "longDescription": "A must-listen episode with Dr. Dieuwke Hupkes from Meta AI Research, diving into AI generalization, LLM robustness, and model evaluation in large language models. We explore how LLMs handle grammar and hierarchy, how they generalize across tasks and languages, and what consistency tells us about AI alignment. We also talk about Dieuwke’s journey from physics to NLP, the challenges of peer review, and sustaining a career in research—plus, how pole dancing helps with focus",
+    "publishDate": "July 16, 2025",
+    "imageUrl": "/images/episodes/ep07-snapshot.png",
+    "imagePosition": "70% 30%",
+    "episodeLink": null,
+    "youtubeLink": "https://youtu.be/CuTWIW1JcsA?si=xDtSM8nqA67sWZQR",
+    "spotifyLink": "https://open.spotify.com/episode/0KSR63CPjBzkC6KjkiJ4qS",
+    "visible": true
+  },
+  {
+    "id": "8",
+    "title": "Ep.8: LLM Hallucinations, with Dr. Abhilasha Ravichander",
+    "description": "Interview with Dr. Abhilasha Ravichander, a Postdoctoral Scholar at the University of Washington.",
+    "longDescription": "",
+    "publishDate": "August 6, 2025",
+    "imageUrl": "/images/episodes/ep07-snapshot.png",
+    "imagePosition": "70% 30%",
+    "episodeLink": null,
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": false
   }
 ] 
