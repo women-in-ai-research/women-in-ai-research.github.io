@@ -34,7 +34,7 @@
   {
     "id": "5",
     "name": "Dr. Faiza Khan Khattak",
-    "title": "CTO at Monark Health.",
+    "title": "CTO at Monark Health, Canada.",
     "bio": "Faiza is the Chief Technology Officer (CTO) of Monark Health, an innovative startup dedicated to leveraging AI to support individuals overcoming Alcohol Use Disorder (AUD), and she also works as an AI consultant. As a Natural Language Processing (NLP) scientist, Faiza specializes in fairness in language models, diverse NLP applications, and applied research, ensuring that AI technologies are equitable and inclusive. Faiza holds a Master’s and PhD in Computer Science from Columbia University. She further developed her expertise through postdoctoral research at the University Health Network (UHN) and St. Michael’s Hospital in Toronto and as a co-founder of a healthcare startup. She has also had the opportunity to teach as a sessional lecturer at the University of Toronto Scarborough. Her career spans both industry and academia, including roles as a Data Scientist at Manulife and an Applied Machine Learning Scientist at the Vector Institute for AI, where she has led cross-functional teams, directed collaborative research initiatives, and held workshops to bridge academic research with real-world applications. Her expertise extends to stakeholder engagement, AI adoption strategies, and mentoring junior team members. Faiza is also deeply committed to responsible AI development. She served as the lead organizer of the Responsible Language Models Workshop at the Association for the Advancement of Artificial Intelligence (AAAI) in 2024.",
     "imageUrl": "/images/guests/faiza-headshot.jpg",
     "visible": true
@@ -50,7 +50,7 @@
   {
     "id": "7",
     "name": "Dr. Dieuwke Hupkes",
-    "title": "Research scientist at Meta AI Research",
+    "title": "Research scientist at Meta AI Research, Netherlands",
     "bio": "Dr. Dieuwke Hupkes is a research scientist at Meta AI Research. She completed her PhD in computational linguistics at the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam under Willem Zuidema, followed by a postdoc at the Amsterdam unit of ELLIS. Her PhD at the University of Amsterdam focused on hierarchy and interpretability in neural models, exploring how AI systems can help us understand human language processing. And when she is not researching computational linguistics, she is competing in pole dancing championships, where she won the Dutch national title in doubles in 2018.",
     "imageUrl": "/images/guests/headshot-dieuwke.jpg",
     "visible": true
