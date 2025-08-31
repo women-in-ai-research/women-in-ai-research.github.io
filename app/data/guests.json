@@ -54,5 +54,21 @@
     "bio": "Dr. Dieuwke Hupkes is a research scientist at Meta AI Research. She completed her PhD in computational linguistics at the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam under Willem Zuidema, followed by a postdoc at the Amsterdam unit of ELLIS. Her PhD at the University of Amsterdam focused on hierarchy and interpretability in neural models, exploring how AI systems can help us understand human language processing. And when she is not researching computational linguistics, she is competing in pole dancing championships, where she won the Dutch national title in doubles in 2018.",
     "imageUrl": "/images/guests/headshot-dieuwke.jpg",
     "visible": true
+  },
+  {
+    "id": "8",
+    "name": "Dr. Abhilasha Ravichander",
+    "title": "Assistant Professor at the Max Planck Institute for Software Systems, Germany",
+    "bio": "Until recently, Abhilasha Ravichander was a postdoctoral scholar at the University of Washington, and now she is a faculty at the Max Planck Institute for Software Systems. She received her PhD from Carnegie Mellon University in 2022. Her research focuses on improving the robustness and transparency of large-scale language models.  Abhilasha’s work has been presented at several top NLP conferences, receiving Best Resource Paper Award at ACL 2024, Best Theme Paper Award at ACL 2024, Best Paper Award at the Mid-Atlantic Student Colloquium 2024, Best Paper Award at the SoCalNLP 2022 symposium, Best Paper Award at the NAACL 2025 TrustNLP Workshop, and Area Chair Favorite Paper award at COLING 2018.  She has been recognized as a "Rising Star in Generative AI" (2024), "Rising Star in EECS" (2022), and "Rising Star in Data Science" (2021).",
+    "imageUrl": "/images/guests/abhilasha-headshot.png",
+    "visible": true
+  },
+  {
+    "id": "9",
+    "name": "Sophia Simeng Han",
+    "title": "PhD student at Yale University and Research Intern at Meta FAIR, USA",
+    "bio": "Simeng Sophia Han is a final-year Ph.D. candidate at Yale University. focuses on LLM complex reasoning, neuro-symbolic reasoning and reasoning evaluation. Her recent work  "FOLIO: Natural Language Reasoning with First-Order Logic" has had a profound impact on improving language models’ reasoning capabilities. FOLIO helps assess models' performance on multi-step, graph-structured reasoning processes, setting a high bar for reasoning evaluation and highlighting the gap between human-like logical reasoning and current LLM complex reasoning capabilities, encouraging ongoing advancements in NLP to bridge this gap. Outside of research, she deeply enjoys mentoring students, organizing conferences and workshops, and contributing to a more inclusive computer science community. She is also a chair for Widening NLP from 2025 to 2027. Beyond academia, Simeng is currently engaged in foundational research on LLM reasoning at Meta GenAI frontier reasoning team. She has also previously worked on information retrieval at Google Deepmind and retrieval-augmented generation at AWS NLP group.",
+    "imageUrl": "/images/guests/simeng-headshot.jpg",
+    "visible": true
   }
 ] 
