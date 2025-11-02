@@ -70,5 +70,37 @@
     "bio": "Simeng Sophia Han is a final-year Ph.D. candidate at Yale University. She focuses on LLM complex reasoning, neuro-symbolic reasoning and reasoning evaluation. Her recent work on the FOLIO benchmark has had a profound impact on improving language models' reasoning capabilities. Outside of research, she deeply enjoys mentoring students, organizing conferences and workshops, and contributing to a more inclusive computer science community. She is also a chair for Widening NLP from 2025 to 2027. Beyond academia, Simeng is currently engaged in foundational research on LLM reasoning at Meta GenAI frontier reasoning team. She has also previously worked on information retrieval at Google Deepmind and retrieval-augmented generation at AWS NLP group.",
     "imageUrl": "/images/guests/simeng-headshot.jpg",
     "visible": true
+  },
+  {
+    "id": "10",
+    "name": "Valentina Pyatkin",
+    "title": "Postdoc at the Allen Institute for AI and the University of Washington, USA",
+    "bio": "Valentina Pyatkin is a postdoctoral researcher at the Allen Institute for AI and the University of Washington, advised by Prof. Hanna Hajishirzi. She is additionally supported by an Eric and Wendy Schmidt Postdoctoral Award. She obtained her PhD in Computer Science from the NLP lab at Bar Ilan University. Her work has been awarded an ACL Outstanding Paper Award and the ACL Best Theme Paper Award. During her doctoral studies, she conducted research internships at Google and the Allen Institute for AI, where she received the AI2 Outstanding Intern of the Year Award. She holds an MSc in AI from the University of Edinburgh and a BA from the University of Zurich. Valentina's research focuses on post-training and the adaptation of language models.",
+    "imageUrl": "/images/guests/valentina-headshot.jpg",
+    "visible": true
+  },
+  {
+    "id": "11",
+    "name": "Ana Marasović",
+    "title": "Assistant professor at the University of Utah, USA",
+    "bio": "Ana Marasović is an Assistant Professor in the Kahlert School of Computing at the University of Utah. Her research interests broadly fall into natural language processing (NLP), human-centered AI, and interpretability. Previously, she was a Young Investigator at the Allen Institute for AI, and during that time, also held a courtesy appointment in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. She received her PhD from Heidelberg University. She is a co-recipient of the Best Paper Award at ACL 2023, the Best Paper Honorable Mention at ACL 2020, and the Best Paper Award at the SoCal 2022 NLP Symposium. She is also the University of Utah One-U Responsible AI Initiative Faculty Fellow.",
+    "imageUrl": "/images/guests/ana-headshot.jpg",
+    "visible": true
+  },
+  {
+    "id": "12",
+    "name": "Vered Shwartz",
+    "title": "Assistant professor at the University of British Columbia, Canada",
+    "bio": "Vered Shwartz is an Assistant Professor of Computer Science at the University of British Columbia, and a CIFAR AI Chair at the Vector Institute. My research interests focus on natural language processing, with the fundamental goal of building models capable of human-level understanding of natural language. My lab is currently working on testing and improving the capabilities of large language models and vision and language models, developing culturally-competent AI, and responsible NLP applications in sensitive domains (e.g., legal, medical).",
+    "imageUrl": "/images/guests/vered-headshot.jpg",
+    "visible": true
+  },
+  {
+    "id": "13",
+    "name": "Annie En-Shiun Lee",
+    "title": "Assistant professor at the OntarioTech University and the University of Toronto (status-only), Canada",
+    "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
+    "imageUrl": "/images/guests/annie-headshot.jpg",
+    "visible": false
   }
 ] 
