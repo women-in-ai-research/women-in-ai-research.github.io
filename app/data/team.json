@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Jekaterina Novikova",
-    "title": "Founder & Co-Host",
+    "title": "Founder & Host",
     "bio": "Dr. Jekaterina Novikova is the AI researcher with over 10 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science from the University of Bath and has an extensive international experience working in the academia, industry and non-profits. She was recognized as one of the Top 50 Most Extraordinary Women Advancing AI In 2024, Top 25 Women in AI in Canada in 2022, received the \"Industry Icon Award\" by the University of Toronto in 2021, and included in the list of 30 Influential Women Advancing AI in Canada in 2018.",
     "imageUrl": "/images/about/jekaterina-novikova.jpg",
     "visible": true
@@ -42,7 +42,7 @@
   {
     "id": "6",
     "name": "Mary MacCarthy",
-    "title": "Lead Producer & Marketing",
+    "title": "Producer & Marketing",
     "bio": "Mary is the Head of Product Marketing at Arcee AI, a fast-growing startup that pioneered small language models (SLMs) and intelligent model routing. She pivoted into tech after a long career as an international news correspondent. A proud solo mom, Mary is a fierce advocate for women in tech and is known for bringing a critical eye to the ethics (or lack thereof) in the industry.",
     "imageUrl": "/images/about/mary-maccarthy.jpg",
     "visible": true
