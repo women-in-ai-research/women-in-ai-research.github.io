@@ -93,7 +93,12 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
 
 export function GuestsSection() {
     // Filter guests to only show those with visible=true
-    const visibleGuests = guestsData.filter(guest => guest.visible);
+    const visibleGuests = guestsData
+        .filter(guest => guest.visible)
+        .sort((a, b) => {
+            // Sort by ID in descending order (assuming higher ID = newer guest)
+            return parseInt(b.id) - parseInt(a.id);
+        });
     
     return (
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
