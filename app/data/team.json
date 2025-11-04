@@ -33,6 +33,14 @@
   },
   {
     "id": "5",
+    "name": "Parnian Fazel",
+    "title": "Technical Content Creator",
+    "bio": "Parnian is pursuing her MSc in Computing (Artificial Intelligence & Machine Learning) at Imperial College London. She holds a bachelor's degree in Computer Engineering from the University of Tehran. She contributes to the Women in AI Research podcast as a technical content creator, where she helps turn complex ideas into clear and engaging content.",
+    "imageUrl": "/images/about/parnian-fazel.jpg",
+    "visible": true
+  },
+  {
+    "id": "6",
     "name": "Ali Akram",
     "title": "Technical Producer",
     "bio": "Ali is an experienced AI engineer and technical producer who ensures the podcast's technical quality. He handles audio editing, production, and technical aspects of the podcast, bringing years of experience in audio engineering and AI development. Ali also develops and maintains the podcast's website.",
@@ -40,7 +48,7 @@
     "visible": true
   },
   {
-    "id": "6",
+    "id": "7",
     "name": "Mary MacCarthy",
     "title": "Producer & Marketing",
     "bio": "Mary is the Head of Product Marketing at Arcee AI, a fast-growing startup that pioneered small language models (SLMs) and intelligent model routing. She pivoted into tech after a long career as an international news correspondent. A proud solo mom, Mary is a fierce advocate for women in tech and is known for bringing a critical eye to the ethics (or lack thereof) in the industry.",
