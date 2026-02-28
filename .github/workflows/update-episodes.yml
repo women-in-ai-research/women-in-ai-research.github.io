@@ -1,0 +1,46 @@
+name: Update episodes from RSS
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-episodes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Fetch RSS and generate episodes.json
+        run: yarn update-episodes
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet app/data/episodes.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add app/data/episodes.json
+          git commit -m "chore: update episodes from RSS feed"
+          git push
