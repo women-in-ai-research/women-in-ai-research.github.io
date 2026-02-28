@@ -5,12 +5,8 @@ import { Hero } from "@/app/components/hero/Hero";
 import { EpisodeList } from "@/app/components/podcast/EpisodeList";
 import { AboutSection } from "@/app/components/about/AboutSection";
 import { Footer } from "@/app/components/footer/Footer";
-import { usePodcastFeed } from "@/app/hooks/usePodcastFeed";
 
 export default function Page() {
-  const RSS_URL = "https://anchor.fm/s/100f18168/podcast/rss";
-    const { episodes, loading, error } = usePodcastFeed(RSS_URL, 3);
-    
     return (
         <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest">
       <Navbar />
@@ -23,7 +19,7 @@ export default function Page() {
                 <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-wiair-medium to-wiair-light mb-12 text-center">
           Latest Episodes
                 </h2>
-                <EpisodeList episodes={episodes} loading={loading} error={error} limit={3} />
+                <EpisodeList limit={3} />
                 <div className="text-center mt-8">
                   <a 
                     href="/episodes" 

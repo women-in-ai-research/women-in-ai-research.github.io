@@ -2,14 +2,10 @@
 
 
 import { useState, useRef, useEffect } from 'react';
-import { Episode } from '@/lib/types/podcast.types';
 import episodeData from '@/app/data/episodes.json';
 
 interface EpisodeListProps {
-    episodes: Episode[];
-    loading: boolean;
-    error: string | null;
-    limit?: number; // Add limit prop to control how many episodes to show
+    limit?: number;
 }
 
 interface EpisodeCardProps {
@@ -146,7 +142,7 @@ function EpisodeCard({
     );
 }
 
-export function EpisodeList({ episodes, loading, error, limit }: EpisodeListProps) {
+export function EpisodeList({ limit }: EpisodeListProps) {
     // Filter episodes to only show those with visible=true and sort by newest first
     // To sort by newest first, we're reversing the array (assuming the data is ordered chronologically)
     const visibleEpisodes = episodeData

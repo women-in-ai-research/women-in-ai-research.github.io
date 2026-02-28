@@ -12,7 +12,9 @@
         "format": "prettier --write .",
         "export": "next build",
         "deploy": "gh-pages -d out",
-        "serve": "serve out -l 3000"
+        "serve": "serve out -l 3000",
+        "update-episodes": "npx tsx scripts/generate-episodes.ts",
+        "prebuild": "npx tsx scripts/generate-episodes.ts"
     },
     "dependencies": {
         "@radix-ui/react-slot": "^1.1.0",

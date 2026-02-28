@@ -3,11 +3,8 @@
 import { Navbar } from "@/app/components/navigation/Navbar";
 import { EpisodeList } from "@/app/components/podcast/EpisodeList";
 import { Footer } from "@/app/components/footer/Footer";
-import { usePodcastFeed } from "@/app/hooks/usePodcastFeed";
 
 export default function EpisodesPage() {
-  const RSS_URL = "https://anchor.fm/s/100f18168/podcast/rss";
-  const { episodes, loading, error } = usePodcastFeed(RSS_URL);
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest">
@@ -26,7 +23,7 @@ export default function EpisodesPage() {
 
       {/* Episodes Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <EpisodeList episodes={episodes} loading={loading} error={error} />
+        <EpisodeList />
       </div>
 
       {/* Footer */}
