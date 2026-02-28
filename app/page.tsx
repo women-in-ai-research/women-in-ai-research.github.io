@@ -8,7 +8,7 @@ import { Footer } from "@/app/components/footer/Footer";
 import { usePodcastFeed } from "@/app/hooks/usePodcastFeed";
 
 export default function Page() {
-  const RSS_URL = "https://anchor.fm/s/1e4a0eac/podcast/rss";
+  const RSS_URL = "https://anchor.fm/s/100f18168/podcast/rss";
     const { episodes, loading, error } = usePodcastFeed(RSS_URL, 3);
     
     return (

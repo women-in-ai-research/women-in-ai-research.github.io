@@ -49,7 +49,7 @@ export function ApplePodcastsButton() {
 export function RSSButton() {
     return (
       <a
-        href="https://anchor.fm/s/1e4a0eac/podcast/rss"
+        href="https://anchor.fm/s/100f18168/podcast/rss"
         className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gray-700 hover:bg-orange-600 rounded-full transition-all duration-300 shadow-lg hover:shadow-orange-600/25 flex justify-center"
         target="_blank"
       >
