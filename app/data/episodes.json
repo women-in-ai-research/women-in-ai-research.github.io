@@ -232,5 +232,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "19",
+    "title": "Ep.19: Does Liking Yellow Make You a School Bus Driver? Hidden Failures in LLMs, with Dr. Hila Gonen",
+    "description": "In this conversation, Dr. Hila Gonen (Assistant Professor at the University of British Columbia) joins us to explore the deep insights into how large language models (LLMs) leak semantic information,...",
+    "longDescription": "In this conversation, Dr. Hila Gonen (Assistant Professor at the University of British Columbia) joins us to explore the deep insights into how large language models (LLMs) leak semantic information, behave across languages, and how researchers can uncover their root causes. Dr. Gonen shares her journey in interpreting AI systems, addressing biases, and controlling model outputs for safer, fairer applications.In this episode:The influence of prompt elements, like colour, on model predictionsHow semantic leakage impacts model outputs unintentionallyThe role of multilinguality and modality in model safety and behaviourInterventional vs. observational approaches to understanding modelsChallenges in controlling and aligning AI behavior across languages and domainsFuture directions in model interpretability, safety, and causal analysisKey Topics:Color and semantic influence on language model completionsThe concept of semantic leakage and examples from real promptsDifferences between bias, hallucination, and leakage failuresUnintended behaviours discovered through experimentationThe importance of model interpretability and transparencyRoots of behaviour: training data and internal representationsInterventional analysis as a causal tool in NLP researchCross-lingual and cross-modal alignment in safety detectionChallenges in evaluating safety across languages and modalitiesStrategies for building robust controls against unseen attack typesThe future of AI research: combining performance with reliability and safetyEthical considerations: avoiding directions that hinder societal benefitsResources & Links:Lipstick on a Pig: Debiasing Methods Cover up Systematic Gender Biases in Word Embeddings But do not Remove ThemDoes Liking Yellow Imply Driving a School Bus? Semantic Leakage in Language ModelsRewriting History: A Recipe for Interventional Analyses to Study Data Effects on Model BehaviorOMNIGUARD: An Efficient Approach for AI Safety Moderation Across Modalities and LanguagesConnect with Dr. Hila Gonen:LinkedInhttps://x.com/hila_gonenNote: This episode emphasizes practical and theoretical challenges in model interpretability, safety, bias detection, and causality—providing a comprehensive view suitable for researchers, practitioners, and AI enthusiasts interested in responsible AI development.🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.⁠⁠WiAIR website⁠⁠Follow us at:⁠⁠LinkedIn⁠⁠⁠⁠Bluesky⁠⁠⁠⁠X (Twitter)",
+    "publishDate": "March 4, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/116384643/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-4%2F419279883-44100-2-98fb414c56849.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
