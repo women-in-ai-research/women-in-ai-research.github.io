@@ -3,7 +3,7 @@ import { SocialLinks } from "@/app/components/common/SocialLinks";
 
 export function Footer() {
   return (
-    <footer className="backdrop-blur-xl bg-black/50 text-white py-16 border-t border-wiair-medium/20">
+    <footer className="backdrop-blur-xl bg-black/50 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8">
           <FooterBrand />
@@ -11,7 +11,7 @@ export function Footer() {
           {/* <FooterSubscribe /> */}
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; 2025 Women in AI Research Podcast. All rights reserved.</p>
+          <p>&copy; 2026 Women in AI Research Podcast. All rights reserved.</p>
         </div>
       </div>
     </footer>

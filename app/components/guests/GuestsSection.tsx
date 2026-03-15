@@ -42,10 +42,10 @@ function GuestCard({ image, name, title, bio }: GuestCardProps) {
     }, [bio]);
 
     return (
-        <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-wiair-medium/20">
+        <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:bg-white/[0.12] transition-all duration-300">
             <div className="flex flex-col md:flex-row gap-5 items-start">
                 {/* Fixed square image - left side */}
-                <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
+                <div className="w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 rounded-xl shrink-0 overflow-hidden">
                     {image ? (
                         <img 
                             src={image}
@@ -101,7 +101,7 @@ export function GuestsSection() {
         });
     
     return (
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
             <div className="grid grid-cols-1 gap-8">
                 {visibleGuests.map((guest: Guest) => (
                     <GuestCard 

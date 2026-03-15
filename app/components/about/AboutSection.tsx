@@ -58,10 +58,10 @@ function TeamMemberCard({ image, name, title, bio }: TeamMemberCardProps) {
   }, [bio]);
 
   return (
-    <div className="bg-white/10 backdrop-blur-xl p-5 rounded-lg shadow-md border border-wiair-medium/20">
+    <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:bg-white/[0.12] transition-all duration-300">
       <div className="flex flex-col md:flex-row gap-5 items-center md:items-start">
         {/* Fixed square image - larger on mobile, centered */}
-        <div className="w-40 h-40 md:w-40 md:h-40 mx-auto md:mx-0 rounded-lg shrink-0 overflow-hidden">
+        <div className="w-40 h-40 md:w-40 md:h-40 mx-auto md:mx-0 rounded-xl shrink-0 overflow-hidden">
           {image ? (
             <img 
               src={image}
@@ -133,10 +133,19 @@ export function AboutSection() {
   const visibleTeamMembers = teamData.filter(member => member.visible);
   
   return (
-    <div id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-wiair-medium to-wiair-light mb-12 text-center">
-        About Us
-      </h2>
+    <div id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative">
+      <div className="absolute left-0 top-1/3 w-[300px] h-[300px] bg-pink-500/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="text-center mb-16 relative z-10">
+        <p className="text-wiair-light text-sm font-semibold tracking-widest uppercase mb-3">
+          The Team
+        </p>
+        <h2 className="text-4xl font-bold text-white mb-4">
+          About Us
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto">
+          Meet the people behind Women in AI Research.
+        </p>
+      </div>
       <div className="grid grid-cols-1 gap-8">
         {visibleTeamMembers.map((member: TeamMember) => (
           <TeamMemberCard

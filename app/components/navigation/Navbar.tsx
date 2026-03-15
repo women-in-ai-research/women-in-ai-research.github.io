@@ -96,7 +96,15 @@ export function Navbar() {
             >
               Guests
             </Link>
-            
+            <Link
+              href="/mentorship"
+              className={`text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
+                pathname === '/mentorship' ? 'font-bold text-wiair-light' : ''
+              }`}
+            >
+              Mentorship Lab
+            </Link>
+
             <a
               href="https://discord.gg/267DPacHT5"
               className="bg-gray-700 text-white px-6 py-2.5 rounded-full hover:bg-wiair-medium transition-all duration-300 shadow-lg hover:shadow-wiair-medium/25"
@@ -166,7 +174,16 @@ export function Navbar() {
             >
               Guests
             </Link>
-            
+            <Link
+              href="/mentorship"
+              className={`block text-center text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
+                pathname === '/mentorship' ? 'font-bold text-wiair-light' : ''
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Mentorship Lab
+            </Link>
+
             <div className="text-center">
               <a
                 href="https://discord.gg/267DPacHT5"
