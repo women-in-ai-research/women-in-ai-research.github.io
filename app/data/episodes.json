@@ -245,5 +245,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "20",
+    "title": "Ep.20: EACL 2026: Do LLMs Spread Misinformation Better Than Humans?",
+    "description": "What happens when humans and large language models try to persuade each other?In this episode of Women in AI Research, we sit down with Angana Borah (University of Michigan) to unpack her EACL 2026...",
+    "longDescription": "What happens when humans and large language models try to persuade each other?In this episode of Women in AI Research, we sit down with Angana Borah (University of Michigan) to unpack her EACL 2026 paper on misinformation, persuasion, and demographic effects in human–LLM interactions.Paper: https://arxiv.org/abs/2503.02038Key insights from the paper:LLM-generated persuasion can reduce human accuracy in identifying true vs false informationSome demographic groups are more susceptible to misinformation than othersHuman-written persuasion can actually improve LLM reasoning (in some cases)LLM agents can form echo chambers, mirroring human group dynamicsHomogeneous groups → higher risk of misinformation propagationEven more surprising:LLMs often score higher than humans on linguistic persuasion metrics — raising serious questions about their role in shaping beliefs.We also discuss:Can LLMs simulate human susceptibility to misinformationWhat happens in multi-turn persuasion scenarios?Where this research is heading next—and what it means for AI safetyAngana Borah:https://x.com/AnganaBorah2https://blueskydirectory.com/profiles/anganaborah.bsky.sociahttps://www.linkedin.com/in/anganaborah/👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "March 23, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/117329224/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-23%2F420566923-44100-2-cf4232c98df37.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
