@@ -258,5 +258,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "21",
+    "title": "Ep.21: EACL 2026: Inference-Time Steering Is Riskier Than You Think",
+    "description": "Are the techniques we use to control language models quietly making them less safe?Paper: https://arxiv.org/abs/2602.06256In this EACL 2026 paper, Navita Goyal (University of Maryland) challenges a...",
+    "longDescription": "Are the techniques we use to control language models quietly making them less safe?Paper: https://arxiv.org/abs/2602.06256In this EACL 2026 paper, Navita Goyal (University of Maryland) challenges a core assumption behind inference-time interventions: that we can precisely steer model behaviour without unintended side effects.▶️ Key insight:While steering methods improve target behaviours (like reducing over-refusal), they significantly weaken robustness — especially under adversarial prompts and jailbreaks.⚠️ The result?Models become more vulnerable exactly where safety matters most.We also discuss:Why current steering methods lack true specificityThe overlooked gap between in-distribution vs. robust evaluationEvidence of systematic vulnerabilities introduced by steeringA new perspective on disentangling model representationsNavita Goyal:https://x.com/navitagoyal_https://bsky.app/profile/navitagoyal.bsky.socialhttps://navitagoyal.github.io/👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "March 25, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/117437656/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-25%2F420713219-44100-2-9aeeca1817cce.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
