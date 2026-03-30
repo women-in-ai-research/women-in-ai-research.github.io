@@ -274,7 +274,7 @@
   },
   {
     "id": "22",
-    "title": "Ep.22: EACL 2026:",
+    "title": "Ep.22: EACL 2026: Why Your LLM Needs Math to Think Better",
     "description": "What if adding math data actually improves reasoning in non-math tasks?In this episode of #WiAIRpodcast, Syeda from the Carnegie Mellon University and NVIDIA presents Nemotron CrossThink (EACL 2026...",
     "longDescription": "What if adding math data actually improves reasoning in non-math tasks?In this episode of #WiAIRpodcast, Syeda from the Carnegie Mellon University and NVIDIA presents Nemotron CrossThink (EACL 2026 Oral) - a framework that challenges how we train LLMs for reasoning.Paper: https://arxiv.org/abs/2504.13941Key insights you don’t want to miss:Why multi-domain training beats specialized modelsThe surprising role of math in improving general reasoningHow to get +performance with ~40% less dataWhy harder training samples are better than more dataHow LLMs learn adaptive reasoning strategies across tasksEven more interesting:CrossThink models use 28% fewer tokens → cheaper inferenceThey outperform math-only models on reasoning tasksResults generalize across model familiesSyeda:https://x.com/__SyedaAkterhttps://bsky.app/profile/reasyaay.bsky.socialhttps://www.linkedin.com/in/syeda-nahida-akter-989770114/👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
     "publishDate": "March 27, 2026",
