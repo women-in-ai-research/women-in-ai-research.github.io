@@ -274,13 +274,26 @@
   },
   {
     "id": "22",
-    "title": "Ep.22: EACL 2026:",
+    "title": "Ep.22: EACL 2026: Why Your LLM Needs Math to Think Better",
     "description": "What if adding math data actually improves reasoning in non-math tasks?In this episode of #WiAIRpodcast, Syeda from the Carnegie Mellon University and NVIDIA presents Nemotron CrossThink (EACL 2026...",
     "longDescription": "What if adding math data actually improves reasoning in non-math tasks?In this episode of #WiAIRpodcast, Syeda from the Carnegie Mellon University and NVIDIA presents Nemotron CrossThink (EACL 2026 Oral) - a framework that challenges how we train LLMs for reasoning.Paper: https://arxiv.org/abs/2504.13941Key insights you don’t want to miss:Why multi-domain training beats specialized modelsThe surprising role of math in improving general reasoningHow to get +performance with ~40% less dataWhy harder training samples are better than more dataHow LLMs learn adaptive reasoning strategies across tasksEven more interesting:CrossThink models use 28% fewer tokens → cheaper inferenceThey outperform math-only models on reasoning tasksResults generalize across model familiesSyeda:https://x.com/__SyedaAkterhttps://bsky.app/profile/reasyaay.bsky.socialhttps://www.linkedin.com/in/syeda-nahida-akter-989770114/👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
     "publishDate": "March 27, 2026",
     "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
     "imagePosition": "center center",
     "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/117561361/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-27%2F420880809-44100-2-816aee65bdb7d.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
+  },
+  {
+    "id": "23",
+    "title": "Ep.23: EACL 2026: You're Using Persona Prompting Wrong",
+    "description": "How much control do persona prompts actually give us over LLM behaviour?In this episode of #WiAIRpodcast, Jing Yang (TU Berlin) speaks about the study on persona prompting in socially sensitive...",
+    "longDescription": "How much control do persona prompts actually give us over LLM behaviour?In this episode of #WiAIRpodcast, Jing Yang (TU Berlin) speaks about the study on persona prompting in socially sensitive tasks, including hate speech detection, sentiment analysis, and commonsense reasoning.Paper: https://arxiv.org/abs/2601.20757The paper takes a closer look at a common assumption: that adding demographic or identity-based personas can help align model outputs with different user groups.In this conversation, we discuss:Whether persona prompting meaningfully changes model predictionsWhy simulated personas don’t necessarily align with real-world demographicsThe gap between improving labels vs. improving model rationalesEvidence that LLMs may systematically over-predict harmful contentWhat this means for synthetic data generation and evaluation practicesOne of the key takeaways is that persona prompting has limited effect as a steering mechanism in these settings ,and should be applied with care, especially in high-stakes or socially sensitive applications.Jing Yang:https://www.linkedin.com/in/jing-yang-7b07aa135👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "March 30, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/117664925/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-30%2F421018690-44100-2-aa10631f82b3e.mp3",
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
