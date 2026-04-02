@@ -297,5 +297,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "24",
+    "title": "Ep.24: EACL 2026: From Paraphrases to Diagnostics: A Fine-Grained Framework for LLM Auditing",
+    "description": "LLMs often give different answers to the same question, just phrased differently. But how do we measure and understand this behaviour rigorously?In this episode of the #WiAIRpodcast, Cléa Chataigner...",
+    "longDescription": "LLMs often give different answers to the same question, just phrased differently. But how do we measure and understand this behaviour rigorously?In this episode of the #WiAIRpodcast, Cléa Chataigner (Mila, McGill) presents AUGMENT, a user-grounded, controlled paraphrasing framework for auditing prompt sensitivity in large language models, accepted as an oral at EACL 2026.Paper: https://arxiv.org/abs/2505.03563Instead of relying on noisy, unconstrained paraphrasing, AUGMENT introduces:Structured, linguistically grounded paraphrase types (e.g., voice, style, dialect)A guided generation + automated quality control pipelineFine-grained analysis of how specific linguistic variations impact model behaviourKey insights:Different paraphrase types can shift model performance in opposite directionsStandard baselines can hide critical failure modesEven strong LLMs struggle with certain transformations (e.g., voice changes)Evaluated across:Bias benchmarks (BBQ)Knowledge tasks (MMLU)Multiple open-source model familiesCléa:https://scholar.google.com/citations?user=NdToDmMAAAA👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "April 1, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/117780576/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-1%2F421174353-44100-2-e90a3ba55a103.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
