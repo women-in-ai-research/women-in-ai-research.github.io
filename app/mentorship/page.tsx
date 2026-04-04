@@ -49,10 +49,12 @@ export default function MentorshipPage() {
               Apply as Mentee
             </a>
             <a
-              href="#about"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-full hover:bg-white/20 transition-all duration-300 text-center font-semibold"
             >
-              Learn More
+              Apply as Mentor
             </a>
           </div>
 
