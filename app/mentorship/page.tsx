@@ -41,10 +41,12 @@ export default function MentorshipPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
             <a
-              href="#apply"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeWrzrQf6x8JqGz-MfmhStsDXnjJCnatrqjVmDXGBCcRhPBTg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative bg-gradient-to-r from-wiair-medium to-purple-500 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-wiair-medium/25 hover:shadow-xl hover:shadow-wiair-medium/40 text-center font-semibold hover:-translate-y-0.5"
             >
-              Apply for Mentorship
+              Apply as Mentee
             </a>
             <a
               href="#about"
@@ -246,7 +248,7 @@ export default function MentorshipPage() {
                   />
                 </div>
                 <span className="inline-block text-xs font-semibold bg-gradient-to-r from-wiair-medium to-purple-500 text-white px-3 py-1 rounded-full mb-3">
-                  Lead Mentor
+                  Founder
                 </span>
                 <h3 className="text-xl font-bold text-white group-hover:text-wiair-light transition-colors duration-300">
                   Smriti Singh
@@ -362,8 +364,56 @@ export default function MentorshipPage() {
       {/* Gradient divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-wiair-medium/40 to-transparent" />
 
-      {/* Selection & Functioning */}
+      {/* Call for Mentees */}
       <section id="apply" className="py-24 relative">
+        <div className="absolute right-1/4 bottom-0 w-[400px] h-[400px] bg-pink-500/10 rounded-full blur-[140px]" />
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-gradient-to-br from-pink-500/20 to-wiair-medium/20 backdrop-blur-xl p-12 rounded-3xl border border-pink-500/30 text-center relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-40 h-40 bg-pink-500/10 rounded-full blur-[80px]" />
+            <div className="absolute bottom-0 right-0 w-40 h-40 bg-wiair-medium/10 rounded-full blur-[80px]" />
+            <div className="relative">
+              <p className="text-wiair-light text-sm font-semibold tracking-widest uppercase mb-3">
+                Join Us
+              </p>
+              <h2 className="text-4xl font-bold text-white mb-4">
+                Call for Mentees
+              </h2>
+              <p className="text-gray-300 max-w-xl mx-auto mb-8 leading-relaxed">
+                Are you passionate about AI research and looking for structured
+                mentorship? Apply to join our first cohort and work alongside
+                experienced researchers on impactful projects.
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWrzrQf6x8JqGz-MfmhStsDXnjJCnatrqjVmDXGBCcRhPBTg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-wiair-medium text-white px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-pink-500/25 hover:shadow-xl hover:shadow-pink-500/40 font-semibold hover:-translate-y-0.5"
+              >
+                Apply as Mentee
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gradient divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-wiair-medium/40 to-transparent" />
+
+      {/* Selection & Functioning */}
+      <section className="py-24 relative">
         <div className="absolute left-1/3 bottom-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[150px]" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
