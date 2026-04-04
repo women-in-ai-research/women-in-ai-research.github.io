@@ -193,7 +193,7 @@ export default function MentorshipPage() {
                 completed
               />
               <TimelineItem
-                date="Feb - April 2026"
+                date="April 2026"
                 title="Call for Mentors & Mentees"
                 description="Recruiting associate mentors and launching applications for the very first mentee cohort."
                 side="right"
