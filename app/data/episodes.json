@@ -310,5 +310,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "25",
+    "title": "Ep.25: EACL 2026: Why LLMs Hallucinate, and How to Make Them Say \"I Don't Know\"",
+    "description": "LLMs are notoriously overconfident, but can we teach them to admit uncertainty?In this episode, Maor Juliet Lavi (Tel Aviv University) presents her EACL 2026 paper on Detecting Unanswerability in...",
+    "longDescription": "LLMs are notoriously overconfident, but can we teach them to admit uncertainty?In this episode, Maor Juliet Lavi (Tel Aviv University) presents her EACL 2026 paper on Detecting Unanswerability in Large Language Models with Linear Directions.Paper: https://arxiv.org/abs/2509.22449We cover:Why prompt-based fixes for hallucinations aren’t enoughHow “unanswerability” emerges inside model representationsA simple but powerful idea: linear directions in hidden statesWhy this method generalizes better across datasetsWhat this reveals about where abstract concepts live inside LLMs👉 Watch to see how far we can push models toward knowing when they don’t know.Maor:https://www.linkedin.com/in/maor-juliet-lavi-07494a155👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "April 3, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/117780702/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-1%2F421174550-44100-2-02f435f600f0a.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
