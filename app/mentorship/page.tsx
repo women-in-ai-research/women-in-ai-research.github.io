@@ -193,17 +193,10 @@ export default function MentorshipPage() {
                 completed
               />
               <TimelineItem
-                date="February 2026"
-                title="Associate Mentors"
-                description="Expanding the mentor pool with distinguished circle members to formalize roles and determine cohort size."
+                date="Feb - April 2026"
+                title="Call for Mentors & Mentees"
+                description="Recruiting associate mentors and launching applications for the very first mentee cohort."
                 side="right"
-                completed
-              />
-              <TimelineItem
-                date="Late Feb - March"
-                title="Call for Mentees"
-                description="Launch applications for the very first cohort. Slots will be decided based on mentor participation."
-                side="left"
                 active
               />
               <TimelineItem
@@ -232,11 +225,8 @@ export default function MentorshipPage() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <a
-              href="https://www.linkedin.com/in/smriti-singh-ss2000/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-wiair-medium/30 hover:bg-white/[0.12] transition-all duration-300 text-center block relative overflow-hidden"
+            <div
+              className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-wiair-medium/30 hover:bg-white/[0.12] transition-all duration-300 text-center relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-wiair-medium/10 rounded-full blur-[60px]" />
               <div className="relative">
@@ -256,14 +246,32 @@ export default function MentorshipPage() {
                 <p className="text-gray-400 text-sm mt-1">
                   ML Research @ Zacks Investment Research | MS CS @ UT Austin | AI Safety | GenAI for FinTech
                 </p>
-                <div className="mt-3 flex items-center justify-center gap-1 text-wiair-light/60 group-hover:text-wiair-light text-sm transition-colors duration-300">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                  LinkedIn
+                <div className="mt-3 flex items-center justify-center gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/smriti-singh-ss2000/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-wiair-light/60 hover:text-wiair-light text-sm transition-colors duration-300"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    LinkedIn
+                  </a>
+                  <a
+                    href="https://smritisingh26.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-wiair-light/60 hover:text-wiair-light text-sm transition-colors duration-300"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.264.26-2.466.727-3.558" />
+                    </svg>
+                    Portfolio
+                  </a>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
 
           <p className="text-center text-gray-500 text-sm mt-8">
@@ -296,18 +304,21 @@ export default function MentorshipPage() {
               title="GenAI Leadership @ Apple | Stanford AI | EMNLP 2023 Outstanding Paper Award"
               image="/images/mentorship/aman-chadha.jpg"
               linkedin="https://www.linkedin.com/in/amanc/"
+              website="https://amanchadha.com/"
             />
             <AdvisorCard
               name="Vinija Jain"
               title="ML Leadership @ Google | Stanford AI | EMNLP Outstanding Paper Award"
               image="/images/mentorship/vinija-jain.jpg"
               linkedin="https://www.linkedin.com/in/vinija/"
+              website="https://vinija.ai/"
             />
             <AdvisorCard
               name="Sreyoshi Bhaduri, Ph.D."
               title="Agentic AI @ Amazon | Speaker | Educator"
               image="/images/mentorship/sreyoshi-bhaduri.jpg"
               linkedin="https://www.linkedin.com/in/thatstatsgirl/"
+              website="https://www.amazon.science/author/sreyoshi-bhaduri"
             />
           </div>
         </div>
@@ -639,19 +650,16 @@ function AdvisorCard({
   title,
   image,
   linkedin,
+  website,
 }: {
   name: string;
   title: string;
   image?: string;
   linkedin: string;
+  website?: string;
 }) {
   return (
-    <a
-      href={linkedin}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-wiair-medium/30 hover:bg-white/[0.12] transition-all duration-300 text-center block"
-    >
+    <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-wiair-medium/30 hover:bg-white/[0.12] transition-all duration-300 text-center">
       {image ? (
         <div className="w-16 h-16 mx-auto rounded-full overflow-hidden mb-4">
           <img src={image} alt={name} className="w-full h-full object-cover" />
@@ -665,13 +673,33 @@ function AdvisorCard({
         {name}
       </h3>
       <p className="text-gray-400 text-sm mt-1">{title}</p>
-      <div className="mt-4 flex items-center justify-center gap-1 text-wiair-light/60 group-hover:text-wiair-light text-sm transition-colors duration-300">
-        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-        </svg>
-        LinkedIn
+      <div className="mt-4 flex items-center justify-center gap-3">
+        <a
+          href={linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-wiair-light/60 hover:text-wiair-light text-sm transition-colors duration-300"
+        >
+          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+        {website && (
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-wiair-light/60 hover:text-wiair-light text-sm transition-colors duration-300"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.264.26-2.466.727-3.558" />
+            </svg>
+            Portfolio
+          </a>
+        )}
       </div>
-    </a>
+    </div>
   );
 }
 
