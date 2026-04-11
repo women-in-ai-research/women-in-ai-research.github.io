@@ -323,5 +323,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "26",
+    "title": "Ep.26: EACL 2026: Reasoning Can Hurt LLM Safety?! Rethinking Accuracy in AI Systems",
+    "description": "In this episode of #WiAIRpodcast, we dive into a subtle but critical question: Does adding reasoning actually make LLMs safer and more reliable?Paper: https://arxiv.org/abs/2510.21049Atoosa Chegini...",
+    "longDescription": "In this episode of #WiAIRpodcast, we dive into a subtle but critical question: Does adding reasoning actually make LLMs safer and more reliable?Paper: https://arxiv.org/abs/2510.21049Atoosa Chegini (University of Maryland, Apple) presents Reasoning's Razor (EACL 2026), where she and her collaborators examine how reasoning impacts high-stakes binary classification tasks, including safety filtering and hallucination detection.Their findings highlight an important nuance:While reasoning can improve overall accuracy, it may degrade performance at low false positive rates -- exactly where real-world systems need to operate.This conversation covers:Why accuracy is a misleading metric for safety-critical LLM applicationsThe importance of evaluating models at fixed false positive rates (FPR)How two models with identical accuracy can behave completely differently in deploymentThe impact of \"think-on\" (with reasoning) vs \"think-off\" (no reasoning) settingsPractical implications for RLHF, SFT, and post-training pipelinesIf you're working on:LLM evaluation & reliabilityAI safety or hallucination detectionProduction deployment of language models— this discussion offers a perspective that is both technically grounded and immediately actionable.Atoosa:https://www.linkedin.com/in/atoosa-chegini-6713741a3/https://scholar.google.com/citations?user=5nY9tagAAAAJ&hl=en&oi=ao👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "April 10, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/118226184/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-10%2F421765915-44100-2-fd8a2959ea23d.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
