@@ -336,5 +336,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "27",
+    "title": "Ep.27: EACL 2026: LLMs Can Call Tools -- But Can They Understand Them?",
+    "description": "LLM-based agents are everywhere, but most research focuses on just one step: getting the model to call the right tool. What happens after that?Paper: https://arxiv.org/abs/2510.15955In this talk,...",
+    "longDescription": "LLM-based agents are everywhere, but most research focuses on just one step: getting the model to call the right tool. What happens after that?Paper: https://arxiv.org/abs/2510.15955In this talk, Kiran Kate (IBM Research) presents new findings from their EACL 2026 paper on a largely overlooked problem:👉 Can LLMs actually understand and use the outputs returned by tools?As tool-augmented systems become more complex, this question becomes critical. The work dives into how current models handle non-trivial, real-world tool responses, and where they break down.💡 Key ideas covered:Why tool calling is only half the story in LLM agentsThe challenge of processing complex tool outputsFailure modes in current LLM-based systemsWhat this means for building robust, real-world AI agentsThis talk is especially relevant if you're working on:LLM agents and tool useEvaluation of LLM capabilitiesReal-world deployment of AI systemsAgentic workflows and reasoning pipelinesKiran Kate: https://www.linkedin.com/in/kiran-kate-8b98672/👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon",
+    "publishDate": "April 12, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/118226413/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-10%2F421766092-44100-2-2d730ac2792b9.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
