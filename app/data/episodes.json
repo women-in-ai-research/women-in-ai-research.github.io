@@ -349,5 +349,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "28",
+    "title": "Ep.28: EACL 2026: LLMs Can Hear… But Can They Reason? A New Benchmark for Audio Intelligence",
+    "description": "What does it actually mean for a model to understand audioPaper: https://arxiv.org/abs/2601.19673In this episode, I talk with Iwona Christop, a PhD student at Adam Mickiewicz University, about her...",
+    "longDescription": "What does it actually mean for a model to understand audioPaper: https://arxiv.org/abs/2601.19673In this episode, I talk with Iwona Christop, a PhD student at Adam Mickiewicz University, about her recent EACL paper introducing ART (Audio Reasoning Tasks) — a new benchmark designed to evaluate whether multimodal LLMs can truly reason over audio, not just transcribe or classify it.Most existing benchmarks test audio skills in isolation (like ASR or classification). But real-world intelligence requires something deeper: combining signals, comparing sounds, tracking context, and making decisions.This work takes a different approach:No text-only shortcuts — tasks can’t be solved via transcription aloneReasoning-first design — models must combine multiple audio cuesNo expert knowledge required — anyone can verify correctnessWe also dive into the diverse task design, including:Audio arithmetic (counting and comparing sounds)Cross-recording speaker & language identificationSound-based reasoning (e.g., inferring properties from audio)Speech feature comparison (accents, variations)Multimodal reasoning across text and soundThe dataset includes 9 tasks, 9,000 samples, and 30+ hours of audio — all generated in a scalable way using templates and TTS.👉 If you care about multimodal reasoning, evaluation, or the limits of current LLM capabilities, this conversation is for you.Iwona Christop:https://www.linkedin.com/in/iwona-christop/👍 Like & subscribe for more deep dives into cutting-edge AI research🔔 New episodes from EACL 2026 coming soon#WiAIR #EACL2026",
+    "publishDate": "April 13, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/118310185/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-12%2F421875928-44100-2-098a4693fab51.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
