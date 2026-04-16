@@ -362,5 +362,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "29",
+    "title": "Ep.29: From Hate Speech to Best Paper: Building Safer AI Systems, with Dr. Saadia Gabriel (Part 1)",
+    "description": "What does it mean to build AI systems we can actually trust?In this first part of our conversation with Saadia Gabriel (UCLA), we explore the deeply personal and technical journey behind her work on...",
+    "longDescription": "What does it mean to build AI systems we can actually trust?In this first part of our conversation with Saadia Gabriel (UCLA), we explore the deeply personal and technical journey behind her work on AI safety, misuse, and responsible NLP.From experiencing targeted hate speech firsthand to receiving a best paper nomination, Saadia shares how her lived experience shaped her research — and why language models must be designed with both capability and risk in mind.🧠 In this episode, we cover:How personal experiences influence AI research directionsThe intersection of NLP, security, and privacyWhy LLMs can be both powerful and dangerousWhat it means to build trustworthy AI systemsLessons from working across multiple research paradigmsHow to pursue high-impact research as a PhD or early-career scientistResources & Links:X-Teaming: Multi-Turn Jailbreaks and Defenses with Adaptive Multi-AgentsConnect with Dr. Saadia Gabriel:https://x.com/GabrielSaadiahttps://bsky.app/profile/skgabrie.bsky.social",
+    "publishDate": "April 15, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/118477750/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-15%2F422097664-44100-2-29c3f1db67fb7.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
