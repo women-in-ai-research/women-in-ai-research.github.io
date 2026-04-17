@@ -13,7 +13,7 @@
     "title": "Co-Host",
     "bio": "Malikeh is a machine learning researcher at the Vector Institute, and an incoming PhD student at the University of Toronto, where she works under the supervision of Prof. Colin Raffel. Born and raised in Iran, she is a bilingual researcher fluent in Farsi and English who immigrated to Canada in 2019. She earned an MScAC degree in Computer Science from the University of Toronto and has over five years of industry research experience at companies such as Winterlight Labs, Cambridge Cognition, and Arcee AI.",
     "imageUrl": "/images/about/malikeh-ehghaghi.jpg",
-    "visible": true
+    "visible": false
   },
   {
     "id": "3",
@@ -53,6 +53,14 @@
     "title": "Producer & Marketing",
     "bio": "Mary is the Head of Product Marketing at Arcee AI, a fast-growing startup that pioneered small language models (SLMs) and intelligent model routing. She pivoted into tech after a long career as an international news correspondent. A proud solo mom, Mary is a fierce advocate for women in tech and is known for bringing a critical eye to the ethics (or lack thereof) in the industry.",
     "imageUrl": "/images/about/mary-maccarthy.jpg",
+    "visible": false
+  },
+  {
+    "id": "8",
+    "name": "Smriti Singh",
+    "title": "Founding Lead",
+    "bio": "Smriti Singh is an ML Research Scientist at Zacks Investment Research and holds an MS in Computer Science from UT Austin. Her research focuses on AI Safety and Generative AI applications in FinTech. As the Founding Lead of the Women in AI Research Mentorship Research Lab, she is dedicated to training new researchers and promoting equality and safety in AI while uplifting women leaders in the field.",
+    "imageUrl": "/images/mentorship/smriti-singh.jpg",
     "visible": true
   }
 ] 

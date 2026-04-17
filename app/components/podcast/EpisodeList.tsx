@@ -57,7 +57,7 @@ function EpisodeCard({
     return (
         <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:bg-white/[0.12] transition-all duration-300">
             <div className="flex flex-col md:flex-row gap-5 items-stretch">
-                <div className="w-full md:w-64 h-48 md:h-auto mx-auto md:mx-0 rounded-xl shrink-0 overflow-hidden">
+                <div className="w-full md:w-64 h-48 md:h-64 mx-auto md:mx-0 rounded-xl shrink-0 overflow-hidden">
                     <img
                         src={imageUrl}
                         alt={title}

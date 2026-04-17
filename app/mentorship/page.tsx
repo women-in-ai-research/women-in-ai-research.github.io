@@ -40,22 +40,12 @@ export default function MentorshipPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeWrzrQf6x8JqGz-MfmhStsDXnjJCnatrqjVmDXGBCcRhPBTg/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative bg-gradient-to-r from-wiair-medium to-purple-500 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-wiair-medium/25 hover:shadow-xl hover:shadow-wiair-medium/40 text-center font-semibold hover:-translate-y-0.5"
-            >
-              Apply as Mentee
-            </a>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-full hover:bg-white/20 transition-all duration-300 text-center font-semibold"
-            >
-              Apply as Mentor
-            </a>
+            <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-center font-semibold cursor-not-allowed">
+              Apply as Mentee - Coming Soon
+            </span>
+            <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-center font-semibold cursor-not-allowed">
+              Apply as Mentor - Coming Soon (April 23)
+            </span>
           </div>
 
           {/* Quick stats */}
@@ -240,7 +230,7 @@ export default function MentorshipPage() {
                   />
                 </div>
                 <span className="inline-block text-xs font-semibold bg-gradient-to-r from-wiair-medium to-purple-500 text-white px-3 py-1 rounded-full mb-3">
-                  Founder
+                  Founding Lead
                 </span>
                 <h3 className="text-xl font-bold text-white group-hover:text-wiair-light transition-colors duration-300">
                   Smriti Singh
@@ -303,7 +293,7 @@ export default function MentorshipPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <AdvisorCard
               name="Aman Chadha"
-              title="GenAI Leadership @ Apple | Stanford AI | EMNLP 2023 Outstanding Paper Award"
+              title="GenAI Leadership @ DeepMind | Stanford AI | EMNLP 2023 Outstanding Paper Award"
               image="/images/mentorship/aman-chadha.jpg"
               linkedin="https://www.linkedin.com/in/amanc/"
               website="https://amanchadha.com/"
@@ -348,27 +338,9 @@ export default function MentorshipPage() {
                 next generation? We&apos;re looking for associate mentors to
                 join our lab and guide aspiring researchers.
               </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-wiair-medium to-purple-500 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-wiair-medium/25 hover:shadow-xl hover:shadow-wiair-medium/40 font-semibold hover:-translate-y-0.5"
-              >
-                Apply to Mentor
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
+              <span className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full cursor-not-allowed font-semibold">
+                Apply to Mentor - Coming Soon (April 23)
+              </span>
             </div>
           </div>
         </div>
@@ -396,27 +368,9 @@ export default function MentorshipPage() {
                 mentorship? Apply to join our first cohort and work alongside
                 experienced researchers on impactful projects.
               </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeWrzrQf6x8JqGz-MfmhStsDXnjJCnatrqjVmDXGBCcRhPBTg/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-wiair-medium text-white px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-pink-500/25 hover:shadow-xl hover:shadow-pink-500/40 font-semibold hover:-translate-y-0.5"
-              >
-                Apply as Mentee
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
+              <span className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full cursor-not-allowed font-semibold">
+                Apply as Mentee - Coming Soon
+              </span>
             </div>
           </div>
         </div>
