@@ -375,5 +375,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "30",
+    "title": "Ep.30: 100% Jailbreak Success? The Hard Truth About AI Safety, with Dr. Saadia Gabriel",
+    "description": "What actually happens when AI systems fail in the real world?In this final part of our conversation with Saadia Gabriel (UCLA), we unpack one of the most urgent challenges in modern AI: why even the...",
+    "longDescription": "What actually happens when AI systems fail in the real world?In this final part of our conversation with Saadia Gabriel (UCLA), we unpack one of the most urgent challenges in modern AI: why even the most advanced models remain vulnerable to manipulation - and what that means for safety, fairness, and society.From multi-turn jailbreaking attacks with near 100% success rates to misinformation shaping human beliefs, this conversation goes beyond surface-level concerns and dives into how harms actually emerge in deployed systems.We explore:Why current guardrails are not enoughHow realistic attack scenarios differ from academic benchmarksThe connection between model vulnerabilities and societal harmWhat AI can (and cannot) do about misinformation and persuasionThe open research problems that still don’t have solutionsResources & Links:Generative AI in the Era of 'Alternative Facts'ModelCitizens: Representing Community Voices in Online SafetyTranslation as a Scalable Proxy for Multilingual EvaluationConnect with Dr. Saadia Gabriel:https://x.com/GabrielSaadiahttps://bsky.app/profile/skgabrie.bsky.social",
+    "publishDate": "April 17, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/118585600/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-17%2F422242337-44100-2-dcc7bff4cdb65.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
