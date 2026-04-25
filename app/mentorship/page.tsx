@@ -43,9 +43,14 @@ export default function MentorshipPage() {
             <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-center font-semibold cursor-not-allowed">
               Apply as Mentee - Coming Soon
             </span>
-            <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-center font-semibold cursor-not-allowed">
-              Apply as Mentor - Coming Soon (April 23)
-            </span>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-gradient-to-r from-wiair-medium to-purple-600 text-white rounded-full text-center font-semibold hover:opacity-90 transition-opacity duration-200"
+            >
+              Apply as Mentor
+            </a>
           </div>
 
           {/* Quick stats */}
@@ -338,9 +343,14 @@ export default function MentorshipPage() {
                 next generation? We&apos;re looking for associate mentors to
                 join our lab and guide aspiring researchers.
               </p>
-              <span className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full cursor-not-allowed font-semibold">
-                Apply to Mentor - Coming Soon (April 23)
-              </span>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-wiair-medium to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition-opacity duration-200"
+              >
+                Apply to Mentor
+              </a>
             </div>
           </div>
         </div>
