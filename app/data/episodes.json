@@ -388,5 +388,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "31",
+    "title": "Ep.31: Can Language Alone Create Intelligence? Insights from Neuroscience and AI, with Dr. Anna Ivanova",
+    "description": "Do large language models truly understand language—or are they sophisticated pattern matchers?In this conversation, Dr. Anna Ivanova (Asst. Prof. at Georgia Tech) explores one of the important...",
+    "longDescription": "Do large language models truly understand language—or are they sophisticated pattern matchers?In this conversation, Dr. Anna Ivanova (Asst. Prof. at Georgia Tech) explores one of the important questions in AI: the relationship between language, thought, and intelligence. Drawing from neuroscience, cognitive science, and AI research, Anna explains why language understanding is harder to define than most people realize, why reasoning and language are not the same thing, and what today's LLMs can and cannot tell us about human cognition.Key Topics:Do LLMs understand language or merely generate convincing text?The difference between formal and functional linguistic competenceWhat LLMs can learn from language alone—and what they cannotWhy human cognition and AI cognition may be fundamentally differentTheory of mind, reasoning, and common misconceptions about AI capabilitiesHow cognitive scientists evaluate the \"thinking\" abilities of LLMsWhat neuroscience can teach AI researchers about interpretabilityWhy understanding AI requires studying both behavior and internal representationsThe future of multimodal models and AI cognitionResources & Links:What does it mean to understand language?Dissociating language and thought in large language modelsHow to evaluate the cognitive abilities of LLMsHow Do LLMs Use Their Depth?True LensConnect with Dr. Anna Ivanova:https://bsky.app/profile/neuranna.bsky.socialhttps://x.com/neuranna🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.Follow WiAIR at:LinkedInBlueskyX (Twitter)⁠WiAIR website⁠",
+    "publishDate": "June 17, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/121589847/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-17%2F426290561-44100-2-6c52c4979fb7d.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
