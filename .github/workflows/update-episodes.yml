@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Enable Corepack
         run: corepack enable
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 'lts/*'
           cache: yarn
@@ -44,3 +44,18 @@ jobs:
           git add app/data/episodes.json
           git commit -m "chore: update episodes from RSS feed"
           git push
+
+      # GitHub auto-disables scheduled workflows after 60 days with no repo
+      # commits. During an episode drought this job makes no commits, so we
+      # push an empty keepalive commit if the latest commit is getting old.
+      - name: Keepalive (prevent 60-day scheduled workflow auto-disable)
+        if: steps.changes.outputs.changed == 'false'
+        run: |
+          age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          echo "Latest commit is $age_days day(s) old."
+          if [ "$age_days" -ge 50 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "chore: keepalive to keep scheduled workflow enabled"
+            git push
+          fi
