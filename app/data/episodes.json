@@ -401,5 +401,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "32",
+    "title": "Ep.32: Is Your AI Just Flattering You? Sycophancy, AI Policies, and More, with Dr. Malihe Alikhani",
+    "description": "Only 19% of Americans say AI has actually improved their productivity - so why the gap between the hype and reality? In this episode of Women in AI Research, Dr. Malihe Alikhani (Northeastern...",
+    "longDescription": "Only 19% of Americans say AI has actually improved their productivity - so why the gap between the hype and reality? In this episode of Women in AI Research, Dr. Malihe Alikhani (Northeastern University, Contextual AI Lab) unpacks the hidden failures in how we build and deploy AI: why sycophancy is really a collapse of alignment, why bigger models aren't better aligned, and why \"thin\" alignment breaks down in the real world.Key topicsThe impact of moving across different AI contexts on system designThe role of language as performative and active in shaping realityInteractive inference and uncertainty in AI systemsThe importance of context in meaning and system designAI policy, transparency, and societal impactSycophantic behavior in large language modelsMeasuring AI alignment: thin vs. thickAI adoption across sectors and demographic groupsThe role of policy in AI development and safetyEthical considerations in AI research and deploymentResources & Links:Breaking the AI Mirror: Sycophancy, productivity, and the future of collaborationHype and harm: Why we must ask harder questions about AI and its alignment with human valuesHow are Americans using AI? Evidence from a nationwide surveyConnect with Dr. Malihe Alikhani:https://x.com/malihealikhani🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.Follow WiAIR at:⁠LinkedIn⁠⁠Bluesky⁠⁠X (Twitter)⁠⁠⁠WiAIR website⁠",
+    "publishDate": "July 22, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/123151612/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-22%2F428388117-44100-2-1cffc18a3c6ca.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
