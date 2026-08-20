@@ -414,5 +414,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "33",
+    "title": "Ep.33: Is an Image Worth a Thousand Words? Hidden Failures of Multimodal Metrics, with Dr. Elisa Kreiss",
+    "description": "An image is not worth a thousand words - it's worth an indefinite number of them. So why do the metrics we use to evaluate AI-generated image descriptions still assume there's one correct answer?In...",
+    "longDescription": "An image is not worth a thousand words - it's worth an indefinite number of them. So why do the metrics we use to evaluate AI-generated image descriptions still assume there's one correct answer?In this episode of Women in AI Research, I talk with Elisa Kreiss (Assistant Professor of Communication at UCLA, director of the Coalas Lab) about what happens when you actually test the metrics the field relies on, and why CLIPScore, one of the most widely used measures for scoring image descriptions, stops correlating with human judgment the moment you introduce context. We also get into why longer descriptions aren't necessarily more informative, what happens when you just ask a model to \"be concise,\" and whether AI models trip over charts and graphs the same way humans do.Elisa's research sits at the intersection of linguistics, accessibility, and multimodal AI, and this conversation covers the full arc of her work, from the theoretical question of why humans never describe images the same way twice, to the practical question of what that means for building systems that actually work for blind and low-vision users.In this episode:Why \"context matters\" is more radical than it sounds for image description evaluationThe hidden reason CLIPScore breaks down once context enters the pictureWhy length is a bad proxy for information density - and what to use insteadWhat happens when you prompt a model to just \"be concise\"Why charts and photos need completely different evaluation approachesWhether AI models make the same mistakes as humans when reading data visualizationsWhat NeurIPS's Top Reviewer Award taught her about writing a genuinely useful peer reviewResources & Links:Context Matters for Image Descriptions for Accessibility: Challenges for Referenceless Evaluation MetricsWhen More Words Say Less: Decoupling Length and Specificity in Image Description EvaluationCHART-6: Human-Centered Evaluation of Data Visualization Understanding in Vision-Language Models🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.Follow WiAIR at:⁠⁠LinkedIn⁠⁠⁠⁠Bluesky⁠⁠⁠⁠X (Twitter)⁠⁠⁠⁠⁠WiAIR website⁠",
+    "publishDate": "August 19, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/124417657/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F430109144-44100-2-1ed6a59977fc6.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
