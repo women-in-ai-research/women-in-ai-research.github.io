@@ -3,6 +3,51 @@
 import { Navbar } from "@/app/components/navigation/Navbar";
 import { Footer } from "@/app/components/footer/Footer";
 
+// Mentee applications are closed until the cohort form is live. Set this to the
+// Google Form URL to activate every "Apply as Mentee" CTA on the page.
+const MENTEE_FORM_URL: string = "";
+
+// Associate mentors for the current cohort. Add an entry per confirmed mentor;
+// the section falls back to an "announced soon" note while this is empty.
+// Entries without `image` render an initial-letter avatar - see public/images/mentorship/derived/README.md
+// for the crop workflow when a headshot arrives.
+const ASSOCIATE_MENTORS: {
+  name: string;
+  title: string;
+  image?: string;
+  linkedin: string;
+  website?: string;
+}[] = [
+  {
+    name: "Sukriti Paul",
+    image: "/images/mentorship/sukriti-paul.jpg",
+    title: "PhD Student, CS @ University of Maryland | Machine Learning & Computer Vision",
+    linkedin: "https://www.linkedin.com/in/sukriti-paul-72a115126/",
+    website: "https://www.cs.umd.edu/people/sukriti5",
+  },
+  {
+    name: "Anisha Gunjal",
+    image: "/images/mentorship/anisha-gunjal.jpg",
+    title: "ML Research @ Scale AI | LLM Post-Training, Reasoning & Agents | MS CS @ UT Austin",
+    linkedin: "https://www.linkedin.com/in/anisha-gunjal/",
+    website: "https://anisha2102.github.io/",
+  },
+  {
+    name: "Ankit Aich",
+    image: "/images/mentorship/ankit-aich.jpg",
+    title: "Senior Research Scientist @ Snorkel AI | PhD CS @ UIC | NLP & AI for Mental Health",
+    linkedin: "https://www.linkedin.com/in/ankitaich/",
+    website: "https://ankitaich.com/",
+  },
+  {
+    name: "Rakshit Naidu",
+    image: "/images/mentorship/rakshit-naidu.jpg",
+    title: "PhD Student, ML @ Georgia Tech | Trustworthy AI, Privacy & Fairness | MS @ CMU",
+    linkedin: "https://www.linkedin.com/in/rakshit-naidu-8b3431166/",
+    website: "https://rakshit-naidu.github.io/",
+  },
+];
+
 export default function MentorshipPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest">
@@ -19,9 +64,15 @@ export default function MentorshipPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 relative z-10">
           <div className="inline-flex items-center gap-2 bg-wiair-medium/20 border border-wiair-medium/30 rounded-full px-4 py-1.5 mx-auto block text-center mb-6">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span
+              className={`w-2 h-2 rounded-full ${
+                MENTEE_FORM_URL ? "bg-green-400 animate-pulse" : "bg-amber-400"
+              }`}
+            />
             <span className="text-wiair-light text-sm font-medium tracking-wide">
-              Now Accepting Applications
+              {MENTEE_FORM_URL
+                ? "Now Accepting Applications"
+                : "Mentee Applications Opening Soon"}
             </span>
           </div>
 
@@ -40,17 +91,20 @@ export default function MentorshipPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-center font-semibold cursor-not-allowed">
-              Apply as Mentee - Coming Soon
-            </span>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-gradient-to-r from-wiair-medium to-purple-600 text-white rounded-full text-center font-semibold hover:opacity-90 transition-opacity duration-200"
-            >
-              Apply as Mentor
-            </a>
+            {MENTEE_FORM_URL ? (
+              <a
+                href={MENTEE_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-gradient-to-r from-wiair-medium to-purple-600 text-white rounded-full text-center font-semibold hover:opacity-90 transition-opacity duration-200"
+              >
+                Apply as Mentee
+              </a>
+            ) : (
+              <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-center font-semibold cursor-not-allowed">
+                Apply as Mentee - Coming Soon
+              </span>
+            )}
           </div>
 
           {/* Quick stats */}
@@ -191,13 +245,20 @@ export default function MentorshipPage() {
               />
               <TimelineItem
                 date="April 2026"
-                title="Call for Mentors & Mentees"
-                description="Recruiting associate mentors and launching applications for the very first mentee cohort."
+                title="Call for Mentors"
+                description="Recruited a cohort of associate mentors spanning academia and industry research. Applications are now closed."
                 side="right"
+                completed
+              />
+              <TimelineItem
+                date="September 2026"
+                title="Call for Mentees"
+                description="Applications open for the very first mentee cohort."
+                side="left"
                 active
               />
               <TimelineItem
-                date="Spring 2026"
+                date="Fall 2026"
                 title="First Cohort Begins"
                 description="Prioritizing research projects aimed at top-tier venues like ACL, NAACL, COLING, and NeurIPS."
                 side="right"
@@ -241,7 +302,7 @@ export default function MentorshipPage() {
                   Smriti Singh
                 </h3>
                 <p className="text-gray-400 text-sm mt-1">
-                  ML Research @ Zacks Investment Research | MS CS @ UT Austin | AI Safety | GenAI for FinTech
+                  FDE @ Snorkel AI | MS CS @ UT Austin | AI Safety
                 </p>
                 <div className="mt-3 flex items-center justify-center gap-3">
                   <a
@@ -271,9 +332,22 @@ export default function MentorshipPage() {
             </div>
           </div>
 
-          <p className="text-center text-gray-500 text-sm mt-8">
-            Associate mentors will be announced soon.
-          </p>
+          {ASSOCIATE_MENTORS.length > 0 ? (
+            <>
+              <p className="text-center text-wiair-light text-sm font-semibold tracking-widest uppercase mt-16 mb-8">
+                Associate Mentors
+              </p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {ASSOCIATE_MENTORS.map((mentor) => (
+                  <AdvisorCard key={mentor.name} {...mentor} />
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="text-center text-gray-500 text-sm mt-8">
+              Associate mentors will be announced soon.
+            </p>
+          )}
         </div>
       </section>
 
@@ -324,41 +398,6 @@ export default function MentorshipPage() {
       {/* Gradient divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-wiair-medium/40 to-transparent" />
 
-      {/* Call for Mentors */}
-      <section className="py-24 relative">
-        <div className="absolute left-1/4 top-0 w-[400px] h-[400px] bg-wiair-medium/10 rounded-full blur-[140px]" />
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-gradient-to-br from-wiair-medium/20 to-purple-600/20 backdrop-blur-xl p-12 rounded-3xl border border-wiair-medium/30 text-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-40 h-40 bg-wiair-medium/10 rounded-full blur-[80px]" />
-            <div className="absolute bottom-0 right-0 w-40 h-40 bg-purple-500/10 rounded-full blur-[80px]" />
-            <div className="relative">
-              <p className="text-wiair-light text-sm font-semibold tracking-widest uppercase mb-3">
-                Get Involved
-              </p>
-              <h2 className="text-4xl font-bold text-white mb-4">
-                Call for Mentors
-              </h2>
-              <p className="text-gray-300 max-w-xl mx-auto mb-8 leading-relaxed">
-                Are you an experienced researcher passionate about mentoring the
-                next generation? We&apos;re looking for associate mentors to
-                join our lab and guide aspiring researchers.
-              </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSclhjbPKywT40frbggnmonfGbem81hXuCsYyEFFgmUiXxsImg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-wiair-medium to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition-opacity duration-200"
-              >
-                Apply to Mentor
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Gradient divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-wiair-medium/40 to-transparent" />
-
       {/* Call for Mentees */}
       <section id="apply" className="py-24 relative">
         <div className="absolute right-1/4 bottom-0 w-[400px] h-[400px] bg-pink-500/10 rounded-full blur-[140px]" />
@@ -378,9 +417,20 @@ export default function MentorshipPage() {
                 mentorship? Apply to join our first cohort and work alongside
                 experienced researchers on impactful projects.
               </p>
-              <span className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full cursor-not-allowed font-semibold">
-                Apply as Mentee - Coming Soon
-              </span>
+              {MENTEE_FORM_URL ? (
+                <a
+                  href={MENTEE_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-wiair-medium to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition-opacity duration-200"
+                >
+                  Apply as Mentee
+                </a>
+              ) : (
+                <span className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full cursor-not-allowed font-semibold">
+                  Apply as Mentee - Coming Soon
+                </span>
+              )}
             </div>
           </div>
         </div>
