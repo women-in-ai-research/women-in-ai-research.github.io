@@ -44,3 +44,6 @@ next-env.d.ts
 
 # Build artifacts
 .turbo
+
+# Local daily work logs (not tracked)
+docs/work-logs/
