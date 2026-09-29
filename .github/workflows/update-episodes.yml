@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   update-episodes:
@@ -44,6 +45,14 @@ jobs:
           git add app/data/episodes.json
           git commit -m "chore: update episodes from RSS feed"
           git push
+
+      # Pushes made with GITHUB_TOKEN don't trigger other workflows, so the
+      # deploy workflow never runs for the commit above. Dispatch it directly.
+      - name: Trigger site deploy
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref ${{ github.ref_name }}
 
       # GitHub auto-disables scheduled workflows after 60 days with no repo
       # commits. During an episode drought this job makes no commits, so we
