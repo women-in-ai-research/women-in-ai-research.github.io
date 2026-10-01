@@ -290,12 +290,6 @@ export default function MentorshipPage() {
             </p>
           </div>
 
-          <img
-            src="/images/mentorship/group-photo.jpeg"
-            alt="2026 Cohort Mentors: Smriti Singh, Anisha Gunjal, Ankit Aich, Sukriti Paul, and Rakshit Naidu"
-            className="w-full max-w-3xl mx-auto mb-16 rounded-2xl border border-white/10 shadow-lg shadow-wiair-medium/10"
-          />
-
           <div className="max-w-md mx-auto">
             <div
               className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-wiair-medium/30 hover:bg-white/[0.12] transition-all duration-300 text-center relative overflow-hidden"
