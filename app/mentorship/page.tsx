@@ -3,9 +3,12 @@
 import { Navbar } from "@/app/components/navigation/Navbar";
 import { Footer } from "@/app/components/footer/Footer";
 
-// Mentee applications are closed until the cohort form is live. Set this to the
-// Google Form URL to activate every "Apply as Mentee" CTA on the page.
-const MENTEE_FORM_URL: string = "";
+// Google Form for mentee applications. Every "Apply as Mentee" CTA and the hero
+// badge key off this; set it to "" to close applications.
+const MENTEE_FORM_URL: string =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeWrzrQf6x8JqGz-MfmhStsDXnjJCnatrqjVmDXGBCcRhPBTg/viewform";
+// Application deadline from the Call for Mentees post; shown beside the CTAs.
+const MENTEE_DEADLINE = "October 6, 2026";
 
 // Associate mentors for the current cohort. Add an entry per confirmed mentor;
 // the section falls back to an "announced soon" note while this is empty.
@@ -106,6 +109,11 @@ export default function MentorshipPage() {
               </span>
             )}
           </div>
+          {MENTEE_FORM_URL && (
+            <p className="text-sm text-gray-400 text-center mt-4">
+              Apply by {MENTEE_DEADLINE}
+            </p>
+          )}
 
           {/* Quick stats */}
           <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mt-16">
@@ -251,9 +259,9 @@ export default function MentorshipPage() {
                 completed
               />
               <TimelineItem
-                date="September 2026"
+                date="October 2026"
                 title="Call for Mentees"
-                description="Applications open for the very first mentee cohort."
+                description={`Applications open for the very first mentee cohort, through ${MENTEE_DEADLINE}.`}
                 side="left"
                 active
               />
@@ -281,6 +289,12 @@ export default function MentorshipPage() {
               Experienced researchers providing hands-on guidance to mentees.
             </p>
           </div>
+
+          <img
+            src="/images/mentorship/group-photo.jpeg"
+            alt="2026 Cohort Mentors: Smriti Singh, Anisha Gunjal, Ankit Aich, Sukriti Paul, and Rakshit Naidu"
+            className="w-full max-w-3xl mx-auto mb-16 rounded-2xl border border-white/10 shadow-lg shadow-wiair-medium/10"
+          />
 
           <div className="max-w-md mx-auto">
             <div
@@ -430,6 +444,11 @@ export default function MentorshipPage() {
                 <span className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full cursor-not-allowed font-semibold">
                   Apply as Mentee - Coming Soon
                 </span>
+              )}
+              {MENTEE_FORM_URL && (
+                <p className="text-sm text-gray-400 mt-4">
+                  Applications close {MENTEE_DEADLINE}.
+                </p>
               )}
             </div>
           </div>
