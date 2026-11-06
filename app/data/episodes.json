@@ -440,5 +440,18 @@
     "youtubeLink": null,
     "spotifyLink": null,
     "visible": true
+  },
+  {
+    "id": "35",
+    "title": "Ep.35: Can AI Learn Languages Humans Can't? Impossible Languages & Tokenization, with Julie Kallini",
+    "description": "Can a language model learn a language no human ever could? Stanford PhD researcher Julie Kallini put Noam Chomsky's claim to the test, and won the ACL 2024 Best Paper Award for it.In this episode of...",
+    "longDescription": "Can a language model learn a language no human ever could? Stanford PhD researcher Julie Kallini put Noam Chomsky's claim to the test, and won the ACL 2024 Best Paper Award for it.In this episode of Women in AI Research, Julie takes us from \"impossible languages\" to the hidden costs of tokenization, and shows how byte-level models could make LLMs faster, fairer across languages, and smarter about where they spend compute. We also talk about choosing a PhD advisor, leaving a software engineering job at Meta for a PhD, and what doing research at FAIR is really like.In this episode:Why it would be unethical to raise a child on an invented language, but not a language modelWhy linguists still can't agree on what makes a language \"impossible\"Why ChatGPT couldn't count the R's in \"strawberry\", and what tokenization has to do with itHow tokenization can make the same request cost more in some languages than othersMrT5: teaching a byte-level model to decide which bytes it can safely dropFast BLT: speeding up byte-level generation with diffusion and self-speculationDiffusion vs. autoregressive generation: practical advice for practitionersWhat's next: adaptive compression, or why spend dozens of tokens on the MIT license?📄 Papers discussedMission: Impossible Language Models (ACL 2024, Best Paper)MrT5: Dynamic Token Merging for Efficient Byte-level Language Models (ICLR 2025)Fast Byte Latent TransformerByte Latent Transformer: Patches Scale Better Than Tokens (Meta FAIR)Information Locality as an Inductive Bias for Neural Language Models (Someya et al., ACL 2025)👩‍🔬 About Julie KalliniJulie is a fourth-year Computer Science PhD student at Stanford, advised by Chris Potts and Dan Jurafsky. Her research spans computational linguistics, tokenization, efficient language model architectures, and byte-level modeling.🎙️ About WiAIRWomen in AI Research (WiAIR) features in-depth conversations with women shaping AI research: their work, their ideas, and the paths that led them there.🔔 Subscribe for new episodes",
+    "publishDate": "November 5, 2026",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "imagePosition": "center center",
+    "episodeLink": "https://anchor.fm/s/100f18168/podcast/play/128818011/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2F435925824-44100-2-58df7ff9bc498.mp3",
+    "youtubeLink": null,
+    "spotifyLink": null,
+    "visible": true
   }
 ]
