@@ -13,8 +13,7 @@
         "export": "next build",
         "deploy": "gh-pages -d out",
         "serve": "serve out -l 3000",
-        "update-episodes": "npx tsx scripts/generate-episodes.ts",
-        "prebuild": "npx tsx scripts/generate-episodes.ts"
+        "update-content": "npx tsx scripts/sync-youtube.ts"
     },
     "dependencies": {
         "@radix-ui/react-slot": "^1.1.0",

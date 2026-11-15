@@ -1,106 +1,343 @@
 [
   {
-    "id": "1",
-    "name": "Dr. Nouha Dziri",
-    "title": "Research scientist at Allen Institute for AI (AI2), USA.",
-    "bio": "Dr. Nouha Dziri is an AI research scientist at the Allen Institute for AI (Ai2). Her research investigates a wide variety of problems across NLP and AI including building state-of-the-art language models and understanding their limits and inner workings. She also works on AI safety to ensure the responsible deployment of LLMs while enhancing their reasoning capabilities. Prior to Ai2, she worked at Google DeepMind and Microsoft Research. She earned her PhD from the University of Alberta and the Alberta Machine Intelligence Institute. Her work has been published in top-tier AI venues including NeurIPS, ICML, ICLR, TACL, ACL, NAACL and EMNLP, and featured in TechCrunch, LeMonde, The Economist, Science News and QuantaMagazine.",
-    "imageUrl": "/images/guests/headshot-nouha.jpg",
-    "visible": true
+    "id": "julie-kallini",
+    "name": "Julie Kallini",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 35,
+        "title": "Can AI Learn Languages Humans Can't? Impossible Languages & Tokenization, with Julie Kallini",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "2",
-    "name": "Dr. Amanda Cercas Curry",
-    "title": "Researcher at CENTAI Institute, Italy.",
-    "bio": "Dr. Amanda Cercas Curry is a researcher at CENTAI Institute, where she is working on applied NLP, fairness and evaluation. Her research interests lie at the intersection of Natural Language Processing (NLP), Human-Computer Interaction (HCI) and Feminism with the aim of building more just NLP systems. She is particularly interested in ethics, with a strong influence from feminism. Previously she was a postdoctoral researcher at MilaNLP in Bocconi University. She completed her PhD at Heriot-Watt University in Edinburgh. She also co-hosts a podcast where she discusses all things tech ethics, called Let's Chat Ethics.",
-    "imageUrl": "/images/guests/headshot-amanda.jpeg",
-    "visible": true
+    "id": "greta-tuckute",
+    "name": "Dr. Greta Tuckute",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 34,
+        "title": "What Makes a Sentence Memorable? Inside Language, Memory and LLMs, with Dr. Greta Tuckute",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "3",
-    "name": "Aparna Balagopalan",
-    "title": "PhD student at MIT, USA.",
-    "bio": "Aparna Balagopalan is a PhD student in the Department of Electrical Engineering and Computer Science (EECS) at MIT. Her research broadly focuses on developing fair, interpretable, and robust models by carefully re-evaluating and surfacing assumptions in machine learning-based measurements in socially-relevant contexts. Aparna has held research intern positions at the Stanford RegLab, the Max Planck Institute for Security and Privacy, the Technische Universität, Dresden as a DAAD-WISE scholar, and at the Philips Innovation Campus, Bengaluru in the healthcare R&D team.",
-    "imageUrl": "/images/guests/headshot-aparna.jpg",
-    "visible": true
+    "id": "elisa-kreiss",
+    "name": "Dr. Elisa Kreiss",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 33,
+        "title": "Is an Image Worth a Thousand Words? Hidden Failures of Multimodal Metrics, with Dr. Elisa Kreiss",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "4",
-    "name": "Dr. Angelica Lim",
-    "title": "Assistant Professor at Simon Fraser University, Canada.",
-    "bio": "Dr. Angelica Lim is an AI roboticist. She is an Assistant Professor in Computing Science at Simon Fraser University and leads the SFU Rosie Lab, where she builds artificial intelligence software for robots to interact with social intelligence and empathy. Her research addresses the question 'Could a robot have feelings?' by combining neuroscience, machine learning and developmental psychology. Angelica has a Ph.D. and M.Sc. in Computer Science from Kyoto University, Japan, specializing in AI applied to Robotics, and a B.Sc. in Computing Science (specializing in Artificial Intelligence) from Simon Fraser University in Canada.",
-    "imageUrl": "/images/guests/headshot-angelica.png",
-    "visible": true
+    "id": "alikhani-malihe",
+    "name": "Dr. Malihe Alikhani",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 32,
+        "title": "Is Your AI Just Flattering You? Sycophancy, AI Policies, and More, with Dr. Malihe Alikhani",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "5",
-    "name": "Dr. Faiza Khan Khattak",
-    "title": "CTO at Monark Health, Canada.",
-    "bio": "Faiza is the Chief Technology Officer (CTO) of Monark Health, an innovative startup dedicated to leveraging AI to support individuals overcoming Alcohol Use Disorder (AUD), and she also works as an AI consultant. As a Natural Language Processing (NLP) scientist, Faiza specializes in fairness in language models, diverse NLP applications, and applied research, ensuring that AI technologies are equitable and inclusive. Faiza holds a Master’s and PhD in Computer Science from Columbia University. She further developed her expertise through postdoctoral research at the University Health Network (UHN) and St. Michael’s Hospital in Toronto and as a co-founder of a healthcare startup. She has also had the opportunity to teach as a sessional lecturer at the University of Toronto Scarborough. Her career spans both industry and academia, including roles as a Data Scientist at Manulife and an Applied Machine Learning Scientist at the Vector Institute for AI, where she has led cross-functional teams, directed collaborative research initiatives, and held workshops to bridge academic research with real-world applications. Her expertise extends to stakeholder engagement, AI adoption strategies, and mentoring junior team members. Faiza is also deeply committed to responsible AI development. She served as the lead organizer of the Responsible Language Models Workshop at the Association for the Advancement of Artificial Intelligence (AAAI) in 2024.",
-    "imageUrl": "/images/guests/faiza-headshot.jpg",
-    "visible": true
+    "id": "anna-ivanova",
+    "name": "Dr. Anna Ivanova",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 31,
+        "title": "Can Language Alone Create Intelligence? Insights from Neuroscience and AI, with Dr. Anna Ivanova",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "6",
-    "name": "Wanru Zhao",
-    "title": "PhD student at the University of Cambridge, UK",
-    "bio": "Wanru Zhao is a Ph.D. candidate in the Department of Computer Science and Technology at the University of Cambridge, where she is supervised by Prof. Nic Lane in the Cambridge Machine Learning Systems Lab (CaMLSys). Her research focuses on democratizing large model development through distributed learning, data curation, and modular model design. She develops frameworks that enable organizations to jointly train and adapt models across data silos and heterogenous compute, with the goal of making AI more accessible, efficient, and inclusive. Previously, she completed her M.Phil. in Advanced Computer Science from the University of Cambridge, graduating with Distinction.",
-    "imageUrl": "/images/guests/wanru-headshot-sm.png",
-    "visible": true
+    "id": "gabriel-saadia",
+    "name": "Dr. Saadia Gabriel",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 29,
+        "title": "From Hate Speech to Best Paper: Building Safer AI Systems, with Dr. Saadia Gabriel (Part 1)",
+        "youtubeUrl": ""
+      },
+      {
+        "number": 30,
+        "title": "100% Jailbreak Success? The Hard Truth About AI Safety, with Dr. Saadia Gabriel (Part 2)",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "7",
-    "name": "Dr. Dieuwke Hupkes",
-    "title": "Research scientist at Meta AI Research, Netherlands",
-    "bio": "Dr. Dieuwke Hupkes is a research scientist at Meta AI Research. She completed her PhD in computational linguistics at the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam under Willem Zuidema, followed by a postdoc at the Amsterdam unit of ELLIS. Her PhD at the University of Amsterdam focused on hierarchy and interpretability in neural models, exploring how AI systems can help us understand human language processing. And when she is not researching computational linguistics, she is competing in pole dancing championships, where she won the Dutch national title in doubles in 2018.",
-    "imageUrl": "/images/guests/headshot-dieuwke.jpg",
-    "visible": true
+    "id": "gonen-hila",
+    "name": "Dr. Hila Gonen",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 19,
+        "title": "Does Liking Yellow Make You a School Bus Driver? Hidden Failures in LLMs, with Dr. Hila Gonen",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "8",
-    "name": "Dr. Abhilasha Ravichander",
-    "title": "Assistant Professor at the Max Planck Institute for Software Systems, Germany",
-    "bio": "Until recently, Abhilasha Ravichander was a postdoctoral scholar at the University of Washington, and now she is a faculty at the Max Planck Institute for Software Systems. She received her PhD from Carnegie Mellon University in 2022. Her research focuses on improving the robustness and transparency of large-scale language models.  Abhilasha’s work has been presented at several top NLP conferences, receiving Best Resource Paper Award at ACL 2024, Best Theme Paper Award at ACL 2024, Best Paper Award at the Mid-Atlantic Student Colloquium 2024, Best Paper Award at the SoCalNLP 2022 symposium, Best Paper Award at the NAACL 2025 TrustNLP Workshop, and Area Chair Favorite Paper award at COLING 2018.  She has been recognized as a 'Rising Star in Generative AI' (2024), 'Rising Star in EECS' (2022), and 'Rising Star in Data Science' (2021).",
-    "imageUrl": "/images/guests/abhilasha-headshot.png",
-    "visible": true
+    "id": "letitia-parcalabescu",
+    "name": "Dr. Letitia Parcalabescu",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 18,
+        "title": "Faithfulness and Hallucinations in Reasoning Models, with Dr. Letitia Parcalabescu",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "9",
-    "name": "Sophia Simeng Han",
-    "title": "PhD student at Yale University and Research Intern at Meta FAIR, USA",
-    "bio": "Simeng Sophia Han is a final-year Ph.D. candidate at Yale University. She focuses on LLM complex reasoning, neuro-symbolic reasoning and reasoning evaluation. Her recent work on the FOLIO benchmark has had a profound impact on improving language models' reasoning capabilities. Outside of research, she deeply enjoys mentoring students, organizing conferences and workshops, and contributing to a more inclusive computer science community. She is also a chair for Widening NLP from 2025 to 2027. Beyond academia, Simeng is currently engaged in foundational research on LLM reasoning at Meta GenAI frontier reasoning team. She has also previously worked on information retrieval at Google Deepmind and retrieval-augmented generation at AWS NLP group.",
-    "imageUrl": "/images/guests/simeng-headshot.jpg",
-    "visible": true
+    "id": "swabha-swayamdipta",
+    "name": "Dr. Swabha Swayamdipta",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 17,
+        "title": "AI Safety Beyond Benchmarks -- Dr. Swabha Swayamdipta on Evaluation, Personalization, and Control",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "10",
-    "name": "Dr. Valentina Pyatkin",
-    "title": "Postdoc at the Allen Institute for AI and the University of Washington, USA",
-    "bio": "Valentina Pyatkin is a postdoctoral researcher at the Allen Institute for AI and the University of Washington, advised by Prof. Hanna Hajishirzi. She is additionally supported by an Eric and Wendy Schmidt Postdoctoral Award. She obtained her PhD in Computer Science from the NLP lab at Bar Ilan University. Her work has been awarded an ACL Outstanding Paper Award and the ACL Best Theme Paper Award. During her doctoral studies, she conducted research internships at Google and the Allen Institute for AI, where she received the AI2 Outstanding Intern of the Year Award. She holds an MSc in AI from the University of Edinburgh and a BA from the University of Zurich. Valentina's research focuses on post-training and the adaptation of language models.",
-    "imageUrl": "/images/guests/valentina-headshot.jpg",
-    "visible": true
+    "id": "maria-ryskina",
+    "name": "Dr. Maria Ryskina",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 16,
+        "title": "Do LLMs Understand Meaning? Neuroscience, Evaluation, and the Future of AI, with Dr. Maria Ryskina",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "11",
-    "name": "Dr. Ana Marasović",
-    "title": "Assistant professor at the University of Utah, USA",
-    "bio": "Ana Marasović is an Assistant Professor in the Kahlert School of Computing at the University of Utah. Her research interests broadly fall into natural language processing (NLP), human-centered AI, and interpretability. Previously, she was a Young Investigator at the Allen Institute for AI, and during that time, also held a courtesy appointment in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. She received her PhD from Heidelberg University. She is a co-recipient of the Best Paper Award at ACL 2023, the Best Paper Honorable Mention at ACL 2020, and the Best Paper Award at the SoCal 2022 NLP Symposium. She is also the University of Utah One-U Responsible AI Initiative Faculty Fellow.",
-    "imageUrl": "/images/guests/ana-headshot.jpg",
-    "visible": true
+    "id": "antoniak-maria",
+    "name": "Dr. Maria Antoniak",
+    "title": "",
+    "bio": "",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 15,
+        "title": "How Does AI Reflect Society, with Dr. Maria Antoniak",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "12",
+    "id": "annie-en-lee-shiun",
+    "name": "Dr. Annie En-Shiun Lee",
+    "title": "Assistant professor at the OntarioTech University and the University of Toronto (status-only), Canada",
+    "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
+    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/43007946/43007946-1740789260762-b58903ccdaf59.jpg",
+    "episodes": [
+      {
+        "number": 14,
+        "title": "Multilingual AI, with Dr. Annie En-Shiun Lee",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "shwartz-vered",
     "name": "Dr. Vered Shwartz",
     "title": "Assistant professor at the University of British Columbia, Canada",
     "bio": "Vered Shwartz is an Assistant Professor of Computer Science at the University of British Columbia, and a CIFAR AI Chair at the Vector Institute. My research interests focus on natural language processing, with the fundamental goal of building models capable of human-level understanding of natural language. My lab is currently working on testing and improving the capabilities of large language models and vision and language models, developing culturally-competent AI, and responsible NLP applications in sensitive domains (e.g., legal, medical).",
     "imageUrl": "/images/guests/vered-headshot.jpg",
-    "visible": true
+    "episodes": [
+      {
+        "number": 13,
+        "title": "Why AI Doesn’t Understand Your Culture? Dr. Vered Shwartz on Cultural Bias in LLMs",
+        "youtubeUrl": ""
+      }
+    ]
   },
   {
-    "id": "13",
-    "name": "Dr. Annie En-Shiun Lee",
-    "title": "Assistant professor at the OntarioTech University and the University of Toronto (status-only), Canada",
-    "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
-    "imageUrl": "/images/guests/annie-headshot.jpg",
-    "visible": false
+    "id": "ana-marasovic",
+    "name": "Dr. Ana Marasović",
+    "title": "Assistant professor at the University of Utah, USA",
+    "bio": "Ana Marasović is an Assistant Professor in the Kahlert School of Computing at the University of Utah. Her research interests broadly fall into natural language processing (NLP), human-centered AI, and interpretability. Previously, she was a Young Investigator at the Allen Institute for AI, and during that time, also held a courtesy appointment in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. She received her PhD from Heidelberg University. She is a co-recipient of the Best Paper Award at ACL 2023, the Best Paper Honorable Mention at ACL 2020, and the Best Paper Award at the SoCal 2022 NLP Symposium. She is also the University of Utah One-U Responsible AI Initiative Faculty Fellow.",
+    "imageUrl": "/images/guests/ana-headshot.jpg",
+    "episodes": [
+      {
+        "number": 12,
+        "title": "Can We Trust AI Explanations? Dr. Ana Marasović on AI Trustworthiness, Explainability & Faithfulness",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "pyatkin-valentina",
+    "name": "Dr. Valentina Pyatkin",
+    "title": "Postdoc at the Allen Institute for AI and the University of Washington, USA",
+    "bio": "Valentina Pyatkin is a postdoctoral researcher at the Allen Institute for AI and the University of Washington, advised by Prof. Hanna Hajishirzi. She is additionally supported by an Eric and Wendy Schmidt Postdoctoral Award. She obtained her PhD in Computer Science from the NLP lab at Bar Ilan University. Her work has been awarded an ACL Outstanding Paper Award and the ACL Best Theme Paper Award. During her doctoral studies, she conducted research internships at Google and the Allen Institute for AI, where she received the AI2 Outstanding Intern of the Year Award. She holds an MSc in AI from the University of Edinburgh and a BA from the University of Zurich. Valentina's research focuses on post-training and the adaptation of language models.",
+    "imageUrl": "/images/guests/valentina-headshot.jpg",
+    "episodes": [
+      {
+        "number": 11,
+        "title": "Open Science and LLMs, with Dr. Valentina Pyatkin",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "han-simeng-sophia",
+    "name": "Sophia Simeng Han",
+    "title": "PhD student at Yale University and Research Intern at Meta FAIR, USA",
+    "bio": "Simeng Sophia Han is a final-year Ph.D. candidate at Yale University. She focuses on LLM complex reasoning, neuro-symbolic reasoning and reasoning evaluation. Her recent work on the FOLIO benchmark has had a profound impact on improving language models' reasoning capabilities. Outside of research, she deeply enjoys mentoring students, organizing conferences and workshops, and contributing to a more inclusive computer science community. She is also a chair for Widening NLP from 2025 to 2027. Beyond academia, Simeng is currently engaged in foundational research on LLM reasoning at Meta GenAI frontier reasoning team. She has also previously worked on information retrieval at Google Deepmind and retrieval-augmented generation at AWS NLP group.",
+    "imageUrl": "/images/guests/simeng-headshot.jpg",
+    "episodes": [
+      {
+        "number": 10,
+        "title": "Unlocking LLM Reasoning, with Simeng Sophia Han",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "abhilasha-ravichander",
+    "name": "Dr. Abhilasha Ravichander",
+    "title": "Assistant Professor at the Max Planck Institute for Software Systems, Germany",
+    "bio": "Until recently, Abhilasha Ravichander was a postdoctoral scholar at the University of Washington, and now she is a faculty at the Max Planck Institute for Software Systems. She received her PhD from Carnegie Mellon University in 2022. Her research focuses on improving the robustness and transparency of large-scale language models.  Abhilasha’s work has been presented at several top NLP conferences, receiving Best Resource Paper Award at ACL 2024, Best Theme Paper Award at ACL 2024, Best Paper Award at the Mid-Atlantic Student Colloquium 2024, Best Paper Award at the SoCalNLP 2022 symposium, Best Paper Award at the NAACL 2025 TrustNLP Workshop, and Area Chair Favorite Paper award at COLING 2018.  She has been recognized as a 'Rising Star in Generative AI' (2024), 'Rising Star in EECS' (2022), and 'Rising Star in Data Science' (2021).",
+    "imageUrl": "/images/guests/abhilasha-headshot.png",
+    "episodes": [
+      {
+        "number": 9,
+        "title": "LLM Hallucinations and Machine Unlearning, with Dr. Abhilasha Ravichander",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "dieuwke-hupkes",
+    "name": "Dr. Dieuwke Hupkes",
+    "title": "Research scientist at Meta AI Research, Netherlands",
+    "bio": "Dr. Dieuwke Hupkes is a research scientist at Meta AI Research. She completed her PhD in computational linguistics at the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam under Willem Zuidema, followed by a postdoc at the Amsterdam unit of ELLIS. Her PhD at the University of Amsterdam focused on hierarchy and interpretability in neural models, exploring how AI systems can help us understand human language processing. And when she is not researching computational linguistics, she is competing in pole dancing championships, where she won the Dutch national title in doubles in 2018.",
+    "imageUrl": "/images/guests/headshot-dieuwke.jpg",
+    "episodes": [
+      {
+        "number": 8,
+        "title": "Generalization in AI, with Dr. Dieuwke Hupkes",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "wanru-zhao",
+    "name": "Wanru Zhao",
+    "title": "PhD student at the University of Cambridge, UK",
+    "bio": "Wanru Zhao is a Ph.D. candidate in the Department of Computer Science and Technology at the University of Cambridge, where she is supervised by Prof. Nic Lane in the Cambridge Machine Learning Systems Lab (CaMLSys). Her research focuses on democratizing large model development through distributed learning, data curation, and modular model design. She develops frameworks that enable organizations to jointly train and adapt models across data silos and heterogenous compute, with the goal of making AI more accessible, efficient, and inclusive. Previously, she completed her M.Phil. in Advanced Computer Science from the University of Cambridge, graduating with Distinction.",
+    "imageUrl": "/images/guests/wanru-headshot-sm.png",
+    "episodes": [
+      {
+        "number": 7,
+        "title": "Decentralized AI, with Wanru Zhao",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "faiza-khan-khattak",
+    "name": "Dr. Faiza Khan Khattak",
+    "title": "CTO at Monark Health, Canada.",
+    "bio": "Faiza is the Chief Technology Officer (CTO) of Monark Health, an innovative startup dedicated to leveraging AI to support individuals overcoming Alcohol Use Disorder (AUD), and she also works as an AI consultant. As a Natural Language Processing (NLP) scientist, Faiza specializes in fairness in language models, diverse NLP applications, and applied research, ensuring that AI technologies are equitable and inclusive. Faiza holds a Master’s and PhD in Computer Science from Columbia University. She further developed her expertise through postdoctoral research at the University Health Network (UHN) and St. Michael’s Hospital in Toronto and as a co-founder of a healthcare startup. She has also had the opportunity to teach as a sessional lecturer at the University of Toronto Scarborough. Her career spans both industry and academia, including roles as a Data Scientist at Manulife and an Applied Machine Learning Scientist at the Vector Institute for AI, where she has led cross-functional teams, directed collaborative research initiatives, and held workshops to bridge academic research with real-world applications. Her expertise extends to stakeholder engagement, AI adoption strategies, and mentoring junior team members. Faiza is also deeply committed to responsible AI development. She served as the lead organizer of the Responsible Language Models Workshop at the Association for the Advancement of Artificial Intelligence (AAAI) in 2024.",
+    "imageUrl": "/images/guests/faiza-headshot.jpg",
+    "episodes": [
+      {
+        "number": 6,
+        "title": "Interpretable AI, with Dr. Faiza Khan Khattak",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "angelica-lim",
+    "name": "Dr. Angelica Lim",
+    "title": "Assistant Professor at Simon Fraser University, Canada.",
+    "bio": "Dr. Angelica Lim is an AI roboticist. She is an Assistant Professor in Computing Science at Simon Fraser University and leads the SFU Rosie Lab, where she builds artificial intelligence software for robots to interact with social intelligence and empathy. Her research addresses the question 'Could a robot have feelings?' by combining neuroscience, machine learning and developmental psychology. Angelica has a Ph.D. and M.Sc. in Computer Science from Kyoto University, Japan, specializing in AI applied to Robotics, and a B.Sc. in Computing Science (specializing in Artificial Intelligence) from Simon Fraser University in Canada.",
+    "imageUrl": "/images/guests/headshot-angelica.png",
+    "episodes": [
+      {
+        "number": 5,
+        "title": "Robots with Empathy, with Dr. Angelica Lim",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "aparna-balagopalan",
+    "name": "Aparna Balagopalan",
+    "title": "PhD student at MIT, USA.",
+    "bio": "Aparna Balagopalan is a PhD student in the Department of Electrical Engineering and Computer Science (EECS) at MIT. Her research broadly focuses on developing fair, interpretable, and robust models by carefully re-evaluating and surfacing assumptions in machine learning-based measurements in socially-relevant contexts. Aparna has held research intern positions at the Stanford RegLab, the Max Planck Institute for Security and Privacy, the Technische Universität, Dresden as a DAAD-WISE scholar, and at the Philips Innovation Campus, Bengaluru in the healthcare R&D team.",
+    "imageUrl": "/images/guests/headshot-aparna.jpg",
+    "episodes": [
+      {
+        "number": 4,
+        "title": "Responsible AI for Health, with Aparna Balagopalan",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "amanda-cercas-curry",
+    "name": "Dr. Amanda Cercas Curry",
+    "title": "Researcher at CENTAI Institute, Italy.",
+    "bio": "Dr. Amanda Cercas Curry is a researcher at CENTAI Institute, where she is working on applied NLP, fairness and evaluation. Her research interests lie at the intersection of Natural Language Processing (NLP), Human-Computer Interaction (HCI) and Feminism with the aim of building more just NLP systems. She is particularly interested in ethics, with a strong influence from feminism. Previously she was a postdoctoral researcher at MilaNLP in Bocconi University. She completed her PhD at Heriot-Watt University in Edinburgh. She also co-hosts a podcast where she discusses all things tech ethics, called Let's Chat Ethics.",
+    "imageUrl": "/images/guests/headshot-amanda.jpeg",
+    "episodes": [
+      {
+        "number": 3,
+        "title": "Bias in AI, with Amanda Cercas Curry",
+        "youtubeUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "dziri-nouha",
+    "name": "Dr. Nouha Dziri",
+    "title": "Research scientist at Allen Institute for AI (AI2), USA.",
+    "bio": "Dr. Nouha Dziri is an AI research scientist at the Allen Institute for AI (Ai2). Her research investigates a wide variety of problems across NLP and AI including building state-of-the-art language models and understanding their limits and inner workings. She also works on AI safety to ensure the responsible deployment of LLMs while enhancing their reasoning capabilities. Prior to Ai2, she worked at Google DeepMind and Microsoft Research. She earned her PhD from the University of Alberta and the Alberta Machine Intelligence Institute. Her work has been published in top-tier AI venues including NeurIPS, ICML, ICLR, TACL, ACL, NAACL and EMNLP, and featured in TechCrunch, LeMonde, The Economist, Science News and QuantaMagazine.",
+    "imageUrl": "/images/guests/headshot-nouha.jpg",
+    "episodes": [
+      {
+        "number": 2,
+        "title": "Limits of Transformers, with Dr. Nouha Dziri",
+        "youtubeUrl": ""
+      }
+    ]
   }
-] 
+]

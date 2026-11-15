@@ -1,0 +1,10 @@
+{
+  "_comment": "Settings for scripts/sync-youtube.ts. Episodes come from the playlists in the channel's Podcasts section; every other public video goes to the Events page. If automatic podcast detection ever fails, list the podcast playlist IDs (they start with PL) in podcastPlaylistIds and they will be used instead.",
+  "channelHandle": "@WomeninAIResearch",
+  "podcastPlaylistIds": [],
+  "excludeVideoIds": [],
+  "includeShortsInEvents": false,
+  "shortsMaxSeconds": 180,
+  "spotifyShowUrl": "https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M",
+  "appleShowUrl": "https://podcasts.apple.com/ca/podcast/women-in-ai-research-wiair/id1805993416"
+}
