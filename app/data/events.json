@@ -1,1 +1,788 @@
-[]
+[
+  {
+    "id": "PLc7IR51GK3dw",
+    "title": "COLM 2026",
+    "description": "The Third Annual Conference on Language Modeling. San Francisco, USA",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLc7IR51GK3dw",
+    "videos": [
+      {
+        "videoId": "LZsEasfVc7Q",
+        "title": "COLM 2026 in San Francisco. Do All LLMs Learn in the Same Order?",
+        "description": "Do all language models learn things in the same order - even when they are trained on different data? Emmy Liu (CMU) tracked 91 skills across four model families through the first trillion tokens of pre-training, and the answer is: largely, yes.\n\nWork is presented at COLM 2026, the Third Annual Conference on Language Modeling.\n\nPre-training is usually monitored with a single loss curve, which averages over everything a model is learning at once. In this episode of Women in AI Research, Emmy Liu - final-year PhD student at Carnegie Mellon University, advised by Graham Neubig - walks us through her COLM paper \"What Do Language Models Learn and When? The Implicit Curriculum Hypothesis\", which opens up that curve and follows individual capabilities checkpoint by checkpoint.\n\nWhat they found:\n- Skills emerge in a highly consistent order across OLMo, Pythia and LLM360 models from 410M to 13B parameters (mean Spearman correlation of 0.81 across 45 model pairs) - including Crystal Coder, which was trained on far more code than the rest.\n- Copying comes first, then coreference and simple morphology, string operations, single-word translation, and maths - single-step before multi-step.\n- Composite tasks mostly emerge after their parts, but not always: 22 of 76 dependencies came out inverted.\n- Some logic tasks are learned before simple arithmetic - the reverse of how children learn.\n- The model's own task representations (function vectors) can partly predict learning curves, and composing two skills turns out to be something the model has to learn separately.\n\nLINKS\nPaper: https://arxiv.org/abs/2604.08510\n\nWomen in AI Research (WiAIR) features conversations with women researchers about their work, hosted by Jekaterina Novikova. Subscribe for more conversations with the people doing the research.\n\n#LLM #MachineLearning #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-05T15:00:30Z",
+        "publishDate": "October 5, 2026",
+        "durationSeconds": 1920,
+        "thumbnailUrl": "https://i.ytimg.com/vi/LZsEasfVc7Q/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=LZsEasfVc7Q"
+      },
+      {
+        "videoId": "Sb_6MuO7bH4",
+        "title": "COLM 2026 in San Francisco. Can AI Safety Tools Detect Manipulation? 1,000 People Say No",
+        "description": "An AI that quietly steers you toward buying a sponsored supplement, or toward leaning on it for emotional support, may never say a single false thing. So how would a safety system know it changed your mind?\n\nIn this video, Jekaterina Novikova talks with Jocelyn Shen - Research Scientist at Google DeepMind, PhD from the MIT Media Lab - about her paper \"The Hidden Puppet Master: Predicting Human Belief Change in Manipulative LLM Dialogues\".\n\nWork is presented at COLM 2026 (the Third Annual Conference on Language Modeling).\n\nJocelyn and her coauthors introduce PUPPET, a taxonomy of emotional manipulation in human-LLM conversations. It is built on two dimensions that most prior work ignores: the morality of the hidden incentive (harmful or prosocial) and how personalised the manipulation is. They then ran a study in which more than 1,000 participants chatted with manipulative and non-manipulative agents about everyday questions, and they measured how much people's beliefs actually shifted.\n\nWhat we cover:\n- Why manipulation can be \"prosocial\" - and why it is still manipulation\n- Why none of the existing automatic manipulation metrics reliably predicted real human belief change\n- Why GPT-4o and DeepSeek underpredict belief shift while Gemini and Llama overpredict it\n- Why \"okay, okay\" in a chat log is so hard to read, for models and for people\n- How the taxonomy could power user-facing tools that expose an AI's hidden incentives\n- What the COLM reviewers pushed on, and why measuring belief is the hardest part of this work\n\nLINKS:\nPaper: https://arxiv.org/abs/2603.20907\nDataset: https://github.com/mitmedialab/llm-manipulation\n\nWomen in AI Research (WiAIR) features conversations with women researchers about their work - the methods, the findings, and the open questions behind them.\n\n#AISafety #LLM #NLProc #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-06T15:00:24Z",
+        "publishDate": "October 6, 2026",
+        "durationSeconds": 949,
+        "thumbnailUrl": "https://i.ytimg.com/vi/Sb_6MuO7bH4/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Sb_6MuO7bH4"
+      },
+      {
+        "videoId": "dIee9ci0gQo",
+        "title": "COLM 2026 in San Francisco. Are You Wasting Your Fine-Tuning Data? Why It Belongs in Pretraining",
+        "description": "Most teams with a small domain dataset follow the standard recipe: pretrain a general model, then fine-tune on the domain data. Christina Baek's results suggest that recipe leaves performance on the table.\n\nWork is presented at COLM 2026 (the Third Annual Conference on Language Modeling).\n\nChristina Baek (recent CMU PhD, advised by Zico Kolter and Aditi Raghunathan) presents work from her internship at DatologyAI: \"The Finetuner's Fallacy: When to Pretrain with Your Finetuning Data\". The idea, specialised pretraining, is simple. Take the small dataset you would normally save for fine-tuning and mix it into pretraining from the very start as a small share of the tokens, even if that means repeating it dozens of times.\n\nAcross music composition, chemistry and mathematical proofs, each with a 300M-token domain dataset, a 200B-token pretraining run with 5% domain data still ended with lower domain test loss after fine-tuning. That 5% means the model saw the dataset roughly 33 times. Specialised pretraining reached the same domain loss with 1.4-1.75x fewer pretraining tokens, overfit less during fine-tuning, and forgot less of its general knowledge.\n\nWe also discuss:\n- why embedding distance and domain classifiers fail to predict when mixing helps, and the one simple signal that does\n- scaling laws for repeated data, built from two separate power laws\n- why the optimal mixture shrinks as the pretraining budget grows\n- why mixing general data into fine-tuning does not reproduce the effect\n- the negative results that did not make it into the paper\n\nLINKS:\nPaper: https://arxiv.org/abs/2603.16177\n\nWomen in AI Research (WiAIR) features conversations with women researchers about their work - the methods, the findings, and the open questions behind them.\n\n#LLM #NLProc #MachineLearning #WomenInAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-07T15:00:29Z",
+        "publishDate": "October 7, 2026",
+        "durationSeconds": 1409,
+        "thumbnailUrl": "https://i.ytimg.com/vi/dIee9ci0gQo/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dIee9ci0gQo"
+      },
+      {
+        "videoId": "PoySF1IohiU",
+        "title": "COLM 2026 in San Francisco. Reunions",
+        "description": "Live from COLM 2026, Aparna Balagopalan (Research Scientist at Writer; Research Affiliate at the Berkman Klein Center) returns to WiAIR -- she was our guest in Season 1, Episode 3, back when she was finishing her PhD. Today she's presenting new work on a problem that sits at the intersection of two big trends: LLM personalization and sycophancy.\n\nMemory systems store snippets of what users tell a model. But what if those snippets contain a misconception? Aparna and her co-authors show that memory can lead models to prioritize a user's incorrect beliefs over evidence — and they introduce a benchmark to measure it, evaluate several memory systems, and propose lightweight mitigations.\n\nWe also talk about how her research moved from health AI to LLM trustworthiness more broadly (sycophancy, watermarking), whether results hold for open-source vs. API models, and what makes COLM's single-track format different from NeurIPS and FAccT.\n\nLINKS:\n🎧 Aparna's Season 1 episode: https://youtu.be/DEdJltlFg4I\n📄 Paper at COLM: \"Recalling Too Well: Sycophancy Evaluation and Mitigation in Memory-Augmented Models\" https://arxiv.org/abs/2606.10949\n\nWiAIR -- AI research through women's eyes. New conversations with researchers every day during COLM.\n🔔 Subscribe for more interviews from COLM 2026.\n\n#COLM2026 #LLM #Sycophancy #AIMemory #AISafety #NLP #WomenInAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-07T16:00:04Z",
+        "publishDate": "October 7, 2026",
+        "durationSeconds": 307,
+        "thumbnailUrl": "https://i.ytimg.com/vi/PoySF1IohiU/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=PoySF1IohiU"
+      },
+      {
+        "videoId": "YrmhHUqfVlY",
+        "title": "Is COLM the New NeurIPS? Russ Salakhutdinov on Agents, Evals and Long-Horizon Tasks",
+        "description": "Why do so many of the evaluations used to test frontier models come from academia rather than the labs themselves? Russ Salakhutdinov (Carnegie Mellon University) has a clear answer: labs can game their own benchmarks, and their evals carry their own biases.\n\nRecorded on site at COLM, the Conference on Language Modeling, this conversation covers what COLM looks like from the inside, why the conference feels like NeurIPS did a decade ago, and where agentic research is heading. Russ shares how his group replicated the iPhone and its apps to train and test agents that can navigate apps and place orders - and how he found out at COLM that Apple uses that system internally and is building on it.\n\nWe also get into why multi-turn and long-horizon evaluation is so hard: when a task takes hours or days, how do you give an agent credit for partial progress? Russ explains the partial credit assignment problem and why it matters as a training signal.\n\nFor students and early-career researchers, Russ gives concrete advice on getting into research: start in undergrad, and work with PhD students, who often act as junior advisors. He describes how his former student Paul Liang, now a professor at MIT, ran what was effectively his own lab in his final years at CMU.\n\nChapters\n00:00 Live from COLM - Women in AI Research\n00:14 First COLM for both of us: what makes it different\n01:09 Will COLM become the next ICML?\n02:19 What everyone at COLM is working on: agents and post-training\n03:06 \"We use your system internally\" - Apple and the iPhone agent\n04:20 Is the field getting agentic evaluation wrong?\n04:59 Why frontier labs struggle to build their own evals\n05:53 Multi-turn and long-horizon tasks: the partial credit problem\n06:45 Advice for women entering AI research\n\nWomen in AI Research (WiAIR) is a podcast hosted by Jekaterina Novikova, featuring conversations with researchers shaping the field of AI.\n\n#COLM #AIAgents #WomenInAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-08T15:00:36Z",
+        "publishDate": "October 8, 2026",
+        "durationSeconds": 578,
+        "thumbnailUrl": "https://i.ytimg.com/vi/YrmhHUqfVlY/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YrmhHUqfVlY"
+      },
+      {
+        "videoId": "KNSK8BWWuPI",
+        "title": "COLM 2026 in San Francisco. DNA Has No Words. So How Should a Language Model Read It?",
+        "description": "Unlike English, DNA has no spaces, no punctuation and no natural word boundaries - so every DNA language model has to decide for itself what counts as a \"word\". Most borrow BPE from NLP and let frequency decide. But the most frequent sequences are not necessarily the ones that matter biologically.\n\nThis episode of Women in AI Research features Nan Huang, PhD student at UC San Diego, presenting EvoLen - a tokenizer that uses cross-species evolutionary signals to decide which DNA segments should become tokens. The model architecture and training objective stay fixed, only the tokenizer changes, and that alone is enough to move the results:\n\n- 27.4% better preservation of intact transcription factor motifs\n- up to 14.4% stronger alignment with evolutionary constraint (phyloP)\n- better than standard BPE on 40 of 56 downstream comparisons, with the clearest gains on regulatory and cross-species tasks\n\nNan is also candid about where it does not help, and why evolutionary tokenization should not be treated as universally optimal for every genomic signal.\n\nWe then talk about what NLP researchers can take from this: how DNA tokenizers differ from natural-language ones, whether efficiency should be the main goal of a tokenizer, why DNA could become another modality in multimodal and world models, and how better cross-species performance could eventually help drug discovery move from mouse studies to humans.\n\nIf you work on tokenization, LLM inductive biases or AI for science, this is a short, dense look at a design choice most of us treat as already solved.",
+        "publishedAt": "2026-10-08T18:00:31Z",
+        "publishDate": "October 8, 2026",
+        "durationSeconds": 1029,
+        "thumbnailUrl": "https://i.ytimg.com/vi/KNSK8BWWuPI/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KNSK8BWWuPI"
+      },
+      {
+        "videoId": "H86YiYyqw5A",
+        "title": "COLM 2026 in San Francisco. On mechanistic interpretability and AI in education",
+        "description": "Recorded live at COLM 2026 in San Francisco. Siyan Li, a fourth-year PhD student at Columbia University, joins Jekaterina Novikova to share the papers that caught her attention at this year's Conference on Language Modeling. Siyan works on human-centred NLP with a strong focus on education, and on privacy - a direction that grew out of protecting student data while building educational systems.\n\nWiAIR -- AI research through women's eyes. New conversations with researchers every day during COLM.\n🔔 Subscribe for more interviews from COLM 2026.\n\n#COLM2026 #LLM #NLP #WomenInAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-09T12:00:14Z",
+        "publishDate": "October 9, 2026",
+        "durationSeconds": 339,
+        "thumbnailUrl": "https://i.ytimg.com/vi/H86YiYyqw5A/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=H86YiYyqw5A"
+      },
+      {
+        "videoId": "PvFjytlHMd8",
+        "title": "Is COLM the Most AGI-Pilled AI Conference?",
+        "description": "For years, Irena Gao did not believe we could simulate people reliably. Now every human-AI interaction benchmark her group builds depends on a user simulator. Recorded live at COLM 2026 in San Francisco.\n\nIrena is a fourth-year CS PhD student at Stanford, advised by Carlos Guestrin, working on human-AI interaction. She was at COLM for the first time to present her paper, and we talked on the conference floor about what makes COLM feel different from ICML and ICLR, why so much of it looks closer to frontier-lab work than to theory, and how to get real value out of a conference of thousands without being overwhelmed.\n\nThen the question that matters for anyone building evaluations: if you want to study how people interact with AI, can you avoid simulating them? Irena explains why she moved from scepticism to relying on user simulators, and why the next frontier - simulating whole populations and how they affect each other - may be more tractable now than it ever was.\n\nWiAIR -- AI research through women's eyes. New conversations with researchers every day during COLM.\n🔔 Subscribe for more interviews from COLM 2026.\n\n#COLM2026 #LLM #NLP #WomenInAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-09T14:00:22Z",
+        "publishDate": "October 9, 2026",
+        "durationSeconds": 316,
+        "thumbnailUrl": "https://i.ytimg.com/vi/PvFjytlHMd8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=PvFjytlHMd8"
+      },
+      {
+        "videoId": "HQSyMFc3QBc",
+        "title": "COLM 2026 in SF | LLM Judges Can’t Spot AI Slop. Humans Can.",
+        "description": "Everyone talks about \"AI slop,\" but can you actually measure it? 🤔\n\nIn this WiAIR episode recorded live at COLM, Jekaterina Novikova talks with Chantal Shaib, a postdoc at MIT working on AI and writing, about her poster on measuring AI slop in text. The Oxford Dictionary describes slop as low-quality, inaccurate, or unwanted content. But what does \"unwanted\" look like as a text feature you can actually compute?\n\nChantal and her collaborators from Northeastern University, Stonybrook University and Meta AI, surveyed 19 experts across journalism, writing, linguistics, NLP, and philosophy to build the first measurable taxonomy of slop. They then hired professional copy editors with decades of combined experience to annotate slop in AI-generated text.\n\nThe results are surprising:\n🔹 Slop is NOT the same thing as AI-text detection\n🔹 Experts labeled 34% of texts as slop, while GPT-5, DeepSeek V3, and o3-mini flagged only 3 to 8%\n🔹 Even with examples and the full annotation guide, LLM judges fall far short of human experts\n🔹 A simple model using only syntax features beat the others at predicting slop, hinting that humans subconsciously pick up on repetitive structure\n🔹 What counts as slop depends on the domain and the purpose of the text\n\nPaper - Measuring AI \"Slop\" in Text, https://arxiv.org/abs/2509.19163\n\nIf you build evals, use LLM-as-a-judge, or care about the quality of what models write, this one is for you.\n\n⏱️ Timestamps\n00:00 Live from COLM 🎙️\n00:11 What exactly is \"AI slop\"?\n00:50 Why slop ≠ AI-generated text\n01:15 19 experts, 1 taxonomy: how slop was defined\n01:40 The 3 pillars of slop: utility, quality, style\n02:15 Copy editors vs. AI text (and a climate scientist who doesn’t exist)\n03:15 Why slop looks different in news vs. Q&A\n03:45 Putting LLM judges to the test\n04:15 Humans: 34%. GPT-5: 8%. The big gap\n05:00 The surprising winner: syntax-only features 🧠\n06:17 Slop vs. hallucinations: where’s the line?\n06:53 Do the slop categories overlap?\n07:54 Wait… do some people actually LIKE slop?\n08:53 Do experts even agree on what’s slop?\n09:25 From dictionary definition to measurable features\n09:58 Why every AI company should care\n10:38 What’s next: scaling slop research to everyday readers\n\n🔔 Join the WiAIR community and subscribe for more conversations with women shaping AI research.\n\n👇 Have you noticed slop that LLM judges miss? Tell us in the comments!\n\n#AISlop #LLM #NLP #LLMasaJudge #AIResearch #COLM #WomenInAI #MachineLearning #AIEvaluation #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-10T15:00:38Z",
+        "publishDate": "October 10, 2026",
+        "durationSeconds": 672,
+        "thumbnailUrl": "https://i.ytimg.com/vi/HQSyMFc3QBc/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HQSyMFc3QBc"
+      },
+      {
+        "videoId": "6IStjTTLZDo",
+        "title": "COLM 2026 in SF | The Tokenizer Before the Tokenizer: How One Regex Line Can Make or Break Models",
+        "description": "Most teams pick a tokenizer and never look at it again. Clara Meister shows why that is a mistake, especially for code and for low-resource languages.\n\nRecorded live at COLM 2026, the Conference on Language Modeling. Clara Meister (Postdoc, EPFL) joins Jekaterina Novikova to talk about TokEval, her new library for measuring tokenizers directly on text - and what controlled pretraining experiments reveal about when tokenization actually matters.\n\nTwo findings stand out. For code, the decisive choice is not the tokenizer algorithm but the pre-tokenizer - the \"tokenizer before the tokenizer\", a long regex that decides where tokens are never allowed to cross. Changing a single whitespace clause produced a large jump in Python pass@1 across seeds. For multilingual models, swapping the tokenizer barely moves English, but causes a wide spread in performance for languages with less training data. The practical upshot: you can tailor your tokenizer for low-resource languages without really hurting English.\n\nIn this episode:\n- What tokenizer intrinsic metrics are, and how to run them on your own tokenizer\n- Why whitespace handling in the pre-tokenizer matters so much for Python\n- Why English is robust to almost any tokenizer\n- How a parallel corpus (FLORES+) and bits per sentence make cross-language comparison fair\n- What changes for languages without standard word boundaries\n- Concrete takeaways for anyone training or choosing a tokenizer\n\nPaper - TokEval: A Tokenizer Evaluation Suite,  https://arxiv.org/pdf/2608.18062\n\nChapters\n00:00 Live from COLM 2026\n00:13 Meet Clara Meister and TokEval: measuring a tokenizer without training a model\n01:05 The second question: where does tokenization actually hurt?\n01:30 The \"tokenizer before the tokenizer\" - what pre-tokenizers do\n02:30 One regex clause, a big jump in Python pass@1\n03:30 Multilingual models: different languages care about different tokenizer properties\n04:15 Pre-tokenizer, algorithm, data mix - what was ablated\n04:45 Why English barely notices your tokenizer\n05:20 Low-resource languages: where swapping the tokenizer changes everything\n06:32 Languages without word boundaries\n07:17 Key takeaways for code and multilingual LLMs\n08:16 What's next: understanding the low-resource effect\n\nWomen in AI Research (WiAIR) features conversations with women researchers shaping the field of AI - their work, their findings, and the questions they are still asking.\n\n#NLProc #LLM #WiAIR #WiAIRpodcast #COLM2026",
+        "publishedAt": "2026-10-11T15:00:39Z",
+        "publishDate": "October 11, 2026",
+        "durationSeconds": 521,
+        "thumbnailUrl": "https://i.ytimg.com/vi/6IStjTTLZDo/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6IStjTTLZDo"
+      },
+      {
+        "videoId": "QYpI-tzG3s4",
+        "title": "Bigger Models Won’t Fix Low-Resource Languages | Tiny Aya (Cohere Labs) @ COLM 2026",
+        "description": "Does a model become multilingual just by getting bigger? Diana Abagyan from Cohere Labs argues it doesn't. Multilinguality has to be designed into every stage, from the tokenizer to post-training.\n\nRecorded at COLM 2026 in San Francisco, this conversation covers Tiny Aya, Cohere Labs' family of 3B-parameter multilingual models. They cover 70 languages and are small enough to run on a phone, which matters for the communities these languages belong to.\n\nIn this episode:\n→ Why the tokenizer was built to represent every script efficiently, and why this matters most for small models\n→ Region-specific post-training: how language clusters were chosen empirically (and why South Asia stands alone)\n→ Model merging: why merging regional models back with the global checkpoint recovered safety performance\n→ Results on generative and discriminative benchmarks, including translation (FLORES): consistent performance as languages go from high- to lowest-resource, while competitor models drop sharply\n→ Why filtering too much unsafe data in pre-training can make safety post-training less effective\n→ Synthetic data for multilingual post-training: naturalness and cultural adaptation, plus fusing outputs from multiple teacher models\n→ Should you care about multilinguality if you only build for English?\n\n⏱️ Chapters\n00:00 Live from COLM 2026\n00:28 Meet Diana (Cohere Labs)\n00:38 What is Tiny Aya? A 3B model for 70 languages\n03:26 Which language regions belong together?\n04:44 Benchmark results across resource levels\n06:07 Low-resource languages: where competitors fall off\n07:08 What actually drives the performance\n09:14 Multilingual safety and the model-merging surprise\n10:59 Key takeaways for practitioners\n11:37 Does multilinguality matter for English-only use cases?\n13:02 70 languages… including Lithuanian?\n\n📄 Paper: https://arxiv.org/abs/2603.11510\n\n🎙️ Women in AI Research (WiAIR) brings you conversations with the people doing AI research: how it's done, what works, and what doesn't. Subscribe for daily COLM 2026 highlights.\n\n#TinyAya #CohereLabs #COLM2026 #MultilingualAI #LLM #NLP #LowResourceLanguages #AIResearch #WiAIR",
+        "publishedAt": "2026-10-13T15:00:28Z",
+        "publishDate": "October 13, 2026",
+        "durationSeconds": 805,
+        "thumbnailUrl": "https://i.ytimg.com/vi/QYpI-tzG3s4/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QYpI-tzG3s4"
+      },
+      {
+        "videoId": "VnABXJt6YXM",
+        "title": "Steering 1% of Attention Heads Reduces Sycophancy | COLM 2026",
+        "description": "Can you change how an LLM behaves at inference time, with no retraining, by intervening on just 1% of its attention heads? Aruna Sankaranarayanan, a PhD student at MIT, in their COLM 2026 paper shows you can, and that it works on free-form responses, not just single-token outputs.\n\nMost interpretability methods find mechanisms using tightly constrained setups, where the model has to answer in one token. However, we don't use LLMs that way. In \"Activation Steering via Generative Causal Mediation,\" Aruna asks whether that constraint is necessary. She shows that the model's natural, long-form responses can be used to find causally relevant circuits and steer behavior.\n\nKey findings:\n🔹 Causal methods outperform linear probes on free-form generation, consistently across three models, which extends a known result from single-token interpretability\n🔹 Intervening on ~1% of attention heads (about 10 out of 1,000) makes the model less sycophantic\n🔹 With supervised steering such as representation fine-tuning, localization barely matters: random heads do about as well. With unsupervised steering, localization becomes essential\n🔹 Difference-in-means steering beats mean steering\n🔹 Computing steering vectors at every token position, rather than only the last token, can produce the desired behavior without hurting existing performance, sometimes with no localization at all\n\nThe big takeaway: generative responses unlock a whole new set of tasks that interpretability research can now study.\n\n📄 Paper: https://arxiv.org/abs/2602.16080\n\n⏱️ Chapters\n00:00 Live from COLM 2026\n00:27 Meet Aruna\n01:02 The paper: Activation Steering via Generative Causal Mediation\n01:57 Why constrain models to one token?\n02:38 Method: counterfactual inputs and attention-head patching\n05:05 Causal approaches vs. linear probes across three models\n05:46 Evaluation with a validated LLM judge\n06:26 Why the gap closes as more heads are steered\n07:39 Steering methods: ReFT, difference-in-means, token-wise steering\n09:58 The one takeaway for the community\n10:36 Follow-up: generative vs. multiple-choice circuit discovery\n\n🎙️ WiAIR (Women in AI Research): AI research through women's eyes. Daily COLM 2026 research highlights all week.\n🔔 Subscribe for in-depth conversations on interpretability, evaluation, and responsible AI.\n\n#COLM2026 #Interpretability #MechanisticInterpretability #ActivationSteering #LLM #AIResearch #Sycophancy #AISafety #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-14T15:00:20Z",
+        "publishDate": "October 14, 2026",
+        "durationSeconds": 696,
+        "thumbnailUrl": "https://i.ytimg.com/vi/VnABXJt6YXM/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VnABXJt6YXM"
+      },
+      {
+        "videoId": "4_Gf_sGspWE",
+        "title": "Claude vs Gemini: Same Reasoning, Different Threshold | COLM 2026",
+        "description": "Is Claude really better than Gemini at catching false scientific claims? On the surface, yes. Look closer, and both models sit on the same ROC curve. Claude simply says \"no\" more often.\n\nRecorded at COLM 2026 in San Francisco, this conversation features Muxin Liu, a PhD student at the University of Pennsylvania. Muxin explains why models that score high on popular scientific claim verification benchmarks still miss subtle errors, and what that means for AI for science.\n\nThe core problem: in existing benchmarks, false claims are made by changing a single number or flipping one trend. Models catch these easily, so accuracy on false claims looks high. Muxin's team builds harder false claims, where the error sits in an intermediate reasoning step and exposing it requires compositional reasoning across tables and charts. On these claims, models from every family accept far too many false claims.\n\nWhat you'll learn:\n🔹 Why high accuracy on false claims in current benchmarks is mostly a data artifact\n🔹 How graph-based generation produces compositionally false claims\n🔹 Why Claude and Gemini differ in decision threshold, not reasoning ability\n🔹 Why retrieval is not the bottleneck, but composing evidence is\n🔹 Why no prompt intervention closes the gap, and what might\n\n📄 Paper: When Verification Fails: How Compositionally Infeasible Claims Escape Rejection\nhttps://arxiv.org/abs/2604.10990\n\n⏱️ Chapters\n00:00 Live from COLM 2026\n00:27 Why are false claims \"easier\" for LLMs?\n04:17 Separating retrieval from reasoning\n05:14 Chart evidence: the hardest modality\n06:02 Why graph hints fail on charts\n07:04 Does giving the model the full reasoning graph help?\n08:12 Key takeaway: high benchmark scores ≠ reliable verification\n\n🎙️ WiAIR (Women in AI Research) brings you AI research through women's eyes: in-depth conversations on evaluation, responsible AI and research methodology. New COLM 2026 highlights every day this week, so subscribe so you don't miss them.\n\n#COLM2026 #LLM #AIEvaluation #ScientificClaimVerification #FactChecking #AIforScience #NLP #Claude #Gemini #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-15T15:00:08Z",
+        "publishDate": "October 15, 2026",
+        "durationSeconds": 544,
+        "thumbnailUrl": "https://i.ytimg.com/vi/4_Gf_sGspWE/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=4_Gf_sGspWE"
+      },
+      {
+        "videoId": "Xl0TtKjK2-Y",
+        "title": "Chopsticks in Rice: Why AI Misses Cultural Offense | COLM 2026",
+        "description": "Sticking chopsticks upright in a bowl of rice is offensive in China because it echoes funeral offerings. Chopsticks resting across the bowl mean nothing at all. Can today's vision-language models tell the difference? Mostly, no.\n\nIn this COLM 2026 poster conversation, Akhila Yerukola (PhD student at Carnegie Mellon University, advised by Maarten Sap) presents a new benchmark for culturally grounded visual reasoning. It is built from contrastive image pairs: the same scene, with one small change in behavior that flips its cultural meaning.\n\nWhat you'll learn:\n🔹 Why detecting a behavior isn't enough, and why contrastive pairs are needed to test real cultural reasoning\n🔹 How the team built the data: cultural-norm descriptions filtered for visual detectability, then text-to-image generation, minimal inpainting, and retrieval, validated by in-group annotators from 16 countries\n🔹 Why retrieved real-world images were the smallest subset, and what that says about how rare this data is in the wild\n🔹 The headline result: state-of-the-art models score below 30% group accuracy, and the best model gets only about 25%\n🔹 A revealing ablation: models do better on a text description alone than on the image plus the description. This points to a vision–language misalignment for cultural nuance, with the image encoder as the bottleneck\n🔹 Even with an oracle description of the image, models reach only ~32%, so this is a reasoning gap and not only a perception gap\n🔹 A proof of concept: fine-tuning a 4B model on 64K synthetic images with cultural rationales outperforms Gemini, with the biggest gains on offensive behaviors and underrepresented countries\n🔹 Why scaling model size won't fix this, and why targeted data curation will\n\nThe benchmark and training data will be released publicly under CC BY 4.0.\n\n📄 Paper: NormViz: A Benchmark and Framework for Grounding Multimodal Reasoning in Global Cultures, https://arxiv.org/abs/2609.06831\n\nChapters\n00:00 Live from COLM 2026\n00:27 Akhila Yerukola: why cultural behaviors are compositional\n07:31 What drives the gains from fine-tuning?\n08:56 Measuring image–text misalignment\n11:00 Benchmark and data release\n\n🎙 WiAIR (Women in AI Research) is a podcast and YouTube channel featuring in-depth conversations with AI researchers on responsible AI, evaluation, and research methodology. This video is part of our daily COLM 2026 coverage. Subscribe so you don't miss the next poster.\n\n#COLM2026 #VisionLanguageModels #CulturalAI #MultimodalAI #AIEvaluation #ResponsibleAI #NLP #AIResearch #WomenInAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-16T15:00:37Z",
+        "publishDate": "October 16, 2026",
+        "durationSeconds": 692,
+        "thumbnailUrl": "https://i.ytimg.com/vi/Xl0TtKjK2-Y/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Xl0TtKjK2-Y"
+      },
+      {
+        "videoId": "pJyndUbGl8o",
+        "title": "Where Does an LLM's Social Reasoning Come From? Tracing It to Pre-training Data | COLM 2026",
+        "description": "Language models are surprisingly good at social reasoning. But which parts of the pre-training data actually produce that ability?\n\nAt COLM 2026 in San Francisco, Chandreyi (Zini) Chakraborty from Mark Riedl's lab at Georgia Tech presents a provenance audit of social reasoning in OLMo 3 7B. The team used influence functions to attribute model capabilities across 5 million pre-training documents. They organized the documents with WebOrganizer into 576 topic × format buckets and averaged influence within each bucket, because attribution at the level of single documents is too noisy to interpret.\n\nCapabilibara project: https://hcai-lab-gt.github.io/capabilibara/\n\nWhat they found:\n🔹 Social reasoning (Social IQA) draws on many corpus regions, including literature, customer support, and FAQs. It comes from both documentation-style text and interpersonal conversation.\n🔹 STEM reasoning, STEM knowledge, and social knowledge come mostly from documentation-heavy sources.\n🔹 Some data that boosts social reasoning appears to suppress STEM and social knowledge, so data mixtures involve real trade-offs.\n🔹 Influence is a correlational signal, so the team also tested causation with unlearning. Removing the influential documents reduced social reasoning much more than removing random documents from the same corpus.\n\nWhy it matters: if we can trace behaviours back to their sources in the data, we can design data curation and data mixtures on purpose. That could mean adding more of the data that supports desired behaviours, such as moral or alignment-relevant reasoning, and filtering out data that harms them.\n\nAnd yes, there is a capybara. Meet Capy, the Capabilibara project’s mascot for capability provenance. 🦫\n\n⏱️ Chapters\n00:00 COLM 2026 recap intro\n00:27 Meet Chandreyi Chakraborty (Georgia Tech)\n04:03 How the 576 data buckets work\n05:23 Main takeaway: where social reasoning comes from\n06:02 Meet Capy the capybara\n\n🎙️ Women in AI Research (WiAIR) shares AI research through women’s eyes, with interviews and conference highlights for researchers, PhD students, and AI practitioners. Subscribe for daily COLM 2026 poster highlights.\n\n#COLM2026 #LLM #Interpretability #DataAttribution #PretrainingData #InfluenceFunctions #AIResearch #NLP #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-19T15:00:00Z",
+        "publishDate": "October 19, 2026",
+        "durationSeconds": 406,
+        "thumbnailUrl": "https://i.ytimg.com/vi/pJyndUbGl8o/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=pJyndUbGl8o"
+      },
+      {
+        "videoId": "mAtYbVZnR_U",
+        "title": "Why LLMs Assume You Want Validation, and How to Steer It | COLM 2026",
+        "description": "You ask an LLM \"Did I mess up?\" and want an honest answer. The model assumes you want reassurance and tells you that you’re right. New work presented at COLM 2026 shows that this hidden assumption about the user drives sycophancy, and that you can steer it.\n\nIn today's COLM 2026 poster highlight, Myra Cheng, a final-year PhD candidate in Computer Science at Stanford, presents her work on verbalizing assumptions to understand and control LM sycophancy.\n\nThe approach has three steps:\n🔹 Prompt models to verbalize what they assume about the user, such as whether the user is seeking validation, emotional support, or information.\n🔹 Show that models assume validation-seeking much more often on sycophancy datasets than on general chat data (WildChat).\n🔹 Train linear probes from hidden representations to these assumptions, then use the probe directions to steer behavior. Raising the validation-seeking assumption increases sycophancy. Raising the information-seeking assumption reduces it.\n\nThe key takeaway is that LLMs constantly make inferences about their users. Until now we have known very little about those inferences. Methods like this one let us uncover them and control them.\n\n📄 Paper: https://arxiv.org/abs/2604.03058\n\n⏱️ Chapters\n00:00 COLM 2026 daily highlights\n00:28 Meet Myra Cheng (Stanford)\n00:40 \"Did I mess up?\" How models misread user intent\n01:15 Verbalizing model assumptions about users\n01:45 Probing hidden states and steering sycophancy\n02:12 Datasets: Sycophancy, Delusion, WildChat\n02:56 Key takeaway: models make inferences about users\n03:07 Future work: understanding user assumptions\n\n🎙️ WiAIR (Women in AI Research) is a podcast about AI research seen through women’s eyes. We focus on responsible AI, evaluation, and research methodology. Subscribe for daily COLM 2026 highlights this week.\n\n#COLM2026 #LLM #Sycophancy #Interpretability #AIAlignment #AISafety #NLP #Stanford #WomenInAI #AIResearch #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-20T15:00:00Z",
+        "publishDate": "October 20, 2026",
+        "durationSeconds": 227,
+        "thumbnailUrl": "https://i.ytimg.com/vi/mAtYbVZnR_U/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mAtYbVZnR_U"
+      },
+      {
+        "videoId": "7b-A0Jrm2rA",
+        "title": "Does Code Make LLMs Better at Math? Scaling Laws That Measure Data Synergy | COLM 2026",
+        "description": "Why does adding code to pre-training make a model better at maths - and why do some data mixtures quietly hold performance back? Kimia Hamidieh (PhD student, MIT CSAIL) shows that the data scaling exponent itself depends on what you train on, and turns that into a way to measure data synergy and pick better mixtures before you spend the compute.\n\nRecorded at her COLM 2026 poster, \"Domain-Aware Scaling Laws Uncover Data Synergy\" (with Lester Mackey and David Alvarez-Melis). We talk about:\n- why a single scaling law fails to fit models trained on different data mixtures\n- first-order synergy: which pre-training domains speed up or slow down progress on which benchmarks (maths helps coding; books slow it down)\n- second-order synergy: how pairs of domains interact, modelled as \"bonus tokens\"\n- using small-scale runs to predict and optimise the mixture for a target benchmark\n- where the findings hold beyond pre-training - and where RL post-training may break them\n- who gets to decide what counts as a \"domain\"\n\nThis is part of our daily series of research highlights from COLM 2026 in San Francisco.\n\nPaper: https://arxiv.org/abs/2607.11052\n\nTIMESTAMPS\n00:00 Back from COLM 2026 - today's poster\n00:27 Meet Kimia Hamidieh (MIT) and data-centric AI\n00:35 Code + maths beats either alone - but why?\n01:15 One scaling law for every data mix? It doesn't fit\n02:30 The synergy map: maths helps coding, books slow it down\n03:28 What positive and negative synergy actually mean\n04:00 Second-order synergy: when two domains create \"bonus tokens\"\n05:00 From synergy estimates to a better data mixture\n05:34 Does any of this survive post-training?\n06:29 Who decides what a \"domain\" is?\n07:32 What's next: scaling laws for synthetic data\n\nWomen in AI Research (WiAIR) - conversations with women doing AI research, hosted by Jekaterina Novikova.\n\n#LLM #ScalingLaws #COLM2026 #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-10-21T15:00:23Z",
+        "publishDate": "October 21, 2026",
+        "durationSeconds": 482,
+        "thumbnailUrl": "https://i.ytimg.com/vi/7b-A0Jrm2rA/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7b-A0Jrm2rA"
+      }
+    ]
+  },
+  {
+    "id": "PLlHNzCdRcJDNgcWbIJB6amPIcXOY55Ws0",
+    "title": "ICLR 2026",
+    "description": "ICLR 2026 conference in Rio de Janeiro, Brazil",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDNgcWbIJB6amPIcXOY55Ws0",
+    "videos": [
+      {
+        "videoId": "hbUDCttrTTg",
+        "title": "Day 2 at ICLR 2026, with Shelly Golan",
+        "description": "Day 2 at #iclr2026, chatting with Shelly about her experience at the conference and impressions from Rio.\n\n#wiair #wiairpodcast #iclr #iclr2026",
+        "publishedAt": "2026-04-26T15:01:10Z",
+        "publishDate": "April 26, 2026",
+        "durationSeconds": 269,
+        "thumbnailUrl": "https://i.ytimg.com/vi/hbUDCttrTTg/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hbUDCttrTTg"
+      },
+      {
+        "videoId": "O5S0oe17InM",
+        "title": "ICLR 2026 in Rio de Janeiro. Test-Time Spatial Control to 3D Generative Modeling",
+        "description": "Join Jekaterina Novikova from @WomeninAIResearch  as she dives into the most exciting highlights from #ICLR2026! 🚀\n\nIn this video, Elisabetta Fedele from ETH Zurich presents SpaceControl, a test-time spatial control method for 3D generation.\n\nGenerative methods for 3D assets have recently achieved remarkable progress, yet providing intuitive and precise control over the object geometry remains a key challenge. Existing approaches predominantly rely on text or image prompts, which often fall short in geometric specificity: language can be ambiguous, and images are difficult to manipulate. In this work, we introduce SpaceControl, a training-free test-time method for explicit spatial control of 3D asset generation. This approach accepts a wide range of geometric inputs, from coarse primitives to detailed meshes, and integrates seamlessly with modern generative models without requiring any additional training. A control parameter lets users trade off between geometric fidelity and output realism. Extensive quantitative evaluation and user studies demonstrate that SpaceControl outperforms both training-based and optimization-based baselines in geometric faithfulness while preserving high visual quality. \n\nLINKS\nPaper: SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling - https://arxiv.org/abs/2512.05343\n\nProject page: https://spacecontrol3d.github.io/\n\n#ArtificialIntelligence #MachineLearning #AIResearch #AIPhD #ResearchTalk #AIConference #DeepLearning #AIEngineering #wiair #wiairpodcast #iclr",
+        "publishedAt": "2026-05-25T15:00:06Z",
+        "publishDate": "May 25, 2026",
+        "durationSeconds": 282,
+        "thumbnailUrl": "https://i.ytimg.com/vi/O5S0oe17InM/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=O5S0oe17InM"
+      },
+      {
+        "videoId": "LSS1vHzanLU",
+        "title": "ICLR 2026 in Rio de Janeiro. Can We Really Trust LLM Leaderboards? 🎯",
+        "description": "Join Jekaterina Novikova from  @WomeninAIResearch  as she dives into the most exciting highlights from #ICLR2026! 🚀\n\nIn this video, MIT PhD researcher Jenny Huang reveals a surprising result: removing just 2 preferences out of 57,000 from Chatbot Arena can change the #1 ranked LLM.\n\nIn this interview, we dive into:\n• Why top AI model rankings may be far less reliable than we think\n• How tiny changes in evaluation data can flip leaderboard results\n• The hidden problem of noisy crowdsourced preferences\n• Why MT-Bench appears much more robust than Chatbot Arena\n• Human evaluations vs LLM-as-a-judge: which is actually better?\n• What this means for AI companies, researchers, benchmark creators, and users\n\n📄 Discussed paper: “How Dropping a Few Preferences Changes Top LLM Rankings”: https://arxiv.org/abs/2508.11847\n🎤 Recorded at #ICLR 2026\n\nSubscribe for more interviews with leading AI researchers, paper breakdowns, and behind-the-scenes coverage from top AI conferences.\n\n#AI #LLM #ICLR2026 #MachineLearning #ArtificialIntelligence #LLMEvaluation #ChatbotArena #OpenAI #Anthropic #DeepLearning #AIResearch #wiair #wiairpodcast",
+        "publishedAt": "2026-05-27T15:00:35Z",
+        "publishDate": "May 27, 2026",
+        "durationSeconds": 372,
+        "thumbnailUrl": "https://i.ytimg.com/vi/LSS1vHzanLU/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=LSS1vHzanLU"
+      },
+      {
+        "videoId": "KJvXr3O4wpQ",
+        "title": "ICLR 2026 in Rio de Janeiro. How to Make AI Agents Faster with Speculative Actions",
+        "description": "AI agents are powerful - but they could be painfully slow.\nWhy? Because most agent workflows are fundamentally sequential: observe → reason → act → wait → repeat.\n\nIn this interview, Naimeng Ye explains Speculative Actions, a new framework that speeds up AI agents by introducing parallelism into agent execution. Inspired by speculative execution in CPUs and speculative decoding in LLMs, the method predicts likely future actions and starts executing them before the main agent finishes reasoning.\n\nThe result:\n• Up to 20% latency reduction\n• Up to 55% next-action prediction accuracy\n• Faster agent workflows across chess, e-commerce, web search, and operating systems environments\n\nIn this video, we discuss:\n\n• Why current AI agents are bottlenecked by sequential execution\n• How speculative branches work in practice\n• Using smaller/faster models as speculative agents\n• Multi-agent speculation with different model families\n• Lossless vs. lossy speculative execution\n• Tradeoffs between speed, cost, and accuracy\n• Real-world applications for agentic systems\n• Future research directions and open challenges\n\nIf you work on:\n🔹 LLM agents\n🔹 AI systems research\n🔹 inference optimization\n🔹 agent orchestration\n🔹 distributed reasoning\n🔹 AI infrastructure\n\n…this is a paper worth paying attention to.\n\n📄 Discussed paper: “Speculative Actions: A Lossless Framework for Faster Agentic Systems”: https://arxiv.org/abs/2510.04371\n🎤 Recorded at #ICLR 2026\n\n📌 Covered by Jekaterina Novikova at #ICLR 2026.\n\n#AI #LLMAgents #ArtificialIntelligence #ICLR2026 #MachineLearning #LLM #AgenticAI #AIResearch #SpeculativeExecution #GenerativeAI #DeepLearning #AIInfrastructure #InferenceOptimization #MultiAgentSystems #wiair #wiairpodcast",
+        "publishedAt": "2026-05-29T15:00:25Z",
+        "publishDate": "May 29, 2026",
+        "durationSeconds": 457,
+        "thumbnailUrl": "https://i.ytimg.com/vi/KJvXr3O4wpQ/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KJvXr3O4wpQ"
+      },
+      {
+        "videoId": "H7zvLiw10Oc",
+        "title": "ICLR 2026 in Rio de Janeiro. Beyond RLHF: Learning Diverse Human Values with Community Alignment",
+        "description": "Current LLM alignment methods assume we can learn human preferences from preference datasets. But what if those datasets are fundamentally missing the diversity of human values?\n\nAt #ICLR 2026, Meta researcher Smitha Milli presents the Community Alignment Dataset, a new open-source resource designed to capture how preferences vary across people, cultures, and communities.\n\nThe key insight is surprisingly simple: existing preference datasets typically show annotators responses that are too similar to each other. As a result, models struggle to learn heterogeneous preferences and diverse human values. The paper introduces negatively correlated sampling, a method that deliberately generates diverse candidate responses instead of repeatedly sampling similar outputs.\n\nIn this video, we discuss:\n\n• Why current preference datasets fail to capture preference diversity\n• The problem of algorithmic monoculture in LLM-generated data\n• Negatively correlated sampling and why it outperforms independent sampling\n• How one model generating diverse responses can outperform sampling from 21 different models\n• Measuring preference diversity using social science frameworks\n• The Community Alignment Dataset: 200K+ comparisons, 3,500+ participants, 5 countries, 5 languages, and multi-turn conversations\n• New opportunities for personalization, pluralistic alignment, and value-sensitive AI systems\n\nThis work raises an important question for the future of AI alignment: if people genuinely want different things from AI systems, how should we collect data that reflects those differences?\n\n📄 Discussed paper: \"Cultivating Pluralism In Algorithmic Monoculture: The Community Alignment Dataset\" https://arxiv.org/abs/2507.09650\n🎤 Recorded at #ICLR 2026\n📌 Covered by Jekaterina Novikova at ICLR 2026.\n\nIf you're interested in AI alignment, RLHF, preference learning, personalization, human feedback, LLM evaluation, or the future of value-aligned AI, this conversation is for you.\n\n#ICLR2026 #AIAlignment #LLMs #RLHF #MachineLearning #ArtificialIntelligence #PreferenceLearning #OpenSourceAI #MetaAI #Research #WiAIRpodcast #WiAIR",
+        "publishedAt": "2026-06-01T15:00:00Z",
+        "publishDate": "June 1, 2026",
+        "durationSeconds": 252,
+        "thumbnailUrl": "https://i.ytimg.com/vi/H7zvLiw10Oc/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=H7zvLiw10Oc"
+      },
+      {
+        "videoId": "zUGaOpQDsFc",
+        "title": "ICLR 2026 in Rio de Janeiro. How to Prevent Catastrophic Forgetting Without Storing Data",
+        "description": "\"Can a model avoid catastrophic forgetting without keeping a replay buffer?\"\n\nIn this #ICLR 2026 interview, Nikita Dhawan (University of Toronto & Vector Institute) explains LIFTER (LInearized Function TRick), a method that estimates function-space distances from only the first two moments of past data distributions. The approach nearly matches an oracle method that has full access to old training examples—while never storing those examples in the first place.\n\nWe dive into continual learning, transformers, function-space regularization, NTK comparisons, Jacobian approximations, and why stochastic methods appear surprisingly effective.\n\nA must-watch for researchers working on continual learning, model editing, and machine unlearning.\n\n📄 Discussed paper: “Approximating Function Space Distance for Continual Learning in Transformers” https://openreview.net/pdf?id=tFo9YPiVNF\n🎤 Recorded at #ICLR 2026\n\n📌 Covered by Jekaterina Novikova at #ICLR 2026.\n\n#ICLR2026 #MachineLearning #ContinualLearning #Transformers #LLMs #AIResearch #DeepLearning #ModelEditing #MachineUnlearning #WiAIRpodcast #WiAIR",
+        "publishedAt": "2026-06-03T15:00:04Z",
+        "publishDate": "June 3, 2026",
+        "durationSeconds": 831,
+        "thumbnailUrl": "https://i.ytimg.com/vi/zUGaOpQDsFc/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zUGaOpQDsFc"
+      },
+      {
+        "videoId": "9tis1ecLX5A",
+        "title": "ICLR 2026 in Rio de Janeiro. Why Do Multimodal LLMs Get Worse When You Give Them More Information?",
+        "description": "Are today's multimodal LLMs really integrating information across speech, video, and text?\n\nAt #ICLR 2026, Sara Papi (Fondazione Bruno Kessler) presents MCIF, a new benchmark for Multimodal Cross-Lingual Instruction Following that evaluates 23 state-of-the-art models—including Gemini, Qwen, speech-language models, video-language models, and multimodal LLMs.\n\nThe results reveal several weaknesses:\n\n• Performance drops dramatically on realistic long-form inputs\n• Small prompt reformulations can significantly change model behavior\n• Cross-lingual instruction following remains challenging\n• Speech is often the most useful modality\n• Adding video frequently DEGRADES performance instead of improving it\n• Models struggle to align and integrate information across modalities\n\nUnlike previous benchmarks, MCIF uses manually curated scientific talks across English, German, Italian, and Chinese, with no synthetic data generation, no back-translation, and fully parallel speech-video-text evaluation.\n\nIf you work on multimodal AI, speech processing, LLM evaluation, benchmarking, instruction following, or multilingual AI, this discussion offers a sobering look at how far current systems still have to go.\n\n📄 Discussed paper: “MCIF: Multimodal Crosslingual Instruction-Following Benchmark from Scientific Talks” https://arxiv.org/abs/2507.19634\n🎤 Recorded at #ICLR 2026\n\n📌 Covered by Jekaterina Novikova at #ICLR 2026.\n\n#ICLR2026 #MultimodalAI #LLMs #SpeechAI #VideoLLM #ArtificialIntelligence #MachineLearning #AIResearch #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-06-05T15:00:32Z",
+        "publishDate": "June 5, 2026",
+        "durationSeconds": 788,
+        "thumbnailUrl": "https://i.ytimg.com/vi/9tis1ecLX5A/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9tis1ecLX5A"
+      },
+      {
+        "videoId": "VuJ_Mr4jtLE",
+        "title": "ICLR 2026 in Rio de Janeiro. AI Models Understand Human Harm but Still Choose Unsafe Actions",
+        "description": "Modern AI models can recognize when a decision will harm people.\n\nSo why do they sometimes choose that option anyway?\n\nIn this interview from #ICLR 2026, Adi Simhi (Technion, advised by Yonatan Belinkov) presents a fascinating study investigating how leading language models behave when forced to make management-style decisions involving tradeoffs between performance goals and human welfare.\n\nThe research introduces a new benchmark spanning 11 domains—including healthcare, agriculture, and AI systems—and evaluates whether models prioritize human well-being when achieving objectives comes at a cost.\n\nThe results reveal a surprising disconnect:\n\n• Models often understand which actions are harmful.\n• They generally agree with humans about the severity of harm.\n• Yet they do not consistently use this knowledge when making decisions.\n\nEven more interesting, increasing the amount of harm makes models somewhat more cautious, suggesting that a form of alignment exists—but remains incomplete.\n\n📄 Discussed paper: “MCIF: Multimodal Crosslingual Instruction-Following Benchmark from Scientific Talks” https://arxiv.org/abs/2507.19634\n🎤 Recorded at #ICLR 2026\n\n📌 Covered by Jekaterina Novikova at #ICLR 2026.\n\n#ICLR2026 #AIAlignment #AISafety #LLMs #ArtificialIntelligence #MachineLearning #GenerativeAI #Interpretability #ResponsibleAI #AIResearch #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-06-08T15:00:31Z",
+        "publishDate": "June 8, 2026",
+        "durationSeconds": 443,
+        "thumbnailUrl": "https://i.ytimg.com/vi/VuJ_Mr4jtLE/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VuJ_Mr4jtLE"
+      }
+    ]
+  },
+  {
+    "id": "PLlHNzCdRcJDNpv2e4pLYqyQkuHgU19ga7",
+    "title": "EACL 2026",
+    "description": "Remote coverage of the EACL 2026 conference",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDNpv2e4pLYqyQkuHgU19ga7",
+    "videos": [
+      {
+        "videoId": "xcec0EpJQJ4",
+        "title": "Do LLMs Spread Misinformation Better Than Humans? (EACL 2026)",
+        "description": "What happens when humans and large language models try to persuade each other?\n\nIn this episode of Women in AI Research, we sit down with Angana Borah (University of Michigan) to unpack her EACL 2026 paper on misinformation, persuasion, and demographic effects in human–LLM interactions.\n\nPaper: https://arxiv.org/abs/2503.02038\n\nKey insights from the paper:\n• LLM-generated persuasion can reduce human accuracy in identifying true vs false information\n• Some demographic groups are more susceptible to misinformation than others\n• Human-written persuasion can actually improve LLM reasoning (in some cases)\n• LLM agents can form echo chambers, mirroring human group dynamics\n• Homogeneous groups → higher risk of misinformation propagation\n\nEven more surprising:\n• LLMs often score higher than humans on linguistic persuasion metrics — raising serious questions about their role in shaping beliefs.\n\nWe also discuss:\n• Can LLMs simulate human susceptibility to misinformation?\n• What happens in multi-turn persuasion scenarios?\n• Where this research is heading next—and what it means for AI safety\n\nAngana Borah:\n• https://x.com/AnganaBorah2\n• https://blueskydirectory.com/profiles/anganaborah.bsky.social\n• https://www.linkedin.com/in/anganaborah/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon",
+        "publishedAt": "2026-03-23T15:01:38Z",
+        "publishDate": "March 23, 2026",
+        "durationSeconds": 923,
+        "thumbnailUrl": "https://i.ytimg.com/vi/xcec0EpJQJ4/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xcec0EpJQJ4"
+      },
+      {
+        "videoId": "q42bUeh1KyA",
+        "title": "Inference-Time Steering Is Riskier Than You Think (EACL 2026)",
+        "description": "Are the techniques we use to control language models quietly making them less safe?\n\nPaper: https://arxiv.org/abs/2602.06256\n\nIn this EACL 2026 paper, Navita Goyal (University of Maryland) challenges a core assumption behind inference-time interventions: that we can precisely steer model behaviour without unintended side effects.\n\n▶️ Key insight:\nWhile steering methods improve target behaviours (like reducing over-refusal), they significantly weaken robustness — especially under adversarial prompts and jailbreaks.\n\n⚠️ The result?\nModels become more vulnerable exactly where safety matters most.\n\nWe also discuss:\n• Why current steering methods lack true specificity\n• The overlooked gap between in-distribution vs. robust evaluation\n• Evidence of systematic vulnerabilities introduced by steering\n• A new perspective on disentangling model representations\n\nNavita Goyal:\n• https://x.com/navitagoyal_\n• https://bsky.app/profile/navitagoyal.bsky.social\n• https://navitagoyal.github.io/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon",
+        "publishedAt": "2026-03-25T15:01:30Z",
+        "publishDate": "March 25, 2026",
+        "durationSeconds": 606,
+        "thumbnailUrl": "https://i.ytimg.com/vi/q42bUeh1KyA/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=q42bUeh1KyA"
+      },
+      {
+        "videoId": "-cPYHmxwN14",
+        "title": "Why Your LLM Needs Math to Think Better (EACL 2026)",
+        "description": "What if adding math data actually improves reasoning in non-math tasks?\n\nIn this episode of #WiAIRpodcast, Syeda from the Carnegie Mellon University and NVIDIA presents Nemotron CrossThink (EACL 2026 Oral) - a framework that challenges how we train LLMs for reasoning.\n\nPaper: https://arxiv.org/abs/2504.13941\n\nKey insights you don’t want to miss:\n• Why multi-domain training beats specialized models\n• The surprising role of math in improving general reasoning\n• How to get +performance with ~40% less data\n• Why harder training samples are better than more data\n• How LLMs learn adaptive reasoning strategies across tasks\n\nEven more interesting:\n• CrossThink models use 28% fewer tokens → cheaper inference\n• They outperform math-only models on reasoning tasks\n• Results generalize across model families\n\nSyeda:\n• https://x.com/__SyedaAkter\n• https://bsky.app/profile/reasyaay.bsky.social\n• https://www.linkedin.com/in/syeda-nahida-akter-989770114/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon",
+        "publishedAt": "2026-03-27T15:00:00Z",
+        "publishDate": "March 27, 2026",
+        "durationSeconds": 1163,
+        "thumbnailUrl": "https://i.ytimg.com/vi/-cPYHmxwN14/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-cPYHmxwN14"
+      },
+      {
+        "videoId": "bydex6cwgEs",
+        "title": "You're Using Persona Prompting Wrong (EACL 2026)",
+        "description": "How much control do persona prompts actually give us over LLM behaviour?\n\nIn this episode of #WiAIRpodcast, Jing Yang (TU Berlin) speaks about the study on persona prompting in socially sensitive tasks, including hate speech detection, sentiment analysis, and commonsense reasoning.\n\nPaper: https://arxiv.org/abs/2601.20757\n\nThe paper takes a closer look at a common assumption: that adding demographic or identity-based personas can help align model outputs with different user groups.\n\nIn this conversation, we discuss:\n\n• Whether persona prompting meaningfully changes model predictions\n• Why simulated personas don’t necessarily align with real-world demographics\n• The gap between improving labels vs. improving model rationales\n• Evidence that LLMs may systematically over-predict harmful content\n• What this means for synthetic data generation and evaluation practices\n\nOne of the key takeaways is that persona prompting has limited effect as a steering mechanism in these settings ,and should be applied with care, especially in high-stakes or socially sensitive applications.\n\nJing Yang:\n• https://www.linkedin.com/in/jing-yang-7b07aa135\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon\n\n#WiAIR",
+        "publishedAt": "2026-03-30T15:00:49Z",
+        "publishDate": "March 30, 2026",
+        "durationSeconds": 957,
+        "thumbnailUrl": "https://i.ytimg.com/vi/bydex6cwgEs/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bydex6cwgEs"
+      },
+      {
+        "videoId": "HqJOEOiuv08",
+        "title": "From Paraphrases to Diagnostics: A Fine-Grained Framework for LLM Auditing (EACL 2026)",
+        "description": "LLMs often give different answers to the same question, just phrased differently. But how do we measure and understand this behaviour rigorously?\n\nIn this episode of the #WiAIRpodcast, Cléa Chataigner (Mila, McGill) presents AUGMENT, a user-grounded, controlled paraphrasing framework for auditing prompt sensitivity in large language models, accepted as an oral at EACL 2026.\n\nPaper: https://arxiv.org/abs/2505.03563\n\nInstead of relying on noisy, unconstrained paraphrasing, AUGMENT introduces:\n• Structured, linguistically grounded paraphrase types (e.g., voice, style, dialect)\n• A guided generation + automated quality control pipeline\n• Fine-grained analysis of how specific linguistic variations impact model behaviour\n\nKey insights:\n• Different paraphrase types can shift model performance in opposite directions\n• Standard baselines can hide critical failure modes\n• Even strong LLMs struggle with certain transformations (e.g., voice changes)\n\nEvaluated across:\n• Bias benchmarks (BBQ)\n• Knowledge tasks (MMLU)\n• Multiple open-source model families\n\nCléa:\n• https://scholar.google.com/citations?user=NdToDmMAAAAJ\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon",
+        "publishedAt": "2026-04-01T15:01:19Z",
+        "publishDate": "April 1, 2026",
+        "durationSeconds": 1014,
+        "thumbnailUrl": "https://i.ytimg.com/vi/HqJOEOiuv08/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HqJOEOiuv08"
+      },
+      {
+        "videoId": "CCPE58A_FCQ",
+        "title": "Why LLMs Hallucinate, and How to Make Them Say \"I Don't Know\" (EACL 2026)",
+        "description": "LLMs are notoriously overconfident, but can we teach them to admit uncertainty?\n\nIn this episode, Maor Juliet Lavi (Tel Aviv University) presents her EACL 2026 paper on Detecting Unanswerability in Large Language Models with Linear Directions.\n\nPaper: https://arxiv.org/abs/2509.22449\n\nWe cover:\n• Why prompt-based fixes for hallucinations aren’t enough\n• How “unanswerability” emerges inside model representations\n• A simple but powerful idea: linear directions in hidden states\n• Why this method generalizes better across datasets\n• What this reveals about where abstract concepts live inside LLMs\n\n👉 Watch to see how far we can push models toward knowing when they don’t know.\n\nMaor:\n• https://www.linkedin.com/in/maor-juliet-lavi-07494a155\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon",
+        "publishedAt": "2026-04-03T15:00:26Z",
+        "publishDate": "April 3, 2026",
+        "durationSeconds": 901,
+        "thumbnailUrl": "https://i.ytimg.com/vi/CCPE58A_FCQ/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=CCPE58A_FCQ"
+      },
+      {
+        "videoId": "8wWj1z2dBI8",
+        "title": "Persona-Driven LLMs for Hinglish? (EACL 2026)",
+        "description": "Personalization remains one of the hardest problems in dialogue systems—especially in code-mixed, multilingual settings like Hinglish.\n\nPaper: https://aclanthology.org/2026.eacl-long.96/\n\nIn this talk, Shifali Agrahari (IIT Guwahati) presents a practical approach to building persona-driven, knowledge-infused dialogue assistants that go beyond generic responses. The work explores how integrating persona modeling with structured knowledge (graphs) can improve reasoning and contextual relevance in task-oriented conversations.\n\nRather than treating users as interchangeable, this approach explicitly models who the user is—and uses that to guide dialogue generation.\n\nWhat you’ll learn:\n• Why personalization breaks down in current dialogue systems\n• Challenges of working with code-mixed languages (Hinglish)\n• How persona signals + knowledge graphs improve response quality\n• Design considerations for task-oriented, personalized assistants\n• Real examples of persona-aware dialogue behavior\n\nWho this is for:\n• AI researchers working on dialogue systems, personalization, or multilingual NLP\n• PhD students exploring LLM evaluation or user modeling\n• Industry practitioners building chatbots, assistants, or conversational agents\n\nWhy this matters:\nAs LLMs become more capable, the next frontier isn’t just correctness—it’s relevance to the individual user. This work highlights a concrete step toward more adaptive, user-aware AI systems, particularly in underexplored multilingual contexts.\n\n👉 Watch to see how far we can push models toward knowing when they don’t know.\n\nShifali:\n• https://www.linkedin.com/in/shifali-agrahari-5b1495196/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon",
+        "publishedAt": "2026-04-05T15:00:13Z",
+        "publishDate": "April 5, 2026",
+        "durationSeconds": 863,
+        "thumbnailUrl": "https://i.ytimg.com/vi/8wWj1z2dBI8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8wWj1z2dBI8"
+      },
+      {
+        "videoId": "rwso1FaTxDc",
+        "title": "Reasoning Can Hurt LLM Safety?! Rethinking Accuracy in AI Systems (EACL 2026)",
+        "description": "In this episode of #WiAIRpodcast, we dive into a subtle but critical question: Does adding reasoning actually make LLMs safer and more reliable?\n\nPaper: https://arxiv.org/abs/2510.21049\n\nAtoosa Chegini (University of Maryland, Apple) presents Reasoning's Razor (EACL 2026), where she and her collaborators examine how reasoning impacts high-stakes binary classification tasks, including safety filtering and hallucination detection.\n\nTheir findings highlight an important nuance:\n• While reasoning can improve overall accuracy, it may degrade performance at low false positive rates -- exactly where real-world systems need to operate.\n\nThis conversation covers:\n• Why accuracy is a misleading metric for safety-critical LLM applications\n• The importance of evaluating models at fixed false positive rates (FPR)\n• How two models with identical accuracy can behave completely differently in deployment\n• The impact of \"think-on\" (with reasoning) vs \"think-off\" (no reasoning) settings\n• Practical implications for RLHF, SFT, and post-training pipelines\n\nIf you're working on:\n• LLM evaluation & reliability\n• AI safety or hallucination detection\n• Production deployment of language models\n\n— this discussion offers a perspective that is both technically grounded and immediately actionable.\n\nAtoosa:\n• https://www.linkedin.com/in/atoosa-chegini-6713741a3/\n• https://scholar.google.com/citations?user=5nY9tagAAAAJ&hl=en&oi=ao\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon\n\n#WiAIR #EACL2026",
+        "publishedAt": "2026-04-06T15:01:34Z",
+        "publishDate": "April 6, 2026",
+        "durationSeconds": 1303,
+        "thumbnailUrl": "https://i.ytimg.com/vi/rwso1FaTxDc/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rwso1FaTxDc"
+      },
+      {
+        "videoId": "1YgxjHjnsPk",
+        "title": "LLMs Can Call Tools -- But Can They Understand Them? (EACL 2026)",
+        "description": "LLM-based agents are everywhere, but most research focuses on just one step: getting the model to call the right tool. What happens after that?\n\nPaper: https://arxiv.org/abs/2510.15955\n\nIn this talk, Kiran Kate (IBM Research) presents new findings from their EACL 2026 paper on a largely overlooked problem:\n👉 Can LLMs actually understand and use the outputs returned by tools?\n\nAs tool-augmented systems become more complex, this question becomes critical. The work dives into how current models handle non-trivial, real-world tool responses, and where they break down.\n\n💡 Key ideas covered:\n• Why tool calling is only half the story in LLM agents\n• The challenge of processing complex tool outputs\n• Failure modes in current LLM-based systems\n• What this means for building robust, real-world AI agents\n\nThis talk is especially relevant if you're working on:\n• LLM agents and tool use\n• Evaluation of LLM capabilities\n• Real-world deployment of AI systems\n• Agentic workflows and reasoning pipelines\n\nKiran Kate:\n• https://www.linkedin.com/in/kiran-kate-8b98672/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon\n\n#WiAIR #EACL2026",
+        "publishedAt": "2026-04-08T15:00:03Z",
+        "publishDate": "April 8, 2026",
+        "durationSeconds": 1333,
+        "thumbnailUrl": "https://i.ytimg.com/vi/1YgxjHjnsPk/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1YgxjHjnsPk"
+      }
+    ]
+  },
+  {
+    "id": "PLlHNzCdRcJDNRIkbQUp7H0_p3Ze9uW4SL",
+    "title": "WiAIR | Interview Trailers",
+    "description": "Trailers for upcoming Women in AI Research WiAIR podcast interviews.\n\nGet a preview of in-depth conversations with leading academic and industry AI researchers on core research questions shaping the field -- from foundations of ML and NLP to interpretability, fairness, and responsible AI. Each trailer highlights the key ideas, open problems, and debates explored in the full episode.\n\n🎓 Ideal for PhD students, postdocs, and faculty looking to discover rigorous, research-driven discussions before diving into the full interviews.\n\n🎙️ New to WiAIR? Start here to discover upcoming guests and decide which full interviews you want to watch next.\n\n👉 Subscribe for full interviews, research-driven discussions, and behind-the-scenes insights into modern AI research.",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDNRIkbQUp7H0_p3Ze9uW4SL",
+    "videos": [
+      {
+        "videoId": "9x2QYOdjF_4",
+        "title": "Ep 12 Trailer - When AI Misunderstands You: Cultural Bias in Language Models, with Dr. Vered Shwartz",
+        "description": "As LLMs become the backbone of decision-making in law, healthcare, and hiring, one question looms large:\nCan AI truly understand users from every culture?\n\nIn this episode, Dr. Vered Shwartz (#UBC, Vector Institute) unpacks how cultural assumptions affect user interactions and how to make AI more inclusive.\n\n🎓 For researchers, practitioners, and anyone shaping the future of AI.\n\n🔔 Subscribe to our channel to get notified when the full episode is live\n\n#AIResearch #AIInclusivity #LLMs #AIethics #AIcommunity #WomenInAIResearch #wiair #wiairpodcast",
+        "publishedAt": "2025-10-27T15:00:30Z",
+        "publishDate": "October 27, 2025",
+        "durationSeconds": 243,
+        "thumbnailUrl": "https://i.ytimg.com/vi/9x2QYOdjF_4/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9x2QYOdjF_4"
+      },
+      {
+        "videoId": "Bh3bT-r4aH8",
+        "title": "Ep 13 Trailer - AI Isn't Just English: The Fight for Linguistic Diversity, with Dr. Annie Lee",
+        "description": "How do you build a successful AI research career while raising a child — and while challenging the English-first bias in language technologies? 💡\n\nIn this inspiring episode of Women in AI Research (#WiAIRpodcast), Professor Annie Lee shares her journey from PhD to leading her own research lab - while bringing her baby to conferences, panels, and lab meetings.",
+        "publishedAt": "2025-11-17T16:00:29Z",
+        "publishDate": "November 17, 2025",
+        "durationSeconds": 339,
+        "thumbnailUrl": "https://i.ytimg.com/vi/Bh3bT-r4aH8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Bh3bT-r4aH8"
+      },
+      {
+        "videoId": "n0kL7p7gELA",
+        "title": "Ep 14 Trailer - AI, Intimacy & Inclusivity: What We’re Getting Wrong, with Dr. Maria Antoniak",
+        "description": "What happens when AI models learn from our most private moments?\n\nIn the upcoming WiAIR episode, Maria Antoniak from @cuboulder reveals how personal data ends up in AI systems, why trust in AI companies - not chatbots - is the real issue, and why inclusivity, including that for trans women, is essential for good research.\n\nA powerful look at the human side of AI: data ethics, justice, and the realities we can't ignore.\n\n🎓 For researchers, practitioners, and anyone shaping the future of AI.\n\n🔔 Subscribe to our channel to get notified when the full episode is live\n\n#AIResearch #AIInclusivity #LLMs #AIethics #AIcommunity #WomenInAIResearch #wiair #wiairpodcast",
+        "publishedAt": "2025-12-08T16:01:18Z",
+        "publishDate": "December 8, 2025",
+        "durationSeconds": 369,
+        "thumbnailUrl": "https://i.ytimg.com/vi/n0kL7p7gELA/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n0kL7p7gELA"
+      },
+      {
+        "videoId": "1N-Cdts6Y7k",
+        "title": "Ep 15 Trailer - Do LLMs Really Think? with Maria Ryskina",
+        "description": "Do large language models actually understand anything -- or are we confusing language with thought?\n\nIn the upcoming #WiAIRpodcast episode, Maria Ryskina (@CIFARVideo postdoc at @vectorinstituteai ) dives into one of the most fundamental and unresolved topics in AI: the relationship between language, reasoning, and intelligence. Drawing on work across AI, linguistics, and neuroscience, Maria challenges how we talk about \"understanding\" and \"reasoning\" in modern models -- and why many of our current assumptions may be misleading.\n\n🎓 For researchers, practitioners, and anyone shaping the future of AI.\n\n▶️ Full episode coming soon — subscribe to WiAIR for more conversations at the frontier of AI research.\n\n#AIResearch #LargeLanguageModels #LLMs #AIReasoning #MachineLearning #CognitiveScience #Neuroscience #Linguistics #AIInterpretability #AIAlignment #ModelEvaluation #DeepLearning #ArtificialIntelligence #WomenInAI #WiAIR",
+        "publishedAt": "2025-12-29T16:15:00Z",
+        "publishDate": "December 29, 2025",
+        "durationSeconds": 247,
+        "thumbnailUrl": "https://i.ytimg.com/vi/1N-Cdts6Y7k/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1N-Cdts6Y7k"
+      },
+      {
+        "videoId": "DDjBG_AhUjQ",
+        "title": "S2 Ep 1 Trailer - Can Language Models Reveal Their Hidden Prompts? Swabha Swayamdipta on AI Safety",
+        "description": "Language models may be revealing more than we think — including information they were never meant to expose.\n\nIn this upcoming episode of #WiAIRpodcast, Swabha Swayamdipta (Assistant Professor at @USC , co-Associate Director of the USC Center for AI & Society) takes us behind the scenes of modern language models — from next-token probability distributions to recovering hidden system prompts.\n\nThis episode is for AI researchers, PhD students, and practitioners who care not just about what models can do, but what they should do.\n\n🎧 Full episode coming soon. Subscribe to @WomeninAIResearch to be notified.\n\n#AIResearch #LanguageModels #AISafety #ResponsibleAI #WomenInAI #NLP #MachineLearning",
+        "publishedAt": "2026-01-19T16:00:28Z",
+        "publishDate": "January 19, 2026",
+        "durationSeconds": 284,
+        "thumbnailUrl": "https://i.ytimg.com/vi/DDjBG_AhUjQ/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DDjBG_AhUjQ"
+      },
+      {
+        "videoId": "J5lsfbIa68g",
+        "title": "S2 Ep 2 Trailer — Don't Trust the Reasoning: Letitia Parcalabescu on AI Explanations",
+        "description": "Reasoning traces look convincing — but what if they’re lying?\n\nIn the upcoming episode of #WiAIRpodcast, Dr. Letitia Parcalabescu (AI Researcher at Aleph Alpha and creator of the @AICoffeeBreak YouTube channel) challenges some of the most comfortable assumptions about modern LLMs.\n\n🎧 Full episode coming soon. Subscribe to  @WomeninAIResearch to be notified.\n\n#AIResearch #LanguageModels #ReasoningModels #WomenInAI #NLP #MachineLearning",
+        "publishedAt": "2026-02-09T16:00:28Z",
+        "publishDate": "February 9, 2026",
+        "durationSeconds": 235,
+        "thumbnailUrl": "https://i.ytimg.com/vi/J5lsfbIa68g/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=J5lsfbIa68g"
+      }
+    ]
+  },
+  {
+    "id": "PLlHNzCdRcJDMu6507iijZJ_odT4VG_AfT",
+    "title": "NeurIPS 2025",
+    "description": "NeurIPS 2025 conference in San Diego",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDMu6507iijZJ_odT4VG_AfT",
+    "videos": [
+      {
+        "videoId": "1vAJdWiWLAg",
+        "title": "Day 1 at NeurIPS 2025",
+        "description": "The day of the #WiML workshop at #neurips. \n\nWomen in AI - https://www.womeninai.co\n\nMusic: Now Or Never, Antonio De Giovanni\n\n#neurips2025 #wiair #wiairpodcast",
+        "publishedAt": "2025-12-03T17:00:05Z",
+        "publishDate": "December 3, 2025",
+        "durationSeconds": 721,
+        "thumbnailUrl": "https://i.ytimg.com/vi/1vAJdWiWLAg/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1vAJdWiWLAg"
+      },
+      {
+        "videoId": "dQo4UK8GYlI",
+        "title": "Day 2 at NeurIPS 2025 - Rich Sutton, Zeynep Tufekci, posters",
+        "description": "The second day at #neurips2025 started with crowds wishing to listen to the Rich Sutton's keynote. The other keynote talk and a lot of interesting posters at the poster sessions.\n\nMusic: Now Or Never, Antonio De Giovanni\n\n#neurips #wiair #wiairpodcast",
+        "publishedAt": "2025-12-04T13:01:29Z",
+        "publishDate": "December 4, 2025",
+        "durationSeconds": 188,
+        "thumbnailUrl": "https://i.ytimg.com/vi/dQo4UK8GYlI/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQo4UK8GYlI"
+      },
+      {
+        "videoId": "n9mM3GPaDXQ",
+        "title": "Day 3 at NeurIPS 2025 - keynotes and posters",
+        "description": "Keynotes and posters on the third day of #neurips2025 in San Diego.\n\n• Yejin Choi gave a keynote The Art of (Artificial) Reasoning.\n• Melanie Mitchell gave a keynote On the Science of “Alien Intelligences”: Evaluating Cognitive Capabilities in Babies, Animals, and AI.\n• At the poster session, I speak with Melissa Pan about her work Why Do Multi-Agent LLM Systems Fail?\n\nMusic: Now Or Never, Antonio De Giovanni\n\n#neurips #wiair #wiairpodcast",
+        "publishedAt": "2025-12-05T07:37:36Z",
+        "publishDate": "December 5, 2025",
+        "durationSeconds": 446,
+        "thumbnailUrl": "https://i.ytimg.com/vi/n9mM3GPaDXQ/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n9mM3GPaDXQ"
+      },
+      {
+        "videoId": "g4Mc3NSCny0",
+        "title": "Day 4 at NeurIPS 2025 - yet another interesting poster, and afterparty",
+        "description": "Posters on the fourth day of #neurips 2025 in San Diego, and a relaxing afterparty in the evening.\n\nXuechen Zhang explains why the standard \"SFT followed by RL\" approach does not work for small language models, and how BREAD helps with that.\n\nXuechen Zhang is currently seeking a full-time opportunity!\n\n#neurips2025 #wiair #wiairpodcast",
+        "publishedAt": "2025-12-06T17:01:17Z",
+        "publishDate": "December 6, 2025",
+        "durationSeconds": 556,
+        "thumbnailUrl": "https://i.ytimg.com/vi/g4Mc3NSCny0/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=g4Mc3NSCny0"
+      },
+      {
+        "videoId": "ZYPCure-Jf8",
+        "title": "NeurIPS 2025 in San Diego, Yejin Choi on Small Language Models",
+        "description": "#NeurIPS 2025 Highlight - Yejin Choi (https://scholar.google.com/citations?user=vhP-tlcAAAAJ&hl=en) breaks down why the future of AI won't come from scraping more internet data, but from synthetic data that never existed online.\n\n#NeurIPS2025 #YejinChoi #AIResearch #SyntheticData #SLMS #MachineLearning #AITrends #WomenInAI #wiair #wiairpodcast",
+        "publishedAt": "2025-12-11T16:00:59Z",
+        "publishDate": "December 11, 2025",
+        "durationSeconds": 191,
+        "thumbnailUrl": "https://i.ytimg.com/vi/ZYPCure-Jf8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZYPCure-Jf8"
+      },
+      {
+        "videoId": "QCJt1SBEQsA",
+        "title": "NeurIPS 2025 in San Diego, Marzyeh Ghassemi on the life in academia",
+        "description": "What is life in academia really like? At #NeurIPS 2025, @mit professor Marzyeh Ghassemi (https://scholar.google.ca/citations?user=9RyeFYwAAAAJ&hl=en) shares honest advice on flexibility, responsibility, choosing the right advisor, and why community matters more than prestige.\n\n💡 \"You’re choosing the people you'll work with for the next 40 years.\"\n\n#NeurIPS2025 #MarzyehGhassemi #Academia #lifeinacademia #academiclife #AIResearch #WiML #WomenInAI #wiair #wiairpodcast",
+        "publishedAt": "2025-12-14T16:00:44Z",
+        "publishDate": "December 14, 2025",
+        "durationSeconds": 242,
+        "thumbnailUrl": "https://i.ytimg.com/vi/QCJt1SBEQsA/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QCJt1SBEQsA"
+      },
+      {
+        "videoId": "faCNafQlX94",
+        "title": "NeurIPS 2025 in San Diego, with Leilani Gilpin",
+        "description": "At #NeurIPS 2025, @ucsantacruz professor Leilani Gilpin (https://people.ucsc.edu/~lgilpin/) shares why mentoring at Women in Machine Learning matters—and why building trustworthy, explainable AI is critical as ML systems make real-world decisions.\n\nFrom self-driving cars to large language models, this is a reminder that the future of AI depends on who builds it and how we guide the next generation.\n\n#NeurIPS2025 #WomenInAI #TrustworthyAI #MachineLearning #PhDLife #wiair #wiairpodcast",
+        "publishedAt": "2025-12-15T17:01:14Z",
+        "publishDate": "December 15, 2025",
+        "durationSeconds": 187,
+        "thumbnailUrl": "https://i.ytimg.com/vi/faCNafQlX94/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=faCNafQlX94"
+      },
+      {
+        "videoId": "0LXgnH5c_1g",
+        "title": "NeurIPS 2025 in San Diego, Wei Xu's Advice for Women in Generative AI",
+        "description": "What really matters -- beyond the papers and keynotes? Get your hands dirty!\n\nIn this episode of #WiAIRpodcast, host Jekaterina Novikova shares highlights from #NeurIPS2025 in San Diego and sits down with Wei Xu, Associate Professor of Computer Science at @georgiatech,  during the Women in Machine Learning workshop.\n\n#neurips #WomenInAI #AIResearch #GenerativeAI #WomenInMachineLearning #PhDLife #wiair",
+        "publishedAt": "2025-12-16T17:00:01Z",
+        "publishDate": "December 16, 2025",
+        "durationSeconds": 298,
+        "thumbnailUrl": "https://i.ytimg.com/vi/0LXgnH5c_1g/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0LXgnH5c_1g"
+      },
+      {
+        "videoId": "qD0_aHQvdR8",
+        "title": "NeurIPS 2025 in San Diego, The Illusion of Thinking Explained",
+        "description": "Do today’s reasoning language models actually reason — or do they just appear to?\n\nIn this #NeurIPS 2025 highlight, Parshin Shojaee @Apple breaks down the ideas behind the widely discussed paper \"The Illusion of Thinking\", offering a deep dive into how modern reasoning models behave as problem complexity increases.\n\nThe paper sparked intense debate on social media — from context length concerns to task feasibility — and Parshin directly addresses these critiques, clarifying what holds up after rebuttal and what remains an open research question.\n\nPAPER:\n• The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity - https://arxiv.org/abs/2506.06941\n\n#neurips2025 #ai #illusionofthinking #LargeLanguageModels #LLMs #ReasoningModels #AIResearch #WomenInAI #wiair #wiairpodcast",
+        "publishedAt": "2025-12-17T17:01:24Z",
+        "publishDate": "December 17, 2025",
+        "durationSeconds": 1007,
+        "thumbnailUrl": "https://i.ytimg.com/vi/qD0_aHQvdR8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qD0_aHQvdR8"
+      },
+      {
+        "videoId": "URhovF3RxxI",
+        "title": "NeurIPS 2025 in San Diego. The Leaderboard Illusion: How LLM Rankings Are Gamed",
+        "description": "#NeurIPS has become the place where the future of AI evaluation is debated -- and this paper sparked one of the strongest discussions this year.\n\nIn this talk, Shivalika Singh (Research Engineer @CohereAI ) presents \"The Leaderboard Illusion\", a #NeurIPS2025 paper that takes a systematic look at Chatbot Arena, the widely used platform for ranking #LLM. The study reveals how leaderboard positions can be influenced by private variant testing, uneven sampling rates, and selective deprecations, showing that top spots aren't always just about model strength.\n\nThe paper sparked a highly visible discussion across the AI community, with voices like @AndrejKarpathy , Sara Hooker, and many others weighing in with opinions, critiques, and clarifications -- fueling a debate about transparency, fairness, and best practices in LLM evaluation.\n\nLINK:\nPaper \"The Leaderboard Illusion\" - https://arxiv.org/abs/2504.20879\n\nCHAPTERS:\n00:00 Introduction to the Leaderboard Illusion\n02:15 Issues with Private Testing Practices\n03:59 Data Access Asymmetries and Their Impact\n06:01 Model Deprecation and Its Consequences\n08:44 Recommendations for Fairness in Leaderboards\n10:25 Motivation Behind the Study\n12:00 Critiques and Responses from the Community\n15:00 Future Directions in Model Evaluation\n\nThis talk is a must-watch for AI researchers, PhD students, and industry practitioners who rely on leaderboards to guide research, deployment, and investment decisions -- and who want to understand the forces shaping what \"top-performing\" really means.\n\n#NeurIPS2025 #AIResearch #LLM #LargeLanguageModels #MachineLearning #ChatbotArena #AILeaderboard #AICommunity #PhDInAI #AIBenchmarking #wiair #wiairpodcast",
+        "publishedAt": "2025-12-20T16:00:56Z",
+        "publishDate": "December 20, 2025",
+        "durationSeconds": 1005,
+        "thumbnailUrl": "https://i.ytimg.com/vi/URhovF3RxxI/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=URhovF3RxxI"
+      },
+      {
+        "videoId": "K3BUpKag_nA",
+        "title": "NeurIPS 2025 in San Diego. Treasure Hunt",
+        "description": "How do we give language models explicit control over what they generate—without retraining from scratch or exploding data requirements?\n\nIn this #NeurIPS 2025 highlight, Julia Kreutzer (Senior Research Scientist at @CohereAI ) presents \"Treasure Hunt\", a simple yet powerful idea:\n• add lightweight markers during fine-tuning that models can later retrieve at inference time to unlock better performance, especially for underrepresented domains, tasks, and languages.\n\nLINKS:\nTreasure Hunt: Real-time Targeting of the Long Tail using Training-Time Markers - https://arxiv.org/abs/2506.14702\n\n👉 Subscribe for more NeurIPS insights, research deep dives, and behind-the-scenes conversations with leading AI researchers.\n\n#AI #MachineLearning #DeepLearning #NLP #LLMs #GenerativeAI #NeurIPS2025 #AIResearch #ControllableGeneration #PromptEngineering #MultilingualAI #DataEfficiency #LongTailAI #WomenInAI #ResearchTalks #wiair #wiairpodcast",
+        "publishedAt": "2025-12-22T15:45:02Z",
+        "publishDate": "December 22, 2025",
+        "durationSeconds": 560,
+        "thumbnailUrl": "https://i.ytimg.com/vi/K3BUpKag_nA/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=K3BUpKag_nA"
+      },
+      {
+        "videoId": "oRc__glKUYg",
+        "title": "NeurIPS 2025 in San Diego. Deep Learning Secrets",
+        "description": "In this post #NeurIPS2025 episode, Linara Adilova shares the work on relative flatness in deep learning — a concept that could explain why neural networks generalize so well.\n\nKey insights:\n• How relative flatness differs from neural collapse\n• Experiments showing why flatness may be necessary for generalization\n• The layer-wise behavior of networks and what it means for future AI research\n\nLINKS:\nFlatness is Necessary, Neural Collapse is Not: Rethinking Generalization via Grokking - https://arxiv.org/abs/2509.17738\n\n🔔 Subscribe for more WiAIR insights from top AI conferences.\n\n#NeurIPS2025 #DeepLearning #MachineLearning #AIResearch #WomenInAI #NeuralCollapse #RelativeFlatness #AITheory #DeepLearningInsights #Transformers #ResNet #Generalization #AIConference #NeurIPSHighlights #DeepLearningResearch #wiair #wiairpodcast",
+        "publishedAt": "2025-12-23T16:01:31Z",
+        "publishDate": "December 23, 2025",
+        "durationSeconds": 502,
+        "thumbnailUrl": "https://i.ytimg.com/vi/oRc__glKUYg/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=oRc__glKUYg"
+      },
+      {
+        "videoId": "ADncPso9cbU",
+        "title": "NeurIPS 2025 in San Diego. Do AI Models Really Understand Emotions?",
+        "description": "Ever wondered if AI can think emotionally like humans? 🤔 At #NeurIPS 2025, Sree Bhattacharya, a PhD student at @pennstate, shares research on how Large Language Models (LLMs) reason about emotions - and where they fall short.\n\nKey insights:\n• AI interprets emotions differently from humans.\n• LLMs can predict emotions but struggle with emotional reasoning.\n• The implications for AI in mental health, decision-making, and social science simulations.\n\nLINKS:\nDo Machines Think Emotionally? Cognitive Appraisal Analysis of Large\nLanguage Models - https://arxiv.org/abs/2508.05880\n\n🔔 Subscribe to Women in AI Research for more behind-the-scenes insights from top AI conferences and the latest breakthroughs.\n\n#AI #NeurIPS2025 #LLM #AffectiveComputing #MultimodalAI #WomenInAI #ArtificialIntelligence #EmotionalAI #PhDResearch #MachineLearning #wiair #wiairpodcast",
+        "publishedAt": "2025-12-24T16:00:23Z",
+        "publishDate": "December 24, 2025",
+        "durationSeconds": 614,
+        "thumbnailUrl": "https://i.ytimg.com/vi/ADncPso9cbU/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ADncPso9cbU"
+      },
+      {
+        "videoId": "DogbPRjWX1k",
+        "title": "NeurIPS 2025 in San Diego. Charting the Future of AI: Building a Model Atlas",
+        "description": "Join Jekaterina from @WomeninAIResearch  as she dives into the most exciting highlights from #NeurIPS 2025! 🚀\n\nIn this episode, we explore an approach to understanding millions of AI models through the concept of a Model Atlas. Eliahu Horwitz from @HebrewUniversity explains how we can treat every model as a data point and map their relationships, performance, and evolution - unlocking new possibilities for:\n\n• Model forensics & provenance tracking\n• Meta-ML research and community insights\n• Model discovery & routing at @HuggingFace  scale\n\n#NeurIPS2025 #AIResearch #MachineLearning #ModelAtlas #MetaLearning #NLP #ComputerVision #AITrends #WomenInAI #HuggingFace #DeepLearning #wiair #wiairpodcast",
+        "publishedAt": "2025-12-25T16:00:16Z",
+        "publishDate": "December 25, 2025",
+        "durationSeconds": 802,
+        "thumbnailUrl": "https://i.ytimg.com/vi/DogbPRjWX1k/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DogbPRjWX1k"
+      },
+      {
+        "videoId": "DrbqwNhHK9Y",
+        "title": "NeurIPS 2025 in San Diego. Causal Representations from Observational Data",
+        "description": "In this #NeurIPS 2025 highlight, Dingling Yao (ISTA Austria) presents a compelling framework for evaluating causal representation learning using purely observational data - with a fascinating real-world case study from ecology 🐜\n\nKey insights:\n• High-performing representations can still fail causal inference\n• Causal representation learning is a measurement problem\n• T-MEX score allows researchers to evaluate causal representations without randomized interventions\n\nLINKS:\nThe third pillar of causal analysis? A measurement perspective on causal representations - https://arxiv.org/abs/2505.17708\n\n👉 Subscribe for more NeurIPS insights, research deep dives, and behind-the-scenes conversations with leading AI researchers.\n\n#NeurIPS2025 #CausalInference #CausalML #RepresentationLearning #AIResearch #MachineLearning #ObservationalData #ModelEvaluation #MLResearch #WomenInAI #WiAIR #PhDLife #AIConference #wiair #wiairpodcast",
+        "publishedAt": "2025-12-26T16:00:21Z",
+        "publishDate": "December 26, 2025",
+        "durationSeconds": 899,
+        "thumbnailUrl": "https://i.ytimg.com/vi/DrbqwNhHK9Y/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DrbqwNhHK9Y"
+      },
+      {
+        "videoId": "eBzSMNgWjRk",
+        "title": "NeurIPS 2025 in San Diego. Scaling Causal Discovery to Massive Graphs",
+        "description": "How do you scale causal discovery to tens of thousands of variables—without sacrificing theoretical guarantees?\n\nIn this #NeurIPS 2025 research highlight, Ashka Shah @UChicago  presents a provably correct divide-and-conquer framework for causal discovery that tackles one of the field’s biggest bottlenecks: scalability.\n\nYou’ll learn:\n• Why existing causal discovery methods don’t scale\n• How divide-and-conquer can work with latent confounders\n• The role of superstructures and when domain knowledge is (or isn’t) needed\n\nLINKS:\nCausal Discovery over High-Dimensional Structured Hypothesis Spaces with Causal Graph Partitioning - https://arxiv.org/abs/2406.06348\n\n📌 Subscribe to @WomeninAIResearch for in-depth research conversations, conference insights, and behind-the-scenes perspectives from leading women in AI.\n\n#CausalDiscovery #NeurIPS2025 #AIResearch #MachineLearning #AIForScience #CausalInference #GraphLearning #ScalableAI #MLTheory #ResearchTalk #PhDLife #AcademicResearch #WomenInAI #WiAIR #AICommunity #wiairpodcast",
+        "publishedAt": "2025-12-27T16:01:07Z",
+        "publishDate": "December 27, 2025",
+        "durationSeconds": 706,
+        "thumbnailUrl": "https://i.ytimg.com/vi/eBzSMNgWjRk/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=eBzSMNgWjRk"
+      },
+      {
+        "videoId": "Qqpv8lFg4cY",
+        "title": "NeurIPS 2025 in San Diego. Born With a Silver Spoon? Socioeconomic Bias in LLMs",
+        "description": "Do large language models empathize differently based on socioeconomic status?\n\nAt NeurIPS 2025, Smriti Singh presents \"Born with a Silver Spoon\" - a study investigating socioeconomic bias in large language models and how it interacts with gender, race, location, and moral reasoning.\n\nWe explore:\n• Whether LLMs favor high-income vs. low-income individuals\n• A new benchmark dataset evaluating empathy, moral judgment, and narrative bias\n• Why \"this just reflects real-world statistics\" is not an acceptable answer for AI deployed in hiring, healthcare, or justice systems\n\nLINKS:\nBorn With a Silver Spoon? Investigating Socioeconomic Bias in Large\nLanguage Models - https://arxiv.org/abs/2403.14633\n\n🔔 Subscribe to Women in AI Research for more behind-the-scenes insights from top AI conferences and the latest breakthroughs.\n\n#neurips2025 #AIResearch #LargeLanguageModels #LLMs #AIFairness #BiasInAI #EthicalAI #ResponsibleAI #AIAlignment #MachineLearning #DeepLearning #AISafety #AIForGood #AIInIndustry #WomenInAI #wiair #wiairpodcast",
+        "publishedAt": "2025-12-28T16:00:40Z",
+        "publishDate": "December 28, 2025",
+        "durationSeconds": 973,
+        "thumbnailUrl": "https://i.ytimg.com/vi/Qqpv8lFg4cY/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Qqpv8lFg4cY"
+      },
+      {
+        "videoId": "hLDKW3-OKUA",
+        "title": "NeurIPS 2025 in San Diego. Building Knowledge Graphs from Text with LLMs - KGGen Explained",
+        "description": "Join Jekaterina from  @WomeninAIResearch   as she dives into the most exciting highlights from #NeurIPS 2025! 🚀\n\nIn this talk, Belinda Mo from @stanford presents KGGen, a method for extracting traditional subject-predicate-object knowledge graphs directly from plain text (e.g., Wikipedia articles) using state-of-the-art LLMs.\n\nPAPER LINK:\nKGGen: Extracting Knowledge Graphs from Plain Text with Language Models - https://arxiv.org/abs/2502.09956\n\nYou'll learn:\n\n• Why deduplication matters more as corpora scale\n• Why enforcing an ontology hurt performance, and when structured ontologies may still be useful\n• Which models were tested (GPT-4o, Gemini, Claude Sonnet) and whether large models are strictly necessary\n\n#ArtificialIntelligence #MachineLearning #LargeLanguageModels #KnowledgeGraphs #AIResearch #NLP #LLMs #GraphLearning #InformationExtraction #AIPhD #ResearchTalk #AIConference #DeepLearning #AIEngineering #wiair #wiairpodcast",
+        "publishedAt": "2025-12-29T16:01:08Z",
+        "publishDate": "December 29, 2025",
+        "durationSeconds": 401,
+        "thumbnailUrl": "https://i.ytimg.com/vi/hLDKW3-OKUA/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hLDKW3-OKUA"
+      }
+    ]
+  },
+  {
+    "id": "PLlHNzCdRcJDPKrasXXrPfGnY0WhWRQ_Eu",
+    "title": "Risks of AI",
+    "description": "#AIrisks #AIEthics #ResponsibleAI #AIHype #AIandSociety #wiair #wiairpodcast #artificialintelligence #machinelearning #deeplearning #naturallanguageprocessing",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDPKrasXXrPfGnY0WhWRQ_Eu",
+    "videos": [
+      {
+        "videoId": "JtlAMnZQVmU",
+        "title": "NeurIPS 2025 in San Diego. We Jailbroke Every Frontier Model",
+        "description": "How robust are today’s frontier AI models—really?\n\nIn this post #NeurIPS2025 episode, Sara Price (AI safety researcher at @anthropic-ai ) walks us through a surprisingly simple black-box attack that successfully jailbreaks frontier text, vision, and audio models—often with very high attack success rates.\n\nThe key insight?\nYou don’t need clever prompts or handcrafted exploits. Random augmentations + large-scale sampling are enough to expose deep vulnerabilities in standard policy-based LLMs.\n\nLINKS:\nPaper \"Best-of-N Jailbreaking\" - https://arxiv.org/abs/2412.03556\nProject - https://jplhughes.github.io/bon-jailbreaking\n\n#NeurIPS  #anthropic #AdversarialRobustness #MLSecurity #TrustworthyAI\n#AIResearchCommunity #PhDLife #AcademicResearch #wiair #wiairpodcast",
+        "publishedAt": "2025-12-19T16:00:34Z",
+        "publishDate": "December 19, 2025",
+        "durationSeconds": 600,
+        "thumbnailUrl": "https://i.ytimg.com/vi/JtlAMnZQVmU/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JtlAMnZQVmU"
+      }
+    ]
+  },
+  {
+    "id": "more-videos",
+    "title": "More videos",
+    "description": "",
+    "playlistUrl": null,
+    "videos": [
+      {
+        "videoId": "GBghj6S6cic",
+        "title": "Trustworthy AI Explained: Ana Marasović on AI Interpretability, LLM Reasoning & Benchmark Myths",
+        "description": "What makes AI trustworthy — and how can we tell when explanations are misleading?\n\nJoin Ana Marasović (University of Utah) in the upcoming Women in AI Research episode as she breaks down the key challenges behind AI trust, interpretability, and benchmark evaluation.\n\nIn this insightful conversation, you’ll learn:\n🧩 The difference between intrinsic and extrinsic AI trust\n⚖️ Why explainability ≠ truth\n📊 What benchmarks like MMLU really measure\n💡 How AI reasoning can go wrong — and what we can do about it\n\nPerfect for researchers, data scientists, and AI practitioners exploring LLMs, explainability, and responsible AI systems.\n\n🔔 Subscribe to our channel to get notified when the full episode is live",
+        "publishedAt": "2025-10-06T15:00:25Z",
+        "publishDate": "October 6, 2025",
+        "durationSeconds": 184,
+        "thumbnailUrl": "https://i.ytimg.com/vi/GBghj6S6cic/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GBghj6S6cic"
+      },
+      {
+        "videoId": "KszW2czg7x8",
+        "title": "Ep 11 Part 1 - The Messy Journey of Research, with Dr. Ana Marasovic",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Ana Marasović https://www.anamarasovic.com, an expert in AI trustworthiness. \n\nLINKS\nFull episode: https://youtu.be/xYb6uokKKOo\nPart 2 - The Role of Explainability and Reasoning Traces in AI Trust: https://youtu.be/yQN6PuI0DB0\nPart 3 - Robustness and Trustworthy AI: https://youtu.be/kh7N0GtgfpE\n\nIn Part 1 of the conversation, Ana shares her insights on the collaborative nature of research, the realities of academic life, and the challenges of proposal writing, emphasizing the importance of understanding the multifaceted roles of researchers in academia.\n\nCHAPTERS\n00:00 Introduction - Ana Marasović\n02:15 The Messiness of Research\n04:33 The Realities of Academic Life\n08:21 Balancing Research and Funding\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-10-09T15:00:38Z",
+        "publishDate": "October 9, 2025",
+        "durationSeconds": 727,
+        "thumbnailUrl": "https://i.ytimg.com/vi/KszW2czg7x8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KszW2czg7x8"
+      },
+      {
+        "videoId": "yQN6PuI0DB0",
+        "title": "Ep 11 Part 2 - The Role of Explainability and Reasoning Traces in AI Trust, with Dr. Ana Marasovic",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Ana Marasović https://www.anamarasovic.com, an expert in AI trustworthiness. \n\nLINKS\nFull episode: https://youtu.be/xYb6uokKKOo\nPart 1 - The Messy Journey of Research: https://youtu.be/KszW2czg7x8?si=UXKicrI-m8N4VhjO\nPart 3 - Robustness and Trustworthy AI: https://youtu.be/kh7N0GtgfpE\n\nIn Part 2 of the conversation, we explore the complexities of trust in AI systems, focusing on the concepts of intrinsic and extrinsic trust, the importance of explainability, and the evaluation of AI systems in real-world applications. The discussion also delves into the dynamics of human-AI collaboration, the faithfulness of reasoning traces, and the implications of model scaling on reasoning capabilities.\n\nCHAPTERS:\n00:00 Unpacking AI Trustworthiness\n00:27 Understanding Trust in AI Systems\n03:37 Exploring Explainability and Human Decision-Making\n06:06 Application-Grounded Evaluations\n10:23 The Gap Between Research and Real-World Applications\n11:55 Counterintuitive Findings in Human-AI Collaboration\n17:30 Balancing Human-AI Collaboration\n19:15 Exploring Human-AI Teams\n24:07 Understanding Reasoning Traces in AI\n27:54 The Relationship Between Model Size and Reasoning\n35:08 Evaluating Reasoning Language Models\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-10-11T17:01:12Z",
+        "publishDate": "October 11, 2025",
+        "durationSeconds": 2349,
+        "thumbnailUrl": "https://i.ytimg.com/vi/yQN6PuI0DB0/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yQN6PuI0DB0"
+      },
+      {
+        "videoId": "kh7N0GtgfpE",
+        "title": "Ep 11 Part 3 - Robustness and Trustworthy AI, with Dr. Ana Marasovic",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Ana Marasović https://www.anamarasovic.com, an expert in AI trustworthiness. \n\nLINKS\nFull episode: https://youtu.be/xYb6uokKKOo\nPart 1 - The Messy Journey of Research: https://youtu.be/KszW2czg7x8?si=UXKicrI-m8N4VhjO\nPart 2 - The Role of Explainability and Reasoning Traces in AI Trust: https://youtu.be/yQN6PuI0DB0\n\nCHAPTERS\n00:00 Robustness in AI Systems\n07:17 The State of AI Evaluation\n10:56 Synthetic Evaluation: Pros and Cons\n16:05 Human vs. LLM Annotations\n18:07 Balancing Efficiency and Robustness in Benchmarking\n24:21 Trust in AI: Intrinsic vs. Extrinsic\n28:31 Future Directions in AI Research\n\nIn Part 3, we focus on the challenges of explainability, robustness, and evaluation. We discuss the importance of robustness in real-world applications, and the role of benchmarks in measuring AI performance. The conversation also explores synthetic evaluation methods, the distinction between intrinsic and extrinsic trust in AI, and the future directions for research in AI trust and reliability.\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-10-13T15:01:31Z",
+        "publishDate": "October 13, 2025",
+        "durationSeconds": 1923,
+        "thumbnailUrl": "https://i.ytimg.com/vi/kh7N0GtgfpE/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kh7N0GtgfpE"
+      },
+      {
+        "videoId": "BeQFyY3Dld4",
+        "title": "Ep 12 Part 1 - \"Lost in Automatic Translation\", with Dr. Vered Shwartz",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Vered Shwartz, an Assistant Professor of Computer Science at the University of British Columbia, and a CIFAR AI Chair at the Vector Institute. \n\nLINKS\nFull episode: https://youtu.be/RKIvrESep-g\nPart 2 - https://youtu.be/Vfikq3wsULw\nPart 3 - https://youtu.be/IwOxN8bssk4\n\nWhat happens when your AI assistant doesn’t understand your accent — or your culture?\nIn the Part 1 of our conversation, Vered Shwartz shares the personal stories and research that inspired her new book Lost in Automatic Translation.\n\n🧠 Topics we cover:\n• How her experiences as a non-native English speaker shaped her research\n• Why clarity in scientific communication matters more than hype\n• The real-world consequences of language technologies built on Western-centric data\n\nCHAPTERS\n00:00 Introduction to Women in AI Research Podcast\n00:33 Guest - Dr. Vered Shwartz\n02:32 The Importance of Communication Skills in Academia\n04:15 Navigating Faculty Roles and Student Supervision\n07:52 Personal Experiences with Language Technologies\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-10-30T15:00:19Z",
+        "publishDate": "October 30, 2025",
+        "durationSeconds": 881,
+        "thumbnailUrl": "https://i.ytimg.com/vi/BeQFyY3Dld4/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=BeQFyY3Dld4"
+      },
+      {
+        "videoId": "Vfikq3wsULw",
+        "title": "Ep 12 Part 2 - Hidden Cultural Codes in AI, Dr. Vered Shwartz on Bias, Fairness & Global NLP",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Vered Shwartz, an Assistant Professor of Computer Science at the  ⁨@UBC⁩ and a ⁨@CIFARVideo⁩ AI Chair at the  ⁨@vectorinstituteai⁩ .\n\nLINKS\nFull episode: https://youtu.be/RKIvrESep-g\nPart 1: https://youtu.be/BeQFyY3Dld4\nPart 3 - https://youtu.be/IwOxN8bssk4\n\nIn Part 2 of our conversation, we explore how large language and vision–language models reflect and reinforce Western and US-centric worldviews, what it means for fairness and inclusivity, and how we can build culturally aware AI that truly works for everyone.\n\n🧠 Topics we cover:\n• How \"universal\" AI is still mostly Western\n• Cultural gaps across languages in Wikipedia\n• How LLMs “hide” stereotypes under safety guardrails\n• Vision-language biases — when \"house\" means \"US house\"\n• Building benchmarks for fairer AI across 50 countries\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast with Dr. Vered Shwartz\n00:32 Personal Experiences with Language Technologies\n00:33 Exploring Cultural Representation in AI\n06:23 The InfoGap Method and Cultural Information Gaps\n08:23 Technical Challenges in Cross-Language Representation\n09:55 Cultural Completeness and Wikipedia's Role\n12:35 User Interaction with Language Models\n23:15 Cross-Cultural Evaluation of Social Norm Biases\n24:09 Cultural Alignment of Language Models\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-11-01T15:01:02Z",
+        "publishDate": "November 1, 2025",
+        "durationSeconds": 2106,
+        "thumbnailUrl": "https://i.ytimg.com/vi/Vfikq3wsULw/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Vfikq3wsULw"
+      },
+      {
+        "videoId": "IwOxN8bssk4",
+        "title": "Ep 12 Part 3 - When AI Can't \"See\" Your Culture, with Dr. Vered Shwartz",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Vered Shwartz, an Assistant Professor of Computer Science at the  ⁨@UBC⁩ and a ⁨@CIFARVideo⁩ AI Chair at the  ⁨@vectorinstituteai⁩ .\n\nLINKS\nFull episode: https://youtu.be/RKIvrESep-g\nPart 1: https://youtu.be/BeQFyY3Dld4\nPart 2 : https://youtu.be/Vfikq3wsULw\n\nIn Part 3 of our conversation, we explore the hidden cultural biases embedded in vision-language models (VLMs) - systems that connect text and images.\n\n🧠 Topics we cover:\n• Why AI struggles to see non-Western cultures\n• How vision-language models inherit Western imagery bias\n• The hidden link between visual data and linguistic stereotypes\n• What makes cultural fairness harder in multimodal AI\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast with Dr. Vered Shwartz\n00:32 Cultural Alignment of Language Models\n00:32 Exploring Vision Language Models\n14:12 Benchmarking Cultural Bias in AI\n18:15 Decentralizing AI Development\n23:22 Addressing Biases in AI Development\n27:13 Future Directions of Research\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-11-05T16:00:35Z",
+        "publishDate": "November 5, 2025",
+        "durationSeconds": 1720,
+        "thumbnailUrl": "https://i.ytimg.com/vi/IwOxN8bssk4/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IwOxN8bssk4"
+      },
+      {
+        "videoId": "hkKF3fKr6zo",
+        "title": "Ep 13 Part 1 - The Journey of a Multilingual AI Researcher, with Dr. Annie En-Shiun Lee",
+        "description": "In this episode of the Women in AI Research podcast, Jekaterina Novikova speaks with Dr. Annie En-Shiun. We discuss Annie's personal journey in academia, the balance between parenthood and research, and the importance of building effective teams in the field. Annie shares her insights on navigating the academic landscape as a parent and the gradual changes in institutional support for working mothers in academia.\n\nLINKS\nFull episode: https://youtu.be/L9Sp-zauXwo\nPart 2 - https://youtu.be/XXeOAt2DO1I\nPart 3 - https://youtu.be/NJafotDn-J0\n\nCHAPTERS\n00:00 Introduction to Women in AI Research\n00:30 Guest introduction - Dr. Annie En-Shiun Lee\n03:22 Annie's Journey in Multilingual AI\n05:43 Balancing Parenthood and Academia\n10:35 Challenges of Motherhood in Academia\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast",
+        "publishedAt": "2025-11-21T16:01:12Z",
+        "publishDate": "November 21, 2025",
+        "durationSeconds": 1160,
+        "thumbnailUrl": "https://i.ytimg.com/vi/hkKF3fKr6zo/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hkKF3fKr6zo"
+      },
+      {
+        "videoId": "XXeOAt2DO1I",
+        "title": "Ep 13 Part 2 - The Real Challenges of Multilingual NLP, with Dr. Annie En-Shiun Lee",
+        "description": "In this episode of the Women in AI Research podcast, Jekaterina Novikova speaks with Dr. Annie En-Shiun. Annie breaks down the real challenges behind multilingual AI, from the linguistic blind spots in today’s datasets to the cultural nuances that current LLMs fail to capture.\n\nLINKS\nFull episode: https://youtu.be/L9Sp-zauXwo\nPart 1 - https://youtu.be/hkKF3fKr6zo\nPart 3 - https://youtu.be/NJafotDn-J0\n\nCHAPTERS\n00:00 Introduction to Women in AI Research\n00:38 Evaluating Multilingual Language Models\n03:56 SIB-200 Dataset and Its Impact\n14:27 Introducing a Multilingual Reward Model\n19:58 The Impact of Model Size on Performance\n27:09 Focus on Non-English Languages and Their Specifics\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast",
+        "publishedAt": "2025-11-23T16:01:01Z",
+        "publishDate": "November 23, 2025",
+        "durationSeconds": 1736,
+        "thumbnailUrl": "https://i.ytimg.com/vi/XXeOAt2DO1I/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XXeOAt2DO1I"
+      },
+      {
+        "videoId": "NJafotDn-J0",
+        "title": "Ep 13 Part 3 - The Cross-Lingual Challenge, with Dr. Annie En-Shiun Lee",
+        "description": "In this episode of the Women in AI Research podcast, Jekaterina Novikova speaks with Dr. Annie En-Shiun. We explore why translating everything through English can lose meaning and cultural context, the limits of cross-lingual transfer and multilingual embeddings, and challenges for non-Latin scripts and low-resource languages.\n\nLINKS\nFull episode: https://youtu.be/L9Sp-zauXwo\nPart 1 - https://youtu.be/hkKF3fKr6zo\nPart 2 - https://youtu.be/XXeOAt2DO1I\n\nCHAPTERS\n00:00 Introduction to Women in AI Research\n00:59 The Pitfalls of English as a Pivot Language\n11:27 Cross-Lingual Transfer in NLP: Current State and Challenges\n20:58 Understanding Languages with Non-Latins Scripts\n24:20 Advice for Researchers on Underrepresented Languages\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast",
+        "publishedAt": "2025-11-25T16:00:42Z",
+        "publishDate": "November 25, 2025",
+        "durationSeconds": 1953,
+        "thumbnailUrl": "https://i.ytimg.com/vi/NJafotDn-J0/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NJafotDn-J0"
+      },
+      {
+        "videoId": "YLguztL14YI",
+        "title": "Ep 14 Part 1 - Trust, Privacy, and Power in AI, with Dr. Maria Antoniak",
+        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Maria Antoniak, an Assistant Professor of Computer Science at the University of Colorado Boulder, to explore what it really means to build responsible and inclusive AI systems.\n\nLINKS\nFull episode: https://youtu.be/P-R0mU8_0U0\nPart 2 - https://youtu.be/Io_syVZjYg8\nPart 3 - https://youtu.be/UOy_Qsui5ag\n\nThis is a conversation about people, not just models - and about what happens when we bring overlooked voices back into view.\nIn Part 1 of our conversation, Maria Antoniak shares her personal perspective on inclusivity in academia, her experience in building AI literacy for those with less technical background, and how her connection to Ukraine has shaped her understanding of power, justice, and solidarity in research.\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast\n00:33 Guest introduction - Dr. Maria Antoniak\n02:58 Inclusivity in AI\n05:55 AI for Humanists: Bridging the Gap\n08:29 Connection to Ukraine: Values and Lessons\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-12-13T16:00:52Z",
+        "publishDate": "December 13, 2025",
+        "durationSeconds": 842,
+        "thumbnailUrl": "https://i.ytimg.com/vi/YLguztL14YI/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YLguztL14YI"
+      },
+      {
+        "videoId": "Io_syVZjYg8",
+        "title": "Ep 14 Part 2 - What AI Learns From Us, with Dr. Maria Antoniak",
+        "description": "AI systems don't just process text — they absorb our values, cultures, and power structures.\n\nLINKS\nFull episode: https://youtu.be/P-R0mU8_0U0\nPart 1 - https://youtu.be/YLguztL14YI\nPart 3 - https://youtu.be/UOy_Qsui5ag\n\nIn Part 2 of our conversation with Maria Antoniak, an Assistant Professor of Computer Science @cuboulder , we dive deep into trust, privacy, and cultural bias in AI systems, drawing on real-world evidence from large-scale chatbot data and surveys of researchers.\n\nCHAPTERS:\n00:00 Introduction to the episode with Maria Antoniak\n00:41 Trust and Privacy in AI Interactions\n01:23 Personal Disclosures in AI Conversations\n09:21 Taxonomy of Sensitive Information\n11:59 Researcher Perspectives on AI Usage\n15:36 Cultural Representation in AI Systems\n22:36 Cultural NLP and Its Challenges\n24:26 Evaluating Cultural Alignment in AI\n29:53 Cultural Evaluation Methods in Research\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
+        "publishedAt": "2025-12-16T16:00:28Z",
+        "publishDate": "December 16, 2025",
+        "durationSeconds": 2054,
+        "thumbnailUrl": "https://i.ytimg.com/vi/Io_syVZjYg8/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Io_syVZjYg8"
+      },
+      {
+        "videoId": "UOy_Qsui5ag",
+        "title": "Ep 14 Part 1 - AI in Maternal & Reproductive Health, with Dr. Maria Antoniak",
+        "description": "AI systems don't just process text — they absorb our values, cultures, and power structures.\n\nLINKS\nFull episode: https://youtu.be/P-R0mU8_0U0\nPart 1 - https://youtu.be/YLguztL14YI\nPart 2 - https://youtu.be/Io_syVZjYg8\n\nIn Part 3 of our conversation with Maria Antoniak, an Assistant Professor of Computer Science @cuboulder , we explore AI in maternal and reproductive health, examining healthcare bias, power dynamics, and ethical NLP principles for building trustworthy, human-centered AI systems.\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast\n00:56 AI in Maternal and Reproductive Health\n04:21 Guiding Principles for AI in Maternal Health\n07:26 Engaging Stakeholders in Healthcare AI\n15:50 Enhancing Agency in Healthcare AI\n19:37 Learning from Maternal Health Traditions\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AIethics #MaternalHealth #ReproductiveHealth #HealthcareAI #NLP #ResponsibleAI #HumanCenteredAI #FairnessInAI #AIResearch #WomenInAI #EthicalAI #MachineLearning #HealthTech #AIinHealthcare #WiAIR #wiairpodcast",
+        "publishedAt": "2025-12-23T17:00:51Z",
+        "publishDate": "December 23, 2025",
+        "durationSeconds": 1485,
+        "thumbnailUrl": "https://i.ytimg.com/vi/UOy_Qsui5ag/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=UOy_Qsui5ag"
+      },
+      {
+        "videoId": "ltepNZB15bM",
+        "title": "LLMs Can Hear… But Can They Reason? A New Benchmark for Audio Intelligence (EACL 2026)",
+        "description": "What does it actually mean for a model to understand audio?\n\nPaper: https://arxiv.org/abs/2601.19673\n\nIn this episode, I talk with Iwona Christop, a PhD student at Adam Mickiewicz University, about her recent EACL paper introducing ART (Audio Reasoning Tasks) — a new benchmark designed to evaluate whether multimodal LLMs can truly reason over audio, not just transcribe or classify it.\n\nMost existing benchmarks test audio skills in isolation (like ASR or classification). But real-world intelligence requires something deeper: combining signals, comparing sounds, tracking context, and making decisions.\n\nThis work takes a different approach:\n• No text-only shortcuts — tasks can’t be solved via transcription alone\n• Reasoning-first design — models must combine multiple audio cues\n• No expert knowledge required — anyone can verify correctness\n\nWe also dive into the diverse task design, including:\n• Audio arithmetic (counting and comparing sounds)\n• Cross-recording speaker & language identification\n• Sound-based reasoning (e.g., inferring properties from audio)\n• Speech feature comparison (accents, variations)\n• Multimodal reasoning across text and sound\n\nThe dataset includes 9 tasks, 9,000 samples, and 30+ hours of audio — all generated in a scalable way using templates and TTS.\n\n👉 If you care about multimodal reasoning, evaluation, or the limits of current LLM capabilities, this conversation is for you.\n\nIwona Christop:\n• https://www.linkedin.com/in/iwona-christop/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon\n\n#WiAIR #EACL2026",
+        "publishedAt": "2026-04-12T15:01:13Z",
+        "publishDate": "April 12, 2026",
+        "durationSeconds": 1103,
+        "thumbnailUrl": "https://i.ytimg.com/vi/ltepNZB15bM/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ltepNZB15bM"
+      }
+    ]
+  }
+]
