@@ -97,6 +97,14 @@ export function Navbar() {
               Guests
             </Link>
             <Link
+              href="/events"
+              className={`text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
+                pathname === '/events' ? 'font-bold text-wiair-light' : ''
+              }`}
+            >
+              Events
+            </Link>
+            <Link
               href="/mentorship"
               className={`text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
                 pathname === '/mentorship' ? 'font-bold text-wiair-light' : ''
@@ -173,6 +181,15 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Guests
+            </Link>
+            <Link
+              href="/events"
+              className={`block text-center text-white hover:text-wiair-light transition-colors duration-300 text-lg ${
+                pathname === '/events' ? 'font-bold text-wiair-light' : ''
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Events
             </Link>
             <Link
               href="/mentorship"

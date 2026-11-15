@@ -1,10 +1,17 @@
-name: Update episodes from RSS
+name: Update episodes, guests and events from YouTube
 
 on:
   schedule:
-    # Run daily at midnight UTC
+    # Run daily at midnight UTC (YouTube podcasts → Episodes; other videos → Events)
     - cron: '0 0 * * *'
   workflow_dispatch:
+  # Rebuild right away when the settings or hand-edited guest details change.
+  push:
+    branches: ["main"]
+    paths:
+      - "data/youtube-config.json"
+      - "data/guest-overrides.json"
+      - "scripts/sync-youtube.ts"
 
 permissions:
   contents: write
@@ -29,21 +36,23 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Fetch RSS and generate episodes.json
-        run: yarn update-episodes
+      - name: Fetch YouTube channel and generate site data
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: yarn update-content
 
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet app/data/episodes.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet -- app/data && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add app/data/episodes.json
-          git commit -m "chore: update episodes from RSS feed"
+          git add app/data/episodes.json app/data/events.json app/data/guests.json
+          git commit -m "chore: update episodes, guests and events from YouTube"
           git push
 
       # Pushes made with GITHUB_TOKEN don't trigger other workflows, so the
