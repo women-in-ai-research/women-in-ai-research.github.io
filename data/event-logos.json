@@ -1,0 +1,10 @@
+{
+  "_comment": "Logos shown on the Events page and the Home page. An event playlist gets the first logo whose 'match' text appears in its YouTube title (not case-sensitive). To add one, put the image in public/images/events/ and add a line here.",
+  "logos": [
+    { "match": "Women in AI Safety", "image": "/images/events/acm-w-toronto.png", "alt": "ACM-W Toronto" },
+    { "match": "COLM", "image": "/images/events/colm.png", "alt": "COLM" },
+    { "match": "ICLR", "image": "/images/events/iclr.svg", "alt": "ICLR" },
+    { "match": "EACL", "image": "/images/events/eacl.png", "alt": "EACL" },
+    { "match": "NeurIPS", "image": "/images/events/neurips.svg", "alt": "NeurIPS" }
+  ]
+}

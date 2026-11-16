@@ -3,27 +3,15 @@ import { Footer } from "@/app/components/footer/Footer";
 import { TopicButtons } from "@/app/components/topics/TopicButtons";
 import { TeamGrid } from "@/app/components/home/TeamGrid";
 import { formatDuration } from "@/app/components/common/RichText";
+import { YouTubeButton, SpotifyButton, ApplePodcastsButton } from "@/app/components/common/Buttons";
+import { EventLogo } from "@/app/components/events/EventLogo";
 import type { Episode } from "@/app/components/podcast/EpisodeList";
 import episodesData from "@/app/data/episodes.json";
 import guestsData from "@/app/data/guests.json";
 import eventsData from "@/app/data/events.json";
-import config from "@/data/youtube-config.json";
 
 const YOUTUBE_URL = "https://www.youtube.com/@WomeninAIResearch";
 
-const SOCIAL = {
-  follow: [
-    { name: "YouTube", handle: "@WomeninAIResearch", url: YOUTUBE_URL },
-    { name: "LinkedIn", handle: "Women in AI Research", url: "https://www.linkedin.com/company/women-in-ai-research/" },
-    { name: "Bluesky", handle: "@wiair.bsky.social", url: "https://bsky.app/profile/wiair.bsky.social" },
-    { name: "X (Twitter)", handle: "@WiAIR_podcast", url: "https://x.com/WiAIR_podcast" },
-  ],
-  listen: [
-    { name: "Spotify", handle: "Women in AI Research (WiAIR)", url: config.spotifyShowUrl },
-    { name: "Apple Podcasts", handle: "Women in AI Research (WiAIR)", url: config.appleShowUrl },
-    { name: "Discord", handle: "Join the WiAIR server", url: "https://discord.gg/267DPacHT5" },
-  ],
-};
 
 // Shown as text in the "Our guests come from" row.
 const INSTITUTIONS = ["Stanford", "MIT", "Harvard", "Cambridge", "Allen Institute for AI", "Meta", "Max Planck Institute", "UBC"];
@@ -75,7 +63,7 @@ export default function Page() {
   const events = eventsData as EventGroup[];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest relative overflow-x-clip">
       <Navbar />
 
       {/* Decorative blur orbs */}
@@ -88,8 +76,8 @@ export default function Page() {
 
       <main className="relative z-10">
         {/* 1. Hero */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20 flex flex-wrap items-center gap-14">
-          <div className="flex-[999_1_520px] min-w-0 flex flex-col gap-6">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20 flex flex-wrap items-center gap-x-14 gap-y-10">
+          <div className="order-1 flex-[999_1_520px] min-w-0 flex flex-col gap-6">
             <p className={EYEBROW}>Women in AI Research · The WiAIR podcast</p>
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.05] tracking-tight">
               WiAIR: The AI research podcast
@@ -98,17 +86,6 @@ export default function Page() {
               In-depth conversations with female AI researchers from around the globe: the people behind the papers,
               and the research itself. <strong className="text-white font-semibold">By researchers, for researchers.</strong>
             </p>
-            <div className="flex flex-wrap gap-3 mt-2">
-              <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" className={PRIMARY_BTN}>
-                <PlayIcon /> Watch on YouTube
-              </a>
-              <a href={config.spotifyShowUrl} target="_blank" rel="noopener noreferrer" className={SECONDARY_BTN}>
-                Spotify
-              </a>
-              <a href={config.appleShowUrl} target="_blank" rel="noopener noreferrer" className={SECONDARY_BTN}>
-                Apple Podcasts
-              </a>
-            </div>
           </div>
 
           {latest && (
@@ -116,7 +93,7 @@ export default function Page() {
               href={latest.youtubeUrl || YOUTUBE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${CARD} flex-[1_1_380px] min-w-0 max-w-[480px] overflow-hidden flex flex-col hover:bg-white/[0.12] transition-all duration-300`}
+              className={`${CARD} order-3 lg:order-2 flex-[1_1_340px] min-w-0 max-w-[400px] overflow-hidden flex flex-col hover:bg-white/[0.12] transition-all duration-300`}
             >
               <img src={latest.thumbnailUrl} alt="" className="w-full aspect-video object-cover" />
               <div className="p-6 flex flex-col gap-2">
@@ -126,6 +103,13 @@ export default function Page() {
               </div>
             </a>
           )}
+
+          {/* Same buttons as the previous Home page */}
+          <div className="order-2 lg:order-3 basis-full flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-4 -mt-4 lg:mt-0 [&>a]:whitespace-nowrap">
+            <YouTubeButton />
+            <SpotifyButton />
+            <ApplePodcastsButton />
+          </div>
         </section>
 
         <Divider />
@@ -153,7 +137,7 @@ export default function Page() {
                 { value: guestCount, label: "researchers interviewed" },
                 { value: events.length, label: "events covered" },
               ].map((s) => (
-                <div key={s.label} className={`${CARD} flex-[1_1_120px] p-5 flex flex-col-reverse`}>
+                <div key={s.label} className={`${CARD} flex-[1_1_120px] p-5 flex flex-col-reverse justify-end`}>
                   <dt className="text-sm text-gray-400 mt-1">{s.label}</dt>
                   <dd className="text-4xl font-bold text-white">{s.value}</dd>
                 </div>
@@ -271,6 +255,7 @@ export default function Page() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {events.slice(0, 4).map((g) => (
                 <a key={g.id} href={`/events/#${g.id}`} className={`${CARD} p-6 flex flex-col gap-2 hover:bg-white/[0.12] transition-all duration-300`}>
+                  <EventLogo title={g.title} className="h-16 w-full mb-2" />
                   <p className="text-2xl font-bold text-white">{g.title}</p>
                   <p className="text-gray-400">{g.videos.length} videos</p>
                   <p className="mt-2 font-semibold text-wiair-light">Watch the playlist →</p>
@@ -320,7 +305,7 @@ export default function Page() {
         <Divider />
 
         {/* 8. Our mission */}
-        <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-wrap gap-10 items-start scroll-mt-24">
+        <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-wrap gap-10 items-start scroll-mt-28">
           <div className="flex-[1_1_280px] flex flex-col gap-3">
             <p className={EYEBROW}>Our mission</p>
             <h2 className="text-4xl font-bold text-white leading-tight">Celebrating female AI researchers</h2>
@@ -344,7 +329,7 @@ export default function Page() {
         <Divider />
 
         {/* 9. Team */}
-        <section id="team" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col gap-9 scroll-mt-24">
+        <section id="team" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col gap-9 scroll-mt-28">
           <div className="flex flex-col gap-3">
             <p className={EYEBROW}>The team</p>
             <h2 className="text-4xl font-bold text-white leading-tight">Meet the people behind Women in AI Research</h2>
@@ -375,37 +360,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* 11. Stay connected */}
-        <section aria-labelledby="stay-connected" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 flex flex-col gap-8">
-          <div className="flex flex-col gap-3">
-            <p className={EYEBROW}>Stay connected</p>
-            <h2 id="stay-connected" className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              Follow WiAIR for new episodes and behind-the-scenes content
-            </h2>
-          </div>
-          {[
-            { title: "Follow us", items: SOCIAL.follow },
-            { title: "Listen and join", items: SOCIAL.listen },
-          ].map((group) => (
-            <div key={group.title} className="flex flex-col gap-3.5">
-              <h3 className="text-sm font-semibold tracking-widest uppercase text-gray-400">{group.title}</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-                {group.items.map((s) => (
-                  <a
-                    key={s.name}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${CARD} px-5 py-4 flex flex-col gap-1 hover:bg-white/[0.12] transition-all duration-300`}
-                  >
-                    <span className="text-lg font-bold text-white">{s.name}</span>
-                    <span className="text-sm text-gray-400">{s.handle}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
-        </section>
       </main>
 
       <Divider />

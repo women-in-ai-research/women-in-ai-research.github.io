@@ -53,14 +53,14 @@
   }
   body {
     @apply bg-background text-foreground;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: clip; /* Prevent horizontal scrolling without breaking the sticky menu */
     width: 100%;
     min-height: 100vh;
     position: relative;
   }
   
   html {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: clip; /* Prevent horizontal scrolling without breaking the sticky menu */
     width: 100vw;
     max-width: 100%;
   }

@@ -2,6 +2,7 @@
 
 import eventsData from '@/app/data/events.json';
 import { formatDuration } from '@/app/components/common/RichText';
+import { EventLogo } from '@/app/components/events/EventLogo';
 
 interface EventVideo {
     videoId: string;
@@ -58,9 +59,12 @@ export function EventsSection() {
     return (
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 space-y-20">
             {groups.map((group) => (
-                <section key={group.id} id={group.id}>
+                <section key={group.id} id={group.id} className="scroll-mt-28">
                     <div className="mb-8 text-center md:text-left">
-                        <h2 className="text-3xl font-bold text-white mb-2">{group.title}</h2>
+                        <div className="flex flex-col md:flex-row items-center gap-4 mb-3">
+                            <EventLogo title={group.title} />
+                            <h2 className="text-3xl font-bold text-white">{group.title}</h2>
+                        </div>
                         {group.description && (
                             <p className="text-gray-300 max-w-3xl whitespace-pre-line">{group.description}</p>
                         )}

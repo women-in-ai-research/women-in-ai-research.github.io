@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { href: '/events', label: 'Events' },
   { href: '/mentorship', label: 'Mentorship Lab' },
   { href: '/news', label: 'News' },
-  { href: '/#about', label: 'About Us' },
+  { href: '/#team', label: 'About Us' },
 ];
 
 function isActive(pathname: string, href: string): boolean {
