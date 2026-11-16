@@ -1,125 +1,194 @@
 {
-  "_comment": "Topic pages for the website. Each topic lists its episodes by YouTube link. When a new episode comes out, paste its YouTube link into the episodes list of each of its topics (one to three). Saving this file rebuilds the site. 'slug' is the page address (/topics/<slug>/); keep it lower case with dashes.",
+  "_comment": "Topic pages for the website. Each topic lists its videos by YouTube link: podcast episodes and event interviews (conferences, workshops) can both go in the same list. When a new video comes out, paste its YouTube link into the videos list of each of its topics (one to three). Saving this file rebuilds the site. 'slug' is the page address (/topics/<slug>/); keep it lower case with dashes.",
   "topics": [
     {
       "slug": "evaluation-benchmarks",
       "name": "Evaluation & Benchmarks",
       "intro": "How do we know what a model can really do? These episodes look at how AI systems are measured: which benchmarks and metrics we rely on, what they miss, and how researchers design evaluations that hold up beyond the leaderboard.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=CuTWIW1JcsA",
         "https://www.youtube.com/watch?v=QPp0cJNBbL8",
         "https://www.youtube.com/watch?v=IalFROkCH0c",
         "https://www.youtube.com/watch?v=PQx4IvJR8Bg",
         "https://www.youtube.com/watch?v=rSC7L5WikcE",
-        "https://www.youtube.com/watch?v=jtQq8NspkY4"
+        "https://www.youtube.com/watch?v=jtQq8NspkY4",
+        "https://www.youtube.com/watch?v=HQSyMFc3QBc",
+        "https://www.youtube.com/watch?v=6IStjTTLZDo",
+        "https://www.youtube.com/watch?v=4_Gf_sGspWE",
+        "https://www.youtube.com/watch?v=Xl0TtKjK2-Y",
+        "https://www.youtube.com/watch?v=LSS1vHzanLU",
+        "https://www.youtube.com/watch?v=9tis1ecLX5A",
+        "https://www.youtube.com/watch?v=VuJ_Mr4jtLE",
+        "https://www.youtube.com/watch?v=HqJOEOiuv08",
+        "https://www.youtube.com/watch?v=URhovF3RxxI"
       ]
     },
     {
       "slug": "bias-fairness-culture",
       "name": "Bias, Fairness & Culture",
       "intro": "AI systems learn from data that carries our biases, hierarchies and cultural assumptions. These conversations cover how researchers find, measure and reduce bias, and how to build models that work fairly for people across cultures.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=Gazs9u_XucE",
         "https://www.youtube.com/watch?v=DEdJltlFg4I",
         "https://www.youtube.com/watch?v=osHrYXwCvpQ",
         "https://www.youtube.com/watch?v=RKIvrESep-g",
         "https://www.youtube.com/watch?v=P-R0mU8_0U0",
-        "https://www.youtube.com/watch?v=OZQqBWFUxQs"
+        "https://www.youtube.com/watch?v=OZQqBWFUxQs",
+        "https://www.youtube.com/watch?v=Xl0TtKjK2-Y",
+        "https://www.youtube.com/watch?v=H7zvLiw10Oc",
+        "https://www.youtube.com/watch?v=xcec0EpJQJ4",
+        "https://www.youtube.com/watch?v=bydex6cwgEs",
+        "https://www.youtube.com/watch?v=Qqpv8lFg4cY"
       ]
     },
     {
       "slug": "ai-safety-alignment",
       "name": "AI Safety & Alignment",
       "intro": "What does it take for AI systems to behave as intended, even under pressure? These episodes cover jailbreaks and misuse, sycophancy and alignment failures, and the research on controlling model behaviour in the real world.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=rSC7L5WikcE",
         "https://www.youtube.com/watch?v=Lsq3UzM8wIg",
         "https://www.youtube.com/watch?v=OZQqBWFUxQs",
         "https://www.youtube.com/watch?v=3QXHr743kwk",
-        "https://www.youtube.com/watch?v=PWPbhfVB0LU"
+        "https://www.youtube.com/watch?v=PWPbhfVB0LU",
+        "https://www.youtube.com/watch?v=Sb_6MuO7bH4",
+        "https://www.youtube.com/watch?v=VnABXJt6YXM",
+        "https://www.youtube.com/watch?v=mAtYbVZnR_U",
+        "https://www.youtube.com/watch?v=H7zvLiw10Oc",
+        "https://www.youtube.com/watch?v=VuJ_Mr4jtLE",
+        "https://www.youtube.com/watch?v=xcec0EpJQJ4",
+        "https://www.youtube.com/watch?v=q42bUeh1KyA",
+        "https://www.youtube.com/watch?v=rwso1FaTxDc",
+        "https://www.youtube.com/watch?v=JtlAMnZQVmU"
       ]
     },
     {
       "slug": "reasoning-generalization",
       "name": "Reasoning & Generalization",
       "intro": "Can language models reason, or do they match patterns they have seen before? These conversations examine the limits of transformers, how models generalize to new tasks and languages, and how to tell real reasoning from a convincing story.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=SL8reoM8pGE",
         "https://www.youtube.com/watch?v=CuTWIW1JcsA",
         "https://www.youtube.com/watch?v=IalFROkCH0c",
-        "https://www.youtube.com/watch?v=gzQiDCG_j7A"
+        "https://www.youtube.com/watch?v=gzQiDCG_j7A",
+        "https://www.youtube.com/watch?v=-cPYHmxwN14",
+        "https://www.youtube.com/watch?v=rwso1FaTxDc",
+        "https://www.youtube.com/watch?v=g4Mc3NSCny0",
+        "https://www.youtube.com/watch?v=qD0_aHQvdR8",
+        "https://www.youtube.com/watch?v=oRc__glKUYg"
       ]
     },
     {
       "slug": "hallucinations-trustworthiness",
       "name": "Hallucinations & Trustworthiness",
       "intro": "Models can sound confident and still be wrong. These episodes explore why language models hallucinate, how to measure factuality and faithfulness, and when we can trust a model's answers and explanations.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=SL8reoM8pGE",
         "https://www.youtube.com/watch?v=QPp0cJNBbL8",
         "https://www.youtube.com/watch?v=xYb6uokKKOo",
-        "https://www.youtube.com/watch?v=gzQiDCG_j7A"
+        "https://www.youtube.com/watch?v=gzQiDCG_j7A",
+        "https://www.youtube.com/watch?v=4_Gf_sGspWE",
+        "https://www.youtube.com/watch?v=CCPE58A_FCQ",
+        "https://www.youtube.com/watch?v=rwso1FaTxDc"
       ]
     },
     {
       "slug": "interpretability-explainability",
       "name": "Interpretability & Explainability",
       "intro": "What is happening inside a model, and can it explain its own decisions? These conversations cover explainable AI, the faithfulness of model explanations, and methods for uncovering the root causes of model behaviour.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=osHrYXwCvpQ",
         "https://www.youtube.com/watch?v=IalFROkCH0c",
         "https://www.youtube.com/watch?v=xYb6uokKKOo",
-        "https://www.youtube.com/watch?v=Lsq3UzM8wIg"
+        "https://www.youtube.com/watch?v=Lsq3UzM8wIg",
+        "https://www.youtube.com/watch?v=VnABXJt6YXM",
+        "https://www.youtube.com/watch?v=pJyndUbGl8o",
+        "https://www.youtube.com/watch?v=q42bUeh1KyA",
+        "https://www.youtube.com/watch?v=CCPE58A_FCQ"
       ]
     },
     {
       "slug": "multilingual-ai-tokenization",
       "name": "Multilingual AI & Tokenization",
       "intro": "Most AI is built for a handful of languages. These episodes look at multilingual and low-resource language models, how models behave across languages, and how tokenization shapes what a model can learn.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=pq4km-unw_M",
         "https://www.youtube.com/watch?v=L9Sp-zauXwo",
         "https://www.youtube.com/watch?v=Lsq3UzM8wIg",
-        "https://www.youtube.com/watch?v=XLixB8pSdC4"
+        "https://www.youtube.com/watch?v=XLixB8pSdC4",
+        "https://www.youtube.com/watch?v=KNSK8BWWuPI",
+        "https://www.youtube.com/watch?v=6IStjTTLZDo",
+        "https://www.youtube.com/watch?v=QYpI-tzG3s4",
+        "https://www.youtube.com/watch?v=9tis1ecLX5A",
+        "https://www.youtube.com/watch?v=8wWj1z2dBI8",
+        "https://www.youtube.com/watch?v=K3BUpKag_nA"
       ]
     },
     {
       "slug": "language-cognition-brain",
       "name": "Language, Cognition & the Brain",
       "intro": "What can neuroscience and linguistics tell us about language models, and what can language models tell us about the mind? These conversations bridge cognitive science, the brain's language network and modern AI.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=PQx4IvJR8Bg",
         "https://www.youtube.com/watch?v=e36ryy0Dsdo",
         "https://www.youtube.com/watch?v=efnZkH7Y9j0",
-        "https://www.youtube.com/watch?v=XLixB8pSdC4"
+        "https://www.youtube.com/watch?v=XLixB8pSdC4",
+        "https://www.youtube.com/watch?v=pJyndUbGl8o",
+        "https://www.youtube.com/watch?v=ADncPso9cbU"
       ]
     },
     {
       "slug": "multimodal-embodied-ai",
       "name": "Multimodal & Embodied AI",
       "intro": "AI that sees, describes and interacts with the world. These episodes cover vision-language models, how we evaluate image descriptions, multimodal reasoning, and robots designed to understand human emotion.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=Z8VBnZmSUto",
         "https://www.youtube.com/watch?v=RKIvrESep-g",
         "https://www.youtube.com/watch?v=gzQiDCG_j7A",
-        "https://www.youtube.com/watch?v=jtQq8NspkY4"
+        "https://www.youtube.com/watch?v=jtQq8NspkY4",
+        "https://www.youtube.com/watch?v=Xl0TtKjK2-Y",
+        "https://www.youtube.com/watch?v=O5S0oe17InM",
+        "https://www.youtube.com/watch?v=9tis1ecLX5A"
       ]
     },
     {
       "slug": "open-science-data",
       "name": "Open Science & Data",
       "intro": "Who gets to build and study AI, and with what data? These conversations cover open-source language models, data transparency and attribution, and decentralized, collaborative approaches to training.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=pq4km-unw_M",
         "https://www.youtube.com/watch?v=QPp0cJNBbL8",
-        "https://www.youtube.com/watch?v=DPhqm1EHxtU"
+        "https://www.youtube.com/watch?v=DPhqm1EHxtU",
+        "https://www.youtube.com/watch?v=pJyndUbGl8o",
+        "https://www.youtube.com/watch?v=DogbPRjWX1k"
+      ]
+    },
+    {
+      "slug": "pretraining-data-scaling",
+      "name": "Pretraining, Data & Scaling",
+      "intro": "What a model learns depends on what it is trained on, and in what order. These conversations look at pretraining dynamics, how training data shapes model abilities, data mixtures and scaling laws, and when domain data belongs in pretraining rather than fine-tuning.",
+      "videos": [
+        "https://www.youtube.com/watch?v=LZsEasfVc7Q",
+        "https://www.youtube.com/watch?v=dIee9ci0gQo",
+        "https://www.youtube.com/watch?v=pJyndUbGl8o",
+        "https://www.youtube.com/watch?v=7b-A0Jrm2rA"
+      ]
+    },
+    {
+      "slug": "ai-agents-tool-use",
+      "name": "AI Agents & Tool Use",
+      "intro": "Language models are increasingly asked to act, not just answer. These conversations cover how agents call tools and understand what the tools return, how to make agent workflows faster, and why multi-agent systems fail.",
+      "videos": [
+        "https://www.youtube.com/watch?v=KJvXr3O4wpQ",
+        "https://www.youtube.com/watch?v=1YgxjHjnsPk",
+        "https://www.youtube.com/watch?v=n9mM3GPaDXQ"
       ]
     },
     {
       "slug": "ai-for-health",
       "name": "AI for Health",
       "intro": "Applying AI in medicine brings its own challenges: messy data, high stakes and the need to work closely with clinicians. These episodes discuss building fair, interpretable and robust models for healthcare.",
-      "episodes": [
+      "videos": [
         "https://www.youtube.com/watch?v=DEdJltlFg4I",
         "https://www.youtube.com/watch?v=osHrYXwCvpQ"
       ]

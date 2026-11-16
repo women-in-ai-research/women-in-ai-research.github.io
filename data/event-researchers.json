@@ -1,0 +1,220 @@
+{
+  "_comment": "Researchers interviewed in event videos (conferences and workshops). They count toward 'researchers interviewed' on the Home page, together with the podcast guests. Add a line when you publish a new event interview; 'affiliation' can be left empty.",
+  "researchers": [
+    {
+      "name": "Emmy Liu",
+      "affiliation": "Carnegie Mellon University",
+      "video": "https://www.youtube.com/watch?v=LZsEasfVc7Q"
+    },
+    {
+      "name": "Jocelyn Shen",
+      "affiliation": "Google DeepMind",
+      "video": "https://www.youtube.com/watch?v=Sb_6MuO7bH4"
+    },
+    {
+      "name": "Christina Baek",
+      "affiliation": "Carnegie Mellon University / DatologyAI",
+      "video": "https://www.youtube.com/watch?v=dIee9ci0gQo"
+    },
+    {
+      "name": "Nan Huang",
+      "affiliation": "UC San Diego",
+      "video": "https://www.youtube.com/watch?v=KNSK8BWWuPI"
+    },
+    {
+      "name": "Chantal Shaib",
+      "affiliation": "MIT",
+      "video": "https://www.youtube.com/watch?v=HQSyMFc3QBc"
+    },
+    {
+      "name": "Clara Meister",
+      "affiliation": "EPFL",
+      "video": "https://www.youtube.com/watch?v=6IStjTTLZDo"
+    },
+    {
+      "name": "Diana Abagyan",
+      "affiliation": "Cohere Labs",
+      "video": "https://www.youtube.com/watch?v=QYpI-tzG3s4"
+    },
+    {
+      "name": "Aruna Sankaranarayanan",
+      "affiliation": "MIT",
+      "video": "https://www.youtube.com/watch?v=VnABXJt6YXM"
+    },
+    {
+      "name": "Muxin Liu",
+      "affiliation": "University of Pennsylvania",
+      "video": "https://www.youtube.com/watch?v=4_Gf_sGspWE"
+    },
+    {
+      "name": "Akhila Yerukola",
+      "affiliation": "Carnegie Mellon University",
+      "video": "https://www.youtube.com/watch?v=Xl0TtKjK2-Y"
+    },
+    {
+      "name": "Chandreyi (Zini) Chakraborty",
+      "affiliation": "Georgia Tech",
+      "video": "https://www.youtube.com/watch?v=pJyndUbGl8o"
+    },
+    {
+      "name": "Myra Cheng",
+      "affiliation": "Stanford University",
+      "video": "https://www.youtube.com/watch?v=mAtYbVZnR_U"
+    },
+    {
+      "name": "Kimia Hamidieh",
+      "affiliation": "MIT",
+      "video": "https://www.youtube.com/watch?v=7b-A0Jrm2rA"
+    },
+    {
+      "name": "Shelly Golan",
+      "affiliation": "",
+      "video": "https://www.youtube.com/watch?v=hbUDCttrTTg"
+    },
+    {
+      "name": "Elisabetta Fedele",
+      "affiliation": "ETH Zurich",
+      "video": "https://www.youtube.com/watch?v=O5S0oe17InM"
+    },
+    {
+      "name": "Jenny Huang",
+      "affiliation": "MIT",
+      "video": "https://www.youtube.com/watch?v=LSS1vHzanLU"
+    },
+    {
+      "name": "Naimeng Ye",
+      "affiliation": "",
+      "video": "https://www.youtube.com/watch?v=KJvXr3O4wpQ"
+    },
+    {
+      "name": "Smitha Milli",
+      "affiliation": "Meta",
+      "video": "https://www.youtube.com/watch?v=H7zvLiw10Oc"
+    },
+    {
+      "name": "Nikita Dhawan",
+      "affiliation": "University of Toronto & Vector Institute",
+      "video": "https://www.youtube.com/watch?v=zUGaOpQDsFc"
+    },
+    {
+      "name": "Sara Papi",
+      "affiliation": "Fondazione Bruno Kessler",
+      "video": "https://www.youtube.com/watch?v=9tis1ecLX5A"
+    },
+    {
+      "name": "Adi Simhi",
+      "affiliation": "Technion",
+      "video": "https://www.youtube.com/watch?v=VuJ_Mr4jtLE"
+    },
+    {
+      "name": "Angana Borah",
+      "affiliation": "University of Michigan",
+      "video": "https://www.youtube.com/watch?v=xcec0EpJQJ4"
+    },
+    {
+      "name": "Navita Goyal",
+      "affiliation": "University of Maryland",
+      "video": "https://www.youtube.com/watch?v=q42bUeh1KyA"
+    },
+    {
+      "name": "Syeda",
+      "affiliation": "Carnegie Mellon University & NVIDIA",
+      "video": "https://www.youtube.com/watch?v=-cPYHmxwN14"
+    },
+    {
+      "name": "Jing Yang",
+      "affiliation": "TU Berlin",
+      "video": "https://www.youtube.com/watch?v=bydex6cwgEs"
+    },
+    {
+      "name": "Cléa Chataigner",
+      "affiliation": "Mila / McGill University",
+      "video": "https://www.youtube.com/watch?v=HqJOEOiuv08"
+    },
+    {
+      "name": "Maor Juliet Lavi",
+      "affiliation": "Tel Aviv University",
+      "video": "https://www.youtube.com/watch?v=CCPE58A_FCQ"
+    },
+    {
+      "name": "Shifali Agrahari",
+      "affiliation": "IIT Guwahati",
+      "video": "https://www.youtube.com/watch?v=8wWj1z2dBI8"
+    },
+    {
+      "name": "Atoosa Chegini",
+      "affiliation": "University of Maryland / Apple",
+      "video": "https://www.youtube.com/watch?v=rwso1FaTxDc"
+    },
+    {
+      "name": "Kiran Kate",
+      "affiliation": "IBM Research",
+      "video": "https://www.youtube.com/watch?v=1YgxjHjnsPk"
+    },
+    {
+      "name": "Melissa Pan",
+      "affiliation": "",
+      "video": "https://www.youtube.com/watch?v=n9mM3GPaDXQ"
+    },
+    {
+      "name": "Xuechen Zhang",
+      "affiliation": "",
+      "video": "https://www.youtube.com/watch?v=g4Mc3NSCny0"
+    },
+    {
+      "name": "Parshin Shojaee",
+      "affiliation": "Apple",
+      "video": "https://www.youtube.com/watch?v=qD0_aHQvdR8"
+    },
+    {
+      "name": "Sara Price",
+      "affiliation": "Anthropic",
+      "video": "https://www.youtube.com/watch?v=JtlAMnZQVmU"
+    },
+    {
+      "name": "Shivalika Singh",
+      "affiliation": "Cohere",
+      "video": "https://www.youtube.com/watch?v=URhovF3RxxI"
+    },
+    {
+      "name": "Julia Kreutzer",
+      "affiliation": "Cohere",
+      "video": "https://www.youtube.com/watch?v=K3BUpKag_nA"
+    },
+    {
+      "name": "Linara Adilova",
+      "affiliation": "",
+      "video": "https://www.youtube.com/watch?v=oRc__glKUYg"
+    },
+    {
+      "name": "Sree Bhattacharya",
+      "affiliation": "Penn State",
+      "video": "https://www.youtube.com/watch?v=ADncPso9cbU"
+    },
+    {
+      "name": "Eliahu Horwitz",
+      "affiliation": "Hebrew University of Jerusalem",
+      "video": "https://www.youtube.com/watch?v=DogbPRjWX1k"
+    },
+    {
+      "name": "Dingling Yao",
+      "affiliation": "ISTA",
+      "video": "https://www.youtube.com/watch?v=DrbqwNhHK9Y"
+    },
+    {
+      "name": "Ashka Shah",
+      "affiliation": "University of Chicago",
+      "video": "https://www.youtube.com/watch?v=eBzSMNgWjRk"
+    },
+    {
+      "name": "Smriti Singh",
+      "affiliation": "Zacks Investment Research",
+      "video": "https://www.youtube.com/watch?v=Qqpv8lFg4cY"
+    },
+    {
+      "name": "Belinda Mo",
+      "affiliation": "Stanford University",
+      "video": "https://www.youtube.com/watch?v=hLDKW3-OKUA"
+    }
+  ]
+}

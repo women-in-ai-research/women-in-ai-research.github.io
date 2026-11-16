@@ -9,12 +9,34 @@ import type { Episode } from "@/app/components/podcast/EpisodeList";
 import episodesData from "@/app/data/episodes.json";
 import guestsData from "@/app/data/guests.json";
 import eventsData from "@/app/data/events.json";
+import eventResearchers from "@/data/event-researchers.json";
 
 const YOUTUBE_URL = "https://www.youtube.com/@WomeninAIResearch";
 
 
 // Shown as text in the "Our guests come from" row.
-const INSTITUTIONS = ["Stanford", "MIT", "Harvard", "Cambridge", "Allen Institute for AI", "Meta", "Max Planck Institute", "UBC"];
+const INSTITUTIONS = [
+  "Stanford", "MIT", "Harvard", "Yale", "Carnegie Mellon", "Cambridge", "University of Toronto", "Vector Institute",
+  "Mila", "ETH Zurich", "EPFL", "Google DeepMind", "Anthropic", "Meta", "Apple", "Cohere",
+];
+
+const HOST_WEBSITE = "https://jeknov.github.io/";
+const SITE_URL = "https://women-in-ai-research.github.io/";
+
+/** Same person regardless of title, accents or word order. */
+function nameKey(name: string): string {
+  return name
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(dr|prof|professor)\.?\s+/gi, "")
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[^a-z\s-]/g, " ")
+    .split(/[\s-]+/)
+    .filter(Boolean)
+    .sort()
+    .join(" ");
+}
 
 const CARD = "bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 rounded-2xl";
 const PRIMARY_BTN =
@@ -31,6 +53,7 @@ interface EventGroup {
 
 interface Guest {
   id: string;
+  name: string;
 }
 
 /** First sentence or two of a description, for the episode cards. */
@@ -58,7 +81,10 @@ export default function Page() {
   const episodes = [...(episodesData as Episode[])].sort((a, b) => b.number - a.number);
   const latest = episodes[0];
   const recent = episodes.slice(0, 3);
-  const guestCount = (guestsData as Guest[]).length;
+  // Podcast guests plus researchers interviewed at events, each person counted once.
+  const people = new Set((guestsData as Guest[]).map((g) => nameKey(g.name)));
+  for (const r of eventResearchers.researchers) people.add(nameKey(r.name));
+  const researcherCount = people.size;
   // Only event playlists reach events.json (see data/youtube-config.json), most recent first.
   const events = eventsData as EventGroup[];
 
@@ -73,6 +99,24 @@ export default function Page() {
         <div className="absolute top-[58%] -right-24 w-[380px] h-[380px] bg-purple-600/10 rounded-full blur-[120px]" />
         <div className="absolute top-[82%] -left-24 w-[320px] h-[320px] bg-pink-500/10 rounded-full blur-[100px]" />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "PodcastSeries",
+            name: "Women in AI Research (WiAIR)",
+            url: SITE_URL,
+            author: {
+              "@type": "Person",
+              name: "Jekaterina Novikova",
+              url: HOST_WEBSITE,
+              sameAs: [HOST_WEBSITE],
+            },
+          }),
+        }}
+      />
 
       <main className="relative z-10">
         {/* 1. Hero */}
@@ -125,7 +169,20 @@ export default function Page() {
               />
               <div className="flex flex-col gap-1.5">
                 <p className={EYEBROW}>Your host</p>
-                <p className="text-xl font-bold text-white">Dr. Jekaterina Novikova</p>
+                <p className="text-xl font-bold text-white">
+                  <a
+                    href={HOST_WEBSITE}
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                    className="inline-flex items-center gap-1.5 hover:text-wiair-lightest underline decoration-white/30 underline-offset-4 hover:decoration-wiair-light transition-colors"
+                  >
+                    Dr. Jekaterina Novikova
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 17 17 7" /><path d="M8 7h9v9" />
+                    </svg>
+                    <span className="sr-only">(personal website, opens in a new tab)</span>
+                  </a>
+                </p>
                 <p className="text-gray-300 leading-relaxed">
                   AI research scientist with 13+ years in NLP and ML, published at ACL, EMNLP, NeurIPS and NAACL.
                 </p>
@@ -133,8 +190,8 @@ export default function Page() {
             </div>
             <dl className="flex-[1_1_460px] min-w-0 flex flex-wrap gap-4">
               {[
-                { value: episodes.length, label: "episodes" },
-                { value: guestCount, label: "researchers interviewed" },
+                { value: episodes.length, label: "long-form episodes" },
+                { value: researcherCount, label: "researchers interviewed" },
                 { value: events.length, label: "events covered" },
               ].map((s) => (
                 <div key={s.label} className={`${CARD} flex-[1_1_120px] p-5 flex flex-col-reverse justify-end`}>
@@ -144,11 +201,13 @@ export default function Page() {
               ))}
             </dl>
           </div>
-          <div className="flex flex-wrap items-baseline gap-x-7 gap-y-2.5">
-            <p className="text-sm font-semibold tracking-widest uppercase text-gray-400">Our guests come from</p>
-            {INSTITUTIONS.map((name) => (
-              <p key={name} className="text-lg font-semibold text-white">{name}</p>
-            ))}
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-xs font-semibold tracking-[0.12em] uppercase text-wiair-light">Our guests come from</p>
+            <ul className="flex flex-wrap justify-center items-baseline gap-x-5 gap-y-2.5 max-w-4xl">
+              {INSTITUTIONS.map((name) => (
+                <li key={name} className="text-lg font-medium text-white/85 tracking-tight">{name}</li>
+              ))}
+            </ul>
           </div>
         </section>
 

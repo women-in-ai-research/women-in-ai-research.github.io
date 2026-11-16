@@ -8,6 +8,7 @@ interface Topic {
   name: string;
   intro: string;
   videoIds: string[];
+  eventVideoIds: string[];
 }
 
 export const metadata: Metadata = {
@@ -16,8 +17,15 @@ export const metadata: Metadata = {
     "Browse Women in AI Research podcast episodes by research topic: evaluation, AI safety, reasoning, interpretability, multilingual AI and more.",
 };
 
+function countLabel(episodes: number, events: number): string {
+  const parts = [];
+  if (episodes) parts.push(`${episodes} ${episodes === 1 ? "episode" : "episodes"}`);
+  if (events) parts.push(`${events} conference ${events === 1 ? "interview" : "interviews"}`);
+  return parts.join(" · ");
+}
+
 export default function TopicsPage() {
-  const topics = (topicsData as Topic[]).filter((t) => t.videoIds.length > 0);
+  const topics = (topicsData as Topic[]).filter((t) => t.videoIds.length + t.eventVideoIds.length > 0);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest">
@@ -47,7 +55,7 @@ export default function TopicsPage() {
                 <h2 className="text-xl font-bold text-white mb-2">{t.name}</h2>
                 <p className="text-gray-300 text-sm leading-relaxed line-clamp-4 flex-grow">{t.intro}</p>
                 <p className="text-wiair-light text-sm font-medium mt-4">
-                  {t.videoIds.length} {t.videoIds.length === 1 ? "episode" : "episodes"} →
+                  {countLabel(t.videoIds.length, t.eventVideoIds.length)} →
                 </p>
               </a>
             </li>

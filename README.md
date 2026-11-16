@@ -43,4 +43,6 @@ The workflow needs a YouTube Data API key saved as the repository secret `YOUTUB
 
 ## 🏷️ Topics
 
-Topic pages (`/topics/<slug>/`) are built from `data/topics.json`. Each topic has a name, a short intro and a list of episodes given by their YouTube links. When a new episode comes out, paste its YouTube link into the `episodes` list of each of its topics (one to three) and save: the site rebuilds automatically. The daily update job lists any episode that has no topic yet.
+Topic pages (`/topics/<slug>/`) are built from `data/topics.json`. Each topic has a name, a short intro and a `videos` list of YouTube links: podcast episodes and event interviews can both go there. When a new video comes out, paste its link into the `videos` list of each of its topics (one to three) and save: the site rebuilds automatically. The daily update job lists any episode that has no topic yet.
+
+The Home page's "researchers interviewed" count adds the podcast guests to the researchers listed in `data/event-researchers.json` (each person counted once). Add a line there when you publish a new event interview.

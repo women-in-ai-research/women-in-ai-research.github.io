@@ -10,6 +10,7 @@ interface TeamMember {
   bio: string;
   imageUrl: string;
   visible: boolean;
+  website?: string;
 }
 
 function TeamCard({ member }: { member: TeamMember }) {
@@ -38,7 +39,24 @@ function TeamCard({ member }: { member: TeamMember }) {
           loading="lazy"
         />
         <div>
-          <h3 className="text-lg font-bold text-white">{member.name}</h3>
+          <h3 className="text-lg font-bold text-white">
+            {member.website ? (
+              <a
+                href={member.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 hover:text-wiair-lightest underline decoration-white/30 underline-offset-4 hover:decoration-wiair-light transition-colors"
+              >
+                {member.name}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7" /><path d="M8 7h9v9" />
+                </svg>
+                <span className="sr-only">(personal website, opens in a new tab)</span>
+              </a>
+            ) : (
+              member.name
+            )}
+          </h3>
           <p className="text-sm font-semibold text-wiair-light">{member.title}</p>
         </div>
       </div>
