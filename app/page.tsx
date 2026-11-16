@@ -71,7 +71,8 @@ export default function Page() {
   const latest = episodes[0];
   const recent = episodes.slice(0, 3);
   const guestCount = (guestsData as Guest[]).length;
-  const conferences = (eventsData as EventGroup[]).filter((g) => /\b(19|20)\d{2}\b/.test(g.title));
+  // Only event playlists reach events.json (see data/youtube-config.json), most recent first.
+  const events = eventsData as EventGroup[];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-wiair-darkest via-wiair-dark to-wiair-darkest relative overflow-hidden">
@@ -150,7 +151,7 @@ export default function Page() {
               {[
                 { value: episodes.length, label: "episodes" },
                 { value: guestCount, label: "researchers interviewed" },
-                { value: conferences.length, label: "conferences covered" },
+                { value: events.length, label: "events covered" },
               ].map((s) => (
                 <div key={s.label} className={`${CARD} flex-[1_1_120px] p-5 flex flex-col-reverse`}>
                   <dt className="text-sm text-gray-400 mt-1">{s.label}</dt>
@@ -253,14 +254,14 @@ export default function Page() {
 
         <Divider />
 
-        {/* 6. Conferences */}
-        {conferences.length > 0 && (
+        {/* 6. Events */}
+        {events.length > 0 && (
           <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col gap-9">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div className="flex flex-col gap-3 max-w-2xl">
-                <p className={EYEBROW}>From the conferences</p>
+                <p className={EYEBROW}>From conferences and workshops</p>
                 <h2 className="text-4xl font-bold text-white leading-tight">
-                  Short interviews with paper authors, recorded on site
+                  Interviews, talks and panels, recorded on site
                 </h2>
               </div>
               <a href="/events/" className="font-semibold text-wiair-light hover:text-wiair-lightest py-3">
@@ -268,7 +269,7 @@ export default function Page() {
               </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {conferences.slice(0, 4).map((g) => (
+              {events.slice(0, 4).map((g) => (
                 <a key={g.id} href={`/events/#${g.id}`} className={`${CARD} p-6 flex flex-col gap-2 hover:bg-white/[0.12] transition-all duration-300`}>
                   <p className="text-2xl font-bold text-white">{g.title}</p>
                   <p className="text-gray-400">{g.videos.length} videos</p>

@@ -25,6 +25,8 @@ interface Config {
   channelHandle: string;
   podcastPlaylistIds: string[];
   excludeVideoIds: string[];
+  eventPlaylistIds: string[];
+  eventTag: string;
   includeShortsInEvents: boolean;
   shortsMaxSeconds: number;
   spotifyShowUrl: string;
@@ -304,7 +306,19 @@ export async function main() {
   const uploadIds = (await apiAll("playlistItems", { part: "contentDetails", playlistId: uploadsId })).map(
     (it) => it.contentDetails.videoId as string
   );
-  const allIds = Array.from(new Set(uploadIds.concat(podcasts.flatMap((p) => p.videoIds))));
+  // Event playlists: listed in the config, or tagged (e.g. "[Events]") in their YouTube description.
+  const tag = (config.eventTag || "[Events]").toLowerCase();
+  const eventPlaylists = playlists.filter(
+    (p) => !podcastIds.includes(p.id) && (config.eventPlaylistIds.includes(p.id) || p.description.toLowerCase().includes(tag))
+  );
+  for (const id of config.eventPlaylistIds) {
+    if (!playlists.some((p) => p.id === id)) console.log(`Event playlist ${id} not found among the channel's public playlists; skipped.`);
+  }
+  console.log(`Event playlists: ${eventPlaylists.map((p) => p.title).join(", ") || "none"}`);
+
+  const allIds = Array.from(
+    new Set(uploadIds.concat(podcasts.flatMap((p) => p.videoIds), eventPlaylists.flatMap((p) => p.videoIds)))
+  );
   const videos = new Map<string, Video>();
   for (let i = 0; i < allIds.length; i += 50) {
     const batch = await api("videos", {
@@ -361,48 +375,43 @@ export async function main() {
     };
   });
 
-  // 5. Events: every other long-form public video, grouped by its most specific playlist.
+  // 5. Events: only the event playlists. A video in several event playlists goes to the most specific one.
   const isShort = (v: Video) => v.durationSeconds > 0 && v.durationSeconds <= config.shortsMaxSeconds;
-  const eventIds = uploadIds.filter(
-    (id) => usable(id) && !episodeOwner.has(id) && (config.includeShortsInEvents || !isShort(videos.get(id)!))
-  );
-  const otherPlaylists = playlists
-    .filter((p) => !podcastIds.includes(p.id))
-    .sort((a, b) => a.videoIds.length - b.videoIds.length);
-  const groups = new Map<string, EventGroup>();
-  for (const id of eventIds) {
-    const v = videos.get(id)!;
-    const pl = otherPlaylists.find((p) => p.videoIds.includes(id));
-    const key = pl?.id ?? "_other";
-    if (!groups.has(key)) {
-      groups.set(key, {
-        id: pl ? pl.id : "more-videos",
-        title: pl ? pl.title : "More videos",
-        description: pl?.description ?? "",
-        playlistUrl: pl ? `https://www.youtube.com/playlist?list=${pl.id}` : null,
-        videos: [],
+  const bySize = [...eventPlaylists].sort((a, b) => a.videoIds.length - b.videoIds.length);
+  const placed = new Set<string>();
+  const events: EventGroup[] = [];
+  for (const pl of bySize) {
+    const vids: EventVideo[] = [];
+    for (const id of pl.videoIds) {
+      if (placed.has(id) || !usable(id) || episodeOwner.has(id)) continue;
+      const v = videos.get(id)!;
+      if (!config.includeShortsInEvents && isShort(v)) continue;
+      placed.add(id);
+      vids.push({
+        videoId: v.id,
+        title: v.title,
+        description: v.description,
+        publishedAt: v.publishedAt,
+        publishDate: formatDate(v.publishedAt),
+        durationSeconds: v.durationSeconds,
+        thumbnailUrl: v.thumbnailUrl,
+        youtubeUrl: `https://www.youtube.com/watch?v=${v.id}`,
       });
     }
-    groups.get(key)!.videos.push({
-      videoId: v.id,
-      title: v.title,
-      description: v.description,
-      publishedAt: v.publishedAt,
-      publishDate: formatDate(v.publishedAt),
-      durationSeconds: v.durationSeconds,
-      thumbnailUrl: v.thumbnailUrl,
-      youtubeUrl: `https://www.youtube.com/watch?v=${v.id}`,
+    if (!vids.length) continue;
+    vids.sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
+    events.push({
+      id: pl.id,
+      title: pl.title,
+      // The tag is for the sync only; don't show it on the site.
+      description: pl.description.replace(new RegExp(tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "").trim(),
+      playlistUrl: `https://www.youtube.com/playlist?list=${pl.id}`,
+      videos: vids,
     });
   }
-  const events = Array.from(groups.values());
-  for (const g of events) g.videos.sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
-  // Most recent event first; the catch-all group always last.
-  events.sort((a, b) => {
-    if (a.id === "more-videos") return 1;
-    if (b.id === "more-videos") return -1;
-    const last = (g: EventGroup) => g.videos[g.videos.length - 1].publishedAt;
-    return last(b).localeCompare(last(a));
-  });
+  const eventIds = Array.from(placed);
+  // Most recent event first.
+  events.sort((a, b) => b.videos[b.videos.length - 1].publishedAt.localeCompare(a.videos[a.videos.length - 1].publishedAt));
 
   // 6. Guests: one entry per person, newest first, hand-edited details win.
   const overrideFor = (name: string) => {

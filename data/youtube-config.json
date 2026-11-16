@@ -1,8 +1,16 @@
 {
-  "_comment": "Settings for scripts/sync-youtube.ts. Episodes come from the playlists in the channel's Podcasts section; every other public video goes to the Events page. If automatic podcast detection ever fails, list the podcast playlist IDs (they start with PL) in podcastPlaylistIds and they will be used instead.",
+  "_comment": "Settings for scripts/sync-youtube.ts. Episodes come from the playlists in the channel's Podcasts section. The Events page shows only event playlists: the ones listed in eventPlaylistIds, plus any playlist whose YouTube description contains the eventTag (e.g. [Events]). If automatic podcast detection ever fails, list the podcast playlist IDs in podcastPlaylistIds.",
   "channelHandle": "@WomeninAIResearch",
   "podcastPlaylistIds": [],
   "excludeVideoIds": [],
+  "eventPlaylistIds": [
+    "PLGKi_2TJEhoo",
+    "PLc7IR51GK3dw",
+    "PLlHNzCdRcJDNgcWbIJB6amPIcXOY55Ws0",
+    "PLlHNzCdRcJDNpv2e4pLYqyQkuHgU19ga7",
+    "PLlHNzCdRcJDMu6507iijZJ_odT4VG_AfT"
+  ],
+  "eventTag": "[Events]",
   "includeShortsInEvents": false,
   "shortsMaxSeconds": 180,
   "spotifyShowUrl": "https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M",

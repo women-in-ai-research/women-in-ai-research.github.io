@@ -34,7 +34,7 @@ New episodes are released every three weeks.
 Episodes, guests and events on the website come from the [WiAIR YouTube channel](https://www.youtube.com/@WomeninAIResearch). A GitHub Action (`.github/workflows/update-content.yml`) runs every day, and you can also start it by hand from the **Actions** tab ("Run workflow").
 
 - **Episodes**: every video in the playlists shown in the channel's **Podcasts** section, numbered in order of publication.
-- **Events**: every other public video, grouped by its YouTube playlist. Shorts are left out.
+- **Events**: only event playlists: the ones listed in `eventPlaylistIds` in `data/youtube-config.json`, plus any playlist whose YouTube description contains `[Events]`. Other videos (trailers, clips, Shorts) are not shown.
 - **Guests**: built from the episodes, using the "About [guest]" section of each video description (or "with [guest]" in the title).
 
 To add a headshot, title or bio for a guest, put the photo in `public/images/guests/` and add an entry to `data/guest-overrides.json`; anything there takes priority over what comes from YouTube. Other settings (which playlists count as podcasts, videos to exclude, Shorts) are in `data/youtube-config.json`.
