@@ -1,5 +1,23 @@
 [
   {
+    "id": "PLGKi_2TJEhoo",
+    "title": "Women in AI Safety Workshop 2026 - Panels and Highlights | Toronto AI Safety Week x ACM-W Toronto Professional Chapter",
+    "description": "Recordings from the Women in AI Safety workshop, held in Toronto on November 9, 2026 as the first annual celebration of the ACM-W Toronto Professional Chapter and the opening event of Toronto AI Safety Week.\n\nStart with the WiAIR Special, \"Safe for Whom?\" - a 24-minute guide to the day with highlights from the keynotes by Sheila McIlraith, Marsha Chechik, Anna Goldenberg and Zhijing Jin, moments from all three panels, and a behind-the-scenes conversation with the organisers.\n\nThen watch the sessions in full:\n- Opening remarks from the ACM-W Toronto Professional Chapter\n- Panel: Frontiers of AI safety - evaluation, oversight and accountability\n- Panel: Women Founders in AI Safety: Stories from the Journey\n- Panel: Canada's AI Safety Strategy: Research Priorities and Emerging Risks\n\nTopics covered: AI safety evaluation, multi-turn benchmarks, guardrails for open-weight models, safe AI adoption in regulated industries, AI in healthcare, AI governance and regulation in Canada, and the role of middle powers.\n\nHosted by Jekaterina Novikova, chair of the ACM-W Toronto Professional Chapter and host of Women in AI Research (WiAIR) - a podcast made by researchers, for researchers, with long conversations with female AI researchers about the story behind the paper and the person behind the story.\n\nPartners: AI Safety Foundation, Vector Institute, Trajectory Labs, ACM-W, University of Toronto, Schwartz Reisman Institute for Technology and Society.\n\nEvent website: https://womeninaisafety.toronto.acm.org/\nMore WiAIR episodes: https://www.youtube.com/@WomeninAIResearch",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLGKi_2TJEhoo",
+    "videos": [
+      {
+        "videoId": "HCQzQiVB7D0",
+        "title": "Safe for Whom? Women in AI Safety: ACM-W Annual Celebration 2026 | WiAIR",
+        "description": "Safe for whom? Sheila McIlraith, Marsha Chechik, Anna Goldenberg and Zhijing Jin on what \"safe AI\" actually means - highlights from the Women in AI Safety workshop in Toronto (November 9, 2026), the opening event of Toronto AI Safety Week with Hinton Lectures.\n\nFive speakers in different sessions asked the same question without coordinating: when we call an AI system safe, safe for whom? In this WiAIR Special, host Jekaterina Novikova follows that question through four keynotes, three panels and a behind-the-scenes conversation with the organisers.\n\nIn this episode:\n- Sheila McIlraith on why the immediate risk is well-intentioned people deploying AI they do not fully understand\n- Marsha Chechik on a care robot, a pair of curtains, and why engineers should not decide values alone\n- Anna Goldenberg on a deployed sepsis model and the problem of unintended behaviour in healthcare AI\n- Jekaterina Novikova on why single-turn safety benchmarks miss harm that builds over a conversation\n- Zhijing Jin on open-source guardrails and the 3% question: who pays for safety?\n- Elena Yunusov on giving everyone a say in how these systems enter our lives\n- Three views on what Canada can do\n- The organisers on what it took to build the day\n\nCHAPTERS\n00:00 Safe for whom?\n00:32 Welcome to the WiAIR Special\n02:13 Why now - Sheila McIlraith\n04:03 What \"safe\" means - Marsha Chechik\n07:14 When it fails - Anna Goldenberg\n10:24 How we measure it - Jekaterina Novikova\n12:33 Who builds the guardrails, and who pays - Zhijing Jin, Elena Yunusov\n15:45 What Canada can do\n17:48 Behind the scenes with the organisers\n23:15 What comes next\n\nWATCH THE FULL PANELS\nPlaylist: https://www.youtube.com/playlist?list=PLGKi_2TJEhoo\n- Frontiers of AI Safety: Evaluation, Oversight, and Accountability - [URL ois coming]\n- Women Founders in AI Safety: Stories from the Journey - [URL is coming]\n- Canada's AI Safety Strategy: Research Priorities and Emerging Risks - [URL is coming]\n\nKEYNOTE SPEAKERS\n- Sheila McIlraith - Professor, University of Toronto · Canada CIFAR AI Chair · Faculty Member, Vector Institute · Associate Director and Research Lead, Schwartz Reisman Institute · CAISI Research Council Member, CIFAR · ACM Fellow\n- Marsha Chechik - https://www.linkedin.com/in/marsha-chechik-5672b0\n- Anna Goldenberg - Senior Scientist, SickKids · Associate Professor, University of Toronto · Canada CIFAR AI Chair · Associate Research Director, Health, Vector Institute\n- Zhijing Jin - Assistant Professor, University of Toronto · Canada CIFAR AI Chair · Faculty Member, Vector Institute · Faculty Affiliate, Schwartz Reisman Institute · Research Scientist, Max Planck Institute · Founder, EuroSafeAI\n\nPANELISTS AND MODERATORS\nAfsaneh Fazly, Christine Andrew, Jekaterina Novikova, Kathryn Hume, Fatima Khamitova, Alyssa Lefaivre Škopac, Blair Attard-Frost, Gagan Gill, Kathrin Gardhouse, Sheila McIlraith, Malikeh Ehghaghi, Diana Virgovicova, Elena Yunusov, Patricia Thaine, Zhijing Jin, Shabnam Haghzare\n\nORGANISERS\nThe ACM-W Toronto Professional Chapter: Malikeh Ehghaghi, Maria Ryskina, Ali Akram, Deepkamal K. Gill, Faiza Khan Khattak, Helena (Qiaoshan) Yu, Keerat Kaur Guliani, Oscar Yasunaga, Sadaf Sadeghian, Shirin Shahabi, Sina Fallah Ardizi\n\nPARTNERS\nAI Safety Foundation, Vector Institute, Trajectory Labs, ACM-W, University of Toronto, Schwartz Reisman Institute for Technology and Society\n\nEvent website: https://womeninaisafety.toronto.acm.org/\n\nABOUT WiAIR\nWomen in AI Research (WiAIR) is a podcast made by researchers, for researchers: long conversations with female AI researchers about the story behind the paper, and the person behind the story. AI research through women's eyes.\n\nSubscribe: @WomeninAIResearch \nWebsite: https://women-in-ai-research.github.io\nSpotify: https://open.spotify.com/show/51RJNlZarFTJXXIlz5Qx3M\nApple Podcasts: https://podcasts.apple.com/ca/podcast/women-in-ai-research-wiair/id1805993416\n\nSome b-roll images in this video are illustrative.\n\n#AISafety #WomenInAI #ResponsibleAI #WiAIR #WiAIRpodcast",
+        "publishedAt": "2026-11-16T16:00:07Z",
+        "publishDate": "November 16, 2026",
+        "durationSeconds": 1454,
+        "thumbnailUrl": "https://i.ytimg.com/vi/HCQzQiVB7D0/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HCQzQiVB7D0"
+      }
+    ]
+  },
+  {
     "id": "PLc7IR51GK3dw",
     "title": "COLM 2026",
     "description": "COLM 2026: Conversations with the researchers behind the papers\n\nWiAIR (Women in AI Research) covers the Third Annual Conference on Language Modeling (COLM 2026) in San Francisco, US. This playlist has short interviews with authors of accepted COLM papers, filmed on-site during conference week.\n\nWiAIR is made by researchers, for researchers. It's for PhD students, early-career and senior AI researchers, and industry practitioners who want the reasoning behind the research, not just the headline results.\n\n🎧 Full episodes are also on Spotify and Apple Podcasts\n🌐 women-in-ai-research.github.io\n🔔 Subscribe for new episodes\n\n#COLM2026 #LanguageModels #LLM #NLP #AIResearch #WomenInAI #MachineLearning",
@@ -364,74 +382,6 @@
     ]
   },
   {
-    "id": "PLlHNzCdRcJDNRIkbQUp7H0_p3Ze9uW4SL",
-    "title": "WiAIR | Interview Trailers",
-    "description": "Trailers for upcoming Women in AI Research WiAIR podcast interviews.\n\nGet a preview of in-depth conversations with leading academic and industry AI researchers on core research questions shaping the field -- from foundations of ML and NLP to interpretability, fairness, and responsible AI. Each trailer highlights the key ideas, open problems, and debates explored in the full episode.\n\n🎓 Ideal for PhD students, postdocs, and faculty looking to discover rigorous, research-driven discussions before diving into the full interviews.\n\n🎙️ New to WiAIR? Start here to discover upcoming guests and decide which full interviews you want to watch next.\n\n👉 Subscribe for full interviews, research-driven discussions, and behind-the-scenes insights into modern AI research.",
-    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDNRIkbQUp7H0_p3Ze9uW4SL",
-    "videos": [
-      {
-        "videoId": "9x2QYOdjF_4",
-        "title": "Ep 12 Trailer - When AI Misunderstands You: Cultural Bias in Language Models, with Dr. Vered Shwartz",
-        "description": "As LLMs become the backbone of decision-making in law, healthcare, and hiring, one question looms large:\nCan AI truly understand users from every culture?\n\nIn this episode, Dr. Vered Shwartz (#UBC, Vector Institute) unpacks how cultural assumptions affect user interactions and how to make AI more inclusive.\n\n🎓 For researchers, practitioners, and anyone shaping the future of AI.\n\n🔔 Subscribe to our channel to get notified when the full episode is live\n\n#AIResearch #AIInclusivity #LLMs #AIethics #AIcommunity #WomenInAIResearch #wiair #wiairpodcast",
-        "publishedAt": "2025-10-27T15:00:30Z",
-        "publishDate": "October 27, 2025",
-        "durationSeconds": 243,
-        "thumbnailUrl": "https://i.ytimg.com/vi/9x2QYOdjF_4/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=9x2QYOdjF_4"
-      },
-      {
-        "videoId": "Bh3bT-r4aH8",
-        "title": "Ep 13 Trailer - AI Isn't Just English: The Fight for Linguistic Diversity, with Dr. Annie Lee",
-        "description": "How do you build a successful AI research career while raising a child — and while challenging the English-first bias in language technologies? 💡\n\nIn this inspiring episode of Women in AI Research (#WiAIRpodcast), Professor Annie Lee shares her journey from PhD to leading her own research lab - while bringing her baby to conferences, panels, and lab meetings.",
-        "publishedAt": "2025-11-17T16:00:29Z",
-        "publishDate": "November 17, 2025",
-        "durationSeconds": 339,
-        "thumbnailUrl": "https://i.ytimg.com/vi/Bh3bT-r4aH8/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Bh3bT-r4aH8"
-      },
-      {
-        "videoId": "n0kL7p7gELA",
-        "title": "Ep 14 Trailer - AI, Intimacy & Inclusivity: What We’re Getting Wrong, with Dr. Maria Antoniak",
-        "description": "What happens when AI models learn from our most private moments?\n\nIn the upcoming WiAIR episode, Maria Antoniak from @cuboulder reveals how personal data ends up in AI systems, why trust in AI companies - not chatbots - is the real issue, and why inclusivity, including that for trans women, is essential for good research.\n\nA powerful look at the human side of AI: data ethics, justice, and the realities we can't ignore.\n\n🎓 For researchers, practitioners, and anyone shaping the future of AI.\n\n🔔 Subscribe to our channel to get notified when the full episode is live\n\n#AIResearch #AIInclusivity #LLMs #AIethics #AIcommunity #WomenInAIResearch #wiair #wiairpodcast",
-        "publishedAt": "2025-12-08T16:01:18Z",
-        "publishDate": "December 8, 2025",
-        "durationSeconds": 369,
-        "thumbnailUrl": "https://i.ytimg.com/vi/n0kL7p7gELA/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=n0kL7p7gELA"
-      },
-      {
-        "videoId": "1N-Cdts6Y7k",
-        "title": "Ep 15 Trailer - Do LLMs Really Think? with Maria Ryskina",
-        "description": "Do large language models actually understand anything -- or are we confusing language with thought?\n\nIn the upcoming #WiAIRpodcast episode, Maria Ryskina (@CIFARVideo postdoc at @vectorinstituteai ) dives into one of the most fundamental and unresolved topics in AI: the relationship between language, reasoning, and intelligence. Drawing on work across AI, linguistics, and neuroscience, Maria challenges how we talk about \"understanding\" and \"reasoning\" in modern models -- and why many of our current assumptions may be misleading.\n\n🎓 For researchers, practitioners, and anyone shaping the future of AI.\n\n▶️ Full episode coming soon — subscribe to WiAIR for more conversations at the frontier of AI research.\n\n#AIResearch #LargeLanguageModels #LLMs #AIReasoning #MachineLearning #CognitiveScience #Neuroscience #Linguistics #AIInterpretability #AIAlignment #ModelEvaluation #DeepLearning #ArtificialIntelligence #WomenInAI #WiAIR",
-        "publishedAt": "2025-12-29T16:15:00Z",
-        "publishDate": "December 29, 2025",
-        "durationSeconds": 247,
-        "thumbnailUrl": "https://i.ytimg.com/vi/1N-Cdts6Y7k/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=1N-Cdts6Y7k"
-      },
-      {
-        "videoId": "DDjBG_AhUjQ",
-        "title": "S2 Ep 1 Trailer - Can Language Models Reveal Their Hidden Prompts? Swabha Swayamdipta on AI Safety",
-        "description": "Language models may be revealing more than we think — including information they were never meant to expose.\n\nIn this upcoming episode of #WiAIRpodcast, Swabha Swayamdipta (Assistant Professor at @USC , co-Associate Director of the USC Center for AI & Society) takes us behind the scenes of modern language models — from next-token probability distributions to recovering hidden system prompts.\n\nThis episode is for AI researchers, PhD students, and practitioners who care not just about what models can do, but what they should do.\n\n🎧 Full episode coming soon. Subscribe to @WomeninAIResearch to be notified.\n\n#AIResearch #LanguageModels #AISafety #ResponsibleAI #WomenInAI #NLP #MachineLearning",
-        "publishedAt": "2026-01-19T16:00:28Z",
-        "publishDate": "January 19, 2026",
-        "durationSeconds": 284,
-        "thumbnailUrl": "https://i.ytimg.com/vi/DDjBG_AhUjQ/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=DDjBG_AhUjQ"
-      },
-      {
-        "videoId": "J5lsfbIa68g",
-        "title": "S2 Ep 2 Trailer — Don't Trust the Reasoning: Letitia Parcalabescu on AI Explanations",
-        "description": "Reasoning traces look convincing — but what if they’re lying?\n\nIn the upcoming episode of #WiAIRpodcast, Dr. Letitia Parcalabescu (AI Researcher at Aleph Alpha and creator of the @AICoffeeBreak YouTube channel) challenges some of the most comfortable assumptions about modern LLMs.\n\n🎧 Full episode coming soon. Subscribe to  @WomeninAIResearch to be notified.\n\n#AIResearch #LanguageModels #ReasoningModels #WomenInAI #NLP #MachineLearning",
-        "publishedAt": "2026-02-09T16:00:28Z",
-        "publishDate": "February 9, 2026",
-        "durationSeconds": 235,
-        "thumbnailUrl": "https://i.ytimg.com/vi/J5lsfbIa68g/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=J5lsfbIa68g"
-      }
-    ]
-  },
-  {
     "id": "PLlHNzCdRcJDMu6507iijZJ_odT4VG_AfT",
     "title": "NeurIPS 2025",
     "description": "NeurIPS 2025: Conversations with the researchers behind the papers\n\nWiAIR (Women in AI Research) covers the 39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025) in San Diego. This playlist has interviews with authors of NeurIPS papers about their latest work in machine learning and AI.\n\nWiAIR is made by researchers, for researchers. It's for PhD students, early-career and senior AI researchers, and industry practitioners who want the reasoning behind the research, not just the headline results.\n\n🎧 Full episodes are also on Spotify and Apple Podcasts\n🌐 women-in-ai-research.github.io\n🔔 Subscribe for new episodes\n\n#NeurIPS2025 #NeurIPS #MachineLearning #DeepLearning #AIResearch #WomenInAI #LLM",
@@ -528,6 +478,16 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=qD0_aHQvdR8"
       },
       {
+        "videoId": "JtlAMnZQVmU",
+        "title": "NeurIPS 2025 in San Diego. We Jailbroke Every Frontier Model",
+        "description": "How robust are today’s frontier AI models—really?\n\nIn this post #NeurIPS2025 episode, Sara Price (AI safety researcher at @anthropic-ai ) walks us through a surprisingly simple black-box attack that successfully jailbreaks frontier text, vision, and audio models—often with very high attack success rates.\n\nThe key insight?\nYou don’t need clever prompts or handcrafted exploits. Random augmentations + large-scale sampling are enough to expose deep vulnerabilities in standard policy-based LLMs.\n\nLINKS:\nPaper \"Best-of-N Jailbreaking\" - https://arxiv.org/abs/2412.03556\nProject - https://jplhughes.github.io/bon-jailbreaking\n\n#NeurIPS  #anthropic #AdversarialRobustness #MLSecurity #TrustworthyAI\n#AIResearchCommunity #PhDLife #AcademicResearch #wiair #wiairpodcast",
+        "publishedAt": "2025-12-19T16:00:34Z",
+        "publishDate": "December 19, 2025",
+        "durationSeconds": 600,
+        "thumbnailUrl": "https://i.ytimg.com/vi/JtlAMnZQVmU/maxresdefault.jpg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JtlAMnZQVmU"
+      },
+      {
         "videoId": "URhovF3RxxI",
         "title": "NeurIPS 2025 in San Diego. The Leaderboard Illusion: How LLM Rankings Are Gamed",
         "description": "#NeurIPS has become the place where the future of AI evaluation is debated -- and this paper sparked one of the strongest discussions this year.\n\nIn this talk, Shivalika Singh (Research Engineer @CohereAI ) presents \"The Leaderboard Illusion\", a #NeurIPS2025 paper that takes a systematic look at Chatbot Arena, the widely used platform for ranking #LLM. The study reveals how leaderboard positions can be influenced by private variant testing, uneven sampling rates, and selective deprecations, showing that top spots aren't always just about model strength.\n\nThe paper sparked a highly visible discussion across the AI community, with voices like @AndrejKarpathy , Sara Hooker, and many others weighing in with opinions, critiques, and clarifications -- fueling a debate about transparency, fairness, and best practices in LLM evaluation.\n\nLINK:\nPaper \"The Leaderboard Illusion\" - https://arxiv.org/abs/2504.20879\n\nCHAPTERS:\n00:00 Introduction to the Leaderboard Illusion\n02:15 Issues with Private Testing Practices\n03:59 Data Access Asymmetries and Their Impact\n06:01 Model Deprecation and Its Consequences\n08:44 Recommendations for Fairness in Leaderboards\n10:25 Motivation Behind the Study\n12:00 Critiques and Responses from the Community\n15:00 Future Directions in Model Evaluation\n\nThis talk is a must-watch for AI researchers, PhD students, and industry practitioners who rely on leaderboards to guide research, deployment, and investment decisions -- and who want to understand the forces shaping what \"top-performing\" really means.\n\n#NeurIPS2025 #AIResearch #LLM #LargeLanguageModels #MachineLearning #ChatbotArena #AILeaderboard #AICommunity #PhDInAI #AIBenchmarking #wiair #wiairpodcast",
@@ -616,172 +576,6 @@
         "durationSeconds": 401,
         "thumbnailUrl": "https://i.ytimg.com/vi/hLDKW3-OKUA/maxresdefault.jpg",
         "youtubeUrl": "https://www.youtube.com/watch?v=hLDKW3-OKUA"
-      }
-    ]
-  },
-  {
-    "id": "PLlHNzCdRcJDPKrasXXrPfGnY0WhWRQ_Eu",
-    "title": "Risks of AI",
-    "description": "#AIrisks #AIEthics #ResponsibleAI #AIHype #AIandSociety #wiair #wiairpodcast #artificialintelligence #machinelearning #deeplearning #naturallanguageprocessing",
-    "playlistUrl": "https://www.youtube.com/playlist?list=PLlHNzCdRcJDPKrasXXrPfGnY0WhWRQ_Eu",
-    "videos": [
-      {
-        "videoId": "JtlAMnZQVmU",
-        "title": "NeurIPS 2025 in San Diego. We Jailbroke Every Frontier Model",
-        "description": "How robust are today’s frontier AI models—really?\n\nIn this post #NeurIPS2025 episode, Sara Price (AI safety researcher at @anthropic-ai ) walks us through a surprisingly simple black-box attack that successfully jailbreaks frontier text, vision, and audio models—often with very high attack success rates.\n\nThe key insight?\nYou don’t need clever prompts or handcrafted exploits. Random augmentations + large-scale sampling are enough to expose deep vulnerabilities in standard policy-based LLMs.\n\nLINKS:\nPaper \"Best-of-N Jailbreaking\" - https://arxiv.org/abs/2412.03556\nProject - https://jplhughes.github.io/bon-jailbreaking\n\n#NeurIPS  #anthropic #AdversarialRobustness #MLSecurity #TrustworthyAI\n#AIResearchCommunity #PhDLife #AcademicResearch #wiair #wiairpodcast",
-        "publishedAt": "2025-12-19T16:00:34Z",
-        "publishDate": "December 19, 2025",
-        "durationSeconds": 600,
-        "thumbnailUrl": "https://i.ytimg.com/vi/JtlAMnZQVmU/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=JtlAMnZQVmU"
-      }
-    ]
-  },
-  {
-    "id": "more-videos",
-    "title": "More videos",
-    "description": "",
-    "playlistUrl": null,
-    "videos": [
-      {
-        "videoId": "GBghj6S6cic",
-        "title": "Trustworthy AI Explained: Ana Marasović on AI Interpretability, LLM Reasoning & Benchmark Myths",
-        "description": "What makes AI trustworthy — and how can we tell when explanations are misleading?\n\nJoin Ana Marasović (University of Utah) in the upcoming Women in AI Research episode as she breaks down the key challenges behind AI trust, interpretability, and benchmark evaluation.\n\nIn this insightful conversation, you’ll learn:\n🧩 The difference between intrinsic and extrinsic AI trust\n⚖️ Why explainability ≠ truth\n📊 What benchmarks like MMLU really measure\n💡 How AI reasoning can go wrong — and what we can do about it\n\nPerfect for researchers, data scientists, and AI practitioners exploring LLMs, explainability, and responsible AI systems.\n\n🔔 Subscribe to our channel to get notified when the full episode is live",
-        "publishedAt": "2025-10-06T15:00:25Z",
-        "publishDate": "October 6, 2025",
-        "durationSeconds": 184,
-        "thumbnailUrl": "https://i.ytimg.com/vi/GBghj6S6cic/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=GBghj6S6cic"
-      },
-      {
-        "videoId": "KszW2czg7x8",
-        "title": "Ep 11 Part 1 - The Messy Journey of Research, with Dr. Ana Marasovic",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Ana Marasović https://www.anamarasovic.com, an expert in AI trustworthiness. \n\nLINKS\nFull episode: https://youtu.be/xYb6uokKKOo\nPart 2 - The Role of Explainability and Reasoning Traces in AI Trust: https://youtu.be/yQN6PuI0DB0\nPart 3 - Robustness and Trustworthy AI: https://youtu.be/kh7N0GtgfpE\n\nIn Part 1 of the conversation, Ana shares her insights on the collaborative nature of research, the realities of academic life, and the challenges of proposal writing, emphasizing the importance of understanding the multifaceted roles of researchers in academia.\n\nCHAPTERS\n00:00 Introduction - Ana Marasović\n02:15 The Messiness of Research\n04:33 The Realities of Academic Life\n08:21 Balancing Research and Funding\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-10-09T15:00:38Z",
-        "publishDate": "October 9, 2025",
-        "durationSeconds": 727,
-        "thumbnailUrl": "https://i.ytimg.com/vi/KszW2czg7x8/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=KszW2czg7x8"
-      },
-      {
-        "videoId": "yQN6PuI0DB0",
-        "title": "Ep 11 Part 2 - The Role of Explainability and Reasoning Traces in AI Trust, with Dr. Ana Marasovic",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Ana Marasović https://www.anamarasovic.com, an expert in AI trustworthiness. \n\nLINKS\nFull episode: https://youtu.be/xYb6uokKKOo\nPart 1 - The Messy Journey of Research: https://youtu.be/KszW2czg7x8?si=UXKicrI-m8N4VhjO\nPart 3 - Robustness and Trustworthy AI: https://youtu.be/kh7N0GtgfpE\n\nIn Part 2 of the conversation, we explore the complexities of trust in AI systems, focusing on the concepts of intrinsic and extrinsic trust, the importance of explainability, and the evaluation of AI systems in real-world applications. The discussion also delves into the dynamics of human-AI collaboration, the faithfulness of reasoning traces, and the implications of model scaling on reasoning capabilities.\n\nCHAPTERS:\n00:00 Unpacking AI Trustworthiness\n00:27 Understanding Trust in AI Systems\n03:37 Exploring Explainability and Human Decision-Making\n06:06 Application-Grounded Evaluations\n10:23 The Gap Between Research and Real-World Applications\n11:55 Counterintuitive Findings in Human-AI Collaboration\n17:30 Balancing Human-AI Collaboration\n19:15 Exploring Human-AI Teams\n24:07 Understanding Reasoning Traces in AI\n27:54 The Relationship Between Model Size and Reasoning\n35:08 Evaluating Reasoning Language Models\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-10-11T17:01:12Z",
-        "publishDate": "October 11, 2025",
-        "durationSeconds": 2349,
-        "thumbnailUrl": "https://i.ytimg.com/vi/yQN6PuI0DB0/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=yQN6PuI0DB0"
-      },
-      {
-        "videoId": "kh7N0GtgfpE",
-        "title": "Ep 11 Part 3 - Robustness and Trustworthy AI, with Dr. Ana Marasovic",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Ana Marasović https://www.anamarasovic.com, an expert in AI trustworthiness. \n\nLINKS\nFull episode: https://youtu.be/xYb6uokKKOo\nPart 1 - The Messy Journey of Research: https://youtu.be/KszW2czg7x8?si=UXKicrI-m8N4VhjO\nPart 2 - The Role of Explainability and Reasoning Traces in AI Trust: https://youtu.be/yQN6PuI0DB0\n\nCHAPTERS\n00:00 Robustness in AI Systems\n07:17 The State of AI Evaluation\n10:56 Synthetic Evaluation: Pros and Cons\n16:05 Human vs. LLM Annotations\n18:07 Balancing Efficiency and Robustness in Benchmarking\n24:21 Trust in AI: Intrinsic vs. Extrinsic\n28:31 Future Directions in AI Research\n\nIn Part 3, we focus on the challenges of explainability, robustness, and evaluation. We discuss the importance of robustness in real-world applications, and the role of benchmarks in measuring AI performance. The conversation also explores synthetic evaluation methods, the distinction between intrinsic and extrinsic trust in AI, and the future directions for research in AI trust and reliability.\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-10-13T15:01:31Z",
-        "publishDate": "October 13, 2025",
-        "durationSeconds": 1923,
-        "thumbnailUrl": "https://i.ytimg.com/vi/kh7N0GtgfpE/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=kh7N0GtgfpE"
-      },
-      {
-        "videoId": "BeQFyY3Dld4",
-        "title": "Ep 12 Part 1 - \"Lost in Automatic Translation\", with Dr. Vered Shwartz",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Vered Shwartz, an Assistant Professor of Computer Science at the University of British Columbia, and a CIFAR AI Chair at the Vector Institute. \n\nLINKS\nFull episode: https://youtu.be/RKIvrESep-g\nPart 2 - https://youtu.be/Vfikq3wsULw\nPart 3 - https://youtu.be/IwOxN8bssk4\n\nWhat happens when your AI assistant doesn’t understand your accent — or your culture?\nIn the Part 1 of our conversation, Vered Shwartz shares the personal stories and research that inspired her new book Lost in Automatic Translation.\n\n🧠 Topics we cover:\n• How her experiences as a non-native English speaker shaped her research\n• Why clarity in scientific communication matters more than hype\n• The real-world consequences of language technologies built on Western-centric data\n\nCHAPTERS\n00:00 Introduction to Women in AI Research Podcast\n00:33 Guest - Dr. Vered Shwartz\n02:32 The Importance of Communication Skills in Academia\n04:15 Navigating Faculty Roles and Student Supervision\n07:52 Personal Experiences with Language Technologies\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-10-30T15:00:19Z",
-        "publishDate": "October 30, 2025",
-        "durationSeconds": 881,
-        "thumbnailUrl": "https://i.ytimg.com/vi/BeQFyY3Dld4/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=BeQFyY3Dld4"
-      },
-      {
-        "videoId": "Vfikq3wsULw",
-        "title": "Ep 12 Part 2 - Hidden Cultural Codes in AI, Dr. Vered Shwartz on Bias, Fairness & Global NLP",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Vered Shwartz, an Assistant Professor of Computer Science at the  ⁨@UBC⁩ and a ⁨@CIFARVideo⁩ AI Chair at the  ⁨@vectorinstituteai⁩ .\n\nLINKS\nFull episode: https://youtu.be/RKIvrESep-g\nPart 1: https://youtu.be/BeQFyY3Dld4\nPart 3 - https://youtu.be/IwOxN8bssk4\n\nIn Part 2 of our conversation, we explore how large language and vision–language models reflect and reinforce Western and US-centric worldviews, what it means for fairness and inclusivity, and how we can build culturally aware AI that truly works for everyone.\n\n🧠 Topics we cover:\n• How \"universal\" AI is still mostly Western\n• Cultural gaps across languages in Wikipedia\n• How LLMs “hide” stereotypes under safety guardrails\n• Vision-language biases — when \"house\" means \"US house\"\n• Building benchmarks for fairer AI across 50 countries\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast with Dr. Vered Shwartz\n00:32 Personal Experiences with Language Technologies\n00:33 Exploring Cultural Representation in AI\n06:23 The InfoGap Method and Cultural Information Gaps\n08:23 Technical Challenges in Cross-Language Representation\n09:55 Cultural Completeness and Wikipedia's Role\n12:35 User Interaction with Language Models\n23:15 Cross-Cultural Evaluation of Social Norm Biases\n24:09 Cultural Alignment of Language Models\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-11-01T15:01:02Z",
-        "publishDate": "November 1, 2025",
-        "durationSeconds": 2106,
-        "thumbnailUrl": "https://i.ytimg.com/vi/Vfikq3wsULw/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Vfikq3wsULw"
-      },
-      {
-        "videoId": "IwOxN8bssk4",
-        "title": "Ep 12 Part 3 - When AI Can't \"See\" Your Culture, with Dr. Vered Shwartz",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Vered Shwartz, an Assistant Professor of Computer Science at the  ⁨@UBC⁩ and a ⁨@CIFARVideo⁩ AI Chair at the  ⁨@vectorinstituteai⁩ .\n\nLINKS\nFull episode: https://youtu.be/RKIvrESep-g\nPart 1: https://youtu.be/BeQFyY3Dld4\nPart 2 : https://youtu.be/Vfikq3wsULw\n\nIn Part 3 of our conversation, we explore the hidden cultural biases embedded in vision-language models (VLMs) - systems that connect text and images.\n\n🧠 Topics we cover:\n• Why AI struggles to see non-Western cultures\n• How vision-language models inherit Western imagery bias\n• The hidden link between visual data and linguistic stereotypes\n• What makes cultural fairness harder in multimodal AI\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast with Dr. Vered Shwartz\n00:32 Cultural Alignment of Language Models\n00:32 Exploring Vision Language Models\n14:12 Benchmarking Cultural Bias in AI\n18:15 Decentralizing AI Development\n23:22 Addressing Biases in AI Development\n27:13 Future Directions of Research\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-11-05T16:00:35Z",
-        "publishDate": "November 5, 2025",
-        "durationSeconds": 1720,
-        "thumbnailUrl": "https://i.ytimg.com/vi/IwOxN8bssk4/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=IwOxN8bssk4"
-      },
-      {
-        "videoId": "hkKF3fKr6zo",
-        "title": "Ep 13 Part 1 - The Journey of a Multilingual AI Researcher, with Dr. Annie En-Shiun Lee",
-        "description": "In this episode of the Women in AI Research podcast, Jekaterina Novikova speaks with Dr. Annie En-Shiun. We discuss Annie's personal journey in academia, the balance between parenthood and research, and the importance of building effective teams in the field. Annie shares her insights on navigating the academic landscape as a parent and the gradual changes in institutional support for working mothers in academia.\n\nLINKS\nFull episode: https://youtu.be/L9Sp-zauXwo\nPart 2 - https://youtu.be/XXeOAt2DO1I\nPart 3 - https://youtu.be/NJafotDn-J0\n\nCHAPTERS\n00:00 Introduction to Women in AI Research\n00:30 Guest introduction - Dr. Annie En-Shiun Lee\n03:22 Annie's Journey in Multilingual AI\n05:43 Balancing Parenthood and Academia\n10:35 Challenges of Motherhood in Academia\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast",
-        "publishedAt": "2025-11-21T16:01:12Z",
-        "publishDate": "November 21, 2025",
-        "durationSeconds": 1160,
-        "thumbnailUrl": "https://i.ytimg.com/vi/hkKF3fKr6zo/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=hkKF3fKr6zo"
-      },
-      {
-        "videoId": "XXeOAt2DO1I",
-        "title": "Ep 13 Part 2 - The Real Challenges of Multilingual NLP, with Dr. Annie En-Shiun Lee",
-        "description": "In this episode of the Women in AI Research podcast, Jekaterina Novikova speaks with Dr. Annie En-Shiun. Annie breaks down the real challenges behind multilingual AI, from the linguistic blind spots in today’s datasets to the cultural nuances that current LLMs fail to capture.\n\nLINKS\nFull episode: https://youtu.be/L9Sp-zauXwo\nPart 1 - https://youtu.be/hkKF3fKr6zo\nPart 3 - https://youtu.be/NJafotDn-J0\n\nCHAPTERS\n00:00 Introduction to Women in AI Research\n00:38 Evaluating Multilingual Language Models\n03:56 SIB-200 Dataset and Its Impact\n14:27 Introducing a Multilingual Reward Model\n19:58 The Impact of Model Size on Performance\n27:09 Focus on Non-English Languages and Their Specifics\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast",
-        "publishedAt": "2025-11-23T16:01:01Z",
-        "publishDate": "November 23, 2025",
-        "durationSeconds": 1736,
-        "thumbnailUrl": "https://i.ytimg.com/vi/XXeOAt2DO1I/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=XXeOAt2DO1I"
-      },
-      {
-        "videoId": "NJafotDn-J0",
-        "title": "Ep 13 Part 3 - The Cross-Lingual Challenge, with Dr. Annie En-Shiun Lee",
-        "description": "In this episode of the Women in AI Research podcast, Jekaterina Novikova speaks with Dr. Annie En-Shiun. We explore why translating everything through English can lose meaning and cultural context, the limits of cross-lingual transfer and multilingual embeddings, and challenges for non-Latin scripts and low-resource languages.\n\nLINKS\nFull episode: https://youtu.be/L9Sp-zauXwo\nPart 1 - https://youtu.be/hkKF3fKr6zo\nPart 2 - https://youtu.be/XXeOAt2DO1I\n\nCHAPTERS\n00:00 Introduction to Women in AI Research\n00:59 The Pitfalls of English as a Pivot Language\n11:27 Cross-Lingual Transfer in NLP: Current State and Challenges\n20:58 Understanding Languages with Non-Latins Scripts\n24:20 Advice for Researchers on Underrepresented Languages\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast",
-        "publishedAt": "2025-11-25T16:00:42Z",
-        "publishDate": "November 25, 2025",
-        "durationSeconds": 1953,
-        "thumbnailUrl": "https://i.ytimg.com/vi/NJafotDn-J0/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=NJafotDn-J0"
-      },
-      {
-        "videoId": "YLguztL14YI",
-        "title": "Ep 14 Part 1 - Trust, Privacy, and Power in AI, with Dr. Maria Antoniak",
-        "description": "Jekaterina Novikova and Malikeh Ehgaghi interview Maria Antoniak, an Assistant Professor of Computer Science at the University of Colorado Boulder, to explore what it really means to build responsible and inclusive AI systems.\n\nLINKS\nFull episode: https://youtu.be/P-R0mU8_0U0\nPart 2 - https://youtu.be/Io_syVZjYg8\nPart 3 - https://youtu.be/UOy_Qsui5ag\n\nThis is a conversation about people, not just models - and about what happens when we bring overlooked voices back into view.\nIn Part 1 of our conversation, Maria Antoniak shares her personal perspective on inclusivity in academia, her experience in building AI literacy for those with less technical background, and how her connection to Ukraine has shaped her understanding of power, justice, and solidarity in research.\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast\n00:33 Guest introduction - Dr. Maria Antoniak\n02:58 Inclusivity in AI\n05:55 AI for Humanists: Bridging the Gap\n08:29 Connection to Ukraine: Values and Lessons\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-12-13T16:00:52Z",
-        "publishDate": "December 13, 2025",
-        "durationSeconds": 842,
-        "thumbnailUrl": "https://i.ytimg.com/vi/YLguztL14YI/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=YLguztL14YI"
-      },
-      {
-        "videoId": "Io_syVZjYg8",
-        "title": "Ep 14 Part 2 - What AI Learns From Us, with Dr. Maria Antoniak",
-        "description": "AI systems don't just process text — they absorb our values, cultures, and power structures.\n\nLINKS\nFull episode: https://youtu.be/P-R0mU8_0U0\nPart 1 - https://youtu.be/YLguztL14YI\nPart 3 - https://youtu.be/UOy_Qsui5ag\n\nIn Part 2 of our conversation with Maria Antoniak, an Assistant Professor of Computer Science @cuboulder , we dive deep into trust, privacy, and cultural bias in AI systems, drawing on real-world evidence from large-scale chatbot data and surveys of researchers.\n\nCHAPTERS:\n00:00 Introduction to the episode with Maria Antoniak\n00:41 Trust and Privacy in AI Interactions\n01:23 Personal Disclosures in AI Conversations\n09:21 Taxonomy of Sensitive Information\n11:59 Researcher Perspectives on AI Usage\n15:36 Cultural Representation in AI Systems\n22:36 Cultural NLP and Its Challenges\n24:26 Evaluating Cultural Alignment in AI\n29:53 Cultural Evaluation Methods in Research\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AI #NLP #LLMs #CulturalBias #WomenInAI #ExplainableAI #FairnessInAI #EthicalAI  #airesearch #wiair #wiairpodcast",
-        "publishedAt": "2025-12-16T16:00:28Z",
-        "publishDate": "December 16, 2025",
-        "durationSeconds": 2054,
-        "thumbnailUrl": "https://i.ytimg.com/vi/Io_syVZjYg8/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Io_syVZjYg8"
-      },
-      {
-        "videoId": "UOy_Qsui5ag",
-        "title": "Ep 14 Part 1 - AI in Maternal & Reproductive Health, with Dr. Maria Antoniak",
-        "description": "AI systems don't just process text — they absorb our values, cultures, and power structures.\n\nLINKS\nFull episode: https://youtu.be/P-R0mU8_0U0\nPart 1 - https://youtu.be/YLguztL14YI\nPart 2 - https://youtu.be/Io_syVZjYg8\n\nIn Part 3 of our conversation with Maria Antoniak, an Assistant Professor of Computer Science @cuboulder , we explore AI in maternal and reproductive health, examining healthcare bias, power dynamics, and ethical NLP principles for building trustworthy, human-centered AI systems.\n\nCHAPTERS:\n00:00 Introduction to Women in AI Research Podcast\n00:56 AI in Maternal and Reproductive Health\n04:21 Guiding Principles for AI in Maternal Health\n07:26 Engaging Stakeholders in Healthcare AI\n15:50 Enhancing Agency in Healthcare AI\n19:37 Learning from Maternal Health Traditions\n\n🎧 Subscribe to stay updated on new episodes spotlighting brilliant women shaping the future of AI.\n\nWiAIR website:\n♾️  https://women-in-ai-research.github.io\n\nFollow us at:\n♾️ LinkedIn:  https://www.linkedin.com/company/women-in-ai-research/\n♾️ Bluesky:   https://bsky.app/profile/wiair.bsky.social\n♾️ X (Twitter):   https://x.com/WiAIR_podcast\n\n#AIethics #MaternalHealth #ReproductiveHealth #HealthcareAI #NLP #ResponsibleAI #HumanCenteredAI #FairnessInAI #AIResearch #WomenInAI #EthicalAI #MachineLearning #HealthTech #AIinHealthcare #WiAIR #wiairpodcast",
-        "publishedAt": "2025-12-23T17:00:51Z",
-        "publishDate": "December 23, 2025",
-        "durationSeconds": 1485,
-        "thumbnailUrl": "https://i.ytimg.com/vi/UOy_Qsui5ag/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=UOy_Qsui5ag"
-      },
-      {
-        "videoId": "ltepNZB15bM",
-        "title": "LLMs Can Hear… But Can They Reason? A New Benchmark for Audio Intelligence (EACL 2026)",
-        "description": "What does it actually mean for a model to understand audio?\n\nPaper: https://arxiv.org/abs/2601.19673\n\nIn this episode, I talk with Iwona Christop, a PhD student at Adam Mickiewicz University, about her recent EACL paper introducing ART (Audio Reasoning Tasks) — a new benchmark designed to evaluate whether multimodal LLMs can truly reason over audio, not just transcribe or classify it.\n\nMost existing benchmarks test audio skills in isolation (like ASR or classification). But real-world intelligence requires something deeper: combining signals, comparing sounds, tracking context, and making decisions.\n\nThis work takes a different approach:\n• No text-only shortcuts — tasks can’t be solved via transcription alone\n• Reasoning-first design — models must combine multiple audio cues\n• No expert knowledge required — anyone can verify correctness\n\nWe also dive into the diverse task design, including:\n• Audio arithmetic (counting and comparing sounds)\n• Cross-recording speaker & language identification\n• Sound-based reasoning (e.g., inferring properties from audio)\n• Speech feature comparison (accents, variations)\n• Multimodal reasoning across text and sound\n\nThe dataset includes 9 tasks, 9,000 samples, and 30+ hours of audio — all generated in a scalable way using templates and TTS.\n\n👉 If you care about multimodal reasoning, evaluation, or the limits of current LLM capabilities, this conversation is for you.\n\nIwona Christop:\n• https://www.linkedin.com/in/iwona-christop/\n\n👍 Like & subscribe for more deep dives into cutting-edge AI research\n🔔 New episodes from EACL 2026 coming soon\n\n#WiAIR #EACL2026",
-        "publishedAt": "2026-04-12T15:01:13Z",
-        "publishDate": "April 12, 2026",
-        "durationSeconds": 1103,
-        "thumbnailUrl": "https://i.ytimg.com/vi/ltepNZB15bM/maxresdefault.jpg",
-        "youtubeUrl": "https://www.youtube.com/watch?v=ltepNZB15bM"
       }
     ]
   }
