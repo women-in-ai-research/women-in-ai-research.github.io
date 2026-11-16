@@ -79,6 +79,7 @@ export interface EpisodeRecord {
   podcast: string;
   guests: string[];
   chapters: Chapter[];
+  topics: { slug: string; name: string }[];
 }
 
 export interface EventVideo {
@@ -356,6 +357,7 @@ export async function main() {
       podcast: episodeOwner.get(v.id)!,
       guests: guests.map((g) => g.name),
       chapters: parseChapters(v.description),
+      topics: [],
     };
   });
 
@@ -436,7 +438,9 @@ export async function main() {
   const noGuest = episodes.filter((e) => !e.guests.length).map((e) => `#${e.number} ${e.title}`);
   if (noGuest.length) console.log(`No guest found for: ${noGuest.join(" | ")}`);
 
+  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"));
   writeJson("app/data/episodes.json", episodes);
+  writeJson("app/data/topics.json", topics);
   writeJson("app/data/events.json", events);
   writeJson("app/data/guests.json", guestList);
   console.log(
@@ -444,7 +448,84 @@ export async function main() {
   );
 }
 
+// ---------- topics ----------
+
+interface TopicsFile {
+  topics: { slug: string; name: string; intro: string; episodes: string[] }[];
+}
+
+export interface TopicRecord {
+  slug: string;
+  name: string;
+  intro: string;
+  videoIds: string[];
+  related: string[];
+}
+
+/** The video ID in a YouTube link (watch?v=, youtu.be/, /live/, /embed/), or the ID itself. */
+export function videoIdFromUrl(url: string): string {
+  const s = url.trim();
+  const m =
+    s.match(/[?&]v=([\w-]{11})/) ||
+    s.match(/youtu\.be\/([\w-]{11})/) ||
+    s.match(/\/(?:live|embed|shorts)\/([\w-]{11})/);
+  if (m) return m[1];
+  return /^[\w-]{11}$/.test(s) ? s : "";
+}
+
+/**
+ * Adds each episode's topics (from data/topics.json) to the episode records and
+ * returns the topic list for the topic pages, with episodes newest first.
+ */
+export function applyTopics(episodes: EpisodeRecord[], file: TopicsFile): TopicRecord[] {
+  const byId = new Map(episodes.map((e) => [e.videoId, e]));
+  for (const e of episodes) e.topics = [];
+  const topics: TopicRecord[] = [];
+  for (const t of file.topics) {
+    const ids: string[] = [];
+    for (const link of t.episodes) {
+      const id = videoIdFromUrl(link);
+      const ep = byId.get(id);
+      if (!ep) {
+        console.log(`Topic "${t.name}": ${link} is not a podcast episode; skipped.`);
+        continue;
+      }
+      if (ids.includes(id)) continue;
+      ids.push(id);
+      ep.topics.push({ slug: t.slug, name: t.name });
+    }
+    ids.sort((a, b) => byId.get(b)!.number - byId.get(a)!.number);
+    topics.push({ slug: t.slug, name: t.name, intro: t.intro, videoIds: ids, related: [] });
+  }
+  // Related topics: the ones sharing the most episodes.
+  for (const t of topics) {
+    t.related = topics
+      .filter((o) => o.slug !== t.slug)
+      .map((o) => ({ slug: o.slug, shared: o.videoIds.filter((id) => t.videoIds.includes(id)).length, size: o.videoIds.length }))
+      .filter((o) => o.shared > 0)
+      .sort((a, b) => b.shared - a.shared || b.size - a.size)
+      .slice(0, 3)
+      .map((o) => o.slug);
+  }
+  const untagged = episodes.filter((e) => !e.topics.length).map((e) => `#${e.number} ${e.title}`);
+  if (untagged.length) console.log(`Episodes without a topic: ${untagged.join(" | ")}`);
+  return topics;
+}
+
+/** Re-applies data/topics.json to the existing episode data, without calling YouTube. */
+function topicsOnly() {
+  const episodes = readJson<EpisodeRecord[]>("app/data/episodes.json");
+  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"));
+  writeJson("app/data/episodes.json", episodes);
+  writeJson("app/data/topics.json", topics);
+  console.log(`Wrote ${topics.length} topics.`);
+}
+
 if (require.main === module) {
+  if (process.argv.includes("--topics-only")) {
+    topicsOnly();
+    process.exit(0);
+  }
   main().catch((err) => {
     console.error(err instanceof Error ? err.message : err);
     process.exit(1);

@@ -40,3 +40,7 @@ Episodes, guests and events on the website come from the [WiAIR YouTube channel]
 To add a headshot, title or bio for a guest, put the photo in `public/images/guests/` and add an entry to `data/guest-overrides.json`; anything there takes priority over what comes from YouTube. Other settings (which playlists count as podcasts, videos to exclude, Shorts) are in `data/youtube-config.json`.
 
 The workflow needs a YouTube Data API key saved as the repository secret `YOUTUBE_API_KEY`. To run it locally: `YOUTUBE_API_KEY=... yarn update-content`.
+
+## 🏷️ Topics
+
+Topic pages (`/topics/<slug>/`) are built from `data/topics.json`. Each topic has a name, a short intro and a list of episodes given by their YouTube links. When a new episode comes out, paste its YouTube link into the `episodes` list of each of its topics (one to three) and save: the site rebuilds automatically. The daily update job lists any episode that has no topic yet.

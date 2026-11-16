@@ -15,7 +15,17 @@
     "guests": [
       "Dr. Nouha Dziri"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "reasoning-generalization",
+        "name": "Reasoning & Generalization"
+      },
+      {
+        "slug": "hallucinations-trustworthiness",
+        "name": "Hallucinations & Trustworthiness"
+      }
+    ]
   },
   {
     "id": "2",
@@ -33,7 +43,13 @@
     "guests": [
       "Dr. Amanda Cercas Curry"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "bias-fairness-culture",
+        "name": "Bias, Fairness & Culture"
+      }
+    ]
   },
   {
     "id": "3",
@@ -51,7 +67,17 @@
     "guests": [
       "Aparna Balagopalan"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "bias-fairness-culture",
+        "name": "Bias, Fairness & Culture"
+      },
+      {
+        "slug": "ai-for-health",
+        "name": "AI for Health"
+      }
+    ]
   },
   {
     "id": "4",
@@ -69,7 +95,13 @@
     "guests": [
       "Dr. Angelica Lim"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "multimodal-embodied-ai",
+        "name": "Multimodal & Embodied AI"
+      }
+    ]
   },
   {
     "id": "5",
@@ -87,7 +119,21 @@
     "guests": [
       "Dr. Faiza Khan Khattak"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "bias-fairness-culture",
+        "name": "Bias, Fairness & Culture"
+      },
+      {
+        "slug": "interpretability-explainability",
+        "name": "Interpretability & Explainability"
+      },
+      {
+        "slug": "ai-for-health",
+        "name": "AI for Health"
+      }
+    ]
   },
   {
     "id": "6",
@@ -105,7 +151,17 @@
     "guests": [
       "Wanru Zhao"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "multilingual-ai-tokenization",
+        "name": "Multilingual AI & Tokenization"
+      },
+      {
+        "slug": "open-science-data",
+        "name": "Open Science & Data"
+      }
+    ]
   },
   {
     "id": "7",
@@ -123,7 +179,17 @@
     "guests": [
       "Dr. Dieuwke Hupkes"
     ],
-    "chapters": []
+    "chapters": [],
+    "topics": [
+      {
+        "slug": "evaluation-benchmarks",
+        "name": "Evaluation & Benchmarks"
+      },
+      {
+        "slug": "reasoning-generalization",
+        "name": "Reasoning & Generalization"
+      }
+    ]
   },
   {
     "id": "8",
@@ -257,6 +323,20 @@
         "seconds": 3279,
         "title": "Model State Arithmetic for Machine Unlearning (https://arxiv.org/abs/2506.20941)"
       }
+    ],
+    "topics": [
+      {
+        "slug": "evaluation-benchmarks",
+        "name": "Evaluation & Benchmarks"
+      },
+      {
+        "slug": "hallucinations-trustworthiness",
+        "name": "Hallucinations & Trustworthiness"
+      },
+      {
+        "slug": "open-science-data",
+        "name": "Open Science & Data"
+      }
     ]
   },
   {
@@ -375,6 +455,20 @@
         "time": "41:54",
         "seconds": 2514,
         "title": "HYBRIDMIND: Meta Selection of Natural Language and Symbolic Language for Enhanced LLM Reasoning (https://arxiv.org/abs/2409.19381)"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "evaluation-benchmarks",
+        "name": "Evaluation & Benchmarks"
+      },
+      {
+        "slug": "reasoning-generalization",
+        "name": "Reasoning & Generalization"
+      },
+      {
+        "slug": "interpretability-explainability",
+        "name": "Interpretability & Explainability"
       }
     ]
   },
@@ -535,6 +629,12 @@
         "seconds": 3585,
         "title": "RewardBench 2: Advancing Reward Model Evaluation (https://arxiv.org/abs/2506.01937)"
       }
+    ],
+    "topics": [
+      {
+        "slug": "open-science-data",
+        "name": "Open Science & Data"
+      }
     ]
   },
   {
@@ -683,6 +783,16 @@
         "time": "01:01:51",
         "seconds": 3711,
         "title": "What Has Been Lost with Synthetic Evaluation? (https://arxiv.org/abs/2505.22830)"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "hallucinations-trustworthiness",
+        "name": "Hallucinations & Trustworthiness"
+      },
+      {
+        "slug": "interpretability-explainability",
+        "name": "Interpretability & Explainability"
       }
     ]
   },
@@ -843,6 +953,16 @@
         "seconds": 4251,
         "title": "CulturalBench: A Robust, Diverse, and Challenging"
       }
+    ],
+    "topics": [
+      {
+        "slug": "bias-fairness-culture",
+        "name": "Bias, Fairness & Culture"
+      },
+      {
+        "slug": "multimodal-embodied-ai",
+        "name": "Multimodal & Embodied AI"
+      }
     ]
   },
   {
@@ -976,6 +1096,12 @@
         "time": "01:08:51",
         "seconds": 4131,
         "title": "Irokobench: A new benchmark for african languages in the age of large language models (https://aclanthology.org/2025.naacl-long.139.pdf)"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "multilingual-ai-tokenization",
+        "name": "Multilingual AI & Tokenization"
       }
     ]
   },
@@ -1131,6 +1257,12 @@
         "seconds": 4161,
         "title": "Empire of AI (https://www.penguinrandomhouse.com/books/743569/empire-of-ai-by-karen-hao/)"
       }
+    ],
+    "topics": [
+      {
+        "slug": "bias-fairness-culture",
+        "name": "Bias, Fairness & Culture"
+      }
     ]
   },
   {
@@ -1220,6 +1352,16 @@
         "seconds": 3004,
         "title": "Auxiliary task demands mask the capabilities of smaller language models (https://openreview.net/forum?id=U5BUzSn4tD)"
       }
+    ],
+    "topics": [
+      {
+        "slug": "evaluation-benchmarks",
+        "name": "Evaluation & Benchmarks"
+      },
+      {
+        "slug": "language-cognition-brain",
+        "name": "Language, Cognition & the Brain"
+      }
     ]
   },
   {
@@ -1277,7 +1419,8 @@
         "seconds": 540,
         "title": "Looking ahead: excitement for the future of Women in AI Research"
       }
-    ]
+    ],
+    "topics": []
   },
   {
     "id": "17",
@@ -1375,6 +1518,16 @@
         "time": "46:52",
         "seconds": 2812,
         "title": "Uncovering Intervention Opportunities for Suicide Prevention with Language Model Assistants (https://arxiv.org/abs/2508.18541)"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "evaluation-benchmarks",
+        "name": "Evaluation & Benchmarks"
+      },
+      {
+        "slug": "ai-safety-alignment",
+        "name": "AI Safety & Alignment"
       }
     ]
   },
@@ -1500,6 +1653,20 @@
         "seconds": 2569,
         "title": "Bounding Hallucinations: Information-Theoretic Guarantees for RAG Systems via Merlin-Arthur Protocols (https://arxiv.org/abs/2512.11614)"
       }
+    ],
+    "topics": [
+      {
+        "slug": "reasoning-generalization",
+        "name": "Reasoning & Generalization"
+      },
+      {
+        "slug": "hallucinations-trustworthiness",
+        "name": "Hallucinations & Trustworthiness"
+      },
+      {
+        "slug": "multimodal-embodied-ai",
+        "name": "Multimodal & Embodied AI"
+      }
     ]
   },
   {
@@ -1604,6 +1771,20 @@
         "seconds": 3541,
         "title": "Dr. Gonen’s outlook on applying language models in healthcare"
       }
+    ],
+    "topics": [
+      {
+        "slug": "ai-safety-alignment",
+        "name": "AI Safety & Alignment"
+      },
+      {
+        "slug": "interpretability-explainability",
+        "name": "Interpretability & Explainability"
+      },
+      {
+        "slug": "multilingual-ai-tokenization",
+        "name": "Multilingual AI & Tokenization"
+      }
     ]
   },
   {
@@ -1672,6 +1853,16 @@
         "time": "24:40",
         "seconds": 1480,
         "title": "Strategies for mitigating conversational and multi-turn system vulnerabilities"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "bias-fairness-culture",
+        "name": "Bias, Fairness & Culture"
+      },
+      {
+        "slug": "ai-safety-alignment",
+        "name": "AI Safety & Alignment"
       }
     ]
   },
@@ -1757,6 +1948,12 @@
         "seconds": 1750,
         "title": "The Future: Multilingual Safety & Adversarial Robustness"
       }
+    ],
+    "topics": [
+      {
+        "slug": "ai-safety-alignment",
+        "name": "AI Safety & Alignment"
+      }
     ]
   },
   {
@@ -1840,6 +2037,12 @@
         "time": "01:09:49",
         "seconds": 4189,
         "title": "Interdisciplinary Insights: AI and Human Cognition"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "language-cognition-brain",
+        "name": "Language, Cognition & the Brain"
       }
     ]
   },
@@ -1944,6 +2147,12 @@
         "time": "1:04:05",
         "seconds": 3845,
         "title": "Bridging the technical and policy worlds"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "ai-safety-alignment",
+        "name": "AI Safety & Alignment"
       }
     ]
   },
@@ -2063,6 +2272,16 @@
         "time": "1:15:09",
         "seconds": 4509,
         "title": "The single biggest gap in how multimodal models handle the visual world"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "evaluation-benchmarks",
+        "name": "Evaluation & Benchmarks"
+      },
+      {
+        "slug": "multimodal-embodied-ai",
+        "name": "Multimodal & Embodied AI"
       }
     ]
   },
@@ -2218,6 +2437,12 @@
         "seconds": 4504,
         "title": "Wrap-up"
       }
+    ],
+    "topics": [
+      {
+        "slug": "language-cognition-brain",
+        "name": "Language, Cognition & the Brain"
+      }
     ]
   },
   {
@@ -2326,6 +2551,16 @@
         "time": "1:08:48",
         "seconds": 4128,
         "title": "What's next: adaptive compression"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "multilingual-ai-tokenization",
+        "name": "Multilingual AI & Tokenization"
+      },
+      {
+        "slug": "language-cognition-brain",
+        "name": "Language, Cognition & the Brain"
       }
     ]
   }

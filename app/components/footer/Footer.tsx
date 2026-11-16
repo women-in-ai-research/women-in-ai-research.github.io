@@ -25,7 +25,7 @@ function FooterBrand() {
         Women in AI Research
       </h3>
       <p className="text-wiair-light">
-        Highlighting the women shaping the future of AI research
+        Celebrating female AI researchers from around the globe. By researchers, for researchers.
       </p>
     </div>
   );
