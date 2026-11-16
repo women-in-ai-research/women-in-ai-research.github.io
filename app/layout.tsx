@@ -5,11 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WiAIR — AI Research Podcast with Female AI Researchers",
+  title: "WiAIR Podcast — AI Research Through Women's Eyes",
   description:
     "Women in AI Research (WiAIR): in-depth interviews with female AI researchers from around the globe about their latest research. By researchers, for researchers.",
   openGraph: {
-    title: "WiAIR — AI Research Podcast with Female AI Researchers",
+    title: "WiAIR Podcast — AI Research Through Women's Eyes",
     description: "Celebrating the remarkable contributions of female AI researchers from around the globe",
     url: "https://women-in-ai-research.github.io/",
     siteName: "Women in AI Research",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WiAIR — AI Research Podcast with Female AI Researchers",
+    title: "WiAIR Podcast — AI Research Through Women's Eyes",
     description: "Celebrating the remarkable contributions of female AI researchers from around the globe",
     images: ["https://women-in-ai-research.github.io/images/logo.png"],
     creator: "@WiAIR_podcast",
