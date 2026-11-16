@@ -11,10 +11,21 @@
       "QPp0cJNBbL8",
       "CuTWIW1JcsA"
     ],
+    "eventVideoIds": [
+      "Xl0TtKjK2-Y",
+      "4_Gf_sGspWE",
+      "6IStjTTLZDo",
+      "HQSyMFc3QBc",
+      "VuJ_Mr4jtLE",
+      "9tis1ecLX5A",
+      "LSS1vHzanLU",
+      "HqJOEOiuv08",
+      "URhovF3RxxI"
+    ],
     "related": [
-      "reasoning-generalization",
+      "multimodal-embodied-ai",
       "ai-safety-alignment",
-      "hallucinations-trustworthiness"
+      "multilingual-ai-tokenization"
     ]
   },
   {
@@ -29,10 +40,17 @@
       "DEdJltlFg4I",
       "Gazs9u_XucE"
     ],
+    "eventVideoIds": [
+      "Xl0TtKjK2-Y",
+      "H7zvLiw10Oc",
+      "bydex6cwgEs",
+      "xcec0EpJQJ4",
+      "Qqpv8lFg4cY"
+    ],
     "related": [
-      "ai-for-health",
       "ai-safety-alignment",
-      "interpretability-explainability"
+      "multimodal-embodied-ai",
+      "ai-for-health"
     ]
   },
   {
@@ -46,10 +64,21 @@
       "Lsq3UzM8wIg",
       "rSC7L5WikcE"
     ],
+    "eventVideoIds": [
+      "mAtYbVZnR_U",
+      "VnABXJt6YXM",
+      "Sb_6MuO7bH4",
+      "VuJ_Mr4jtLE",
+      "H7zvLiw10Oc",
+      "rwso1FaTxDc",
+      "q42bUeh1KyA",
+      "xcec0EpJQJ4",
+      "JtlAMnZQVmU"
+    ],
     "related": [
-      "evaluation-benchmarks",
       "bias-fairness-culture",
-      "interpretability-explainability"
+      "interpretability-explainability",
+      "evaluation-benchmarks"
     ]
   },
   {
@@ -62,10 +91,17 @@
       "CuTWIW1JcsA",
       "SL8reoM8pGE"
     ],
+    "eventVideoIds": [
+      "rwso1FaTxDc",
+      "-cPYHmxwN14",
+      "oRc__glKUYg",
+      "qD0_aHQvdR8",
+      "g4Mc3NSCny0"
+    ],
     "related": [
-      "evaluation-benchmarks",
       "hallucinations-trustworthiness",
-      "interpretability-explainability"
+      "evaluation-benchmarks",
+      "ai-safety-alignment"
     ]
   },
   {
@@ -77,6 +113,11 @@
       "xYb6uokKKOo",
       "QPp0cJNBbL8",
       "SL8reoM8pGE"
+    ],
+    "eventVideoIds": [
+      "4_Gf_sGspWE",
+      "rwso1FaTxDc",
+      "CCPE58A_FCQ"
     ],
     "related": [
       "reasoning-generalization",
@@ -94,10 +135,16 @@
       "IalFROkCH0c",
       "osHrYXwCvpQ"
     ],
+    "eventVideoIds": [
+      "pJyndUbGl8o",
+      "VnABXJt6YXM",
+      "CCPE58A_FCQ",
+      "q42bUeh1KyA"
+    ],
     "related": [
-      "evaluation-benchmarks",
-      "bias-fairness-culture",
-      "ai-safety-alignment"
+      "ai-safety-alignment",
+      "hallucinations-trustworthiness",
+      "evaluation-benchmarks"
     ]
   },
   {
@@ -110,10 +157,18 @@
       "L9Sp-zauXwo",
       "pq4km-unw_M"
     ],
+    "eventVideoIds": [
+      "QYpI-tzG3s4",
+      "6IStjTTLZDo",
+      "KNSK8BWWuPI",
+      "9tis1ecLX5A",
+      "8wWj1z2dBI8",
+      "K3BUpKag_nA"
+    ],
     "related": [
+      "evaluation-benchmarks",
       "ai-safety-alignment",
-      "interpretability-explainability",
-      "language-cognition-brain"
+      "interpretability-explainability"
     ]
   },
   {
@@ -126,9 +181,14 @@
       "e36ryy0Dsdo",
       "PQx4IvJR8Bg"
     ],
+    "eventVideoIds": [
+      "pJyndUbGl8o",
+      "ADncPso9cbU"
+    ],
     "related": [
       "evaluation-benchmarks",
-      "multilingual-ai-tokenization"
+      "multilingual-ai-tokenization",
+      "interpretability-explainability"
     ]
   },
   {
@@ -141,10 +201,15 @@
       "RKIvrESep-g",
       "Z8VBnZmSUto"
     ],
+    "eventVideoIds": [
+      "Xl0TtKjK2-Y",
+      "9tis1ecLX5A",
+      "O5S0oe17InM"
+    ],
     "related": [
       "evaluation-benchmarks",
       "bias-fairness-culture",
-      "reasoning-generalization"
+      "multilingual-ai-tokenization"
     ]
   },
   {
@@ -156,11 +221,44 @@
       "QPp0cJNBbL8",
       "pq4km-unw_M"
     ],
+    "eventVideoIds": [
+      "pJyndUbGl8o",
+      "DogbPRjWX1k"
+    ],
     "related": [
       "evaluation-benchmarks",
-      "hallucinations-trustworthiness",
-      "multilingual-ai-tokenization"
+      "multilingual-ai-tokenization",
+      "interpretability-explainability"
     ]
+  },
+  {
+    "slug": "pretraining-data-scaling",
+    "name": "Pretraining, Data & Scaling",
+    "intro": "What a model learns depends on what it is trained on, and in what order. These conversations look at pretraining dynamics, how training data shapes model abilities, data mixtures and scaling laws, and when domain data belongs in pretraining rather than fine-tuning.",
+    "videoIds": [],
+    "eventVideoIds": [
+      "7b-A0Jrm2rA",
+      "pJyndUbGl8o",
+      "dIee9ci0gQo",
+      "LZsEasfVc7Q"
+    ],
+    "related": [
+      "interpretability-explainability",
+      "language-cognition-brain",
+      "open-science-data"
+    ]
+  },
+  {
+    "slug": "ai-agents-tool-use",
+    "name": "AI Agents & Tool Use",
+    "intro": "Language models are increasingly asked to act, not just answer. These conversations cover how agents call tools and understand what the tools return, how to make agent workflows faster, and why multi-agent systems fail.",
+    "videoIds": [],
+    "eventVideoIds": [
+      "KJvXr3O4wpQ",
+      "1YgxjHjnsPk",
+      "n9mM3GPaDXQ"
+    ],
+    "related": []
   },
   {
     "slug": "ai-for-health",
@@ -170,6 +268,7 @@
       "osHrYXwCvpQ",
       "DEdJltlFg4I"
     ],
+    "eventVideoIds": [],
     "related": [
       "bias-fairness-culture",
       "interpretability-explainability"

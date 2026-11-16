@@ -447,7 +447,7 @@ export async function main() {
   const noGuest = episodes.filter((e) => !e.guests.length).map((e) => `#${e.number} ${e.title}`);
   if (noGuest.length) console.log(`No guest found for: ${noGuest.join(" | ")}`);
 
-  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"));
+  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"), events);
   writeJson("app/data/episodes.json", episodes);
   writeJson("app/data/topics.json", topics);
   writeJson("app/data/events.json", events);
@@ -460,7 +460,8 @@ export async function main() {
 // ---------- topics ----------
 
 interface TopicsFile {
-  topics: { slug: string; name: string; intro: string; episodes: string[] }[];
+  // "videos" holds podcast episodes and event interviews; "episodes" is the older name for it.
+  topics: { slug: string; name: string; intro: string; videos?: string[]; episodes?: string[] }[];
 }
 
 export interface TopicRecord {
@@ -468,6 +469,7 @@ export interface TopicRecord {
   name: string;
   intro: string;
   videoIds: string[];
+  eventVideoIds: string[];
   related: string[];
 }
 
@@ -486,31 +488,40 @@ export function videoIdFromUrl(url: string): string {
  * Adds each episode's topics (from data/topics.json) to the episode records and
  * returns the topic list for the topic pages, with episodes newest first.
  */
-export function applyTopics(episodes: EpisodeRecord[], file: TopicsFile): TopicRecord[] {
+export function applyTopics(episodes: EpisodeRecord[], file: TopicsFile, events: EventGroup[] = []): TopicRecord[] {
   const byId = new Map(episodes.map((e) => [e.videoId, e]));
+  const eventById = new Map(events.flatMap((g) => g.videos.map((v) => [v.videoId, v] as [string, EventVideo])));
   for (const e of episodes) e.topics = [];
   const topics: TopicRecord[] = [];
   for (const t of file.topics) {
     const ids: string[] = [];
-    for (const link of t.episodes) {
+    const eventIds: string[] = [];
+    for (const link of t.videos ?? t.episodes ?? []) {
       const id = videoIdFromUrl(link);
       const ep = byId.get(id);
-      if (!ep) {
-        console.log(`Topic "${t.name}": ${link} is not a podcast episode; skipped.`);
-        continue;
+      if (ep) {
+        if (ids.includes(id)) continue;
+        ids.push(id);
+        ep.topics.push({ slug: t.slug, name: t.name });
+      } else if (eventById.has(id)) {
+        if (!eventIds.includes(id)) eventIds.push(id);
+      } else {
+        console.log(`Topic "${t.name}": ${link} is not a podcast episode or an event video on the site; skipped.`);
       }
-      if (ids.includes(id)) continue;
-      ids.push(id);
-      ep.topics.push({ slug: t.slug, name: t.name });
     }
     ids.sort((a, b) => byId.get(b)!.number - byId.get(a)!.number);
-    topics.push({ slug: t.slug, name: t.name, intro: t.intro, videoIds: ids, related: [] });
+    eventIds.sort((a, b) => eventById.get(b)!.publishedAt.localeCompare(eventById.get(a)!.publishedAt));
+    topics.push({ slug: t.slug, name: t.name, intro: t.intro, videoIds: ids, eventVideoIds: eventIds, related: [] });
   }
   // Related topics: the ones sharing the most episodes.
   for (const t of topics) {
     t.related = topics
       .filter((o) => o.slug !== t.slug)
-      .map((o) => ({ slug: o.slug, shared: o.videoIds.filter((id) => t.videoIds.includes(id)).length, size: o.videoIds.length }))
+      .map((o) => {
+        const mine = t.videoIds.concat(t.eventVideoIds);
+        const theirs = o.videoIds.concat(o.eventVideoIds);
+        return { slug: o.slug, shared: theirs.filter((id) => mine.includes(id)).length, size: theirs.length };
+      })
       .filter((o) => o.shared > 0)
       .sort((a, b) => b.shared - a.shared || b.size - a.size)
       .slice(0, 3)
@@ -524,7 +535,8 @@ export function applyTopics(episodes: EpisodeRecord[], file: TopicsFile): TopicR
 /** Re-applies data/topics.json to the existing episode data, without calling YouTube. */
 function topicsOnly() {
   const episodes = readJson<EpisodeRecord[]>("app/data/episodes.json");
-  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"));
+  const events = readJson<EventGroup[]>("app/data/events.json");
+  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"), events);
   writeJson("app/data/episodes.json", episodes);
   writeJson("app/data/topics.json", topics);
   console.log(`Wrote ${topics.length} topics.`);

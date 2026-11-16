@@ -5,7 +5,8 @@
         "title": "Founder & Host",
         "bio": "Dr. Jekaterina Novikova is the AI researcher with over 13 years of experience in natural language processing and human-AI interaction. She holds a Ph.D. in Computer Science from the University of Bath and has an extensive international experience working in the academia, industry and non-profits. She was recognized as one of the Top 50 Most Extraordinary Women Advancing AI In 2024, Top 25 Women in AI in Canada in 2022, received the \"Industry Icon Award\" by the University of Toronto in 2021, and included in the list of 30 Influential Women Advancing AI in Canada in 2018.",
         "imageUrl": "/images/about/jekaterina-novikova.jpg",
-        "visible": true
+        "visible": true,
+        "website": "https://jeknov.github.io/"
     },
     {
         "id": "4",

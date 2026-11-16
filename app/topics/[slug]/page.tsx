@@ -7,12 +7,16 @@ import { TopicButtons } from "@/app/components/topics/TopicButtons";
 import topicsData from "@/app/data/topics.json";
 import episodesData from "@/app/data/episodes.json";
 import guestsData from "@/app/data/guests.json";
+import eventsData from "@/app/data/events.json";
+import eventResearchers from "@/data/event-researchers.json";
+import { EventVideoCard } from "@/app/components/topics/EventVideoCard";
 
 interface Topic {
   slug: string;
   name: string;
   intro: string;
   videoIds: string[];
+  eventVideoIds: string[];
   related: string[];
 }
 
@@ -22,6 +26,18 @@ interface Guest {
   title: string;
   imageUrl: string;
   episodes: { number: number }[];
+}
+
+interface EventGroupData {
+  title: string;
+  videos: {
+    videoId: string;
+    title: string;
+    youtubeUrl: string;
+    thumbnailUrl: string;
+    publishDate: string;
+    durationSeconds: number;
+  }[];
 }
 
 const topics = topicsData as Topic[];
@@ -48,6 +64,14 @@ export default function TopicPage({ params }: { params: { slug: string } }) {
   const episodes = (episodesData as Episode[]).filter((e) => topic.videoIds.includes(e.videoId));
   const numbers = new Set(episodes.map((e) => e.number));
   const guests = (guestsData as Guest[]).filter((g) => g.episodes.some((e) => numbers.has(e.number)));
+  // Event interviews on this topic, with the researcher from data/event-researchers.json.
+  const researcherByVideo = new Map(
+    eventResearchers.researchers.map((r) => [r.video.split("v=")[1]?.slice(0, 11) ?? "", r])
+  );
+  const eventVideos = (eventsData as EventGroupData[])
+    .flatMap((g) => g.videos.map((v) => ({ ...v, eventTitle: g.title })))
+    .filter((v) => topic.eventVideoIds.includes(v.videoId))
+    .sort((a, b) => topic.eventVideoIds.indexOf(a.videoId) - topic.eventVideoIds.indexOf(b.videoId));
   const related = topic.related
     .map((slug) => topics.find((t) => t.slug === slug))
     .filter((t): t is Topic => !!t);
@@ -70,14 +94,19 @@ export default function TopicPage({ params }: { params: { slug: string } }) {
         <h1 className="text-4xl md:text-6xl font-bold text-white">{topic.name}</h1>
         <p className="text-lg md:text-xl text-gray-300 mt-6 max-w-3xl mx-auto leading-relaxed">{topic.intro}</p>
         <p className="text-wiair-light mt-4">
-          {episodes.length} {episodes.length === 1 ? "episode" : "episodes"}
+          {[
+            episodes.length ? `${episodes.length} ${episodes.length === 1 ? "episode" : "episodes"}` : "",
+            eventVideos.length ? `${eventVideos.length} conference ${eventVideos.length === 1 ? "interview" : "interviews"}` : "",
+          ].filter(Boolean).join(" · ")}
         </p>
       </header>
 
       {/* Episodes */}
-      <section aria-label={`${topic.name} episodes`} className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-        <EpisodeList episodes={episodes} />
-      </section>
+      {episodes.length > 0 && (
+        <section aria-label={`${topic.name} episodes`} className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+          <EpisodeList episodes={episodes} />
+        </section>
+      )}
 
       {/* Guests on this topic */}
       {guests.length > 0 && (
@@ -96,6 +125,30 @@ export default function TopicPage({ params }: { params: { slug: string } }) {
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {/* Conference and workshop interviews */}
+      {eventVideos.length > 0 && (
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-4 relative z-10">
+          <p className="text-wiair-light text-sm font-semibold tracking-widest uppercase mb-2 text-center md:text-left">
+            From conferences and workshops
+          </p>
+          <h2 className="text-2xl font-bold text-white mb-6 text-center md:text-left">Interviews recorded on site</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {eventVideos.map((v) => (
+              <EventVideoCard
+                key={v.videoId}
+                title={v.title}
+                youtubeUrl={v.youtubeUrl}
+                thumbnailUrl={v.thumbnailUrl}
+                publishDate={v.publishDate}
+                durationSeconds={v.durationSeconds}
+                eventTitle={v.eventTitle}
+                researcher={researcherByVideo.get(v.videoId)}
+              />
+            ))}
+          </div>
         </section>
       )}
 

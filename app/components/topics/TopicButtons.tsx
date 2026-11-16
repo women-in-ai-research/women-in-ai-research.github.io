@@ -4,11 +4,12 @@ interface Topic {
     slug: string;
     name: string;
     videoIds: string[];
+    eventVideoIds?: string[];
 }
 
 /** One button per topic, each opening that topic's page. */
 export function TopicButtons({ current, className = '' }: { current?: string; className?: string }) {
-    const topics = (topicsData as Topic[]).filter((t) => t.videoIds.length > 0);
+    const topics = (topicsData as Topic[]).filter((t) => t.videoIds.length + (t.eventVideoIds?.length ?? 0) > 0);
     return (
         <ul className={`flex flex-wrap gap-3 ${className}`} aria-label="Topics">
             {topics.map((t) => {
