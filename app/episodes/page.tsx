@@ -3,6 +3,7 @@
 import { Navbar } from "@/app/components/navigation/Navbar";
 import { EpisodeList } from "@/app/components/podcast/EpisodeList";
 import { Footer } from "@/app/components/footer/Footer";
+import { TopicButtons } from "@/app/components/topics/TopicButtons";
 
 export default function EpisodesPage() {
   
@@ -27,9 +28,17 @@ export default function EpisodesPage() {
             All Episodes
           </h1>
           <p className="text-xl text-gray-400 text-center mt-6 max-w-2xl mx-auto">
-            Conversations with leading women in AI research from around the globe.
+            In-depth conversations with female AI researchers from around the globe: the story behind the paper, and the person behind the story.
           </p>
         </div>
+      </div>
+
+      {/* Browse by topic */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 relative z-10">
+        <p className="text-wiair-light text-sm font-semibold tracking-widest uppercase mb-4 text-center">
+          Browse by topic
+        </p>
+        <TopicButtons className="justify-center" />
       </div>
 
       {/* Episodes Section */}

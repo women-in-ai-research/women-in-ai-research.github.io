@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "evaluation-benchmarks",
+    "name": "Evaluation & Benchmarks",
+    "intro": "How do we know what a model can really do? These episodes look at how AI systems are measured: which benchmarks and metrics we rely on, what they miss, and how researchers design evaluations that hold up beyond the leaderboard.",
+    "videoIds": [
+      "jtQq8NspkY4",
+      "rSC7L5WikcE",
+      "PQx4IvJR8Bg",
+      "IalFROkCH0c",
+      "QPp0cJNBbL8",
+      "CuTWIW1JcsA"
+    ],
+    "related": [
+      "reasoning-generalization",
+      "ai-safety-alignment",
+      "hallucinations-trustworthiness"
+    ]
+  },
+  {
+    "slug": "bias-fairness-culture",
+    "name": "Bias, Fairness & Culture",
+    "intro": "AI systems learn from data that carries our biases, hierarchies and cultural assumptions. These conversations cover how researchers find, measure and reduce bias, and how to build models that work fairly for people across cultures.",
+    "videoIds": [
+      "OZQqBWFUxQs",
+      "P-R0mU8_0U0",
+      "RKIvrESep-g",
+      "osHrYXwCvpQ",
+      "DEdJltlFg4I",
+      "Gazs9u_XucE"
+    ],
+    "related": [
+      "ai-for-health",
+      "ai-safety-alignment",
+      "interpretability-explainability"
+    ]
+  },
+  {
+    "slug": "ai-safety-alignment",
+    "name": "AI Safety & Alignment",
+    "intro": "What does it take for AI systems to behave as intended, even under pressure? These episodes cover jailbreaks and misuse, sycophancy and alignment failures, and the research on controlling model behaviour in the real world.",
+    "videoIds": [
+      "PWPbhfVB0LU",
+      "3QXHr743kwk",
+      "OZQqBWFUxQs",
+      "Lsq3UzM8wIg",
+      "rSC7L5WikcE"
+    ],
+    "related": [
+      "evaluation-benchmarks",
+      "bias-fairness-culture",
+      "interpretability-explainability"
+    ]
+  },
+  {
+    "slug": "reasoning-generalization",
+    "name": "Reasoning & Generalization",
+    "intro": "Can language models reason, or do they match patterns they have seen before? These conversations examine the limits of transformers, how models generalize to new tasks and languages, and how to tell real reasoning from a convincing story.",
+    "videoIds": [
+      "gzQiDCG_j7A",
+      "IalFROkCH0c",
+      "CuTWIW1JcsA",
+      "SL8reoM8pGE"
+    ],
+    "related": [
+      "evaluation-benchmarks",
+      "hallucinations-trustworthiness",
+      "interpretability-explainability"
+    ]
+  },
+  {
+    "slug": "hallucinations-trustworthiness",
+    "name": "Hallucinations & Trustworthiness",
+    "intro": "Models can sound confident and still be wrong. These episodes explore why language models hallucinate, how to measure factuality and faithfulness, and when we can trust a model's answers and explanations.",
+    "videoIds": [
+      "gzQiDCG_j7A",
+      "xYb6uokKKOo",
+      "QPp0cJNBbL8",
+      "SL8reoM8pGE"
+    ],
+    "related": [
+      "reasoning-generalization",
+      "evaluation-benchmarks",
+      "interpretability-explainability"
+    ]
+  },
+  {
+    "slug": "interpretability-explainability",
+    "name": "Interpretability & Explainability",
+    "intro": "What is happening inside a model, and can it explain its own decisions? These conversations cover explainable AI, the faithfulness of model explanations, and methods for uncovering the root causes of model behaviour.",
+    "videoIds": [
+      "Lsq3UzM8wIg",
+      "xYb6uokKKOo",
+      "IalFROkCH0c",
+      "osHrYXwCvpQ"
+    ],
+    "related": [
+      "evaluation-benchmarks",
+      "bias-fairness-culture",
+      "ai-safety-alignment"
+    ]
+  },
+  {
+    "slug": "multilingual-ai-tokenization",
+    "name": "Multilingual AI & Tokenization",
+    "intro": "Most AI is built for a handful of languages. These episodes look at multilingual and low-resource language models, how models behave across languages, and how tokenization shapes what a model can learn.",
+    "videoIds": [
+      "XLixB8pSdC4",
+      "Lsq3UzM8wIg",
+      "L9Sp-zauXwo",
+      "pq4km-unw_M"
+    ],
+    "related": [
+      "ai-safety-alignment",
+      "interpretability-explainability",
+      "language-cognition-brain"
+    ]
+  },
+  {
+    "slug": "language-cognition-brain",
+    "name": "Language, Cognition & the Brain",
+    "intro": "What can neuroscience and linguistics tell us about language models, and what can language models tell us about the mind? These conversations bridge cognitive science, the brain's language network and modern AI.",
+    "videoIds": [
+      "XLixB8pSdC4",
+      "efnZkH7Y9j0",
+      "e36ryy0Dsdo",
+      "PQx4IvJR8Bg"
+    ],
+    "related": [
+      "evaluation-benchmarks",
+      "multilingual-ai-tokenization"
+    ]
+  },
+  {
+    "slug": "multimodal-embodied-ai",
+    "name": "Multimodal & Embodied AI",
+    "intro": "AI that sees, describes and interacts with the world. These episodes cover vision-language models, how we evaluate image descriptions, multimodal reasoning, and robots designed to understand human emotion.",
+    "videoIds": [
+      "jtQq8NspkY4",
+      "gzQiDCG_j7A",
+      "RKIvrESep-g",
+      "Z8VBnZmSUto"
+    ],
+    "related": [
+      "evaluation-benchmarks",
+      "bias-fairness-culture",
+      "reasoning-generalization"
+    ]
+  },
+  {
+    "slug": "open-science-data",
+    "name": "Open Science & Data",
+    "intro": "Who gets to build and study AI, and with what data? These conversations cover open-source language models, data transparency and attribution, and decentralized, collaborative approaches to training.",
+    "videoIds": [
+      "DPhqm1EHxtU",
+      "QPp0cJNBbL8",
+      "pq4km-unw_M"
+    ],
+    "related": [
+      "evaluation-benchmarks",
+      "hallucinations-trustworthiness",
+      "multilingual-ai-tokenization"
+    ]
+  },
+  {
+    "slug": "ai-for-health",
+    "name": "AI for Health",
+    "intro": "Applying AI in medicine brings its own challenges: messy data, high stakes and the need to work closely with clinicians. These episodes discuss building fair, interpretable and robust models for healthcare.",
+    "videoIds": [
+      "osHrYXwCvpQ",
+      "DEdJltlFg4I"
+    ],
+    "related": [
+      "bias-fairness-culture",
+      "interpretability-explainability"
+    ]
+  }
+]

@@ -25,6 +25,8 @@ interface Config {
   channelHandle: string;
   podcastPlaylistIds: string[];
   excludeVideoIds: string[];
+  eventPlaylistIds: string[];
+  eventTag: string;
   includeShortsInEvents: boolean;
   shortsMaxSeconds: number;
   spotifyShowUrl: string;
@@ -79,6 +81,7 @@ export interface EpisodeRecord {
   podcast: string;
   guests: string[];
   chapters: Chapter[];
+  topics: { slug: string; name: string }[];
 }
 
 export interface EventVideo {
@@ -303,7 +306,19 @@ export async function main() {
   const uploadIds = (await apiAll("playlistItems", { part: "contentDetails", playlistId: uploadsId })).map(
     (it) => it.contentDetails.videoId as string
   );
-  const allIds = Array.from(new Set(uploadIds.concat(podcasts.flatMap((p) => p.videoIds))));
+  // Event playlists: listed in the config, or tagged (e.g. "[Events]") in their YouTube description.
+  const tag = (config.eventTag || "[Events]").toLowerCase();
+  const eventPlaylists = playlists.filter(
+    (p) => !podcastIds.includes(p.id) && (config.eventPlaylistIds.includes(p.id) || p.description.toLowerCase().includes(tag))
+  );
+  for (const id of config.eventPlaylistIds) {
+    if (!playlists.some((p) => p.id === id)) console.log(`Event playlist ${id} not found among the channel's public playlists; skipped.`);
+  }
+  console.log(`Event playlists: ${eventPlaylists.map((p) => p.title).join(", ") || "none"}`);
+
+  const allIds = Array.from(
+    new Set(uploadIds.concat(podcasts.flatMap((p) => p.videoIds), eventPlaylists.flatMap((p) => p.videoIds)))
+  );
   const videos = new Map<string, Video>();
   for (let i = 0; i < allIds.length; i += 50) {
     const batch = await api("videos", {
@@ -356,51 +371,47 @@ export async function main() {
       podcast: episodeOwner.get(v.id)!,
       guests: guests.map((g) => g.name),
       chapters: parseChapters(v.description),
+      topics: [],
     };
   });
 
-  // 5. Events: every other long-form public video, grouped by its most specific playlist.
+  // 5. Events: only the event playlists. A video in several event playlists goes to the most specific one.
   const isShort = (v: Video) => v.durationSeconds > 0 && v.durationSeconds <= config.shortsMaxSeconds;
-  const eventIds = uploadIds.filter(
-    (id) => usable(id) && !episodeOwner.has(id) && (config.includeShortsInEvents || !isShort(videos.get(id)!))
-  );
-  const otherPlaylists = playlists
-    .filter((p) => !podcastIds.includes(p.id))
-    .sort((a, b) => a.videoIds.length - b.videoIds.length);
-  const groups = new Map<string, EventGroup>();
-  for (const id of eventIds) {
-    const v = videos.get(id)!;
-    const pl = otherPlaylists.find((p) => p.videoIds.includes(id));
-    const key = pl?.id ?? "_other";
-    if (!groups.has(key)) {
-      groups.set(key, {
-        id: pl ? pl.id : "more-videos",
-        title: pl ? pl.title : "More videos",
-        description: pl?.description ?? "",
-        playlistUrl: pl ? `https://www.youtube.com/playlist?list=${pl.id}` : null,
-        videos: [],
+  const bySize = [...eventPlaylists].sort((a, b) => a.videoIds.length - b.videoIds.length);
+  const placed = new Set<string>();
+  const events: EventGroup[] = [];
+  for (const pl of bySize) {
+    const vids: EventVideo[] = [];
+    for (const id of pl.videoIds) {
+      if (placed.has(id) || !usable(id) || episodeOwner.has(id)) continue;
+      const v = videos.get(id)!;
+      if (!config.includeShortsInEvents && isShort(v)) continue;
+      placed.add(id);
+      vids.push({
+        videoId: v.id,
+        title: v.title,
+        description: v.description,
+        publishedAt: v.publishedAt,
+        publishDate: formatDate(v.publishedAt),
+        durationSeconds: v.durationSeconds,
+        thumbnailUrl: v.thumbnailUrl,
+        youtubeUrl: `https://www.youtube.com/watch?v=${v.id}`,
       });
     }
-    groups.get(key)!.videos.push({
-      videoId: v.id,
-      title: v.title,
-      description: v.description,
-      publishedAt: v.publishedAt,
-      publishDate: formatDate(v.publishedAt),
-      durationSeconds: v.durationSeconds,
-      thumbnailUrl: v.thumbnailUrl,
-      youtubeUrl: `https://www.youtube.com/watch?v=${v.id}`,
+    if (!vids.length) continue;
+    vids.sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
+    events.push({
+      id: pl.id,
+      title: pl.title,
+      // The tag is for the sync only; don't show it on the site.
+      description: pl.description.replace(new RegExp(tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "").trim(),
+      playlistUrl: `https://www.youtube.com/playlist?list=${pl.id}`,
+      videos: vids,
     });
   }
-  const events = Array.from(groups.values());
-  for (const g of events) g.videos.sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
-  // Most recent event first; the catch-all group always last.
-  events.sort((a, b) => {
-    if (a.id === "more-videos") return 1;
-    if (b.id === "more-videos") return -1;
-    const last = (g: EventGroup) => g.videos[g.videos.length - 1].publishedAt;
-    return last(b).localeCompare(last(a));
-  });
+  const eventIds = Array.from(placed);
+  // Most recent event first.
+  events.sort((a, b) => b.videos[b.videos.length - 1].publishedAt.localeCompare(a.videos[a.videos.length - 1].publishedAt));
 
   // 6. Guests: one entry per person, newest first, hand-edited details win.
   const overrideFor = (name: string) => {
@@ -436,7 +447,9 @@ export async function main() {
   const noGuest = episodes.filter((e) => !e.guests.length).map((e) => `#${e.number} ${e.title}`);
   if (noGuest.length) console.log(`No guest found for: ${noGuest.join(" | ")}`);
 
+  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"));
   writeJson("app/data/episodes.json", episodes);
+  writeJson("app/data/topics.json", topics);
   writeJson("app/data/events.json", events);
   writeJson("app/data/guests.json", guestList);
   console.log(
@@ -444,7 +457,84 @@ export async function main() {
   );
 }
 
+// ---------- topics ----------
+
+interface TopicsFile {
+  topics: { slug: string; name: string; intro: string; episodes: string[] }[];
+}
+
+export interface TopicRecord {
+  slug: string;
+  name: string;
+  intro: string;
+  videoIds: string[];
+  related: string[];
+}
+
+/** The video ID in a YouTube link (watch?v=, youtu.be/, /live/, /embed/), or the ID itself. */
+export function videoIdFromUrl(url: string): string {
+  const s = url.trim();
+  const m =
+    s.match(/[?&]v=([\w-]{11})/) ||
+    s.match(/youtu\.be\/([\w-]{11})/) ||
+    s.match(/\/(?:live|embed|shorts)\/([\w-]{11})/);
+  if (m) return m[1];
+  return /^[\w-]{11}$/.test(s) ? s : "";
+}
+
+/**
+ * Adds each episode's topics (from data/topics.json) to the episode records and
+ * returns the topic list for the topic pages, with episodes newest first.
+ */
+export function applyTopics(episodes: EpisodeRecord[], file: TopicsFile): TopicRecord[] {
+  const byId = new Map(episodes.map((e) => [e.videoId, e]));
+  for (const e of episodes) e.topics = [];
+  const topics: TopicRecord[] = [];
+  for (const t of file.topics) {
+    const ids: string[] = [];
+    for (const link of t.episodes) {
+      const id = videoIdFromUrl(link);
+      const ep = byId.get(id);
+      if (!ep) {
+        console.log(`Topic "${t.name}": ${link} is not a podcast episode; skipped.`);
+        continue;
+      }
+      if (ids.includes(id)) continue;
+      ids.push(id);
+      ep.topics.push({ slug: t.slug, name: t.name });
+    }
+    ids.sort((a, b) => byId.get(b)!.number - byId.get(a)!.number);
+    topics.push({ slug: t.slug, name: t.name, intro: t.intro, videoIds: ids, related: [] });
+  }
+  // Related topics: the ones sharing the most episodes.
+  for (const t of topics) {
+    t.related = topics
+      .filter((o) => o.slug !== t.slug)
+      .map((o) => ({ slug: o.slug, shared: o.videoIds.filter((id) => t.videoIds.includes(id)).length, size: o.videoIds.length }))
+      .filter((o) => o.shared > 0)
+      .sort((a, b) => b.shared - a.shared || b.size - a.size)
+      .slice(0, 3)
+      .map((o) => o.slug);
+  }
+  const untagged = episodes.filter((e) => !e.topics.length).map((e) => `#${e.number} ${e.title}`);
+  if (untagged.length) console.log(`Episodes without a topic: ${untagged.join(" | ")}`);
+  return topics;
+}
+
+/** Re-applies data/topics.json to the existing episode data, without calling YouTube. */
+function topicsOnly() {
+  const episodes = readJson<EpisodeRecord[]>("app/data/episodes.json");
+  const topics = applyTopics(episodes, readJson<TopicsFile>("data/topics.json"));
+  writeJson("app/data/episodes.json", episodes);
+  writeJson("app/data/topics.json", topics);
+  console.log(`Wrote ${topics.length} topics.`);
+}
+
 if (require.main === module) {
+  if (process.argv.includes("--topics-only")) {
+    topicsOnly();
+    process.exit(0);
+  }
   main().catch((err) => {
     console.error(err instanceof Error ? err.message : err);
     process.exit(1);

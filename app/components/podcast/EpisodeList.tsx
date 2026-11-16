@@ -24,16 +24,19 @@ export interface Episode {
     youtubeUrl: string;
     podcast: string;
     guests: string[];
+    topics?: { slug: string; name: string }[];
     chapters: Chapter[];
 }
 
 interface EpisodeListProps {
     limit?: number;
+    /** Episodes to show instead of all of them (e.g. one topic's). */
+    episodes?: Episode[];
 }
 
 const episodes = episodeData as Episode[];
 
-function EpisodeCard({ episode }: { episode: Episode }) {
+export function EpisodeCard({ episode }: { episode: Episode }) {
     const [expanded, setExpanded] = useState(false);
     const [isTruncated, setIsTruncated] = useState(false);
     const descriptionRef = useRef<HTMLDivElement>(null);
@@ -87,6 +90,20 @@ function EpisodeCard({ episode }: { episode: Episode }) {
                     <p className="text-wiair-light text-sm mb-3 text-center md:text-left">
                         {meta}
                     </p>
+                    {episode.topics && episode.topics.length > 0 && (
+                        <ul className="flex flex-wrap gap-2 mb-3 justify-center md:justify-start" aria-label="Topics">
+                            {episode.topics.map((t) => (
+                                <li key={t.slug}>
+                                    <a
+                                        href={`/topics/${t.slug}/`}
+                                        className="inline-block px-3 py-1 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                                    >
+                                        {t.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                     <div className="text-gray-300 text-left">
                         <div ref={descriptionRef} className={`relative ${expanded ? '' : 'max-h-24 overflow-hidden'}`}>
                             <RichText text={description} />
@@ -140,10 +157,10 @@ function EpisodeCard({ episode }: { episode: Episode }) {
 
 const EPISODES_PER_PAGE = 6;
 
-export function EpisodeList({ limit }: EpisodeListProps) {
+export function EpisodeList({ limit, episodes: only }: EpisodeListProps) {
     const [currentPage, setCurrentPage] = useState(1);
 
-    const visibleEpisodes = [...episodes].sort((a, b) => b.number - a.number);
+    const visibleEpisodes = [...(only ?? episodes)].sort((a, b) => b.number - a.number);
 
     // If limit is set (e.g. homepage), show without pagination
     if (limit) {
