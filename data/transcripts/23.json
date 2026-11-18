@@ -1,0 +1,415 @@
+{
+ "episode": 23,
+ "videoId": "PWPbhfVB0LU",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "We can't even encode our goals anymore. Because the system just wants to say, you're good. There is no corrections. There's no clarifications. There's no, don't know, you don't know, or are you confident? it's just scary to what extent these models just want to keep us happy at the moment."
+  },
+  {
+   "t": 22,
+   "text": "policy defines the optimization landscape. If systems are rewarded for engagement, for agreement, they will shape user beliefs rather than improving them, You might have a model that stays below the threshold in our current policies in terms of size that might introduce catastrophic risks, but the system might still influence beliefs of people. and might remove agencies from them in ways that might put our society in danger."
+  },
+  {
+   "t": 58,
+   "text": "I think at some point as a researcher you would want to ask yourself what is it that I really want to do? What is the impact that I really want to have in the world? How do I share that story, whether it's science improvement, whether it's policy improvement or actual system deployment? also I think we would want to"
+  },
+  {
+   "t": 80,
+   "text": "you know, not be super idealistic and don't always optimize for what can get published, you know, and really think about different ways, different creative ways that we can share impact with the world through our expertise."
+  },
+  {
+   "t": 121,
+   "text": "Thank you for joining me today, Malihe. So I'd like to start with a couple of more personal questions because I want to understand a little bit more how you came to the point you are in So your career has taken you to some very different places."
+  },
+  {
+   "t": 145,
+   "text": "it's about advising Congress as a science and technology advisor. And then you were collaborating with the United Nations on the AI work in Africa. And now you're leading a research lab at Northeastern. So for women in AI research who are thinking right now about the kind of impact that they want to have, how has moving across all these different contexts shaped you as a result? Thank you for having me. I'm glad to be here. You know, I think moving across these contexts has fundamentally changed how I think about language, about intelligence and artificial intelligence and particularly system design."
+  },
+  {
+   "t": 196,
+   "text": "Often in natural language processing, we treat language as a mapping between text to word or text to video. But in real world settings, meaning is not contained in one modality or couple. It is constructed through use, through context and consequences that it has. what became clear to me is that language is not just a representation of a word, but it's a mechanism that actively shapes the world. So in Congress, language does not just describe policy. It becomes policy itself. It becomes who we are in the world and what ultimately is going to change at scale our reality."
+  },
+  {
+   "t": 242,
+   "text": "And that happens to NLP system. these days with large language models and similar AI systems. And I think in deployed AI systems, know, language is not passive anymore. It has been actively changing users' behaviors. We are different because we use AI in different ways these days. And we are different in ways that we make decisions and we trust information So I think the core shift in my work was moving from asking questions like, how do we design model or how, what does the model output mean? what does the model do within a system of human interaction and how is it changing us around us, society?"
+  },
+  {
+   "t": 287,
+   "text": "What are the real impacts? and what are the power dynamics in this case? much of human communication relies on shared understanding and assumptions as opposed to what is exactly literally externalized. I think current models are very strong at processing explicit signals often, but they are still quite limited when it comes to representing and reasoning over shared latent context and I'm sure we'll get to this topic, but the notion of alignment with the users, with the goals, with our societies. And so I think for me, moving across this environment, it has made it impossible to think about AI systems as isolated task-oriented systems, but really more towards social and institutional processes that we're moving"
+  },
+  {
+   "t": 350,
+   "text": "through together."
+  },
+  {
+   "t": 351,
+   "text": "That's a very interesting trajectory of moving across those different contexts. right now you are building the lab of your own at the Northeastern, the contextual AI lab. And I would love to hear. a little bit more about that space that you are building. So can you tell me a little bit about your lab and the vision behind that? You know. I started Contextual AI Lab when I graduated in the middle of COVID. And much of my dissertation was exploring the contextual features in between modalities and communication amongst images and text and context in dialogue, when context is long, what are the impacts on our cognition and on the systems."
+  },
+  {
+   "t": 408,
+   "text": "And so a lot of you know, contextual problems, right, you from that standpoint of, you know, recent PhD student. And I wanted to build a lab that deeply studies the contextual features of language in society and environment and different states. So really thinking about that the core promise of my lab contextual AI is that meaning is a function of context and not just that representation. And so, you know, the problems we work on, we have worked on in the last few years, it spans towards contextual language understanding in generation. We've worked on different modalities such as gaze, gesture, sign language. We have worked on a variety of evaluation techniques, especially when humans are involved in the loop and how we can make that fair and community centered and user centered."
+  },
+  {
+   "t": 470,
+   "text": "We've developed several systems that have been deployed in hospitals, schools, also internationally through the Amazon Alexa competition. systems that work within different contexts for different people and we've always had a focus on diversity in NLP. Culturally, know, the lab is a place where people come with what, you know, I think I'm very proud of this. I feel like there is a space for people to bring who they are. bring their own questions within the context of the lab. So if you look at my students, you know, one of them is working on writing a dissertation on sign language, the other one completely on fairness, the other one, you know, is exploring self-awareness and consciousness and models, you know, not real, not like human consciousness, but to what extent we can know and interpret."
+  },
+  {
+   "t": 535,
+   "text": "And so people bring their passions, people bring who they are and the impact and they will be challenge to think about the impact of their work, especially the first two years as they're shaping up the idea of a dissertation, for example. most of our projects, I should say, although we have works in the space of theoretical machine learning or core machine learning, most of our projects have real world users and consequences in the study of that. So it's sort of, you know, I would say like at a deeper level,"
+  },
+  {
+   "t": 575,
+   "text": "we are moving from static prediction to interactive inference and how we can embed that in context and society."
+  },
+  {
+   "t": 586,
+   "text": "When you say interactive inference, what exactly do you mean? think we treat interaction as a partially observable process where the system must infer user intent, a knowledge state and uncertainty."
+  },
+  {
+   "t": 604,
+   "text": "get closer to communication as a dynamic system. I firmly believe that with more data, we won't be able to teach models everything in the world. But we have to teach them to."
+  },
+  {
+   "t": 621,
+   "text": "move in the world and interact with partial information, but know how to deal with uncertainty, know how to deal with different contextual nuances, and they're often very subtle. So rather than more data, more observation and more prediction, which is absolutely needed, I think there's one focus in the lab that is thinking about that interactive inference in real time with users. especially because we work with deaf students, we work with cancer patients, we work with, you know, in UN applications for, you know, how the social media signal is changing and how can we potentially stop violence and so on."
+  },
+  {
+   "t": 670,
+   "text": "or the work that we have with robots. There's a lot of online, you know, in the moment situational decision that the system has to make and the system has to negotiate, you know, has to stop and ask a question. The system needs to stop and say, I'm not sure. I don't know where I'm going. Are you sure that I can enter this room or you know? And so I think all of that is definitely part of our research mission."
+  },
+  {
+   "t": 702,
+   "text": "speaking of the work that comes out of your lab, I noticed that your students and the work of your students have won quite a few best paper awards across different venues. the recognition signs that"
+  },
+  {
+   "t": 728,
+   "text": "researchers can get from the research community. I imagine that early career researchers that are listening to us right now may wonder what you think makes a piece of work stand out. I think in my cases, in our cases for best paper awards, like I think the strongest work usually identifies the field is optimizing either the wrong objective or something that at the time might not be as important as it was three years ago, right? And we're always building. And so I think instead of improving metrics, sometimes it's important for us to pause and think about how can we challenge those metrics or how can we bring in ideas that we're truly passionate about."
+  },
+  {
+   "t": 782,
+   "text": "think my first best paper award was on one of the works that we did on sign language. The paper is called Including Sign Languages in NLP. And so that paper, the idea was, we came up with the idea because it was during COVID. And as you remember immediately most of us switched to zoom schools were online suddenly and that challenged hard of hearing students and deaf students because they didn't have immediately apps and platforms and services that they can switch to and I remember I did a search in the whole anthology ACL anthology in the past 20 years and this is 2020 so you go back 20 years and I saw there are only three to four papers on sign language and that's about the linguistics of it which is wonderful as opposed to how can we really leverage the technology for them. And so that sparked an idea and we you know built a team and that paper became a success and I think again thanks to the reviewers and the community members who recognized that as a real need and you know helped us and now that is a track of our NLP conferences."
+  },
+  {
+   "t": 861,
+   "text": "in just in the last four years there are over 100 papers published in this field. I guess another important point is how we communicate our research. A lot of research is the art of communication and how we write. I guess we had this paper that was rejected for two times. It was an uncertainty quantification. And then we were just persistent and we took the feedback and changed the framing. And the third time we submitted won the best paper award of a conference. And it became one of those works that a lot of people who are interested in uncertainty the quantification site and use it in other communities."
+  },
+  {
+   "t": 910,
+   "text": "It's important to find people who can guide you, who can give you feedback. Doing good research is important and is one thing, but communicating it well is another thing."
+  },
+  {
+   "t": 924,
+   "text": "Right, I totally love stories like that, like the one that you have told that the paper was rejected several times and then it won the best paper award."
+  },
+  {
+   "t": 940,
+   "text": "It shows how much that perseverance and patience and a little bit of trust in what you are doing. It takes you a long way in research. 100%. And this is one of the, one of the advice they give to masters and PhD students. Sometimes the students are, they want to rush, you know, they want to get something in three months. And if they're not getting it, they switch project and they want to switch another project. But what you said is really important. It's just really trusting what you've come up with and what you see as important"
+  },
+  {
+   "t": 981,
+   "text": "you have mentioned already several times that the umbrella of everything that you and your students in your lab are doing is the commitment to building AI that serves actual people, and whether it's in health, sign language, anti-violence, or education, or other areas. I wonder, was there a moment in your career when you realized that building better systems is not enough just on its own?"
+  },
+  {
+   "t": 1025,
+   "text": "There is something else needed to happen to the system so that those systems could actually reach and protect the people, A hundred percent. think, you know, the moment you deploy a system, you know, anyone who has deployed systems, you know, going a little bit beyond an academic paper, but actually going to community centers or classrooms or, you know, hospitals and testing your model. Like you will see that, you know, suddenly the data is not as clean. The assumptions are not as clean that users are not cooperating."
+  },
+  {
+   "t": 1066,
+   "text": "or even more important than that, their goals and needs are not calibrated properly and really applied through system design and the environments are not stable. as you know very well, language is such a creative way of shaping the world and communicating with the world. And each time you interact with it, you see new things, there are new risks, there are new adjustments that you need to make for the system. So I think real systems truly operate on their distribution shifts, power asymmetries. We've seen this in deploying systems for deaf and hard of hearing students, for example, where you see AI or the system might gain more trust and interest than the users need. This I have also observed in the hospital context, and it just breaks my heart. We don't give the power."
+  },
+  {
+   "t": 1124,
+   "text": "to AI. give the, we do this for people. And so It's very important for us to understand that the information is incomplete. are power asymmetries and power dynamics where the systems are deployed with nurses and doctors and teachers and, know, for safety reasons or for policy. And there are various distribution shifts separate working with technically in the model. You know, and so your model, although it might at the surface work, it might have probably fail systematically in practice when it's deployed. When we run surveys, we see that sometimes the trust goes down or the trust goes up after a while, depending on how you take into account the user's needs or the interactions."
+  },
+  {
+   "t": 1179,
+   "text": "And so I think there is a deeper realization that failures are not random in these cases and that there are structures along social and contextual dimensions that we can bring into our system design, that we can bring into our studies. And then you know you can always argue that not all everything that goes into the alignment of building systems for real world application can be packaged into a paper. And that's okay. I think there is a there's at certain point in my career I learned I can I would like to try as much as I can to share with my scientific community everything that I'm doing."
+  },
+  {
+   "t": 1226,
+   "text": "But there is no idealistic scientific community that has a space and acceptances and awards for everything that you do. And so I think at some point as a researcher you would want to ask yourself what is it that I really want to do? What is the impact that I really want to have in the world?"
+  },
+  {
+   "t": 1246,
+   "text": "How do I share that story, whether it's science improvement, whether it's policy improvement or actual system deployment? And I think I've gotten better at it over time too. At the beginning, it was more challenging finding voice and knowing how to package. And It gets better, but also I think we would want to"
+  },
+  {
+   "t": 1273,
+   "text": "you know, not be super idealistic and don't always optimize for what can get published, you know, and really think about different ways, different creative ways that we can share impact with the world through our expertise."
+  },
+  {
+   "t": 1292,
+   "text": "One thought that I had immediately when you started describing how the actual users do not necessarily care about what we as researchers care about was when I started working at the industry, the first thing that surprised me immediately was users do not really care about that accuracy. Even if it is 90 % accuracy, it does not impress them. And yeah, it was a bit of a change of perspective for me But what you said really sets the stage for what I want to speak about next."
+  },
+  {
+   "t": 1338,
+   "text": "you have written recently several very interesting AI policy articles And I'd like to go through some of them. So let's start with the article that's named breaking the AI mirror. it speaks about something that I think is sometimes underappreciated as a risk when people are working with AI today, which is sycophancy. Could you please explain what this concept mean, first of all, and how you decided to think about that For sure, yeah. So, sycophancy is the sort of overly flattery behavior of AI systems. What I would call to, the way I like to define it is by saying that sycophancy is actually a collapse of alignment."
+  },
+  {
+   "t": 1407,
+   "text": "Instead of model aligning to our goals, the model aligns to instant gratification and instant likes and, you know, keeping us engaged and so on. so that shift of immediate reward from the main goal is called sycophancy. And for years and years in our community, we've designed systems that can book hotel rooms for us. They can walk us to a different location. Our systems were very goal oriented and they would lead the users step by step to achieve their goals. Like if you remember these really annoying systems from a few years ago, right? They would say, now tell me this, now tell me what toppings you like."
+  },
+  {
+   "t": 1457,
+   "text": "So they would keep us on track and really make sure we're, you know, achieving the goal. Whereas now talking with AI models and in these sort of the space of large language models, it seems that they keep distracting the users that often, especially if the conversation is longer, as opposed to getting them to where they should be. you know, so it's like both a blessing and a curse that they're more flexible now, right? And I think this is an important behavior because it's a deep bias in us humans like to be flat and flatter, you know, and if you keep saying you know, telling someone you're perfect, you're right, you know, and especially think about it in adolescence, like there's been studies that show that in younger people, even one round of interaction with Claude or other similar models would keep them away from future interactions with people."
+  },
+  {
+   "t": 1518,
+   "text": "Because think about it, like if Claude is telling you're doing right on a homework problem, or not challenge you, why would you go talk to a friend or to a teacher? Right. And so even one round of interaction with sycophantic models is keeping people away from initiating human conversations or interactions. And so, you know, as someone who has been always doing research in goal-oriented systems and common ground and common sense, suddenly when we started shifting to other labs, we were like, what is happening? We can't even encode our goals anymore."
+  },
+  {
+   "t": 1560,
+   "text": "Because the system just wants to say, you're good. There is no corrections. There's no clarifications. There's no, don't know, you don't know, or are you confident? So then we started working on classifying and studying the problem. So we worked on a range of tasks from negotiation data sets to legal data sets, to Q &A, scientific question answering, a range of tasks, believe over 11 tasks. we studied how LLMs collaborate with people on these tasks. you know, so And the result was scary at the time."
+  },
+  {
+   "t": 1610,
+   "text": "There are solutions, obviously, for it. Now we know. But it's just scary to what extent these models just want to keep us happy at the moment."
+  },
+  {
+   "t": 1623,
+   "text": "what I find especially interesting in your perspective towards that problem is that when I read about it, about LLM's tendency to be sycophantic. Usually it is framed as the model quality problem, just like that. And I see you framing that more like a productivity problem, So could you walk me through that view? in our study, we wanted to know if the model alone is asked to answer a range of questions, again, from legal to scientific to negotiations."
+  },
+  {
+   "t": 1673,
+   "text": "What are the chances that the model would get the answers right? And if the model is interacting with the human user, how that changes, because that as you nicely framed it, is a way of defining productivity, right? If these models are interacting with us, they're gonna have to improve our productivity, improve the rates, and people need to help the AI also to improve the answer. And what we observed was that when people are not confident about an answer and they chat shared that with AI. AI would prioritize sycophantic behavior and making the user happy by changing its answers. So if a user was guiding AI in a wrong place, AI would easily go down that path."
+  },
+  {
+   "t": 1726,
+   "text": "And so the accuracy is just dropped when the users were not confident. And when the users knew what they're saying, then the accuracies went up. So it went even beyond the baseline of LLMs answering those questions. And so what we then tried to change was, well, what if users would externalize their uncertainties and say, I'm not sure, or I'm only 20 % sure that this is the answer. What do you think? As opposed to saying, I think this is the answer."
+  },
+  {
+   "t": 1763,
+   "text": "Or the user would say, I'm highly confident that the answer to this question is this. And that changed drastically the behavior of AI. And so it reduced sycophancy by up to 60 % in some cases, in some contexts. Another important signal is, or behavior is asking the model how confident the model is. Because when you remind the model of its own confidence about something, it would change its behavior. So it would weigh your answer differently or it would change behavior and produce a different answer when you remind that it seems that you're not very sure. You don't have the answer to this question."
+  },
+  {
+   "t": 1815,
+   "text": "And so that's important. And in another study, Thank we also found that sycophancy is such a complex problem, right? Because again, it's a context problem."
+  },
+  {
+   "t": 1830,
+   "text": "a model and ask my friend invited me to her birthday party. I'm kind of tired. Should I go? Should I not go? And that makes this context very different from something that can lead to a medical misinformation, for example, right? Because you know, it's a question about vaccine. It can save people's lives and you're asking it from an LLM. So I think in different contexts, we're going to have to deal with this problem differently."
+  },
+  {
+   "t": 1860,
+   "text": "and one of our recent approaches we lead into Bayesian rationality frameworks from behavioral economics. I think it's an important line of research because of the stage that LLMs are at and the way that people are using them. For us to study how have for years behavioral economics studied the way that we make decisions together or how humans make decisions. And that might be a bridge in supporting and building systems that can better collaborate with us in different tasks of decision making."
+  },
+  {
+   "t": 1905,
+   "text": "so Bayesian rationality essentially identifies and studies how much is the weight of an evidence and how should a belief be updated. And so when we incorporated that into our system design, then LLMs were showing more human-like rational quote-unquote behaviors in decision making and so a lot less sycophantic in obvious cases. And you know you can always argue well people are not rational but that's great then we can go to a better framework right but the point is like incorporating and leaning into these behavioral insights would definitely help us design LLMs that are less sycophantic that can truly lean into augmenting our agencies as opposed to manipulating us."
+  },
+  {
+   "t": 1964,
+   "text": "Right. One aspect of this that slightly worries me is it looks like to some extent that you kind of put the responsibility of reducing that sycophantic behavior of LLMs, you put that responsibility on the shoulders of users."
+  },
+  {
+   "t": 1994,
+   "text": "But what about users that are from the group that has less AI literacy? Yeah, this is such a wonderful clarification question. Thank you for bringing it up. I am putting weight on shoulders of users, but not users alone. think AI, sycophancy, I think you're getting into the policy space. I think it's our responsibility as a society to educate our"
+  },
+  {
+   "t": 2030,
+   "text": "people are users and these users are now as young as the students in elementary schools who are interacting with some of these models. There are a lot of confusions when I talk to experts, you name it, from legal to small business owner to healthcare. There's a lot of confusion in like, how do we interpret the output of AI? How do we trust it? How much do we trust it? You know, in one of our studies, we saw some nurses would look at the system output and say, this is just AI. I do what I want to do. And some of them would look at it and say, but I thought I would do something differently, but AI is saying that it's a smart, that's an AI tool. So, you know, maybe I should try it. And that's why I think it's very important for computer scientists and for people who have the power to design these systems to then also learn about the impact on society, to then also try to shape the system differently, but also to communicate it."
+  },
+  {
+   "t": 2091,
+   "text": "I think a lot of ethical consideration sections that when I review papers these days, I look, they seem more like to be a template of LLMs are biased and we have used LLMs. In my other role, I've been the ethics chair of ACL. And I think these sections are such valuable sections for each paper to go through. What are the implications of the system you have designed. We should share the details because it's also, there are also no page limit for a reason on that section. So I would highly encourage anyone listening, if you're writing ACL papers or similar papers, please take the opportunity to enrich your ethical section."
+  },
+  {
+   "t": 2140,
+   "text": "It can go a long way when people, policymakers, people from think tanks, policy researchers, when they're looking at those papers, they're less likely to go through the figures and diagrams. of the model, but more likely they are going to review the conclusion and the ethical problems and what are in the appendices about. interactions with the users and what came out of it and so on. And I think it's also it's important for us as an AI community to say it loud and clear that in order for users to safely use our systems, they have to have literacy. And this is what it should go to it. And we want policymakers to fund these programs, to write these bills, you know, and so on, to keep us safe."
+  },
+  {
+   "t": 2194,
+   "text": "Right, that's very thought provoking, especially your thoughts about the ethical impact section in the papers. I definitely know a lot of people that are very confused about that section when they write their papers. What should they include there? What should be there? Should it even be there in the first place? or not, it's not a required section and we are not ethicists. What would be your recommendation?"
+  },
+  {
+   "t": 2232,
+   "text": "Yeah. I mean, I'm so glad you're asking this. whether it should be there or not, just to tell you very briefly how the process works. When a paper is say about children's mental health, for example, and The paper is not disclosing anything about the data. It's not saying whether it's been anonymized. It's not saying that the data is sharing or not. Are they going to share data with whom they're going to share data and so on. so when the paper is lacking critical details, most likely because we can't accept, know, we can't expect that all the reviewers have the background that would help them review. these critical papers, And ideally we don't want such papers to come out of our community of ACL."
+  },
+  {
+   "t": 2292,
+   "text": "So we thought we start a process, a program, that when reviewers are in need of expert support, they can flag a paper. They can say this is ethics flagged, right? And when a paper is ethics flagged, we don't decide about the paper. just provide, we just recruit two ethics reviewers to review the paper and just leave their feedback. And again, they don't have power in making decisions. And then it goes up to the AC, the area chair and senior area chair. And it's just to support them. when they are making the final decision, they know what might need help or, you know, improvement. And I've also seen that some papers"
+  },
+  {
+   "t": 2341,
+   "text": "use those ethical recommendations and improve their work later. You know, they resubmit or you so that's just briefly about the ethics section and the ethics reviews. And I think that's related to the ethical section, right? Because if we're talking about mental health, if we're talking about children's medical, you know, data, if you're talking about educational data of sort that has faces or identities or you know, any critical really or even some legal decisions then it helps so much for the reviewers and the ethics reviewers to know more about your ethical guidelines going through this. So I would highly recommend if there are data sets involved in your paper please use this opportunity to just Talk about the process of data cleaning How you made it aligned with your IRB or the ethical board of the institution or company or community Tell us how you would like people to use your data"
+  },
+  {
+   "t": 2412,
+   "text": "How they can access it how they can use it Tell us what the system or the data is for and what is for not Right. So, know either another example I a few weeks ago that I really liked, I think it was related to deception detection. And it was like, you know, this is not at a stage for it to be used in a legal system. A federal system is just an exploration. has all the limitations of race and gender and all of them. They were very open about it, right? I think this is this is very important. It's very important for us to know in what aspects we might expect to see biases in the system. also like sometimes people reporting how they have reached out to communities what community centers they have working community work is not you know trivial. And so for people who are reading that paper, it might actually be one of the most interesting of the paper to know how you reached out, who you worked with, you know, how you evaluated anything that you couldn't fit into that eight page that you think might be, you know, useful for the reader."
+  },
+  {
+   "t": 2482,
+   "text": "Right, right. And that reminds me of one example that we have discussed at one of our previous episodes with Maria Antoniak. She has at least one paper that describes in a lot of details how they approached the specific group of users and how they collected data and all those details."
+  },
+  {
+   "t": 2512,
+   "text": "would love to speak about another paper that is called the Hype and Harm. Hype and Harm, why we must ask hard questions about AI and its alignment with human values. Really saying title that says a lot about that bigger question, big important question."
+  },
+  {
+   "t": 2544,
+   "text": "So this work makes the case that AI alignment isn't one single target, right? But something that may look very different depending on the context."
+  },
+  {
+   "t": 2560,
+   "text": "So could you set the stage for us? What's the core argument here and why does it matter? So the core argument of this work is that current alignment approaches optimize for surface level agreements rather than meaningful alignment. that systems appear to appear aligned in controlled settings, as we talked also in the last few minutes, but fail in real contexts where values are complex and they are context dependent and contested. And that gap between apparent alignment versus real world alignment is where I believe a lot of harm ⁓ emerges ⁓ in these systems."
+  },
+  {
+   "t": 2608,
+   "text": "I would just briefly tell you that the notion of thin and thick alignment is from Alondra Nelson. Thin alignment is local and immediate. And this is completely my understanding and paraphrasing of it. It optimizes for agreement in a single interaction."
+  },
+  {
+   "t": 2628,
+   "text": "Thick alignment is longitudinal and contextual. It considers how interactions shape reasoning. It considers how interactions shape outcomes over time."
+  },
+  {
+   "t": 2643,
+   "text": "And so I would say like more formally, thin alignment focuses on single step reward or single task and thick alignment focuses on trajectory level utility of a system. And so I think, I think, you know, just the ways are ways that we can approximate thick alignment around. one of it is robustness to misleading inputs, consistency across context. downstream decision quality. Because as I said, think deployments of systems start changing the ways that people decide around an issue and behave around a social shared situation."
+  },
+  {
+   "t": 2692,
+   "text": "what was interesting to me in this article, Hype and Harm, was that you compare"
+  },
+  {
+   "t": 2703,
+   "text": "compare the safety focus model to other state of the art models like for example GPT-4o that is very popular right now maybe several months ago. The field is moving that fast nowadays. What do you think about the relationship between alignment and the scale, the models that are of huge size, Yeah. I think it shows that the result we got, like specifically, that, that how like safety does safely designed models were outperforming even the larger models, you know, which show us that alignment is not an emergent property of scale."
+  },
+  {
+   "t": 2756,
+   "text": "You know, it's not that, you know, it's true that if your model is larger, it's more capable probably, but it's not a measure of alignment, that it's better aligned. Alignment depends on training objectives, data curation, evaluation design. So capability and alignment, I think it's important for us to really think about them as distinct dimensions that ideally, hopefully one day will converge. But what we're seeing right now, at least the state of the art now, doesn't seem like a scale means better alignment."
+  },
+  {
+   "t": 2798,
+   "text": "Yeah, that's important, I think, because there is some people think that big is always better and better not just in performance, all the other necessary behaviors will somehow magically emerge as well. And it's important to show that it's not always the case, You also have some findings reported there"
+  },
+  {
+   "t": 2828,
+   "text": "in that work that is about underrepresented groups. Can you tell me a little bit about? I think we showed the importance and the success of active learning approaches when it comes to designing systems that can also work for underrepresented populations, especially we were looking into harm and how the systems might potentially hurt the user by the judgments that they're making in different languages across different religions and so on. I think the key insight is about training signal allocation, right? underrepresented groups often lie in regions of high uncertainty in the model."
+  },
+  {
+   "t": 2882,
+   "text": "so active learning can identify those regions in smart ways and prioritizes them. you know, so fairness is not just about representation, it's also about adaptive focus during training and how we're providing that data to the model. And so we have a few papers in that space and active learning combined with domain adaptation and other tools have helped us so much in making the systems more representative or work better for underrepresented population."
+  },
+  {
+   "t": 2925,
+   "text": "Yeah, and when I think about underrepresented populations, one aspect of that could be geography as well, right? So in this article, you also look at the policy across different geographic settings, both the European Union, South Korea, different US states. So how do you think about building you"
+  },
+  {
+   "t": 2952,
+   "text": "technical frameworks that can hold up across those very different legal, social, geographical contexts. I think, you know, we cannot encode all the norms equally and explicitly in models. And so the behaviors of models naturally then, you know, change from context to context when they're deployed. And I think the best that we can do in system design is make sure the systems are uncertainty aware that they can adapt to context, that they can say if they don't know that they can ask clarification questions. I really like the fact that in the EU AI Act there's emphasis on transparency. This is something that we lack in the US."
+  },
+  {
+   "t": 3002,
+   "text": "general, globally, talking about transparency in AI policy is such a challenging topic. It's perhaps one of the most challenging topics to talk about because companies think if they talk about how the model is, what's the status of the model or how it's built or what's in the training data. It might then, you know, hurt them in their competitions with other companies. So, you know, then there is an argument, oh, well, that is gonna stop my innovation, you know. There is, you know, in general, there are not a lot of consensus around how transparent systems can be and how transparency should be reported."
+  },
+  {
+   "t": 3049,
+   "text": "I really like that you AI act as an example of how it's treating transparency in training data and model design. I also really like the recent California state-level bill, AI safety, which I think is one of the most important recent bills in AI policy, where they talk about catastrophic risk reporting and how they're dealing with it when it comes to transparency. You know, I think AI policy to some extent would benefit from localization, whether it's in the US, you Massachusetts might choose a different policy in AI education than New Mexico, California might do something from Texas. And in the same way, the policies that they have in, you know, in the Middle East might be different from Europe might be different from US, right, or other parts in Asia."
+  },
+  {
+   "t": 3104,
+   "text": "But I do believe that at the same time, there needs to be consent. around some basic values similar to human rights and human values that we have trusted for years and developed our societies around. I do believe that there must be minimum requirements, minimum policies for us to think collectively where this is going. Who is this impacting and how do we want to plan for it, right?"
+  },
+  {
+   "t": 3140,
+   "text": "Yeah, and that brings us very nicely to the next paper that I'd love to discuss."
+  },
+  {
+   "t": 3148,
+   "text": "the third paper that I'd like to speak about is named How are Americans using AI? It's a large nationwide survey of how Americans are actually using AI and how they're doing that. across their personal lives, workplaces, and small businesses. So I just want to start with a very simple question. What surprised you most in the findings? I think the most striking finding was that decoupling between adoption and benefit. So, you know, people are using AI, but they're not experiencing meaningful productivity gains across sectors sometimes."
+  },
+  {
+   "t": 3199,
+   "text": "And this suggests that current systems are not yet well aligned with real workforce needs or cognitive processes necessarily."
+  },
+  {
+   "t": 3211,
+   "text": "I think another one was that we saw sometimes they use AI more at home than at work. Which makes sense. It's not always maybe allowed to use at work I think that also dependent, And I mean, it's a good thing to hear that it seems that work spaces are introducing AI, but not quite as"
+  },
+  {
+   "t": 3241,
+   "text": "fast as how people might be adopting it at home, for example, what surprised me in what you reported in the numbers that"
+  },
+  {
+   "t": 3252,
+   "text": "you reported basically was that only 19 of your users said that AI has improved their productivity. And it sounds like it's quite a gap, I would say, between what people feel about the productivity value coming from AI and what we"
+  },
+  {
+   "t": 3280,
+   "text": "often hear about from the AI industry itself. So how would you interpret it? I think current systems are locally helpful but sometimes globally inefficient. That might be one reason. I think they help with soft tasks but introduce overhead in verification, in prompting, in integrating into different aspects of work."
+  },
+  {
+   "t": 3308,
+   "text": "think meaningful productivity gain really requires persistent context across tasks, calibrated outputs that AI can give us reduced need for supervision in a way that doesn't replace people but that truly collaborates people with people in their job and role and in their decision making. My experience also has been AI seemed to be useful, but then there's also still a lot of confusion around how they should read it, how they should evaluate it, how they should trust it, right? And I think all of that results in lower perceived rate of productivity. You mentioned that meaningful level of productivity boost. Do you have any number in mind that to you would mean that, okay, that's already meaningful?"
+  },
+  {
+   "t": 3370,
+   "text": "I mean, that's such a hard question to sort of put numbers on, I think. I think it varies task by task also. I would say if there is like 5%, even 3 % improvement in reviewing patient intakes. That can lift a huge burden from an ER section in a hospital or something. But sometimes as I interact and survey my students in my class, when they perceive productivity for solving certain problems as homework is 10%, they would leave it aside. They would say, It just took me like 30 more minutes to figure out how I want to produce this graph and it has the wrong axis and it's just killing me."
+  },
+  {
+   "t": 3431,
+   "text": "Let me just do this myself. So I think it's very context dependent. there was another finding that you reported and that you I'd love for you to talk about."
+  },
+  {
+   "t": 3447,
+   "text": "So could you walk me through what you found when you looked at AI adoption across different demographic groups? Yeah, I think the key variable is not necessarily having access, but how AI is a good fit for them. Models assume certain language styles and interaction patterns. So even when access is equal, usability might not be equal. And so this means that generalization should be evaluated across user populations and not data sets, especially because when we get to different experience level, when we study AI for productivity, it's really not easy to say someone is an expert, someone is not. It's not a binary thing."
+  },
+  {
+   "t": 3501,
+   "text": "People approach AI systems for collaborative decision making vastly different based on their background, their culture, their education system, their age, their literacy in AI. So there are so many variables in hand. I think one of the most important findings was just really to what extent AI is a fit and it can really be usable as opposed to is it accessible, right? Because now I think we're getting to a point where AI is accessible to many populations in the US, many communities in the US. But how useful it is important. Another example for this that I can add is from my findings in my classrooms, if you are a better programmer, you can get so much more out of Claude."
+  },
+  {
+   "t": 3557,
+   "text": "Whether if you're a student who, you know, you're majoring in journalism and you're taking NLP just as a path, you know, towards a minor, the way that you use AI for programming is vastly different. And so you may not get much out of it, I'd like to briefly speak on the slightly different lens that is about the difference or rather lack of difference in AI adoption rates between small and large businesses. what do you think is important about that I the way I look at what we observed, which is a relatively large survey too, is that AI has become largely accessible to small businesses as well. And that's why they're adopting it."
+  },
+  {
+   "t": 3613,
+   "text": "But what I observe is that the depth of integration is different if you compare small business versus not. Coordination between human and AI is different. The scale of it is different. To what extent there is organizational leaning on AI is different too."
+  },
+  {
+   "t": 3643,
+   "text": "in some cases you see larger companies have access to, again, overall we call it AI adoption, right? But we see they have access to smarter, larger models and it has been literally integrated into everyday workload of their employees. Or in some cases, AI is changing the titles of the employees or changing their HR. organization. Whereas what we mostly see with small businesses, and there is more like augmentation of very few employees that are working for a small business that use AI for social media, for example, that use AI for content creation or, you know, other cases, but it's less of a systematic adoption Another thing that I think is important and we are studying it is the kinds of risks that AI introduces when it is adopted at that systematic level versus in smaller scales for augmentation."
+  },
+  {
+   "t": 3718,
+   "text": "And that touches on the literacy of the employees, it touches on, you know, what tasks are automated. one more observation that I found really thought-provoking was about how workers feel about what AI means for their future. So could you share what you have observed? Yeah, so workers report uncertainty more than displacement. So, you know, they are unsure how to evaluate their own future of work. There's like a sense of uncertainty that in what skills would matter, what skills will not matter, or how much they should trust AI."
+  },
+  {
+   "t": 3770,
+   "text": "So it seems that there is a lot of confusion. You know, there is this fear of AI might get my job, but then there is at the same time the confusion and uncertainty around should we trust it, how much should I trust it, know, what skills matter. So it is integrated in a way that it's not even clear to some of the users what skills of theirs AI is replacing completely. It's hard for them to pinpoint that AI can alone do this, right? And so then it's they might not know me. So I think policies might must address agency and perceived control, not just employment outcome."
+  },
+  {
+   "t": 3819,
+   "text": "Also, I think there must be definitely studies around how can we address some of these confusions when AI is adopted and employed in workforce? I think it's necessary if we want to reduce and bump that productivity, you know."
+  },
+  {
+   "t": 3841,
+   "text": "Yeah, yeah, absolutely. Malihe,"
+  },
+  {
+   "t": 3845,
+   "text": "as we come to the end of our conversation and looking across all these three articles that we spoke about today and really across a lot of things that you work on, you move between the technical and the policy world. How do you think about the relationship between these two worlds. I think, you know"
+  },
+  {
+   "t": 3878,
+   "text": "I probably answered this a little bit in one of the questions too, but I think for researchers, for AI researchers, for us, for our community, it's important for them to know to what extent policy is defining and shaping the landscape they're working with and they're working in. So, you know, that I think would change, you know, if we know what bills are out, there what are the bills that will never get passed for certain reasons, whether they have transparency requirements, they have safety and security or restricted links, whether because it's hard for us to quantify the impact of some of it."
+  },
+  {
+   "t": 3928,
+   "text": "So for years there have just been sitting there and no one knows how to move forward with it because also policy moves slower and policy needs to be broader and then all of that you know I think knowing that is gonna change our perspective about system design it's gonna change the way we sometimes even design the reward function of our systems or how we evaluate because I do believe that at the end of the day you can only wait you know so much for a state or government or an entity to regulate something, but we have our own policies and ethical values too."
+  },
+  {
+   "t": 3976,
+   "text": "And so knowing what's out there, what can be controlled and defined and shaped by the government entities or, know, societies and think tanks and versus what an academic or what an industry researcher does, I think would be meaningful. And so I highly encourage people who are interested in this problem of alignment and the society. impact of their systems to also stay policy literate. So to know what are the gaps, what aspects are out there and that you know some of them when I learned I was shocked, this is shaping already you know what we're doing or what we're not doing. Yeah, and I think again to reiterate for policymakers, would say definitely recognize AI systems as evolving interactive epistemic systems. They are shaping our children's education."
+  },
+  {
+   "t": 4031,
+   "text": "They're shaping our healthcare system. They're shaping our legal system and they're shaping how we receive information."
+  },
+  {
+   "t": 4042,
+   "text": "and how polarized we are or we are not. So really treating and seeing AI systems as such and including experts more and more in the discussion would be amazing. Amazing. Thank you so much, Malihe. Thank you very much."
+  }
+ ]
+}

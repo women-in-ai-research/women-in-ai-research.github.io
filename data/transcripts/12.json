@@ -1,0 +1,427 @@
+{
+ "episode": 12,
+ "videoId": "RKIvrESep-g",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "Are you a native English speaker from North America? If, like me, you're not, there is a good chance that AI you use every day doesn't quite understand you, your language, or your culture."
+  },
+  {
+   "t": 33,
+   "text": "Our guest today is Vered Shwartz. And the reason I'm excited to talk to her is she explores some of the most important questions in AI right now. Not just how the models work, but who they work for. Vered is an assistant professor at the University of British Columbia and the Canada CIFAR AI Chair at the Vector Institute. Her research reveals how AI systems trained on Western US-centric data might reinforce stereotypes and fail people from diverse cultures. She has published extensively on common-sense reasoning, figurative language, and multimodal AI, always keeping the human aspect of language technologies at the centre of her work."
+  },
+  {
+   "t": 83,
+   "text": "Vered just published a book called \"Lost in Automatic Translation\", where she shares her personal experiences as a non-native English speaker - from personal assistants that cannot understand her accent to the bigger question, will these tools help us master languages or will they make language learning obsolete? In our today conversation, Vered talks about hidden biases in AI, how to build more culturally aware models, and what responsibility we have as these technologies reshape our lives. Stick around until the end - Vered will explain how vision language models differ from text-only models in their cultural biases. Let's dive in."
+  },
+  {
+   "t": 129,
+   "text": "Vered, welcome to the Women in AI Research Podcast. Hi, thank you for having me. So let's start with your personal journey. I'd like to ask what is one non-obvious skill that turned out to be important for your success as a professor of computer science?"
+  },
+  {
+   "t": 152,
+   "text": "So I don't know that it's really non-obvious, but I think communication skills is one of the more important skills. I think probably more than any knowledge or experience or technical strength. I've always liked writing, and I care about communicating things clearly. And I remember as a student when I was reviewing papers, when I was new at this task of reviewing papers, I used to feel like, a bit dumb sometimes, not understanding the content of some papers. Some of them are technical content. And when it happens now, I more often recognize this as a problem with the clarity of the paper because sometimes it's not written in a clear or accessible way."
+  },
+  {
+   "t": 198,
+   "text": "And it's something that's really important for me when I work with my students on their papers and I help them edit the papers to make sure that it's communicating results in like plain and simple language and to always prioritize this clarity over any kind of like high P language or academic jargon. I think it's really important to be able, especially in a field like ours in AI that is of interest to people outside of the field. And it's really important to be very clear about the scientific findings. also think it's like this communication skills are also important for teaching and for giving talks. I'm not sure about grant proposals though. I think that maybe I might be penalized sometimes for not being more overhyping my work."
+  },
+  {
+   "t": 249,
+   "text": "Right and definitely important for participating in the podcasts. Yeah."
+  },
+  {
+   "t": 255,
+   "text": "Yeah, of course. So looking back, what's one piece of advice you wish someone had given you before you started your faculty role? So it's actually an advice that several people gave me, I'll answer the question instead of what's one piece of advice I wish I actually hadn't followed, which was to not take too many students too soon. Even though I heard this advice from multiple people, ended up now in my fifth year with 10 students. They're all great. I'm happy about each and every one of them."
+  },
+  {
+   "t": 291,
+   "text": "It's a lot. It just made me think, lately thinking about it, made me think that a lot of times we get advice from other people, but we kind of have to make the same. mean, mistakes might be a bit harsh here because I'm really happy about all of my students, but the mistake of having a very large group, which is hard to maintain in terms of time and funding. And the reason I think that we often like you know, kind of make our mistakes instead of listening to others is because I see the same thing happening with me trying to give my students the advice of like, take some time off, like don't work weekends and evenings. like, it's important to also, you know, have work life balance."
+  },
+  {
+   "t": 339,
+   "text": "and I see that they often don't listen to me. And I remember my own journey as a student when I learned that after being burned out. from overworking. So I think that's how things usually go."
+  },
+  {
+   "t": 357,
+   "text": "Give us that optimal number which works for you the best, which is not too small, not too big, like the best number of students for you personally. I aim to have around maybe six students eventually, but I honestly, I don't know if it's gonna happen because there's always really good students around that like are looking for supervision and it's hard to say no to them. I guess, yeah, 10 might be the limit of my like time and ability to fund these students, but I'm definitely enjoying that. I would say it takes a lot of time, but it's my... most enjoyable part of the job is the weekly meetings that I have with my students. It's both interesting from the perspective of like this is the research that I'm doing, which is just basically like talking and advising my students."
+  },
+  {
+   "t": 409,
+   "text": "But also like at the personal level, it's really rewarding to see where you can actually, you know, make it impact someone's like, it make it and system like substantial influence on someone's career over time Yeah, I always admire professors that spend sufficient amount of time oh for their students, like guiding them, leading them. I think it's so important in academia. I wouldn't want to have, like I know some people have like a different model where it's maybe more hierarchical. But I don't want to, like for me, it's very important for me to have at least like one weekly meeting with each student."
+  },
+  {
+   "t": 456,
+   "text": "I feel like that's like the minimum that I can do. Otherwise, I don't know if I would feel meaningfully involved in the research. Right. And also I know that in addition to you doing research and teaching and everything else that the role involves, you also recently published that book that I have mentioned"
+  },
+  {
+   "t": 479,
+   "text": "already, which is \"Lost in Automatic Translation\". And also, like, are a non-native English speaker who is living in the English speaking country. So I wonder, can you share with us any personal experiences with the language technologists that maybe inspired you to write this book? Yeah, so it wasn't one isolated experience. It was like that experience of working on NLP, developing tools for English while at the same time. like I'm kind of joking about like teaching the computer to speak English while at the same time I was improving my own English. And so like I've been working on NLP for over a decade and..."
+  },
+  {
+   "t": 527,
+   "text": "In the last few years, we've seen language technologies immensely improving. mean, starting from machine translation, if you look at Google Translate in 2016 when they deployed their neural models, you could see substantial improvement. the language pairs that I was using, I could feel as a user of these language technologies, I could see the improvement. And then more recently in the last few years, with LLMs becoming like a product used by millions around the world and basically naturally communicating with us in natural languages and performing a range of tasks for us."
+  },
+  {
+   "t": 573,
+   "text": "when I started, when I was doing my PhD, I worked on lexical semantics. So it was much lower level tasks like teaching."
+  },
+  {
+   "t": 585,
+   "text": "teaching a model that the relationship between words, for example, that cat is an animal. And so I feel like there was kind of like a parallel process over time of teaching models increasingly more sophisticated skills, like from vocabulary to phrases and cultural references and having gone through the same process, both as like, as a non-native English speaker, also since moving first to the US and then to Canada. And so having gone through that parallel process inspired me to study the question of how do language technologies interact with our experience as non-native English speakers."
+  },
+  {
+   "t": 633,
+   "text": "Interesting. So your book explores what we stand to lose or gain when we rely on AI language technologies in our everyday lives. From your perspective, a researcher and also someone who has navigated these technologies personally, how do these experiences shape your approach to studying language, AI systems and their cultural implications? Yeah, so I think it's always been a bidirectional process for me. if you're at the direction of how my experience as a user affected my research, one example that I have is, most of these examples, they come from these cultural differences and usually from misunderstandings. And so one example that I have is from, I don't know, almost 10 years ago, I went to a ACL and I was planning to do some sightseeing after the conference, with, with an American colleague."
+  },
+  {
+   "t": 694,
+   "text": "And we, we had a misunderstanding about the time of the meeting because he said, let's meet in the afternoon. And I was literally translating it in my head to the equivalent Hebrew phrase, Hebrew word, which corresponds to like much later time in the day, which is like four or 5pm. And I remember asking like, why do you want to meet so late? Like, shouldn't we go earlier? And he was literally just like referring to like after 12 p.m., which is what most people mean when they say afternoon. So like that was the first time that I was like realizing that, oh, even when we speak the same language and use the same word, we actually mean different things. And so then years later, that it's like I went back to that experience and I wrote a paper about the cultural differences in the interpretation of time expressions like morning and afternoon."
+  },
+  {
+   "t": 745,
+   "text": "And that was the first paper that I wrote in this research area of cultural competence of NLP models or AI models more broadly. So that was in this direction. In the other direction, as a user, because I know how these tools work, how they were trained, and especially what their limitations are, then I feel like I'm maybe more skeptical or careful user than like, maybe the average user language technologies, which I think it's probably the experience of many NLP researchers. So another example that I give in the book is about a translation that was actually a perfect translation by Google Translate, but could still end up in meaning loss in translation."
+  },
+  {
+   "t": 794,
+   "text": "So that was, I had this like notebook with all recipes in Hebrew and my partner and I, we wanted to digitize that and he doesn't speak Hebrew. And so I manually translated the ones that were handwritten, but he took the few that were printed and he scanned them with and used Google Translate to translate them to English. And then I went over them manually to correct them. And one of these recipes, it was like a cake recipe and it said, preheat the oven to 180 degrees. And it translated perfectly in English. But the problem is that the intended audience of that recipe in Hebrew, which are people in Israel, would read this and infer that the unit is Celsius, even though it's unspecified, because that's the unit we use for ovens in Israel."
+  },
+  {
+   "t": 853,
+   "text": "But in Canada, we use Fahrenheit in the ovens. I mean, I had corrected it. He would have noticed it because he knows enough about baking. But someone else that translates a recipe might under-bake a cake because of that. And I think I corrected it because I'm a skeptical user, but maybe someone else has a higher chance of this meaning loss in translation."
+  },
+  {
+   "t": 879,
+   "text": "Yeah. Okay. And then let's dive into your actual research and let's speak about the topic of cultural biases in AI. Nowadays, when large language models are deployed globally, we are seeing new questions about cultural representations, about biases as well. From your research, what would you call the most pressing concern regarding cultural biases and LLMs. the one that drives the most your interest in this. So I think there's two that are, that are concerning for me, but I'll start with just like explaining, like giving some background for this problem."
+  },
+  {
+   "t": 929,
+   "text": "So when, when we interact with LLMs today, the most popular LLMs are multilingual and they support, actually a pretty large number of languages, probably in like varying degrees of fluency, but they do work well in other languages and non-English languages. But then when you, Sometimes the content itself is more Western-centric or sometimes even more specifically US-centric. So one example that I have that I'm pretty sure it's fixed right now if you use chat GPT. at least a year ago, this was still a problem. And you can find new ones because the problem itself is not completely fixed. But the intuitive example that I had last year was if you ask GPT-4 and Gemini, why did someone tip 5 % in a restaurant?"
+  },
+  {
+   "t": 982,
+   "text": "Then it starts making excuses like, maybe they didn't like the service, or maybe they miscalculated, or maybe they don't have money. And completely ignoring the fact that there's a lot of countries in which tipping is optional. So like 5 % tip would actually indicate that they like the service and that they were generous. And so the reason is because it often assumes that questions are asked in the context of US. norms and laws are like more broadly North American or Western. And the reason this happens is because the pre-training step when these models are trained on web data, they're mostly trained on, like most of the text on the web is in English, like 50 % of the websites are in English, even as of 2025. And statistically, it's mostly coming from US based web users."
+  },
+  {
+   "t": 1030,
+   "text": "So when it's learning about the world, it's like acquiring this word knowledge during pre-training, it's... learning about the world through the lens of a US web user, US-based web user. And so in terms of the risks, I think the main concern is that LLMs are now being used as the backbone of a lot of processes that are supporting decision-making processes for everyday areas of our lives, like hiring or health care or law. and often without our knowledge. And so in these scenarios, if there is a certain cultural biases baked into these models, then it's very likely that they could like reinforce stereotypes or discriminate against people."
+  },
+  {
+   "t": 1079,
+   "text": "So that could lead to like deepening already existing inequalities. So that's for me, the main concern. A secondary concern is about how we communicate with these tools because It's likely that because these tools make the assumption about the user being from a certain culture, when a user from a different culture interacts with a language model, for example, they might feel misunderstood or experience the language model is less useful. And over time, what we tend to do as users is to adapt ourselves to the technology. One example could be like in... personal assistants, if you have a foreign accent, you need to Americanize your accent to be better understood by Google Assistant or Siri or Alexa."
+  },
+  {
+   "t": 1132,
+   "text": "And so we do that. And so if we adapt our communication style to be better understood by language models, we could over time run the risk of erasing both individual and cultural differences. So it's not as you know, risky as the discrimination, but it is still to me concerning. I do think there's something positive about us being different in some ways. Yeah, I immediately remember that video clip about the people in Scotland going through the 11th You have not selected a floor."
+  },
+  {
+   "t": 1169,
+   "text": "floor. Very funny. Yeah. It's funny about the, like the foreign accent because I give this example, but I give this example based on some study that was done in 2018 about the, about automatic speech recognition systems, like understanding foreign accent. And I was wondering to what extent it's still happening. But then a few months ago, I was I attended some conference where a person from Microsoft was demoing some educational tool and he's from Australia and he couldn't get this to understand him. It was supposed to be like a reading demonstration and it kept correcting him. Like he says a word incorrectly."
+  },
+  {
+   "t": 1215,
+   "text": "And so we ended up saying, okay, I got to take it back to the engineers and make sure that it's fixed. So even if you're a native English speaker, but from like the wrong... dialect wrong accent, then these tools still don't completely understand you."
+  },
+  {
+   "t": 1230,
+   "text": "Interesting, they're all very important points. So your paper, \"Locating Information Gaps and Narrative Inconsistencies Across Languages\", a case study of LGBT people for trials on Wikipedia, introduces the InfoGap method for finding fact-level differences across languages. oh I'm wondering what motivated you to develop this approach and how does InfoGap in particular help you to find these cultural information gaps in resources like Wikipedia? Yeah, so maybe I can answer it in two different ways. So the first one would be like, why did we work on something like that? So for this, I will give the credit to the first author of this paper for Hans Samir. He was a PhD student in our lab and he's a postdoc at the University of Toronto right now."
+  },
+  {
+   "t": 1279,
+   "text": "And he's very motivated by fairness and issues of epistemic equity. And so we were looking at this like technical solution of how to find these gaps or facts that appear in one language in Wikipedia but not in another. And once we had that technical solution, we wanted to apply it to learn something about the choice that different editor communities in Wikipedia make about what should go into the articles. And choosing a topic that is socially sensitive in some cultures, we were able to show that. Like, know, indeed there are differences between what cultures like choose to emphasize."
+  },
+  {
+   "t": 1328,
+   "text": "From the perspective of the method itself, so the method is built as like a pipeline, m which is using language models, but it's, there's several different steps. And something that I like about this approach is I really am a believer of pipeline methods."
+  },
+  {
+   "t": 1349,
+   "text": "I have been noticing lately that a lot of our work, like collectively in NLP is, mean, I guess this is a very obvious observation, but it's all of it now is about prompting language models. But I, I'm often like, I see work that is done. Like it's a pretty, like a fairly complicated task where we just prompt the language model to do everything at once. And I think sometimes it actually works better if you use a pipeline method where. each step of the pipeline is either implemented with a language model or a better tool. And in this case, we had like a language model and multilingual embeddings used in different steps of the pipeline and some graph algorithm as well. And so yeah, from the technical perspective, I think it's really, it's an approach that we need to consider more using language models for what they're good for."
+  },
+  {
+   "t": 1406,
+   "text": "but then using maybe cheaper or more efficient or more interpretable methods for other subtasks in a pipeline. Interesting."
+  },
+  {
+   "t": 1415,
+   "text": "I was thinking about similar approach, pipeline approach, but not in terms of cultural biases and cultural differences as well. So it's interesting to hear that thought of yours. yeah, sometimes my next question is, like, you"
+  },
+  {
+   "t": 1442,
+   "text": "found in your work that Russian LGBT biographers tend to include more negative facts compared to English ones, which does not surprise me at all. But I personally wouldn't say that those differences in culture should necessarily be closely represented by LLMs as well. So I wonder what's your perspective because LLMs are heavily trained on data sources like Wikipedia, right? So what does it mean for these models to see such differences and how it should be represented?"
+  },
+  {
+   "t": 1487,
+   "text": "Yeah, that's an excellent question. So I would start by saying that this is like our follow up work is testing how this affects the language model. So I don't have definitive answers yet, but I can say my thoughts about it is that I think we're currently we have conflicting requirements from LLMs at the moment because on the one hand, we want them to, know, to some extent, like personalize the answers for users from diverse cultures, maybe like when we interact them in like different languages or when we give them some cultural cues, we want to get something that's giving us the answer of what we expect to hear. But we're not yet there. Obviously, this is a hard problem. And as I mentioned earlier, LLMs often assume a Western culture, even when they're prompted with specific languages from a non-Western country."
+  },
+  {
+   "t": 1538,
+   "text": "But on the other hand, we want to provide accurate information, especially where culture is irrelevant. And factual knowledge Some, mostly I would say like some factual knowledge is culturally, should be culturally agnostic. Like if we're talking about the laws of physics, for example, it doesn't change like according to different cultures. There are of course some topics that like there are disagreements between cultures. Like if you're looking at like territorial disputes, for example, that's harder to resolve."
+  },
+  {
+   "t": 1574,
+   "text": "And we also want the LLMs to maybe, in these cases, maybe where there's different opinions, maybe we want to expose them to diverse opinions so we can prevent the worsening of already existing problems of eco chambers and misinformation. But this is also not perfect at the moment. Most popular LLMs are, even though they're multilingual,"
+  },
+  {
+   "t": 1602,
+   "text": "It has been shown that if you ask the question in different languages, you might get different answers. So what we're looking at the moment is what factors determine whether a model can correctly answer a question. in, for example, Chinese, if the only available data for this spec online is in English. So we're not necessarily looking at these contradictions. We're actually trying to stay away from the controversial topics, but just like this cross-lingual knowledge transfer. Yeah, that's a good point. your InfoGap method shows a strong results with F1 scores between 0.78 and 0.9, which is great across different language periods. So wondering what the biggest technical difficulties were when you were facing with different languages and how did you make sure it could handle cultural differences in factual representation in particular?"
+  },
+  {
+   "t": 1662,
+   "text": "So I think that InfoGap doesn't actually need to address that. because it really just works at a very kind of like low level of just comparing the text."
+  },
+  {
+   "t": 1680,
+   "text": "So we tested it originally just on Russian, French, and English, and in a follow-up paper where we used it for another tool that I can talk about later. We also extended it to Mandarin. But all these languages are high resource languages. So we knew that the language model that we used in the pipeline, which was GPT-4 and the multilingual embeddings that we used, they were working well enough for these languages. So if we include a low resource language, like an African language or I don't know, Telugu or one of these low resource languages, I don't think it would work as well. So it definitely has to be high enough versus language that we can trust these tools. But beyond that, it doesn't actually look into resolving any kind of inconsistencies."
+  },
+  {
+   "t": 1730,
+   "text": "It's basically just working at the level of, let's take each individual article, decompose that to atomic propositions, then like, look at the, like align them with the multilingual embeddings and then just have the language model verify that they say the same thing. And that actually works really reliably well for all the languages that we tested. Interesting."
+  },
+  {
+   "t": 1754,
+   "text": "So I just have a question. I had some experiences when the models had good level of translation capability and the knowledge was there in English. It could sometimes translate the information. There were some transferability level when the knowledge was there but in the other language but the model was a good translator. So have you ever had such an experience that this transferability happens? or you think that the knowledge should be there locally with that specific language. I'm asking because I'm wondering how we have to pre-train these models if that's the case to fill in the gap. Yeah, I've had actually both. It's interesting because I think it definitely works to some extent."
+  },
+  {
+   "t": 1801,
+   "text": "if that, like the, there's certain like, you know, like maybe language agnostic knowledge in the parametric knowledge of the language models. But it's kind of funny because in some cases we want it to transfer that knowledge across languages and in others, in other cases we don't. And sometimes it, you know, it's in both cases and sometimes it doesn't work. So. There was work from Google last year. They had, I think, two papers. One of them was a benchmark called Eclectic that they showed that if you take knowledge that is only in one language in Wikipedia, and then you ask it, or like in a certain language in Wikipedia, and then you ask the language model questions about that in another language, doesn't always get it right."
+  },
+  {
+   "t": 1849,
+   "text": "So they were looking specifically at Wikipedia pages from like... I think they had an example of like a Wikipedia page about some person who is famous in Germany and that person doesn't have a Wikipedia page in other languages. And then they were asking about him in Spanish and the model was wrong. So I don't think they're claiming that there is no transferability, but they showed that it's not perfect. On the other hand, if you're thinking about something like culture, sometimes you want the model to use the language in which you prompt it as a cue to like which knowledge should be used. So I've seen an example, actually, it was actually not like an NLP research example. was an article that I read in Israeli newspaper that was talking about how GPT-4 is now, so I actually never use it in Hebrew."
+  },
+  {
+   "t": 1902,
+   "text": "I always use it in English. So I didn't even know at what level it's useful in Hebrew. But like this was last year, someone was writing an article about how the fluency of GPT-4 in Hebrew really improved at some point, but that the answers were still kind of weird sometimes because it was kind of like answering from the perspective, like from like, kind of like a US perspective. And he gave this example of like asking the model for advice for what to wear as a guest to a wedding. And it says, maybe you should like wear a bow tie. And it's a very weird advice because in Israel, like, people dress up very informally to weddings. Like even the groom would not wear a bow tie. They might not even wear a tie at all."
+  },
+  {
+   "t": 1947,
+   "text": "So definitely the guests don't wear suits. But in like North America, I guess like it's more like common that you would go to a wedding and you would dress up formally. And so that's something where maybe like you would want to use the language, the prompt language as a cue to not. transfer this cultural knowledge, but there is nothing in the model that tells it which knowledge to transfer and when. It's actually really tricky. I wouldn't know how to address that. That's very interesting and a lot of food for thought to think about for the future as well. And I like that example that you mentioned about the Google paper with the Wikipedia profile for a German person which does not exist in English Wikipedia."
+  },
+  {
+   "t": 1998,
+   "text": "You basically have almost the exact same example in your own. study in your own paper, right? Where you compare how many Russian and English biographies are in Wikipedia. And on average, it's almost 34 % of content in Russian biographies is not present in English Wikipedia, right? What are your thoughts about this and how, what does it mean for the cultural completeness? What does it mean for users in that non-English language, given that LLMs are again primarily trained on English Wikipedia data."
+  },
+  {
+   "t": 2044,
+   "text": "Yeah, think that, yeah, I think it might miss some information in certain languages. So I'm thinking from the perspective of someone who's using the language model in English, they might miss information from other countries as well. But we actually had a follow-up work to InfoGap called Wikigap, where we proposed a kind of like, so it wasn't for, it was still like using language models and not for solving the problem within language models, but. This was for users of Wikipedia, like readers of Wikipedia. And our goal was to just expose them to facts from other languages. And so we developed this browser extension called Wikigap that is based on Infogap that when you read English Wikipedia, you can open it as like a sidebar and then it highlights some paragraphs in the English article where a certain fact does not appear, but could have appeared, a fact from other language versions that was identified by Infogap."
+  },
+  {
+   "t": 2111,
+   "text": "And then when you see the sidebar, you can see this fact where it came from, you can click on it and it sends you to the original page with the translation. this was specifically like a UI solution and a design choice too, because the previous work that I was looking at, So I would say, actually, if you ask random people, which when we did our user study, a lot of our participants, some of them said, I didn't even know there's any non-English Wikipedia. Others said, I know about the existence of other Wikipedias, but I never go and read any other pages. Because if I'm looking for specific information, it's too hard to go over all the other pages and use translation."
+  },
+  {
+   "t": 2161,
+   "text": "then another prior solution was, researchers were working on kind of like unifying that into a one mega article that contains all the knowledge. But when you do that, you actually have to resolve inconsistencies, some of which are actually hard to resolve. Again, if we're talking about something like controversial topics, like territorial disputes, you don't, you often don't want to take a political stance. And also like just from the perspective of like the cognitive load of the user, it's just you get this huge article that's really hard to read. And so what we wanted to do was basically just provide that extra information, just let them know, know, English doesn't have this information, but the Chinese article does have that. And we got really positive feedback about that. And so that's still a solution that's using language models. It's not the solution for the language models, but I can imagine that a UI solution could also be."
+  },
+  {
+   "t": 2211,
+   "text": "similarly applied if you can get different types of information from the language model by prompting it with different languages or different prompts and then maybe present it in a more interactive way that's different from the current UI where you just get a block of text, but a more interactive way where you can choose which content you want to elaborate on. and explore more, I think that would be an interesting approach."
+  },
+  {
+   "t": 2242,
+   "text": "Interesting. And in your work, \"Is It Bad to Work All the Time? Cross-Cultural Evaluation of Social Norm Biases in GPT-4\", you use movie stories instead of direct survey questions to study cultural biases. Can you explain this approach and what you discovered about GPT-4's cultural preferences, especially how it aligns with US norms and at least with like Chinese perspectives? Yeah, so the prior work on this research question of which cultures language models align with, they mostly took existing surveys that were designed for people, like the World Value Survey and the Pew survey, that were asking people from different countries questions and then situating them on a map of like,"
+  },
+  {
+   "t": 2296,
+   "text": "looking at different values and where they are on this map. And the working NLP that was looking at language models, they were asking the language models the same questions and then situating them again on the map and showing which countries they mostly align with. And at the time, I think the first paper was in 2023. There were quite a few that came out at the same time. One of them was from Antropik, but I don't know if it was the first one. At the time, it was really interesting. was a very good way to show that language models mostly align with North American or more broadly Western cultures. I had a little bit of a problem with it. I thought it was a good first step, but I had a little bit of a problem with it because it's asking questions that are very directly asking about, like originally asking people about values."
+  },
+  {
+   "t": 2346,
+   "text": "So they had questions from the World Values Survey that are like, how much do you agree or disagree with the following? When jobs are scarce, we need to prioritize people from this country over immigrants. And I thought that, you know, it's interesting to see that language models, when you ask them directly, they align with North America. But does it mean like if the language model tells me, I highly disagree with that, I think that everyone should get like a equal opportunity. Does it mean that if I use the language model in practice in decision making scenarios where it needs to exercise this value, would it actually be consistently acting accordingly? And I don't know that's the case. And so what we did was it wasn't exactly testing that, but what we did, started, we took a bottom up approach."
+  },
+  {
+   "t": 2399,
+   "text": "So instead of this top down approach where you start with the values and ask the models directly, we wanted to look at narratives that come from different cultures and then see what kind of social norms arise from them. And so we had to make a lot of simplifying assumptions that we described in the limitation section of the paper. But we ended up settling for taking the Wikipedia plots, like movie plots from Wikipedia in English for movies that were produced in different countries. And the assumption was that these movies would in some way exhibit the social norms from these countries. so and then we had both people from these countries and language models, specifically GPT-4, tell us what are the social norms that are invoked by this scenario."
+  },
+  {
+   "t": 2452,
+   "text": "And then we recruited people from the same countries to evaluate these generated and human rates and social norms with respect to accuracy, culture specificity, and stereotypicality. And we had only four countries because, it's a pretty expensive study. So we had the US, China, Iran, and India. And first, we were able to show that the LLM or the GPT-4 was pretty accurate in predicting norms across the different cultures. But when you look at how specific it is to the culture, it was less specific than the human written norms. So wasn't a huge difference, but it was statistically significant."
+  },
+  {
+   "t": 2497,
+   "text": "So it's sometimes just generating very generic norms that people across cultures would agree with. I don't know, it's important to be nice to people. But the more surprising finding was that when we asked people to judge how stereotypical a certain norm was, then the human written norms were judged as more stereotypical than the GPT-4 generated norms. And that's a little bit counterintuitive because we keep saying that these models are culturally biased. But when we looked more deeper into that, first we hypothesized that this is probably because of the guardrails or the preference tuning and the safety training that's making these models very reluctant to generate anything harmful or offensive."
+  },
+  {
+   "t": 2553,
+   "text": "It basically doesn't want to say anything bad about anyone. But we were hypothesizing that it's a kind of like a superficial fix. It's like a bandaid. And these biases that were probably learned during the pre-training stage where it's just trained on web text that contains a lot of cultural biases are still there. They're just hidden somehow. And so we were able to show that if you take one of these norms that was judge's stereotypical or anti-stereotypical, like in the case of it's been to work all the time. And you ask the model to rank it on a Likert scale from one to five, like how much do you agree with this if you ask it to vote like a Chinese person versus if you ask it to vote like someone from the US, India or Iran, or if you just say you don't specify the country."
+  },
+  {
+   "t": 2608,
+   "text": "the distributions were very different. So it was basically predicting that most people, and sorry, and like we asked it multiple times and then took a distribution. So for most, for all countries or like for this unmarked person where we don't specify the country, it was basically saying, people would agree that it's bad to work all the time. But when we asked about a person from China, it was a lot more neutral. And we had several other examples where we showed that. It's not generating the stereotype, but when you ask it, what would a person think about that? It's actually revealing that stereotype again. And I think it's important for like, it's kind of like concerning for two reasons. The first one is what I mentioned earlier is if we're using these models in decision-making scenarios where it's actually needed, it needs to kind of like exercise these values."
+  },
+  {
+   "t": 2662,
+   "text": "If it is biased in that way, then it might end up discriminating against people from China. The other is there's a lot of research right now in the humanities that are trying to simplify things by instead of recruiting human participants, they're simulating people with language models. And so it is valuable and important to know that these humans might be stereotypical. That's very interesting. I also would like to ask you, what do you think in terms of those examples that you provided right now? It looks to me like those safety measures that we have in place for LLMs, they're kind of only covering the surface of the problem, right?"
+  },
+  {
+   "t": 2719,
+   "text": "And if... if you find a way to go around a little bit, even a little bit, then they just do not work. oh What do you think about those cultural differences and all those different ways to ask about those differences from the perspective of safety? I'll start by saying that I think it's better than nothing because if you think like a few years back when language models were also like much less useful, but they were a lot more toxic. They would like just basically repeat the same hate speech that they would like encounter online. But I also think that the current solution that we have right now, the guardrails and I'm broadly like, I'm saying guardrails like just broadly."
+  },
+  {
+   "t": 2772,
+   "text": "referring to all the proprietary measures that we don't know from these popular LLMs like GBT-4 and Gemini, but also all these post-training stages like SFD and preference tuning. I think it's very superficial. I don't think it's working well. I think you get both oversensitivity and undersensitivity. So you mentioned that you can bypass it."
+  },
+  {
+   "t": 2800,
+   "text": "There's a lot of jailbreaking prompts. So that's definitely happening. On the other hand, there's maybe it's sometimes reluctant, these models are sometimes reluctant to talk about topics even if it's not really sensitive. I guess sensitivity is in the eyes of the beholder. I'm maybe less sensitive than an average North American person, but maybe more sensitive than like someone who never lived in North America, I don't know. So like I had some example, like I think that actually the worst example that I saw was like a couple of years ago when I was teaching my NLP course and one of the students was telling me that he asked Chad GPT, can I take my Muslim friend out for ramen?"
+  },
+  {
+   "t": 2855,
+   "text": "And it started generating something and then it stopped and it said something about hate speech. And with such an innocuous context, and I can see why it's happening. think it's like there was something that prompted the hate speech content and it's trying to protect this group of population that is subject to hate speech online. And it's a good thing to do. But on the other hand, you're preventing the model from even mentioning that in an innocuous context. And so that was an anecdotal example, but I have seen from that same year, from 2023, There was a paper that was looking at the words in the prompts given to Chet GPT and they were looking at which words caused refusal to answer the question the most and the word was actually there. So it was actually something that was happening was not a fluke."
+  },
+  {
+   "t": 2902,
+   "text": "And just as a sanity check, he also asked, can I take my Jewish friend out for ramen? And it answered like enthusiastically, sure. Yeah. And here's like some restaurants in your area. And so, yeah, that's definitely not a good thing. Like if you're trying to protect a group of population, but you end up like preventing, mentioning them or erasing them, that's definitely not good. So I think we have a long way to go. think it's a really difficult problem. Like we'll say, like, you know, related to de-biasing as well. It's not something we know how to do. There's been a lot of work on it over the years. I don't think what we're doing right now is good enough. At the same time, yeah, I acknowledge it's a very hard problem and I don't think anyone in these like companies that develop LLMs would like consider delaying the deployment because it's not perfect."
+  },
+  {
+   "t": 2951,
+   "text": "Great. Let's shift to vision language models. These models need to understand both images and text from different cultures. What makes us starting cultural bias in BLM in particular different from starting text only models and what drew you to work on this problem? Yeah, so I think there's a lot of similarities between cultural biases in LLMs versus VLMs. think just like, you know, LLMs are mostly trained on English text from US-based users, so do VLMs are mostly trained on images from Western cultures. But I think maybe one of the difficulties with VLMs is that one of the objectives when training a VLM is to align the visual modality with the language modality. And so they are trained on tasks such as like image captioning."
+  },
+  {
+   "t": 2998,
+   "text": "that can strengthen the association between a word like house and the image of a house. when we have like, and then you get like a concept like house looks different in different cultures, but when we have mostly images from Western cultures, then it's mostly, it has this like high association by the visual representation of a house in Western countries, then like with other cultures. and the more visually different they are, I guess the less likely it is to associate it with the representation of other cultures. I see. And you have that paper that's titled \"From Local Concepts to Universals\", where you have created the benchmark with data from 50 different countries."
+  },
+  {
+   "t": 3053,
+   "text": "So can you walk us through this benchmark and how your two main tasks, where one is retrieval across universals and another is cultural visual grounding? how those two help understand cultural biases that were not measured before. Yeah, so we deliberately focused on two common and very basic vision and language tasks. And we wanted to test how well models do on these tasks when they involve knowledge about different cultures. So the first one, the retrieval across universal. So this is basically image retrieval. So you have in the original task of retrieval, you have a textual query like breakfast or house."
+  },
+  {
+   "t": 3100,
+   "text": "And then you want to return relevant images from the collection of images that correspond to that concept. And we focused on universal concepts that have different representations across different cultures. And then we looked both at the ranking accuracy, basically verifying that if we say breakfast, then all the images that are retrieved are indeed like all breakfast items. But we also looked at the diversity of the cultures in the top 10 retrieved images. So just like making sure that it's not only like retrieving images from the US, for example. For the second task, and for this one for image retrieval, we had 50 countries. That one was automatically created with cultural knowledge from an existing resource called Candle, which is text only, and by scraping images from Google Images."
+  },
+  {
+   "t": 3154,
+   "text": "For the second task, the visual grounding, we actually only had 15 countries because for that one we needed to get animations. And so in this task, in visual grounding, usually you have an image and you have a textual query and you need to draw a bounding box around the corresponding object in the image. And in our case, we focused on culture-specific images and concepts that are specific to that culture. So for example, we had like a Molly Neelow, I hope I'm pronouncing it correctly, which is a Mexican whisk."
+  },
+  {
+   "t": 3192,
+   "text": "yeah, and so I think like what we did differently was both like looking at this like cultural diversity of the answers in the image retrieval and also we supported, we had tested a lot more countries than in previous work that usually only covered like five, seven cultures. Yeah, even 15 countries is already quite a diversity, I'd"
+  },
+  {
+   "t": 3223,
+   "text": "Totally agree. You found something really interesting as you also said even when VLMs find seemingly diverse images they often contain western elements like eggs for breakfast and white dresses at weddings. What does this tell us about how these models learn about different cultures? Yeah, I think it's exactly because of that problem or just the way that they're trained to align the visual and text modalities. And so like if most of the images in these models training data are from Western cultures, then they form the strong association between a word like breakfast and the breakfast images from the West that tend to contain elements like eggs. then, so even when they surface the, like, sorry, on the surface like they retrieve images from diverse cultures, they are still those images that are visually aligned with the Western cultures."
+  },
+  {
+   "t": 3281,
+   "text": "And we also realized some things that when we had this metric that we suggested there that was looking at geographical diversity, but we also realized that it's not perfect because there's like, it's not perfectly aligned with cultural diversity because like if it retrieves images from the US and Australia, then it's geographically diverse. But then these are still like two English speaking countries that are like, you know, they have a lot of similarities. They're more different than like, for example, India or, I don't know, like Nigeria, for example. Yeah, and it's also that your cultural visual grounding task showed a big performance difference between culturally different regions."
+  },
+  {
+   "t": 3333,
+   "text": "So for example, models do much better on North American images versus let's say East Asian or Southeast Asian. I wonder what is your perspective on the strength of vision language models in how they deal with cultural diversity and also do you see differences between VLMs, vision language models and LLMs in this aspect? Yeah, I think that LLMs are actually better at that. think that LLMs might be able to provide definitions for concepts that VLMs can't ground. I don't have any specific example, but I think that, for example, if your goal was to get better performance on this benchmark, for example, one thing that you can do is you can use an LLM to maybe describe how something looks and then provide that to the VLM."
+  },
+  {
+   "t": 3393,
+   "text": "I think that visual association is weaker. But I also think that this benchmark, actually tests something that is relatively simpler than other areas of cultural competence in AI, because it's testing models on their familiarity with the concepts. And that's something that can be fixed. as long as you have the data to train it on, for example, if it doesn't know what a millennial is if you have the data to train it on and show it a few pictures and say, this is a millennial, it's going to learn that. it's less complicated than when you ask it, for example, to like draw on like specific cultural norms when making decisions. This is all about just knowing about something."
+  },
+  {
+   "t": 3440,
+   "text": "And so I think like our results were like interesting from the perspective that we were able to show that, this should be pretty basic and it doesn't know that. But the good news is I think it's relatively easy to solve that. Of course, there's always. It's more complicated if you want to teach the model about low resource cultures where this data is not available, like smaller communities, like indigenous cultures that maybe you don't actually have images of the different concepts or enough text to train it on either. But in general, if you have the data, it's the simpler thing to address. Hmm, interesting. Yeah, very interesting points. You created a new diversity@k metric alongside traditional accuracy measures to capture cultural diversity in image retrieval. Can you first explain what this metric is and then why did you need this new way of measuring performance?"
+  },
+  {
+   "t": 3493,
+   "text": "Yeah, so for the retrieval task, you use ranking methods, like precision@k, or the k retrieved images, or accuracy@k. And you basically want to know that if you ask it to retrieve images of breakfast, for example, you want to make sure that the top-k images indeed correspond to breakfast images. What we wanted to also quantify is how many different countries or regions these images are coming from. Because if you can get 100 % accuracy by retrieving only images of breakfast from the US, or you can retrieve images across cultures with 0 % accuracy, like close to 0 % accuracy, is in none of these alone is enough."
+  },
+  {
+   "t": 3545,
+   "text": "And so we propose this metric with two different variations. diversity across countries or diversity across regions. Because for example, if it retrieves images from Canada and the US, then it's a little bit more diverse, but it's still just North America. And so it was doing a little bit better on regional diversity, I believe, but then less better, a bit worse on country-level diversity. With that said, this metric still is like an underestimate of the actual diversity of the model because as I mentioned earlier, models could still identify images that have Western elements even if they're coming from different cultures. So the eggs in the breakfast example was one of these."
+  },
+  {
+   "t": 3593,
+   "text": "The other one was a white wedding dress, I think, in some of the models that is something that comes from different cultures but is also... associated with Western countries. And also because the geographic diversity is just a proxy for cultural diversity. both in the sense of the example that I gave earlier of US versus Australia, they're very geographically distant, the cultures are not the same. Or if you take something like maybe UK and Australia, the cultures are somewhat similar in a way, but they are very geographically distant. And at the same time, you can look at the opposite problem. We didn't test that specifically, but if we were to test smaller communities, like indigenous communities, within countries like the US or Canada, then the geographic diversity would be smaller."
+  },
+  {
+   "t": 3649,
+   "text": "But if it's able to retrieve images from both, then that's actually a good signal. So it's still just a proxy. So I do urge people to come up with better metrics, but we definitely need to test some type of diversity. That's very interesting. also I liked a lot that you, when you mentioned that VLMs are actually better than LLMs in some aspects of when handling cultural biases. So I wonder how much of that comes from the fact that it's a different modality. What do you think about that? Yeah, I think that it's also like the different ways that we use them. So I think that, yeah, I think that when you get like, when you use a VLM and you ask it, for example, so that's not something that we tested, but there was a different paper, can't remember right now which group it was coming from, but there was a paper like about a year or a couple of years ago that was looking at image generation models for very similar."
+  },
+  {
+   "t": 3717,
+   "text": "like phenomenon where you give it a universal concept like house, and then like it generates an image and it looks like a house in the US or like even a stronger result that they had in their paper was if you m tell it to generate an image of a flag and it generates the flag of the US. And so it's definitely biased, but it's also very easy to spot that bias because it's like you see this immediately like visually. On the other hand, in LLMs, it's a little bit more subtle sometimes. Like if it's telling me, if it's giving me or like it's giving someone a recommendation to wear a bow tie for a wedding, it's harder to trace that, it's doing that because it was mostly trained on data from the US and this is how they dress up for weddings."
+  },
+  {
+   "t": 3764,
+   "text": "So I think it's just a bit more subtle and it's harder to show that in LLMs."
+  },
+  {
+   "t": 3771,
+   "text": "Right, interesting. Thanks for sharing those insights. Let's speak a little bit about benchmarks right now. And good benchmarks, they are essential in many aspects of NLP in general, and also for measuring cultural bias in AI systems and LLMs. From your experience creating benchmarks, what makes a cultural bias benchmark effective? and what problems do we see with the current evaluation methods. Yeah, so I think that, I mean, one thing that is desired is to have like a good coverage of countries. But I also think that benchmarks that focus on even just one country, they're also very valuable."
+  },
+  {
+   "t": 3816,
+   "text": "And often they actually are able to go like more in depth into like, or like to do actions. So I would say actually the most important thing is for me to have some people from those respective cultures involved in the data collection. So that's something that we did with global RG."
+  },
+  {
+   "t": 3834,
+   "text": "For the visual grounding task, we hired people from all these different countries. And it's hard to do that, but I think it's also important. so, yeah, usually there's a trade-off between how many countries or you can cover versus how reliable this data is and being able to validate it with people from those. respective cultures. I would also say that there is like along the same line, there's a trend of like automating the every step of the processing that will be right now from like the data creation for the benchmarks through the model."
+  },
+  {
+   "t": 3882,
+   "text": "I mean, just modeling, that's fine. To the evaluation to like delegate that to language models. And I think we do run the risk here of like not like kind of missing that bias because, I don't know, if you collect the data from just from a language model, you don't have people from those cultures involved. You have the bias already in the benchmark and then you use a language model to evaluate it. So I think definitely like in general in NLP, but maybe even more specifically when you're looking at something like culture, you need to have people involved. in the data collection and in the evaluation. So I would say that's probably the most important thing. And if it means that we can only collect smaller benchmarks and focus on a smaller number of cultures, then that's OK, I think."
+  },
+  {
+   "t": 3933,
+   "text": "Yeah, I agree. think in terms of the benchmarks, it's not that much about scaling. do not need those huge datasets to evaluation sets to just assess the models. It's enough to be comprehensive and properly designed. that's it. It's not that, yeah, how to solve the problems if they are there. That's a different question, but. Yeah, that's a hard one. I think a lot of the times we end up creating benchmarks that you know, that they still suffer from these problems because, I mean, it's hard to collect anything completely from scratch. But then if you rely on any kind of existing data, you can be sure that models were trained on that already."
+  },
+  {
+   "t": 3981,
+   "text": "like, for example, for global RG, we scraped images from Google and we used sentences from the Kindle. data set. those were all trained to and used to train like VLMs and LLMs. We were able to like create questions that were like or like to test it in a way that was still non-trivial for the model. But it's tricky sometimes to, know, even if you're, if you know there is a cultural bias, like just to be able to show that with a benchmark is tricky to show that."
+  },
+  {
+   "t": 4014,
+   "text": "Yeah, interesting. Yeah, I had a question regarding this benchmark development and data development in particular. Right now, many of the AI development companies are based in developed countries, and the contributors are sometimes very familiar with the local culture of these limited number of countries. Do you think if decentralization of model development or data annotation would help? even with this ecosystem, we can handle that. Because like me, like I immigrated a couple of years ago and I am even unfamiliar with many of the local cultures in my home country. So I wonder what is the approach to do that because many of these cultural nuances are not available on the net."
+  },
+  {
+   "t": 4066,
+   "text": "And speaking of the fixes, do you think... Decentralizing somehow this access to at least data annotation would help for this LLM. We can find some ways to do that. Yeah, I mean, I think it's very much an open research problem. don't know what the solution is. I think that definitely having more people involved in the development of the models helps. So for example, if you want it to be applicable for people from different cultures, then you definitely want to involve people from these cultures. But I also agree that culture is kind of complicated that way, that we are not..."
+  },
+  {
+   "t": 4104,
+   "text": "identities are like a little bit more complicated than that. Like you were born somewhere and then you move somewhere else sometimes and you have this mixed identity. And I also like identify with what you said, because I also feel like there's a lot of things in my home country that I don't know anymore. On the other hand, I'm not like, I still find a lot of things that I don't know, like in Canada, like where I live right now. And so it's a lot more complicated than that. I think also like if you're thinking about the solution, that's actually something that I struggle with because every time I talk to people that work on this area of research, like we're still pretty much still in the first stage of just showing the problem, but there's not a lot of work on like solving that problem."
+  },
+  {
+   "t": 4150,
+   "text": "And it's not clear what is the way to solve that. So one way in which I don't think would be right is like completely personalizing the answers. So saying like, oh, you come from country X. then I'm going to talk to you in a way that completely aligns with your culture. Because it's A, ignoring the fact that people have more complex identities, and B, sometimes over-correcting. So for example, if my native language is Hebrew and I say the word afternoon, do I want it to mediate and translate it to someone who's like 4 PM? But what if I'm already accustomed to using it the North American way? I actually meant it as native English speakers use it. So you have this problem of over-varacting."
+  },
+  {
+   "t": 4197,
+   "text": "You don't want to make too many assumptions either. And then the last one is you don't want to create these echo chambers where everybody just hears whatever they want to hear, and they never get exposed to the other opinions. So beyond having a lot of people involved in that, I don't know. about, I really don't know what the solution should be. Another direction could be, instead of having the language model always perfectly answer that, having something like a more UI-based solution where you could explore different answers that may be aligned with different cultures, or just be able to say, oh, it depends on clarifying the context to better tailor the answers."
+  },
+  {
+   "t": 4244,
+   "text": "But yeah, there's no, I don't think there's any magic bullet right now. So your recent work introduces a cultural bench, which uses a cultural teaming approach where humans and AI work together to create questions. Can you explain how this method works and why you chose this collaborative approach for building a benchmark that covers 45 regions, including places like Bangladesh and Zimbabwe? Yeah, so the idea here was kind of a compromise between having the benchmark completely collected by people versus completely generated by models. you take that knowledge from people and having the model help them phrase it into questions that are challenging and do kind of like an iterative process until you get this challenging benchmark that covers multiple different cultures."
+  },
+  {
+   "t": 4297,
+   "text": "I wonder, across all your research on LLMs, VLMs, and cultural benchmarking, you keep finding evidence that Western cultures dominate while non-Western perspectives are underrepresented. Looking at your findings together, what do you think causes these biases, and what changes do you see as most important for future AI development?"
+  },
+  {
+   "t": 4321,
+   "text": "So I think probably one of the main causes of these biases is just the availability and the proportion of the data. So I think because of our paradigm right now in generative AI or in machine learning in general, where you need a lot of data to train models, then for the pre-training step, for example, focusing on language models, the developers of these models, they take as much data as they can get. And so it's disproportionately going to be in English. So we don't know, because these recent models are proprietary, we don't know exactly what they're trained on. But if you look at models that are open source, like Llama 2, in their paper, they basically say that the corpus they trained it on was 90 % in English."
+  },
+  {
+   "t": 4369,
+   "text": "So it's like 90%. It's really scary. And then... Nobody would take the solution of like, let's like balance the data and like sample it such that we have like equal amounts of data from different languages because you need as much data as you can get to make these models work well. you down sample, you would get a model that is like, you know, not even fluent in English. So there's definitely that problem of just the proportion of the data. And then beyond that, the secondary cause is all of these like post-training stages. It's because the developers of these models, for the most part, I mean, there are some models that come from like China or, you know, other countries, but for the most part, the developers are mostly based in the U S and when they implement these like post-training guardrails, they do that from the perspective of their own culture."
+  },
+  {
+   "t": 4422,
+   "text": "And they, they, if they have like the, for the preference tuning, when they write the guidelines for the annotators that comes, the guidelines come from. what is like what they consider morally acceptable and beyond the fact that I find it very weird that you know a bunch of computer scientists are deciding on like what's like morally acceptable versus not. Just the fact that like it's mostly just like people coming from the US probably also mostly men. Then it's concerning because you don't have everybody's voice like they're trying to instill human values into these models but the like what is human values? It's like very culture specific and they turned out to be mostly like North American values. So again, I think the most important thing is like moving forward to just have diverse groups of individuals involved in the design and in the development of AI models."
+  },
+  {
+   "t": 4477,
+   "text": "So both in terms of like diversity of expertise, so computer scientists, but also social scientists, legal experts, ethicists, and so on. but also like diversity in terms of gender, cultural background and so on. Otherwise you have this phenomenon of like these engineers saying, it works for me, but not like until these tools are deployed and often like in sensitive decision-making setups where, you know, it ends up discriminating against someone and then you discovered that, actually there are problems in these tools. So yeah, just having a more diverse like set of people working on these tools is probably the best thing we can do right now. But also working on a different paradigm where maybe we can do something a little bit more sophisticated that doesn't rely on so much data."
+  },
+  {
+   "t": 4525,
+   "text": "And so we kind of like decouple the data and like make it easier to train models that don't need a lot of data to work well for different cultures. Yeah, all good suggestions. You have studied cultural bias through many different perspectives, by analyzing Wikipedia, evaluating cultural knowledge, and testing vision language understanding."
+  },
+  {
+   "t": 4552,
+   "text": "So what directions are you most excited to explore next in your research? Yeah, so I think I'm getting increasingly more drawn to working with people and studying how people actually interact with these technologies and how they can be improved. And it's a little bit harder to do than what we usually do in NLP, which is like develop benchmarks and test models. But like, for example, like some questions that I'm interested in is like, to what extent the output of LLMs are actually different for users for different cultures or like do people from non-Western cultures actually have misunderstandings with when they're interacting with the language models because of these cultural assumptions? Or are communication styles changing and unifying over time?"
+  },
+  {
+   "t": 4599,
+   "text": "So I think this kind of research is harder to do. It's kind of like a different type of research than we usually do in NLP. But I also think it's important because it can inform both the development of new and more inclusive AI models and also maybe like know, policy on AI regulation and so on. So, yeah, I haven't started doing anything exactly like that, but I think that's a very interesting direction. Best of luck with that. Thank you. And thank you to our listeners as well for tuning into the Women in AI research. And we'll see you in three weeks. Bye."
+  }
+ ]
+}

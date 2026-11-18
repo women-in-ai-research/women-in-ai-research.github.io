@@ -1,0 +1,379 @@
+{
+ "episode": 19,
+ "videoId": "Lsq3UzM8wIg",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "If we use a sentence like, he likes yellow, he works as a, many models would complete this sentence with a school bus driver or a different occupation that is somehow related to yellow. If we change yellow to red, we might get a completion like a firefighter. Sometimes if you use orange, you get a basketball player So it's really obvious that the color from the prompt really essentially leaks into the generation and semantically affects the generation of the model this is not necessarily the behavior we would expect or at least something that we need to be careful about."
+  },
+  {
+   "t": 53,
+   "text": "Our guest today is Hila Gonen, the assistant professor at the University of British Columbia. Hila, it's so great to have you here with us on the Women in AI Research podcast. Thank you so much for joining me. I'm happy to join."
+  },
+  {
+   "t": 71,
+   "text": "I'd love to start by talking a little bit about your background and how you got into the work. you did your undergrad at the Hebrew University with a major in computer science, but also a minor in physics. I wonder what drew you to physics alongside computer science So I think I was always interested in many different types of exact sciences. but I kind of felt that whatever discipline I choose to study, I'll have to do it along with computer science because it will be much more useful in whatever I choose to do later in my career to also have skills and expertise in computer science."
+  },
+  {
+   "t": 117,
+   "text": "So this is why I chose to do both. In terms of whether I think that physics helps me think in specific ways today, I think it does It does affect the way I think about how to solve problems and how to approach different challenges, how to design experiments. I think this is something that happens a lot in physics."
+  },
+  {
+   "t": 144,
+   "text": "later during your postdoc, you also had some experience that maybe quite interesting to many of our listeners. So you were splitting your time between academia at the University of Washington and the industry at MetaAI. Yeah, so I wonder how would you compare your experience in this, of doing research specifically in these different environments? I think I was lucky enough in combining those because I think they kind of complement each other in different aspects. There are things that you do when you're in industry that you don't tend to do in academia or maybe can't sometimes and vice versa, depending on the time."
+  },
+  {
+   "t": 195,
+   "text": "Also things have changed in the last few years in how we do research in NLP and in terms of resources that we need and what. industry focuses on versus what we focus on in academia. And I feel that the combination was actually pretty great. I could combine things that I was working on in Meta with things that I was working on at the university. But not everything. So I could get the benefit of having colleagues that work at Meta and working on language modeling in large scale and pre-training and using a lot of resources at the same time of also mentoring PhD students and working on problems that are maybe more science focused and understanding."
+  },
+  {
+   "t": 252,
+   "text": "Yeah, so I think it was a great experience to do both at the same time. Have you ever considered to stay in the industry? yes. But I think it can be great. I think that we're lucky in this field that we have a lot of options in industry as well, not only in academia to do really cutting edge and interesting research. I just felt I like the academic environment. I like mentoring students. I like choosing what I want to do and not necessarily being em led to specific projects according to what's the need of the company at a specific time, which happens more obviously in industry than in academia."
+  },
+  {
+   "t": 306,
+   "text": "thing I was interested in when reading about your experience is that you're multilingual."
+  },
+  {
+   "t": 314,
+   "text": "I wonder how your own relationship with the multiple languages influenced your research agenda. So first of all, I'm not sure the fact that I'm multilingual, but the fact that I really like languages and I really like learning languages was the number one reason I think I got into NLP in the first place. My master's wasn't in NLP or machine learning or anything like that. It was theoretical and computer science. And then I decided that I want to somehow combine my love for languages with what I do. and decided to start doing research in NLP."
+  },
+  {
+   "t": 360,
+   "text": "Apart from that, yes, it might be that a lot of my interest in multilinguality and I have had a lot of works throughout the years related to different languages and multilinguality and so on, probably affected by the fact that I'm myself multilingual and that I... I'm really fascinated by how languages are different from each other, but by different phenomena that characterize different languages and so on. I remember the first time I was interested in a multilingual topic when I realized that I can actually work on code mixing."
+  },
+  {
+   "t": 405,
+   "text": "which is when speakers change language in between phrases and sentences. I was so excited to start working on that. So yeah, definitely my love for languages and my own experience with different languages definitely shaped the choice of projects that I decided to. and we are going to speak a little bit about multiple languages later today as well if to look at your work, I see the way that a lot of your work seems to focus on finding problems with AI systems, like for example, showing that m"
+  },
+  {
+   "t": 454,
+   "text": "the biasing methods don't actually work as well as they seem to work, like lipstick on the pig paper that I think many people read, or discovering some unexpected behaviors, like semantic leakage that we are going to speak about again later. What makes you focus on uncovering these complex problems rather than just proposing solution. So I have two things to say here. First of all, it wasn't intentional. mean, these papers weren't the goal of my research. They happened to happen because of things I discovered when I was working on something else and also not always working."
+  },
+  {
+   "t": 503,
+   "text": "I'll explain. So the Lipstick on a Pig paper in which I show that debiasing methods don't work as we expect them to work. It happened because I realized that this is the case when I was trying to apply debiasing methods to another problem in the multilingual space. There I was looking at gender languages and I was trying to... control the similarity between nouns and gender nouns. So I was trying to essentially debias the gender and see how it affects the similarities in those languages. And I realized that there is no effect even when I apply the debiasing methods that I expected to do the job."
+  },
+  {
+   "t": 553,
+   "text": "And then I kind of switched to. analyze this a little bit better. And I realized that indeed those methods don't really change anything dramatic in how em words and vectors are organized in the embedding space. m So I happened to realize that this is the case. wasn't that I was trying to see what's wrong with these methods. And with semantic leakage, it was a little bit similar. I was not working on something specific. I was just playing around with models to kind of create stories. And I realized that in one of the stories I got as an output, I realized it's a little bit using too much of what I put in the prompt."
+  },
+  {
+   "t": 604,
+   "text": "And it wasn't like I thought that it can't be. just happened, like it can be by chance that the story is so full of the same semantic meaning of what I had in the prompt. And then I tried many different examples and try to play around with different models. And I realized that there is a significant leakage in many, in many cases. And it led me to essentially formalize the problem and measure it formally. Right, so what I hear is that you almost found those interesting behaviors almost randomly, like by chance, instead of focusing on that."
+  },
+  {
+   "t": 656,
+   "text": "Do you think it's worth in AI research? Is it worth focusing on specifically finding those complex problems or we will find them anyways? I don't think we will. mean, yes, probably if I wouldn't do it, then maybe someone else would try to apply these methods and realize that the behavior they get on a downstream task is not what they expected and someone would have found them. But yes, I definitely think it's worth trying to find these issues. I think that it happens when you play enough with models and try to really look at the data and look at what you get. I think that sometimes people tend to just use data and look at metrics without really knowing what happened and without necessarily looking at the generations or the outputs of the models."
+  },
+  {
+   "t": 715,
+   "text": "And I think that when you focus more on that and not only on the numbers, you're more likely to see these behaviors yourself."
+  },
+  {
+   "t": 726,
+   "text": "A big theme across your work is understanding what language models, large language models are actually doing. So I want to start with this topic. Your research is consistently focused on making language models more transparent, more trustworthy. And when we talk about interpreting model behavior, what do you see as the critical aspect that researchers should focus on or that researchers maybe miss frequently?"
+  },
+  {
+   "t": 768,
+   "text": "I think it's two things that we need to mainly focus on. First of all, really understand model behavior and make sure we know what happens with respect to whatever it is we're trying to get from the model. It's not always that easy. It's really complicated many times. And even if we get some insights, they don't necessarily apply to all the settings and scenarios. So I think this is a big challenge to, first of all, to analyze these models, understand better how they work and to make sure that what we do applies in the setting that we're interested in. And the second one is to make sure that the outputs we get are actually what we would like to see."
+  },
+  {
+   "t": 818,
+   "text": "To make sure that we are being fair across different groups of people, to make sure that the output of the model is consistent and accurate, to make sure that we don't have hallucinations. So it's both in terms of the mechanics of the model and how it actually works and what we get from the model. Right. So if to speak about a little bit like mechanics of the model or model interpretation, I think one paper that comes to mind immediately is your recent work on semantic leakage that you have mentioned already. And that paper was published at NAACL last year. It is called Does Liking Yellow Imply Driving a School Bus?"
+  },
+  {
+   "t": 868,
+   "text": "So there you define that term semantic leakage If you had to explain this in like a sentence or two, how would you explain this term"
+  },
+  {
+   "t": 879,
+   "text": "the model essentially uses cues from the prompt that are not necessarily related in its generation. Can you give an example? let's go with the school bus example. If we use a sentence like, he likes yellow, he works as a, many models would complete this sentence with a school bus driver or a different occupation that is somehow related to yellow. If we change yellow to red, we might get a completion like a firefighter."
+  },
+  {
+   "t": 915,
+   "text": "Sometimes if you use orange, you get a basketball player and things like that. So it's really obvious that the color from the prompt really essentially leaks into the generation and semantically affects the generation of the model in ways that are not necessarily expected. I think that's a better way of understanding why this is not necessarily the behavior we would expect or at least something that we need to be careful about. em is what happens when we look at idioms. For example, if we say something about how that woman got called feet before speaking in front of people and the day later she got hurt in or injured in, then the model will complete something that's related to feet or legs."
+  },
+  {
+   "t": 973,
+   "text": "even though it could be something completely different, it doesn't have any relations to the first part. em And we can't even say something about relatedness in the semantics of the first part, because the first part doesn't really talk about fit. It's just an idiom and it's not using the literal meaning. So the semantics of the word fit leaks into the generation of the model in a way that is really unintended. Right, and you mentioned already before that you realized this, you noticed that effect unexpectedly by chance. Do you remember that specific example, that specific prompt that you played with when you noticed it?"
+  },
+  {
+   "t": 1025,
+   "text": "to create m a story for my kids using their names and they all have Hebrew names and I wrote it in English. And then I got in the story many elements that are semantically related to the meaning of the names, which was weird because it was a Hebrew name. So it's not even something that was there in the input in English. And then I realized that it can't be by chance because it was really dominant. And I started using many more examples and many more settings. And I saw that it was quite consistent in creating these. That's interesting, It looks like this semantic leakage as a concept is very different from other biases or failures of models such as like just social bias or for example, or hallucination or like any other failure modes."
+  },
+  {
+   "t": 1095,
+   "text": "Do you see the semantic leakage, the failure mode, first of all, or something that is just the characteristic"
+  },
+  {
+   "t": 1105,
+   "text": "First of all, I think it's pretty different from some failure modes like hallucination, maybe, maybe not even, but let's say it's pretty different than some failure modes. As for bias, I actually think that it's the same mechanism that causes bias, societal bias and semantic leakage. Because I think that in many cases where we have biased behavior, it's because the model applies some connections that it's seen in the... pre-training because of the training data and it applies it to the generation or the output em because of similar mechanisms. I think it's not necessarily a failure mode and it depends on the manifestation of the leakage because it might be not harmful."
+  },
+  {
+   "t": 1155,
+   "text": "Maybe you could even say that if the user says that this person likes yellow. it makes sense that he would be a school bus driver. Maybe that was the intention of the user when providing this information. And we also expect models to kind of use the information in the prompt. That's one thing. We're actually working now on a follow-up work for semantic leakage. And we've seen that even when we unlink the entities of the person liking yellow and the person working as A, we still get this. leakage, think it kind of shows that it's not what's actually going on necessarily. The second thing is sometimes this leakage really violates common sense, really violates what we would expect to see."
+  },
+  {
+   "t": 1210,
+   "text": "I remember one of the examples was John's father, no. John likes tigers. John's father is working as a tiger in a zoo. That's definitely not what we would like to see from others, right? He likes koalas. His favorite food is eucalyptus leaves. No one eats that. It's not something we would want the model to output. So I think that in some cases it's not harmful at all and maybe even nice to have, but in different settings and cases it might... and it might have output something that's not expected or doesn't even make sense. And I think that the more alarming cases might be cases in which it's harder to realize that the generation is actually affected by something that leaked from the prompt and not what we would want the model to generate."
+  },
+  {
+   "t": 1273,
+   "text": "Right, and when you say it's harder to realize, it also makes me think about evaluation of the models. what do you think should be the way to evaluate the model in order to highlight that specific aspect, in order to measure whether there is semantic leakage there or not, whether it's positive or negative, like wanted or unwanted. So I think measuring semantic leakage maybe it's something we should do. m separately from measuring for the downstream task. But definitely, it might be the case that tasks in which the model doesn't do that well because of generating things that don't make sense necessarily or something like that."
+  },
+  {
+   "t": 1328,
+   "text": "Maybe in those cases, we can see that there is more leakage happening. But we haven't tried to do that yet."
+  },
+  {
+   "t": 1338,
+   "text": "You also mentioned in the paper that semantic leakage is more dominant in the instruction-tuned models."
+  },
+  {
+   "t": 1349,
+   "text": "So instruction-tuned models are somehow closer to that downstream use, I would say."
+  },
+  {
+   "t": 1359,
+   "text": "Like what would be your explanation maybe first of all of why instruction tuning models are more prone. I think that in general, models that are just pre-trained without being instruction tuned tend to be more generic and that the instruction tuning phase of the training m incentivizes the model to be a little bit less generic in the answers. And I think that in these cases, the model would attend to the prompt more. and not generate the kind of default answer for many of the questions."
+  },
+  {
+   "t": 1405,
+   "text": "And I think that this is the reason we see more leakage in these models. I think it's a little bit similar to why bias is hard to remove because we do want some of the information that causes bias, but not all of it. Right. And I think this is the same for semantic leakage. We want the model to be able to make the connections, the semantic connections, but not always, not on the expense of being right in the answer and not on the expense of generating reasonable responses. And it's really hard to define and decide where to draw that line. Right, absolutely."
+  },
+  {
+   "t": 1445,
+   "text": "with that in mind, I think it's a very good introduction to another topic that you work on, which is understanding the origins of behavior of the models, right? So it's one thing is to understand the actual behavior of LLM, but it is a very different one."
+  },
+  {
+   "t": 1469,
+   "text": "to understand where that behavior come from. So if we move beyond identifying those problematic behaviors to understanding the root causes, what do you think is the most promising approach right now for tracing the behaviors back to their root cause in training data? hard question. I think there are multiple ways of trying to do that and multiple kind of directions in research trying to do that. They're all valid, I feel. And I think it really depends on what exactly you're trying to explain. And more important is how you design your experiments and what you choose to do."
+  },
+  {
+   "t": 1516,
+   "text": "Because even some really brilliant ideas might not be executed well enough."
+  },
+  {
+   "t": 1524,
+   "text": "in a controlled manner to actually support some arguments."
+  },
+  {
+   "t": 1533,
+   "text": "But I do feel that if we want to answer why questions, which are, I think, the harder ones to answer, we do need to look at internals of the model or intervene in some way and check how this changes and impacts the behavior of the Right, and this is where your work on interventional analysis becomes really relevant. So you have that very recent paper that is called Rewriting History, which is all about that intervention, interventional analysis. Can you explain how the interventional analysis that you speak about in this paper is different from observational."
+  },
+  {
+   "t": 1588,
+   "text": "Yeah. And so what we do in that paper is we look at specific knowledge that the model possesses according to some definition. So we look at the specific benchmark and we're trying to find m a spot in time in the training. So a specific checkpoint of training the model in which the model essentially learned a specific fact or an instance and Obviously, this depends on how you define learning, but we look at a specific point where up to that point, the model didn't know how to answer that question. And from that point, for several checkpoints, the model was consistent in answering that question correctly."
+  },
+  {
+   "t": 1635,
+   "text": "So we look at that point, that benchmark, as the point where the model learned that fact. And what we do is we try to change the data. right before that checkpoint to remove what we think should affect the model in learning that instance and check what happens. So we retrain that checkpoint and see whether the model was kind of losing that information or forgetting that information. And we do that by looking for documents in that batch of data in which we have co-occurrences that are related to that instance, depending on exactly the instance being learned."
+  },
+  {
+   "t": 1682,
+   "text": "And we replace documents that have this co-occurrence with documents that don't have this co-occurrence. And then we retrain the checkpoint and check the performance of the model on those instances that it learned before. And we see a significant drop. in the model's ability to answer these questions we intervene on. Can you briefly explain what was the motivation to do those interventions specifically as opposed to observational approach? Yeah, so I think that when you don't intervene specifically and check how this influences the model in a way that's really explaining"
+  },
+  {
+   "t": 1738,
+   "text": "what happens, it's really hard to argue that there is no other cause that might be the one causing what we observe, right? Even if we see some correlation between some property in the data and something that the model exhibits, some behavior that the model exhibits, we don't know for sure if there is a different factor that's actually causing that behavior and that what we're seeing is just correlation. But when we intervene that way, we're guaranteed to know that these cooccurences are the one affecting the model because we know what happens when they're not there."
+  },
+  {
+   "t": 1787,
+   "text": "Right, right, and we come back to that fact that correlation is not a causation, right? Can you think about any like surprising or counterintuitive findings that you saw about the relationship between data and model behavior? So I think most of the results were what we expected to see. I think two things were a little bit surprising to me. One of them was when we retrained some of the checkpoints with the same data exactly, we got sometimes different results. And that's something that we all know happens. But I was surprised by the significance."
+  },
+  {
+   "t": 1834,
+   "text": "of the change that we were seeing even without intervening. That was really surprising to me. And the second one m was that we did not essentially erase all of the information by intervening on co-conferences. I mean, thinking back, it might be not surprising because it depends on how we choose the documents to change. We also have some occurrences in previous checkpoints that the model might be still using even if we remove it from the recent checkpoint. But I think I was kind of surprised to see that removing all of the concurrences from the recent batch of data wasn't removing all of the ability of the model to answer that question."
+  },
+  {
+   "t": 1881,
+   "text": "Those questions. How do you explain this? So I think that first of all, some of the data is there in previous checkpoints. So because of this fragile behavior of models, it might be still there even if we remove it from their very recent batch. And also, it might be the case that we don't actually remove all of the occurrences because we do it host automatically. And final thought is that there might be some kind of a chain that makes the model learn some facts and not necessarily only explicit co-occurrences in the data that also helps the model learn."
+  },
+  {
+   "t": 1931,
+   "text": "So I think these might be the reasons. Right, and to me it almost sounds like there is a spectrum between ideal causality, causation that is achieved using interventions, controlled interventions, and the pure observation, no study. And there is a lot there are lots of things in between. So some approaches could have both observational aspects and a little bit of causality aspects. it is probably very extremely difficult to make the ideal experiment where we using, we can claim that."
+  },
+  {
+   "t": 1988,
+   "text": "that was a causality with the system as complex as the LLM. where do you see your work in this spectrum? I understand it aims to go towards causality, but like how far? yeah, it's pretty interventional. And I think it's really hard to, I don't know if there is an ideal experiment or ideal setting to do that. And there are many factors that affect what we see."
+  },
+  {
+   "t": 2022,
+   "text": "And sometimes we even get contradicting evidence. Not in that case, but I remember that In 2019, people were trying to understand multilinguality and how language models learn cross-lingual representations and so on. And there were many papers trying to explain that. And some of them had contradicting insights and contradicting results because of the way they chose to design their experiments. Even if each paper was perfectly sound. some choice of the data set that they were using, some choice of what models they were looking at, or the way that they operationalized their m hypotheses."
+  },
+  {
+   "t": 2071,
+   "text": "All of these might be different enough to actually show us sometimes different results and insights. So I think it's really hard to have this perfect experiment that explains everything. We're not there yet. Even if we'll ever get there."
+  },
+  {
+   "t": 2092,
+   "text": "Right, and there is that tension, I would say, within the AI research field between empirical observation and causal understanding. So do you see the way to make that gap between approaches smaller or you think it's rather about choosing one versus another? I don't know if it's choosing one versus the other. I do think that m definitely m causal insights m maybe teach us more about the real m kind of process in the model. But I think there is a lot of benefits also in getting insights that are not necessarily causal and don't."
+  },
+  {
+   "t": 2142,
+   "text": "explain exactly how the model works, because in many cases what we care about is the model behavior. And if we learn something about correlation and about the expected behavior of the model, it might be enough in some cases, depending on your goal and what you want to get out of it, even without a sound experiment that shows causality and so on. Not to say, I'm trying to say that even if we don't show causality in a proper way, we might have benefits from some observations about how models works anyway."
+  },
+  {
+   "t": 2187,
+   "text": "Right, so what do you think are the causes or like just a random example of the cause when we need causality versus when observation could be enough? I think that when you, it's kind of circular, but when you want to know why and you want to know the cause for something, you do need causality. we want to actually know what's going on in the model in very sensitive domains, we would want to actually, yeah, to be sure that we're looking at the right cause for that behavior. I see. That makes a lot of sense. My last question about this specific work is what is your take on the interventional analysis when it comes to understanding why models perform differently with the high resource languages versus low resource languages?"
+  },
+  {
+   "t": 2250,
+   "text": "Yeah. So I think that if I would want to design an interventional experiment for that question, it's pretty hard, right? Because it's not that we can just add more data for low resource languages. We don't have that data. I would guess that you could do the other way around and remove data from languages that are high resource languages or maybe use some kind of synthetic data. I think that there were kind of some works doing similar things in older models and like a few years back, trying to answer such questions using similar approaches."
+  },
+  {
+   "t": 2296,
+   "text": "em But going back to what I was saying about cross-linguality and insights that we were seeing a few years ago, em yes, we did see some papers trying to understand multilinguality and cross-linguality better. And we did see a lot of contradicting evidence for what's going on in models. So I think it's really hard to have this one perfect experiment that explains what we're looking to do."
+  },
+  {
+   "t": 2328,
+   "text": "Let's move to a slightly different topic again, which is the control of modal generation. So we have talked about understanding the behavior and understanding the cause of that behavior, but there is something else that is controlling. that behavior, especially for safety. And it's entirely a different challenge. And I want to speak a little bit about your research on controlling models."
+  },
+  {
+   "t": 2366,
+   "text": "What do you see as the key barrier in effectively controlling what models generate? m I think it really depends on the context and what you want to get and also the end goal, the model you're using, m"
+  },
+  {
+   "t": 2388,
+   "text": "what type of control you're looking to have. It can be changing something internal in the model because you want to remove some property or you want to keep something private. It can be something like some kind of a change in a prompt to encourage the model to behave in a different way. It can be changing the language and see how that changes the generation. It can be changing the model itself by fine tuning, for example, towards a specific behavior. So it really depends on what you're trying to do, what type of control you're trying to get."
+  },
+  {
+   "t": 2432,
+   "text": "When it comes to AI safety, it almost sounds like, okay, LLMs right now are very good in generating the text, but it's not always the safe way that they're doing that. And we are almost trying to control them in the way that's making them not to generate. Instead of like they are good at generating now. Let them make them good at not generating What's your take on? I think it's very the trade off between having the model generate whatever and risking safety issues and fairness issues versus having the model not generate anything and make sure like this is like when the model doesn't generate anything it's fair and it's safe and it's all we want it to be except for being helpful."
+  },
+  {
+   "t": 2499,
+   "text": "Right? So there is this tension. Obviously, in a perfect world, we would have models that answer everything except for what we don't want the model to do. But it's really hard to get to that point."
+  },
+  {
+   "t": 2514,
+   "text": "So yes, we want to be careful not to overdo it, not to overguard models because we do want them to be useful. And we've seen many cases where we have models just not willing to answer questions that are completely legitimate to ask. em And also, I guess it also depends on the domain you're on and the application, because in some applications, maybe we would prefer the model to just not answer in some cases, rather than doing a mistake or hallucinating something that is really risky. Versus in some domains or some applications, maybe it doesn't really matter that the model does something that's not exactly what we would want it to do because the... The stakes are lower."
+  },
+  {
+   "t": 2560,
+   "text": "Let's speak about your another recent paper that you published at the EMNLP 2025, which is called OMNIGUARD. So this paper, it tackles a control problem of detecting harmful prompts across different languages and the different modalities. Could you explain briefly the core insight of this work"
+  },
+  {
+   "t": 2594,
+   "text": "Yeah, so what we did in that paper is essentially identifying layers within the model. I'll talk about cross-linguality. So in order to create a model that identifies harmful prompts in different languages, what we did is we identified layers within the language model. m that are almost universal, that have similar representations across languages. And we extracted these representations in order to train a separate model, very lightweight, for the task of identifying harmful prompts."
+  },
+  {
+   "t": 2647,
+   "text": "the reason that our model is so efficient is that we don't have a full language model that's trying to determine whether this prompt is harmful or not, but we just have a really small, very lightweight model that does that with the representations that we're extracting anyway as part of using the model for that prompt. So when we have a prompt from the user, we can feed it into the model. and just take representations from the model and use them with our small model to determine whether that prompt is harmful or Right, interesting."
+  },
+  {
+   "t": 2699,
+   "text": "maybe first of all, again, I want to ask you, what was the motivation? Why you started that work in the first place?"
+  },
+  {
+   "t": 2709,
+   "text": "Have you noticed some differences between languages in terms of vulnerability?"
+  },
+  {
+   "t": 2718,
+   "text": "The main motivation was em evidence in prior work showing that you can essentially jailbreak models with low resource languages. So instead of asking something in English and get blocked by the model, you could translate it to a low resource language, asking the low resource language where the model doesn't have the same safety guards as in English. get the response in that language and translate it back to English and essentially get what you wanted to by passing the guards that the model has. And the idea was to try to be able to identify problematic prompts not only in English but in many other languages."
+  },
+  {
+   "t": 2766,
+   "text": "Right. And when you apply that approach and try to make the model"
+  },
+  {
+   "t": 2777,
+   "text": "more efficient across the languages. How do you see the performance for English changing? Of course, the aim is to make the model as accurate, as efficient in other languages as it is in English. But is it really the case?"
+  },
+  {
+   "t": 2805,
+   "text": "So are you asking whether other languages have the same performance as English or whether we degrade the performance in English?"
+  },
+  {
+   "t": 2814,
+   "text": "So I don't think it's a concern in this work because essentially our model is an additional model that we can... I mean, if we already have guards in place for English, they will be there anyway, right? And the main concern with this work was what happens if we use other languages. And this is the main thing we're targeting. So the concern wasn't so much about what happens in English, but what happens in other languages. Right. If the model is already guarded for English, even if we don't identify by our classifier, which I don't think should be the case, but even if we miss it somehow."
+  },
+  {
+   "t": 2860,
+   "text": "the model will probably not be willing to respond because it's guarded in English to the same extent. It's the same model. What we do is we essentially handle cases in other languages and we kind of add an additional layer to the model. I see. Okay, if we speak about those intermediate internal representations, then your approach also identified that those internal representations are aligned across languages and modalities, right?"
+  },
+  {
+   "t": 2902,
+   "text": "How? languages and modalities. So we did like separate experiments for different languages and did like image and text and audio. I see, I see."
+  },
+  {
+   "t": 2916,
+   "text": "So separately across languages and separately across modalities of text and audio. em How do models internally represent harmful versus benign content? Can you give the answer to that question? Whether in terms of modalities or language? That's a really good question. We haven't explicitly looked at this question and we haven't tried to characterize different representations according to that. were mainly trying to identify whether a specific prompt or internal representation of a specific prompt is representing the harmful prompt or not. I guess it probably means that there is signal in these representations."
+  },
+  {
+   "t": 2965,
+   "text": "Otherwise we would not be able to... do that classification. Your paper also, like you already mentioned that there was a strong improvement for low resource languages but you also noticed that there are strong improvements for non-textual modality."
+  },
+  {
+   "t": 2988,
+   "text": "How would you explain that? why there is that difference between text and audio. I think it's essentially very similar, right? Because different languages, you could think about them as different modalities in a way. If we have a model that represents different languages, we know that there are some internal representations that are more cross-lingual. And in the same way, if we have a model that represents text and images together, we have some layers, internal layers, that are more cross modalities in the sense that the representation of the text and the image there are more similar."
+  },
+  {
+   "t": 3036,
+   "text": "I see. If to speak about safety of the model, then it's"
+  },
+  {
+   "t": 3049,
+   "text": "easy to evaluate the model in English only and say that it's safe because it's safe in English. But if the model is safe in English but at the same time. unsafe in other languages? Is it actually safe or not?"
+  },
+  {
+   "t": 3071,
+   "text": "I would say definitely not because it's not safe in other languages, but as we just discussed, it means that it's not safe also in English, Exactly. And then if it comes to modalities, then it's the same question. If it's safe in text, but you can just speak something and it's not safe for the exact same prompt, that's probably also a big challenge. So why do you think these gap in model safety across languages, across modalities still exist. I assume it's about how these models are guarded and trained to be safe. m For most of these models, we don't exactly know how they are trained to do that."
+  },
+  {
+   "t": 3123,
+   "text": "But I would assume that it's mainly done in English and with text. Yeah, so do you think there should be some real change in how we evaluate the safety of the models given this? Yes, definitely. mean, there is a lot of work on jailbreaking and safety, and I think that it's kind of separate because sometimes people look at the performance of the model and think about safety as a different dimension and focus on safety separately. So I don't think there are no evaluations for safety."
+  },
+  {
+   "t": 3170,
+   "text": "and that all of the evaluations are in English. It's just like a matter of whether you actually care enough to check that or not. And also it's harder to have high quality benchmarks. I mean, the same reasons that make it challenging to have models safe in other languages and other modalities are the same that makes it harder to evaluate because of lack of data, right? But it's not impossible to do. Right, I think it's not only lack of data, although it's a very important reason, of course, but it's also the fact that new attack types, just pop out every day."
+  },
+  {
+   "t": 3218,
+   "text": "This is so challenging to, yes, to foresee what's going to happen. Yes, I completely agree. So how do you think about building robust control mechanisms that generalize to those attacks that we maybe don't even know about today? My intuition is that some of the things we'll do will generalize to some of the attacks that might happen later, but I don't think we have a way of anticipating and guarding against future attacks. m I'm sure there are different types of jailbreaking methods that will break what we have in place for previous methods."
+  },
+  {
+   "t": 3264,
+   "text": "Do you have any intuition based on all your previous work in this area on how to understand, how to measure whether any control mechanism is potentially generalizable to Ancien attacks or not?"
+  },
+  {
+   "t": 3287,
+   "text": "I don't know if I think that there is a way to do that. Intuitively, I think that we tend to think about what we already know and whether we are able to protect against these, but it's just really hard to anticipate other types of methods that we haven't seen before. And it can be really creative, right? Yes, I think again that some of the things we'll do will automatically guard against other possible methods. If we, I'm thinking about bias, for example, if we treat bias well enough, we might prevent some other adversarial methods for exposing bias from actually working."
+  },
+  {
+   "t": 3342,
+   "text": "But I don't think... I mean, I don't have good ways of doing that in a way that will generalize to any future method. I don't believe it's actually possible. Okay, so before we wrap up, I have two final questions for you. One is taking a step back and looking across all of your work on model interpretation, understanding the origins of model behavior and also the control."
+  },
+  {
+   "t": 3380,
+   "text": "Where do you see the field heading to next? I feel like at the same time as we're making models better in how they perform, there is a lot of emphasis now and this is what I want to promote"
+  },
+  {
+   "t": 3396,
+   "text": "on work that's making sure that these models are also good in other aspects of being good. So not only just pure performance on different tasks that we're interested in, which is obviously important because this is why we want these models in the first place, but really caring about factuality of these models, making sure that they don't make up things or hallucinate, making sure that we're able to provide high quality models for other languages as well, making sure that these models are accurate and consistent. Everything that makes these models more reliable and safe and fair, I think is really important as well."
+  },
+  {
+   "t": 3442,
+   "text": "right. know where we have problems that we need to attend to if we don't solve them. And finally, I will try to ask a very similar question, but from the opposite side. So if you were starting your PhD today, which research direction would you actively avoid, even if it is currently popular?"
+  },
+  {
+   "t": 3469,
+   "text": "Why would I? I mean, I think everything is great. I it's... I mean... that sometimes I hear, LeCun for example is saying that AI researchers should not work on LLMs anymore. if we're getting insights or making improvements that are useful in some way, I mean, I think we need to think carefully about the motivation of what we do and what we get out of it if it's successful. So this should be probably the leading thinking in choosing what to work on. I think it's weird to say that we shouldn't be working on LLMs. I mean, I think there is a lot of potential in language models to so many things."
+  },
+  {
+   "t": 3518,
+   "text": "And another thing that I haven't mentioned, but I really believe in is starting to use these models in two different applications. Specifically, I'm really interested in health applications. And I really think that there is tremendous potential to these models in improving so many different things in the health system."
+  },
+  {
+   "t": 3541,
+   "text": "It can be diagnosis of different diseases. It can be just waiting times of patients and how things are being done right now, saving time for practitioners by helping them in different tasks that they have to do and can be automated to some extent by models. So I think that also is really, is a really good thing we can do at this moment with models. Also, I want to add that all of these works that we talked about are also works of my co-authors and collaborators. I did nothing by myself, and I want to acknowledge that I enjoy and appreciate their work as well."
+  },
+  {
+   "t": 3588,
+   "text": "Thank you."
+  }
+ ]
+}

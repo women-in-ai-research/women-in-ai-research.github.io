@@ -1,0 +1,9 @@
+{
+  "_comment": "Corrections applied by `npm run import-transcripts` to the caption text of each episode (episode number → { wrong spelling: right spelling }). Whole words only. Add an entry when captions misspell a name or term, then re-run the import for that episode.",
+  "episodes": {
+    "8": { "Abhalisha": "Abhilasha", "Abhilesha": "Abhilasha" },
+    "18": { "Leticia": "Letitia", "Parcalabesco": "Parcalabescu" },
+    "20": { "Sadia": "Saadia" },
+    "23": { "Malikha": "Malihe" }
+  }
+}

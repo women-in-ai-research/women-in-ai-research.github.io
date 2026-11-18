@@ -1,8 +1,14 @@
-"use client";
-
 import { Navbar } from "@/app/components/navigation/Navbar";
 import { GuestsSection } from "@/app/components/guests/GuestsSection";
 import { Footer } from "@/app/components/footer/Footer";
+import { EventResearchersSection } from "@/app/components/guests/EventResearchersSection";
+import { researchersByEvent } from "@/app/lib/eventResearchers";
+import episodesData from "@/app/data/episodes.json";
+import { episodePath, hasEpisodePage } from "@/app/lib/episodePages";
+
+const episodePages = Object.fromEntries(
+  (episodesData as { number: number; slug: string; guests?: string[] }[]).filter(hasEpisodePage).map((e) => [e.number, episodePath(e)])
+);
 
 export default function GuestsPage() {
   return (
@@ -32,7 +38,10 @@ export default function GuestsPage() {
       </div>
 
       {/* Guests Section */}
-      <GuestsSection />
+      <GuestsSection episodePages={episodePages} />
+
+      {/* Researchers interviewed at conferences and workshops */}
+      <EventResearchersSection groups={researchersByEvent()} />
 
       {/* Gradient divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-wiair-medium/40 to-transparent" />

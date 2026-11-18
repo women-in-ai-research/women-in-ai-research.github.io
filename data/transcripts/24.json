@@ -1,0 +1,427 @@
+{
+ "episode": 24,
+ "videoId": "jtQq8NspkY4",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "An image is not worth a thousand words. An image is worth an indefinite amount of words. There are indefinitely many ways in which you can describe every individual image based on the particular context that you're in, based on what is currently relevant, based on who you're talking to."
+  },
+  {
+   "t": 18,
+   "text": "My passion is basically to bring in the perspective of not saying the longer the better. It's not a goal to make exhaustive three-page-long image descriptions. But the importance is to figure out what is actually relevant and provide relevant information to people who need image descriptions,"
+  },
+  {
+   "t": 40,
+   "text": "it can sometimes happen that as a reviewer we feel that we are in a position of authority in some way. don't hold yourself as a reviewer to a different standard than the authors are being held when writing a response to your review."
+  },
+  {
+   "t": 82,
+   "text": "Hi, Elisa, and thank you for joining me today. Thank you. Hi. Thank you for having me. Let me start with a couple of personal questions. I want to know a little bit more about your personal story. So I know that you did your undergrad in Germany before moving to the US for your PhD. the move from Germany, from Europe to the US is quite a big decision. So I wonder whether you wanted to move to the US specifically or not. And also, was there a moment when this decision and this whole move felt a little bit like a leap rather than the obvious next step"
+  },
+  {
+   "t": 131,
+   "text": "Yes, absolutely. So in some way it was a pure coincidence and it was an opportunity for me that I wanted to take. where it was less about being in the US and more about the particular opportunity that I got. So when I moved to the US, I went to Stanford University for PhD. And Stanford was for me a very unique place. Because of the incredible interdisciplinary nature of their programs. So my undergraduate degree was in cognitive science, an international study program, and cognitive science, especially in Europe, that's also one of the distinctions between Europe and US, and I can talk about that a little bit more later, but ~ the cognitive science degree is in general incredibly interdisciplinary."
+  },
+  {
+   "t": 179,
+   "text": "So it connects a lot of different fields in order to understand the mind from different perspectives. And Stanford at that point was very uniquely positioned where the field of natural language processing, for example, and the NLP group was not just solely located in the computer science department, but it was actually connecting professors from a lot of different disciplines and areas and fields. So, for example, especially from the linguistics department, but also members in the psychology departments are affiliated with that group. And I was already really interested in artificial intelligence. And so I applied for the linguistics program at Stanford because it was an opportunity for me to do the computational work, but at the same time not lose the connections to the other fields that I so valued in my undergraduate degree."
+  },
+  {
+   "t": 227,
+   "text": "And so I would say, especially Stanford, was a dream position for me for PhD. That sounds amazing. it must have been also a hard decision. tell me a little bit about what was the hardest part of the transition? for me probably the biggest change was the experience of taking classes. and what that experience would be like as a PhD student and also as a TA, as a teaching assistant or a tutor. Because I did those works as well when I was in Germany. But one is in Germany grading was much harsher. And so when I was grading ~ I was grading much harsher and I had to learn how to re-grade in the US in the way that wow."
+  },
+  {
+   "t": 276,
+   "text": "would be in the expectation. but then also the amount of time that would be and the opportunities that undergraduate students would get in order to ask PhD students questions, ask professors questions about class content and so on. that was a more ~ unique way of approaching teaching of even very big classes that I learned to really appreciate. We did have that in my undergrad degree in Germany, but not to the same extent. But this is where I needed to, also when I was getting feedback, well actually that is that is one thing, when I was getting feedback, understanding criticism, right? Where in Germany criticism tends to be more direct."
+  },
+  {
+   "t": 321,
+   "text": "and I understood when I was being criticized. in the US I had to sometimes learn that criticism is often framed in a much more pleasant way. And so being able subtle. more subtle and then being able to detect when you're going astray and when you're doing well, that was a bit of a cultural shift for me. but At this point I've gotten so used to it, I almost find it now jarring the other way around. So I wonder, are you now in the place where you can shift between these two different cultures and be as successful in the US as you would be in Germany, for example, and the other way around?"
+  },
+  {
+   "t": 369,
+   "text": "it's just like, it would be another period of... accommodation and the adaptation in Germany if it happens that you go back. I'm very sure there would be a period of accommodation again. I've gotten very, very used to the system now here. although I've been also part of reviewing committees for grants, for example, in Germany. And I do really enjoy being able to move between these different traditions on how. meetings are structured and how, you know, people give feedback to each other, how time is prioritized and so on. Yeah, for sure. For sure, it makes the whole experience a lot richer when you experience it in different cultures in different countries and different continents."
+  },
+  {
+   "t": 425,
+   "text": "How long did it take you to get used to the American? it's of course a gradual process and I don't think on an everyday basis, in the work sense, it wasn't bothering me at all because it was such a rich environment to work in, and I felt so inspired by the people I worked with and the research I was being exposed to every day and the things that I could do that outweighed any other cultural differences that I may have faced. what was difficult was time zone differences to Germany, for example. If you wanted to, if you were getting homesick and you wanted to call someone at home, you usually couldn't do that in the evening, which is usually, you know, when you come back from work and you just want to talk to somebody."
+  },
+  {
+   "t": 478,
+   "text": "But it's three AM at night, so you will not be able to talk to anybody. So you will be in your PhD student room alone"
+  },
+  {
+   "t": 487,
+   "text": "and with your thoughts. So that was that was probably for me the hardest part. just being on a PhD journey on your own and not being able to when you need it necessarily reach out to the people that you have trusted for years, you know. How did you deal with that? I found a couple of international grocery stores in the Bay Area and I got myself Yeah some comfort German food ~ that I could make myself when I got very homesick. ~ and then of course try to make more connections within the US, who I felt I could reach out to in the evenings or yeah, get over those more difficult times. But It definitely that was something that sometimes still to this day frustrates me, these time zone differences."
+  },
+  {
+   "t": 536,
+   "text": "And I can totally feel that pain as well because my family is back in Europe, like my parents, I mean."
+  },
+  {
+   "t": 544,
+   "text": "Yes. Yeah, so"
+  },
+  {
+   "t": 547,
+   "text": "if to switch gears a little bit and come back to the research and the community work that you're doing for research community, I know that you in... 2023 you won a NeurIPS Top Reviewer Award. And it sounds quite impressive because it's NeurIPS and there are thousands of reviewers. I can hear every year people complaining about reviews that they get from NeurIPS. So being among the top reviewers means that you probably have some good intuition about what the really good review is, how it should look like. So I wonder what's your opinion on what the really good review is that is useful for the authors and the authors would agree with that even if they get rejection after getting those reviews. Yeah, that is a very good question."
+  },
+  {
+   "t": 620,
+   "text": "I obviously I don't know for sure why I got that reward. but I would suspect I actually got it for continued engagement because in the rebuttal period there was one paper where I probably had 10 or 15 back and forths discussing my concerns, and I kept engaging with the authors in that way. And I think that may have made an impression on whoever nominated me. But in that particular case, for example, it was about ~ human subject research And so in that particular case, I was really pushing the authors on their assumptions that they could just take everything for granted."
+  },
+  {
+   "t": 668,
+   "text": "That they got from their human subjects and that they actually understood their data. And overall, I think every author is grateful when they get engagement from a reviewer, right? And being able as a reviewer to also revise your view based on additional evidence that the authors may provide or something that they clarify, I think."
+  },
+  {
+   "t": 698,
+   "text": "Is something that's highly valued and appreciated, in addition to having a high-quality initial review as well. There's one Hmm. piece of advice that I had read years ago about writing a review, which has really stuck with me, which is don't hold yourself as a reviewer to a different standard than the authors are being held when writing a response to your review. Because it can sometimes happen that as a reviewer we feel that we are in a position of authority in some way. And so we don't have to provide evidence for everything that we say or we claim, right? That we say"
+  },
+  {
+   "t": 737,
+   "text": "There should be more references. More work should be cited in that way. But what is the work? Right? So all these unclear phrases that we would immediately jump at as reviewers if the authors had said them. This is the standard that we should hold ourselves against when we're writing a review, because it otherwise creates an unfair process of deliberation about the quality of a paper if we don't allow for that. That's a great advice and I think every researcher experienced at least once the review that says something like, you didn't cite all the previous related work without saying what exactly you didn't cite or stuff like that."
+  },
+  {
+   "t": 789,
+   "text": "You know, we grow with the amazing people that give us advice. And I got that one I was told that one thought, which has been with me since then, which is from all the people who are going to read your paper, the reviewers are probably still going to be the ones that spend more attention on average than most other readers of your paper. And even if they don't spend the amount of time that you want them to spend, if they significantly misunderstand your paper, it's not written well enough. So you want to write a paper that even when people do not put in effort, when they just browse it, They need to take away the core things that you want them to take away. And they also need to be able to see the limitations that you want them to take away. If that is not the case, then there's something you can also do better about your paper."
+  },
+  {
+   "t": 841,
+   "text": "sure, you should partially blame the reviewer for not. Seeing what you've actually said in the paper, not putting in the effort to understand what you mean. But you can also go back and say, well, otherwise this paper would have gone out, and lots of people would have looked at this paper and have taken something like that away. And that's probably also not what you would have wanted. So this has been for me helpful to not. get that outraged at reviews and instead try to make it a bit more of a productive process. And I think that makes me happier in the process itself."
+  },
+  {
+   "t": 871,
+   "text": "thanks so much for sharing that, Elisa. And I think it's always great to hear all those different approaches of how people deal with the feedback and the rejection stories that are inevitable in the research, unfortunately. Speaking of which, let's actually... get into the research now because I'm really looking forward to discussing the topic of us as humans taking the visual world that's around us and converting. translating it into language and how well AI systems can do that So let's start with the big picture."
+  },
+  {
+   "t": 924,
+   "text": "Every time when I, for example, describe a photo to someone or explain what is on the screen of the computer to someone who is blind, for example, I'm probably doing something that sounds very simple but is actually quite a remarkable process. I take that continuous, dense visual information and I'm compressing that into just a linear string of words. And at the same time on parallel, I'm also deciding what matters enough to keep in that compressed representation and what can be thrown away. Why you think this translation problem, the way I call it, or maybe you have a different term, why that translation problem is an interesting and important object of"
+  },
+  {
+   "t": 987,
+   "text": "Yeah, thank you. I actually also call it the vision language translation problem. So that works perfectly for me. There are lots of things coming together why I think it's interesting. Like for example, when you see a yellow banana, are you going to call it a banana or a yellow banana? When you're going to see a blue banana, are you going to call it a banana or a blue banana? Right? So there are very strong effects that when things look weird, like they have a weird color, you will call it a blue banana. Whereas when it has the usual and typical color, you will just call it a banana. And there's no"
+  },
+  {
+   "t": 1021,
+   "text": "On first sight, there's no informational reason for that, right? It's still a banana. The other person can identify when I say banana what I mean, but I still will say blue, even though it's more effort for me, right? And on the other hand, at the same time, when we have a listener who listens to what we're saying, they draw very rich pragmatic inferences about why we say things the way we do, right? So if you have a banana there, And the speaker says, Can you give me the yellow banana? We find that listeners actually infer that there must be multiple different bananas. There must also be maybe a brown banana, for me to say, please give me the yellow banana, because there must be a reason why I said yellow, right? But that same thing doesn't happen when there's a blue banana, right? So we in language, listeners and speakers, when we interact with each other, we Make use of really complex pragmatic processes all the time, where meaning is not just what we say, but it's also what we could have said."
+  },
+  {
+   "t": 1082,
+   "text": "And that's being interpreted, right? And so this selection problem, this information selection problem that you're describing when we're trying to translate a visual image into text. Has tons of these alternatives that we could reason about that can have real consequences for when people then interpret those descriptions. So, for example, if we just take that in a slightly different domain, when you're describing a person, what parts of the person are you describing? Are you gonna describe their skin color? Are you gonna describe their gender? Are you gonna describe like different features about them? And based on whether you're gonna do that or not, why have you done that? Is it relevant to the story? Is it does it tell me something about you as someone who describes it to me that you think that this is a relevant thing that I should be knowing about?"
+  },
+  {
+   "t": 1130,
+   "text": "And so really understanding these choices of why we say something that the way the way that we do really matter for communication to happen. In a way that is not just semantically true, but also pragmatically felicitous, as we say. So pragmatically useful and meaningful in some way, and actually achieves in the conversation what we intended to achieve. But that's really, really hard to measure. So that is one thing. That is my personal historical angle, how I come to that. The reason why I'm why switched and moved more from the psycholinguistic, really less naturalistic way, more theoretical way, to the more rich naturalistic settings, like in the field of what is called image captioning or image vision language translation, is because there was a big disconnect."
+  },
+  {
+   "t": 1188,
+   "text": "Between the more cognitive science literature on these type of translation problems and how these things were treated in AI research. So in AI research, there was generally this assumption that we just find a, if not the, description for every image. And there's something like a ground truth, that each image has a ground truth description that is just going to always be good and work. And when we look at the history of the field of image captioning, for example, that absolutely makes sense, right? Because we started with systems that could barely say something that was right, something that was correct about an image. It was just about: can you name some objects in that image? And then at the later stage, Can you name those objects in the image and then relate them to each other?"
+  },
+  {
+   "t": 1238,
+   "text": "Say that a vase is on top of a table, for example. Like how what is the relationship Mm-hmm. between the objects themselves? And that in and of itself was so hard. But now we actually have systems that largely say true things about images. And now I think we can ask the more interesting question of what should be said. And that requires first establishing that An image is not worth a thousand words. An image is worth an indefinite amount of words. There are indefinitely many ways in which you can describe every individual image based on the particular context that you're in, based on what is currently relevant, based on who you're talking to. And so You mean indefinite number of correct ways to describe. Exactly, indefinite number of correct ways. Yes, thank you. And that is now suddenly the problem because this is really hard to evaluate. Because showing someone an image and showing someone a description and saying, Is that correct? is a very easy way of evaluating."
+  },
+  {
+   "t": 1297,
+   "text": "But being able to say, but Is it useful? if it had included this information, would it be better? If it had phrased it this way, if it had ordered the sentences in a different way, would that still be good? Is a much richer question by bringing in sort of the pragmatic alternatives. And so my My passion is basically to bring in the perspective of not saying the longer the better. It's not a goal to make exhaustive three-page-long image descriptions. But the importance is to figure out what is actually relevant and provide relevant information to people who need image descriptions,"
+  },
+  {
+   "t": 1336,
+   "text": "for example."
+  },
+  {
+   "t": 1337,
+   "text": "when you say relevant, it immediately in my mind it triggers the link with the relevant to what, relevant to some context probably, right? And then you've had some earlier paper that is called \"Context Matters for Image Descriptions for Accessibility\" that I would like to discuss. So can you ~ explain what kind of context you care about in that work? Yes. So you're picking up something really important, which is context in and of itself is very ill-defined. There are so many different things that context can mean."
+  },
+  {
+   "t": 1384,
+   "text": "Context can mean who am I who is describing something to you? it is who are you who I'm describing something for? What situation are we in? What context is that image in, right? Like what is the environment of where that image is presented? So there are lots and lots of different ways in which context can matter, and it can be it can seem very overwhelming if you try to just say, I'm including context, because that can be so much. So in this particular work, we started by constraining context to a single type of website, which was Wikipedia. So there has been lots of great work in human-computer interaction, which has shown the type of website, for example, already changes what descriptions become useful."
+  },
+  {
+   "t": 1431,
+   "text": "So we even constrained it further than that by just saying we only care about images on Wikipedia. But now One and the same image on Wikipedia can appear in different Wikipedia articles. So that is a different context as well. So for example, we took an image of a church building from Wikipedia, and we artificially embedded it in an article for building material for ~ Churches, I believe, and the third one. So for each of these images, we took three different types of Wikipedia articles and we took the same image and just put it in these three different articles. And then we presented those to people at that point on Amazon's Mechanical Turk, and we just asked them, describe that image."
+  },
+  {
+   "t": 1478,
+   "text": "We didn't say take care, like of the type of context that this image appears in or But we simply presented that image within a different Wikipedia article in each case. And what we found is that the type of descriptions that people then wrote for those images changed. And when we then tried to evaluate those descriptions with fully sighted participants and with blind and low vision participants, in order to get the quality of those descriptions, we found that both sighted participants and then blind and low vision participants were highly affected by. How much the description was made relevant to that particular article. So when you have an image like of a church and in an article on building material, then participants really wanted to know about what the building material looked like, right? I'm remembering the other contexts."
+  },
+  {
+   "t": 1536,
+   "text": "If it's roof, then they wanted to know about the roof structure. If it was Christian cross, then they wanted to know about how many crosses were on that church and what did they look like, right? And so you can keep coming up with these different types of contexts. one absurd one, for example, could be if you have a camera and you learn that particular model of camera. Has certain variants that are broken, and you want to investigate whether your camera is part of the broken cameras. And the only way you know is by inspecting a small set of pixels in a cluster, whether that shows up in the pictures that you've taken. So for that particular person, you would have to describe every individual pixel in your photograph in order for that person to be able to evaluate whether their camera is broken."
+  },
+  {
+   "t": 1588,
+   "text": "So we can keep coming up with scenarios where no default description would ever include that type of information, making the point that this context of how we approach that image really, really matters for making descriptions that are actually useful. And that was the goal of basically showing in that paper with a particular focus on in that paper evaluation, that when we evaluate systems how well they produce descriptions, we have to take context into account because otherwise we're just moving towards systems increasingly that just provide a contextual descriptions that are not actually useful in real world usage."
+  },
+  {
+   "t": 1630,
+   "text": "Another aspect of this work which really interests me is it was about accessibility as well. So you had both low vision and blind participants and normal vision. Why that difference? Why you cared about those two groups of people? Right. when I started looking into the whole field of what's commonly called image captioning, I realized that most works in AI had in the introduction some motivation. and these systems are going to be helpful for accessibility systems for blind and low vision users."
+  },
+  {
+   "t": 1677,
+   "text": "But no one actually worked with blind and low vision users. I'm saying no one, which is an exaggeration, but really a large majority of that work never work with blind and low vision users to investigate actual preferences. And so that did not seem right for me. And I That was my first connection point to the field of human-computer interaction. And I got some wonderful collaborators from within that field who are experts in actually having done year-long, years-long research with blind and low vision users on what makes descriptions actually useful for them. And so I always want to build systems that in the end serve."
+  },
+  {
+   "t": 1724,
+   "text": "the communities that they should serve. And for image description systems, a group that especially is going to benefit from these systems is blind and low vision users for making the visual world accessible to them. At the same time though, this is not the only group, right? We all, at some point in our lives, would benefit or are already benefiting from systems that can translate visual information into language. Be it I want to go on a walk and instead of actually reading a paper or reading a news article, I just want to listen to it, right? Also, there may be temporary things that are wrong with my eyesight, or I'm in an area with bad internet connection issues, and so pictures don't load, right?"
+  },
+  {
+   "t": 1770,
+   "text": "So there are all these scenarios where actually everyone benefits from having systems that can reliably translate visual information into language. But it's wrong to assume that. Given that we have different exposure to the visual world in general, that the needs of fully sighted users are going to be the same as the needs for blind and low vision users. And in the way that research often works, it's easy to sometimes go the way of, we have lots of potential sighted participants where we can evaluate our system, and they're going to be good enough to sort of approximate what's going to be useful. For the blind and low vision community, for example. And so a lot of work in human-computer interaction, and what I also try to show in my work, are where these two actually come apart."
+  },
+  {
+   "t": 1821,
+   "text": "To emphasize that simply using a system and having it work for everyone at the same time is actually not providing equal access to everyone. So being able to"
+  },
+  {
+   "t": 1836,
+   "text": "get feedback from all communities that are going to be impacted and the blind and low vision community for these type of system is going to be disproportionately impacted, I think is incredibly important. Right, and then it sounds almost like you are in the very similar situation here. the description is not necessarily should be the same in different contexts. And then the impact of context and impact of the type of description or caption for the image is not necessarily the same for sighted. people versus low vision and blind people. What was your finding about the impact of context in this specific work in between those two groups?"
+  },
+  {
+   "t": 1885,
+   "text": "Yeah. So things that were surprising to me, I mean one effect that we found, which was A very stable and reliable effect was that our blind and low vision participants were way more sensitive to the length of the descriptions, where they punished shorter descriptions more than they did longer descriptions. So, in general, when our sighted participants saw a short description, like a couple of people in a kitchen, they would still be inclined to say, yeah, that's good enough. Whereas the blind and low vision community participants, a lot of them ended up saying, This is not enough. Like, this is not informative enough. I need more information in order to understand what's really going on."
+  },
+  {
+   "t": 1933,
+   "text": "So they were often harsher in their ~ critique of those very, very short descriptions. at the same time, We also saw some initial evidence that our blind and low vision participants were more sensitive to irrelevant information. So there were a couple of descriptions that kept going on about details about the image that did not matter for that context. And they became really long. But for the sighted participants, these descriptions rather got. Ratings that indicated this is good enough, like it's it has a lot of details. Whereas, especially in the open comment feedback we got from our blind and low vision users, they mentioned that they didn't care about these details, and so they're just too much. And finally,"
+  },
+  {
+   "t": 1983,
+   "text": "They the blind and low vision participants provided much harsher feedback for descriptions that they perceived as not making the connection to the context. So we had certain types of image context pairs that we created to be more far-fetched. Like one example, very timely right now, we had an image of soccer players on the soccer field. And we put it in like one of the contexts that we put it in was in the Wikipedia article on hairstyles. Now, soccer player of soccer players often have very fancy hairstyles. So there is something to describe there and to talk about when you want to talk about hairstyles. But it is more far-fetched. It's not the immediately salient thing that comes up when you're looking at that picture. So from the descriptions that we had obtained from people."
+  },
+  {
+   "t": 2033,
+   "text": "Some of those descriptions didn't really talk about the hairstyles at all. They just talked about people playing soccer and then described their jerseys or something like that. And the sighted participants were not the biggest fans, but they were fine. Whereas from some of the blind and low vision participants, we received comments like: this is worse than low descriptions, which is, you know, potentially a bit of an exaggeration."
+  },
+  {
+   "t": 2060,
+   "text": "they definitely communicated a lot of discontent when it wasn't apparent why that image was there in the first place. They really wanted an explanation, like a description that would make that connection between contextual relevance and what is shown in that image. And so those were some important indications that. These effects may actually show up differently for the blind and low-vision community and for the fully sighted community."
+  },
+  {
+   "t": 2089,
+   "text": "There are so many interesting nuances about how people in general approach the quality of those image descriptions, and how different it is between those two groups of people with different vision capability. And then we try to do the AI system."
+  },
+  {
+   "t": 2117,
+   "text": "and some automatic metrics that should be able to capture that relation. So I'm interested in your opinion about the metrics that were available at the point of you doing that work. Did you find any metric that you found useful? at that time and if yes, what was it, if not, how you dealt with that. Yeah, that's a very good question. So one of the core cornerstones of my research is basically that evaluation is incredibly important and doing it well is really difficult."
+  },
+  {
+   "t": 2164,
+   "text": "And often evaluation is done by thinking that evaluation is easy and straightforward, and that can introduce some very problematic artifacts. And so When we're talking about image description evaluation, for example, that is usually done by just taking that image out of context and then taking that description that we have as a candidate and asking, is this description good for this image? Right? And as you can tell, this is taking the image out of context, right? So even if you give that to people, and these are the most well-intended people in the world. If you don't give them the context, there's no way that they could judge it, right? So this is the onus is on us as researchers, on us as evaluation designers to first understand what are all the different variables that are important in the first place in order to get an evaluation that then actually makes sense."
+  },
+  {
+   "t": 2221,
+   "text": "So, and this is an issue not just when we're running human subject studies, but often in AI research, or usually always, ~ We want metrics that where we don't have to ask people all the time, right? Because it's not scalable. So instead, we want some type of automatic metrics that can, to a reasonable degree, approximate what people would say. So that when we make small adjustments to the model, to the data, whatever it may be, we can already get some suggestion on whether we're moving into the right direction. Now, in that same vein, a lot of the metrics that have been designed have been designed in order to keep basically this compatibility between the image and the description in mind."
+  },
+  {
+   "t": 2270,
+   "text": "So the most prominent one of those is CLIPScore, which is still used a lot today, where the idea is that ~ I have a lot of different pairs of images and descriptions from the internet that belong to each other. And now when I just shuffle them, then I have contrastive pairs where I know that they don't belong together. And so I can train a model to basically be able to tell do these two go together or do these two not go together. So I like to think of it as a type of compatibility metric. Like, is that description compatible with this particular image or not? And for that, it's a really amazing tool. Like it's very fantastic, it does the job really well. But people are also using it a lot in order to estimate quality of a description."
+  },
+  {
+   "t": 2316,
+   "text": "But in the way that I just explained to you how this metric works, it doesn't take context into account at all. And so basically, in this work, we tested to what extent that matters. And what we find is that it very much matters, that as soon as you give people the opportunity to judge the quality of a description based on the context that image was in the first place, we cannot replicate any correlation with the CLIPScore ratings at all anymore, because people really care about how relevant it is to a context. And you lose all of that if you use metrics like CLIPScore that completely extract the context away. And since we're always working in contextual scenarios, that is something that should be very concerning to us when we keep optimizing systems and we use metrics that are steering it in directions that are not necessarily helpful."
+  },
+  {
+   "t": 2369,
+   "text": "So My bottom line when you're asking, you know, what metrics do I like, we had some other work where we tested vision language models more at large, whether they can be used as judges for image description evaluation when you include context and so on. And so far I haven't Come across a metric that I would fully trust in all of those regards, because we also find that everything that we've tested so far has certain types of biases that can always stir models in undesirable directions. So even though there are good proxies for different things that you would want to do, so for example, we find that metrics like CLIPScore that are more Operating on embedding space, they are really good for truthfulness evaluation and compatibility. For that, use those metrics."
+  },
+  {
+   "t": 2419,
+   "text": "Excellent. Don't use the VLMS judges. Hallucinations are way more obvious there. When it comes to contextual sensitivity, do not use the embedding based metrics. Rather, go for the VLMS judge metrics. They are more they are high more highly performant when it comes to being able to investigate contextual effects. But overall, the best thing and the most important thing that we need to do at some point is actually testing it with people and doing that well. So that would be my plea."
+  },
+  {
+   "t": 2448,
+   "text": "Right, that sounds like a good advice to people that need to choose the metric. And I also know that in that work that we speak about right now, context matters, you proposed some context-sensitive adaptation of that CLIPScore metric. Did it help at all? with your specific task and also do you think that adaptation that early fix still holds now? Yeah, so this early fix helped on the data set that we had at the time. As I said, we did some follow-up work where we benchmarked not just CLIPScore, but also other vision language models, other embedding-based metrics."
+  },
+  {
+   "t": 2503,
+   "text": "and I'm sad to say it did not hold up very well. So we did propose it as a fix for As a potential positive movement for CLIPScore to incorporate context, but it actually doesn't generalize well to a lot of different contexts. This is why I was saying earlier that I would recommend using more VLM as judge approaches when it comes to context integration. There are some other ways one can do it as well, but this we haven't found that. Adjusting embedding based approaches generalizes well enough, like has the flexibility, the ~ The natural language understanding isn't really deep enough in those cases in order to really consider context effects in the way that they should be considered if you want to evaluate it in that way."
+  },
+  {
+   "t": 2559,
+   "text": "So it was a promising step in a direction that I would hope at some point maybe we could figure out how to make work, but it hasn't held up particularly well against potentially more mixed approaches where embedding-based approaches are. Supplementing VLM as judge approaches. Yeah, I'd say to me it just means that the problem is not that easy. Unfortunately, it's a challenge to have a good metric, especially if you aim for just one metric that fits all the tasks. It may be just impossible probably."
+  },
+  {
+   "t": 2594,
+   "text": "Absolutely. Yeah. Okay. So you also mentioned that there is another concept that also can be easily missed when we think about visual understanding or translation from visual to language. And that's length."
+  },
+  {
+   "t": 2614,
+   "text": "of the description, how much you actually say versus how much you communicate by saying this. And there is that common intuition that"
+  },
+  {
+   "t": 2630,
+   "text": "I myself also had before is that the more details you give in describing an image, the better. it is, the better the description is. And those additional details are automatically more helpful. But now, after I've heard what you said, I start changing my mind. Can you speak a little bit more about this length versus actual meaning? Yeah, this is a very interesting and tricky connection. So Generally, we assume that the longer something is, the more information is in there, right? because generally, if we speak for longer, we speak for longer in order to say more things."
+  },
+  {
+   "t": 2682,
+   "text": "That is a useful proxy, but it's not necessarily always true, right? For example, when you're just thinking about individual. Nouns. There's a hierarchy of how general versus how specific they are, right? So you could start with animal and then you can go to pet and then you can go to dog, then you can go to"
+  },
+  {
+   "t": 2705,
+   "text": "Chiweenie, which is a Chihuahua Dachshund mix, that's my dog. you can go to Peggy, which is the name of my dog, which is one particular dog, right? And by going down this chain, we have gone from very general encapsulating a lot of different individual entities in the world to one individual entity. But I haven't really changed how many words I've said in order to describe that. So that is one example where we can see that the level of how specific I am is not necessarily a matter of length, but it is a matter of a slightly different type of dimension. Now, usually in most of AI research."
+  },
+  {
+   "t": 2751,
+   "text": "We use length as a proxy for informativity all the time. That when something is longer, it's more specific. Also, when people talk about image description length, right? We want to write longer descriptions because they are more detailed. But do we want longer descriptions or do we want more detailed descriptions? They may correlate to some degree, but they don't necessarily do that. you probably can think of a couple of people who Will keep going on talking for a really long time without really saying much, right? So they have a very verbose way of speaking. And in those cases, you may want that they are more dense. And for me personally, I have that when I communicate with some AI models, right? Where I ask them a question, they give me the correct answer, but they also give me a ton of things I didn't care about, or they add a lot of these padding words that are really not necessary for me to know about at that point."
+  },
+  {
+   "t": 2806,
+   "text": "But maybe, yes, I wanted a certain degree of information, but make it fewer words, right? And so that becomes especially relevant, for example, for blind and low vision users, where you cannot just skim the text that you're going through, but you actually have to listen to it in a linear fashion, right? So in that way,"
+  },
+  {
+   "t": 2829,
+   "text": "Being able to disentangle length and information density becomes really important in order for us to understand to what extent models are aligned with the amount of information and the way information is presented to users overall. But that's really, really hard to measure. And so that's one of the core things that I'm really interested in."
+  },
+  {
+   "t": 2849,
+   "text": "Right, and you have that recent paper that is titled, \"When More Words Say Less\". Was it an attempt to disentangle those two concepts, length and specificity? Yes, that was the main motivation of that work. The idea is first of all to re-emphasize this general issue that we are not keeping them separately. Like we are generally using length as a heuristic all the time without being very mindful that is a very faulty heuristic. And if we keep length as a type of realignment feature in order to ~ drive models more and more into longer responses because that would be more detailed."
+  },
+  {
+   "t": 2897,
+   "text": "Then an alternative thing that models could try to optimize for is the heuristic instead of the actual target that we want to aim for. When the target is higher information density, more specific, but instead is just using a bunch more filler words, making it more annoying, right? And being able to diagnose that is potentially really important. and so that's what we were trying to do in that paper. And you used the CLIPScore metric there again, right? Can you explain why and whether it worked out well in this specific case? Yes. I mean as I was mentioning earlier, CLIPScore is I think a great metric if you use it mindfully, when it when it should be used."
+  },
+  {
+   "t": 2945,
+   "text": "So as I said, CLIPScore I think is a great metric for compatibility, which is what we used it for in this particular formalization of the problem. So, what we wanted to get was a metric that could tell us to what extent a description is compatible with a lot of different images. So, this is grounded in the idea of possible world semantics, a very well-established concept. And the general idea is that ~ an expression is more specific, the less possible worlds it is compatible with. So when we take that into visual descriptions, this is what it means. If I have a description, like a dog, and I have, let's say, five thousand different images of the world."
+  },
+  {
+   "t": 2992,
+   "text": "I want to know how many images is a dog compatible with. And these are going to be more images than when I say a Chiweenie, because only some of those dogs are going to be Chiweenies. So in that way, we can basically say that if an image description is compatible with fewer images, then that image description must be more specific. And so this is how we basically formulate this metric, where we have an image description for a particular image. We can get the CLIPScore of how compatible these two are. And then we get the CLIPScore of that same description with thousands of other images. And then we see where the actual target image rank in that scoring."
+  },
+  {
+   "t": 3040,
+   "text": "So if there are lots of other images that this description is compatible with, then the actual target image that it came from is not necessarily going to rank on the very top, but it's actually going to rank a little bit lower. Whereas when it's very specific and it's not compatible with anything else, necessarily it will rank the highest with the actual target image. So in that way, you can get a metric that can tell you how specific a particular description is that is independent of the length of that description. And that is the general idea of that metric that we proposed and tested out."
+  },
+  {
+   "t": 3075,
+   "text": "I see. Yeah, another interesting, like an interesting finding that you had in this paper was that when you just prompted the model to be more concise, it made the descriptions more specific according to that metric that you used, right? Even if the length of that description in the end was the same. What do you think about that? How would you interpret it? Yeah, so this experiment was motivated by an actual question I've asked myself all the time, because as part of my research, I prompt models a lot for giving me image descriptions."
+  },
+  {
+   "t": 3120,
+   "text": "And often I have to constrain them in their length because they just make image descriptions if you don't give a length constraint in of some way. They make them incredibly long and really not usable. And so I've often wondered, what should I say? Should I say make it concise? Should I say make it less than 200 characters? Would that make a difference, right? And so on the one hand, we can look at the length profiles and we can see that it makes a certain type of difference there. But what I actually care more about in those cases is does it actually change anything about the information content? And this is what we were able to see with now using this metric. So what we see is that even when we control between the different prompts of whether we're saying make it concise or keep it to 200 characters, that actually the descriptions where the model was told to make it concise, the model created descriptions that were more specific compared to the other prompt."
+  },
+  {
+   "t": 3181,
+   "text": "And those are things that I don't think we would necessarily predict to happen. That would be very natural for us to assume that they happen. But they're very important to know about if we want to understand how models actually use pragmatics in order to distribute information. And do they do so in ways that we as humans would expect? And so, in order, on the one hand, from a user perspective, I think this can be very helpful in order to. inform good usage and desired usage of models. Like if you're using models to make a ton of images accessible, provide descriptions for your users, what prompt should you use? Right? Like those are things that you should be considering. On the other hand, I think it again illuminates the issue that there are some hidden things going on with how models choose information that we are Not really seeing because we don't have the quantitative tools in order to make them apparent to us. And I think it should be our goal in research to not have these spots that we can't see, but we should be aware of what models are doing in these unexpected ways, where they may be using certain types of heuristics that are not the actual target goal. And so that is part of my goal in my research."
+  },
+  {
+   "t": 3262,
+   "text": "so far we have been talking mostly about describing things like photos. And I would like us to also talk about a slightly different type of visual information charts and data visualizations. So even though Even though a photo and for example a bar chart are both visual, but I see how describing a chart requires a totally different kind of visual language translation. Because you are not just naming those objects that are on the chart. You need to extract relationship or do some comparison or extract the trend."
+  },
+  {
+   "t": 3313,
+   "text": "And it just does not exist as the discrete thing on the image at all. That's how I see the difference here. I wonder what do you think about charts and data visualizations and how do you see the uniqueness of this test case? Yeah, that's a great question. So I partially agree and partially disagree with what you said. So I agree with graphs and charts being very different from naturalistic images. At the same time, extracting individual objects and their relationships, the same thing happens with naturalistic images. And for example what makes a good chart description."
+  },
+  {
+   "t": 3361,
+   "text": "there's actually again there's some great work investigating the differences between what fully sighted users want and what blind and low vision users want. And for example, in that case blind and low vision users were way more interested in actually getting ~ more lower level details about the chart itself without necessarily yet talking about interpretive features like projections or trends and relationships and things like that. So there's also potentially a different experience again coming in depending on what your prior visual experience in your life has been. But what is definitely true is that for naturalistic images We have really good priors on what is usually in an image and how we can approach it. Like the way, excuse me, the way images are taken are usually that the thing that's important is in the center, right? And usually you want to talk about that."
+  },
+  {
+   "t": 3421,
+   "text": "And then the things that are in the background are less important. And so often you don't really have to talk about those. At least in an English-speaking Western-centric context. There is some cultural differences, but generally speaking, a data visualization is an artificial visualization that is completely human-constructed. And so a lot of these priors and biases that we may have about naturalistic images don't in the same way apply to data visualizations. And one way in which that becomes really clear is that we have to learn how to read data visualizations. Like that is a hard process. That is part of our stats education, math education at school, being able to figure out what is the x-axis, what is the y-axis, how do I actually navigate them, how do I put in data points in that type of chart, and then how do I interpret that back."
+  },
+  {
+   "t": 3480,
+   "text": "so that is something, sure, we also learn a lot about our naturalistic visual world, but we are not that explicitly taught about that. We sort of acquire that on the run. This is different for charts. The other thing is that charts usually require an incredible precise resolution of being able to know what number each. For example, bar in a bar chart corresponds to, right? So it makes a huge difference whether that is a little bit higher or a little bit lower in order to understand what the actual value is, whether that's higher or lower than the neighboring bar and so on. And that could really matter depending on what question we have. Whereas for naturalistic images, very often this type of noise is less important, right? Those types of invariances."
+  },
+  {
+   "t": 3526,
+   "text": "Are not as significant and consequential. And so in that way, charts really pose a different type of challenge, especially when it comes to noise and hallucination, compared to more naturalistic images. So lots of unique challenges, but also some parallels that you would hope people and models can leverage. what I liked about your... from what you said is that understanding the chart or visual understanding of the chart is the long process. We just learn it during, can't propose during our school days. And I want to bring that paper, a recent paper of yours that is named \"CHART-6: Human-Centered Evaluation of Data Visualization Understanding in Vision-Language Models\"."
+  },
+  {
+   "t": 3583,
+   "text": "And in that paper you take six existing human graphical literacy tests and run several VLMs through them, right? And then you are not focusing just on the performance, but instead you are comparing whether the pattern of mistakes is the same in models or similar in models and in humans. What was your motivation in exploring this specific question? It's not immediately obvious, I should say."
+  },
+  {
+   "t": 3621,
+   "text": "Yeah. I mean, first of all, for this project, I also want to give credit to the first author, Arnav, who's a PhD student now at MIT, and Judith Fan, who's a professor of psychology at Stanford, who were leading this. But the general idea of not just looking at overall performance, but looking at the type of errors people make and models make, is really about understanding whether How models arrive at certain interpretations can be considered similar to people. And that is potentially really important. Because when we employ systems, we often want to have some type of estimate whether we think a model is going to be successful in doing that."
+  },
+  {
+   "t": 3672,
+   "text": "Or we want to be able to identify risk areas where we may want to make sure that we double-check these results, not just once, but multiple times, because we consider these to be more difficult."
+  },
+  {
+   "t": 3685,
+   "text": "The best proxy that we have for predicting that is our own capabilities, right? So usually we try to extrapolate how hard is a problem, and then based on that, think about can someone else do it? Can an AI model do it? Right? Now, if that is broken, if models make totally different mistakes than humans do, then that is a real issue for When people are using these systems and try to assess intuitive risks, right? So that is one application-based concern. The other one is it also tells us something about the visual and linguistic processing of these systems, right? So a lot of cognitive scientists, for example, are really interested in the extent to which these models can actually function as cognitive models in order for us to explain how we process visual information, for example. But if we have systems that make completely different mistakes than humans, then that is a really important indication that, well Maybe we cannot just look at the successes or the success rate, but we have empirical evidence that there are at least some things where the models operate completely differently from humans, and we need to be very ~ Concerned about drawing too many parallels when it comes to processing."
+  },
+  {
+   "t": 3766,
+   "text": "So I think there are lots of reasons to not just take a performance number and then say how close are humans and models, but instead look closer into where are the disparities. So that's why I think not just for data visualization evaluation, but more broadly, looking at where things go wrong and how things go wrong is. Really, really important and meaningful."
+  },
+  {
+   "t": 3788,
+   "text": "That makes a lot of sense. then my immediate next question would be, did you find some differences between humans and models? And in what they were the most? Yeah, we definitely found that the alignment between models and humans was not straightforward. Although we found a general correlation between what humans found easy and what models found easy. They were also coming apart in interesting ways. One example is stacked area charts were much easier for GPT-4V than for most of our human participants to interpret, right? And intuitively, this is pure speculation, but intuitively stacked area charts are not necessarily charts that humans are very frequently exposed to, right? So especially when we're talking about data visualization types that people just don't have a lot of experience with, it makes sense that we are potentially worse at interpreting them."
+  },
+  {
+   "t": 3856,
+   "text": "Whereas when we can create a lot of data sets and artificial data sets for models where we can just artificially change the chart type to represent the same type of information, we can potentially overpresent certain Type of graphs that can lead to outperformance of humans. At the same time, overall, the performances that we have found in the models that we tested was lower than human capabilities. So in general, we tested people with different visualization literacy levels, so different types of levels of experience with data visualizations and We do find that models in general underperform even people with less visualization experience. And that comes back to sometimes not giving valid responses, very sort of trivial reasons, but models overall really struggle still with the interpretation and question-answering of data visualizations overall."
+  },
+  {
+   "t": 3920,
+   "text": "And what do you think is the main reason of those models underperforming? Is it the data that they see when trained or something else? I don't know, the way of learning, the architecture, anything else? Do you have any ideas of what could be? That's really difficult to say. So there's some there's been some recent work, as recent as ICML this year, that puts some of the issues in how images are usually pre-processed and then fed to the model that can create some type of blind spots. And whenever we're talking about blind spots, as I said, for naturalistic images, whether you have a flower in the bottom left is not going to really affect that you have a tree on the top right. Whereas in a graph, when part of the x-axis is distorted in some way, or if the legend is parsed in a way that makes it harder to interpret what color corresponds with what variable."
+  },
+  {
+   "t": 3991,
+   "text": "It will suddenly have an effect on the whole interpretation of the entire visualization. So taking an image in patches in order to process it linearly as part of a context window can potentially have much higher impact on data visualizations where these long sort of when I say long context, I just mean long range within the image relationships are. Categorically way more important than in naturalistic images. So I think that is definitely something where I think there needs to be more work done in order to figure out how visual representation can happen most reliably in these setups where that really matters, these fine-grained ~ notions of spatial relationships."
+  },
+  {
+   "t": 4042,
+   "text": "So I definitely think that does play a role. I do also think that data availability plays a major role here where data visualizations are just way less present in data sets overall, like image data sets overall. So the exposure to these types of Visual media is to a way lesser degree. There's probably more at play overall as well, be it, for example, that because you have an overrepresentation of naturalistic images, research has also shown that there is the general centrality bias where models are more accurate in the center of the image. as opposed to the outside corners. And now in data visualizations, you have a lot of information at the outside corners, being the axes, the titles, the legend."
+  },
+  {
+   "t": 4090,
+   "text": "So suddenly your sort of data visualizations break the general salience expectations that models can use for all other images that make them perform pretty well. And suddenly that is not a good heuristic anymore. So I think there are lots of things at play, but which I think make visualizations incredibly interesting to study and important to study."
+  },
+  {
+   "t": 4115,
+   "text": "Right, another thing that we talked a lot about today, previously, was CLIPScore and other metrics. What do you think about the metrics when it comes to chart understanding and the data visualizations? Are the metrics still the same metrics? Are they applicable here? Or there is a... problem? that's a very good question. I think both at the same time. Like on the one hand, data visualization metrics have it a bit easier still because as I was saying earlier, when we're talking about naturalistic images, we've sort of crossed that line reasonably where models usually say lots of true things about images."
+  },
+  {
+   "t": 4167,
+   "text": "We haven't to the same extent crossed that line in data visualizations yet for all models. We have pretty highly performant models, but in general, even metrics that focus on truth can still get a lot of signal from actually not saying truthful things and saying things that are wrong. So in that sense, sort of the older tools that we have at our disposal, I think, are still of more use in that domain than they are for naturalistic images. ~ At the same time, compatibility, for example, in my experience, CLIPScore is not very good at charts and data visualizations. Like CLIP as a model, I think hasn't had enough exposure to data visualizations in order to actually reliably assess compatibility to the same extent that it is able to do that with naturalistic images."
+  },
+  {
+   "t": 4213,
+   "text": "So there's a new challenge for metrics overall, because the metrics itself need to be ~ Highly capable of reading data visualizations in the first place. And the last frontier is then again context dependence, because just like in naturalistic images, that does matter in data visualizations a lot because data visualizations are even more information dense than most naturalistic images. There's so much you can take out of a data visualization, and it really matters what your intention is. When you think about how you inspect a data visualization, when you skim a paper. versus review a paper versus replicate a paper, very different how you approach those data visualizations and how you inspect them. So in all those cases you would want a different description."
+  },
+  {
+   "t": 4262,
+   "text": "But how do we account for that? How do we do that? We're very far from that."
+  },
+  {
+   "t": 4265,
+   "text": "Interesting. There are so many interesting things that I learned today from what you told me about the photos and the length of description, the impact of context, now the charts, understanding. So... Starting to wrap up, I want to ask a couple of final questions where the first one would be closer to that difference between charts and the naturalistic images. Given how different they are and how unique is each type, do you think that we should still use the term visual understanding that is kind of covering both or there should be something different more granular maybe That's a good question. So Again, I would say both. So I think there's overall value in calling that visual understanding. Cause we also"
+  },
+  {
+   "t": 4335,
+   "text": "Are able to interpret naturalistic images and data visualizations. And actually, there's a lot of translational value. Like when we're thinking about what a good data visualization is, it actually goes with the priors that we already have and we take from our visual understanding of the world. if we want to indicate a trend that is positive, we will make it go up, we will not make it go down. If it's something that's negative in sentiment, we will make it red, we will not make it green. There are lots of things that where we can make visualizations incredibly confusing for people or very, very readable for people. And we leverage these skills all the time, and that has translational value, which I don't think we would want to lose. And I think in general, the evidence that we have so far is actually having these ~ Prior experiences with related but different problems do tend to increase the performance on these other tasks as well."
+  },
+  {
+   "t": 4398,
+   "text": "So this, it's not a cross-modal transfer, but it is sort of a cross-task transfer. Is I think overall something potentially very valuable that we at least want to build on top of. At the same time, understanding the unique challenges that are posed by both is also really important. And just trying to use the same metrics and the same tasks to identify issues and project performance is, I think, really understating the problem. And I will use that to quickly bring up. that I've had a similar question for myself, which is how I started in this field, about image captioning as a field. Because image captioning as a field was always in AI research about writing some type of text for an image."
+  },
+  {
+   "t": 4448,
+   "text": "But there was never really a distinction between what in journalism studies would be called a caption and what would be called a visual description. So a caption is usually the thing that is being consumed alongside the image, like a newspaper caption. It assumes that you already have visual access to the image itself, and then you're getting supplementary information in addition to that visual information. Whereas a visual description intends to replace that image. It doesn't assume that you Already have visual access. And so it creates very different informational needs for those different tasks and what is it going to be useful for. So I am very much for making that distinction because I think it's really important for how we evaluate systems, how good they are for certain tasks, what we want to use them for. ~ But at the same time, we cannot deny that the overall problem really unites these different purposes. And I do think it's useful to have a hierarchical understanding of these problems."
+  },
+  {
+   "t": 4509,
+   "text": "That makes a lot of sense. And my last question before I let you go is, what do you think is the single biggest thing that the current multimodal models are missing in how they translate the visual world to language? For me, it is really the problem of information selection. And it's not necessarily something that the models are missing, but the thing that we all are missing in when we're trying to design systems that are maximally useful for everyone. So how do we actually make models be accountable in what information they select how?"
+  },
+  {
+   "t": 4554,
+   "text": "For the users that they're serving, be it whether we have different personal needs, be it we come from different cultural backgrounds, be it we are in different scenarios, I'm in a hurry on a train, versus I want to take the time to really understand something."
+  },
+  {
+   "t": 4574,
+   "text": "All of those things really matter, and understanding what information gets dropped, what information gets reintroduced, is going to really affect how we are going to experience the visual world. And this is especially relevant if we at that point do not have access to it. If we do not realize that I get different information about a data visualization or an image. Than someone else, just because the model has some information about me or my cultural background or the situation that I'm in, and I'm unaware that I'm lacking certain types of information that someone else may get, then that can create the types of inequalities that will remain invisible because we are not, we don't really have the tools to ask for them."
+  },
+  {
+   "t": 4623,
+   "text": "And so I think that is a very important. aspect of holding more holding models accountable that I care about a lot. Thank you. That's a really something to think about for the future. Thank you very much for our conversation today. Thank you so much for having me."
+  }
+ ]
+}

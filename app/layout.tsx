@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://women-in-ai-research.github.io"),
   title: "WiAIR Podcast — AI Research Through Women's Eyes",
   description:
     "Women in AI Research (WiAIR): in-depth interviews with female AI researchers from around the globe about their latest research. By researchers, for researchers.",

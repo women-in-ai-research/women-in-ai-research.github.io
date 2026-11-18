@@ -1,0 +1,435 @@
+{
+ "episode": 8,
+ "videoId": "QPp0cJNBbL8",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 10,
+   "text": "Welcome to the Women in AI Research Podcast. I'm Jekaterina and today I'm joined by my co-host Malikeh, as usual. And today's episode is all about LLM hallucinations, factuality benchmarks, data transparency, and responsible AI. With our guest, we will dive into what LLM hallucinations really mean and whether mitigating hallucinations might constrain LLM creativity, how to push the boundaries of factuality benchmark design, what are the nuances and types of hallucinations, how retrieval-augmented generation affect hallucinations, and what it means for responsible AI."
+  },
+  {
+   "t": 59,
+   "text": "Also, we'll speak about cutting-edge work on model memorization, probing, training data imprint, and tools for machine unlearning and data transparency. And of course, we will speak about some personal experiences, challenges, and inspiring moments of our brilliant guest. And our guest today is Abhilasha Ravichander,"
+  },
+  {
+   "t": 87,
+   "text": "who is currently a post-doctoral scholar at the University of Washington and the incoming faculty at the Max Planck Institute for Software Systems. Abhilasha received her PhD from Carnegie Mellon University in 2022, and her research focuses on improving the robustness, transparency, and machine unlearning capabilities of LLMs. She has made the major contributions in the evaluation of LLM hallucinations with the factuality benchmarks like WildHallucinations and HALoGEN. And her work on training data imprint and model memorization has reshaped how we think about data transparency and machine unlearning."
+  },
+  {
+   "t": 137,
+   "text": "Abhilasha's work has been presented at several top NLP conferences and received several Best Paper awards, like for example, Best Resource Paper award at the ACL last year, Best Team Paper award at ACL last year as well, Best Paper award at NAACL TrustNLP workshop this year, 2025, and the Area Chair Favorite Paper award at COLING. 2018. She has been recognized as a Rising Star in Generative AI last year, and also the Rising Star in MIT EECS, which is electrical engineering and computer science in 2022, and the Rising Star in Data Science in 2021."
+  },
+  {
+   "t": 193,
+   "text": "So, Abhilasha, welcome to our podcast. We are extremely excited that you joined us. Thanks so much for having me."
+  },
+  {
+   "t": 204,
+   "text": "So let's start with something that I think many of our listeners can relate to. Looking back, was there a time when you seriously questioned whether you belong in AI research? And if so, what helped you stay and what would be your advice you would give to someone going through that type of a situation?"
+  },
+  {
+   "t": 236,
+   "text": "Yeah, so when I first came to Carnegie Mellon University for my master's, I had no prior experience in NLP research. And I think that would be what I would call a really difficult time because it was actually very difficult to even convince an advisor to bet on me and provide me with funding for the Master's program."
+  },
+  {
+   "t": 266,
+   "text": "It actually almost didn't work out. So a day after the deadline for matching advisors had already passed. My first advisor actually did get some funding to support me. And I was extremely lucky because since it was the day after the deadline, there were not that many remaining applicants. it wouldn't have been the end of the world if my research hadn't been supported. I might have gone to industry and then come back to do a PhD. It would have just been a little bit disruptive. But at the same time, it was very good to not have that extra financial burden from the masters."
+  },
+  {
+   "t": 312,
+   "text": "And it gave me time to actually get a start in research. So if someone's in a similar situation where it seems like some research opportunity is not working out and it's really hard to even get started and to get someone to trust in you and invest in you, I think I'd say that how good your science eventually is doesn't really depend on how early you got started with research or how quickly things worked out for you. And throughout academia, rejection is so common and so inevitable. But these kinds of early setbacks don't really define you or what you can do."
+  },
+  {
+   "t": 363,
+   "text": "That's great insight. Especially I can resonate with the fact that rejections in academia are so common and frequent. In the beginning it's probably harder than later in your career, but they are there and everyone needs... It's a part of the job to get used to those as well. Exactly."
+  },
+  {
+   "t": 395,
+   "text": "Yeah, thank you Abhilasha. First of all, thanks for joining us today and welcome to the podcast. So what has been one of the most difficult challenges you faced in your research journey, not just intellectually, but emotionally? How did you get through it and did it change the way you see your work or your role in this field?"
+  },
+  {
+   "t": 418,
+   "text": "Yeah, so there's going to be a bit of recency bias in answering this question. But I would say that going through a dual career academic job search with my partner was a really difficult experience. Job searches are difficult for everyone, but there was a lot of uncertainty about whether we would both find positions in the same city because we want to live together, whether we would find positions that we both liked and were excited about, would they be in a location that we really liked? And we got very lucky in the end. It worked out well. We are both moving to a place that we are excited about. And what really helped, though, when things were more uncertain was that we had a lot of support from each other, of course, but also our friends, our families, our mentors."
+  },
+  {
+   "t": 476,
+   "text": "We actually had many friends who were going through similar things at the same time. And that sense of not being alone in all of this, it made a huge difference."
+  },
+  {
+   "t": 489,
+   "text": "Yeah, that reminds me of the conversation we had with one of our previous guests in the podcast. she is now the professor at the university. And she said that going through this research career while having a partner is so difficult. And I can hear the same from you as well, that it's difficult and you get support from family, from friends, but I wonder do you feel like you get any support from the system at all?"
+  },
+  {
+   "t": 534,
+   "text": "So this is really complicated. In our case, we happened to interview at universities, which were very accommodating to our situation. But in general, the system is not really designed to support this kind of higher academic jobs. From the beginning, they're very rare. They are geographically very spread out, it's hard to plan to move to the same city on an academic job market. So the system is definitely not incentivized to support that."
+  },
+  {
+   "t": 572,
+   "text": "Yeah, I think that's a common experience within the community and many of the researchers have a similar experience. Especially in today's market, you always have to have a luggage packed and wait for the next roll. You don't know where in the world you will end up at. And that's really such a risk for family life and relationships. I know that being a woman in this field, which is, let's be honest, it's still largely dominated by men, right? So being the woman in this field can bring a very unique kind of pressure. And have you ever felt like you had to change something about yourself, your behaviour, your presence, your style, in order to fit in?"
+  },
+  {
+   "t": 627,
+   "text": "And how do you navigate that, both in the past and today?"
+  },
+  {
+   "t": 636,
+   "text": "Yeah, that's a good question. I'll say that it's a little bit difficult for me to answer because it's something that I've actively stopped centering in recent years. When I was starting out, I think I paid like a lot more attention to how other people were perceiving me, and whether I seem maybe serious enough or whether people were considering my ideas seriously. So for example, I think I definitely grew up, socialized, to be very agreeable and to not voice disagreement. So I was always kind of monitoring the room to see if I was being very assertive."
+  },
+  {
+   "t": 686,
+   "text": "And it took me a really long time to learn that I could be assertive, I could also be kind, but I could definitely voice my opinions because I am in truth a very opinionated person. So it was good to learn that. But now I find that this kind of self-monitoring is actually counterproductive to how I want to grow. So I try to spend my time on things that are more meaningful to me such as my research, my collaborations, my friendships, relationships, community, all of that."
+  },
+  {
+   "t": 731,
+   "text": "What was the main reason why, in your opinion, why this shift happened to you? Was it the change of culture, maybe the change of environment that you are in, or some internal reflections or something like that?"
+  },
+  {
+   "t": 752,
+   "text": "Yeah, I think when I first came, I was very new to everything. So I was kind of gauging, very, very conscious about these things. So for example, when I moved to the research community, it was also the first time, you know, I had come out of India for my studies. I was in this whole new American environment and trying to adapt to multiple different things at the same time. So maybe that's why I was extra aware of how I was being perceived and coming across. But over time, as my confidence grew, as I realized more things about how things work, I could also feel much more comfortable being myself and really finding what was important to me and what wasn't important to me."
+  },
+  {
+   "t": 803,
+   "text": "Cool. And beyond gender, many of us carry other identities or experiences that can make us feel different from the standard AI researcher, whether that's related to ethnicity, age, accent, socioeconomic background, or anything else. Have there been ever parts of your identity that made you feel other than the AI space? And how have those parts of you shaped your journey either as challenges or source of strength? Yeah, so I am Indian and I am South Indian and these intersecting identities do make me visibly different in many of the environments I'm in."
+  },
+  {
+   "t": 850,
+   "text": "But I should note that as far as gender goes, I did have a lot of privilege in one way, which is that in both grad school and in my postdoc, I was in environments where there were really many excellent non-cis male researchers, both amongst the students and amongst the faculty. And I think that really helped me. And I think how all of this affects my perspective is that I do try to pay attention to, you know, whose voices are missing or who is not being centered in our field."
+  },
+  {
+   "t": 896,
+   "text": "And this really affects the kind of service I want to do and the impact I want to have. But I don't overly focus on how people are, yeah, how I appear to people just because I don't find that sustainable for my growth."
+  },
+  {
+   "t": 917,
+   "text": "I think that's a very strong position. People's impressions can change a lot very often and we do not control them at all most of the time. Or we do not have a lot of control on that most of the time. So it makes sense to... worry a little bit less probably about that and focus on more important things. I think by investing in building a better community, maybe some of these problems do get mitigated to some extent. So it feels really good to turn that service externally and try to help the community get to how we want it to look."
+  },
+  {
+   "t": 971,
+   "text": "I do really find that thinking more about things that really matter to you makes it easier to take so much more joy and express more creativity in research, if that makes sense, because time is such a finite resource."
+  },
+  {
+   "t": 992,
+   "text": "Yeah, exactly."
+  },
+  {
+   "t": 993,
+   "text": "Now it's the time to dive into your research. Abhilasha, could you articulate what constitutes an LLM hallucination in your research context?"
+  },
+  {
+   "t": 1008,
+   "text": "Yeah, sure. I think the most one common definition of what is a hallucination is when a model generates a fact that's not supported by some established knowledge source or which is not supported by the input context that the user provided. In more maybe layman terms, it's when models make things"
+  },
+  {
+   "t": 1040,
+   "text": "And why does phenomenon remain such a significant obstacle to the reliable and safe deployment of added items in real-world applications?"
+  },
+  {
+   "t": 1051,
+   "text": "Right. So there are likely multiple different reasons why we are still seeing hallucinations, even with frontier models. And these could be anything up to, you know, training procedure limitations or possibly how we have all these different stages of training models. And some of them might be encouraging more hallucinations than others. We're just at the start of figuring out or even trying to map the space of where these hallucinations are coming from. But it's also really important to do now because generative AI models are being widely deployed in all of these high-stakes settings, and people are using models already as this interface to access the information in the world."
+  },
+  {
+   "t": 1099,
+   "text": "So because of all of these kinds of high-risk settings where models are being used, we really need to figure out how to systematically understand and mitigate this behavior."
+  },
+  {
+   "t": 1111,
+   "text": "Right, I try to dive a little bit deeper into that definition of hallucination, if you don't mind. So you said it's when some established knowledge is compromised somehow by the generation of the LLM. What"
+  },
+  {
+   "t": 1140,
+   "text": "do you mean by established knowledge? Is it established based on the training data that was used for LLM or the context of the prompt that was used to generate that response or something else? How do you see that established knowledge in terms of defining whether something was a hallucination or it was probably just something else? Yeah, so there are many different ways we operationalize this. So each practitioner defines what kind of knowledge source they consider reliable."
+  },
+  {
+   "t": 1189,
+   "text": "And this is going to vary by how we are using the model. So for example, if it's some very factual question about very popular entities, maybe a practitioner says that, OK, Wikipedia is going to be my source of truth. And anything that's not in Wikipedia, I'm not going to consider as verified. But if it's another task where say you want to summarize a piece of text there, a hallucination is anything that doesn't come in that piece of text irrespective of whether it agrees or doesn't agree with some other knowledge source. So what is your source of truth and what you consider hallucination really depends on how you specify where you're verifying that truth from and how you're going to do that verification."
+  },
+  {
+   "t": 1234,
+   "text": "In your opinion, in the existing research that is focusing on LLM hallucinations, is there a consensus about the definition of what the LLM hallucination means?"
+  },
+  {
+   "t": 1250,
+   "text": "So there is no consensus and academic papers do consider many different things as hallucinations. For example, one of the most contentious are these kinds of inconsistencies. If the model produces a wrong answer to a factual question, is that considered a hallucination or did the model just get it wrong? And there are papers that do consider this as hallucination. There are papers that don't consider this as hallucination. My personal opinion is that these kinds of inconsistencies should not be considered as hallucination just because then the definition of hallucination is almost too broad to be useful. So for me, it's useful thinking about how we even started talking about hallucinations, right, which was mostly in the summarization context when models were producing things that were not in the input summary and we said, these new extra things are hallucination."
+  },
+  {
+   "t": 1312,
+   "text": "So I think it makes sense to even amend this widely accepted definition to include that it's new information that the model generated that was not asked for in the prompt."
+  },
+  {
+   "t": 1324,
+   "text": "Interesting. And then given that definition and if we are within the scope of your research context, what would you say about the relation between the concept of LLM hallucination and LLM creativity?"
+  },
+  {
+   "t": 1348,
+   "text": "Would you say that controlling for hallucination reduces the ability of models to extrapolate."
+  },
+  {
+   "t": 1358,
+   "text": "Yeah, this is a good question. And it's also one of the most commonly discussed questions among people who are thinking about hallucination, because there is this feeling that, if we reduce the extent to which our models extrapolate, which is often what we think happens with LLM hallucinations, that also means they won't extrapolate in scenarios which we think where it's useful, like creative writing. So my personal opinion in this is that we don't need to think of models as being these very monolithic systems. So I think What we really want is models that are factual and stay aligned with their training data in scenarios which require it, are creative and can extrapolate widely in scenarios which require that."
+  },
+  {
+   "t": 1410,
+   "text": "And there will be scenarios that require some kind of interplay between the two, and we really want models that can quickly adapt to both of these types of behaviors."
+  },
+  {
+   "t": 1420,
+   "text": "Interesting and a very flexible approach."
+  },
+  {
+   "t": 1423,
+   "text": "Yeah, very interesting. So your work has introduced factuality benchmarks like WildHallucinations and HALoGEN. Could you elaborate on what distinguishes these factuality benchmarks from prior approaches, particularly in how they aim to capture the diversity of real-world knowledge and use cases for LLMs moving beyond traditional evaluation methods? Yeah, sure. So as you know, there have been many prior datasets for capturing hallucination, but they typically only feature one kind of prompt or task. And it's difficult to get a more complete picture of what model hallucinations are actually like and hallucinations that come up when people use these models for real."
+  },
+  {
+   "t": 1474,
+   "text": "The the reason for this is that verifying factuality is really hard. To know whether a claim is true, like I mentioned earlier, you need a knowledge source that you consider reliable and a way of comparing against that knowledge source. But because doing this is so difficult, there's been a focus on these kind of single domain, narrow tasks where verification is possible."
+  },
+  {
+   "t": 1499,
+   "text": "So we built two benchmarks to address this, WildHallucinations and HALoGEN. WildHallucinations still focuses on one task, which is describing entities. But the difference is that the entities are not shapic. They are mined from chat logs between real users and large language models. And thus we think they're more representative of the kinds of things that users actually ask about. And this can include some very obscure things. In HALoGEN, we take a broader view. HALoGEN spans nine different tasks instead of one task. And this ranges from code generation to attributing scientific references. And so what we did was we actually built nine different verification pipelines for each of those tasks. And this can be used to now measure hallucination with high precision diverse domains."
+  },
+  {
+   "t": 1563,
+   "text": "Right, that's very interesting. I like how you specify that in the wild hallucinations, for example, define that established source of knowledge, right? And Wikipedia, for example, could be such a source of knowledge that is verifiable or verified, established, that people trust."
+  },
+  {
+   "t": 1597,
+   "text": "So in that work, in the WildHallucinations paper, you found that LLMs consistently hallucinate more on entities without Wikipedia pages or on rare entities in general."
+  },
+  {
+   "t": 1619,
+   "text": "What do you think are the practical implications of this for current LLM training and deployment?"
+  },
+  {
+   "t": 1629,
+   "text": "Yes, so in WildHallucination, we also used, besides Wikipedia, web search results as a source of truth. And that's why we could verify factuality for entities who didn't have Wikipedia pages. And so the implication is that for current LLM training paradigms, they are likely disproportionately optimized for really high frequency, well-documented knowledge that is appearing multiple times in pre-training data, and that is represented in sources like Wikipedia. But there's actually this whole other long tail of knowledge where models are going to struggle, but which people actually really care about."
+  },
+  {
+   "t": 1675,
+   "text": "And not only are LLMs seeming to be systematically less reliable in these cases, but our evaluations for them might also be giving us some kind of false sense of confidence if we don't feature such cases and we see that our models are doing well on all our evaluations. So I think it's very important to start with diverse and more realistic evaluations so that we are even hill climbing towards the correct goal."
+  },
+  {
+   "t": 1709,
+   "text": "Yeah, I also am interested in the fact that some knowledge is not based on very well published facts and widely published facts. And still it's an important knowledge even if it is sufficiently rare. And it would be great to make LLMs understand that this is also the fact even though it's not very frequent fact."
+  },
+  {
+   "t": 1746,
+   "text": "Yeah, very interesting approach. And with HALoGEN, you introduce an innovative system for decomposing LLM generations into atomic units and verifying them. Could you walk us through how this atomic unit approach enables more precise hallucination detection across diverse domains, such as, as you said, code generation, scientific attribution, or summarization? Yeah, sure. So the challenge here is that outputs of generator models can look very different from each other and that within any model generation, things that are true and things that are false can be interleaved amongst themselves in any order. So what we want to do is to extract and isolate the pieces of information that we want to verify from the model output."
+  },
+  {
+   "t": 1800,
+   "text": "I believe FActScore by Min et al. was the first paper to have a similar idea where they extracted biographical facts about an entity from a model generation. Since HALoGEN covers diverse domains and for all of these domains such as scientific attribution or code generation, oh which has, you know, tasks where we are checking for hallucinated code packages, what we do is we build a decomposition engine for each of these tasks that will take a model response for prompts from that task and extract the information that needs to be verified. units. And who is the verifier in this context?"
+  },
+  {
+   "t": 1846,
+   "text": "Do you use a performant LLM or do you ever use anything like human in the loop? How much you can rely on that verifier here? Yeah, so the verifiers always have to be automatic because when you get a new model, you need to be able to run your evaluation without recruiting humans to evaluate every model output. So for HALoGEN, because we had nine tasks, we had nine different verifiers. Some of them were LLMs, some of them were tools. So for example, for the scientific attribution task, where we check for hallucinated references, the tool we used was the Semantic Scholar API, where we could check if those references actually existed or not."
+  },
+  {
+   "t": 1889,
+   "text": "Yeah, another interesting aspect or part of your HALoGEN work was that you proposed novel classification of hallucinations into types A, B and C errors based on how they relate to the pre-training data. Can you please walk us through those different types of hallucinations and explain these error types with maybe some examples that you have from your work. Yeah, sure. So as you mentioned, this type A, type B, type C taxonomy is looking at hallucinations through the lens of what the model has already seen in its training data."
+  },
+  {
+   "t": 1936,
+   "text": "So we categorize a hallucination as type A if the model actually had access to the correct fact in its training data, but it still hallucinated a wrong fact. And this could correspond to really long-tail knowledge, for example, that got lost during training. We categorize hallucinations as type B if the model appeared to hallucinate, but the incorrect fact was actually in its training data, or it took something in its training data out of context, and it looks to us, it appears as a hallucination. So for example, in our paper, we found that a lot of the hallucinated code packages were actually directly from the model's training data."
+  },
+  {
+   "t": 1983,
+   "text": "And we categorize hallucination as type C, if neither a correct or an incorrect fact was in the training data and the model hallucinated. And so a lot of people talk about hallucinations as overgeneralization or over extrapolation because the model didn't have knowledge about something. That's why it hallucinated. And this really corresponds to this type C category that we created. Yeah."
+  },
+  {
+   "t": 2015,
+   "text": "So how do you check whether some piece of information is within the pre-training data when you do not have access to the pre-training data of a model? Yeah, good question. So we did this for open models or models where we made some assumption about the training data. For example, for the Llama models, we searched C4 because the first version of Llama did have C4 in its training data. And we also built a tool in a previous paper called What's in My Big Data that would actually index the data of these open models and oh it made it really fast to search for these kinds of facts in the training data."
+  },
+  {
+   "t": 2058,
+   "text": "What's in my big data was a great tool. I do recommend it to everyone who is working with the LLMs and the pre-training datasets. Yeah, thanks for that, by the way. Also a great work. So the way I see it, you kind of fine-grained the categorization of hallucination types into those smaller categories instead of just saying that this was a hallucination, you specify specific hallucination errors. What does it say about the origins of the hallucination in general?"
+  },
+  {
+   "t": 2106,
+   "text": "Can you reveal some patterns or something that is important that you understood about hallucination after fine-graining?"
+  },
+  {
+   "t": 2118,
+   "text": "Yeah, so I think one misconception that many people had was that hallucinations were really coming up because there was all these things in the long tail and the model did not have access to any information about it and it made things up. And this was both from conversations with other researchers but also in social media. I think this was the prevailing assumption about how these hallucinations were coming up. But what we found is that hallucinations actually might be more complex than previously thought. And all of these different types of reasons could be resulting in downstream hallucination behavior."
+  },
+  {
+   "t": 2164,
+   "text": "And another implication is that though many, many hallucination mitigation methods have now been proposed, it's really unclear if they are actually addressing all these different types of hallucination."
+  },
+  {
+   "t": 2179,
+   "text": "That's a good thought when you think about mitigation. Yeah, that's very interesting."
+  },
+  {
+   "t": 2188,
+   "text": "Despite the advancements in retrieval of augmented generation so-called RAG, your findings across multiple sources indicate that RAG models only slightly reduce hallucinations and do not eliminate them. Considering the different error types, what are the next crucial steps or frontiers for effectively mitigating these hallucinations in LLMs?"
+  },
+  {
+   "t": 2214,
+   "text": "That's a great question. You know, RAG is certainly very useful. And I think there's a lot of potential in augmenting LLMs with retrievers. But they're not a complete solution. So for example, if you consider our categorization, RAG is likely going to help with type A errors where the model had access to the correct fact and retrievers can support surfacing that fact during inference. But I think that it's unlikely to help with type B errors where the retriever might just retrieve an incorrect flag or type C errors where there is nothing for the retriever to retrieve. So I think for really addressing hallucination, we need to develop a more systematic understanding of how our models work instead of making ad hoc decisions when training models because we're probably going to need interventions at different stages of model training and inference if we want to really mitigate them."
+  },
+  {
+   "t": 2275,
+   "text": "So for example, I do think retrieval has a lot of potential in helping us address type A errors, but for type C, maybe what we need is to invest in better uncertainty quantification methods so that the model can see, instead of trying to extrapolate wrongly. And maybe type B needs to actually be addressed either through better data curation or new kinds of training approaches."
+  },
+  {
+   "t": 2303,
+   "text": "Right, and can you give a little bit of intuition on oh what is the distribution across these three different types of errors based on what you saw in your research? So I'm not going to make a blanket statement here just because we don't still know the actual distribution. But what I can say is that it varies a lot by domains. So in some domains we found, say, type B errors were the dominant type of errors. And in some other domains, it was type A. So I'm not sure if thinking of a universal distribution might be the right question to ask. Maybe it is, but I suspect that it's more domain and use case specific."
+  },
+  {
+   "t": 2355,
+   "text": "And do you ever think that we can mitigate hallucinations completely on these sort of elements? Because we're all the time playing on the same field using the same model architecture like autoregressive transformers in a completely probabilistic world."
+  },
+  {
+   "t": 2373,
+   "text": "Do you think if that might root in the architecture design itself or that's maybe in the way that you're training the models or we should really think of a shift in the architecture design substantially?"
+  },
+  {
+   "t": 2389,
+   "text": "This is such an interesting question and it actually touches, I think, both scientific things, but also social factor. So one of the factors I think is that nowadays, training a large language model is such a huge investment that it's very difficult to do something substantially different than what has worked in the past just because you're going to make this huge bet and it's better to or maybe safer to make a bet with what you know works. So I think there are ways that it could happen. One is that we keep making how we build large language models more efficient, more principled, and then we can actually try to explore larger spaces of what might be potential solutions."
+  },
+  {
+   "t": 2445,
+   "text": "If we do that, then will we ever mitigate hallucination? I don't know, but I think we can improve a lot from where our frontier models are at today."
+  },
+  {
+   "t": 2461,
+   "text": "That's interesting. Do you think that it should be shifted more towards the way we train the models, the model architecture, or rather the data, the quality of the data, whether it is within pre-training data set or maybe some post-training data?"
+  },
+  {
+   "t": 2486,
+   "text": "Yeah, we're just at the start of answering all of these questions. And I think there are going to be interventions that are useful at every stage. So in pre-training data, maybe we can curate our data better, try to establish data provenance, have sources that we consider reliable, see what happens. And during training, maybe instead of next token prediction, we can also have some kind of additional fact verification step if it's documents that we think are very factual or something like that. And during post-training, again, we can have a whole different set of interventions to see what is going to really reduce model hallucinations, maybe just doing standard preference tuning like we are now, maybe being more helpful is resulting in more hallucinations."
+  },
+  {
+   "t": 2535,
+   "text": "We don't know. So I think we are just at the start of this whole line of investigation and there are so many open questions here. My suspicion is that interventions at different stages will be more useful for specific types of hallucination. For example, like I mentioned, the type B errors, I think that's going to be best addressed somewhere in the training data or the model training stage. But maybe there are other kinds of errors that can be revised and mitigated later."
+  },
+  {
+   "t": 2568,
+   "text": "Right, right. And I know that your broader research interest beyond directly evaluating functionality is about building tools that give people more control over the data. For example, such as tools to infer memorization or to inspect pre-training data, tools for machine unlearning and tools to process privacy policy. oh How do the insights from your work inform your approach to developing these data control and transparency tools?"
+  },
+  {
+   "t": 2616,
+   "text": "Yeah, good question. So my work has shown that the training data that models see is very important for providing an explanation for why they are behaving the way they behave downstream. But model training data as it is now is very vast. It's usually too big to make sense of. And for many of our frontier models, as mentioned earlier, this data is completely closed and we don't even know what's in the training data. So this then led to my interest in making tools that you could, you know, use to index and search through the training data of open models, making tools to surface evidence of training data in closed models, and even building tools that would process the text of privacy policies and inform users about what data they are giving up and how it will be used even before they are giving up that data."
+  },
+  {
+   "t": 2677,
+   "text": "That's super interesting. Super interesting. I think these type of tools are incredibly important both for people who are pre-training the models and those that are oh working with the models that are already pre-trained. Yeah, so for example, one of the tools is called What's in My Big Data, as we mentioned earlier, which is just an index of many common pre-training corpora. Another of our recent tools is called Information-Guided Probing. It's about giving a piece of text trying to build probes that would test a closed model for evidence of memorization."
+  },
+  {
+   "t": 2729,
+   "text": "So the idea is to find really surprising things in any given piece of text that if a model is able to guess those surprising things, it's likely because it's leaning on some kind of support from the training data."
+  },
+  {
+   "t": 2749,
+   "text": "You mentioned that finding the surprising aspect, what's \"surprising\"? How do you define surprise? Yeah, so we have this concept of surprisal, right? Which is forwards and tokens, which is when a word is very difficult to predict based on the context it occurs in. And you can oh have different kinds of measures to see whether something is surprising or not. You could use the likelihood of the word in context, or you could use maybe how many other words are more likely than the word that actually occurred there, you could use many different ways to quantify how unusual this word is in the place it occurred in, or how unusual this text span is in the place it occurred in."
+  },
+  {
+   "t": 2801,
+   "text": "And then what we do in this particular work is that we mask these words out and we ask close models to guess them. And so if there's not that much evidence to guess the word from the context, how could the model guess them?"
+  },
+  {
+   "t": 2820,
+   "text": "Right. How did you come up with that idea of surprisal? Why do you think surprise here is the important aspect of measure?"
+  },
+  {
+   "t": 2833,
+   "text": "The intuition behind that was basically that we were thinking that, if you looked at, a social media post and a model could guess the username of the person who wrote the social media post, that kind of thing is really, really difficult to guess if you never saw the social media post in your training data, right? So this is very domain specific. And maybe for each domain, you can try to find some marker like this. But there's actually this more generalized notion of what is surprising and what is difficult to guess. And so that's how we came up with this notion of a surprisal-based attack."
+  },
+  {
+   "t": 2876,
+   "text": "Yeah, that's very cool. You also mentioned one tool Information-Guided Identification identification Training Data Imprint imprint (Proprietary) Large Language Models, which explore techniques to probe whether closed models may have memorized some given training data through API access only. Why is developing these types of methods important and how do they differ from the prior approaches that has been used in the field? Yeah, so this paper is about the surprise guided probes. And the reason we set out to do it is that, you know, we know now that training data is this very valuable component in building large language models, but many frontier labs are not releasing any details about the training data that is used."
+  },
+  {
+   "t": 2923,
+   "text": "And there's likely for multiple reasons, including maybe competitive or legal reasons, and probably also to prevent some kind of reputational harm. But what this is doing, this lack of transparency has real implications for us. So as researchers now, it's really difficult for us to evaluate our models properly because one of the questions we want to understand is to what extent are our models capable of generalization? And we're not even able to describe what the input to these models are. And it's also preventing external auditors from examining these models for evidence of data misuse. And it's preventing data authors to actually understand and control how their data is being used."
+  },
+  {
+   "t": 2973,
+   "text": "And so this is why we wanted to create a method, which was a surprise and guided probes that could be used to probe models using only API access. What that means is only access to inputs and outputs from a model. So no access to token probabilities or model weights or training data or anything like that. And the reason we felt it was important to build these class of methods is because this is the only level of access provided to us by many of the frontier labs today."
+  },
+  {
+   "t": 3005,
+   "text": "Interesting. It reminds me also of one of our previous conversations with the guest from Meta Research. We had a chat with her about generalization of LLMs. And you mentioned that generalization aspect here as well. So she said, OK, she is in Meta, and she has access to the actual training data set of those models. And she said, well, it does not really help 100%. Just the simple fact that we have access to the data does not give you a specific method of tools to analyze that data for and make any conclusions, strict conclusions about generalizability of the model."
+  },
+  {
+   "t": 3065,
+   "text": "I like to hear that you kind of repeat your words here - hallucinations and generalizability. What's your opinion about the relation between those two concepts? Hallucinations and generalizability of the model. Yeah, so I think they are all related to this concept of extrapolation. There are some extrapolations that we think are good, that we want, some extrapolations which we don't want models to make, and we don't yet have a good way of telling models which is which. So yes, they're definitely related. And I also liked what you said about the previous episode, because one of the things when you have access to all of that data, I imagine it's still hard to really search through that data and find things that are close but not maybe exact matches with what you want to match."
+  },
+  {
+   "t": 3124,
+   "text": "And I think there's so much research to be done in building better tools that help us understand the relationship between what we are asking the model and what was in the training data, even if we have access to it. Yeah, yeah, absolutely."
+  },
+  {
+   "t": 3140,
+   "text": "Yeah, and I know that you have some recent work that also focuses on machine unlearning in large language models. And I'm speaking now about your papers, \"RESTOR: Knowledge Recovery in Machine Unlearning\" and another one which is called \"Model State Arithmetic for Machine Unlearning\". So could you explain a little bit that concept of machine unlearning and why you think it is important and necessary?"
+  },
+  {
+   "t": 3187,
+   "text": "Yeah, so as we were discussing, our previous work has focused on building tools to help people know if, you know, the data was used to train a model and to make sense of the data. But the next step to really make this actionable is to help people maybe edit or delete their data from a model. So that's the perspective we've been working from. We really wanted to support the ability of people to erase their data. But the problem is that models are not really modular in terms of their training data. So during training, the information data is getting tangled across all these parameters."
+  },
+  {
+   "t": 3236,
+   "text": "So the idea is to really construct approximate unlearning methods where, once we applied them, the model can behave as if it had never been trained on some particular data point. And this is the goal of approximate machine unlearning. So in RESTOR, we focus on criteria for even evaluating that such a procedure was successful. So we take this very knowledge-oriented view of unlearning, that is, when we remove some data point, we check that the model is updated so that it no longer a reflex belief that was introduced in those data points. And in Model State Arithmetic, we try to estimate the effect that any given data point had on a model and reverse it by seeing how the model changed during training and making use of earlier checkpoints."
+  },
+  {
+   "t": 3295,
+   "text": "What kind of situations you have in mind when you think about machine unlearning? Is it that some facts at some point of time become not true? Or is it more about the situation that even if those facts are still true you want the machine to un-learn some amount of knowledge just in order to oh make a better generalization, maybe, or finding some patterns instead of memorizing everything?"
+  },
+  {
+   "t": 3342,
+   "text": "Yeah, so this is a great question. So I will say that the machine unlearning community has had multiple different objectives, but all of these methods are called machine unlearning. So I think we can think of them as two different schools. So there is one class that focuses on knowledge unlearning. And a lot of that discourse has focused on, say, removing harmful knowledge from models or removing stale knowledge from models, like you mentioned. Is that the most effective way to update models as things evolve and facts become stale? Not clear, but there is a whole set of work that focuses on knowledge level unlearning. And then there's another set of work that focuses on data level unlearning."
+  },
+  {
+   "t": 3388,
+   "text": "And these are actually very related, but in data level unlearning, the goal rather than removing specific knowledge is to reverse the effect of specific data points that we think the model saw during training. And this is really where we've been focused, but data points do introduce knowledge sometimes so that they are more connected than they may seem."
+  },
+  {
+   "t": 3413,
+   "text": "That's super interesting. Can you elaborate a little bit on where do you see the most major challenges in this field, in this area of research? In machine unlearning? Yes. I think evaluation is still an open challenge because the ideal evaluation would be if we could train a model on all the data except some data that we wanted to delete and then we could compare its behavior to the model we actually have. But this is very computationally impractical. So where the field is now is we're mostly been focusing on fine tuning settings. So we have a model, we fine tune it a bit more and then we compare these two models."
+  },
+  {
+   "t": 3462,
+   "text": "So doing it at pre-training scale would be really interesting, but I don't think we have yet figured out a good way to do it. We also don't have good ways to evaluate if two models are functionally the same, because it's never the case after this procedure that you get two models that have the exact same weights or anything like that. So it's really more of a behavioral question, but it's still very much open how we should evaluate. Of course, building a method that can actually successfully erase data points. I think it's been really hard to very efficiently and precisely estimate the effect of a data point on a model at the point a model saw that data during training, if that makes sense."
+  },
+  {
+   "t": 3510,
+   "text": "And that's really, really what we need to capture if we are trying to undo the effect of that data point. Okay, so it's not just the data point itself, it's also about when exactly during training that data point was seen and learned from, to all the other data points and models. So these are all very complicated. The community hasn't even started addressing those kinds of questions, but that's what's ahead in the future."
+  },
+  {
+   "t": 3543,
+   "text": "Speaking of future, what new or emerging research avenues in LLM factuality, hallucinations and responsible AI are you most excited to explore and what impact do you hope to make here? Yeah, so something I'm hoping to work on in the near future is studying and mitigating hallucination in these really high-stake expert domains where generative AI is already being deployed, like health care applications and law. And this would involve really collaborating with domain experts to understand what their requirements are and figuring out how we should be adapting our models to these actual real use cases. But more broadly, I'm interested in developing a more systematic science of large language models, that is understanding in a principled way how the different decisions we make when we are training these models affect their downstream behavior and where and how we must intervene if we want more controllable or more transparent large language models."
+  },
+  {
+   "t": 3617,
+   "text": "That science is a very interesting, broad, challenging area of research that is coming, I guess, in the future."
+  },
+  {
+   "t": 3638,
+   "text": "Our audience is primarily early and the medium career AI researchers and everyone in the AI research wants to make impact, conduct some impactful research and it looks like you are right now already in the position that you know how to produce impactful research."
+  },
+  {
+   "t": 3671,
+   "text": "Can you give a little bit of advice to everyone who is listening to us on how to navigate the challenges of conducting impactful research?"
+  },
+  {
+   "t": 3687,
+   "text": "Yeah, I would say maybe the best advice I can give is..."
+  },
+  {
+   "t": 3696,
+   "text": "I think it really helps to be yourself and to work on problems that really, really excite you, even if they feel very risky or they feel too weird or they are not following the current trends and are not what everyone else is working on. Because I think eventually good science does show itself and the field is really big enough that we really benefit from having people working on lots of different interesting things."
+  },
+  {
+   "t": 3734,
+   "text": "So follow the path of your interest and what surprises you. Exactly."
+  },
+  {
+   "t": 3743,
+   "text": "Cool, that's inspiring. Thank you so much, Abhilasha, for sharing your insights and experiences with us today. Your work on making AI systems more trustworthy and transparent is incredibly important. And we are excited to see what you accomplish next in your new role at the MaxPlanck Institute. Thank you for coming today. Thank you so much for having me and it so nice meeting you both again."
+  },
+  {
+   "t": 3768,
+   "text": "Thank you, Abhilasha, and thank you to our listeners as well for joining us on this episode of WiAIR. You will find more information about all the research that we have discussed today, and publications, in the description, so please definitely check that out. And we will see you in three weeks for another deep dive with the researchers pushing the boundaries of AI. See you. Bye."
+  }
+ ]
+}

@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import guestsData from '@/app/data/guests.json';
+import { guestPath } from '@/app/lib/episodePages';
 
 interface GuestEpisode {
     number: number;
@@ -18,7 +19,7 @@ interface Guest {
     episodes: GuestEpisode[];
 }
 
-function GuestCard({ guest }: { guest: Guest }) {
+function GuestCard({ guest, episodePages }: { guest: Guest; episodePages: Record<number, string> }) {
     const { name, title, bio, imageUrl, episodes } = guest;
     const [expanded, setExpanded] = useState(false);
     const [isTruncated, setIsTruncated] = useState(false);
@@ -60,7 +61,9 @@ function GuestCard({ guest }: { guest: Guest }) {
 
                 <div className="flex-1 flex flex-col md:pl-1 min-w-0">
                     <h3 className="text-2xl font-bold text-white text-center md:text-left mb-1">
-                        {name}
+                        <a href={guestPath(guest)} className="hover:text-wiair-lightest transition-colors">
+                            {name}
+                        </a>
                     </h3>
                     {title && (
                         <p className="text-wiair-light mb-3 text-center md:text-left">
@@ -90,7 +93,14 @@ function GuestCard({ guest }: { guest: Guest }) {
                     <ul className="mt-4 space-y-2">
                         {episodes.map((ep) => (
                             <li key={ep.number} className="text-center md:text-left">
-                                {ep.youtubeUrl ? (
+                                {episodePages[ep.number] ? (
+                                    <a
+                                        href={episodePages[ep.number]}
+                                        className="text-wiair-light hover:text-wiair-lightest font-medium"
+                                    >
+                                        ▶ Episode {ep.number}: {ep.title}
+                                    </a>
+                                ) : ep.youtubeUrl ? (
                                     <a
                                         href={ep.youtubeUrl}
                                         target="_blank"
@@ -107,20 +117,27 @@ function GuestCard({ guest }: { guest: Guest }) {
                             </li>
                         ))}
                     </ul>
+                    <a
+                        href={guestPath(guest)}
+                        className="self-center md:self-start mt-4 px-4 py-2 bg-white/10 border border-white/20 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm"
+                    >
+                        View researcher page →
+                    </a>
                 </div>
             </div>
         </article>
     );
 }
 
-export function GuestsSection() {
+/** `episodePages`: episode number → episode page path, for episodes that have one. */
+export function GuestsSection({ episodePages = {} }: { episodePages?: Record<number, string> }) {
     const guests = guestsData as Guest[];
 
     return (
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
             <div className="grid grid-cols-1 gap-8">
                 {guests.map((guest) => (
-                    <GuestCard key={guest.id} guest={guest} />
+                    <GuestCard key={guest.id} guest={guest} episodePages={episodePages} />
                 ))}
             </div>
         </div>

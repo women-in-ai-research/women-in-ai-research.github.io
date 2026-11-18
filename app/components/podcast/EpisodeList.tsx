@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import episodeData from '@/app/data/episodes.json';
 import config from '@/data/youtube-config.json';
 import { RichText, formatDuration } from '@/app/components/common/RichText';
+import { episodePath, hasEpisodePage } from '@/app/lib/episodePages';
 
 interface Chapter {
     time: string;
@@ -58,6 +59,7 @@ export function EpisodeCard({ episode }: { episode: Episode }) {
         };
     }, [description]);
 
+    const pageHref = hasEpisodePage(episode) ? episodePath(episode) : null;
     const meta = [publishDate, formatDuration(durationSeconds), podcast].filter(Boolean).join(' · ');
 
     const image = (
@@ -73,7 +75,11 @@ export function EpisodeCard({ episode }: { episode: Episode }) {
         <article className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:bg-white/[0.12] transition-all duration-300">
             <div className="flex flex-col md:flex-row gap-5 items-stretch">
                 <div className="w-full md:w-80 aspect-video mx-auto md:mx-0 rounded-xl shrink-0 overflow-hidden self-start">
-                    {youtubeUrl ? (
+                    {pageHref ? (
+                        <a href={pageHref} aria-label={`${title}: episode page`}>
+                            {image}
+                        </a>
+                    ) : youtubeUrl ? (
                         <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${title} on YouTube`}>
                             {image}
                         </a>
@@ -85,7 +91,9 @@ export function EpisodeCard({ episode }: { episode: Episode }) {
                         Episode {number}
                     </p>
                     <h3 className="text-2xl font-bold text-white text-center md:text-left mb-1">
-                        {title}
+                        {pageHref ? (
+                            <a href={pageHref} className="hover:text-wiair-lightest transition-colors">{title}</a>
+                        ) : title}
                     </h3>
                     <p className="text-wiair-light text-sm mb-3 text-center md:text-left">
                         {meta}
@@ -148,6 +156,14 @@ export function EpisodeCard({ episode }: { episode: Episode }) {
                         >
                             Apple Podcasts
                         </a>
+                        {pageHref && (
+                            <a
+                                href={pageHref}
+                                className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm"
+                            >
+                                Episode page →
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>

@@ -1,0 +1,359 @@
+{
+ "episode": 9,
+ "videoId": "IalFROkCH0c",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 12,
+   "text": "Welcome to the Women in AI Research podcast. I'm Jekaterina and I'm joined by my co-host Malikeh. Today's episode is all about LLM reasoning, reasoning evaluation, chain of thought, complex and neurosymbolic reasoning and explainable AI. With our guest today, we will explore why it is crucial to move beyond correctness to evaluate the process of LLM reasoning, how brain teasers reveal the balance between brute force and the insight-driven thinking, and what reasoning benchmarks like FOLIO and the P-FOLIO teach us about logical and symbolic reasoning."
+  },
+  {
+   "t": 61,
+   "text": "We will also dive into how insights from cognitive science and human-like reasoning can inspire more interpretable, explainable, and trustworthy AI systems. And beyond the technical, we will hear about our guests' personal experiences, things that encourage and discourage her in her research journey. And our guest today is Simeng Sophia Han. Simeng is a final year PhD candidate at Yale University, advised by the professor Arman Cohan. Simeng focuses on LLM complex reasoning, neuro-symbolic reasoning, and reasoning evaluation."
+  },
+  {
+   "t": 109,
+   "text": "She's currently also a research scientist intern at the AI Frontier reasoning team in Meta. And previously, she interned at Google DeepMind and the AWS, where she worked with some fantastic teams to advance reasoning capabilities in LLMs. Simeng is passionate about building systems that can think more intelligently and communicate their reasoning, whether through natural or symbolic language. And she believes that powerful AI should also be transparent, interpretable, and aligned with human values."
+  },
+  {
+   "t": 156,
+   "text": "Welcome, Simeng, to our podcast. And let's start at the beginning of your research journey. So could you share a little bit about your journey into NLP and AI research? Specifically, I'm interested in how your early experiences might have shaped your perspective on problem solving and AI? Hi everyone, I'm Simeng Sophia. I'm very excited to be here to talk about my research and my previous experience in NLP. I did my undergrad in computer science. And even before that, I participated in Math and Physics Olympiad competitions in a high school. And I think back then it was an early stage when I was trained to solve very hard problems."
+  },
+  {
+   "t": 215,
+   "text": "And in some sense, I think it's similar to complex reasoning that these LLMs are now trying to solve. And in my high school, there was a teacher that inspired me a lot, a Math teacher. So he told us that when we are trying to solve a problem, we should not actually try to copy paste some thinking traces or some thinking strategies directly from the questions that we have done before. But instead, we should actually start from the problem, then try to observe the patterns of the problem."
+  },
+  {
+   "t": 257,
+   "text": "Given all this and the advancement of the computational methodologies, I think there can still be some very interesting phenomena where the LLMs can actually adopt from how humans think. It could be very helpful also to give it a lot of intuition and also making it think about the nature of the problems. Thanks for sharing that. It resonates a lot with my background. I also participated in Math Olympiads and I totally agree with you. Building that problem solving mindset was very helpful throughout."
+  },
+  {
+   "t": 301,
+   "text": "You already covered my next question, but I re-ask that you might have different answer for it. Was there anyone who encouraged or perhaps discouraged you early on this journey? How did that shape where you are today? Yeah, maybe I can go bit more in depth into that last teacher that I mentioned. During high school, what he really taught me is problem solving man-side that I have not learned actually anywhere else at any stages of my career. That was a very significant person who influenced me a lot. And in university, I had an advisor, research advisor. 50 00:06:25,516 --> 00:06:03,372 During that period, he taught me a lot about NLP research, how to think about the architecture of the problems and also the laws of the neural networks."
+  },
+  {
+   "t": 363,
+   "text": "He was not just an NLP researcher, he was also a very expert in Linguistics and Machine Learning, but also he taught me how to think about where are the shortcomings of the current methodologies and how to really improve them."
+  },
+  {
+   "t": 386,
+   "text": "When I talk with senior researchers or people in their last year of PhD, they usually say that their first research was not their best research. I have the same question for you. How has your understanding of your research topic evolved since you started your PhD? We'd love to hear about the time when your experiments completely failed or gave surprising results. What did you do next?"
+  },
+  {
+   "t": 413,
+   "text": "I think for me, my first research was actually a good research for me. That was a very difficult question back then, and we poured a lot of efforts into it. We were trying to build a benchmark FOLIO. We didn't really use a lot of computational resources, but we used a lot of human resources."
+  },
+  {
+   "t": 448,
+   "text": "That project, at the beginning it was only a few people doing machine learning and NLP. And I still remember my advisor, he connected me with a lot of the senior researchers in the field and we had a lot of interesting discussions. And the first review for that project was I think, quite bad."
+  },
+  {
+   "t": 482,
+   "text": "Now thinking back, it's more harsh than it could be, but the reviews gave us lots of insights for improvement, where we submitted to the TACL. For improvement, we actually had to rethink the project a lot. So back then, we annotated around one thousand examples. And based on the review, it seems that more than two thirds of the examples need to be redone or need to be totally revamped in order to make this benchmark even a valid benchmark, and more so having it published in a good venue."
+  },
+  {
+   "t": 537,
+   "text": "So that was a very, I think, difficult period for me. But again, at that point, I think, that was one of the advantages of being in a more comprehensive school where people work on everything, because we had a lot of interdisciplinary support. So I was working on logical reasoning, but I'm not really a logician, and there were some questions that I couldn't solve. But we resorted to a logician in the university. We tried to make the benchmark, both the logic part and also the language part, much better with lot of interdisciplinary support, like people working on English literature. And also, we did a very large round of debiasing."
+  },
+  {
+   "t": 598,
+   "text": "In my opinion, it was a very fundamental building block for the next step of improvement. But the revamping was very significant."
+  },
+  {
+   "t": 614,
+   "text": "Can you share with us how much time it took you to address all the feedback that you got from that first initial sufficiently negative review? Yeah, I think it took around half a year. Back then, I still remember there was a moment... Because we added a lot of people from different fields,"
+  },
+  {
+   "t": 649,
+   "text": "then, when such an interdisciplinary effort happens, important question is to keep the scope within NLP, while there are so many people from other fields. And it was a significant amount of management work to do as well. But thinking back, that was a very interesting and important project in my PhD. You have also mentioned those benchmarks that you've worked on,"
+  },
+  {
+   "t": 685,
+   "text": "and in general reasoning evaluation work. So I would like to dig a little bit deeper into that part of your work. Let's start with the paper that is called \"Creativity or Brute Force? Using Brainteasers as a Window into the Problem-Solving Abilities of Large Language Models\". Your work on LLM reasoning evaluation challenges the conventional metric of whether the answer is correct, that's a very simple accuracy metric. Can you elaborate a little bit on why understanding of how a model arrives at the answer is advancing the understanding and design of LLMs? Why it is important to figure out what is the reasoning process instead of just using the accuracy metric?"
+  },
+  {
+   "t": 754,
+   "text": "Yeah, that's a very interesting problem to discuss. First of all, accuracy is a very important metric."
+  },
+  {
+   "t": 772,
+   "text": "Having this straightforward metrics is very important for the development of language models in a relatively straightforward manner, and I think, it greatly helps the progress of the field. But I think we may have come to a point where we're measuring this progress, and also a lot of algorithms are using our accuracy or final answer to improve their performance. So I think it could be that some other metric of measuring the reasoning process is very important because like we can never truly understand what these models are thinking about, unless we look deeply into their reasoning traces, and this error analysis or quality analysis is important in the study of NLP."
+  },
+  {
+   "t": 844,
+   "text": "In my project, I tried to study a lot of aspects of the reasoning process and also some aspects that are related to the problem solving process itself. And some of these inspirations came from my understanding about natural language, that happened at a very early stage when I was still working on parsing. And also, based on my experience with problem solving, I found that semantic parsing is important."
+  },
+  {
+   "t": 889,
+   "text": "And in this case, I identified a different semantic parsing paradigm, the semantic parsing definition, where the natural language is parsed into symbolic language. So in this case, we found the problems, as since brain teasers are usually written in a narrative style, here semantic parsing would mean to parse the narrative style questions into a more math problem-style question. Here, after semantic parsing, the natural language is still there, but the problem is made into a more concise form that also contains some math equations."
+  },
+  {
+   "t": 935,
+   "text": "And the motivation for this is that maybe language models have seen a lot more math-style questions, or it is used to invoke math thinking when it sees actually a math problem. And also this kind of semantic parsing helps make the problem easier to understand to the model, and for it to actually abstract the math equations. Yeah. So this is one of the aspects that I studied with brain teasers."
+  },
+  {
+   "t": 976,
+   "text": "Cool, yeah, as you said, use brain teasers as an ideal medium to study multiple layers of the LLM reasoning process. So what are specific aspects of brain teasers that allow you to distinguish between a model solving through brute force search or guessing versus relying on a flash of insight or a more structured reasoning path, as humans often do? I like brain teasers a lot because solving brain teasers doesn't require a lot of knowledge. Actually, there are not a lot of theorems we can adopt. But sometimes it just relies on intuition or observing the problem patterns."
+  },
+  {
+   "t": 1024,
+   "text": "And that I find specifically interesting, because in this case we are trying to find out what are the underlying heuristics or what is the nature of the problem. So by mentioning heuristics, this is a new understanding that I had recently, that is not on the paper but I recently read in cognitive science, about fast and frugal heuristics. So here's, for example, a real-life problem: if someone throws at me a ball and I'm trying to catch it, then in order to catch it, there are two ways."
+  },
+  {
+   "t": 1074,
+   "text": "One way is to do it with some algorithms. In this case, the algorithm would be to calculate the trajectory of the ball. And in order to calculate that, since in the real world there are so many different factors that can affect the ball's trajectory, like the wind speed, maybe even humidity, so this is a very difficult task when we do it algorithmically, or in some sense, when we do it in a brute force way."
+  },
+  {
+   "t": 1114,
+   "text": "We as humans, we have this instinct, we developed a much more efficient method, which is just to keep our eye on the ball and try to follow its path with our eye. So instead of really calculating trajectory and put our hand where the ball is supposed to fall, we just keep our eye on the ball and we are able to estimate where the ball is coming from. So this is what they call the fast and frugal heuristics. These methodologies, they usually provide valid shortcuts in order to arrive at a problem in a more efficient way, and maybe going a bit more concrete in math."
+  },
+  {
+   "t": 1165,
+   "text": "If for example, there's a problem where the problem space requires us to search over a million choices, but the fast and frugal heuristics, if we find them, will be able to narrow down the problem space. One hint can make the problem space from 1 million to maybe 10,000. And another hint, or another heuristic that we discovered can make the promised space from 10,000 to 100. And then to conduct a search, it would be much faster than if we just search over 1 million choices."
+  },
+  {
+   "t": 1218,
+   "text": "Right, so it's something like the fast thinking and the... Let me clarify just one thing here. You mentioned those two types of heuristics to, let's say, with the ball to calculate the whole trajectory and just to follow, observe the ball and react when necessary, Yeah. as the fast version."
+  },
+  {
+   "t": 1249,
+   "text": "Are both of those heuristics used by humans as well? Or humans tend to use one of them more than another? I think that is a very interesting question."
+  },
+  {
+   "t": 1273,
+   "text": "I don't have a fixed answer for that because I feel that humans also use both."
+  },
+  {
+   "t": 1283,
+   "text": "Oftentimes, humans will try to decide which one to use beforehand. Or it could be that after an attempt at one, after a failed attempt at one, then we choose to attempt the other. So, I don't have a fixed answer which one humans use more actually, but I feel that maybe the other way is more efficient and maybe could be considered as more clever. Right, that's very interesting. Then if we switch from humans to actual brain teasers that you used in your work, is it necessary, you think, for solving brain teasers to distinguish between those two different approaches and then choose one or another?"
+  },
+  {
+   "t": 1345,
+   "text": "And maybe you could illustrate with the example of how that distinction looks like."
+  },
+  {
+   "t": 1358,
+   "text": "For a given example, I find one example very illustrative but also straightforward. So this problem is: if we can only use the number two and we can use any mathematical signs or functions or symbols, how do we get a five? And in this problem, we can either enumerate all the mathematical signs and symbols and functions there, and do a brute force search, or we can also try to think about what are the connections between 2 and 5."
+  },
+  {
+   "t": 1411,
+   "text": "I think by solving problems this way, it's much more efficient, but it requires us to observe the patterns of the problem in order to arrive at the final answer. Yeah, and I guess different humans or different language models may also approach this problem in different ways. Sometimes it could be a trial and error where maybe after we try a few mathematical signs and symbols, we realize, okay, this is not a good strategy, but during that process, some of the patterns can be identified for the final solution."
+  },
+  {
+   "t": 1456,
+   "text": "Cool. As you already mentioned, your work aims to use insights from cognitive science to inform better language model designs. So what are some initial observations or hypotheses that you've formed about the differences between human and LLM problem solving approaches that could lead to a new architectural or training paradigm? I think you already mentioned some of those, but let's go deeper into it. Yeah, so I'm not a cognitive scientist, but I've been trying to identify how we can use the inspirations found there, because they have a much better understanding of human problem solving."
+  },
+  {
+   "t": 1505,
+   "text": "And some of the... I have an ongoing work that"
+  },
+  {
+   "t": 1513,
+   "text": "utilizes specific pattern that I identified, like creativity, and I try to use creativity to improve human problem, to improve model problem solving. And previously I also had another work called HYBRIDMIND. In that work I try to develop some meta thinking strategy that enforces the model to think about the problem strategy itself, before actually solving the problem. So these are some of the inspirations. And also recently I've also been exploring the fast and frugal heuristics from the cognitive field."
+  },
+  {
+   "t": 1565,
+   "text": "That's super interesting. Just one follow up question. When it comes to reasoning, do you think that you approach that challenge in general from the perspective of the cognitive science of how people do that? Do you think we should necessarily directly copy the human- like way of reasoning into AI systems, into LLMs, or there could be other ways as well? Yeah, that's a very interesting problem."
+  },
+  {
+   "t": 1612,
+   "text": "I think, first of all, it depends on how humans solve problems. I'm not sure if this can be completely, probably cannot be completely modeled in a computational manner yet."
+  },
+  {
+   "t": 1630,
+   "text": "So this is that, but LLM on the other hand, as a substitute, can actually already solve a lot of problems. And this is also based on the idea of language model, where the models are trained to do an X word prediction. And language model is also a very important concept in the field."
+  },
+  {
+   "t": 1662,
+   "text": "Early on, it was usually only used to predict the next token. So I don't think that entirely mimicking human ways is the ideal solution or the ultimate way. If we think about the history of the technology, when we're trying to build something that is completely animal-like, it sometimes fails, but when we apply some more Physics or Maths, then we arrive at better solutions."
+  },
+  {
+   "t": 1707,
+   "text": "Here, I think we need to keep in mind how human problem solving is efficient, both it is very data efficient, and also the thinking process can be creative and efficient. And also can be generalizable to newer and more difficult problems. So I think it's important to keep all of this in mind while we are developing new computational models, but not exactly copying from human."
+  },
+  {
+   "t": 1747,
+   "text": "Right."
+  },
+  {
+   "t": 1753,
+   "text": "To think about human-like and machine-like reasoning, I want to discuss with you another work on P-FOLIO. It's called \"Evaluating and Improving Logical Reasoning with Abundant Human-Written Reasoning Chains\", it was published at the EMNLP. So there you annotate a chain of thought traces to make models explain their own reasoning, right? And you are collecting human written reasoning chains for this benchmark."
+  },
+  {
+   "t": 1798,
+   "text": "So can you tell us what are the challenges in collecting all those chains for the benchmark?"
+  },
+  {
+   "t": 1810,
+   "text": "For collecting human using chains? Yeah. What are the challenges for collecting human reasoning chains and how do you see then the value of those human written reasoning chains in training the model? Yeah, I think collecting the human reasoning chains was difficult partly because some of logical reasoning questions can be already quite semantically complex or syntactically complex."
+  },
+  {
+   "t": 1855,
+   "text": "Then when we ask humans to solve those issues, to parse those syntax and semantics and also derive the logic, it can be a very challenging task for humans. And in those cases, I actually found machines, when we parse the problems into symbolic form, machines do it in a much more efficient manner, because in a symbolic form it's more structured and"
+  },
+  {
+   "t": 1891,
+   "text": "when the machine or a symbolic engine is doing parsing and reasoning over that, it only needs to consider the skeleton or the structure of the sentences without actually thinking much about the semantics. This is especially true because this is a logical reasoning task."
+  },
+  {
+   "t": 1916,
+   "text": "In this case, semantics don't matter as much as logic. So that was a challenge for humans and also very interesting distinction from machine."
+  },
+  {
+   "t": 1936,
+   "text": "So how do you envision researchers leveraging these explainable models to open the black box of LLMs? Yeah, so I think for opening black box of LLMs there are two active lines. One is to directly use natural language, ask language model to write the explanations and think about this explanation. If the language model can output explanations, then it's explainable. I personally find this line very interesting because it's also very effective in practice. When we are able to read the outputs that are written in a human understandable way, it's very straightforward for us to know - OK, it's explainable."
+  },
+  {
+   "t": 1994,
+   "text": "And the other line is to actually use a more mechanistic interpretability approach, where the language model parameters and tensions are probed in order to discover what happens within the parameters when the model is doing reasoning or how the parameters change when the model is being trained. I think that P-FOLIO more... Actually, both P-FOLIO and also brain teasers fall into this explanation paradigm where we are trying to ask language model to explain their outputs, explain and go beyond the final answer to say what it is, to understand what it is actually thinking."
+  },
+  {
+   "t": 2058,
+   "text": "And you also conducted in this work very close comparison on how humans versus machines produce those reasoning traces. What are the most significant differences that you have observed? I think the most significant difference was that when humans conduct reasoning, we usually go with a graph structure, try to have a graph structure, some visualization of the reasoning problem instead of simply going forward step by step."
+  },
+  {
+   "t": 2114,
+   "text": "But again, we write the reasoning chains, we need to write it in a step by step manner. And I found that for machines, especially for symbolic engines, those symbolic frameworks use an algorithm to solve the problem. And then this algorithm is actually very different from human problem solving, since the algorithm is developed to solve problems at a very large scale with maybe 100 or 10,000 premises. And in this case, algorithm would try to, our algorithm would have some for loop, but in general it's very different from human problem solving strategy, mostly because it is designed to solve very large scale problems."
+  },
+  {
+   "t": 2185,
+   "text": "So in your opinion, how much understanding these differences informed the development of more robust and transparent AI systems? I think that's a very interesting question. To develop more transparent systems, I think the LLM should be able to explain its decision. But at the same time, another line of being transparent and robust is to use the symbolic form. And by using the symbolic form, we offload part of the reasoning process to the algorithm, which are proven to be able to reliably solve very large scale problems."
+  },
+  {
+   "t": 2241,
+   "text": "I think this is another way to build robust systems."
+  },
+  {
+   "t": 2248,
+   "text": "Right, it's also interesting how this reasoning is, how does it relate to the consistency of those models? And the consistency is usually a big part of trustworthiness for people. Can you elaborate a little bit on this?"
+  },
+  {
+   "t": 2277,
+   "text": "Consistency, like outputting similar outputs every time we prompt a model? I find that consistency reasoning is a very important, yeah, very important problem. For example, if a model that we are using every day just suddenly gets updated, it uses another checkpoint, then it would change, possibly change a lot of the decisions that it makes. But I think this consistency also requires some robust evaluation where certain critical aspects, certain very deterministic tasks need to always stay consistent."
+  },
+  {
+   "t": 2333,
+   "text": "Well, certain tasks are allowed to have some variance. Cool, thanks, very interesting. Let's now talk about \"FOLIO: Natural Language Reasoning With First-Order Logic\". You designed this benchmark to translate reasoning skills into symbolic tasks, such as first-order logic and mathematical proofs."
+  },
+  {
+   "t": 2357,
+   "text": "Why is it crucial to evaluate LLM reasoning in this symbolic domain, especially when many LLMs primarily operate in natural"
+  },
+  {
+   "t": 2372,
+   "text": "So I think LLMs are using natural language because it's trained mostly on natural language."
+  },
+  {
+   "t": 2386,
+   "text": "We never thought about this question like in human problems, does the reasoning happen in a natural language manner or in a symbolic manner?"
+  },
+  {
+   "t": 2404,
+   "text": "I read some theories from Cognitive Science that say the reasoning that happens in humans is actually symbolic, and symbolic helps creativity even more."
+  },
+  {
+   "t": 2423,
+   "text": "It depends on the type of reasoning problem as well."
+  },
+  {
+   "t": 2431,
+   "text": "I think, roughly speaking, reasoning can be characterized as it doesn't require any knowledge, requires only relevant knowledge, or requires general words knowledge, and being very knowledge intensive. It's a very broad spectrum when it comes to the knowledge required for reasoning problem. I think on the extreme end is problems like Math, analogical reasoning. On the other extreme end could be common sense and also moral and emotional reasoning tasks."
+  },
+  {
+   "t": 2482,
+   "text": "To me, I think it's more straightforward to do emotional and moral reasoning actually with natural language than with symbolic language. For Math and logical reasoning, it's more straightforward to apply symbolic reasoning."
+  },
+  {
+   "t": 2508,
+   "text": "Interesting. You have already mentioned your HYBRIDMIND work before, and now I want to come back to that one, because in this work you explore those complementary effects of neuro-symbolic"
+  },
+  {
+   "t": 2527,
+   "text": "reasoning and purely natural language reasoning, and see how"
+  },
+  {
+   "t": 2537,
+   "text": "those effects enhance LLM performance. Can you speak a little bit about the practical implications of combining those approaches? Those two approaches, in practice they work very similarly for a large language model. If we only use one of them, the performance is actually very similar, both for earlier models like GPT-3 and also for the recent model like GPT-4.0. So that's actually quite surprising to me, because I felt that the model capability has shifted a lot."
+  },
+  {
+   "t": 2587,
+   "text": "Maybe it will be better at one of them. And the fact that they are still similar, I guess, somehow shows that they both have their advantages."
+  },
+  {
+   "t": 2603,
+   "text": "And we did a best of two performance, when either one of them is correct. And we find that if we use that, the performance is actually much higher than if we simply do one approach two times or even four times. And that really shows there are complementary advantages. That's performance-wise. Also in practice, some problems, I mentioned, machines can do them better when it actually abstracts the problem into a symbolic form."
+  },
+  {
+   "t": 2653,
+   "text": "In that way, it just not think about the semantics while solving the problem. And that, I think, makes a problem solving more efficient and effective."
+  },
+  {
+   "t": 2674,
+   "text": "So were there any specific scenario already said that they have some kind of a complimentary thing? In each scenario, does one approach compliment the other most effectively? Do you have any specific or concrete examples based on your experience?"
+  },
+  {
+   "t": 2693,
+   "text": "Examples, I think, can be divided into two types. One type is where the semantics are actually very complex, or the language can be very hard to parse, but the logic is actually relatively simple. And in that case, since language models are designed to actually understand natural language, so in this case, understanding the semantics helps a lot and doing it in the natural language space helps."
+  },
+  {
+   "t": 2741,
+   "text": "But on the other spectrum, where the logic is very complex, but parsing the semantics is relatively easy, so in this case, we find that doing it in the symbolic space is more helpful."
+  },
+  {
+   "t": 2759,
+   "text": "Sounds good. And I think it's time for us to wrap up. It was really interesting to hear about all the different aspects of the work that you do in the area of LLM reasoning, explainable AI, AI interpretability, complex reasoning. Everything's extremely interesting and I really enjoyed that conversation."
+  },
+  {
+   "t": 2792,
+   "text": "Looking ahead, what in your opinion are some of the most pressing open problems or most exciting research directions that you see emerging in LLM reasoning, interpretability or"
+  },
+  {
+   "t": 2811,
+   "text": "the intersection of the cognitive science and AI that you would be eager to explore further? Yeah, that's a very big question. I think making these predictions is very difficult, and probably LLMs can't do it well yet. But okay, I will try my best to give it a shot. For one aspect I mentioned, I think it's very important to borrow insights from human problem solving, that cognitive scientists have been studying for very long, to try to improve the data efficiency and generalizability of current large language models."
+  },
+  {
+   "t": 2866,
+   "text": "So that's one thing that we discussed. But another area is, I think, is a long horizon reasoning and I recently also worked on a project about doing legal reasoning. And in that project, we found that with long horizon reasoning a part of the problem is it's very hard to evaluate. And so that really complicates the problem. I think it's a very good research problem, maybe in the next few years. And the third, going a bit broad, just for this AI field in general, I find robotics an area that is worth doing a lot of research in."
+  },
+  {
+   "t": 2928,
+   "text": "Because in that area, there are a lot of open problems and data is scarce and hard to collect."
+  },
+  {
+   "t": 2941,
+   "text": "Thank you. Thanks for sharing that. Simeng, many of our audience are early or mid-career female researchers who are now listening to us."
+  },
+  {
+   "t": 2951,
+   "text": "As a woman in AI research, what advice would you offer to these female researchers who are navigating the academic AI landscape, particularly those aiming to publish at top-tier conferences and do impactful research? So as a female myself, I've actually constantly been searching for role models. I guess, the most important thing is to build a support system. I have worked with so many wonderful male researchers in my career. Actually so far, all of my PhD advisors, like undergrad advisor, even internship advisor has been male, and they have been providing tremendous support and help in my career."
+  },
+  {
+   "t": 3002,
+   "text": "But sometimes, I do find that talking with female researchers, especially since there are not many of them, can be a more varied experience than talking with male researchers. I constantly try to find such support. And I think when we find that we are in an environment or system, where we seem not to have enough support, always trust in yourself and find those support broadly. Maybe in conferences, I think, at conferences reaching out to people is much easier, and scheduling meetings."
+  },
+  {
+   "t": 3052,
+   "text": "Also, some researchers, they put that they are open to meetings on their website. So in those cases, it's also good to reach out."
+  },
+  {
+   "t": 3067,
+   "text": "Yeah, that's useful. Maybe you could also share some insights that could be useful to those who are listening to us right now."
+  },
+  {
+   "t": 3080,
+   "text": "So I think personally, I find some very senior female researchers very inspiring, and they sometimes can have, very practical advice for junior researchers. But in general, find interdisciplinary support either from undergrad or from other PhD researchers, especially since LLM is becoming more and more broad. Support from other majors, like maybe not just women in AI, even women in Psychology and also other fields can be a very helpful support."
+  },
+  {
+   "t": 3138,
+   "text": "I guess in my field in general, reaching out to female researchers, who are working on similar topics, especially helps."
+  },
+  {
+   "t": 3155,
+   "text": "Cool, thank you Simeng. You mentioned this interdisciplinary approach, both in terms of research collaboration and also mentorship. And I think that's very inspiring. Sometimes we limit ourselves to this small community of AI research and it's good to open up both to get some ideas and also get mentorship from people who look at the world from different perspectives. This was such an inspiring conversation. Thank you so much for joining us today. Thank you so much for sharing your insights with us and with our listeners. Amazing. And thank you for joining us on this episode of WiAIR. You will find more information about Simeng's research and publications in the episode description as well."
+  },
+  {
+   "t": 3202,
+   "text": "So definitely check this out. And we will see you in three weeks with another deep dive with the women researcher pushing the boundaries of AI. Until then."
+  }
+ ]
+}
