@@ -80,7 +80,74 @@
     {
       "name": "Dr. Annie En-Shiun Lee",
       "title": "Assistant professor at the OntarioTech University and the University of Toronto (status-only), Canada",
-      "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry."
+      "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
+      "imageUrl": "/images/guests/annie-lee.jpeg"
+    },
+    {
+      "name": "Dr. Maria Antoniak",
+      "title": "Assistant Professor at the University of Colorado Boulder, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/maria-antoniak.jpeg"
+    },
+    {
+      "name": "Dr. Maria Ryskina",
+      "title": "CIFAR AI Safety Postdoctoral Fellow at the Vector Institute for AI, Canada",
+      "bio": "",
+      "imageUrl": "/images/guests/maria-ryskina.jpg"
+    },
+    {
+      "name": "Dr. Swabha Swayamdipta",
+      "title": "Assistant Professor at the University of Southern California, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/swabha-swayamdipta.jpeg"
+    },
+    {
+      "name": "Dr. Letitia Parcalabescu",
+      "title": "Creator of the AI Coffee Break YouTube channel",
+      "bio": "",
+      "imageUrl": "/images/guests/letitia-parcalabescu.jpeg"
+    },
+    {
+      "name": "Dr. Hila Gonen",
+      "title": "Assistant Professor at the University of British Columbia, Canada",
+      "bio": "",
+      "imageUrl": "/images/guests/hila-gonen.jpg"
+    },
+    {
+      "name": "Dr. Saadia Gabriel",
+      "title": "Assistant Professor at UCLA, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/saadia-gabriel.png"
+    },
+    {
+      "name": "Dr. Anna Ivanova",
+      "title": "Assistant Professor at Georgia Tech, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/anna-ivanova.jpg"
+    },
+    {
+      "name": "Dr. Malihe Alikhani",
+      "title": "Assistant Professor at Northeastern University, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/malihe-alikhani.jpg"
+    },
+    {
+      "name": "Dr. Elisa Kreiss",
+      "title": "Assistant Professor of Communication at UCLA, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/elisa-kreiss.png"
+    },
+    {
+      "name": "Dr. Greta Tuckute",
+      "title": "Research Fellow at the Kempner Institute, Harvard University, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/greta-tuckute.jpg"
+    },
+    {
+      "name": "Julie Kallini",
+      "title": "PhD student at Stanford University, USA",
+      "bio": "",
+      "imageUrl": "/images/guests/julie-kallini.jpeg"
     }
   ]
 }
