@@ -1,0 +1,722 @@
+{
+ "episode": 4,
+ "videoId": "Z8VBnZmSUto",
+ "source": "Speaker-labelled transcript, lightly cleaned (filler words and crosstalk removed)",
+ "segments": [
+  {
+   "t": 12,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, so hello and welcome to another episode of the Women in AI Research podcast. I'm your host. And as usual, I'm joined today by Malikeh, my co-host. And today we have the privilege of speaking with Dr. Angelica Lim. Angelica is a computer scientist, researcher and roboticist."
+  },
+  {
+   "t": 33,
+   "speaker": "Jekaterina Novikova",
+   "text": "She was named as one of five people building the AI future by Forbes, otherwise she's known for her work in the field of Artificial Intelligence and the Social Robotics. Right now she's an Assistant Professor in Computing Science at the Simon Fraser University in Vancouver, Canada, and she's focusing primarily on developing interactive, socially intelligent robots to enhance human-robot interaction. Much of her work explores emotional and cognitive development in robots and how it affects their interactions with humans, with people. She leads the ROSIE lab."
+  },
+  {
+   "t": 71,
+   "speaker": "Angelica Lim",
+   "text": "Thanks for having me."
+  },
+  {
+   "t": 78,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's the social robotics lab at the Simon Fraser University. And she builds AI software for robots to interact with the social intelligence and empathy. So welcome to our podcast, Angelica."
+  },
+  {
+   "t": 91,
+   "speaker": "Jekaterina Novikova",
+   "text": "As you may know, one of the goal of this podcast is to show how diverse is the field of AI research and because of that I want to start with this question today as well. Could you please tell us a little bit about your cultural heritage and where you have spent different parts of your career journey, of your life, including your studies, work, academic career?"
+  },
+  {
+   "t": 120,
+   "speaker": "Angelica Lim",
+   "text": "Sure, it's a bit of a windy road. So my parents are both born and raised in the Philippines and they eventually emigrated in their 20s to the United States where I was born in California. And I lived in the States until I was about 10 and moved to Vancouver for high school and my undergrad in computing science."
+  },
+  {
+   "t": 138,
+   "speaker": "Angelica Lim",
+   "text": "And so during that time I specialized in AI and I learned a little bit about robotics. I competed in some competitions as some roboticists do. And I eventually decided to do my grad studies in the place at the time - this was the late 2000s - in Japan because at that time I just saw all these great robots coming out on YouTube, and there were these Japanese robots and I was not disappointed. When I got to Japan, there were robots everywhere and I was able to do six years of grad studies there studying robots before continuing on my dream to work on socially interactive robots. And at the time it was being developed as a joint venture between this French company called Aldebaran Robotics and Softbank in Tokyo. So I worked for a little bit in Tokyo and then I moved to Paris for three years before coming back from industry to academia where I am now."
+  },
+  {
+   "t": 188,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's great."
+  },
+  {
+   "t": 189,
+   "speaker": "Jekaterina Novikova",
+   "text": "I remember seeing the TED talk of yours where you presented your robots when you were still in"
+  },
+  {
+   "t": 198,
+   "speaker": "Angelica Lim (TEDxKyoto 2012 clip)",
+   "text": "Okay, so one of the cool things about robots is that they can speak whatever language that we program them to. So first of all, I'd like now to be my translator. now, translation mode."
+  },
+  {
+   "t": 219,
+   "speaker": "Angelica Lim (TEDxKyoto 2012 clip)",
+   "text": "Please tell them I'm sorry I could not speak in Japanese today."
+  },
+  {
+   "t": 227,
+   "speaker": "Jekaterina Novikova",
+   "text": "and it was fascinating."
+  },
+  {
+   "t": 228,
+   "speaker": "Angelica Lim",
+   "text": "That's right, yeah, baby Angelica back then and it was really fun."
+  },
+  {
+   "t": 232,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's fantastic. Yeah. Yeah. Thanks for joining us today. It's a pleasure to meet you here. And thank you for sharing your journey with us. So I'm curious during your career in AI, did you ever get the feeling that you or your colleagues were being treated differently just because you or they are women?"
+  },
+  {
+   "t": 252,
+   "speaker": "Angelica Lim",
+   "text": "I think I always felt very supported and maybe that's the reason why, you know, my path just happened to be very supportive along the way and maybe that's why I could be where I am today with my, you know, I feel so grateful to be a professor in computing science at a great university. You know, I had lots of, I would say sponsors, supporters, and many of them were also men, my first undergrad."
+  },
+  {
+   "t": 276,
+   "speaker": "Angelica Lim",
+   "text": "a research supervisor, his name was Greg Mori. And he was very supportive in getting me to understand the field of computer vision at the time. And then other roboticists like Richard Vaughan, they were really, really supportive. They wrote my reference letters. They helped me get to where I was, including my own supervisor from my grad school in Japan. I would say some of the hardest moments came from when women, women actually would be the most challenging at the time. Maybe these were, I can't speak broadly, but I had some challenges with a roboticist academic when I was an undergrad who told me that I couldn't do it. And I can't say that's a, I don't know if that's a common thing, but I guess that was one challenge that made me want to only do it more. They say you can't do it, so you have to prove them wrong."
+  },
+  {
+   "t": 326,
+   "speaker": "Angelica Lim",
+   "text": "So I guess I'm lucky in that way. But I still, I would say the first time I felt I experienced some challenges because I was a woman was only recently, actually, when I'm teaching these AI courses. And I had a bad term, I will admit. I had a bad term where I had some issues I was going through personally. And I couldn't give it my usual best. And so I think this is the thing. The bar for perfection is very high. So I think I had to really be as perfect as possible throughout my entire life. And when I couldn't be, they come after you. They will come and say that it's not because of your personal issues or anything like that, it's incompetence or the stereotypes that could \"explain\" this. And I think that is where it's so hard to be a woman in AI is that we have to always show this image of being perfect and if you slip a little bit for whatever reason then the mentality is not in our favor. Whereas I see with my male colleagues - they could be doing a very crap job and not that they do, but if they do it'll be laughed off or it will just be this guy that's being silly or funny. They can laugh it off and, I think, that's what's hard about being where we are as women in our field."
+  },
+  {
+   "t": 405,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. Well, yeah, it sounds to me that like, one thing is that aim for perfection is there, right? So it's either you feel like you need to be 100 % perfect, or it's not enough. So I wonder how you deal with that."
+  },
+  {
+   "t": 421,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 422,
+   "speaker": "Angelica Lim",
+   "text": "Hmm. It's not, I don't think I do. I think, you know, at least personally, I feel like I in order to not beat my own self up, I feel like I like this saying, which is: You can do everything but not at the same time. Which means for me that I want to have a kid now. I have a five year old and I need to spend time with her. And so maybe at this time I'm going to be, I can't do everything that I would like to do in my professional life. But then maybe at another time, I would like to go up for these other things. Right. So I think maybe just feeling that I can do everything, but just not at the same time is a way that I've been managing to at least be okay personally with if I have some, you know, successes or failures in different parts of my life."
+  },
+  {
+   "t": 469,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. Yeah, sounds great. It sounds like you just have clear priorities of what is more important for you right now, right? Something like that."
+  },
+  {
+   "t": 478,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, and to be honest, I don't do it alone. I have a coach. I started having a life coach when I was, you it's hard to be a grad student, especially in a foreign country. And in Japan, I had a life coach that was kind of like a counselor, but not, you know, not particularly going through any struggles, but just trying to be well. And I have a coach now in Vancouver who helps me, meet her every once in a while and she helps coach me to be the best that I can be and also accept where life goes and I think that's nice to have a professional coach on the side."
+  },
+  {
+   "t": 512,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's a great advice, actually. Angelica, another point that I heard from what you were saying before was that it almost feels to you that it becomes more difficult when you progress in your career. And when you start getting more senior, it's getting more difficult to be aligned with that high bar of requirements. So maybe a question that would be interesting to hear your answer to would be, do you think that the academia as a system is well designed for women researchers?"
+  },
+  {
+   "t": 545,
+   "speaker": "Angelica Lim",
+   "text": "It's totally broken."
+  },
+  {
+   "t": 546,
+   "speaker": "Angelica Lim",
+   "text": "You know, the tenure track system was created over 100 years ago, I think. I can't remember the exact date. but what I learned as I was doing research into it was, yeah, I mean, The proportion - and I think it's obvious - the proportion of women at that time when it was created was very small. It was mostly men, and it was built for men."
+  },
+  {
+   "t": 565,
+   "speaker": "Angelica Lim",
+   "text": "I'll give you some examples. The tenure track system asks a person, a woman, after she's gone through years of training to finish her PhD, to go for another six years in her last period of her life when she is able to have children biologically and say, you now have to do tenure track and push more than you've ever pushed to get this permanent position or they fire you. And it's like, well, why would I do that? I want to have a kid. I want to be a normal person, normal human, to have that opportunity if I wanted. Or I could go for this job that really is not suitable for that. But maybe it is. I will tell you the people that I talked to at the time when I was considering it, it's like, how did you manage to do it? And they said, my husband is a house husband. Because the system was made for this very imbalanced type of home situation. And it just hasn't changed. Yeah, these types of roles."
+  },
+  {
+   "t": 619,
+   "speaker": "Angelica Lim",
+   "text": "And another example is sabbatical. I'm going on sabbatical this year. And I love the idea of it, but what person can uproot their family, their partner, and go away for a year, except a man with his housewife that can just leave up and go and take care of their child in another country? I love the idea again, but I just don't see it as something that was built for..."
+  },
+  {
+   "t": 640,
+   "speaker": "Angelica Lim",
+   "text": "both genders or people with families that are equally working, right? Which is more of what we see today. So I think that the academic system right now structurally needs reform. I mean, in a short, it's hard because it's worldwide and pervasive, this kind of system. So I don't know, it needs some initiatives, I guess."
+  },
+  {
+   "t": 658,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah."
+  },
+  {
+   "t": 660,
+   "speaker": "Jekaterina Novikova",
+   "text": "some really big changes need to happen. Yes."
+  },
+  {
+   "t": 677,
+   "speaker": "Angelica Lim",
+   "text": "Yeah. Yes."
+  },
+  {
+   "t": 680,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, totally agree with need a revolution here. So that's fantastic. So now that you're a professor yourself, what do you do to increase visibility for minorities and encourage more women to pursue their academic and research goals? And how important do you believe diversity is for AI research in particular?"
+  },
+  {
+   "t": 683,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 684,
+   "speaker": "Angelica Lim",
+   "text": "So early in the 2000s, I helped found among with a group of other women, our women in computing science club at my university. And I returned back to my home university actually now where I'm a professor. And they are my, it's absolutely wonderful to see how they're still flourishing after 20 years. They're still growing, they have such a presence. And so I think now back in this role, in my new role, I'm just supporting them. I'm supporting these groups that are on campus. I'm teaching some of the early courses where they can see a woman in front of 200 students and be inspired to continue till their fourth year. And I try to do this as much as I can. But now my focus has shifted to trying to support graduate students because we need more women, I think."
+  },
+  {
+   "t": 738,
+   "speaker": "Angelica Lim",
+   "text": "as you, women in AI that are visible to be role models. I think being a role model is the best thing you could do to support women in our fields of AI. So many people can look at someone like Fei-Fei Li and be like, she's so cool. I want to be like her. And that can fuel you for the slog of a PhD or all the hard paths that we have to take."
+  },
+  {
+   "t": 767,
+   "speaker": "Angelica Lim",
+   "text": "So I think raising visibility, when I was being asked to do some talks a few years ago, I decided that I didn't have time to do all of them. So I really tried to reach out to other women who were maybe nearer to the site. They're like, come fly over and give a talk. I love the idea. I think it's important. I don't have time. But hey, there's this other really great woman studying in another research area. You should have her come in. So building those networks, recommending each other."
+  },
+  {
+   "t": 803,
+   "speaker": "Angelica Lim",
+   "text": "to be role models around the world. I think what your guys are doing is great and we need more of it."
+  },
+  {
+   "t": 812,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Thank you. I really like that point about role models. Actually, I was reading the book by Fei-Fei Li, The Worlds I See, and it was fantastic. I also immigrated to Canada, was bilingual, with a family. So I've been through a lot of the troubles that are described in that story."
+  },
+  {
+   "t": 829,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "And the way she deals with them and overcomes all those issues, you're like, if that's possible, then I can also do that. And that's so motivating. I'm also, I'm kind of living that book these days and yeah, that's super fantastic to have some role models in the field. Yeah, same as you."
+  },
+  {
+   "t": 848,
+   "speaker": "Angelica Lim",
+   "text": "that's great. I need to, I think I have it on my book hold list. I need to get, read my copy. Great."
+  },
+  {
+   "t": 854,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, and I'm also very glad that you didn't give up. Seeing that broken system of academia, you didn't give up, but you started doing something that helped other women from bottom up. Let's change it from bottom up. Let's not make it a revolution. Yeah."
+  },
+  {
+   "t": 874,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm. Mm-hmm. Yeah, Some baby steps. Mm-hmm."
+  },
+  {
+   "t": 877,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, Angelica, let's shift our focus of this conversation to your research. It's a really exciting field of research. Your work is focused on robots with the social intelligence and empathy. That's not something that people maybe stereotypically think about when they think about robots, right? So"
+  },
+  {
+   "t": 896,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 900,
+   "speaker": "Angelica Lim",
+   "text": "Yes."
+  },
+  {
+   "t": 903,
+   "speaker": "Jekaterina Novikova",
+   "text": "Could you tell us a little bit about how you see the robots and what kind of robots you worked with in your research? What does it mean for the robots to be social? Does it mean that they need to be humanoid, with faces necessarily? What makes them social?"
+  },
+  {
+   "t": 919,
+   "speaker": "Angelica Lim",
+   "text": "Mmm."
+  },
+  {
+   "t": 920,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, so I'll answer your question that you just said here. Does it mean they have to be humanoid? No, I don't think so. For me, my definition of so I can I can explain a little bit by telling you about the very first project I did in Japan. So I went to Japan, and I started in a lab at Kyoto University. And it was with an HRP 2 robot. It's a robot that looks like a mini Gundam. So like, you know, it's it looks like very mechanical, has no face or anything. And the project was to make a robot that could play in a musical group with me and another player. So it was a trio. It's highly interactive because not only are you synchronizing with one person, you're synchronizing with two people. And we made it a multimodal system because we wanted the robot to synchronize with the drummer, but also recognize my cues as a human. And the philosophy, my philosophy today still stems from that project because What I wanted was, I didn't want to, so what it did is the robot would try and start and stop at the same time based on my cues, like non-verbal cues like this. And I could have made a button on the floor to press the robot, right, to step on it to make the robot start or stop."
+  },
+  {
+   "t": 995,
+   "speaker": "Angelica Lim",
+   "text": "But I didn't want that. I wanted the robot to understand the cues that I was already giving to this other human player. It's like this, right? That means the robot is socially intelligent and understands the social cues I'm already making. And that's what the philosophy behind my lab is - I want it to adapt to me and not the other way around. I am human. I am an expressive. I want it to understand that human expressivity. I don't want to become a robot where I'm just pressing buttons all day or tapping or you know. And so, that's the general philosophy. I also called it robots with social intelligence and empathy, not emotional intelligence. because empathy is different than just being emotionally intelligent, right? You can imagine a dystopia where you have these emotionally intelligent agents that are like manipulating you with your emotions. And that's really not where I want to go. I want to think about how robots and any kind of you know, AI agent can be compassionate, which is this type of empathy that really centers the other person and their needs and, you know, thinks about what they need. So it's really empathy and not just being emotionally intelligent for other reasons. Yeah."
+  },
+  {
+   "t": 1064,
+   "speaker": "Jekaterina Novikova",
+   "text": "like that distinction, it's empathy that helps us as people to communicate easier with the robots. It's not something else that is risky and leads to the robots controlling us."
+  },
+  {
+   "t": 1068,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 1074,
+   "speaker": "Angelica Lim",
+   "text": "Yes."
+  },
+  {
+   "t": 1077,
+   "speaker": "Angelica Lim",
+   "text": "exactly."
+  },
+  {
+   "t": 1081,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting."
+  },
+  {
+   "t": 1082,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's fantastic. So in your recent paper at HRI 2024, which is named Systematic Review of Social Robots for Health and Wellbeing: A Personal Healthcare Journey Lens, you present a systematic review of domains in which social robots have been evaluated, specifically in health and well-being context. So why do you think robots should be introduced into the health and wellbeing domain in particular?"
+  },
+  {
+   "t": 1104,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 1105,
+   "speaker": "Angelica Lim",
+   "text": "Sure. And first I want to shout out to the main author Moojan Ghafurian and she's now a new assistant professor at Waterloo and her supervisor Kerstin Dautenhahn. So she's a pioneer in the field of social HRI. So in this paper, we studied this potential use of robotics in, as you say, healthcare and wellbeing. One possible reason that we might want to consider technology is because of the lack of you know, social support and health care. We are lacking health care workers. We do need more support for them to take care of us as humans. So whatever we can do in that regard is the main goal. It doesn't necessarily mean that we're going to just be, you know, sticking robots in to replace humans. It's really that there's not enough humans. And the places where I think could be a way to think about it is right now in long-term care homes. People gather around a TV. This is another, you know, source of entertainment. And my background was in making entertainment robots. So the Pepper robot that I worked on in France, it just told jokes. It, you know, played music, danced, did some, you know, cognitive games in places like long-term care homes. And so it's this idea that you use it as a supplement and not a replacement, or use it to help."
+  },
+  {
+   "t": 1178,
+   "speaker": "Angelica Lim",
+   "text": "So my part of that paper was doing a gray literature search on robots that are actually already in hospitals, because of my industry background. So for example, the Moxi robot, very widespread. I mean, as far as the last things that I heard about it, it's a robot that helps nurses with a task which is trying to send a particular item, whether it's medication or whatever they need from one part of the hospital to another."
+  },
+  {
+   "t": 1202,
+   "speaker": "Angelica Lim",
+   "text": "This one, has a face, so people can perceive it as part of the team. It's like, oh, could you do a fetch task or sending task that they give it to the robot and it goes off to the other side of the hospital where this item is needed. So this is something where they're saving miles of walking for each of these nurses so that they can do other more important things. So the personal health care journey is the idea that as humans, We interact with many parts of the healthcare system at different times of our life. And right now it is very, you know, depending on where you are, it's not as integrated as we might like it to be. But maybe through technology, we can have our information, you know, if the doctor sees us one day, how does it know, you know, how I've been doing for the last, you know, month or two months? It's my personal report, right? But what if you could connect these technologies in a better way?"
+  },
+  {
+   "t": 1259,
+   "speaker": "Angelica Lim",
+   "text": "So yeah, I think there's lots to say. I guess one other takeaway from that paper was it's very difficult to do applied bottom-up robotics, maybe as a researcher, because one of the things that a nurse might need to test out a system is a robust robot. And roboticists, as we're developing our prototypes, we make robots that maybe work for the demonstration, or maybe work for like a little while. So it's at odds with like this co-development idea. So many of the papers in that article were nurse staff, they took off the shelf robot, one that has already been in industry, like the PARO robot, and they tried, you know, they did a systematic, like a trial, right? A proper trial. So it's either that type of thing or researchers that do a very short like intervention. So you can't really see outcomes."
+  },
+  {
+   "t": 1306,
+   "speaker": "Angelica Lim",
+   "text": "based on that short intervention. Yeah, so it's still a difficult area. It's not my area of expertise, but it was very interesting to think about how robots could be used to help people."
+  },
+  {
+   "t": 1317,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay."
+  },
+  {
+   "t": 1318,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, I wonder, one of our previous episodes at the podcast was about the machine learning applications in the scenarios of like how it works in the hospitals and clinics and senior care homes, those type of places. And I wonder, when it comes to robots in those same places,"
+  },
+  {
+   "t": 1336,
+   "speaker": "Angelica Lim",
+   "text": "Yes."
+  },
+  {
+   "t": 1343,
+   "speaker": "Angelica Lim",
+   "text": "Yeah."
+  },
+  {
+   "t": 1351,
+   "speaker": "Jekaterina Novikova",
+   "text": "It's probably also quite a unique place for the robots, right? And you mentioned already how it is unique in terms of like the need for people or like the need for helpers that could be either people or robots and they are reducing the time to do certain things faster. But can you give maybe an example of how these places are unique as the area of robot applications in terms of like maybe risks or the limitations of this application."
+  },
+  {
+   "t": 1389,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, so one example is just data privacy, right? In BC, our data, like in many places in Canada, are well protected. So I think, especially for vulnerable populations (seniors), being able to collect data, you know, for these applications might be a challenge. Whether if you're talking about things like, let's say, anomaly detection, right? So if you're checking in with your personal robot every day, you maybe want to be able to detect some declines. An example might be if you're interacting with a social robot every day, it notices that you're getting more sluggish. Maybe that's because you're experiencing some condition. That could be a cool application in the home. And if you buy into that. But again, do we send our robots data to the cloud to do that processing? Are we OK with that?"
+  },
+  {
+   "t": 1440,
+   "speaker": "Angelica Lim",
+   "text": "Again, vulnerable person. So there's a lot of engineering type of challenges I think are required to properly consider the ethics of having a robot that could potentially see in your home, that could potentially be listening all the time. Right. And so I'm a big proponent, I don't know if we'll get there, of edge computing and having robots that are able to perform, have their models local to, to Yeah, there are devices."
+  },
+  {
+   "t": 1468,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, privacy is a big thing."
+  },
+  {
+   "t": 1472,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Of course, definitely. Yeah, thanks for sharing your insights. That's fantastic. So in another paper of yours from IROS 2022, which is named Towards Inclusive HRI: Using Sim2Real to Address Underrepresentation in Emotion Expression Recognition. You aim to build a system that can perceive humans in a more transparent and inclusive manner."
+  },
+  {
+   "t": 1495,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Can you tell us more about the motivation for this work and what specific problems you tried to solve?"
+  },
+  {
+   "t": 1504,
+   "speaker": "Angelica Lim",
+   "text": "Yeah."
+  },
+  {
+   "t": 1505,
+   "speaker": "Angelica Lim",
+   "text": "So this aspect of my research on emotions, and it's not just about the empathy part. think this idea being able to recognize human social signals allows a robot to be able to respond empathetically and appropriately, as I said earlier. So in order to do that, we need to be able to detect what I call emotional expressions. And this is different than what we call emotion recognition, which is a task that you'll see at CVPR or many machine learning conferences."
+  },
+  {
+   "t": 1530,
+   "speaker": "Angelica Lim",
+   "text": "I really have a problem with just emotion recognition because this assumes that you can reliably detect how a person is feeling through their visuals. And it seems innocuous from the surface, but if you think about it, you're like, how can a system really know how I am feeling? Can it really recognize my feeling or emotion?"
+  },
+  {
+   "t": 1548,
+   "speaker": "Angelica Lim",
+   "text": "So these days I ask people to consider the term emotion or expression recognition because what I want it to recognize is that I'm frowning because that's objective, right? That is an objective thing. Or we can say we are trying to recognize what multiple like third party observers would recognize, whatever that is. So it's an apparent emotion recognition. I know it's a subtle thing or expression recognition. And this has come up with the EU AI Act actually, and they have banned emotion recognition systems for people who are vulnerable, well, I mean, including people in education and also in the workplace because they don't want people to be thinking of it as this being able to detect real emotions rather than social signals. That said, this particular paper, another reason why it's banned is because it doesn't work. It doesn't work well. So in this particular paper, what I wanted to do was remove some of these barriers from it working well, which is to be able to not fail flagrantly for people of color. So in this data set, we tried to take some emotional expressive movements and do data augmentation with people with different facial morphologies and skin colors. And at the time, the way that we did this looked not very high fidelity, although we're doing more high fidelity stuff today."
+  },
+  {
+   "t": 1619,
+   "speaker": "Angelica Lim",
+   "text": "And we augmented this data set. And I think the main insight there was by fine tuning the early feature layers of this neural network that was trained to do their emotional recognition system. We were able to achieve, I think it was like a 22 % improvement in accuracy for these underrepresented groups. But only when we unfroze the early feature weights, which seems like silly these days. Like you're going to go all the way down to training from scratch."
+  },
+  {
+   "t": 1645,
+   "speaker": "Jekaterina Novikova",
+   "text": "."
+  },
+  {
+   "t": 1659,
+   "speaker": "Angelica Lim",
+   "text": "how sure are we of the early feature layers and what they're extracting? So I guess that's, it was a relatively old paper in today's like fast moving AI, like academic sphere, but it does still raise some flags about how trustworthy, how inclusive are these systems if we don't know, you know, at the base, whether they're."
+  },
+  {
+   "t": 1685,
+   "speaker": "Angelica Lim",
+   "text": "inclusive or not, or trained on inclusive data."
+  },
+  {
+   "t": 1689,
+   "speaker": "Jekaterina Novikova",
+   "text": "What I like here is I understand that the work that was done before many of the new advancements happened and most probably would have done things differently nowadays."
+  },
+  {
+   "t": 1700,
+   "speaker": "Angelica Lim",
+   "text": "happen and most probably we would have done things differently"
+  },
+  {
+   "t": 1708,
+   "speaker": "Jekaterina Novikova",
+   "text": "But there are still those interesting findings and the"
+  },
+  {
+   "t": 1709,
+   "speaker": "Angelica Lim",
+   "text": "nowadays, right? But there still those interesting findings and the..."
+  },
+  {
+   "t": 1713,
+   "speaker": "Jekaterina Novikova",
+   "text": "the just the fact that you were trying to work with those less standard underrepresented emotional expressions or emotions as well. That makes it interesting to me. So I wonder what are your thoughts about the focus on less represented emotions in general nowadays?"
+  },
+  {
+   "t": 1739,
+   "speaker": "Angelica Lim",
+   "text": "yeah, yeah. that's a topic I love to talk about. So stop me if I say too much. Yeah, I think one of the other reasons that with the AI Act, you know, legislation realized that the technology still needs to be better developed is that the quote is it lacks enough granularity. Okay, it's not granular enough. And that really means we need to imagine that people are emoting more than just the basic happy, sad, anger, fear, disgust, surprise, which is still what you see at CVPR, right? You still see just these basic emotions. Some papers are going to 24 different expressions, emotional expressions, which I like, you know, and my lab is trying to expand it more out to, you know, when you look at the emoji Unicode list, there's a hundred different, you know, different expressions that people are able to discern and distinguish. So think about the range of expressions that humans are able to use and perceive and we need to be thinking more broadly."
+  },
+  {
+   "t": 1792,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. yeah, so do you think that what you're explaining right now has some relations with the, I guess it has some relations with the more recent work about contextual emotion recognition, that type of thing. So maybe you can tell us a little bit about that as well. For example,"
+  },
+  {
+   "t": 1794,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Fantastic."
+  },
+  {
+   "t": 1815,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, yes."
+  },
+  {
+   "t": 1817,
+   "speaker": "Jekaterina Novikova",
+   "text": "For example, that IROS paper of the last year about Contextual Emotion Recognition using Large Vision Language Models, that type of thing."
+  },
+  {
+   "t": 1825,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, absolutely. So in that paper, we said, okay, well, now we've moved on from these little models. Let's see how we can. We were just driven to be like, how can we make this work? And so there was a lovely data set put together called the EMOTIC or emotions in context data set. And it has 26 different labels, right? Not four or eight or 10 or 12. Twenty six. It's a lot. And they came up with that set of labels by scouring all sorts of papers and finding over 200 different words and then clustering them to find out a smaller set. So they started large and they created the data set. You know, even the main authors acknowledged that it's not perfect, but what it is it's these images of a person in a red box. And the question is, what is the person in the red box?"
+  },
+  {
+   "t": 1875,
+   "speaker": "Angelica Lim",
+   "text": "What do people think that they're feeling? So again, what's their projected emotion of this person? And so we did a bunch of experiments, and we tried, you know, okay in the end the takeaway was - we fine-tuned it on the training set and it worked really great, you know. The reason was I think because these images, you know, they're both having things like people with their eyes, you know, they show facial expressions, but also their context. And large language models seem to be able to maybe - this is my hypothesis as to why it works better - maybe they're able to infer something called secondary emotions, where you can kind of guess how someone's thinking based on the context. Like, okay, Adam lost his house, maybe an NLP is how you might analyze sentiment. Right now, maybe our language models are able to infer this type of indirect causal relationship in images that they couldn't before when they were just training on pixels. So yeah, think we got like, for me, it was astounding because I had never thought that this would work. As I said, it's banned by the EU because they don't think it works. And I was like, it looks like it's working now. The precision was very, very high for me based on my years of trying to do this."
+  },
+  {
+   "t": 1951,
+   "speaker": "Angelica Lim",
+   "text": "So that was a really exciting result for me to the point where I think we might even be able to use it on a robot and not get garbage results. That's something."
+  },
+  {
+   "t": 1963,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So yeah, actually, firstly, I was curious, maybe you covered it, but what modalities you explored to better understand the context of emotion?"
+  },
+  {
+   "t": 1973,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, in this particular one, it was just a visual modality. And so we tried first to do captioning, where we tried to fine tune a model with lots of different descriptors, which we took from an emotion thesaurus. It was really cool. There's this thesaurus that explains like, okay, if you're a writer, don't say a person's sad, say that their shoulders drooped and they cast their eyes down, right?"
+  },
+  {
+   "t": 1998,
+   "speaker": "Angelica Lim",
+   "text": "And so there's a whole bunch of these descriptors that we tried to fine tune the model to explain what it was seeing before it came up with its final decision, which seemed to improve the results as well. But in general, my lab is very multimodal. I have a person working on facial expressions, so pixels, a person doing body gestures, so motion capture data, speech, so working with expressive audio clips and synthesis of it, trajectories, so like trying to a robot or a human can express how they feel by the way that they move in space. And then yeah, the context if it's really loud, you know, if I'm YELLING LIKE THIS, it's because it's really loud, not because I'm angry, right? Like this type of contextual information is super important to get the... to improve an agent's understanding of a human."
+  },
+  {
+   "t": 2050,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, I now understand much better how you see that distinction between the actual emotion and the emotional expression. Or the way to just express somehow using language, also using language, how you feel without saying how you feel."
+  },
+  {
+   "t": 2070,
+   "speaker": "Angelica Lim",
+   "text": "Yes, yes, exactly. Yes."
+  },
+  {
+   "t": 2074,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's interesting. And also approaching the problem from different modalities. We are living in an actual multimodal world and these days everyone talk about language because of all these LLMs. But I think each of them are channels of different signals, biomarkers and everything to understand this. And that's fantastic. So speaking about vision, for example, in particular, as one very important modality here."
+  },
+  {
+   "t": 2099,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So, vision-language models can also have their own limitations. So, in particular, can you explain how these limitations affect the emotion recognition outcomes?"
+  },
+  {
+   "t": 2109,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm. I mean, as a roboticist, I think we also have a lot of limitations in terms of the processing power on a robot. As I said, I would prefer not to send our data off to a cloud. So we're seeing how much GPU we can put into a robot and what processing we can do on board. So I guess part of that is, what can small models do? And yeah, I think, other limitations, I have to be honest, we're only really exploring the surface of a vision language models with that particular one. And I think it's still quite open, especially because we're doing things like motion generation now with large language models. It's like trying to be more multimodal, right? So I guess one limitation that I'll try to figure out as time goes on is do we..."
+  },
+  {
+   "t": 2156,
+   "speaker": "Angelica Lim",
+   "text": "Because that is based off of internet training data.. Let's say, for example, I want a robot to be able to integrate its motions with its facial expressions, all this, like in the real world, how do we bridge that gap? Can a baby just learn, just thinking about humans, can they learn from just text and image pairs and then maybe audio?"
+  },
+  {
+   "t": 2176,
+   "speaker": "Angelica Lim",
+   "text": "Or do they need proprioception? Do they need to have data that's actually learned in the real world? I don't know. Maybe it's a very different paradigm where we do pre-training over there in our big model, and then we do RL or something to fine tune in the real world. And there are big robotics data sets that are mostly pick-and-place tasks where they have a robot foundation model that is, you know, it is trying to integrate these modalities. But to do social learning is super hard because what kind of human is going to spend all this time interacting with a model to teach it about sociality? It's, I mean, we can do it with text. Of course we have the DPO and our RLHF or another RL, like all these different things to do with text. But if you need to interact with the actual robot to teach it, I don't know how we can do that at scale, you know? So I still think there's a lot of interesting questions in how to adapt these big foundation models for robotics, or maybe we need another approach."
+  },
+  {
+   "t": 2240,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's super interesting and it also leads me to thinking about those models, if not models, those approaches to solve the problem in order to make robots better interacting in real world scenarios."
+  },
+  {
+   "t": 2248,
+   "speaker": "Jekaterina Novikova",
+   "text": "They need to be robust, right? Meaning that there should be a lot of training data and they need to generalize well, sufficiently well. On the one hand. On the other hand, it's about personal interaction. So it's a little bit about the personalization as well, about the specific person,"
+  },
+  {
+   "t": 2261,
+   "speaker": "Angelica Lim",
+   "text": "Yeah."
+  },
+  {
+   "t": 2266,
+   "speaker": "Angelica Lim",
+   "text": "Okay."
+  },
+  {
+   "t": 2272,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 2284,
+   "speaker": "Jekaterina Novikova",
+   "text": "of a specific age, specific gender, about specific environment they're interacting in with the robot right now in this moment. So I wonder, what is your opinion about the level of robustness or generalizability of these models? You mentioned that the performance of those models is..."
+  },
+  {
+   "t": 2293,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm. Mm-hmm. yeah."
+  },
+  {
+   "t": 2308,
+   "speaker": "Angelica Lim",
+   "text": "Yeah."
+  },
+  {
+   "t": 2311,
+   "speaker": "Jekaterina Novikova",
+   "text": "surprising, right?"
+  },
+  {
+   "t": 2313,
+   "speaker": "Angelica Lim",
+   "text": "So I teach an Affective Computing class and this past term a whole bunch of students just did a ton of projects. And one of them was trying to understand.. And I actually saw that there was already an NLP paper that came out about this last year, but a little bit different."
+  },
+  {
+   "t": 2329,
+   "speaker": "Angelica Lim",
+   "text": "Was trying to understand, understanding gestures, how a vision language model, how can I understand gestures? What is it biased towards? Like if it sees this, like what's the one that it defaults to? What's the understanding that it defaults to? So I do wonder about that. And they collected, it was really cool, they actually did a bottom-up data collection of like YouTube and TikTok clips of people saying, okay, in my culture, I'm going to teach you some of the gestures that we do that are a little bit different. And especially looking at those particular clips, which are different. They found a lot of disparities in being able for the role, for the model to accurately identify the meaning of the gesture. So yeah, I have to say that I'm still exploring, not an NLP person to start out with. I wish I had more backgrounds and maybe I need to collaborate more with NLP people. But the general things, one other thing I think is missing is timing. So I don't really know how we will go about this in the future, but one of the really important aspects of interaction is synchrony. It's timing. It's one of the things that is lacking for people that have issues with social interaction, maybe due to various like social disorders or.. But how do we represent timing? How are we gonna make models where they actually care about timing? And we are gonna be releasing a salsa dancing dataset where timing is of the, you know, very important aspect. And I think we'll see, that's something that I think will be interesting to explore is how do we take something that was built off of language which I'm sure we can represent it somehow in a token sequence, but how will that work in real life, real time interactions? I don't know."
+  },
+  {
+   "t": 2431,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, right, yeah, and I like how you mentioned those different cultural gestures, for example, expressions of emotions. And here again, we come to the point that you emphasize in the very beginning, there is a difference between emotion itself and emotional expression, right? So even if it's the same emotion, it can be expressed differently via gestures, via facial expressions, even by different cultures or just by different people. Yeah, that's super interesting. And I hope we'll see more collaborations, research collaborations in the future between NLP people and roboticists, social robotics people. Would love that."
+  },
+  {
+   "t": 2458,
+   "speaker": "Angelica Lim",
+   "text": "Yes."
+  },
+  {
+   "t": 2460,
+   "speaker": "Angelica Lim",
+   "text": "That's super interesting."
+  },
+  {
+   "t": 2466,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm. Mm-hmm. Mm-hmm."
+  },
+  {
+   "t": 2480,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, totally agree. I wish we had unlimited time and we could go through all the papers. Each of them come with a pool of interesting outcomes including this expression thing. I haven't thought about emotion recognition with that perspective. That was fantastic. So I wanted to talk about another paper of yours, which was again relevant and super interesting here, which is called EmoStyle: One-Shot Facial Expression Editing Using Continuous Emotion Parameters. This is from WACV 2024. So in this paper, you address the ability to synthesize and also realistically edit facial expressions."
+  },
+  {
+   "t": 2513,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So can you tell us a bit about your methodology and how it is different from the existing work?"
+  },
+  {
+   "t": 2520,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm."
+  },
+  {
+   "t": 2521,
+   "speaker": "Angelica Lim",
+   "text": "Mm-hmm. So this particular one comes at the problem of facial expression synthesis, which has, to be honest, moved so quickly within the last year that we're miles ahead already today. But one thing that I was trying to bring is, what do people like psychologists need when they want to create stimuli for their experiments? And they do."
+  },
+  {
+   "t": 2542,
+   "speaker": "Angelica Lim",
+   "text": "They don't need a text prompt, you know, this is usual thing is we enter our text prompt and we maybe generate some expression now. I guess that's maybe the way they have very specific idea of.. We use something called the circumplex model, which has two axes of valence and arousal. And they will try to, they need something that can generate at this continuous time scale on these two axes. So I guess the overarching takeaway is that the methodology is trying to use a representation of a facial expression that is continuous and represents what people in the field of psychology would like from these types of generative models. Maybe not the lay persons per se. So I think that in terms of the actual way it was implemented, you know, it's just you're.. it's using StyleGAN2, which is like an older model, but it was trying to use yeah, the typical way where you'd have, we had this other model that was able to recognize facial expressions in terms of their valence and arousal. And we just use that as our, for our training loss. But yeah, I think that one, so it goes back to that original idea. The real reason why I work on human facial expressions or human generation is because I think about that long-term problem of we can't have humans be teaching our robots everything. We need a simulator of humans that is, it's going to be hard because it's going to be like making virtual humans, like a real AGI type of deal that can interact just like humans. But if I want to deploy a robot that's going to interact with humans, I need it to test itself and prepare. We have to have benchmarks that have human interactions, right?"
+  },
+  {
+   "t": 2652,
+   "speaker": "Angelica Lim",
+   "text": "So the reason why I have facial expression generation, body gesture generation, voice synthesis is because one day I want to make a virtual human that will interact like a human with all of our different expressions and so forth so that we can develop really interactive agents. So I'm not developing robot gestures. That's why I'm developing human-like gestures."
+  },
+  {
+   "t": 2675,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's super interesting. And what do you think are the, in your opinion, what are the most difficult problems on this way?"
+  },
+  {
+   "t": 2683,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, I mean, there's so many, so many things that are still in the way. I think, well, one of the things that we were trying to look at last year. Okay, I'll introduce you at top an idea that I want to get pushed forward, which is this idea of, so we had the Turing test, we know that was kind of like this idea of being able to interact verbally or with text with AI agents. But I guess The next step is embodiment."
+  },
+  {
+   "t": 2710,
+   "speaker": "Angelica Lim",
+   "text": "And so what is an AI Turing test when it's embodied? So for us, one of our other IROS papers last year was essentially nonverbal Turing test. it was the idea that when we have agents, virtual agents or robots, humans go up to them and they test them. They test them, they go like this. They try to test their sensing abilities. They try to do this to test their social abilities. They try to..."
+  },
+  {
+   "t": 2733,
+   "speaker": "Angelica Lim",
+   "text": "make it copy them to test their motor abilities. And they test all sorts of social signal understanding. So I guess one thing that's a challenge to be able to make these agents really pass, I guess, a nonverbal Turing test is to do our large, let's say, our big foundation models. Do they know all these sorts of things that people would do? But also, if they're not trained on an embodied place, let's say, For example, joint attention. This is a human, a thing that humans do. Parents, babies, we look at something and we jointly attend to something in space. So what is the model, that is, what is a big foundation model going to tell me about joint attention? It's actually a really embodied problem where when there's a motion, people look in that direction or they kind of try to attend to the same spot in space. So what is a big foundation model going to tell me about that? I don't know. I think we still have some layers of very low level control that are going to just emerge from the way that we used to do this classically. And so how do we build these hybrid systems? I think that a big challenge is, yeah, how do we combine control, classical control with these very big cognitive models?"
+  },
+  {
+   "t": 2804,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. Yeah, that sounds as a big problem. I hope. I am. It's."
+  },
+  {
+   "t": 2809,
+   "speaker": "Angelica Lim",
+   "text": "It's a big problem. But I'm in academia, so I love that I can attack these big problems because I'm back in the university."
+  },
+  {
+   "t": 2817,
+   "speaker": "Jekaterina Novikova",
+   "text": "It's all about big problems and I'm looking forward to seeing your progress in tackling that."
+  },
+  {
+   "t": 2824,
+   "speaker": "Angelica Lim",
+   "text": "Thank you. It might take a while, but I have time."
+  },
+  {
+   "t": 2828,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, this has been an absolutely fascinating conversation. Thank you so much for joining us. But before we wrap up, is there anything you'd like to share with our audience, perhaps about open job positions, upcoming events you're organizing or anything else?"
+  },
+  {
+   "t": 2843,
+   "speaker": "Angelica Lim",
+   "text": "I am recruiting a postdoc. It's a position that we are trying to orient towards women. So that is a position that I'm looking for in the lab for the next one or two years. So if you're interested, just reach out to me and we can talk as the topic is flexible."
+  },
+  {
+   "t": 2865,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. And how can the interested people reach out to you?"
+  },
+  {
+   "t": 2869,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, just through my email, so it's angelica at sfu.ca."
+  },
+  {
+   "t": 2874,
+   "speaker": "Jekaterina Novikova",
+   "text": "We will share it in the description of the episode."
+  },
+  {
+   "t": 2877,
+   "speaker": "Angelica Lim",
+   "text": "Great, thanks."
+  },
+  {
+   "t": 2879,
+   "speaker": "Jekaterina Novikova",
+   "text": "Great, thanks for that. And thanks so much for joining us today. It was absolutely great conversation."
+  },
+  {
+   "t": 2887,
+   "speaker": "Angelica Lim",
+   "text": "Yeah, it was a pleasure. I don't often get a chance to speak with other women in AI. And it's such a pleasure that I can talk about these things and like, you get it. You get what I'm talking about on all aspects, whether it's from, you know, being a woman in AI, to the actual AI aspects in machine learning models. Like it is so cool. And I just loved it. So thanks for putting this together."
+  },
+  {
+   "t": 2909,
+   "speaker": "Jekaterina Novikova",
+   "text": "Absolutely."
+  },
+  {
+   "t": 2910,
+   "speaker": "Jekaterina Novikova",
+   "text": "Even my cat joined. Yeah, thank you. Thanks once again, Angelica and Malikeh for being with us today. And to our listeners, thanks for listening. We are going to..."
+  },
+  {
+   "t": 2914,
+   "speaker": "Angelica Lim",
+   "text": "Super cute."
+  },
+  {
+   "t": 2932,
+   "speaker": "Jekaterina Novikova",
+   "text": "have more exciting episodes with the women in the artificial intelligence in the future as well. Follow us, subscribe and see you next time. Bye!"
+  }
+ ]
+}

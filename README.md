@@ -53,11 +53,25 @@ Every full episode has its own page at `/episodes/<slug>/` with the video, guest
 
 **Adding a transcript**
 
-1. In YouTube Studio, open the episode → **Subtitles** → your uploaded English track (not "automatic") → ⋮ → **Download** → `.srt`.
-2. Name the file `wiair-epNN-anything.srt` (NN = episode number) or keep the video id in the name.
-3. Run `npm run import-transcripts -- path/to/wiair-epNN-....srt` and commit the new `data/transcripts/NN.json`.
+Two kinds of files work:
 
-The import joins caption lines into paragraphs under each chapter heading, removes filler words (uh, um) and applies the spelling corrections in `data/transcript-name-fixes.json`. To show who is speaking, start caption lines with the speaker's name, e.g. `Julie: ...`.
+- **Caption file (`.srt` / `.vtt`)**: in YouTube Studio, open the episode → **Subtitles** → your uploaded English track (not "automatic") → ⋮ → **Download** → `.srt`. Its timings match the published video exactly, but it has no speaker names.
+- **Speaker-labelled transcript (`.txt`)**, with one block per speaker turn:
+
+  ```
+  Julie Kallini (12:34.567)
+  What she said ...
+  ```
+
+  This shows who is speaking. Use it only if it was made from the **final published video**: a transcript of the raw recording has timestamps that drift wherever the video was trimmed, and includes parts that aren't in the video.
+
+Name the file after the episode (`wiair-ep27-....srt`, `Ep27-guest-name.txt`, or anything containing the video id) and run:
+
+```
+npm run import-transcripts -- path/to/file
+```
+
+Then commit the new `data/transcripts/NN.json`. The import joins lines into paragraphs (under each chapter heading for caption files), removes filler words (uh, um) and crosstalk such as "mm-hmm", and applies the corrections in `data/transcript-name-fixes.json` (per episode: wrong spelling → right spelling; `speakers` renames a speaker label, e.g. for a played clip). In a caption file you can also mark speakers by starting lines with the name, e.g. `Julie: ...`.
 
 ## ✍️ Writing episode descriptions
 

@@ -80,7 +80,7 @@ export function Transcript({ segments, chapters, youtubeUrl }: {
                 <span className="text-wiair-light font-mono text-sm mr-3">{chapter.time}</span>{chapter.title}
               </h3>
               <div className="space-y-4">
-                {shown.map((s) => (
+                {shown.map((s, i) => (
                   <div key={s.t} id={`p-${s.t}`} className="grid grid-cols-[64px_1fr] gap-4 scroll-mt-28">
                     <a
                       href={`${youtubeUrl}&t=${s.t}s`}
@@ -92,7 +92,7 @@ export function Transcript({ segments, chapters, youtubeUrl }: {
                       ▶ {stamp(s.t)}
                     </a>
                     <div>
-                      {s.speaker && (
+                      {s.speaker && (q || i === 0 || shown[i - 1].speaker !== s.speaker) && (
                         <p className={`text-sm font-semibold mb-0.5 ${HOSTS.test(s.speaker) ? "text-wiair-light" : "text-pink-300"}`}>
                           {s.speaker}
                         </p>
@@ -118,7 +118,7 @@ export function Transcript({ segments, chapters, youtubeUrl }: {
           </button>
         </div>
       )}
-      <p className="text-xs text-gray-500 mt-6">Transcript based on the episode&apos;s captions. Click a timestamp to play from that moment on YouTube.</p>
+      <p className="text-xs text-gray-500 mt-6">Click a timestamp to play the episode from that moment on YouTube.</p>
     </section>
   );
 }

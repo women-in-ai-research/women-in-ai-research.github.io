@@ -1,0 +1,427 @@
+{
+ "episode": 5,
+ "videoId": "osHrYXwCvpQ",
+ "source": "Speaker-labelled transcript, lightly cleaned (filler words and crosstalk removed)",
+ "segments": [
+  {
+   "t": 10,
+   "speaker": "Jekaterina Novikova",
+   "text": "Hello and welcome to another episode of the Women in AI Research Podcast. I'm your host, Jekaterina and I'm joined by my co-host, Malikeh. We are excited to explore the fascinating intersection of artificial intelligence, healthcare, and the AI ethics with our special guest today. And I'm excited to welcome Dr. Faiza Khan Khattak, the Chief Technology Officer of Monark Health, an innovative startup that is leveraging AI to support individuals overcoming alcohol use disorder. And other than being the entrepreneur and the CTO, Faiza is also the research scientist. And she, as a researcher, Faiza specializes in fairness in language models, diverse NLP applications, and the applied research that ensures that AI technologies are equitable and inclusive. So Faiza, it's such a pleasure to have you with us today. And to start with, could you tell us a little bit about your journey into the world of artificial intelligence?"
+  },
+  {
+   "t": 97,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Thank you so much. Thanks for having me. It's so exciting to be here and be part of this Women in AI Research podcast. It was really exciting. And yes, thanks for the lovely introduction, by the way. Yeah, so I'm excited to share my AI journey, which has been very long, seems like centuries ago when I started. So yeah, I will start from the very beginning. I was..."
+  },
+  {
+   "t": 123,
+   "speaker": "Faiza Khan Khattak",
+   "text": "My initial background is in Mathematics back home, which is Pakistan. I'm from Pakistan. So I was studying Mathematics and I taught Mathematics for a bit. And at that time, I thought that probably I want to dive deeper into the applications of mathematics, especially I wanted to go abroad to US to study and do PhD. So that's why that's how I opted for computer science. I thought that was something that was booming and that was, had more, I could have applications of mathematics and see more applied mathematics work there. So that's how I ended up at Columbia University, where I did my Master's and PhD in computer science. So since my background was in mathematics, I started with Master's in the foundation track, which is theoretical computer science. So I took a lot of theoretical courses."
+  },
+  {
+   "t": 177,
+   "speaker": "Faiza Khan Khattak",
+   "text": "For example, like I took computational complexity, approximation algorithms, which is the advanced algorithms course, numerical algorithm complexity, graph theory, and other courses like quantum computing and the regular AI courses like AI and machine learning and advanced machine learning, all these courses. So I had that background in mathematics and theory, theoretical computer science. So I decided when I was choosing my advisor for PhD, ended up, I got interested in machine learning because it was something that aligned with my expertise. It involved a lot of mathematics, a lot of algorithms. So that's how I ended up in PhD in machine learning. And then I started, it really changed my perspective of things. And then I was fortunate enough as a PhD student, I did my internship at LinkedIn."
+  },
+  {
+   "t": 228,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So at that time, that was the time when I realized maybe one day I want to have my own company. So I was data scientist and intern and I was really enjoying that time. After completing my PhD, it's a long journey by the way, after completing my PhD, I came to Toronto and I got a postdoc position at University Health Network, St. Michael's Hospital. And along with that, I was affiliated to UofT (University of Toronto) and Vector Institute at the time. I did a lot of research around NLP applied to healthcare data. So that was pre-BERT era, BERT had just was coming in at that time. So I had a lot of exposure to the research in healthcare. And at the same time, I happened to teach, I got the sessional lecturer position for a semester at University of Toronto, so that's I was also teaching."
+  },
+  {
+   "t": 286,
+   "speaker": "Faiza Khan Khattak",
+   "text": "One of my research projects and my postdoc was formed into a startup. So I got involved into that startup. So I was one of the founding members. So I was having the teaching experience, the research experience in healthcare and NLP, and at the same time got involved in that startup. So I had all kinds of very broad experience. So was really lucky to be in that time, in that place at that time. So that was really a nice experience. But afterwards, after two years, I thought that maybe I want to change the course a little bit. So I joined the industry. I joined Manulife as a data scientist. So that was a very different experience, a lot of learning there, how those companies work. And again, I was in a part of the NLP team. So for two years, I worked for Manulife. I enjoyed the work very much. But then I got an opportunity at Vector Institute as an applied machine learning scientist for NLP."
+  },
+  {
+   "t": 352,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So this experience was a of a combination of previous many experiences because I was working with the faculty members doing applied research transitioning that research and knowledge to the industry either through boot camps, helping out with camps, had applied research projects that published many papers together along with the industry and faculty. So that was a very rich, nice experience and helping with the AI adoption and seeing the cutting edge technology being transformed to actual industry and being deployed. So that was a very, very interesting experience. So more than two and a half years, I've worked for Vector Institute and now here I am, here. I thought that I have all the experience of industry, academia, teaching, research. So I can combine that experience to venture for a startup. And of course, I am also an AI consultant. I'm the CTO and the co-founder of the startup called Monark Health. It is a spin out from the Centre for Addiction and Mental Health (CAMH). So we are working on building an AI therapist for an alcohol use disorder patients. And we already have a lot of interest, although we are still at a very early stage. And we hope to have the pilot study done by the end of this year. But it's a very interesting experience and the amount of interest that we got from the people who are asking about venus, this product coming, is very interesting. So that was a long, long journey."
+  },
+  {
+   "t": 449,
+   "speaker": "Faiza Khan Khattak",
+   "text": "But I'm glad that I was one of the lucky person who could experience all different aspects of possibilities of this AI realm."
+  },
+  {
+   "t": 458,
+   "speaker": "Jekaterina Novikova",
+   "text": "And we're also lucky people here to hear about all that experience."
+  },
+  {
+   "t": 464,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's fantastic. Thank you for sharing your journey with us. It's really inspiring. I'm curious what inspired you to delve into, in particular, the area of fairness and responsible AI, because I saw you did fantastic research in this area in particular. So I'm curious about the roots of this interest."
+  },
+  {
+   "t": 486,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, that's a very interesting question. So how I was transitioned to that. One of the main major reasons was that I was collaborating with academia and industry and I was seeing a lot of transition or AI adoption. In the past decade, the gap between academia and industry has reduced a lot. It used to be a lot like, they used to be different realms when I was a PhD student."
+  },
+  {
+   "t": 514,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yes, there were collaborations, but it was not as it is right now. So the gap reduced and a lot of research which used to take a lot of a long longer time to be transitioned to be become part of the industry. It's happening very quickly. So one of the things was one of the reasons was that the other reason was that AI models more recently have very powerful and accessible to everybody. You know, the common example, ChatGPT, DeepSeek, everybody is using it. Everybody has access to them either directly or if some people are using it indirectly throughout different applications. So these are very powerful models and everybody has access to them and everybody is expecting a thermo-operative behavior from these AI models. So this was another reason to see a tool that is given to people, whether it is fair enough, it is safe enough for people to be able to use. So this was the second reason. And the third reason that's more personal is that coming from a minority group and being a woman, I wanted to see how do these AI models actually deal with such like differences in ethnicities and race and gender and all that. So that was the right time to choose this type of work which actually delves deeper into the language models and tries to find out whether they are fair enough or they are unbiased so that people can use them in their everyday life and rely on them"
+  },
+  {
+   "t": 614,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, makes a lot of sense and we're going to speak also later about those areas of your research where you specifically focus on this. One more thing I would love to hear from your experience is I guess that it is not really possible to do such a to move through such a great journey with all the different roles and the different views. Being both the researcher and doing that research in both academia and in the industry and being the entrepreneur, starting the startup. I think it's, could be quite impossible to do that without any mentors, any role models probably. So I would love to ask you whether there were any mentors or role models who played a crucial role in your personal development, in your development as a researcher."
+  },
+  {
+   "t": 694,
+   "speaker": "Faiza Khan Khattak",
+   "text": "There were so many, and I'm inspired by so many people in AI and in general, in the leadership as well, AI leadership, that it would be unfair to take a few names, but there are so many people who have directly impacted me, either in terms of the form of a mentor, maybe somebody at work, maybe a colleague, or sometimes it's the people that I have never met. I've just seen them doing amazing research. They're listening to their podcasts sometimes or their talks or attending, meeting them or looking at them from far away at a conference. So it has been a great inspiration and that's inspiration kept me going and especially the women who are in this field who are able to survive despite all the.."
+  },
+  {
+   "t": 742,
+   "speaker": "Faiza Khan Khattak",
+   "text": "I mean, it's harder to excel as a woman in any field, but especially AI research, it's very hard. I have always been very impressed with the women who have a background both academia and both academia and industry and have been strong enough to have their own voice and have their own place and not be intimidated by the world which is more male"
+  },
+  {
+   "t": 767,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, you have a very nice chance right now to become such a role model for some women in our audience."
+  },
+  {
+   "t": 775,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "course, yeah, I completely agree with that. You have such an inspiring journey and in particular, as Jekaterina said, there is something very interesting in your profile and that is that you've worked across academia, industry and entrepreneurship all. And I'm curious what lessons have you learned from transitioning between all these different environments and how have they contributed to your current endeavors?"
+  },
+  {
+   "t": 807,
+   "speaker": "Faiza Khan Khattak",
+   "text": "It basically happened because I wanted to have an experience of all these and see like all these have the understanding of all these perspectives. So I tried to get involved in multiple different experiences at the same time. So when I started, things were very different. So it was like going to working for industry and coming back to academia was kind of impossible at least 15 years ago, more than 10 years ago. So it was hard. But what I tried to do is I wanted to know what does the world look like in that particular area."
+  },
+  {
+   "t": 844,
+   "speaker": "Faiza Khan Khattak",
+   "text": "And that if I do it today, would be great if I was like a PhD student. And now I things would have been very different. I would suggest that for somebody who wants to do it today, it would be nice to as a student, especially women, they should try to test the waters and like they could go for a research internship and then apply for industry internship or work for industry for some time. Also, maybe want to teach or start their own startup. So they have, there are a lot of possibilities, a lot of support is available. So they can try different things. The one, it has two benefits. One of the things is that you get the perspective of each realm of possibilities. And also you get to know yourself what interests you the most. You can have roles which might involve multiple things. mean, nowadays somebody can be a researcher and an entrepreneur or a researcher and it work for the industry. there's a possibility of having the combinations. And I think so it's a better time to be at this stage when you're starting because you have so many possibilities. And if you talk about like support."
+  },
+  {
+   "t": 924,
+   "speaker": "Faiza Khan Khattak",
+   "text": "It's always good to reach out to people, either it's LinkedIn or like at a conference and ask for mentorship or ask for guidance. And there are many forums nowadays, groups that are supporting people who are trying to get into this field. Especially I know that because I'm part of many groups which are specifically working for women, women in AI, women in data and all that type of."
+  },
+  {
+   "t": 951,
+   "speaker": "Faiza Khan Khattak",
+   "text": "There is a lot of support if you want to really excel."
+  },
+  {
+   "t": 956,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's great. I think something that you raised about mentorship, that's really one of my dream goals. We discussed it with you, Jekaterina, many times that this podcast is really on its journey to give stage to women to talk. But on the other side, we really want to connect the world of women in the AI world community as a minority in tech, so that they support each other. And when someone is more senior in the field, have experience in industrial research, that would really pave the path for junior researchers or junior women in tech."
+  },
+  {
+   "t": 992,
+   "speaker": "Jekaterina Novikova",
+   "text": "I agree completely. Also one aspect that I wanted to dive deeper into is, Faiza, you have mentioned that it is more difficult for women to thrive in many fields and in the field of research and AI probably in particular. So I wonder, could you share your personal experience with regards to that additional difficulty? Let's put it this way. So for example, can you tell whether you have faced any gender specific obstacles in your career? And if so, how you navigated them in order to establish yourself in the field?"
+  },
+  {
+   "t": 1054,
+   "speaker": "Faiza Khan Khattak",
+   "text": "I often am asked about this, especially a younger generation asks about this a lot because they feel that if they want to excel, it's harder for women to excel in such fields. But personally, I have had mostly positive experience. That's why I think so. I'm here because of the support of many people, regardless of their gender. So people trusted me, people gave me the opportunities. That's why I am who I am today. It would have been very hard for me to be able to do the work that I have done. But at the same time, yes, directly or indirectly, I have at times seen unconscious bias towards women. And I'm not blaming anyone because this unconscious bias, people are not sometimes aware of that when they ask something from a female colleague or a female maybe like the manager and then they want to confirm it from a male colleague of them. So just to see, it's not that they're doing it intentionally, but somehow something subconsciously implies somewhere that maybe they know better."
+  },
+  {
+   "t": 1122,
+   "speaker": "Faiza Khan Khattak",
+   "text": "One of the things is that, and I think so it's reducing with the passage of time as more and women are being involved in this field. And the other type of things that people have told me is that sometimes people are intimidated by a female who has better profile than them and has done better, that better work than them, which is again, very subtle, which I feel bad because men are raised in such a way that they are, they are always told to be the stronger person and it's not their fault. It's not anybody's fault, but it's just like sometimes you have to change the perspective. So this is something that needs to be changed, I think. And it is, it has changed over the past many years. But unfortunately, unfortunately there are subtle biases still existing."
+  },
+  {
+   "t": 1176,
+   "speaker": "Jekaterina Novikova",
+   "text": "I like how you put it into the perspective that it's not to blame people. And I completely agree. It's not about the blame. Especially given that it's not when it comes to the women focus biased, it's not even only it's not only coming from men, right? We have those biases ourselves as well. And it's not about blaming someone, it's about trying to understand and be aware of that, right? So that we can maybe track it better in our own behavior and then only then think about other people. Yeah, or do you have maybe some additional advice on what to do with that?"
+  },
+  {
+   "t": 1231,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So for women, I always tell them don't be intimidated. Because women have this thing called imposter syndrome more often than men. And we underestimate ourselves a lot. We like tend to, women don't, it's a research that women don't apply to most of the jobs unless they're.. because they don't feel qualified enough, even if they have like 90 % of the credentials and men apply even if they have like 70 % for most. I'm not trying to be biased here, but it's the way that women usually think. So don't be intimidated. Don't consider yourself a woman, just consider yourself. And if you're an AI researcher, an AI expert, or a student, whatever you are, just consider yourself that and just apply for all the opportunities and get help. Whenever you don't understand anything, there are many people, plenty of people who are there to help you. And many people reach out to me as well. So I try to do as much as I can."
+  },
+  {
+   "t": 1289,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, I cannot agree more. Thank you. Amazing. Now, let's shift our focus to your research a bit. In one of your papers, which is called MLHOps: Machine Learning for Health Operations, you introduced a pipeline for reliable, efficient, and ethical deployment of ML models on healthcare settings, which is a fantastic paper, and I'm really glad that some people worked on that."
+  },
+  {
+   "t": 1314,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Can you tell us about this work and why it is important, especially in healthcare domain?"
+  },
+  {
+   "t": 1321,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So, AI adoption is becoming more important and because every most of the institutes want to like incorporate AI into their work. And especially in healthcare, AI is really important because of multiple reasons because AI is that's something that can help the clinicians in our like healthcare providers to provide better healthcare and as well at the same time being more cost effective. Now in this paper we have discussed the MLOps pipeline for healthcare which is called MLOps, ML Machine Learning Healthcare Operations, So what we have focused on this, this paper is basically providing the survey of all the best practices and all the important aspects of a health MLOps pipeline in particular for healthcare."
+  },
+  {
+   "t": 1373,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So basically, it's a combination of how to deal with data, how to store that, how to deal with machine learning models, how to deploy those models, and how to keep track of them, keep track of the data shift, or any sort of changes, continuous monitoring and continuous development, that type of work. And it also has, since MLOps is quite broad, it also discusses the responsible AI aspect of that. So it extends the traditional MLops principles to healthcare by integrating not just the technical aspects, but also how they can be, the whole pipeline can be made more explainable, more fair and interpretable. So this is a whole recipe for clinicians or healthcare providers who want to incorporate machine learning in their system. Also, we have provided a checklist at the end of the paper that helps different people to understand what are the important aspects at each stage and what are the measures that they need to take at different"
+  },
+  {
+   "t": 1447,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, it sounds like a very important work. Can you please explain for people who are more ML oriented rather than healthcare oriented, how is the operationalization of ML models in healthcare domains specifically, how is it different from other application domains?"
+  },
+  {
+   "t": 1483,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So first of all, while a lot of things remain the same, still the model has to work better and all that, this is the most high stakes application of AI because of a small mistake, a misdiagnosis or something that wrong recommendation can lead to really serious consequences. So we always want to avoid that. So the main important thing is that like Making an error is not just like recommending a wrong movie. It's like some can cause somebody life or even like or life or something else like it can have serious consequences. So that's the most important thing. And That's why the greater care has to be taken in this deployment of ML systems in the healthcare settings. And also other aspects include the transparency because you want the clinicians, who may not know much about AI, you want them to trust those black box models. you don't want them to give you want to give them a black box model and just trust it, whatever it's diagnosing or predicting or recommending. Similarly, patients want to know why is it that by are they being recommended what they're recommended. So again, transparency is very important. It's again, they need to know the full process."
+  },
+  {
+   "t": 1562,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So at the same time, fairness is another aspect. And we have seen a lot of research where has seen that different models, even in healthcare settings, have very biased like outputs in some cases, or biased results. So that is another important thing that we want to know that how different populations are treated by a model, an AI model that is being used in the healthcare. And other than that, there are of course, regulatory compliance and continuous improvement, there could be change in data, like in the times of COVID, we had seen a lot of things have changed. So that was a drastic change in healthcare data. So there could be many different things was overall, I would say that it's it's involved more risk and more AI and safety has to be involved there."
+  },
+  {
+   "t": 1615,
+   "speaker": "Jekaterina Novikova",
+   "text": "I have a very similar experience from my own previous research experience in ML models in clinical settings, especially with trust. think trust, transparency and interpretability is something that is not just a research question. It's something that could be the highest blocker when it comes to the adoption of the technology."
+  },
+  {
+   "t": 1645,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So in particular, how does MLHOps help approach explainability and transparency in AI models?"
+  },
+  {
+   "t": 1653,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, so these MLHOps whole pipeline is something that has been well thought in advance. It's not that you build a model and later you think about like having, maybe we should be interpretable enough. So the whole idea of this pipeline is to be able to see through all the hurdles or all the problems that may arise and have that incorporated into the model itself, because again, it's a healthcare setting and stakes are high. So you want the clinicians and patients be involved in the whole process, to be able to trust the whole process. One of the things that we recommend in this paper is that, there should be different levels of explainability and transparency because there might be some explanation which is good and not good for a clinician who is able to understand many aspects, right? So it would be a different level of explanation and maybe there might be some explanation or transparency level for the patient who may not have that expertise, neither of like AI expert nor of like clinician. So that there should be different levels of expertise involved and embedded into the whole pipeline to gain the trust of clinicians and patients. Other than that, course, the model has to be that interpretability and explainability also helps with the reliability and robustness of the model in terms of the process, the work that it's doing, its accuracy. At the same time, it is able to understand the causality or the nature of different factors of why some decision is happening and what needs to be focused on."
+  },
+  {
+   "t": 1760,
+   "speaker": "Faiza Khan Khattak",
+   "text": "It can help with privacy and security as well. Bias detection is one of the things and that we have in our work, have also used interpretability and expeditability to detect the bias because once we know how the model is working, how the thought process of the model is going on, that is something that helps us to understand if the model is biased."
+  },
+  {
+   "t": 1786,
+   "speaker": "Faiza Khan Khattak",
+   "text": "At the same time, there are other aspects of explainability that need to be like, that need more attention. One of them is that we always talk about explainability or transparency, but we need to have better metrics to be able to evaluate once the model produces that explainable or explains the whole process. How are we going to evaluate that?"
+  },
+  {
+   "t": 1810,
+   "speaker": "Faiza Khan Khattak",
+   "text": "And one more thing that since even for like when we have these language models or ChatGPT we have been relying more on AI instead of using our own like understanding or expertise. So that has that is something that all the clinicians and the patients and caregivers need to understand that if AI is being used, is meant to support the whole process rather than just suggest something and you just don't, it should not be real over relying on that. So this is something that is the other aspect that needs to be taken care of. with the passage of time, models are becoming more explainable. Hopefully the explainability will become better."
+  },
+  {
+   "t": 1856,
+   "speaker": "Jekaterina Novikova",
+   "text": "That makes a lot of sense. You've also talked a lot about the high stakes and the fact that ML applications in healthcare, every incorrect decision may have serious consequences. And this is one of the risks, I guess, of AI in healthcare. So I wonder, what other risks of AI in healthcare do you see? And what can you propose as methods to mitigate those risks based on your research?"
+  },
+  {
+   "t": 1908,
+   "speaker": "Faiza Khan Khattak",
+   "text": "of them I already mentioned in terms of interpretability, there could be overreliance, which can be a big risk if we start overrelying on AI. But in healthcare, it is even more risky because you want to make sure the decision that was or recommendation that was provided by your AI model makes sense."
+  },
+  {
+   "t": 1932,
+   "speaker": "Faiza Khan Khattak",
+   "text": "At the same time, since AI models and we know that have been prone to bias, and there are a lot of things that can impact the decision of the model in terms of being unfair or biased, which could come through different sources. So Another aspect of the risk associated with AI models is that they could be very biased, and you don't even know about that. It could come from the data itself, how the data labeling is provided and what if like particular area or particular region you have collected the data, what groups are included. It could be, bias could come from the AI model itself, the way it's working. So there are many aspects, but I think so this is something that is very clearly being researched, talked about in research. And it is of course very alarming at times the way that AI models behave and are very biased."
+  },
+  {
+   "t": 2001,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Amazing, thank you. You've also done some truly compelling work addressing social bias in particular within AI systems. In one of your paper, that is called, Using Chain-of-Thought Prompting for Interpretable Recognition of Social Bias, you speak about how to address biases in language models and in particular, you demonstrate the importance of reasoning in zero-shot stereotype identification."
+  },
+  {
+   "t": 2028,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Can you tell us more about this research and its findings?"
+  },
+  {
+   "t": 2033,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, so that paper actually basically is a very nice example of combining interpretability and explainability for detecting bias. So that's how we can make more models more explainable so that they can show you their thought process and we can help the models think step by step or break down the question in more fine-grained way so that the model has the time to reconsider the answers it has. And that has been applied to different other aspects like solving a math problem or solving other problems for it. But in this particular paper, we focused on social bias, which is it's very subtle and sometimes you don't even realize, even in human beings, we don't realize that there's some sort of social bias and we are just assuming things. So this was the paper where we discussed that if we try to like ask the model to reason before it gives us an answer, the model is better able to understand what is happening."
+  },
+  {
+   "t": 2094,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Or it may be able to identify its bias and realize it before answering the question that we got better results even with the relatively smaller models. Here I want to mention one of the more recent research that we have done and recently the paper was published at AAAI Symposium, Spring Symposium, which was very interesting. It was a preliminary work and it was done along with my colleagues at the University. So that was that dialectical bias that like language models behave differently for African American English versus standard American English. So that was an interesting study that we did. And we saw that models even behave differently when the dialect changes, even if it's English. So these are the social biases which are very subtle and we don't even know them. But I think when you make the model realize its mistakes by giving it hints or breaking down the problem, it is able to do that."
+  },
+  {
+   "t": 2153,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's super interesting, especially when you mentioned that additional paper on dialectical bias. What is probably a little bit confusing to me right now, and I hope you can explain this to me. How do you define that concept of the social bias in general, in your work?"
+  },
+  {
+   "t": 2177,
+   "speaker": "Jekaterina Novikova",
+   "text": "I, because I completely agree, it's a very subtle, subtle concept. On the one hand, on the other hand, it's a sufficiently broad one. So you mentioned that dialectical bias, which is also under the umbrella of social bias, right? So how do we define the concept of social bias?"
+  },
+  {
+   "t": 2204,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, social bias can be very broad and very subtle. Most of it, I mean, a lot of it could be conscious bias, but a lot of it is unintentional. We don't even know. We just like stereotype people. Certain type of people do this, and certain type of people do this, and this ethnicity behaves like this. So that's a very subtle type of bias, but it's more generally defined as having discriminatory behavior towards them. It could be an individual or group usually, or like specific nationalities or ethnic groups or beliefs, and which results into like, results into a prejudiced or unfair behavior. So that's how it defines social bias. And that can, it can be manifested in different ways, as I said, that it could be either like associating a certain sort of associate like work or attribute towards women. For example, most of the people say women are bad drivers, right? So that's something that is assumed and sometimes, yeah, it's more like intentional in this case, but at the same time as we say that if somebody is speaking, it has an accent like a non-native speaker like me. So that also causes some sort of bias once you call someone and they say, yeah, non-native speaker, so they bite me."
+  },
+  {
+   "t": 2294,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Not saying that. Yeah, so language models are prone to that as well."
+  },
+  {
+   "t": 2300,
+   "speaker": "Jekaterina Novikova",
+   "text": "Mm."
+  },
+  {
+   "t": 2302,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. Again, going back to that paper that I mentioned, that chain-of-thought prompting thing, you in particular demonstrate the importance of reasoning. So I'm curious, what is the relationship between reasoning and interpretability in this setting?"
+  },
+  {
+   "t": 2320,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So it's like asking someone to answer a question, not just saying yes and no, rather first thinking out loud and describing the different thought processes. So while describing that, of the benefits that we get is that the model, we are able to understand that how the problem is being solved or how in this case social bias is being evaluated. So it helps us in understanding the model's thought process and see what deficiencies or what wrong beliefs it is using to come to that conclusion. But at the same time, while it helps us understand how the model is processing the question, it also helps us in understanding the core concept and it also helps the model itself to understand and realize the mistakes. And we have seen that if it just directly blurs the answer yes or no, the performance is lower as compared to when we ask it to break down the problem and think and then its answer is better or like it has a better like a better accuracy. And In some cases the models try to stick to wrong answers if the reasoning happens afterwards. They try to come up with the reasoning to support their wrong answer. But so if you ask the model to give the reasoning first, it realizes just like normal human beings, it has ego issues probably. So if it starts with the reasoning, it is able to come to the right answer. But if it gives the wrong answer first, it ends up making up stuff to support its answer. It doesn't want to look bad in front of people."
+  },
+  {
+   "t": 2428,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's interesting indeed. And I haven't thought previously about that connection between reasoning and interpretability or transparency specifically. And I guess that's something that would definitely be important for health care AI applications as well. Another question I wanted to ask with regard to this paper specifically is you speak about the models a lot, but what kind of empirical evidence you have on the generalizability of this approach, of this method across different models, I wonder. And also not only across the models, but in general across maybe different types of reasoning, different modalities, what are your findings?"
+  },
+  {
+   "t": 2494,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, so that's a very interesting question. So while I have worked mostly with language, but we had another paper, I'm I'm bringing another paper here, where we found a very nice result there in one of the papers that we were evaluating bias, we were doing bias quantification and we found a weird results"
+  },
+  {
+   "t": 2504,
+   "speaker": "Jekaterina Novikova",
+   "text": "Absolutely."
+  },
+  {
+   "t": 2519,
+   "speaker": "Faiza Khan Khattak",
+   "text": "for, unexpected results for white race. We were expecting that for white race models to be unbiased, but it wasn't the case. We see that there is a lot of bias for black race or other races. So what we saw that is that the data that the model was trained on basically is comes from North America. And in North America, when you talk about the president, it means white male president, right? And when we talk about a president which is not white or male, we say black president or a female president, right? Similar is the case for the CEO. assumption is that model is when it's dealing with text data, it takes the text which says CEO did this, while the black CEO did this, president did this, and female president did this. So when we tested it on the prompts, which were specifically involving white CEO or white president, it behaved differently. So here we then looked into other papers and we saw that sometimes other modalities actually help to reason better in terms of like, if we have the picture of the CEO, and we just say, you, and it's maybe a black female. So it would be able to pick on that aspect for reasoning. So it would be able to improve the reasoning. So being more explicit with the information that is given to the model and being able to reason and having the support from different modalities can improve the reasoning ability of the model because text could be somewhat because in text we just assume things which may not be the case in the a picture of someone, right."
+  },
+  {
+   "t": 2642,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "question about generalizability, one of your findings suggests that reasoning is a key factor that enables LLMs to transcend the scaling law on out of domain tasks. So why do you think this is the case?"
+  },
+  {
+   "t": 2661,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So yes, that's based on the empirical evidence that we had. We saw that many different models, the larger the model, I mean, that's rightly known fact, larger the model, usually it has a better reasoning abilities. But if we help the model, and it's a little like kind of a little bit older research from a year ago or so. So it can..."
+  },
+  {
+   "t": 2690,
+   "speaker": "Faiza Khan Khattak",
+   "text": "even the smaller models to learn about or focus or audit their understanding of the problem and improve their thought process and do better as well. So that's how it can help the smaller models do better with the reasoning component."
+  },
+  {
+   "t": 2709,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I also had a kind of similar experience with different domains. I think in early 2024, there was a big hype of domain adaptation of language models and using domain experts for different things. But after the release of O1, people again thought about the RAG applications and then pouring more money and investment in reasoning and decoding level kind of language generation. And that was very helpful at the previous company I was working at. So we decided just to put the context within the context window of the model. Then instead of pouring a lot of data just for training the model, we were relying on reasoning plus some knowledge coming from a knowledge base. And we got a very, a big jump in adapting to different domains instead of hours and hours of training over there. And that's completely distinguishes the contrast between memorizing or actually reasoning capabilities over a knowledge that comes from different domains. And that's fantastic."
+  },
+  {
+   "t": 2785,
+   "speaker": "Jekaterina Novikova",
+   "text": "in another paper, Can Machine Unlearning Reduce Social Bias in Language Models? Faiza, you explore machine unlearning methods, right, as a way to mitigate bias in language models. Can you tell us a little bit about this work and your main findings there?"
+  },
+  {
+   "t": 2807,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, this work was very interesting because it was an industry collaboration. So we collaborated with faculty, faculty, academic faculty and industry. And this work was very interesting because this is something that a lot of people want for - to have a debias of existing models instead of training them from scratch, defining unbiased data, our subsequent fine tuning and all that. So this was something that we explored and we tried to use different unlearning methods that is basically to change or in simple words, to make the model forget the biased behavior that it has."
+  },
+  {
+   "t": 2850,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So we experimented with some different unlearning methods and compared it to DPO, direct preference optimization method. And we found interesting results there. But one of the downside in this type of methods was that while devising the model through unlearning, it does produce the bias, but at the same time, it might reduce the ability of the model to generate intelligent answers. So there was a trade-off which was very interesting in our experiments. We did work with different parameters to see the trade-off and that was an interesting research. And we finally came up with some particular results that one particular method was negation via task vector worked very well for our purposes and it was able to retain the ability of the model to generate intelligent answers."
+  },
+  {
+   "t": 2909,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. So in particular, how bias on learning techniques impacted the model generation ability and performance?"
+  },
+  {
+   "t": 2919,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yeah, so we did like a broad comprehensive analysis of using different methods. So we tried to test the models on not just the bias, but also the perplexity and be of different common reasoning tasks. Also, we did a qualitative analysis of that. So we basically took the prompts from the whole data set and asked the model to generate the rest of the text and we saw that in some cases model was totally producing interpretation. We went to debias it too much. So, but it was doing well up to a certain extent. So that's something that we did empirically, maybe finding a theoretical bound to be able to see where the model can be, the sweet spot where the model can be debiased enough, but yet still doing the work that it has to do."
+  },
+  {
+   "t": 2975,
+   "speaker": "Jekaterina Novikova",
+   "text": "Bias mitigation methods are, I think, very closely linked with the methods and metrics to evaluate bias and, as a result, the effectiveness of bias mitigation. In one of our previous episodes, we have heard one interesting story about bias evaluation in the recidivism detection application compass. And there was a little bit of a scandal when ProPublica detected that it is biased and then the company said, okay, we used the different metric. It is not biased according to our metric. So I wonder in your work, how do you approach the evaluation of bias and evaluation as a consequence, evaluation of the effectiveness of bias mitigation?"
+  },
+  {
+   "t": 3036,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So we use different metrics for that. I mentioned that we were like using the data set, reddit data, reddit bias data set to be able to see how biased the answers are. So there were different groups and the t-test was used in that to be able to understand whether we were getting the bias of algorithms. So we were comparing the baseline with the de-biased models and we had de-biased models using different parameters. So the level of bias was controlled through a parameter. And we tried to, what we did was we tried to not only look at the how, but the bias itself and also the outputs that they were generating quantitatively and qualitatively."
+  },
+  {
+   "t": 3079,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. So you talked a bit about some limitations or maybe some benefits in particular. But like in particular, how do you see the limitations of this like bias mitigation approach? And do you see any future directions of how to extend that?"
+  },
+  {
+   "t": 3101,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Yes, this particular method basically as I said, that we need to find a theoretical bound to be able to see where that there is that sweet spot where up to what extent we can de-bias it while it can retain the knowledge it is supposed to retain or be more importantly, we can improve the methodology so that it can attack only the bias aspects while retaining all the information that it is supposed to retain. So this is something that was the future work."
+  },
+  {
+   "t": 3132,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. When we speak about the topic of bias in general, or bias for safe AI, this topic can be explored from two different, maybe even opposite perspectives. One is how to detect and mitigate the existing biases. And another perspective is the use of adversarial attacking strategies to induce biased response into the model and then see how vulnerable or resilient the model is, right? given that second approach, I know that you have that paper, BiasKG: Adversarial Knowledge Graph to Induce Bias in Large Language Models, where you proposed that new methodology for attacking language models."
+  },
+  {
+   "t": 3189,
+   "speaker": "Jekaterina Novikova",
+   "text": "Can you tell us a little bit about that?"
+  },
+  {
+   "t": 3195,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So one of the things that you already mentioned how to evaluate bias is that either use data sets, which are specifically designed for that. And you just try to see, okay, if that model is able to detect the bias after being debiased or produced and biased results. But still, we do not know what is going on inside the model. What if some adversary wants to make the model biased by providing it some other information which is not inside the model and maybe it's a knowledge graph or rag sort of system where the model is supported to be biased. So this is what we were doing in this paper. We tried to induce the biased information in the model and even a small number of, small percentage of information was making the model a lot biased, even the larger model at times, which was very surprising for us that if the model is trying to use extra knowledge, in some cases, yes, it was producing that it's not like it was skipping the result, but in many cases, it was able to use that in use knowledge, which is very important. Again, this was an industry collaboration work and it is very important for the industry before deploying the models. They have to keep the do all checks. So this was basically a way to evaluate or stress test the models before deploying them to see whether we have trained the model on unbiased data or we have de-biased them afterwards, we have done everything that we could, but still is it possible to trick them into being biased? Yes, that's what we found here and further research is needed to see what are the other edge cases where the models can be tricked into bias. So we have extended that research further in other ways, but it's under review right now."
+  },
+  {
+   "t": 3316,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool. And I'm curious, why did you focus on knowledge graphs in your work? Are there specific reasons?"
+  },
+  {
+   "t": 3324,
+   "speaker": "Faiza Khan Khattak",
+   "text": "We used knowledge graphs because that was more structured and easy to understand for the models and are induced with for the models with the biased information."
+  },
+  {
+   "t": 3334,
+   "speaker": "Jekaterina Novikova",
+   "text": "You also mentioned that this type of work is definitely important for the industry because before the deployment of the model they need to have the way to check whether it's biased or not and that could be one of the ways. But another thing that is usually important for the industry is comparing different types of models, right? So I wonder whether you have any findings with regards to differences between open models and closed models with respect to the resilience to adversarial attacks like that, like you proposed."
+  },
+  {
+   "t": 3379,
+   "speaker": "Faiza Khan Khattak",
+   "text": "So in general, it was more related to the size of the models, whether the open or closed, the larger models were more resilient to attacks. But in general, like they were affected by that, like GPT-3 and GPT-4 and all the others, they were still being affected by that. And later we did experiments with Deepseek, then we extended that, not in this paper. So everything is being impacted by that, those bias induction that we had in the form of knowledge graph. So there is some impact, smaller maybe, but yes, still there is."
+  },
+  {
+   "t": 3420,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, interesting. I am looking forward to that another paper that is currently under review. Good luck with that and please share the paper with us when it is accepted."
+  },
+  {
+   "t": 3433,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Amazing. Thank you, Faiza. It was such a thoughtful and inspiring conversation. I personally learned a lot both in your research and also in the company that you're working on, you're addressing really important topics that society needs them to be addressed."
+  },
+  {
+   "t": 3452,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Thank thanks a lot for having me. was a pleasure to be with you guys and I did not even realize the time went by so fast."
+  },
+  {
+   "t": 3460,
+   "speaker": "Jekaterina Novikova",
+   "text": "Thanks, Faiza. And for those of you who would like to dive deeper into Faiza's research or connect with her, we have added links to her publications and the socials in the podcast notes. Please be sure to check them out. And we will be back in three weeks again with the other episodes spotlighting the brilliant minds reshaping the future of AI. Until then."
+  },
+  {
+   "t": 3492,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Untill then."
+  },
+  {
+   "t": 3493,
+   "speaker": "Faiza Khan Khattak",
+   "text": "Thanks a lot."
+  }
+ ]
+}

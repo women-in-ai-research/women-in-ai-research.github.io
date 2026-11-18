@@ -1,9 +1,37 @@
 {
-  "_comment": "Corrections applied by `npm run import-transcripts` to the caption text of each episode (episode number → { wrong spelling: right spelling }). Whole words only. Add an entry when captions misspell a name or term, then re-run the import for that episode.",
+  "_comment": "Corrections applied by `npm run import-transcripts` to the transcript text of each episode (episode number → { wrong spelling: right spelling }). Whole words or phrases only. Add an entry when a transcript misspells a name or term, then re-run the import for that episode. `speakers` renames speaker labels in speaker-labelled transcripts.",
   "episodes": {
-    "8": { "Abhalisha": "Abhilasha", "Abhilesha": "Abhilasha" },
-    "18": { "Leticia": "Letitia", "Parcalabesco": "Parcalabescu" },
-    "20": { "Sadia": "Saadia" },
-    "23": { "Malikha": "Malihe" }
+    "8": {
+      "Abhalisha": "Abhilasha",
+      "Abhilesha": "Abhilasha"
+    },
+    "18": {
+      "Leticia": "Letitia",
+      "Parcalabesco": "Parcalabescu"
+    },
+    "20": {
+      "Sadia": "Saadia"
+    },
+    "23": {
+      "Malikha": "Malihe"
+    },
+    "4": {
+      "CBPR": "CVPR",
+      "emotic": "EMOTIC",
+      "using style again, too": "using StyleGAN2",
+      "their balance and arousal": "their valence and arousal"
+    },
+    "5": {
+      "Faisal": "Faiza",
+      "manual life": "Manulife",
+      "Kimmage Center for Addiction and Mental Health": "the Centre for Addiction and Mental Health (CAMH)",
+      "MLA chops": "MLHOps",
+      "spot-fighting": "spotlighting"
+    }
+  },
+  "speakers": {
+    "4": {
+      "WiAIR | Women in AI Research": "Angelica Lim (TEDxKyoto 2012 clip)"
+    }
   }
 }
