@@ -1,0 +1,463 @@
+{
+ "episode": 25,
+ "videoId": "efnZkH7Y9j0",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "neuroscience, artificial intelligence, and cognitive science. If you had to give up two out of these three labels and only keep one, which one would it be? I definitely would drop artificial intelligence, but that's partly because of the trajectory Oh no."
+  },
+  {
+   "t": 18,
+   "text": "of the field. So maybe this podcast episode is over at this point. Give it a little. You"
+  },
+  {
+   "t": 26,
+   "text": "That's the good old problem of like we have one black box, the brain, and now we have another black box. And if we relate them to each other, it's just twice as bad, maybe, right?"
+  },
+  {
+   "t": 38,
+   "text": "I co-authored this with Kyle Mahowald. and it's what's the title is something with like words are remembered if they have a unique like correspondence with their meaning, something like that. And actually I misremember Mm-hmm. Mm-hmm. that, but the fact that I misremember that is actually pretty interesting because that also says that I got the gist right. That is approximately the title, but we don't often remember the exact right words."
+  },
+  {
+   "t": 90,
+   "text": "Welcome to the WiAIR podcast, Greta. I'm so excited to be here with you today and I'm looking forward to hearing about your story and to dig into your research. So again, being from Lithuania myself, it's definitely not every day that I get to interview another Lithuanian woman working in AI research. There are not so many of us in the area, unfortunately, but there are some. And I'm very excited to have you here today. I know that you have lived outside Lithuania for most of your life, probably, but you spend some time there regularly Do you feel like those ties with the country left any mark on you as a scientist or are they more pronounced in some non-professional parts of your life?"
+  },
+  {
+   "t": 152,
+   "text": "Yeah, first of all, yeah, super excited to meet you and to be here and thanks so much for the invitation. And and yeah, it was just when you introduced me, I was just thinking, yeah, it's pretty rare that I actually hear somebody pronounce like the Lithuanian pronunciation of my name. so it's such a pleasure. and yeah, as you just mentioned, I'm born in Lithuania. And actually funny enough, we just realized that we are from the same city, Kaunas. And my parents moved to Denmark from Lithuania when I was two years old. So my memories from that time is of course pretty sparse. That being said, we kept a very strong connection to Lithuania throughout my entire childhood and even to this day I was just there last month. and you know, I spent like every summer in Lithuania growing up and yeah, my relatives are still there."
+  },
+  {
+   "t": 199,
+   "text": "~ So yeah, I Lithuanian is actually my very first language. and then the experience that I had as a kid was you had learned one language and then suddenly you are in a different world and the people speak a different language around you, Danish, because my parents moved. and that ability to just like kind of figure out that there's something else going on and that these languages don't really match up. I actually like maybe I Maybe I tell myself this post hoc, but I feel that I can kind of remember that. that this like weird sensation of being like adaptable and figuring out like the puzzle pieces of like, there's one thing here and there's another thing here. that's of course not tied to Lithuania specifically."
+  },
+  {
+   "t": 245,
+   "text": "that's more like the switching of like l living in two different countries, right? But I think if anything, that might be the theme that I think has impacted me as a scientist quite a bit. because you know, as a kid, moving from one country to another, being an Eastern European in Scandinavia and now I've been in the US since two thousand nineteen. So now I'm a European in the US. and also growing up we moved around a lot. so this ability to constantly be able to adapt to new situations and see like, okay, now there's something else happening. I need to like update like whatever's going on and kind of deal with that. I think is a skill that is very important as a scientist and at least I believe that ability to quickly adapt to new situations has definitely and is impacting me to this day."
+  },
+  {
+   "t": 293,
+   "text": "I see that sounds great. I think that to me, at least when I look at all the research that you have done by now, there is a connection in terms of you do a little bit of interdisciplinary research, right? You yourself describe your work as sitting at the intersection of neuroscience, artificial intelligence and cognitive science. So there are all those different aspects of language and the brain that you, intelligence maybe rather than brain that you care about."
+  },
+  {
+   "t": 339,
+   "text": "But what I want to ask you, given those three distinct areas, neuroscience, artificial intelligence, and cognitive science. If you had to give up two out of these three labels and only keep one, which one would it be? Well, not easy question. and I actually just wanna kinda like emphasize a thing that you just said, which is about intelligence and you know, studying intelligence. And in some ways I do see my own work at like a very high level, kind of trying to tackle a problem about like what it's intelligence, how do we build it? and in that sense, you know, you can't it's it's tricky to just focus on one very specific domain and especially in these times where everything is like changing so rapidly and we have New kinds of intelligence almost like week by week, right? then we need to be adaptable."
+  },
+  {
+   "t": 396,
+   "text": "And I think that is like a really nice interdisciplinary area to study. and then to your question about which of the two terms that I would drop, I actually think I definitely would drop artificial intelligence, but that's partly because of the trajectory Oh no."
+  },
+  {
+   "t": 414,
+   "text": "of the field. So, had you asked me a couple of years ago, I I don't think I would have said that. So maybe this podcast episode is over at this point. Give it a little. You No, actually, it's it's interesting because, like, in the initial, say like in 2020, right, when LLM started to like become actually pretty good at modeling language. like the interests of us like cognitive scientists, neuroscientists, and the artificial intelligence fields, the goals appeared at least somewhat aligned, right? We wanted a system that could model statistics of language very well. And Mm-hmm. and in that sense, like it was a very like unified it felt like a little bit like a unified goal. Of course, we weren't like working together directly that much, but it seems like now nowadays, right, like the fields have changed so much that you know artificial intelligence has completely different goal."
+  },
+  {
+   "t": 465,
+   "text": "The goal of language has quote unquote been achieved and now it's about all these other abilities. No, it's like a new math proof or new ability all the time, right? And and in that sense, like I think The field of artificial intelligence has just changed so much. And as a cognitive scientist and neuroscientist, you know, we want to be able to use these tools, which you know we still do, but it's becoming harder and harder to run like controlled experiments, right? Like one model trained with some data, some other data, architectural thing, or not. And now these models are so large and often also proprietary that it's becoming trickier. So actually, just because the AI field has changed so much, maybe that's the one that I would first scratch. but mostly because the field has has changed a lot."
+  },
+  {
+   "t": 510,
+   "text": "and then secondly with cognitive science and neuroscientists. And neuroscience, like in some ways they're like so intertwined, right? Like ultimately, you know, I'm interested in questions about how the mind works and how that's instantiated neural tissue has been a key interest of mine, especially for the domain of language. And both of those fields are necessary. but of course you can study that without studying the neural tissue, so then maybe I'd have to drop neuroscience, but I I am very, very excited by like, you know, studying like properties of these tricky things like language in actual biological neurons. so sorry, that's maybe like a poor answer, but the last two ones are very heavily intertwined."
+  },
+  {
+   "t": 556,
+   "text": "Right, right. And I'm a little bit, I feel a little bit sad that the artificial intelligence was dropped off the first, but on the other hand, it's amazing that we are now in this situation that even though you kind of care the least probably about artificial intelligence specifically, but"
+  },
+  {
+   "t": 581,
+   "text": "But then again, there is a possibility given the progress that was done in the field of AI, there is a possibility to still be there, even if your primary interest is not there necessarily. Yeah, and maybe that being said, I actually still work a lot with like model systems and AI Mm-hmm. models and even like develop some myself. But it's interesting, I think if you ask like, you know, like maybe some AI people, they would maybe view it as more like a cognitive artificial intelligence because the kinds of models that I've mostly been interested in has been those that at least like drive us towards slightly more biologically Plausible models. and specifically a theme that I've worked on in the last couple of years has been building models that learn from perceptual signals, so from speech, so just one unified framework for learning from audio to language, and that is like an artificial intelligence model, right? But the ultimate goal with this model is largely to be able to study hypotheses about language learning and how different like processes happen in this unified system."
+  },
+  {
+   "t": 654,
+   "text": "So that is artificial intelligence, but the ultimate goal with that model is like a maybe like a cognitive science question. yeah. Right, so you see artificial intelligence as a tool to achieve your goals, Yeah. Yeah. I think right? that's not unfair, yeah."
+  },
+  {
+   "t": 670,
+   "text": "I see. That's an interesting approach. And I'm looking forward to speaking more about all the research that you have done. But before we dig into that, I want to ask another question about your life before you started the science career. before starting your research career, you ran your own photography company that you started at 14 and you worked with clients across Denmark and other countries. How... Can you tell us a story about this? How did you decide to first be the photographer and then switch to the scientific career from this completely different field?"
+  },
+  {
+   "t": 722,
+   "text": "It they're they're like at some glance they're completely different, but the further I get in science and sometimes they actually seem to merge more and more, I will say. And and I can get it more into that in a second. But yeah, just as you mentioned, like throughout being in school, I picked up photography as a hobby that I just did like next to my studies. and suddenly it kind of like took off and I became very like interested in it and ended up, yeah, actually also doing it as a as a job. various kind of photography, both from travel photography, portraiture, like magazines, like book covers, things like that. And yeah, I really always saw myself as like creative photographer. You know, you kind of construct, you have like some vision and then you like execute it and then you're like kind of then you deliver something to if you have a client or just if it's like a personal project, right? And and I love that process of of doing that like creative process."
+  },
+  {
+   "t": 779,
+   "text": "and actually when I finished high school, I did it full-time for a year. and quickly I I realized that it was not it for my full-time career. partly I missed school so much. I think by like a month or two and not being in school, I had read all my roommates like she was actually studying psychology, like psychology textbooks. so I really missed that pursuit. But also I realized that. As a photographer, you work with projects that are pretty short-lived. You know, it's like there, like there's an idea, there's an execution, there's an editing, there's like there's a phase, of course. But that process is like pretty short-lived. And I realize that I don't like that. what I actually do love about science is that you have these like longer projects and you have several of them. And you know, maybe at one point you can't really figure out a project, it doesn't really make sense. But maybe a couple of years later you have like a new idea and then you kind of like build on these ideas in like a very like cumulative sense."
+  },
+  {
+   "t": 839,
+   "text": "And photography felt more like kind of you execute, you're done. You execute, you're done. And I didn't like that rhythm. And and in that sense, like I I science has felt like the perfect endeavor so these like longer term projects. I still feel very creative, right? And that's actually where some of the similarities come back because when you have a scientific question, you also need to think about how am I gonna run this experiment. How am I gonna test this thing? How am I gonna execute it? And then afterwards, like how am I gonna present it to people? That's like a big part of science, right? Like how can you communicate those ideas? In that sense, it's it's pretty similar to photography, right? You have some vision or some something you want to like show and you just figure out the best way to creatively do that. and in that sense there are definitely similarities, but most of all I actually feel incredibly Lucky and happy that I took the time to just test out what I thought I wanted to do, right? And I just took that risk."
+  },
+  {
+   "t": 900,
+   "text": "And I think if I hadn't done that, then like later, you know, going through university, going through a PhD, like it will be hard at times. Like obviously it will, right? And I if you always have this like lingering idea of like I wish I, you know, I was like traveling all over the world doing these photography jobs. I would be so happy if I was doing that. it's it's hard to say motivated if you always have this little voice telling you, I wish I was doing something else. And I think I just crossed that out. And like by the time I started university, I was just like, I had no doubts about that. I wanted to pursue a career in research. And it was interesting because like, you know, people would like call me up after I started my studies and I needed to do my initial chemistry courses or whatever and they'd be like, do you want to do this job for this magazine or whatever?"
+  },
+  {
+   "t": 947,
+   "text": "And I'd be like, No, you know what, I gotta go learn about organic chemistry. And it just felt so fine. I wasn't like missing out on anything. so I actually just completely amazing. left photography for this other endeavor. That's amazing, that's a great story, I love it. You tried it, you liked it, but then you just crossed it out, you just finished that and started something else. Yeah. That's fine. Yeah. And I and I know that's like you like I really hope that other like, you know, like younger like students or like will have some opportunity to try to explore those things. It's it's not that you have to take a whole year off or anything, right? But it's really just okay to like try out these like kind of random things and kinda like get that like out of your system in some way."
+  },
+  {
+   "t": 996,
+   "text": "And you know, if you don't get out of your system, that's a good sign too, right? That means that you actually should pursue that thing. ~ So so yeah. So it's a win-win. You get it out of your bucket list or you keep it as your career. Yeah, and I loved it while I was doing it, right? And then at some point you're like, I'm done. It's fine."
+  },
+  {
+   "t": 1014,
+   "text": "Amazing. I'm happy that you switched to the scientific career, otherwise you wouldn't probably have been here right now with me. And yeah, so let's speak a little bit more about your research. what is it about language specifically that made you want to spend time trying to kind of reverse engineering it in both..."
+  },
+  {
+   "t": 1045,
+   "text": "artificial systems in machines and in brain. Yeah. I actually remember the moment when I kind of had that realization, which is like pretty rare, but I guess that happened, which is with the initial open AI GPT initial GPT demo, ~ Mm-hmm. which was that late two thousand eighteen or early two thousand nineteen, where basic the Was it about... was it about like unicorns, islands, something like ~ that? And like the Andes and like, you know, that story. And I remember I went to like a lecture about this like new thing that you know this AI system can produce this very plausible and creative story, right? And I was like, that's really cool. But like I guess like the brain does that too all the time."
+  },
+  {
+   "t": 1091,
+   "text": "So we must know how the brain does that, like right? And then I actually started like googling around like who like studies neuroscience in the brain, like we Like we must have figured this out, or like this there must be work on this. And of course there has been a lot of work on language neuroscience, but there's still tons of open questions, right? You know, I don't think anyone would claim that we have like a fully plausible and like mechanistic model of how language happens even in our brains right now. And I just felt that was like weird. That was like weird and puzzling that like now we actually had this AI system that could do this thing that we don't understand in our own minds. And it seemed like such an exciting opportunity to like at least help in that pursuit of trying to understand how we in our in our own biological brains solve that complex problem."
+  },
+  {
+   "t": 1145,
+   "text": "Right, so okay, so imagine that, there is some AI researcher listening to us right now, to this podcast, this episode. They're deep in their model training and the analysis of downstream performance of that model. And they still made time to come and listen to us here today instead of finalizing their ICLR submission Mm-hmm. NeurIPS or some other."
+  },
+  {
+   "t": 1179,
+   "text": "Yes. So before... we get into any single paper of yours. I want to make this case for that AI researcher for why this whole area matters, actually. Why do you find it important to investigate like how models and the brain, human brains align? Yeah. well, one like very high level first answer to that question is while these are the two only systems that produce, you know, human like language. So that's like an initial motivation is like if you won't be want wanting to study anything, this seems like a great time in history to tackle that question. and second, like as you like it's like the analogy we make to AI and like no, we build these systems and like even AI researchers obviously have a hard time understanding what their own models do, right? Like In that sense, well, then we're in the same boat, right? Like, you know, we as like neuroscientists and AI researchers are trying to basically do the same thing."
+  },
+  {
+   "t": 1240,
+   "text": "We're trying to study complex interconnected sets of nodes that perform a complex like behavior, in this case language or downstream reasoning abilities from that. And and like the pursuit of doing these two things in parallel, like, yes, it does not have to be the case that they mutually need to inform each other because of course like it doesn't have to be the case that these two systems implement language in similar ways, but yet the problem is like similar and at least we can use some of the same methods to like investigate that. and you know, there's been many like people saying that, like even in, you know, mechanistic interpretability, a lot of those ideas are like earlier like neuroscientific ideas and so on. And like being aware of those explicit links at least can like save some time and create some inspiration."
+  },
+  {
+   "t": 1290,
+   "text": "and I think that's important."
+  },
+  {
+   "t": 1292,
+   "text": "I think so too. Definitely that's important. And that's also essentially the premise behind the paper that you published this year. I think it was this year at the EMNLP, From Language to Cognition. And there you tracked brain alignment across multiple checkpoints using billions of tokens and the covering several model sizes. So, I would love to hear a story behind what you were trying to find out in this work. Yeah. yeah, thanks for mentioning this one. This is in collaboration with Badr AlKhamissi and basically it builds on like a big, like relatively big body of work right now where, you know, we and others have been studying whether the regions in the brain, so this like left hemisphere, frontal and temporal regions in the brain that do language in humans. You know, if you lose those regions, you're likely to get aphasia, so deficits in understanding and producing language."
+  },
+  {
+   "t": 1354,
+   "text": "And these like language regions in the brain is a lot what What I've been studying. Sorry, I was pointing on my right hemisphere was on the left, but everything is mirrored. And basically, you know, what we realized several years back was that you know, if you take these internal representations from any given LLM model, you know, in the beginning it was like the GPTs and the BERT models, the initial transformer models or RNNs, then you can basically like pass the same sentence to like the model and the human. and in the human you collect brain data. from them while they're exposed to this sentence. And for the models you, you know, take their internal activations and the realization that several research groups had a couple of years back was that, you know, there's some representational alignment of what is going on in like these human language areas and in the model systems, right? So that was an exciting finding because it didn't have to be the case."
+  },
+  {
+   "t": 1408,
+   "text": "of course we're forming the same behavior, but the fact that you know there's some similarity is It's like interesting and worth understanding more. And the paper that you mentioned kind of asks like a question about this alignment, right? Like, why is it that we see alignment between these like LLM models and then this are very different system, right? The human brain. and we're basically trying to like in some ways like track like at what point do these like LLMs actually start mapping onto the human language system. So specifically, as you mentioned, right, we can look across like training checkpoints. And we can also look across like when the model suddenly gets like pretty good accuracy and performance and say like some like task involving linguistic judgments, like syntax performance, or some other downstream tasks, say like mathematical reasoning."
+  },
+  {
+   "t": 1461,
+   "text": "And then we can, for every single checkpoint and you know, measuring against performance, we can basically ask like when does that match like the brain alignment? to human language areas. And and that's kind of how we got there. And I can emphasize maybe two findings. One is that, Mm-hmm."
+  },
+  {
+   "t": 1480,
+   "text": "you know, one critique that many have of using these LLMs of like cognitive models or models you in like neuroscience is that, well, they're trained on like billions and billions of tokens, right? Like that's like Mm-hmm. just a crazy magnitude of t of text, right? And you know, in this paper, we basically see that like you actually don't need to train your LLM on these like three hundred billion tokens or something, in order for it to actually show alignment with brain areas. You need like less. You still need like more than like a hundred million tokens, which is one estimate for how much is like by like you know, developmentally plausible. Slightly bit more than that, but not much more. It's only like a small percent of an LLM's training that you need to do to have this."
+  },
+  {
+   "t": 1526,
+   "text": "These like LLM system actually show similarity to what's going on in the brain. So it basically tells you like that the similarity in representations between human LLMs is not driven by the fact that these models are trained on these like excessive amounts of training data, right? but you actually can get away with much less. so that's kind of like an insight into like why is this thing, and also like an answer to a common critique. And the other finding that I wanted to highlight is. As the title of the paper, you know, LLMs outgrow the language network. I think that's almost Mm-hmm."
+  },
+  {
+   "t": 1557,
+   "text": "something that we can relate to quite a lot, right? You know, language models were made for language. That's the second L in LLMs. And and of course now they do so much more. so we're basically just asking, you know, if an LLM learns to have really good performance on, say, like a downstream reasoning task versus just having good performance on like a linguistic task, like is it the case that you really need like performance in this like downstream complex task to show alignment to these human language areas. And turns out that not really. Like it's it's actually enough that the model learns like linguistic ability. and in that sense that's where like the outgrowings come from, right? Because the LLMs learn all these other things. But but to model human language areas, like we don't need to include all these other like complex reasoning abilities."
+  },
+  {
+   "t": 1608,
+   "text": "So in that sense that shows like Just a little bit of like a misalignment, the better the models get, at least if you study language. That's of course not true for the cognitive abilities in the brain. Right, and that reminds me of the conversation that we had one of the episodes, one of the previous episodes with the Anna Ivanova. Yeah. She mentioned the two different types of competence, linguistic competence, Okay. like formal linguistic competence and the functional competence, That's exactly right. Yeah. So exactly in this paper right? we show that basically as long as an LLM has learned formal linguistic competence, that's like tracking Mm-hmm. the brain alignment more than learning functional linguistic competence."
+  },
+  {
+   "t": 1656,
+   "text": "that's exactly right."
+  },
+  {
+   "t": 1658,
+   "text": "When you speak about alignment here,"
+  },
+  {
+   "t": 1663,
+   "text": "let's be clear with the definition. Yeah. So what do you mean exactly by alignment? Yeah. when I say alignment, then I usually mean this approach of like taking, you know, the internal representations from the LLM, like the internal hidden states and then these like readout activations from the human brain. And a very standard thing is to like fit a regression model from one to the other. So it's a simple like linear mapping between those two systems. another Mm-hmm. thing that we often do is using a non-regression-based method where you can kind of just like compare the two matrices using like centered kernel alignment or representational similarity analyses, like those kind of things. you usually they give similar findings. So that is as you mentioned, a sense like a correlational like evidence."
+  },
+  {
+   "t": 1710,
+   "text": "in Mm-hmm. one of my papers from 2024, I basically kind of extended this idea of correlational measure to actually use these models to also modulate brain responses. So you make a prediction, like if you have an LM, it can make a prediction about what is the brain response gonna be at a given sentence. And then I use these You models to actually like generate these sentences and collect them in new individuals. So that extends like at least like a climbs up the causality ladder, right? Where or at least it becomes like a stronger test of modeling. And but yeah, that is generally what I mean in this case. Interesting, yes. And the second part of my question was about what do you compare to, where do you map to when Yeah."
+  },
+  {
+   "t": 1755,
+   "text": "you speak about LLM and the human brain? And then, yeah. Is it just the language, only those brain regions that are responsible for language alone or some other? Mm-hmm. Or other Yeah. Yeah. Yeah, because as you mentioned, right, you know, like as we're speaking right now, there's a lot of our brains that are active, right? You know, I'm moving my hands or I'm like, I'm also listening to stuff, I'm listening to the background noise, I'm like thinking about or retrieving things from memory and so on, right? so the so the studies that I've mentioned and mostly of my work has focused on has been focused on these like areas that are specific to language. so my PhD advisor, like Ev Fedorenko, has done a lot of work on these."
+  },
+  {
+   "t": 1797,
+   "text": "and the reason why, you know, like my work and and many others have focused on these language areas is because it provides a nice targeted comparison, right? Like in the human brain, of course you can map the LMs like all over the brain. You you definitely can. But it becomes a little bit hard to interpret what's going on because the models are gonna be predictive in many areas. And if you don't know why, that becomes a little bit hard to To move on from there if you don't have a particular you know brain area hypothesis that you're trying to test. while like, you know, with these language areas, right? Like we know they're causally involved in language. We know they selectively process language over all these other abilities that we can do, like math and music and so forth."
+  },
+  {
+   "t": 1843,
+   "text": "And that just provides like a really nice target to like study against these LM representations to really try to ask, like, What is the nature of these linguistic representations in these parts of the brain? So that has been like a guiding question of a lot of my research. That being said, it is very exciting to also test like other brain areas, right? And and there's been great work doing that as well. I think we a little bit lack also some neural data for that, actually. but maybe that becomes a little bit of a yeah tangent."
+  },
+  {
+   "t": 1876,
+   "text": "it's really interesting to see how neuroscientists, cognitive scientists approach those questions. Amazing. To come back to this specific paper from Language to Cognition, you found that the correlation between next word prediction behavioral alignment and the brain alignment falls apart when models get better than human language, right? What do you think is happening at that point? why it happens. Yeah, so this whole line of investigation rests on a very powerful and actually somewhat old idea, which is, you know, that if two different systems are doing the same complex behavior, in this case language, they should ultimately, you know, the better they get at the task, the more aligned their internal representation should be."
+  },
+  {
+   "t": 1941,
+   "text": "so You a lot of people have written about this like so-called the contravariance principle. There's some different instantiation of this idea. ~ And and you know, that's also like an idea that we and others have tested like early on, is like the better an LM is at predicting the next word or doing a given language test, is it also like better than aligned to the human language areas? And you know, we and others have found the answers to be yes. but then there's also later work here showing that, you know, like when these models become almost like completely like super human and are just like completely past the point where they've already mastered language, like so far ahead, then that correlation is not really gonna be that visible anymore. So it's only visible in those like earlier phases where the model is not actually like well when the model is still learning how to model the statistics of language."
+  },
+  {
+   "t": 1993,
+   "text": "so in some ways this is a story about like the ability of a system to master language and their alignment as soon as those two systems get better. There is an initial, yes, they start aligning better. And we've seen this in other domains in vision, audition. but then, you know, when it's past that point, that comparisons becomes a little bit like weird, I guess is one word."
+  },
+  {
+   "t": 2019,
+   "text": "I see interesting. That's interesting. I think that a lot of people think that the bigger models are, the more powerful they become. also, there are questions about how aligned they are with the size. And in your work, you show that model size alone. doesn't predict brain alignment when you control for the number of features. And you also had some findings about the benchmarks at that point. So if you were advising someone building the next generation of these models, what would you want them to pay attention to?"
+  },
+  {
+   "t": 2074,
+   "text": "Yeah, it is completely right what you say with these like larger, fancier, many, many billion parameter models, like if you just are looking at these like only language areas in the human brain, not like the rest of the brain, it is actually like pretty much the case that they only explain a little bit more variance than say like a standard GPT-2 XL model, right? And this is actually a question that I get very often when I give a talk or something, and then maybe I use an older model and there will often be somebody asking like, But what if you used, you know, insert like the recent model that's been, you know, developed recently. And and my answer is usually like, well, yeah, it like it doesn't help that much. Part of the reason is that, of course, the more brain data you have, the more variance you can explain. And we lack those big data sets. So that's one problem. But the other is actually like it tells us something interesting about these language regions in the brain, which is again, this is the same idea of like, you don't need This like excessive ability to do all these other things around language to like pretty much perfectly explain, or not perfectly, that's that's a wrong way to put it, but like y like you don't get much further by using these other models in explaining these language areas."
+  },
+  {
+   "t": 2147,
+   "text": "And that tells you again, like this idea of like this distinction between formal and functional competence. Like even if the model can do all these other functional, like very complex, like downstream tasks. for these like particular areas in the brain, they appear to more care about like local structure, like at like a scale of like a sentence. so it means that when you have these models out of context window of a million token, it doesn't really matter too much, right? Because they still do those like combinatorial processes at the shorter scale, like they they can do that as well. so that's like more like an insight about what these regions also are sensitive to."
+  },
+  {
+   "t": 2187,
+   "text": "is that ongoing debate in the space of, in the AI community at least, that is about,"
+  },
+  {
+   "t": 2200,
+   "text": "brain and the LLM comparison work is really just about relating one black box to another black box. And then the correlation doesn't actually tell us a lot about what those two systems have in common, whether they are doing the same thing or not. What do you think about? I fully agree with that critique. Like that's like a completely valid thing to say, right? That's the good old problem of like we have one black box, the brain, and now we have another black box. And if we relate them to each other, it's just twice as bad, maybe, right? and then that's something that I've I've been very interested in like trying to trying to work on."
+  },
+  {
+   "t": 2246,
+   "text": "So we have this very recent paper with Mikey Lepori where we basically try to say like how can we try to make these this comparison slightly more interpretable, right? Let's let's try to gain some insight. and kind of the premise that we the premise that we use in that paper is basically okay we actually have advances of course in mechanistic interpretability. There's a whole field out there just working on like figuring out what do these LM features correspond to. That's great. We should of course like borrow from that work. And the other premise is that the brain is not entirely a black box. it's definitely not true that we know everything about the brain, obviously not, but there are certain properties that we kind of have some idea of."
+  },
+  {
+   "t": 2293,
+   "text": "so there are these two premises, right? We do know something about these like language regions in the brain and other brain regions, and we have mechanistic interpretability. And this work we kind of said like let's try to like merge them. So Mm-hmm. instead of you know doing this like standard alignment procedure where we just have like these like many thousands of like dense polysemantic, like entangled, like LLM features. We actually replace that basis with a sparse autoencoder basis. So that's like of course like a huge feature space where at least the the goal there is that every single feature responds to some kind of specific aspect of language and has more like specific tuning compared to these other residual stream states."
+  },
+  {
+   "t": 2336,
+   "text": "so that's Mm-hmm."
+  },
+  {
+   "t": 2337,
+   "text": "one way of like you know kind of opening the black box a tiny bit. And then the additional thing we do is like, let's leverage the things that we know from neuroscience, right? If I have shown you already that surprisal, a proxy for processing difficulty, already can explain a lot of variance and brain responses, we should just include that measure explicitly in our in our model. because we should build on the stuff that we know, right? So in that sense, we kind of come up with this approach where we basically have these like sparse autoencoder bases along with like an explicit measure of surprisal and then it allows us to ask like for instance like what small parts of the brain respond a lot to surprisal because we included that in the model And which ones are explained by all these like SAE features that is like these distributional properties of language, right? We can really start teasing apart."
+  },
+  {
+   "t": 2387,
+   "text": "And we actually found that like one region in the frontal lobe can be explained pretty much as well as it can by just surprisal. Like even if you can pick from these like 32,000 SAE features, they don't help that much. So so that tells you like that this pretty simple feature, like you don't need even these like SAE features. That's that's a pretty like a key insight. While some other brain regions, like in the temporal lobe, on the other hand, like yes, surprisal still does matter, but these features from the SAE really like explain way more variance in those areas. And that tells us already, right, that like there's a difference in the features that these two areas represent, right? Like one area seems to represent more surprising processes."
+  },
+  {
+   "t": 2433,
+   "text": "And the other one has something else to do with these sparse linguistic features from the Mech interp. then we know which of brain areas can best be explained by these like interpretable SAE features. And we can just zoom in and look. which ones. And we enforce like a sparsity constraint. So actually for some of these voxels, like the 3D cubes in the brain, we actually see that like you can use a combination of like six features to like explain that like small brain region's response. And and from like a neuroscience perspective, that's a huge upgrade. Instead of trying to interpret this like big, dense residual space, you have a combination of six features. And in addition, we can use these mechanistic interpretability tools to now look what are like the top activating examples."
+  },
+  {
+   "t": 2484,
+   "text": "And that actually gives us a pretty good intuition for what is going on in that little brain region. And and in that sense, the box becomes a tiny bit more transparent."
+  },
+  {
+   "t": 2495,
+   "text": "Right, that sounds really interesting and you use the term surprisal quite often. Can you define it Yeah. Yeah. Sorry. Yeah. Surprisal is this proxy for processing difficulty, which basically the LM's output behavior, right? Like it's the LM heads estimate of the predictability of words in context. So for instance, I study sentences. So in that case we get like the log probability, the surprisal for every single token in the sentence, and then we take the average of that. And that surprisal estimate basically gives you an idea of like how challenging that sentence is to process."
+  },
+  {
+   "t": 2534,
+   "text": "Why do you think a surprisal is important here in addition to all other features that you use? when we read, we pause when there's something unexpected happening. Same with like eye gaze. and like there's then been work showing that actually in these like language regions in the brain, there's also you can use this surprisal predictor to basically also explain some of the variance going on there, such that That basically means that the more surprising a given sentence is, like the more unusual it is, the more unpredictable it is, the higher the response in these language areas, right? So it tells you like intuitively that these brain areas, these language areas are really working hard. They have a high response when something is like unusual and unpredictable."
+  },
+  {
+   "t": 2580,
+   "text": "So they're really trying to like crunch hard to like figure out the meaning in in the input. That's super interesting. And you work on the sentence level here rather than like the more granular level. When it comes to surprisal, do you think that it is better to assess the surprise level on that segmentation level, like on the sentence level rather than on the word level or the other way around? in the perfect world, we would look at both like word level and also even subword level. Mm-hmm. me in collaboration with a collaborator Klemen Kotar, we actually have some work on trying to study sub-lexical surprisal, so using actually acoustic measures that has nothing to do with words, and that's really interesting as well."
+  },
+  {
+   "t": 2634,
+   "text": "but one like big challenge and the reason that a lot of my work has been done on sentences. Is that the most common neuroimaging tool that we have access to is functional magnetic resonance. And that is just has a slow resolution, so we don't have the resolution of single words. So I studied these short sentences, they're six words long actually, so it's not like a very long sentence, they're pretty short, and we can get that resolution in the in that tool, using that tool, sorry. And and I have some like ongoing work as well on using like other measures that are time resolve, such as you know, sometimes we're lucky in collaboration with neurosurgeons, we can get these like intracranial measures, which gives you this like measure across time."
+  },
+  {
+   "t": 2680,
+   "text": "but of course those measurements are much harder to get. So so that's the reason. But yes, in the perfect world, we would integrate surprisal and this idea of unpredictability, predictability across many different scales. That's interesting."
+  },
+  {
+   "t": 2699,
+   "text": "Let's wait while our tooling is better and more granular. just to clarify, the paper that you spoke about is the Interpreting Brain Responses to Language with Sparse Features from Language Models. One of your findings in this paper that I'd love to discuss a little bit more is that brain responses line up best with the most general, broadly shared features in the model, not the fine-grained ones, right? You have mentioned already this finding, but I'd love to hear what you think about, like, what brains and models might actually have in common in terms of like that granularity."
+  },
+  {
+   "t": 2757,
+   "text": "Yeah, yeah, no, thanks. so yeah, basically this whole investigation kind of at a at a high level basically asks like you have these like LLM representations and you have the human representations and what like what property of their like representations align best? Is it the case that you can take like an LLM's hidden states and then you take some like small weird idiosyncratic like variance in these like LM embeddings? And are those the ones that explain human language responses best? Is that is a similarity between the two systems like, there's like something, but it's kind of small? Or is it the case that the that the main dimensions of variance that the LLM learns from just being exposed to natural text, are those also the big dimensions that align with those in the human brain?"
+  },
+  {
+   "t": 2808,
+   "text": "So that overarching like question kind of started there because we kind of didn't didn't know actually. And an extra convenient way of doing that analysis, which again like merge merges with the interpretability idea, is that there are different kinds of sparse autoencoders. So for instance, one is like the Matryoshka SAE, which basically has these like buckets of importance where like the first bucket is the one that is most important for like basically reconstructing the LM's hidden state. So those like the main dimensions of variance, and then there are like other buckets that are like less and less important. So like one way of thinking about is that they're like residual, right? And then you know, we wondered like if you try to match these like Matryoshka features with those in the human brain, is it the case that, on one hand it might be the case that the LM just maps only to like the more residual weird dimensions, or does it map to the primary dimensions?"
+  },
+  {
+   "t": 2867,
+   "text": "And that basically tells us like is the alignment driven by these like main like dimensions that the LLM also picks up on or not. And we found the latter. So it's actually the case that if you just look at you, you know, you let an model select which features are best for predicting these brain responses to language. And we do see that this model really picks up on the features that are the most like general high variance features. so how to interpret that, right? Like unlike a more methodological Mm-hmm. Level, it shows us that yes, you know, high variance signals are good for predicting brain responses. Great. But on a more like zoomed out level, right? It basically means that you can take an LLM and you can take a sparse autoencoder that was created by you know completely people with a completely different goal to only try to like reconstruct the LLM's hidden states."
+  },
+  {
+   "t": 2922,
+   "text": "Like, what has the LLM learned from being exposed to all this text out there in the world, right? And it's it's pretty fascinating that there are some features from just being exposed to all this text that you just take a couple of these features and that actually explains these language responses very well. So it means that both systems kind of pick up on some s like some extent of some similar like features about language. Like, and some of those features that we show in the paper are tied to actually abstractness. So is something about like a concrete thing or not? another feature is actually about like about how many subword tokens there is in like a in like a sentence. So that's like a frequency measure."
+  },
+  {
+   "t": 2968,
+   "text": "So some of these dimensions, both like the LLM is highly sensitive, but also the human brain. And and I just want to emphasize that these high variance dimensions that the LLM learns, you know, these like the first bucket in the Matryoshka, it's not like you can use them to explain like everywhere in the brain. It it doesn't work like anywhere. Because we have you like we in the paper we actually show that there are many regions that are, you know, that are very reliable brain regions, meaning that they have high signals, so they're like noisy brain regions or anything. But yet we can't use these like high variance Matryoshka features to explain them. So that does mean that there's some specificity to the finding that some areas in the human brain, mostly these like language areas, they basically really do can be predicted well from these like primary dimensions of LM representation."
+  },
+  {
+   "t": 3019,
+   "text": "And that's not true for just like anywhere in the brain."
+  },
+  {
+   "t": 3023,
+   "text": "I keep thinking about what does it actually mean to have a high quality representation, whether it is in human brain or in the LLM. Do you think that if we can align closely the representation of LLM with the representation of human brain, that means that they are good? If they do not align, maybe it's because one is better than another. Maybe it's just because it's not a good enough representation. How do you think about that? Yeah, this is a great question. And one way to think about it, and then I'll bring the caveat after, is that one way to think about is that there are two different systems that have learned some good quote unquote or like general purpose, useful features to represent language in."
+  },
+  {
+   "t": 3077,
+   "text": "And those features happen to be somewhat shared between the biological and artificial system. that's like I think the furthest that I would go. because I think a big problem in the field, and I hear I mean the field of like, you know, using like any deep neural network, especially maybe transformers in particular, to map to like these like human brain responses, like a big I think issue that we need to figure out is like the problem of commitment, quote unquote, which is basically like what do we actually mean? Like do we mean that like there's actually a part of the transformer that is like In the human brain, or not, you know, we obviously don't think that like the mechanisms or anything are shared. This is on like a pure representational level. But but I think that is like bugging me for sure is that the specificity of the claim is not very crisp."
+  },
+  {
+   "t": 3130,
+   "text": "It does tell you that there are statistics of language and ways of representing language that can be found in different systems, and that is very interesting. But the but I think we really need to push that endeavor much further. And and actually like some of the work that I'm I'm most excited about these days is like, I mean there are two different ways. Like one is like try to use different measures from an LLM. Don't just take the residual stream or like let's try to think about other components that we can like use in a more meaningful way. That's a very early stage. So maybe I'll just leave it at that. and then the other aspect is as I was alluding to in the beginning, is you know, the whole premise of an LLM. Like a transformer LLM is pretty weird. And what I mean here is that of course the transformer architecture is pretty unusual. There's like many like unusual, like non-biologically plausible operations there."
+  },
+  {
+   "t": 3185,
+   "text": "And another thing that's really weird is that they learn from text tokens. Like, of course, humans don't learn from these like subword BPE chunks, right? That's a very, very implausible starting point from language learning. So, in principle, like the whole LLM like enterprise in this way like rests on pretty shaky ground. That doesn't mean that the findings so far haven't been interesting. They've been very important to establish. But in order to move forward, we need to like ground these models in like at least ways we think could be slightly more biologically possible without imposing too many of these like say like text token constraints and also try to take measures from them that have like a stronger commitment to like what exactly we think is like mapping. and I think I think we'll like I'm an optimist, of course as a scientist you have be an optimist."
+  },
+  {
+   "t": 3234,
+   "text": "but I do hope that we can actually get closer. But it's it's taking time. It's it's not it's not simple."
+  },
+  {
+   "t": 3243,
+   "text": "It's definitely not a simple question and we definitely need to see people from all the disciplines that are related to intelligence in one way. Yeah. Yeah. And we have to yeah. challenges. It's a big interdisciplinary endeavor to figure these things out. but a very exciting one."
+  },
+  {
+   "t": 3263,
+   "text": "So Absolutely. Yeah, and we have just talked about that meaning"
+  },
+  {
+   "t": 3270,
+   "text": "in language and how it shows up in the brain in the moment, like as a snapshot, as a sentence is being processed. And I want to shift now to another angle on the meaning, what we remember afterwards."
+  },
+  {
+   "t": 3292,
+   "text": "Why in your opinion, and you have works on that topic, why in your opinion is memory a useful lens for figuring out how meaning is represented in the mind, comparing to, let's say, just asking people directly what the sentence means to them? Yeah, yeah, I see like another big interest of mine is the intersection between language and memory. And of course they're very intertwined, but sometimes hard to figure out exactly how. but the reason that memory can is an interesting thing to study, is that often, unless you're explicitly asked, you actually it's you don't really control what you remember, right? Like you have some ability to like some things just stick in memory and other things like don't."
+  },
+  {
+   "t": 3343,
+   "text": "Of course you can I'm not saying you can't like force yourself, I'm gonna remember my dad's birthday and then that's that's not what I'm like what I'm talking about right now. But the kinds of some kinds of memory processes are like pretty hard to like explicitly control and it basically gives you a window into like, well what is like the substrate or like what is a likely like representation that's being like used to say like retrieve information and in some of the work that i've done in that domain we've mostly done like a relatively like short term memory so maybe let me give you an example of the task so let's imagine that you know you're being exposed to a sentence like on a screen you're reading it and then like you have a small break a couple of seconds break and then another sentence shows up and another sentence and then your task is basically like Like to press a button each time you think that you have read the a sentence before, right? So there's some sentences are repeated and others are not."
+  },
+  {
+   "t": 3404,
+   "text": "~ Mm-hmm. so over like the course of say like forty minutes or like an hour, you're basically reading the sentences and you see like when you think you've been exposed to them before. and that basically provides us a window into like when do people actually recognize that they've correctly seen something before or not? Like when do you forget a thing? so that's been like Like a focus of I guess like two studies. Yeah, one on single words and one on actual sentences."
+  },
+  {
+   "t": 3434,
+   "text": "Right, and here again you have that distinction, or granularity distinction. Yeah, exactly. And and sorry, maybe yeah, exactly with the granularity, but the interesting thing is actually that on the work on words and the work on sentences, we actually find very converging evidence. And maybe let me say what that Interesting. is. Yeah. so one like prerequisite or like one finding also is that actually like when people read words or read sentences, like many different people, you know, just like say like a pool of five hundred or a thousand people. They're actually we are we are actually pretty consistent in which words or sentences we remember best. And like if you think about it, it's it's like a tiny bit unusual, maybe like a little bit unexpected, because we are being exposed to such different, you know, like linguistic like training data, right? Like linguistic history, and like we use language in such different ways and different languages and so on."
+  },
+  {
+   "t": 3488,
+   "text": "But despite that fact, there's actually like a surprising amount of correspondence that, you know, if I think pineapple If I always like remember and recognize that I've been exposed to pineapple, you're likely to do the same thing. So there's definitely something shared, which is which is pretty interesting. And that's the case with both words and sentences. And the other one shared finding from those two different levels of granularity is that when something kind of occupies a very particular part of the meaning space, it is memorable. And what I mean by that is. that in the word case, you know, for single words, if a single word, like actually the example that I just used, pineapple, pineapple has like no synonyms really, and it also doesn't really mean anything else, right? Like it's not like a polysemous word."
+  },
+  {
+   "t": 3538,
+   "text": "So that word, because it has a very like one-to-one mapping between form and meaning, is very memorable and it's like very easy for people to like highlight, I have definitely been exposed to this thing before. That's easy to remember. While a word like light, light can mean I feel light, you know, there's light outside, like, you know, that word has just many, many meanings and and their synonyms. you know, bright and so on, right? Those kinds of words are less memorable. so those are harder to like kind of like they don't provide like the same like trace as a word like pineapple. so that, you know, is one finding from the from our word studies, which basically says that If a word, you know, kind of occupies this like one-to-one mapping between form and meaning, it has like no synonyms and it's not polysimous, then it is memorable. And actually we've we found a quite a similar finding for sentences. That if a sentence has like a pretty special, unique meaning, it's also more memorable."
+  },
+  {
+   "t": 3599,
+   "text": "That's super interesting. Can you, for those who are listening right now and would love to read the papers in more detail, can you name those two papers? Yes, absolutely. One about words. Yeah, the first paper on words is I co-authored this with Kyle Mahowald. and it's what's the title is something with like words are remembered if they have a unique like correspondence with their meaning, something like that. And actually I misremember Mm-hmm. Mm-hmm. that, but the fact that I misremember that is actually pretty interesting because that also says that I got the gist right. That is approximately the title, but we don't often remember the exact right words."
+  },
+  {
+   "t": 3645,
+   "text": "And that's actually another funny from this work. Right, right, right. So I guess that's while like the sentence level paper is co-first authored with Thomas Clark and that one is called A Distinctive Meaning Makes a Sentence Memorable, I think."
+  },
+  {
+   "t": 3661,
+   "text": "Good, here you chose the better words, more memorable. Maybe the more memorable, yeah."
+  },
+  {
+   "t": 3669,
+   "text": "So what makes these sentences distinctive and more memorable? You gave that example for the word, can you give an example Mm-hmm. for a sentence as well? Yeah, yeah. So so one memorable sentence and obviously it's easy for me to remember because it's memorable, is olive oil works well for tanning, which is very unusual, right? You probably haven't heard exactly that sentence before. So that's like occupies a very particular space of meanings that you could convey. While another sentence like, maybe I will go outside or, you know. There's coffee on the table, something you've probably heard many times, right? It's gonna be less memorable. So that trace is gonna be somewhat more diffuse or there's more competition. of course, we don't know the mechanism underlying any of this because this is purely behavioral work. but it still provides like a window into like know what things that we as humans like easily or like not that easily have access to when we need to."
+  },
+  {
+   "t": 3734,
+   "text": "Kind of retrieve them later on. Do you have any intuition about how this memorability differs when it comes to short-term memory and longer-term memory? Which one you're speaking about when you say memorability? Yeah, that's great question. so in our paper, the experiments are at the course of like an hour. So it's not like complete, you know, short term memory. Mm-hmm. and also like wouldn't really be defined as long-term memory. Again, like I could actually remember one of these sentences like years after, but maybe that's because I we were writing the paper and we thought a lot about it. But but actually in that work we actually like partly argue that there's a little bit of more like a gradient. Between these two systems that might use similar mechanisms, that being short and long-term memory."
+  },
+  {
+   "t": 3783,
+   "text": "And of course, that's not to say that you know, short-term memory does not exist. Of course, there are like people have studied like short-term working memory for like many, many decades. And that's not to say that's not real, but there's also been proposals that maybe this like idea from like short to longer-term memory also can like form a gradient. And and so we kind of like don't put ourselves in either category would kind of view it as more like a continuum where some of the mechanisms might be shared."
+  },
+  {
+   "t": 3813,
+   "text": "Right. And if to come back to similarities and alignment between the brain and LLMs, what were your findings related to that alignment here with this work? And what I think specifically about"
+  },
+  {
+   "t": 3835,
+   "text": "is there are different sentence embeddings. right? And did you see any differences across them? Yeah, yeah. so yeah, as you mentioned, like in this work with the sentence with the sentence level memorability, we basically we're trying to understand, like, no, how can we quantify whether a sentence is memorable or not? and one way of doing that is basically to take these embedding spaces from an LM. So like one LM that we used is SBERT, which is you know, Sentence-BERT, which provides a sentence level representation for a sentence. ~ And and basically what we do there is for every single sentence, we measure the cosine similarity between that sentence and a large pool of like many thousands of sentences."
+  },
+  {
+   "t": 3885,
+   "text": "And like that basically provides you like just a scalar, just one number that is a measure. Of you know how similar is this one sentence to this distribution of like a ton of sentences out there? So, like, is a sentence kind of like in the corner of this like cosine LLM embedding space or not? And can we use that just like one scale or a measure to kind of see if we can use that as a predictor to explain these like human memorability measurements? and we found that we actually could. so the example that I just used, SBERT was the best model to provide these like distinctiveness measures in the meaning embedding space while some other models were actually pretty poor. so we tested some like earlier transformer models like that provide sentence level representations, I think like universal sentence encoder, and a and a few others, it basically tells us that a measure of this, like how su how distinctive something, in this case that something is a sentence, how distinctive that sentence is and some distributional big like LLM derived meaning space can be used to kind of like predict whether a human is gonna remember or forget a given sentence, but that's not true for any LLM."
+  },
+  {
+   "t": 3966,
+   "text": "~ now when I think about it, it's like, we should actually maybe follow up on that. Because it is a it's it is a pretty interesting thing, especially given that like I think that LLMs and memory is a is a big frontier. hopefully that, you know, solving like of course there's a different kind of memory, but still it gives an idea of like how things are organized in the LLM and whether that matches to humans. ~"
+  },
+  {
+   "t": 3989,
+   "text": "Right. Interesting that different sentence embeddings are performing differently and different LLMs"
+  },
+  {
+   "t": 4003,
+   "text": "may be impacted less strongly or more strongly depending on that embedding. What also interests me is you have... ~ talked about this work on words and on sentences, and there are certain similarities, you described them already. But sentence"
+  },
+  {
+   "t": 4032,
+   "text": "can be unique, not just in meaning, like a word, but also in syntax. There could be certain syntactic structures that make sentence"
+  },
+  {
+   "t": 4046,
+   "text": "more unusual than other sentences. Did you have any findings that are related to these specifics of sentences in your work? Yeah, yeah, yeah, yeah. we had a preliminary finding because yeah, as you say, the fact that like a sentence distinctiveness in a meaning space is like a good predictor, of course, doesn't preclude the option that a sentence syntax matters. And your intuition is right. We had like we tested a couple of different surprisal measures. Again, this idea of unpredictability, and specifically one measure that we had was This like probabilistic context-free grammar measure, which is basically like you could call it like a contextualized, like syntactic surprisal measure."
+  },
+  {
+   "t": 4097,
+   "text": "So basically, like about the structure of the sentence. And we did find that measure actually also had predictive power in explaining human memory judgments. so we have some preliminary evidence that something about the form of the sentence without being related to the meaning, right, can also be unusual. and that can be like a factor that matters for human judgments. The thing that is a little bit harder to, you know, more like rigorously conclude is basically these were all pretty short sentences and it's a bit limited the amount of like you know memorable syntactic constructions you can you can make when you have only six words. so I think another follow-up study would be needed to really like try to tease apart what are the basically different contributors of syntax or like processing difficulty and meaning in these like in in explaining these measurements."
+  },
+  {
+   "t": 4153,
+   "text": "Yeah. Right. Yeah, I'm looking forward to the potential follow-up project like Thank you."
+  },
+  {
+   "t": 4162,
+   "text": "that. Okay, amazing. We are coming closer to the end of our conversation. as we wrap up, Putting all this work together, what would be one question about language in brains and language in the LLMs, in machines, that you most want to be answered in the next several years. Yeah, there are quite a few. We just got for yeah, probably we won't be out of jobs for a while, Okay but maybe one that is like kind of maybe bringing some of the lines that we discussed today and also like my general research interest together and something that's I guess on my mind depending on which papers you're working on. one is about that, yeah, as you say, like, you know, we have some idea of these like language regions in the brain and we can start using like LLMs and particular fine grained ways to try to get at that and like run these behavioral experiments and study how people are similar and different."
+  },
+  {
+   "t": 4220,
+   "text": "But one big question is like in these like regions in the brain and like not just language regions, but more broadly, like, how do we say like the two of us just differ, right? Like we've been exposed to such different, like so many different things in our life. And that's both like linguistic, but of course also relates to like the memories that we have and have been pivotal in like constructing our like meaning representations, right? Like And and one question is like, well, how do individuals differ? I think that's a really like cool question, which is like we actually know pretty little about like from like person to person to person, like how we know that there are some things like shared in our brains for language processing, obviously, but more trying to ask the question of like what are the differences?"
+  },
+  {
+   "t": 4267,
+   "text": "Like, do I have some kind of like representations in my brain that know we can like try to find and interpret and understand and how do those differ from somebody else with like a different kind of like experience, upbringing and so forth. So trying to get at this idea of like how do like our linguistic representations and it also ties to like meaning more broadly and memory, how do those differ a across humans? I think is one exciting one and my intuition is that will need to combine, you know, like really, really like large scale, precise like neuroimaging efforts along with like modeling work, and like most likely also behavioral work. So I think that would be one exciting question."
+  },
+  {
+   "t": 4315,
+   "text": "You mentioned you have several. What would be another one? Another one, yeah, another one is I've been interested in trying to understand like a lot of that we talked about in this conversation is like a representation of the brain or a representations in the model, right? It's a very like static view in some sense, right? Like at this word or at this sentence, this thing like happens and so on. and be really interesting to like push that static view to a slightly more dynamic view in a sense that There are obviously transformations taking place, right? Like for instance, when you listen to me speaking right now, like there's a whole hierarchy of computations from like the lower level acoustic process to like figuring out what the words are and so on. And with some of the modeling work that we've done recently, I I hope that we can start like isolating at least some of these transformations."
+  },
+  {
+   "t": 4367,
+   "text": "And then of course, like a very ambitious goal would be to map those on to actually what happens in the human brain at high resolution."
+  },
+  {
+   "t": 4375,
+   "text": "Super interesting. And imagine you do know the answers to those questions. What do you think would these answers change in life of people? It would give us a window into our own minds, right? For instance, the first question about like understanding individualized linguistic and meaning representations, it's like it's really understanding how we as humans are similar and how we differ and gives a window into yourself and the people around you. and for the latter, I think that is more related to like actual trying to get at like This links back to like the brain LLM stuff, also like trying to get at the algorithms or like at least the transformations that take place in a human mind while you process a signal."
+  },
+  {
+   "t": 4427,
+   "text": "You know, in some sense, like I know that we use a lot of like jargon and I mean I also probably like use a lot of weird words, but like ultimately boils down to like you get a sp you get a waveform, pressure waves in the air, and you make that into like meaning in your brain, right? Like, so like getting an understanding of that in the human mind, like what exactly that is, is like, yeah, but he's gonna say how we do what we do. And and I think that is also like important for AI. I know that everything is currently about like you know scaling and so on, but at some point like there's still many things that AI systems don't do amazingly well, right? And and some of those things are actually I think tied to perception. So I think many like AI systems like actually often like struggle with like messy perceptual signals."
+  },
+  {
+   "t": 4479,
+   "text": "Like if there is like a ton of like background noise, like if s like accents are weird, like you know, some of these like perceptual things that humans are very good at picking up on and just immediately adapting to. I think LLMs have struggled with way more. So the problem of high level perception and trying to understand some of these processes in the human brain might give us like some interesting insights for also like other fields."
+  },
+  {
+   "t": 4504,
+   "text": "I would love to live in the world where these questions are answered and people understand themselves better and we have better I definitely think it was a great conversation. I enjoyed it so much. Thank you for that Greta. I'm very Me too glad you joined me today. Absolutely, my pleasure. Yeah, really enjoyed it too. Thank you so much."
+  },
+  {
+   "t": 4532,
+   "text": "Thank you for being here with me on YouTube and Thank you for sharing this with the researchers from your network, who you know need to see this episode. And one more thing. It's a goal of mine that fifty percent of people who watch this channel are subscribers. I know you love listening to our incredible guests who are all experts and the great AI researchers. So one thing you can do for me just hit subscribe. It tells me that you really love what I'm doing here and it helps support me in bringing you new guests, new videos and new conversations with the incredible women doing amazing research in AI. And I know that right now you think, all right, What's the next video I should watch?"
+  },
+  {
+   "t": 4586,
+   "text": "Great question. I think you should check this one and that one. I think you're gonna love it. And I'll be waiting for you in the next episode. I'll see you there."
+  }
+ ]
+}

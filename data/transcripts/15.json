@@ -1,0 +1,367 @@
+{
+ "episode": 15,
+ "videoId": "PQx4IvJR8Bg",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "If a language model gives the right answer, does that mean it understands? Neuroscience suggests the answer might be no. Welcome to the Women in AI Research podcast, the show about remarkable contributions of female AI researchers around the globe. I'm your host, I'm Jekaterina, and I'm sharing the mic today with my co-host, Malikeh."
+  },
+  {
+   "t": 28,
+   "text": "Our guest today is Maria Ryskina, and the reason I am especially excited about this conversation is that her work sits right at the heart of some of the hardest questions in AI right now. What it means for models to represent meaning. and how we should evaluate what they actually know. Maria earned her PhD from the Language Technologies Institute at Carnegie Mellon University, where her dissertation focused on computational models of non-standard language use and the evolution of language norms. Then she held a postdoctoral position at MIT. where she brought together cognitive neuroscience and AI to study how conceptual meaning is represented in the human brain and in language models."
+  },
+  {
+   "t": 78,
+   "text": "Work that challenges many of our assumptions about understanding language and thought. Today, Maria is a CIFAR AI Safety postdoctoral fellow at the Vector Institute, where she works on interdisciplinary approaches to AI alignment with a particular focus on improving normative reasoning in language models. Beyond her research, Maria is also a core organizer at Queer in AI, helping build global community and advocacy for LGBTQ plus researchers in artificial intelligence. something we talk about in this episode. And on a more personal note, Maria and I share more than just research interests. We also serve together on the board of the Toronto ACM-W professional chapter, which advocates for women in computing and AI."
+  },
+  {
+   "t": 134,
+   "text": "In today's conversation, we talk about brain language model alignment, conceptual representations, why language and thought may be fundamentally different and what neuroscience can and cannot teach us about evaluating AI systems. Stick around until the end where Maria connects neuroscience and AI alignment explains why meaning in language models might matter more than we think. Let's dive in."
+  },
+  {
+   "t": 162,
+   "text": "Maria, welcome to the podcast. Thank you very much for having me. Maria, I first of all want to acknowledge that we share with you more than just academic interests. Both you, myself and Malikeh, we all served on the board of the Toronto ACM-W professional chapter together. And for those who does not know about the ACM or their professional chapters, ACM is the world's biggest organization in computing and ACM-W is the women in computing sub-quarter of this organization."
+  },
+  {
+   "t": 214,
+   "text": "Both ACM and ACM-W have chapters across the world, both professional chapters and student chapters. And one of such chapters is here in Toronto. It's the ACM-W professional chapter that we have founded quite recently together with Malikeh and Maria. So Maria, can you give us your perspective on your role, on the role of the professional chapters like that, the chapters that advocate for women in... computing in the IT and in AI and support other underrepresented groups."
+  },
+  {
+   "t": 262,
+   "text": "First of all, just wanted to say thank you to both of you for inviting me to serve on the board for this chapter. It's a very exciting initiative and it's great to be bringing specifically, I believe, the first professional chapter to Canada and the first Toronto area chapter as well. It's really a new step in my life as well because I moved here pretty recently. And it's a great networking opportunity for me as well as supporting others. And I think generally a big part of such organizations and generally other affinity groups from my past experiences with other organizing is community building. And I think this chapter being local is a very big difference from any other kind of organizing that I've done before, because it's usually organizations that are distributed all over the world, which is great because you get a great diversity of perspectives, but you don't really, you become friends with those people and you don't really see them anywhere besides, you know, a few conferences a year at best."
+  },
+  {
+   "t": 331,
+   "text": "But here we would actually have a chapter of people who can, who can meet and who can build a community and, you know, who can share professional advice and mentorship, which I personally could definitely use. And in contrast to student chapters that tend to rotate as new students come in, previous students graduate, and especially in the academic community, people kind of move around a lot for school, for jobs. There's not really that much continuity, which I think a professional chapter would really have. it's really big advantage of having such a local, stable community."
+  },
+  {
+   "t": 381,
+   "text": "And finally, another big difference is that it's serving a community of women at a different stage in their career. Because I think a lot of the outreach in other affinity groups is aimed at primarily at junior students or recent graduates. And it's mentoring people on things like, how do you get into a PhD program? Or how do you get your first job? And, you know, once you're past that stage, it's kind of assumed that you have everything figured out. And I, at least from, for me personally, I cannot say that. So I could absolutely use more mentorship and support from other women in the field who are more knowledgeable, who are more experienced and who can help me advocate for myself at the workplace."
+  },
+  {
+   "t": 428,
+   "text": "So I'm very excited to be part of our chapter. Maria, you're also a core organizer at Queer in AI, which does some very important work building community and advocating for LGBTQ+ people in artificial intelligence. And this is as much as I know, this is the organization which is not local. is one of those that is operating across the world. Can you tell me and the rest of our audience a bit about this organization and why it is important."
+  },
+  {
+   "t": 469,
+   "text": "Absolutely. I will try to keep it brief because I, know, Queer and AI does a lot of wonderful things and I can talk about that for a very long time. But it has been founded, I believe it started from a meetup at NeurIPS, I think in 2016. And my friend William Agnew, who co-founded this organization, he has said before, as of other..."
+  },
+  {
+   "t": 497,
+   "text": "members of our group that, you know, it has been a, for a lot of people, it has been the reason they have not quit AI research, because there was so little representation, there were so few queer people around, there were so few role models. And a lot of people have also expressed that they felt uncomfortable at conferences, because, you know, conferences are stressful and general for more junior people especially, and for people from marginalized groups who are severely underrepresented, I think this is a big problem of not having a space where you feel included. So community building is one of those big pillars of queer and AI."
+  },
+  {
+   "t": 542,
+   "text": "And we organize events at various conferences. But as I said, I wish we could... all meet together more frequently and it wasn't as distributed as it is now because a lot of those people are my close friends and I don't really, some of them I have never met in person at all. And there's a lot of other initiatives that are very important, I think. One direction is policy work. So specifically, you know, publishing reports on how our organization believes AI development should proceed specifically from the queer people's perspective."
+  },
+  {
+   "t": 589,
+   "text": "I'm less involved in that, but if you're interested, I suggest you check out the Queer in AI website and the policy section to learn more about that. And another thing is..."
+  },
+  {
+   "t": 606,
+   "text": "mentorship in general, but again, it's kind of targeting more junior students. And we have programs that help people apply to graduate school that help career students, especially apply to graduate schools in AI and in all other areas of STEM, because we believe that representation at, you know, the research and development stage is crucial for us to create technologies that are not as harmful to the queer community as the ones that we have now."
+  },
+  {
+   "t": 640,
+   "text": "Interesting. Speaking of representation, your research focuses on understanding how computational systems and humans represent meaning and knowledge. As someone who's thought about both representation in the technical sense and representation in the community sense, do these two meanings of representation ever intersect in your thinking? I think that's a great question. And I personally see a very direct connection there. I think that often it's people who have the particularly lived experience who even, they might be the only people who it might occur to even ask certain questions about how the model internally represents their experiences and identities."
+  },
+  {
+   "t": 690,
+   "text": "And one example of such work is this groundbreaking study by Timnit Gebru and Joy Buolamwini, who was the lead author, called Gender Shades, where they've shown specifically that the gender recognition systems do not work as well for darker skinned people. the group that they make the most mistakes on are Black women. And I think without Black women, in the field and Timnit Gebru is one of the co-founders of Black in AI specifically, which was also inspired by her own experience with attending conferences and just not seeing enough Black researchers in the AI space."
+  },
+  {
+   "t": 737,
+   "text": "I think without Black women doing this kind of research, we would not have known this. And the same goes for the queer community, great example of recent research on this, I think, is the work led by Eddie Ungless, where they've queried various image generation models, asking them to generate images of people with diverse gender identities. And they found that you know, non cisgender people are often portrayed as either in a very stereotyped way or a very sexualized way. And that is again, a question that the, you know, cisgender people might not even think of asking."
+  },
+  {
+   "t": 788,
+   "text": "And I think this is why we need people of that belong to various marginalized communities, both at the research stage for this kind of auditing work and at the development stage. So that before these models go to production, it occurs to people to test for how usable those models are for those communities. Yeah, that's a great point and I like how you emphasize and highlight the importance of diversity in the research and what are the immediate consequences that can happen if you don't do that, if you don't have that diversity. as we already spoke several times during our interviews at this podcast."
+  },
+  {
+   "t": 838,
+   "text": "Diversity is not only about gender diversity, about other marginalized groups. It's also about the diversity of fields, fields of research within AI."
+  },
+  {
+   "t": 857,
+   "text": "And your work sits exactly at the intersection of both. AI and the cognitive neuroscience, which is the intersection that is very interesting for me personally. And that was one of the reasons I invited you to this podcast also to speak about that intersection. Could you first of all, tell what initially drew you into this interdisciplinary space and the How has your perspective on the relationship between artificial and natural biological intelligence evolved through your research?"
+  },
+  {
+   "t": 903,
+   "text": "I wanted to first say that I have worked on a lot of different things, kind of. I have done interdisciplinary work that touches on a lot of different fields throughout my career. And I still work on the intersection of neuroscience and AI, but my primary project is now on something else. But it was something, it was kind of the primary direction of my research for a while, you know. before I came here to Toronto and joined the Vector Institute."
+  },
+  {
+   "t": 936,
+   "text": "And the primary reason I got into this is because during my PhD, while I was working primarily on NLP and computational linguistics, the more I was working on those models, and this was pre-large language models, and the field didn't exactly look the same as it does now, but... The more I was working on the more kind of engineering side of things, the more I was becoming interested in people and why people use language a certain way and why people behave a certain way and why, you know, people come up with all those creative uses of language that our models now have to deal with. And I wanted to specifically, after I finished my PhD, to work in the cognitive space for a while and learn more about that side of research and learn more about why people do the things they do and why people reason a certain way."
+  },
+  {
+   "t": 996,
+   "text": "And I think I learned a lot, not just about people, but also about artificial intelligence, which kind of stems from the same origins as well in the historical sense."
+  },
+  {
+   "t": 1014,
+   "text": "I think a big takeaway for me from my time working on this was how many parallels there are in evaluating human intelligence, biological intelligence, and artificial intelligence, and how many methods and tools we have in those brain and behavioral spaces that can be directly applied to, for example, today's large language models. And I think this is a growing intersection, and there are really interesting insights that I think are useful for the AI field in general. Yeah, that's fascinating. Now let's talk about your paper, Language Models Align with Brain Regions that Represent Concepts Across Modalities."
+  },
+  {
+   "t": 1062,
+   "text": "First of all, I have to highlight that this paper was a spotlight at that COLM 2025. Congrats, Maria."
+  },
+  {
+   "t": 1071,
+   "text": "Could you walk us through what motivated this approach and what your key findings say about how language models might internally represent conceptual meaning? Thank you very much. And absolutely, I'm happy to talk about it. I think we were inspired by generally conceptual representations being a big open question in neuroscience. it's kind of, we wanted to look at how language models represent those concepts, but we don't really even know how the brain represents those concepts. And of course there's prior work, but There isn't a universal agreement on where exactly the conceptual knowledge is processed and how to disentangle it from other types of capabilities."
+  },
+  {
+   "t": 1124,
+   "text": "And also, there is a line of research that shows that targets conceptual processing in language models. And there some really interesting results that show that models learn various types of cross-modal knowledge even from text only. And we wanted to use kind of the brain perspective to analyze that. Because existing work on alignment between language models and brains usually focuses on existing brain networks that have known functions and purposes, like for example the language networks, if you're looking at textual stimuli or the visual cortex, if you're looking at visual stimuli, and we wanted to target a different kind of cross-modal representation that isn't tied to a particular modality."
+  },
+  {
+   "t": 1177,
+   "text": "So the short summary is that we leveraged a particular data set that our lab already had, where people were presented with representations of different concepts in different forms as a text, as an image, as a word cloud. And we were using this cross-modal nature of the dataset to figure out which brain areas have consistent concept preferences. So which brain areas light up for specific concepts, regardless of which format they're shown in. And then we looked at how well do language models align with those particular areas. And we found significant alignment for all of them, which suggests that there is some cross-model knowledge that these models are learning, even if they are trained on text only."
+  },
+  {
+   "t": 1231,
+   "text": "Right. What you have summarized now is like a lot of that is about that semantic consistency and you have specifically the concept of semantic consistency and semantic consistency metric that is measuring specifically how consistently a brain region responds to the same concept across different modalities across sentences, word clouds, and images."
+  },
+  {
+   "t": 1265,
+   "text": "Was there anything that surprised you when you mapped these semantically consistent regions and they compared them to traditional language network areas? I think I personally, to me, everything was a discovery, especially because I don't come from a neuroscience background. And a lot of this was kind of a learning experience for me. We did find that these models, these, sorry, brain areas either overlap with where in most people the language network is found or they border the language network areas. And some components of this plausibly concept processing regions are also in areas that are implicated in visual processing, more higher level visual processing."
+  },
+  {
+   "t": 1319,
+   "text": "And I thought that was very interesting because we are seeing the... kind of we are seeing both modalities involved even though we have language in all of our experimental stimuli. I guess for someone with experience in the field, this is not as surprising because a lot of those areas have already been shown to be engaged in kind of conceptual semantic processing in prior work that has used different methods. there are some areas that we did not find that prior work has found. Would you say that it means that modality as it is represented in human brains, modalities are not that clearly structured as we do them."
+  },
+  {
+   "t": 1377,
+   "text": "Language, vision, it's not necessarily very different modalities for human brains."
+  },
+  {
+   "t": 1384,
+   "text": "I think modalities are hard to disentangle. there is, as far as I understand from my time spent with neuroscientists, there is a spectrum of opinions where some say, you know, nothing is ever, it's not possible to disentangle anything and everything is everywhere. And I'm more on the, on the side that says, There is like the language network exists and the visual cortex exists and they have this very clearly dissociable processing mechanisms that are targeting a specific modality. But it's also true that we have in the same brain area, a lot of different things might be going on."
+  },
+  {
+   "t": 1430,
+   "text": "And some of them might be modality specific and some of them might be more general. And I think that is kind of the interesting part, figuring that out. And the paper shows that models predict brain activity better in regions with high semantic consistency, even when those regions show weak language responses. So what does this tell us about what language models are actually learning? I think cautiously without like overstating this, I think this does tell us that, you know, even models that are trained on text can predict brain activity in those more visual regions as long as they are more concept targeting and not just doing the visual processing. So I think the models are inferring some kind of cross model knowledge."
+  },
+  {
+   "t": 1477,
+   "text": "And maybe to some people, this would seem trivial. because we have all this previous empirical work from the computer science side specifically that shows, for example, that text-only models can learn relationships between things like colors, even though they don't have a vision component. But I think the evidence from neuroscience is an important and complementary thread of work in here that also provides, confirms these findings, but from a different angle. Right, that's very interesting. if we, to speak about the conceptual representations, your research seems to probe the question, what does it mean for a system, whether it's a biological or artificial system to truly represent meaning?"
+  },
+  {
+   "t": 1536,
+   "text": "How do you think about the relationship between linguistic and conceptual knowledge, both in brains and in artificial models. This is maybe not going to be the most exciting answer, but really we don't know. There's so much we don't know. And this is a huge open question in linguistics, in psychology, in philosophy, in neuroscience. And there's generations of scholars that have been debating over this. And the more I study this, the more I understand how little I personally know and how little agreement there is in the field when it comes to such complicated behavioral and neural questions."
+  },
+  {
+   "t": 1582,
+   "text": "And especially as someone who comes from a computer science background, I feel like now in the field of AI, we just talk more and more about understanding and reasoning and all those are such loaded terms. we aren't necessarily exposed enough to all the scholarship in all these adjacent fields that should be informing how we're approaching these extremely complicated matters when we speculate about what models know or what models understand. And something that was, for me personally, a big discovery was something that I learned working in Ev Fedorenko's lab, which is that there is very compelling evidence that language is distinct from thought."
+  },
+  {
+   "t": 1640,
+   "text": "So that language evolved for communication and not for thought. you know, F. Fedorenko has a lot of interesting papers about it. And specifically on the AI side, Kyle Mochovald and Anya Ivanova have published a paper about dissociating language and thought in large language models. And I think that is a very, that is a must read. for anyone who is interested in models and understanding and knowledge."
+  },
+  {
+   "t": 1672,
+   "text": "I will add these to my bucket list of papers to read for sure. Just yesterday I saw the post from Jan Le Coombe where he claims that language is not... the thought is not the prerequisite for language. It's not necessarily..."
+  },
+  {
+   "t": 1700,
+   "text": "You do not need language to think, but you need to think in order to use language. And it somehow resonates with what you said just now, I guess. Yeah, I had no idea that this was such a rich field. And there was such a so much exploration happening of the question of the relationship between language and thought. And honestly, this is completely on me because this is not this was just not a field I was familiar with. And I think it's great that AI, you know, AI researchers are discovering more and more of the scholarship. Amazing. In your column paper, you also evaluated both language only and vision language models. Were there meaningful differences in how multimodal models align with these semantically consistent brain regions?"
+  },
+  {
+   "t": 1751,
+   "text": "Not really, which is, I thought was counterintuitive. I would have assumed that models that I trade on both modalities would have better cross-model representations. we did have evidence from text-only models learning something about the visual world from prior work. And we also have more recent evidence that these vision language models that take in where it's basically the same language model that takes in the image representation as a part of its input that they underuse their visual representations."
+  },
+  {
+   "t": 1796,
+   "text": "And I think this is kind of what we found is kind of in line with that, the text only models and the vision and text models are remarkably similar. The only thing that we found that was different was that for the visual language models, if we measure alignment using all of the available data, which included images and text-based stimuli, the alignment goes up as compared to only using the text-based stimuli. But that also could be due to just, you know, we're giving it more data. So... I'm hesitant to draw any conclusions from that."
+  },
+  {
+   "t": 1840,
+   "text": "Let's move to another paper of yours, the Pachel paper that is on EWoK. Am I pronouncing that right? Yeah, EWoK Elements of World Knowledge. And in this work, you take a slightly different but complementary approach to understanding conceptual representations. So you target specific cognitive concepts across 11 domains from social interaction to spatial interaction. Can you tell us a little bit more about this work? How would you summarize that? I want to first say that this was quite a big group project. You can see from the list of authors, there was a lot of people working on this."
+  },
+  {
+   "t": 1887,
+   "text": "And I was not the lead author of the project. The project was led by my brilliant colleagues, Anna Ivanova, who is currently a professor at Georgia Tech, Aalok Sathe, who is a student at Brown, and Ben Lipkin, who is a student at MIT. And maybe by the time the podcast airs, he will have already defended his thesis. You know, fingers crossed. But this was a really fun collaborative project to work on. it has this very principled design where we tried to disentangle different aspects of this conceptual understanding. So the dataset is constructed from several building blocks and I guess not even a dataset, a framework."
+  },
+  {
+   "t": 1936,
+   "text": "And primarily these are concepts and templates. So we have a set of concepts that correspond to these different domains, social, physical, material, and templates where you can plug these concepts in, in various ways and kind of substitute them to really test all the possible kind of combinatorial scenarios with these concepts. You know, it's like, If something is on the left of you and you turn right, where is it now versus you can do the same with something is on the right of you, something is in front of you and so on. And it really allows for a more comprehensive testing of whether the model understands these concepts."
+  },
+  {
+   "t": 1984,
+   "text": "And it's not really just paying attention to some kind of specific surface level statistics or memorizing, you know, specific patterns from its training data."
+  },
+  {
+   "t": 1994,
+   "text": "We also had the spare target design where, know, it's like, if you turn right is whatever the object is now on the right or on the left of you, where one of these things is plausible and one of them is implausible. And the plausibility, think, also, first of all, it kind of reduces the space of hypothesis for the model. And it's also a good way of evaluating if the model really can keep track of the kind of can apply these concepts to the actual scenarios."
+  },
+  {
+   "t": 2033,
+   "text": "I hope that makes sense. Yeah, that totally makes sense. So do I understand you correctly that you kind of designed those elements instead of analyzing and evaluating the whole complex scenario in order to divide and conquer basically, so that you could use those smaller elements as the tool to evaluate whatever scenario you care about. There is really for, know, a lot of the benchmarks follow this kind of more complex and richer naturalistic setup, which obviously has its pros."
+  },
+  {
+   "t": 2085,
+   "text": "you know, there's a reason people want to evaluate models in a more, in a richer setting, closer to where we're going to deploy those models. But when a model fails on something in this very naturalistic rich scenario, it's very hard to say, what exactly caused the model to fail. While in this extremely controlled and very kind of interchangeable design, we can track specifically which building block it is that is causing the failure. And this also lends itself to this kind of more mechanistic interpretability research where you go inside the model and look specifically at in this very controlled setting, which part of the model is responsible for an activation of a particular skill or lack of skill."
+  },
+  {
+   "t": 2141,
+   "text": "These days we hear a lot about world models, actually. A couple of weeks ago, Dreamer 4 was out by Google DeepMind team. then, like, I don't know if you've heard, but Yann LeCun is also working on his own startup with physics AI, like physics-informed AI and world labs startup by Fei-Fei Li, so super focused on the spatial world knowledge. So. A lot of focus on like this world models for better modeling the world knowledge. In the paper, you found that social knowledge domains were easier for language models to learn that physical and like spatial knowledge. What do you think text-based training produces this asymmetry? What does it say about like learning world models from language alone?"
+  },
+  {
+   "t": 2190,
+   "text": "I don't think we have a kind of clear cut answer as to why the social debate is easier than the physical and spatial knowledge. I have several hypotheses here and one is the reporting bias that we just don't necessarily talk as much about the physical properties of objects."
+  },
+  {
+   "t": 2219,
+   "text": "If you have a circular, if you have a cylindrical object on an incline, it is going to roll and it's not going to slide, those kinds of things, we don't discuss them as much because they are intuitive to us a lot of the time as we do social relationships. And it's also that those things are just harder to verbalize. I think linguistically describing these physical properties and interactions. is just harder when the..."
+  },
+  {
+   "t": 2252,
+   "text": "The behaviors of the objects themselves might be very intuitive to us, but the terms that we use to talk about them can be very complicated. I remember from working on the physical component, the concepts related to the physical interaction domain in EWoK, that it was really hard for us to come up with come up with words that would not, you know, sound too physics-y for the annotators because we didn't want to, you know, ask question about, you know, things oscillating or whatever. We wanted something that is like clear and intuitive. And it wasn't, it wasn't necessarily easy to verbalize. So I could see, you know, even young children being able to answer questions about, you know, what kind of behavior you expect from your friend versus your enemy."
+  },
+  {
+   "t": 2304,
+   "text": "but not necessarily these really wordy questions about objects on inclined planes or something like that. Right, and not that they care too much probably as well about this subject. But they would, I mean, they would have the intuitive knowledge because there's all this research with babies where you show them things that violate the intuitive physics and you see that the baby kind of is more surprised and their gaze lingers on what they consider to be an implausible scenario. So they have a pretty firm grasp on things like this already. They just might not necessarily be able to express it verbally this way. Which brings us back to that idea that thinking is not directly connected to language."
+  },
+  {
+   "t": 2356,
+   "text": "yeah, as there is a lot of research, right, is stating that language evolved for communication, for social communication in first place, Yeah, very interesting."
+  },
+  {
+   "t": 2374,
+   "text": "Back to the EWoK paper, can you tell us about the minimal pair design that you use in this work and how does this design help you disentangle real conceptual understanding from the just surface level statistical patterns that models can explore? I think we already touched on that quite a bit when we talked about the elements, but the reason we used minimal pairs was basically the same because we wanted to see, we wanted a very controlled way to evaluate these capabilities and models and to really disentangle the ability to use those concepts from memorizing specific contexts and memorizing specific facts from the training data."
+  },
+  {
+   "t": 2425,
+   "text": "The minimal pairs design comes from linguistics and I think it's a very effective way to kind of, you make one very small change somewhere in your sentence, in your word, in your stimulus, and you keep everything else the same. And this allows you to really see the effect of this one small change in a very controlled way."
+  },
+  {
+   "t": 2455,
+   "text": "I think a lot of those designs came from, again, research on children who are not necessarily, when you show them something, a sentence that doesn't make sense or something that is ungrammatical, they might not be able to articulate that, you know, this is wrong because a certain rule is violated. They might not know the rule. But when they are comparing an ungrammatical version of a sentence with a grammatical one, they will easily be, they can easily tell you that this is the right way to say it and this is not the right way to say it. And I think this is a very interesting way of testing capabilities that the NLP community has embraced and has been using for a while now."
+  },
+  {
+   "t": 2505,
+   "text": "How about that idea that the whole is not a sum of the parts? I think it's, mean, there is no doubt that this is true. And it's true that we can only get so far by evaluating individual parts, but also it is science. We have to have some kind of control over the experimental settings. If we want to say in any, with any kind of certainty that yes, this is what is happening. This is the capability that is getting recruited or is a particular thing that the models can do. Unfortunately, you will always have this trade-off between how naturalistic the scenario is and how controlled the evaluation is."
+  },
+  {
+   "t": 2557,
+   "text": "Speaking of evaluation as someone who develops evaluation frameworks, you're essentially asking how do we know what models know? This seems increasingly critical as models become more capable. What do you see as the biggest challenges in evaluation design? I think evaluation of models has been, it has always been a very big and challenging part of AI research. And you've had a lot of brilliant guests on your podcasts already talking about it, like, you know, Dieuwke Hupkes or Abhilasha Ravichander or Ana Marasović. And they all have probably much more nuanced takes on this than anything I can offer here. But I think. As an example of a general evaluation issue that I think is timeless and it is very important now and it was always very important."
+  },
+  {
+   "t": 2613,
+   "text": "It's how do we even know that we're asking the right questions, that we're asking the model, that the capabilities we are testing are what we want to be testing and that what we design. is actually targeting those, the benchmarks that we design are actually targeting those capabilities and not something else."
+  },
+  {
+   "t": 2635,
+   "text": "From my personal experience, I think after learning a lot about what these various brain networks do and what the parallels are between these AI models and the various brain networks, I think that is our knowledge of what different modules of the brain can and cannot do can be used to inform our understanding of how to benchmark these models. And this is something that is also discussed in the paper by Kyle Bokhovald and Anya Ivanova that I mentioned earlier. And a different version of the answer that is more specific to the current time is I think a big challenge is the prevalence of closed source models now."
+  },
+  {
+   "t": 2685,
+   "text": "because I think that evaluating, using model internals to evaluate their capabilities has become more important than ever because not everything can be gleaned from behavior, just like in humans, we don't just do behavioral science, we do neuroscience as well. And with not having access to"
+  },
+  {
+   "t": 2713,
+   "text": "the internals of these models or not even knowing exactly what data they were trained on is limiting our abilities to understand their capabilities and their knowledge. And I think figuring out how to evaluate models under these restrictions is pretty hard. Right, that makes total sense."
+  },
+  {
+   "t": 2735,
+   "text": "Evaluation is a hard challenge. No easy solutions here for sure. In your EWoK work, you found that even large models perform substantially below humans, with the performance also varying. drastically across different domains. Do you think this gap across domains can be closed with the just scale, scale of size of the models? And I know it's a big ongoing debate right now, but the scaling is all we need or not. So I wonder what's your take on that."
+  },
+  {
+   "t": 2782,
+   "text": "don't feel like scale is necessarily going to solve conceptual and world knowledge problems that EWoK is highlighting in these models. But again, EWoK is a very big project done by a very big group of researchers. So other people who I collaborated with on the EWoK might have different opinions on this. This is just what I think. Although I think most of the people I encountered in the cognitive science space do tend to be skeptical of just scaling and not really scaling over more thoughtful design choices. But it's also true that scale has solved a lot of problems that I personally did not expect it to solve."
+  },
+  {
+   "t": 2833,
+   "text": "So I have been wrong about these models before and it's possible I will turn out to be wrong again. I'm excited to find out. Give us an example of where you were wrong previously. I think even back in the AlexNet days, when we had this big breakthrough in image classification that finally showed that these neural models can be remarkably good at vision tasks, and they became kind of the go-to standard. I remember that there was like... There was all this conversation about, you know, or deep learning is hitting a wall because, know, you have this leopard print couch and the model thinks it's a leopard and not a couch because it's paying too much attention to these, like the little patterns and it's not seeing the big shape under that."
+  },
+  {
+   "t": 2890,
+   "text": "And now that's, now that's obviously not a problem. The vision models have come so far. And I was convinced that, you know, if the model is not able to reason about the shapes, the objects, then it's not going to get us far. And I was wrong. It did. It did not hit a wall at least that time. the AI field is full of surprises, I would say. It's really hard to figure out where it's going to go. Let's see, time will show. I think that's the only thing that we can know for sure. Yeah, for sure. Actually, speaking of evaluation, you also showed that log probability evaluation consistently outperforms prompt-based evaluation, even for large instruction-tuned models."
+  },
+  {
+   "t": 2941,
+   "text": "What do you think this is the case? And what should this mean for how we evaluate models going forward? This is not itself a new finding. This is something that Jennifer Hu's work has shown previously that you can prompting based strategies actually might show lower performance than directly looking at log probabilities. And if you see a model performing poorly on, for example, a syntactic task, where you ask it to output an answer, it might not necessarily be evidence that the model is lacking the knowledge of syntax, because if you just test it a different way, you might be able to find that it's there."
+  },
+  {
+   "t": 2995,
+   "text": "And I think... Jennifer Hu and Michael Frank framed this very elegantly in their COLM 2024 paper, which received an outstanding paper award, where they talked about it in terms of task demands. And they basically said that the more you ask the model to do, the harder it is the task becomes for the model. And again, if the model fails, you don't necessarily know if it's what stage it failed on. So it's possible that it's failing in the auxiliary task demands rather than in the actual knowledge that you're trying to probe."
+  },
+  {
+   "t": 3042,
+   "text": "And one parallel they draw is, again, in research on children, where sometimes, especially in pre-verbal infants, you can"
+  },
+  {
+   "t": 3056,
+   "text": "you can find that they have the knowledge, but if you ask them to articulate it, if you ask them to produce an answer, they cannot. It's not a sign of them not having the knowledge. You just have to find other ways to test for it."
+  },
+  {
+   "t": 3075,
+   "text": "And following up on this thought of yours, how much do you think in general artificial intelligence, those language models that we have, how much they should be informed by human intelligence or even a broader natural animal intelligence? And how... or how different they should be? I think this is a great question. That is, again, I think about a lot and I don't even for myself don't have a conclusive answer. I think when I started in general working on AI and especially when I joined this more cognitive neuroscience circle of researchers, I felt that AI does need to be in some ways inspired by the human brain and it has to be brain-like to succeed."
+  },
+  {
+   "t": 3140,
+   "text": "it's true that even, there is a reason that the deep learning models are called neural networks and they are in a very, maybe small way, but they are biologically inspired and there is validity to that. But also there is always people who question the necessity of this biological inspiration with the usual counter argument being, know, airplanes don't flip their wings, flap their wings when they fly. So we don't necessarily, to fly you don't have to be exactly like a bird, which is also true."
+  },
+  {
+   "t": 3189,
+   "text": "And I feel like my opinion on the necessity of the models being brain inspired changed a little bit. I feel like it's not necessary to try to recreate the brain in AI research, but the brain is a great model, especially in terms of efficiency. There is a reason that the brain evolved to be a certain way, that certain modular structure emerged in the brain. maybe we can treat it at least as an example of a very efficient system that could teach us something about how to make AI systems more efficient. And I think the point that you made last about the natural intelligence in general is also very important."
+  },
+  {
+   "t": 3242,
+   "text": "And I've seen really interesting work calling for using what we know from animal intelligence studies from non-human animals applying those insights to AI evaluations as well. And I think that is a very underexplored direction that I would be excited to see continued. Right. think Sara Hooker is now opening the startup with the co-founders, which is all about that idea, idea of looking at the natural intelligence of animals."
+  },
+  {
+   "t": 3286,
+   "text": "yeah, let's see how it goes and what kind of research we get from that. I'm excited about that as well. So Maria, going back to your work on human brain and looking across both of the two papers that we have discussed today, both of your papers, one with the COLM and another one published at TACL, one probing brain alignment, the other evaluating conceptual knowledge, what common threads do you see that would inform the understanding of meaning in AI systems?"
+  },
+  {
+   "t": 3333,
+   "text": "Are there any insights from one line of work that would inform the other or the other way round? I think one, you know, they are obviously approaching the same question just from different angles. And it is, do what kind of conceptual knowledge do these models capture? And in case of EWoK, how can they use it? And it's just more, I think in case of EWoK, it is tested in a more behavioral way. So it's more, can they apply this knowledge correctly? versus does it exist in the models in the same way that it exists in the brain in my other paper? And I think those are really complimentary approaches."
+  },
+  {
+   "t": 3379,
+   "text": "think just as how scientists study the human brain and mind as, you know, two separate ways to figure out where certain capabilities of the brain and mind come from. where certain behaviors come from. think it's really worth continuing both of those and treating the results as complementary. Your work on EWoK uses cognition inspired designs, selecting domains processed by dedicated neural machinery in humans. How much should cognitive science and neuroscience guide our evaluation of development of AI systems? We touched on this a bit, but I'm curious, what are the limits of this inspiration in particular?"
+  },
+  {
+   "t": 3429,
+   "text": "I think, just like I said, the design of models does not necessarily have to be, the models don't necessarily have to aspire to imitate the human or animal brain, just like airplanes don't aspire to imitate birds. I think there are limits to the evaluation side of things as well. I think there are a lot of capabilities that natural intelligences will have that we should not expect from artificial intelligence, especially ones that are related to embodiment. And I don't necessarily think that we should penalize the model for not having this type of capability, at least while it's in this disembodied state."
+  },
+  {
+   "t": 3477,
+   "text": "Let's wrap up and I want to ask this last question. I know that your research focus right now has shifted"
+  },
+  {
+   "t": 3489,
+   "text": "slightly from that neuroscience and AI intersection towards AI alignment. And even though it looks like those two topics are not directly connected, but I think there is a connection here as well. And my question would be, as nowadays, the AI systems are increasingly deployed in various domains."
+  },
+  {
+   "t": 3525,
+   "text": "given that, what role do you think this kind of fundamental research, like understanding what models know and how they represent the actual meaning, what role it plays in ensuring responsible and effective AI application? I think this is a great question and it's something that I think about a lot these days. Something that really resonated with me was a talk by John Hood that I attended recently where he said that interpretability is alignment but with higher stakes. that's kind of, because it's, if alignment is about making models better at certain desirable things or, you know, suppressing undesirable behaviors and models, then interpretability is similar, but we are subscribing to a very specific understanding of where those behaviors originate."
+  },
+  {
+   "t": 3591,
+   "text": "And we are looking inside the model to find exactly where that happens. I don't entirely agree with everything that"
+  },
+  {
+   "t": 3602,
+   "text": "that he said in the stock, I think there's still a big, I think the fundamental research that is not just to make the models better, but just to understand what the models are doing still has its place. just like we do for humans, where we're just trying to understand the neural mechanisms of certain behaviors and certain types of reasoning, I think this is still an important line of research to continue. But it's also true that now I work with a pretty different crowd of people. I don't, my primary lab includes, you know, lawyers and economists and not necessarily neuroscientists."
+  },
+  {
+   "t": 3648,
+   "text": "And they have a different perspective on what we want to know about the models than a neuroscientist would. or a mechanistic interpretability researcher would. And this is something I started thinking about, especially after watching an episode of your podcast where your guest was Ana Marasović. And she talked about faithfulness and the importance of understanding the model's reasoning that it used to come to a decision. in my lab, some of my colleagues actually specifically postulate that this is not necessarily something an end user would care about."
+  },
+  {
+   "t": 3696,
+   "text": "We don't, know, we want a particular, if a particular decision affects you, we want it to be justifiable and we don't necessarily care. We want the justification. We don't necessarily care about full transparency into the reasoning process of the person who arrived at this decision. And there is all this research in, for example, legal scholarship that shows that sometimes the judge in expressing their opinion will not exactly follow the internal line of reasoning that they use to arrive at this opinion. And that's OK as long as they can justify their opinion beyond kind of others being able to poke holes in it and point out that, no, this is not, this is not a good enough justification."
+  },
+  {
+   "t": 3749,
+   "text": "So I think the explainability has different definitions of explainability have very different applications. And it really depends on what kind of alignment you want to work on and in what way you want the systems to work better and who you want them to. like whose interests you are protecting in this kind of research and this kind of intervention. Right. Maria, thank you so much for joining us today. It was an amazing conversation. Thank you very much for having me. It was great to share my research and thank you for the very insightful questions."
+  },
+  {
+   "t": 3797,
+   "text": "Yeah, thank you, Maria. It's really great that great researchers like you listen to our podcast, give us feedback. Thank you so much for supporting us And thank you to our listeners as well for tuning into the Women in AI Research podcast. You can find more information about Maria's research and publications in the episode description. So definitely check that out. And we will see you in three weeks with another deep dive with the women researchers pushing the boundaries of AI. See you then. Bye."
+  }
+ ]
+}

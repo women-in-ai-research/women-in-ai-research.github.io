@@ -1,0 +1,463 @@
+{
+ "episode": 11,
+ "videoId": "xYb6uokKKOo",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "welcome to the Women in AI Research podcast, the show about remarkable contributions of female AI researchers around the globe. I'm your host, Jekaterina and I'm sharing the mic today with my co-host, Malikeh. Did you know that the explainability techniques that you are relying on might actually be making human-AI teams worse than AI alone? Today we are diving deep into some of the uncomfortable truths about AI trustworthiness with our guest, Ana Marasovic. I wanted to talk to her because she's not only doing cutting edge research on explainability and trustworthy AI, but she also has this great way of making complex ideas practical and useful."
+  },
+  {
+   "t": 49,
+   "text": "Ana is an Assistant Professor at the University of Utah. She has taught courses on generative AI, and mechanistic interpretability. She has mentored students at Women in NLP. She's recognized for her outstanding service at ACL. And she even hosted the NLP Highlights podcast, which in my opinion was one of the best podcasts about NLP, although it is not active at the moment. But back to Ana, she's worked and studied in different places like Croatia, Germany, and now she's in the US. She received funding from places like Google and the AI2, and my favorite, she shares an amazing collection of resources on her website."
+  },
+  {
+   "t": 97,
+   "text": "Everything from how to pick a good research problem to tips on work-life balance. In our conversation, Ana shares very interesting insights about model failures, practical advice on building reliable systems, and honest guidance for AI researchers at all stages. Stick around until the end of the episode: Ana will explain a problem with the chain-of-thought traces that you'd want to hear about before you trust them in your work. Thank you for joining us today, Ana. Thank you for inviting me. I'm looking forward to this conversation. Great. So before we dive into the research, I'd love to start with something slightly more personal."
+  },
+  {
+   "t": 140,
+   "text": "I have already mentioned that you have collected quite a range of various awards from best papers to best reviewer to the rising star title. So if you think about these rewards not as achievements, but as reminders, which one reminds you most about why you do research in the first place? Yeah, that's a fun question. I think I would definitely isolate the paper awards, mostly not because they're boards themselves, but rather it reminds me of these collaborations, which were all super fun collaborations. I could say friends now. But what stand out for every one of the award winning paper that I have participated in is that it wasn't an obvious way of how to address the research question we were trying to address, or the research question itself wasn't super obvious."
+  },
+  {
+   "t": 197,
+   "text": "And it was really, really messy. that's kind of why I, and then I think a lot of young people, why we enter research, because you want to work on something that's a little bit more challenging, a little bit more out there. The answers aren't obvious, and every project can differ because the question itself is changing. So anecdotally, for every single one of these papers, except maybe one, I think we kind of gave up on the paper as well in the meantime. It's just funny to see that these papers that are now celebrated, they almost didn't happen. And I know from other people who have won their best paper awards that they had similar stories. It just reminds me of how messy research is."
+  },
+  {
+   "t": 243,
+   "text": "And at times that's the hardest part of doing research, right, because there is no guarantee it's going to work out. But many times that's exactly why we do research - to find these not so obvious answers. Nice, such a nice story. I like it. It's not only about the messiness of the research but about meeting people and remembering those collaborations. Amazing. Yeah, I totally agree. I've heard that from someone like you, who has more experience,that you have to be more patient with all the failures and all the back and forth to get to something and it's"
+  },
+  {
+   "t": 281,
+   "text": "not just all done in a second. Which is fantastic, thanks for the insights. And as Jekaterina said, you've built such an impressive academic portfolio, balancing roles as a senior researcher, teaching multiple advanced NLP courses, serving on hiring committees, organizing panels and workshops, mentoring graduate students, and even hosting the NLP Highlight podcast. Given such a wide range of responsibilities, what's something you wish more people understood about the realities of academic research life? I think when you lay everything like that, it's kind of clear how much multitasking a researcher does. And I'm not sure that's generally clear to public because when I say, when people ask me what you do and if they are not in academia, say, I'm a professor at the U and they're like - okay, you teach. And you know, we continue talking about teaching and my impression is that they think I generally just teach, which is a completely reasonable assumption."
+  },
+  {
+   "t": 345,
+   "text": "And one I was making as an undergrad student was - why are my teachers so bad at teaching? This is their only job. And then I became a professor. I was like - yeah, I get it. I get why my teachers weren't fully focused on teaching. So yeah, when you're late like that, it's clear there is a lot of multitasking, but that's not what people know. I think it might be unclear to students, why aren't we the best teachers or best researchers? A lot of public, I think, maybe think... Not a lot of, some portion of the public, I think, also perceives academia as something glamorous because that's how it's portrayed in Hollywood, while the reality is really not that glamorous, right?"
+  },
+  {
+   "t": 392,
+   "text": "It's a lot of unfortunately overworked people who, before they get some tenure track and even non-tenure track position, they're striving to get this. But we don't even know what we are getting into. It's not an easy, nice thing that happens when you're on a tenure track. I wish there is a perspective that it's not a glamorous position. When we compare academia to industry, I also find it weird, as if AI industry can exist without academia. Because who is going to teach all these new people, new folks how to do AI, right? And I think, from my experience, because I work on cutting-edge stuff, I bring that into my teaching and that seems to resonate with students and I can see them becoming also better researchers."
+  },
+  {
+   "t": 446,
+   "text": "So I think you do need to have academics working on cutting edge stuff to produce new academics, who could then go into industry and support all the stuff we are seeing. So I also wish that perspective is not just one or the other because it's not a zero sum game. And of course now in current political climate, I wish people understand scientists just trying to truth and objective truth and evidence for stuff and that there isn't some kind of agenda going on. Right. Thanks for this perspective. What resonates with me the most is probably that AI industry would not exist without academic AI research and the academia in general."
+  },
+  {
+   "t": 497,
+   "text": "And the other way around probably as well. And also following up on the question of multitasking."
+  },
+  {
+   "t": 506,
+   "text": "oh There is the need in academia, I believe, to balance between the research interests and the more pragmatic side, the need to find funding to publish. align with the community trends. So how do you deal with that? How do you find that balance? Yeah, that's a great question. I should remind everyone who is listening that I'm just starting my fourth year as a professor. So I definitely don't have a full handle of this and I'm definitely still learning. you're right. There is, like everyone said, you can do in academia anything you want."
+  },
+  {
+   "t": 553,
+   "text": "And that's true. But if you are working in a computer science department, most likely you are. mentoring students and they are doing the heavy lifting of implementing stuff, which means that you need to raise money to support those students to actually execute and realize ideas you have. So if you would like to work on the stuff you actually want to work on, that means you need money that is supporting those ideas. And in reality, that's not trivial to achieve. So a lot of us write way more proposals than they actually get funded. And honestly, at this point of my career, it might change later, but I have no idea which ones are going to get funded and which ones won't."
+  },
+  {
+   "t": 600,
+   "text": "It's such an unpredictable game for me. And a lot of proposals we write is in collaboration with other people who maybe they work in a special domain and they're like, all right, you work on explainability, how about we bring this? angle to this application domain and although I care about maybe explainability maybe I'm not so passionate about that application domain and then I get funded there and then I'm like kind of working on what I want but also you know so I'm being a little bit sidetracked in a way. So yeah right now I'm just trying to not get lured into every single proposal. As a person who works on LLMs, can imagine that because now LLMs, there's so many application areas, I get asked quite a lot of, would you like to collaborate on this?"
+  },
+  {
+   "t": 649,
+   "text": "And it's, I think, important to be smart about which proposals you are actually writing and trying to maximize the ones where you would be actually very excited to do the work. But money is money. So you have to also be... in part of proposals that might not be super obvious how they align exactly with what you want to work on. So it's really hard and it's kind of interesting that no one ever teaches us any of this stuff like, you know, accounting and dealing with these kind of tactics of how to go about proposal writing, which I don't want to make it sound as I'm suggesting we should teach and have graduate students do proposal writing because it sidetracks you from doing research."
+  },
+  {
+   "t": 700,
+   "text": "And honestly, when I look back at my job market and my job search, the most important thing was my research. Like that was the most important thing to be really good at. so any time spent on proposal writing takes away from research. So I wouldn't necessarily recommend that you now have students write proposals, but it is interesting how much Completely new stuff you need to learn once you once you're on a tender track. Yeah"
+  },
+  {
+   "t": 733,
+   "text": "Now, I'm interested in diving into your research more deeply. We want to explore the central question of when and how much can we trust algorithms. And you've approached this from multiple fascinating angles. Let's start with explainability. When we talk about trusting AI systems, there seems to be an implicit assumption that understanding how they work is necessary for appropriate trust. But your research focuses on supporting human decision-making. Do you think we need to understand AI systems to trust them appropriately or other pathways to trust for the AI? Yeah, there are multiple pathways and this kind of relates in part of the paper where we try to formalize what human trust in AI even means because it was such a commonly stated statement."
+  },
+  {
+   "t": 785,
+   "text": "We are introducing explainability because it can help gain trust in AI and Alan Yakovic, is the first author of that paper, he was like, does this even mean? And now I'm like, this is a complete digression, but I'm asking similar question right now for you will see like mechanistic implementability. can help us understand how models generalize and it has similar flavor of what does this exactly mean. But going back to your question, in that paper we have basically defined two kinds of trust, what we call intrinsic trust and what we call extrinsic trust. And intrinsic trust is something more associated with what explainability folks mentioned where you claim people will gain trust in the system if you show how the system reasons about the problem and if that reasoning is matching what people think is acceptable reasoning, then they may gain what you call intrinsic trust in this trustworthy system."
+  },
+  {
+   "t": 853,
+   "text": "And this is, we kind of made an analogy with, it is similar if you are going to, if you are trusting the doctor who has who cites respectable studies and you do know there are respectable studies and that kind of matches your expectation of what's trustworthy. But the extrinsic trust on the other hand, you don't need to have this any kind of explainability mechanism. This is kind of trust you gain when your system is consistently behaving well against evaluation that you find to be trustworthy. And this is similar to... a doctor that you trust because they have had a long history of making correct diagnosis. So here, if we had an evaluation scheme that we trust, then I'm sure we'll talk about like, what are the evaluation schemes we should be trusting?"
+  },
+  {
+   "t": 904,
+   "text": "It's a difficult question. But if we had that and if our AI system is consistently behaving well against that evaluation, then we would gain the trust in its behavior despite you know, not knowing exactly the reasons for which it makes predictions."
+  },
+  {
+   "t": 922,
+   "text": "That's an interesting perspective."
+  },
+  {
+   "t": 925,
+   "text": "think that currently most explainability research optimises either for technical metrics or human evaluation studies. And your work emphasises the real world. like decision making, human AI decision making. Can you explain a little bit how in your view, how that connects to those concepts of intrinsic and extrinsic trust, first of all? And then, what's, why you think it is important to move away from those maybe lab settings, more control of app settings into how actual practitioners are making decisions."
+  },
+  {
+   "t": 972,
+   "text": "Yeah, so I'll just kind of explain this anecdotally that basically when I started my postdoc in 2019, I started to work more on the explainability and then. by the time I was on a job market like 2021, there was a real cloud around explainability and interpretability in terms of do we have any evidence that any of this is helpful to anyone? And it's a question I was asked and it's a real question and I couldn't easily say yes or no. But I kind of at that point made it clear for myself that I am in this line of work and I don't know the answer to this question and I really want to see whether there is any actual benefit and be very open to the idea that there might not be a benefit."
+  },
+  {
+   "t": 1029,
+   "text": "There is a paper that besides in our findings of MNLP 2024 paper that shows that if you have insights from these proxy evaluations or evaluations that are not application grounded, but they still involve people, you may find something and then with same people and similar set up, run it into real application grounded evaluation and find that your insights completely changed. So you can't claim that what we find with these non-application grounded evaluations is aligning with what we would find in real world. So that's where the shift came from me and that's why I'm like working on a more application grounded evaluations."
+  },
+  {
+   "t": 1071,
+   "text": "Yeah, very interesting."
+  },
+  {
+   "t": 1072,
+   "text": "think the paper you mentioned is that the Unevaluating Explanation Utility Humanity. Yeah, that was actually my next question. As I wanted to ask you could first give us a brief overview of what this work is about and what you to investigate in particular. Yeah, so it kind of started with this, you know, like goal that I just mentioned of seeing how explanations are work in application ground and human centered evaluations. And we wanted to specifically focus on MLP because that's my research home. And as we started to think about, what kind of evaluations could we do here? Then my student Fatemeh and I realized that actually it's really hard to even define an experimental setup here."
+  },
+  {
+   "t": 1123,
+   "text": "Specifically, there are so many datasets out there. So you would need to choose a dataset and a task and then build a model around it and then have some person interact with that model in some way and then show whether relative to them interacting differently with this model you get benefits or not. That's what you want to show. But choosing the data set and the task wasn't so trivial. I have worked with my collaborator, Sarah, in another paper collecting various data sets that have been proposed for studying explainability in NLP and we have gathered 50 or more such data sets. And then my student, Fatim, and I were looking into these data sets and we were trying to see whether there will be a good choice for us to work with."
+  },
+  {
+   "t": 1175,
+   "text": "And that led us to then define criteria for what makes data set a task in NLP appropriate for studying application grounded evaluation of explanations. And I should mention that means measuring metrics such as whether your participants in your study are appropriately relying on AI, whether their accuracy when they are happen, they have AI assistance improves and things like that. And we set those criteria, then we checked how many of these data sets are actually suitable, and we found that only a tiny fraction of them are actually suitable. And then we selected one of them and did some studies for that task. so that tiny fraction is actually, if I remember that correctly, is just four out of 50 datasets, right?"
+  },
+  {
+   "t": 1228,
+   "text": "Which is a really small number. I should mention that we did introduce a criterion which is not crucial for studying reliance and human AI teams. more data sets survive, but there are still not so many for studying just over reliance. But this last criterion that we stated is basically we should focus on tasks where there is some risk involved. things where if you build an AI system, then person who is entering this collaboration with that system is actually aware that some hazard might happen when they interact with this system. then only then, and this is what we state in our formalizing human trust in AI paper, we say, only when there is a presence of risk, you can study trust because you can't study trust because trust occurs when you assume there is a risk and you basically are saying, well, all right, I deem this entity to be trustworthy enough for me to expect that it won't hurt me, right?"
+  },
+  {
+   "t": 1301,
+   "text": "And this is basically, this is the trust. This is what we are feeling when we trust in another person. or an AI system. So we said, okay, let's introduce another criterion, which means that there should be some risk involved and only then four of these datasets actually are suitable for studying both reliance and trust. Interesting."
+  },
+  {
+   "t": 1329,
+   "text": "What do you think about this work of yours? What does it reveal about the gap between the academic research, academic data sets, academic benchmarks and practical applications? Yeah, I mean, I don't think there is some deep truth here than what we all know that there is a mismatch right between setups we investigate and setups that actually are deployed in the real world. But I'll say that I feel like now with LLMs, because they have opened so many applications for, of NLP to many people that evaluations are when they're focused and un-write, they are way more connected to the real world than what we have seen ever before, right?"
+  },
+  {
+   "t": 1376,
+   "text": "Like now if you go to an NLP conference, there will be a whole section of AI assisted writing, and then there are collaborations with actual companies and like, I don't know, I'll just mention like someone like Grammarly and you can feel it's more real than oh ever before. So yeah, there is a... Of course, a mismatch between setups we define because you need to narrow things down to actually make the study feasible. But more and more things are becoming more realistic, I would say. Yeah, I feel like just low hanging fruits are done in NLP and now we are doing more involved kind of evaluations. Very interesting."
+  },
+  {
+   "t": 1420,
+   "text": "So in particular, I think we mentioned it in previous conversations, but your studies with legal experts revealed some counterintuitive patterns."
+  },
+  {
+   "t": 1430,
+   "text": "Human AI teams often performed worse than AI alone, and experts were hesitant to rely on correct... So what does this tell us about how DOM and experts interact with AI explanations and how should this change our approach to designing explainable systems actually? Yeah. Well, it's a great that we have this podcast format because I can tell you all the like in between lines explicitly, you know, that you can just slightly hint in the paper. So I think at the end, basically, we kind of are trying to formally say what I will say now. But basically, I think a lot of these unintuitive human AI team behaviors in our particular setup where you have legal professionals who are actually good at their job, if you just let them be, if you give them like a task to do and pay them and give them time to finish it, they will do it well."
+  },
+  {
+   "t": 1484,
+   "text": "So here, basically, we are introducing AI assistance to more or less speed them up while not losing any of their accuracy and confidence in their decisions. So anytime we are trying to team up experts in some domain with AI assistance, I think we mostly just can then improve their speed rather than their accuracy because they are very often good at their jobs. When we do this human AI team setups that are super common, this is not specific to our paper, this is human AI team setup that most paper are investigating, which is to show people some problem. In our case, that was some statement, a legal statement that had to be verified in the context of some contract that can be pages long."
+  },
+  {
+   "t": 1536,
+   "text": "So it's not trivial to do and some help would be potentially useful. You show people that statement, you show them the contract, and then you show them what some AI system predicts the truthfulness of that statement could be given that contract. You also then in another setup can show models explanation for why the model predicts that decision. An idea is that when you contrast the no explanation set up with the explanation set up, if explanation set up is beneficial, then either the human accuracy on verifying the statement should improve, or it should be the same, but they should be faster, or you should see some benefits, right?"
+  },
+  {
+   "t": 1585,
+   "text": "And to me, now after we did all of that, it's really strange assumption to... make to expect that you will basically you will speed people if they basically check what AI is doing and they know whether they should go with its decision. But at the same time you don't want these people to over rely on AI. So they need to engage with this problem just a little bit. They need to form some opinion because otherwise they're just going to rely on AI's prediction. So in reality then You want them to engage with the problem just enough to have some informed opinion. But not long enough that AI assistance is not beneficial because then they're spending too much time on the problem and you know they can do the task well."
+  },
+  {
+   "t": 1639,
+   "text": "So basically, it's a delicate line we are trying to achieve by showing them these AI predictions in this way. And I honestly think this setup is a... isn't so meaningful to me anymore, although so many of us have tried it. And this is why in the paper we are proposing other ways we could have human AI teams, such as building automatic deferrals where you have another model that is learning when your AI is typically could be wrong or correct, and then the first any cases where there is doubt whether this AI system can do it to people. And we have shown in the paper that kind of deferral is really hard to do because we use reasonable ideas and strong models but still couldn't achieve good deferral."
+  },
+  {
+   "t": 1689,
+   "text": "But if we just assume deferral is perfect, we saw how better the team's accuracy could be. So I believe that's a very interesting way to go about things. Also outside of that paper, my student Nate is working on another way of, you know, improving human accuracy. And this one can be useful for laypeople where you are automatically finding error types that your model makes. And you make some kind of onboarding protocol and teach people, hey, this is the kind of problems you shouldn't be using AI for. And then you check later whether your people can recognize the cases of those types that you thought that they should not be using AI for, which is another, I think, more meaningful setup to go about human AI teams rather than just showing people the prediction and hoping they will do everything right, which honestly, I no longer believe it's feasible."
+  },
+  {
+   "t": 1755,
+   "text": "Yeah, that's interesting."
+  },
+  {
+   "t": 1756,
+   "text": "And to me, it sounds that it may be not that much of on the problem of AI and human teams necessarily as more or less the problem of any collaboration, but among people only, or people and AI or people and some other technology. It's It's about finding that subtle balance between how much to rely on the other part. Yeah, and I think if you, but if you start from this setting where that achieving that balance is extremely hard, then I think that's not the best setup to then it's, it's basically like there is a first step of deciding how to like, what's the configuration of your AI and, people, right."
+  },
+  {
+   "t": 1804,
+   "text": "And then if that step is done in a way that makes everything else harder later. that's not a good configuration and that's kind of where I see this, I have my human just see the prediction and the explanation and now they need to make sense of everything, be fast, not lose their confidence and not lose their accuracy while being an expert in their field, which yeah, I don't know. After doing this study seems really hard to achieve. Interesting. Can you say what's the work of your student that you mentioned right now? What's the name of that paper if it's published? it's not the paper yet. It is currently under the review, so I should probably not say its full title."
+  },
+  {
+   "t": 1851,
+   "text": "But yeah, check in like a month and hopefully it's going to be at least on the archive. But I will mention some related work"
+  },
+  {
+   "t": 1860,
+   "text": "it's called Effective Humanized Teams via Learned Natural Language Rules and Onboarding."
+  },
+  {
+   "t": 1866,
+   "text": "This is Neurobe's 2023 paper that basically had executed this idea of, you know, teaching people, finding errors automatically, teaching them that people then checking whether people's accuracy improves. and they have shown improvements for vision tasks and they have not shown performance for textual tasks. And basically in our work, which we'll hope to release very soon, is we are looking into why it's the case that this idea, which seems reasonable, doesn't work for textual tasks. And that kind of led us to a deep exploration of every stage of this pipeline where In every stage, something could go wrong. And for instance, in this NeurIPS work, their final measurement is whether the accuracy of a person improves."
+  },
+  {
+   "t": 1920,
+   "text": "But we say that your person potentially totally understood what you were teaching them during onboarding. They understand the problems for which they shouldn't be using AI. But then if later, you ask them, solve this problem, and they don't know how to solve them themselves, which is often the case for these MMLU kinds of problems. They're like knowledge problem. I don't know most of them. Then if you're forced to make a decision at the end and you have no idea what the answer is, well, your best guess is then to just say what AI has said. So in our paper, we say, well, how about changing then the downstream metric to be, can your person recognize? whether they should be using AI for this prompt or not."
+  },
+  {
+   "t": 1966,
+   "text": "So they should understand, this prompt is kind of related to that error types, like addition of integers, let's say, and I shouldn't be using AI for that. I'm going to say, no, this is kind of a problem. I shouldn't be using AI for. You want to see whether they succeeded in that. And then we should see that actually if you change that downstream metric, We do see improvements from onboarding, but we don't see them if the final metric is accuracy. So yeah, there is still a lot of work to be done just to kind of set up how to set up these human AI team studies in a way we can appropriately study the benefits of things like explanations. Very interesting."
+  },
+  {
+   "t": 2012,
+   "text": "I agree, very interesting, I think. Following our discussion, one of my favorite tracks of NeurIPS is the position track. like this year, reviewing a lot of papers and they're like most of them were talking about the specific applications of AI, whether it should be like trusted in that specific application or not. And there were one particular paper, which was really interesting to me was about like bi-directional human AI alignment. And I think that's a very nice like perspective, because I think we are entering a very critical era in AI ecosystem and it's very much like the industrial revolution time. And there are two types of applications of AI, non-AI experts using AI for day-to-day tasks and AI experts using AI for day-to-day tasks."
+  },
+  {
+   "t": 2066,
+   "text": "the thing is, like... When we talked about multitasking, think all of us now have one more task on our list to educate non-AI experts at what the limitations are. And unfortunately, like we usually talk internally with like AI people and it's good to show that when and how to trust them and like increase the like general awareness. People that hey, these are the limitations. very to me it's interesting how intuitive is to a lay person where AI doesn't work. for us, we all know that. arithmetic and math in general isn't something that LLMs are amazing at, right? And it's kind of common knowledge amongst us."
+  },
+  {
+   "t": 2113,
+   "text": "So it's really interesting for me, you know, how intuitive to lay people these types of errors elements are making is, and that's why I think it has to be done automatically because, you know, as LLMs change, these unintuitive... insights also are going to change. But it's really hard. Like I can tell you that finding automatically the error types is hard and it's even harder to evaluate it because you don't have ground truth, right? Like you don't what the errors are. So it makes it really hard to frame it as our typical machine learning project, Awesome, that's great."
+  },
+  {
+   "t": 2153,
+   "text": "Fantastic. now let's shift to another aspect of trance, is very interesting to me, reasoning traces. Change prompting has been celebrated as a window into LLM reasoning, but you've studied whether these traces actually reflect internal computations or not. Someone who works on faithfulness, what's your perspective on the reliability of these reasoning chains? Should researchers and practitioners actually trust them? Yeah, since you just talked about how, you know, experts are like people have different, you know, insights into what works and doesn't. This is almost like the similar analogy, but like expert AI experts and then slice of AI experts, slice of AI experts who works on faithfulness of reasoning traces know that they are not necessarily fateful."
+  },
+  {
+   "t": 2207,
+   "text": "And I am surprised that the larger AI community has now started to talk about traces as they are fateful and that we can now quickly go into things like monitoring LLM behavior by looking at these traces as they are the, you know, the kind of truthful reflection of what the model is exactly doing. So It's interesting that there is this mismatch between people like me working on a faithfulness of traces and the broader community. But yeah, I mean, it's a fact that they're not necessarily faithful. It's hard to say for me this with the utmost certainty because we don't, again, have ground truth for faithfulness either, right?"
+  },
+  {
+   "t": 2255,
+   "text": "That would mean that I can only certainly say whether the trace is faithful and whether my metric of faithfulness is correct if I knew exactly what the model is doing under the hub. And if I knew exactly what the model is doing, then the interpretability is solved, right? And we can all go home and not do anything. So again, there is good evidence that they aren't faithful from different perspectives. We have different faithfulness measurements. They are saying that chain of thoughts are unfaithful with different rates because these methods differ and we don't know exactly which one of these methods is the one that's the most correct because we don't have the ground truth. But there is sufficient evidence to say that you can't assume traces are faithful."
+  },
+  {
+   "t": 2305,
+   "text": "Just a quick follow up question. How do you define freedom in itself? Yeah, that's a great question. would point everyone to read, again, Alon Jacovi and Yoav Goldberg's work on defining the faithfulness. But in general, think people would say something along the lines that a chain of thought step is fateful if it is associated with the underlying computations of the model, which is kind of vague, but would mean that For instance, you generate the step and then maybe now that we have things like sparse feature circuits, you can find features and edges between these features that are connected nicely to that step. I don't know, maybe if we have something like five divided by four, maybe you have a node for number five, node for number four, and node which is associated with dividing relation and then if you have connections between these nodes, that little subgraph, it is connected to the step."
+  },
+  {
+   "t": 2369,
+   "text": "So if you have that connection, then you would then be able to say that the step is faithfully reflecting what's going on under the I see, interesting."
+  },
+  {
+   "t": 2380,
+   "text": "Let's maybe dive a little bit into the question of reasoning capabilities of language models in general, whether it is about reasoning traces or not. So there is an implicit assumption that as models get larger and more capable, the reasoning becomes more reliable and trustworthy as well. the other hand, there is a bit of work about the capabilities of language models that are becoming worse when the language model size increases. So for example, a couple of years ago, there was that inverse scaling contest where the people were competing on finding the tasks that move into that opposite direction than usual where fast performance gets worse as the size of the language model increases."
+  },
+  {
+   "t": 2442,
+   "text": "So you are one of those people that challenges the assumption of the reasoning capability being increased together with the size of the model. Can you tell a little bit about like how do you think about the relationship between model scale, capability and faithfulness of reasoning? Yeah, so here maybe the only thing I can offer is a reflection on our paper by again Nate and Oliver where we have looked into the paper by anthropic folks that have used their measure of faithfulness which basically checks when you prompt a model without a chain of thoughts just to get the right answer and then you prompt it to also produce a chain of thought whether the answer changes or not."
+  },
+  {
+   "t": 2493,
+   "text": "And they say, well, if the answer didn't change, then the chain of thought didn't make enough influence on the answer. So they deemed the chain of thought to be unfaithful, which is a notion of faithfulness I don't really agree with. And some other people don't too. There is a paper by Letitia and my PhD advisor Anette on how this is more something like self-consistency. So I welcome you to check that. out but assuming that's a measure of faithfulness what I then showed is that if you plot their faithfulness and on i-axis and x-axis you have various sizes of models in a number of parameters they basically found with their metric very high of faithfulness for very small models and then it was decreasing to model size of I think 13 billion and then it started to increase again which suggested that very small and very large models are producing chain of thoughts that are more unfaithful to the models underlying computation."
+  },
+  {
+   "t": 2555,
+   "text": "And that already to me was a little bit suspicious because very, very rarely we see such nice regularity in ML research, right? So seeing that really 13 billion is that magical number where everything seems to be great just didn't seem right to me. So we did a little further inspection and basically we tweaked their measurement just slightly so by accounting for how often a model would change its answer if we just shuffle the order of answer options. And I should have mentioned this was all done for multiple choice question answering. Because we know that models, especially smaller models exhibit position bias, right? So. they don't know what the answer could be, they just maybe pick the first option."
+  },
+  {
+   "t": 2604,
+   "text": "So when you do that, the unfaithfulness of very small model decreases notably, and then you basically get something which is mostly increasing, which suggests that at least the smaller models aren't that, you know, their chain of thoughts aren't so unfaithful as it might seem. mean, their chain of thoughts are just rubbish. it kind of checks out and it also shows that there isn't that magical number. But also to me, just seeing that graph that were unfaithful as increasing also didn't seem intuitive because if you have played with ChatGPT, which I assume you have and everyone listening this, you know that the kind of explanations you're getting are very plausible, right?"
+  },
+  {
+   "t": 2654,
+   "text": "And we know that there is no relation between plausibility and faithfulness. These concepts are not necessarily aligned. But it just seemed a little bit too strange to me that with scale, I believe the plausibility increases. We don't have that plot. I'm just anecdotally telling that. And then you have, OK, unfaithfulness is also increasing, which would mean that as the models get larger, they are because their unfaithfulness is higher too, they are then with higher rates using something else than disposable reasoning and at the same time being better performing. So basically they are fitting some shortcuts and still behave much better and most does."
+  },
+  {
+   "t": 2700,
+   "text": "It just doesn't seem intuitive to me. And then we did this correlation with accuracy and we did see that more accurate your mother, more... seemingly unfaithful its generations are. So I still find that to be not then something I would be comfortable saying that the larger the model is that more unfaithful its chain of thoughts are. And this is just anecdotally from my own intuition. But then this also said that this new line of work with Martin Tuteck who led the work on first attempt of trying to measure faithfulness of chain of thoughts with the way we don't do these behavioral studies where you tweak the input and then you check whether output changes."
+  },
+  {
+   "t": 2745,
+   "text": "But rather, since the whole concept of unfaithfulness is tied to model internals, you're asking whether this step is associated with model computations internally. We started to look what's going on internally with these steps. And this is the first attempt to do that. We have used unlearning methods to basically unlearn a step and then see whether the predictions are changing. And then we find that the unfaithfulness we get is not so high as these behavioral methods are reporting. Yeah, I'm going to stop here. I had a very long answer to your question. That was great, actually. Yeah. Like following what you said, so the findings you mentioned mainly about like facefulness are from this thought on facefulness as disguised."
+  },
+  {
+   "t": 2798,
+   "text": "Right. So what question the question I have is like there was a hype last year, really 2024. And even now that like small language models can be good replacements in some like domains for like"
+  },
+  {
+   "t": 2813,
+   "text": "like large models."
+  },
+  {
+   "t": 2815,
+   "text": "So how do you think we can keep the balance for like facefulness, accuracy, like model performance, reasoning, and like to like, I don't know, to address this with just like small language models. And do you think if there is need to scale up the parameter size to those large models like billions of dollars, just like training these big, big models? Yeah. So it depends whether your question is about reasoning language models specifically or just LLMs because I teach other professors who are outside of computer science what you know LLMs are and how they can meaningfully use it. And I basically show them little like tree structure that I have built where I'm like, all right, you have your problem."
+  },
+  {
+   "t": 2861,
+   "text": "Do you have some data for this problem? If you have some data for this problem and you can frame it as a classification problem. You might be better off using a smaller model, fine tuning on your data and being more in the control of what this model is doing, being more specialized for the exact task you want to do. So I kind of discourage them also to just jump on prompting for every single thing they want to do. Sometimes it's honestly, there is so much resources of how to run this code and with things like cloud code that can just... do it themselves, even if they don't have a of experience. And we kind of go through a little exercise where I try to convince them they can run some Python code. So for me, I'm always trying to encourage them to use something that's simpler and more feasible and more specialized for their task."
+  },
+  {
+   "t": 2912,
+   "text": "Now, in a realm of reasoning language models, there is always a question, do your problem requires deep reasoning? If you use GPT-5 today, I get a little bit annoying when it defaults to the thinking mode and it's thinking five minutes for something that I find, no, no, just go to that previous version. You know, you don't need to think about this too long. Like this is not a reasoning problem. So I don't think we need reasoning LMS for every single thing there, you know, we are trying to, trying to do. So again, I would discourage people from using reasoning language models for some, some problems. But now if we think about problems where reasoning might be necessary, maybe we are doing some agentic stuff."
+  },
+  {
+   "t": 2958,
+   "text": "And now if we focus on that set up and ask whether smaller reasoning LMs could be as good as the large LMs, I think it's also important to state that what's the actual difference. If they are trained in the exact same way, then it's more likely your larger reasoning LM will be better, right? But the smaller reasoning LLMs usually now are using some kind of smarter data distillation and similar situations. So it's not exactly, I would say, to apple comparison because we didn't create these two models in the exact same way. But you could definitely produce smaller reasoning LMs for your problem."
+  },
+  {
+   "t": 3004,
+   "text": "And honestly, that's a much better way to go. In my experience, working these days with web agents where there is just so much querying of your LM that things can get really expensive if you are prompting just the largest best model with APS. And sometimes that's honestly not the feasible solution, especially if you're building a product around that reasoning, where you will be querying a lot of times. And that's my experience. I wouldn't call myself an expert on reasoning language models, so someone might say, like, I don't agree with you and I would totally be like, yeah, let me hear what you have to say about that."
+  },
+  {
+   "t": 3051,
+   "text": "So I want to acknowledge that. Right. Reasoning is one of the big topics that is probably interesting to many people, but there is more to trustworthiness."
+  },
+  {
+   "t": 3067,
+   "text": "And one of such topics that relates to trust is also robustness. Right. So let's talk a little bit about robustness now. So when we deploy the LLMs in real-world application, they almost always, or maybe even just always encounter some variations and some edge cases that might not appear in the training and evaluation data that were used for developing. From your research on AI systems that support human decision making, how do you think about the robustness of current LLMs and what kind of failures within this area concern you?"
+  },
+  {
+   "t": 3118,
+   "text": "Yeah, so honestly, we didn't study robustness in the context of human AI decision making yet. Like that would for me mean that we are running the studies where we change just a certain aspect of the underlying phenomenon. So I don't have work that's targeting that specific aspect. but I worked on robustness just looking at models that are designed to do something and how robust they are. And one thing that kind of bothers me to this day is that we have created these Coulter sets, which are small bundles of data points where the data points change in just slight ways and can due to that slight change can have different labels, different answers."
+  },
+  {
+   "t": 3171,
+   "text": "So we have done that for in the context of the reading comprehension datasets where you need to reason over text. And one of these datasets is CondaQA that was done with Abhilasha who we've had at this podcast as well. And in this particular dataset, CondaQA, we have looked into how models are reasoning about negation, which was motivated by this problem that happened in, I believe, 2020 when you would ask, would search in Google, head seizure, what now? And then that variation of summary at the time would say, oh, you should move the person, you should give them food."
+  },
+  {
+   "t": 3217,
+   "text": "and so on. And when you actually open the link where this information was extracted from, was all the stuff you shouldn't have been doing. So it kind of ignored the negation and gave you all the wrong information. So we went about studying like how models reason about negation and then we embraced this idea of these contrast sets. Matt Gardner was also one of the authors of this paper who has released the contrast sets in 2020 for various existing datasets. And there we still see when we try the best models today like o1 and when we check the consistency of 01 in the bundle of data meaning I have one question, I have four passages and these passages change just slightly so I change how negation is expressed, I change what is being negated or I completely un..."
+  },
+  {
+   "t": 3271,
+   "text": "do negation and check whether the model can answer the same question in the context of these four passages correctly, it can't consistently do it. Very often it can't. And for me, then this idea of testing models in this way is really powerful because we already see that we can see that really, really good models are not doing so well. under this measure, which is the measure of robustness. And very often it's the case and it's the case now that I don't think this has been adopted so much in our community just because it's a slightly harder evaluation to run. You you need to construct these bundles and run evaluation on each one and aggregate."
+  },
+  {
+   "t": 3317,
+   "text": "It's easier when you have a single file and it's a single test set, then you just run your prediction and average them. So... Very often I do see this interplay between sometimes we actually know what are the better measurements, but they're just not adopted because they are more complicated to run. It's a delicate interplay. And I'm going to be honest and just acknowledge also that, you know, benchmarks that aren't strong. you know, squat that started this whole probing reasoning was then replaced with squat two and there were all the questions about, I can add these adversarial things and it kind of isn't a great benchmark anymore. Glue, super glue, whatever."
+  },
+  {
+   "t": 3363,
+   "text": "They all made us make advances that led to what LLMs are today. So although I know those weren't great benchmarks and I think even the creators of those benchmarks would say like, yeah, they are better benchmarks, they did result in progress, in tremendous progress. So sometimes I don't want to be too preachy and be like, we should use better benchmarks. And I'm like, well, seems like those benchmarks are good enough to make progress as well. So this is a little digression into what I think a good benchmark is. yeah, your question was about robustness. The aspect of robustness I'm really interested by is this idea of these contrast sets. And honestly, I wish we do more of that."
+  },
+  {
+   "t": 3409,
+   "text": "Right. So yeah, actually you covered my next question almost, but something that I see very common, especially in industry for people who are less AI experts, more like developers or like AI engineers. So when they start like training, like models, that's what they usually do. They just train the model and they're like, okay, this is time for deployment. They just clone LME World Harness. scroll through the benchmarks, can be potentially relevant, start evaluation, and that's the time for deployment. A blog post is there and the model is out. And there is no actual user experience with these models that happen. like, Following what you said about benchmarks, the field relies heavily on benchmarks to measure progress, but we've studied how these benchmarks are created and whether they truly capture the challenges model will face in practice."
+  },
+  {
+   "t": 3463,
+   "text": "I'm curious what's your perspective on the current state of AI evaluation and are we measuring the right things, if not what we should do? Yeah, it's a big question and I feel like I don't have a coherent answer or opinion here just because what I do is trying to make these benchmarks as carefully created and as"
+  },
+  {
+   "t": 3484,
+   "text": "challenging as possible. But at the same time, I have just mentioned this, I'm observing that we do make progress even though the benchmarks themselves are imperfect, right? So I don't know what to kind of conclude. Like, I don't want to be like, we must fix the benchmarks right now. Obviously, there are so many issues with the benchmarks we have. Like, what is MMLU even doing? What does it mean to be good at MMLU? And then maybe the only thing I would wish to see is that people stop conflating performance of such benchmarks with any a very intricate and nuanced concept like intelligence or super intelligence. This is where I think we are doing a huge disservice to the public, where us researchers and practitioners who know these benchmarks are probably not great, and reflection of reasoning and thinking and whatever, if we see big high numbers there that we then..."
+  },
+  {
+   "t": 3547,
+   "text": "report them as having associations with something like human life, right? Because we know that's not the case. And I have been arguing with people who see performance on medical benchmarks where model is performing really, really well on medical entrance exams. And they say, this is now going to replace doctors. And I'm like, how did you went from It's good at answering questions from textbooks that are available to the internet so you will have a good healthcare. There is a huge gap there, right? So I don't think I'm maybe, do think benchmarks are important and they serve us as evidence. And when they're done robustly and properly, we can say, well, I can point to my benchmark and say, well, you can't trust your model to be good at negation."
+  },
+  {
+   "t": 3597,
+   "text": "And you probably don't want to negation to be part of your prompt if the your prompting strategy is the way you want to get the performance out of your out of the underlying model and you should be aware of this issue in general so they're a great pointer and I think they're great driver for progress but what worries me the most is how because now we have this interplay between academic research, industry research, and a huge PR machine, because in the end, you don't need PR to raise money in industry. These results can then be presented to be more than they are when researchers who are reporting those numbers do not necessarily believe that's now."
+  },
+  {
+   "t": 3645,
+   "text": "evidence for intelligence, evidence for a job replacement or anything like that. So that concerns me the most. And there are some foundational questions here that are really interesting now that we don't know what out of distribution is anymore because we have no idea what the data contains actually. It kind of makes some of these basic principles of machine learning 101 like strength has split harder and like how do you go about evaluation when you can't be assured that your data is contaminated and so on. So there some nice research foundational challenges here to be tackled as well. Yeah, and also another aspect that we haven't touched yet is synthetic evaluation."
+  },
+  {
+   "t": 3697,
+   "text": "So synthetic evaluation nowadays is a big part of the relation of benchmarks in general. So I know that you have that sufficiently recent paper that's called What has been lost with the synthetic evaluation. That's a systematic investigation to whether LLMs can effectively replace human annotators when creating the evaluation benchmarks. So can you just first give us a bit of an overview of what motivated that work and what you studied? And I'm in particular curious to hear what you discovered about the fundamental trade-offs between validity and difficulty in synthetic valuation."
+  },
+  {
+   "t": 3749,
+   "text": "Yeah, so this work has started from very selfish reasons. Again, I mentioned that Abhilasha and I worked on Conduct UA and I think that's the data set I'm the most proud of so far. I think it's really high quality and we put a lot of effort, especially Abhilasha, into looking into reviewers, sorry, not reviewers, annotators. annotations or questions and edits and she spent a lot of time deciding whether they are correct or not and giving bonuses and promoting good annotations and so on. It's always when we create this, you know, challenging data, it's always the question of how to get the most out of your annotators who can do a good job with right incentives and so on."
+  },
+  {
+   "t": 3806,
+   "text": "So selfishly, I was like, wow, that was a lot of work working with those people. And now everyone says we can annotate with LLM. So can we? I was like, all right, maybe we can. I have no idea. Why not? Let's try and see. So we basically went into this work just seeing what would we end up with if we started to do conduct UA. not when we did, but rather today, last year in 2024. And we had that option, we had that route of either we use LLMs or we use human annotators. So let's pretend we have actually gone with the LLM route and what will happen with that benchmark, right? So we set out to do that and basically we expected if we were to do that, we would do some kind of prompting approach."
+  },
+  {
+   "t": 3859,
+   "text": "for producing these generations. So in this work, we have this extensive prompting for Conduct UA and Drop. And then we check the validity, how valid those generations are based on the instructions. So basically, this is something, as I mentioned, we have done for human annotations as well. You have your guidelines, and then you check whether the... annotation you get is correct giving your guidelines and then either you approve the heat or not. And similarly, we did the same thing for LLM-SAM. Depending on which question type or edit type we were generating with have seen higher or lower validity. But in general, the validity had seen with the, which is not the best model right now, was earlier GPT-4."
+  },
+  {
+   "t": 3908,
+   "text": "seemed reasonable and I think if we repeat this study today we will get even higher validity. An interesting aspect of that work we have found that kind of answers the title of the paper that is lost with asymptotic evaluation and the answer is basically the difficulty where we have benchmarked lots of models on both the original version of ConductQA and DROP and on our generated version and we have seen that the performance on the generated data sets is much lower. And we have also seen that the relative order of the models is not preserved. So you can't even be using the synthetic evaluation to say, well, let me just see whether this model is better than this one and then on the stronger, more challenging version of the data, this order will be preserved."
+  },
+  {
+   "t": 3960,
+   "text": "Yeah, so I do want to say that Of course, a lot is changing with newer LLMs. And I don't want to say that this is now status quo, that this is answer for the lifetime, that never we can produce synthetic evaluations that are as hard as what a human could produce. Rather, that it's difficult to do that. So we have given our best effort and we didn't manage to produce nearly equally difficult benchmark. So if you had that choice and if you were in my situation where you need to choose the my hypothetical situation I should say where you're choosing between taking an LLM or a human"
+  },
+  {
+   "t": 4004,
+   "text": "annotator, we both come with challenges. LLM comes with challenges of finding the right prompt and not being able to produce this more challenging annotations with people who have trouble with making them aligned with your incentives. So if you do choose the LLM route, you kind of need to be aware that producing the difficult benchmark might be more difficult with an LLM. And I think it kind of goes back to the instructions because what you see with good human annotations is that they violate your instructions just slightly so that their annotation is still valid. but by violating them just slightly so they produce better annotations, more creative or weird annotations."
+  },
+  {
+   "t": 4054,
+   "text": "And this is what makes these human authored benchmarks more challenging. like with people, people are good at, you know, if you have a really good annotator, they get this nuance. They're like, okay, I get what you want. And what I'm going to do, maybe it's not, maybe it's slightly different, but it's still in the realm of what you would expect. You know, they kind of have this reasoning that, what I'm going to do is still allowed, but although you didn't explicitly say so. As we tell LLMs, you give them instruction and they are trained to follow your instructions. So I think for me, this is where I find it difficult to achieve difficult annotations that are quirky and fun with LLMs. Right, so maybe it's coming back to those AI human teams even for generating."
+  },
+  {
+   "t": 4105,
+   "text": "Yeah, yeah, like you get some valid annotations out and then you can ask person, hey, like, could you make this slightly change it to make it a little bit more unusual and therefore a bit challenging? That's a good idea."
+  },
+  {
+   "t": 4120,
+   "text": "Ana, given your findings about synthetic evaluation, how should the field balance the efficiency and scalability of LLM-generated benchmarks with the need for genuinely"
+  },
+  {
+   "t": 4132,
+   "text": "challenging human-created evaluation? What's your vision for robust evaluation practices? Yeah, so can I just ask a clarification question? What do you mean by efficiency here? So. Is it like efficiency of benchmark creation or efficiency of the LLM that you are evaluating on the benchmark? I think both sides can be considered here, Okay, so okay, just to repeat the question mostly for myself. It's about my thoughts on how to create benchmarks that are robust, keeping in mind both the efficiency and performance and all of the other aspects of LLMs, right? Yeah, benchmark creation is just so difficult and it's becoming so involved."
+  },
+  {
+   "t": 4179,
+   "text": "Right now I am creating a benchmark with my student Alex and our collaborators, other students and professors at U. And my god, the creation of benchmark, it has just become so much work here with these new agents that can browse the web and do all sorts of things. Now to evaluate whether the model had actually executed the task. And here we have tasks that are both heavy on images and they need to produce something in a Google doc or Google sheet. So you need to check whether you know, the information is synthesized properly in a table or a very intricate figure and so on."
+  },
+  {
+   "t": 4224,
+   "text": "So now you need to check whether the model has done all those bits and pieces correctly. And every bit of that requires an evaluation script, which uses an LLM sometimes itself. So now you need to also evaluate your evaluation script. And this is just for like a single type of task in this benchmark. So it has become a lot of work to write a benchmark. So I don't know. I don't think I have like a super cohesive overview of or recommendation of what the community should be doing because we're doing so much with LLMs and similar technology, right? Like we have very, just for my own work, I have benchmarks that are these reasoning over the text benchmarks, which are not benchmarks."
+  },
+  {
+   "t": 4271,
+   "text": "that study the usefulness of LLMs, like the way we prompt them normally, right? It's about whether your LLM is good at certain phenomena. And you don't actually know how prevalent that phenomena is in human prompts to LLMs. We know it's prevalent like negation. It's prevalent among us speakers of, let's say, English language. But I don't know how often negation is used when people prompted it. And I don't know if now my LLM is not dealing well with negation. What is the downstream effect of that? So I have benchmarks like these. I have benchmarks which are these web agent benchmarks where you have real tasks and you want to see how good an agent is in executing a real task."
+  },
+  {
+   "t": 4318,
+   "text": "And then we have these user studies, which is how do people interact. So it's very, very different, right? And for every one of these benchmarks, you would want to do something different, right? So that's why I feel like I can't give you like a very cohesive and like a single answer to this question. But I think people who create benchmarks are often people who care about evaluation and rigor and want to give the best estimate of performance. So I don't know, I think I feel comfortable with like community doing what we are doing, although we do tend to criticize benchmarks a lot. And this comes from a good place, are correct. We are doing our best, but also we are acknowledging there are all these possible issues."
+  },
+  {
+   "t": 4365,
+   "text": "But yeah, looking into the future, I think is just going to become more complicated to create a benchmark because LLMs and similar technologies are just... better at what they do. That comes from my personal experience creating Benchmark today. It's so much more work than the benchmarks I have created years back. And then we are going to start to deal with things like when they can become really, really, really good at things like how do we evaluate it? And I can honestly already kind of see elements of that. with the current benchmark we creating because as I said, every bit of this evaluation script now can evaluate something that is not so trivial. So you now, for example, need a visual language model to check whether some part of the document looks right and things like that."
+  },
+  {
+   "t": 4416,
+   "text": "So it's going to become more challenging, more like challenging to write them and design them. But also you want your benchmark to not be saturated super quickly. So that means you need to create difficult tasks themselves. And that is becoming more and more work because it's harder and harder to think about those problems. And now we maybe need to hire experts in their domains and that becomes more expensive. So there is a question of how to do this in academia, for example, like how can I get money to create this benchmark conduct your cost that I think like $20,000 and drop costed even more. So these are not cheap things to create. And luckily so far, industry has been generous with that money because they know that academics are pretty good at creating these benchmarks, which of course can have downsides."
+  },
+  {
+   "t": 4474,
+   "text": "one can ask, well, now you're kind of deferring this heavy load to academics. to evaluate your own models and I get that concern as well. But yeah, these are my thoughts on this. They're not super coherent, but it's just such a diverse space. So it's hard to have a single thought about it. let's wrap up."
+  },
+  {
+   "t": 4495,
+   "text": "We have talked today a lot about explainability, what it is, what is the reasoning faithfulness, how robustness relates to evaluation. Could you summarize maybe a little bit in the sense of what kind of picture? emerges in the end given all these about when and how much we can trust LLM and what would be that actual trustworthy AI system, how it looks like. Yeah, I think here it might be useful to go to that distinction between intrinsic and extrinsic trust. intrinsic trust, said, we need to see the reasons, the underlying computations of the system, how it goes about things to..."
+  },
+  {
+   "t": 4549,
+   "text": "then see that it's doing the trustworthy thing and then we gain what we call warranted trust in the system. And here, I, my like the most ambitious self would love to see a version of AI systems where we can approach them and regulate them the way we regulate like aviation and basically if we can default to something like principles of traditional safety engineering, which means that we know that these LLMs and similar AI technologies are very complicated and they are what we call black boxes and they learn their solutions through data and then they encode these solutions somehow into their parameters, but we don't have the explicit code."
+  },
+  {
+   "t": 4596,
+   "text": "don't... you don't have the solution written down. if something happens, we can't go back to the model and then correct that way its solution such that hazard never happens before. Like we can if a plane crashes, then we look into the black box and we check what's happened and then we go back to the system and we fix that thing that had caused it if it was the system and not human factor. And we have regulation. that says you have to do that. So it's not like, maybe I'll do it, maybe I won't. It's like, you must do that, right? So in my most ambition vision of what we could achieve with interpretability, we can achieve exactly that. We have interpretability that kind of writes down the solution of the network."
+  },
+  {
+   "t": 4643,
+   "text": "And this kind of connects to this idea of circuits if we had really, really good visualizations of these processes. and I hope we can get something like, I call them like little vignettes. It's not like a full depiction of what the model is doing, but it gives you the most important bits and pieces that kind of you can make sense of. And then you can do what I said, like basically safety engineering, you have hazard, it's likelihood. If it happens, you go and back and fix the problem. So if we can achieve that, then I think we can. either easily have intrinsic trust or achieve this, you know, warranted trust in a trustworthy system. And of course, that's very ambitious."
+  },
+  {
+   "t": 4689,
+   "text": "And of course, there is a variety of opinions of whether that's possible. But I think that's kind of where the interpretability community, that's our goal. That's our motivation. And then moving to the extrinsic charts, which I said is not about observing internal mechanisms and understanding how the model does things, but rather seeing that it consistently does the right thing and under some evaluation scheme. Yeah, I feel here I expect to see more of what we have been seeing, just the progress in how we evaluate these systems and trying to, you have the evaluation that itself is very trustworthy. And again, because LLMs are not one thing, NLP is not one thing, but rather many things, we will see many of different evaluations for different kinds of things we are trying to"
+  },
+  {
+   "t": 4744,
+   "text": "achieve."
+  },
+  {
+   "t": 4745,
+   "text": "as long as, going back to the discussion we had previously, as long as the community stays self-critical and realistic and... scientific, I think we are going to be fine. If we flip us around and we start to be vague, unscientific and sloppy, that's where I would be concerned. But honestly, it's a big field and a big slice of that are just scientists and professionals. I think as long as we still have platform to do this research and funding, it should be fine. Fantastic. Thanks for your comprehensive response. So how about you? we wrap up, what's next for your research? Are there particular aspects of AI trust and reliability that you're excited to explore more?"
+  },
+  {
+   "t": 4795,
+   "text": "Yeah, I think these days I'm focusing, I kind of look into my work having two directions. One is understanding user needs and building benchmarks to test how good we are at those needs. So now I have started to work on these agents because these are kind of things we envision people will be interacting with more and more. And that's becoming really exciting for me because it's really intricate and honestly blows my mind the first time I let... go off my hands and saw an agent clicking things on my laptop. I was like, what is this? Which year am I? It's just remarkable, right? And I'm interested in applications in education through the Responsible AI Initiative that generalistically finds my fellowship to do that line of work."
+  },
+  {
+   "t": 4849,
+   "text": "And then the other line of work I work on is still in the interpretability space. And I'm really excited about this idea about extracting this sparse feature circuits. If you have seen the antropics biology of LLMs, it's really, I mean, you have to see it and be excited. But then again, because a lot of these, what I call vignettes are created manually by best researchers in the world. there is a question of how can we scale this? Can we get these vignettes for any kind of phenomenon, any kind of LLM? And can we do it, know, automatically without paying? You can imagine, I have no idea, but I can just imagine that a research scientist in a tropic is paid a lot."
+  },
+  {
+   "t": 4898,
+   "text": "So one hour of their work to produce one of these is a lot of money, right? So I'm just excited to given that work to see Can we do this at scale and how would we go about it? So my students are thinking about some automated way to go about that. And once you can create these vignettes, going back to my work on unfaithfulness of chain of thoughts, it would be really then interesting to see like which bits and pieces of internal computations are mismatched with what the steps are verbalizing. because there are different ways that can go about being unfaithful. again, at Tropic Biology work had mentioned two ways where we have motivated reasoning versus like a fool making things up. And I think we can discover way more if we do this at scale, like these kinds of mismatches."
+  },
+  {
+   "t": 4949,
+   "text": "So yeah, I'm very excited about that line of work and I want to really bring it again to this application grounded evaluations. So not just be like, okay, here is a circuit that looks pretty and it does something, but like, okay, now that we have it, what can we do with it? How can we like bring it to, let's say, medical setting, medical application area and actually have certain benefits that we can actually demonstrate with them. This is a lot, of course. but that's kind of what I'm excited about. That's very exciting. And this has been such an illuminating conversation. Thank you. thanks for joining us, Ana, Also to our audience, you can find more information about Ana's research and publication in this episode description."
+  },
+  {
+   "t": 4999,
+   "text": "And we will see you in three weeks See you then."
+  }
+ ]
+}

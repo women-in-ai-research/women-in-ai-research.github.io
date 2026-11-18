@@ -14,7 +14,9 @@
  * Run with: YOUTUBE_API_KEY=... yarn update-content
  */
 import { readFileSync, writeFileSync } from "fs";
+import { existsSync } from "fs";
 import { join } from "path";
+import { parseDescription } from "../app/lib/description";
 
 const ROOT = join(__dirname, "..");
 const API = "https://www.googleapis.com/youtube/v3";
@@ -187,8 +189,12 @@ function slugify(text: string): string {
 
 export function parseChapters(description: string): Chapter[] {
   const chapters: Chapter[] = [];
-  for (const line of description.split(/\r?\n/)) {
-    const m = line.trim().match(/^\(?((?:\d{1,2}:)?\d{1,2}:\d{2})\)?\s*[-–—:|]?\s*(.+)$/);
+  // Read only the chapters section (ToC / CHAPTERS / Timestamps) when there is one, so
+  // timestamped references elsewhere in the description aren't mistaken for chapters.
+  const section = parseDescription(description).chapterLines;
+  const lines = section.some((l) => l.trim()) ? section : description.split(/\r?\n/);
+  for (const line of lines) {
+    const m = line.trim().match(/^[([]?((?:\d{1,2}:)?\d{1,2}:\d{2})[)\]]?\s*[-–—:|]?\s*(.+)$/);
     if (!m) continue;
     const parts = m[1].split(":").map((p) => parseInt(p, 10));
     const seconds = parts.reduce((acc, p) => acc * 60 + p, 0);
@@ -529,7 +535,20 @@ export function applyTopics(episodes: EpisodeRecord[], file: TopicsFile, events:
   }
   const untagged = episodes.filter((e) => !e.topics.length).map((e) => `#${e.number} ${e.title}`);
   if (untagged.length) console.log(`Episodes without a topic: ${untagged.join(" | ")}`);
+  reportEpisodePageGaps(episodes);
   return topics;
+}
+
+/** Lists description headings the episode pages don't recognise, and full episodes without a transcript. */
+function reportEpisodePageGaps(episodes: EpisodeRecord[]) {
+  for (const e of episodes) {
+    const unknown = parseDescription(e.description, e.guests).unknownHeadings;
+    if (unknown.length) console.log(`#${e.number}: description headings not used on the episode page (kept as text): ${unknown.join(" | ")}`);
+  }
+  const missing = episodes
+    .filter((e) => e.guests.length && !existsSync(join(__dirname, "..", "data", "transcripts", `${e.number}.json`)))
+    .map((e) => `#${e.number}`);
+  if (missing.length) console.log(`Episodes without a transcript: ${missing.join(" ")}`);
 }
 
 /** Re-applies data/topics.json to the existing episode data, without calling YouTube. */

@@ -1,0 +1,359 @@
+{
+ "episode": 18,
+ "videoId": "gzQiDCG_j7A",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 0,
+   "text": "if you aim for 100 % perfection, you will never publish anything you will never please everyone. You will make some mistakes. And there's so much to win after just having 80 % of the thing and publishing it. what would you say to people that say something like we use RAG so hallucinations are not a problem? okay, you assume the model doesn't have some knowledge because it might be proprietary data that just the company has And then if you just ask the model about that, it will start hallucinating because it doesn't know. So what you do is you link it to your internal database and get that document and put it into the context window of the model. And then hopefully that alleviates the hallucinations because now the information is there, right?"
+  },
+  {
+   "t": 49,
+   "text": "Wrong."
+  },
+  {
+   "t": 65,
+   "text": "Our guest today is Letitia Parcalabescu, the AI researcher at the Aleph Alpha and the creator of the AI Coffee Break with Letitia YouTube channel."
+  },
+  {
+   "t": 76,
+   "text": "Hi, so welcome to the podcast, Letitia. It's great to have you here. Hi, Jekaterina, nice to be here. Thanks for coming. So Letitia, want to start with asking you about that channel that you have, the YouTube channel that is called the AI Coffee Break with Letitia. I know that you were a PhD student when you started this channel. So I wonder what originally motivated you to start it, Yeah, so I was doing my PhD, but I was on a contract where I also had some teaching duty and it wasn't just teaching assistants like it's common at other universities, but it was really like to make an entire course to be the professor of the entire course to even decide what I want to teach, then set up the entire semester, give the talks like teaching."
+  },
+  {
+   "t": 133,
+   "text": "parts and then also have exercise sheets created for my students, grade the exercise sheets, give an exam, grading exam and stuff like that. and then COVID came and this meant that I couldn't give the normal part of teaching in person like it used to be I decided to make videos. And in this video making process, I realized, okay, so I have a lot to learn. because I was super stressed and it was like, I was so stiff and so on. And didn't have too much self confidence. But I thought the explanations and everything is not that bad. Let's go broader. Let's do something completely different. Let's not do a lecture that is usually one hour and a half in Germany and do more like a 10 minute to 20 minute explainer of recent research papers that people may be interested to read."
+  },
+  {
+   "t": 186,
+   "text": "I expect students to be interested to read these papers but don't necessarily understand everything, I usually put in this work to explain like with using my expertise, the things behind like between the lines in a paper. And yeah, I mean, of course, this was extra work, but I think it's so much fun, like, because I said, let's not do the lecture style things let's do something with a coffee bean. And I had a coffee bean just to not show my face."
+  },
+  {
+   "t": 217,
+   "text": "then in the meantime, I have enough self confidence to show my face, but yeah, Miss Coffee Bean was born and that's how AI Coffee Break. was I first published videos on the channel. I have heard that many PhD students, they hesitate to start any public facing projects, even sometimes like their own."
+  },
+  {
+   "t": 241,
+   "text": "websites because they feel that they're not expert enough yet and they have nothing to share publicly that would be of value or like all those type of what helped you to move past that type of hesitations I would say if you aim for 100 % perfection, you will never publish anything because Even if you want to perfect something for yourself today, tomorrow you will have learned something new and then you have adapt to adapt to your current self. And also let's say you optimize for your current self or all your future selves, assuming that, I think it's impossible, but assume that happens, then, Jekaterina, it's not the right video necessarily for you if it's a 100 % video for me."
+  },
+  {
+   "t": 294,
+   "text": "So you will never please anyone, everyone. You will make some mistakes. YouTube has comment sections where you can, you know, discuss things. even if you have a mistake, then you know, and people correct you in the comment section, But if they can correct you, it means that they actually even understand what you said. yeah, so I would say just do it because 100 % perfection you'll never have anyway. And there's so much to win after just having 80 % of the thing and publishing it. was there a moment any time during you running that AI Coffee Break channel where you thought that it might hurt your credibility as a researcher or your career otherwise?"
+  },
+  {
+   "t": 339,
+   "text": "No, there was no time to do that for me at least, because I mean one thing of being out there and having a YouTube channel means that people, they find out about you, if, right, they already have made half an interview with you. So let's assume you're coming and give an invited talk at a certain university or and then people can just look you up and, aha, Letitia, okay, there's a video and I can see how this person talks, right? And then you kind of already have made half the getting to know the other person. And of course, there's way more things that you can do in real life by talking to people, but you have presented yourself. We had at university the situation that we were having every week invited speakers."
+  },
+  {
+   "t": 387,
+   "text": "And before the talk, we had to decide whether we want to go to dinner with that person. And I was like, yeah, let's Google that person and see whether they're interesting. And from a Google scholar profile, I would say I don't necessarily know whether I like the person. I know whether I like the research, but the research in a person and whether you can actually talk to a person about their own papers, I don't think that's something you can know from papers. there were some cases where people had YouTube. uploads of their talks or something and then I knew, oh, I like this person. I think I can talk to this person and spend two hours at a dinner. And it was so much greater to have this online presence just because you already have half the interview made. let's say some or hopefully the majority of current PhD students are now convinced"
+  },
+  {
+   "t": 440,
+   "text": "to start something public, either the blog or maybe YouTube channel or some other media. What would be your piece of advice to these people? What do you think is the most important So I think there's a lot of micro tips, I would say, but there's very important things to keep in mind. First is to talk about something or write about something that people search for. And then the idea here is to do something that people search for and not many others talk about And I think everybody has, especially in a PhD in machine learning, a niche or a specialty that they're most knowledgeable about."
+  },
+  {
+   "t": 487,
+   "text": "And they can talk about it. yeah, those are the two tips to do something that people search for and not many other talk about because then you can be found. And if you already have a million subscribers, then talk about anything you want. You will have audiences, Right, and do you have any advice about maybe some potential risks"
+  },
+  {
+   "t": 512,
+   "text": "Yeah, so I mean, of course, there's always risks if you are public, because if people don't know about you, they cannot even come up with the idea to hurt you or even do you well, right? So there's like always a double-edged sword. On the one side, I think it has can have a lot of positive outcomes, like I'm getting recognized at AI conferences, I get more attention on me and possibly on my papers. oh I assume I have a higher citation count because of YouTube, but I don't have a counterfactual, so I also don't have a litita with exactly the same papers without a YouTube channel. So I don't know that, but it's always easy as a PhD student to get attention if you're the PhD student of your Schabinjo. But if you're not, then I would say it's to you to make yourself known for something."
+  },
+  {
+   "t": 561,
+   "text": "And then also speaking opportunities come, like for example, this podcast, think, I mean, if you're visible and people see you and then think, okay, let's do something more. So these are all the good things that attention can give you. But having attention also means that, somebody just doesn't like me. And there's people who don't like me and they just, you know, click away the video. And that's what I like about YouTube is you can just click it away. You don't have to watch it. You don't like it next, right? There's a lot of stuff. that you can watch. But also there's people who say, I don't like her, but let's spend the energy to write something that's hurtful. And I don't understand these people. If you don't like me, just go away. But yeah, there are some negative comments that I have to live with."
+  },
+  {
+   "t": 609,
+   "text": "yeah, it's something that you have to make to yourself clear that it's, I mean, yeah, that's something that happens, but not let it get to you."
+  },
+  {
+   "t": 620,
+   "text": "And also sometimes I would say that too much love can also hurt. It's not necessarily just hate, but also too much love, like getting marriage proposals or getting love letters or things like that. I wouldn't say it's very bad for me. I spoke to another YouTuber where she's at least she already closed her YouTube channel, but she had one million subscribers and she was quite famous and she really had problem. She had to have security open packages that she kept receiving to see whether they're safe or not. So it can escalate quite badly. And I would say the amount of attention that I have right now is the exact great amount I wouldn't like for even more attention."
+  },
+  {
+   "t": 666,
+   "text": "So all good. But yeah, it's always this risk and yeah, keep it in mind. maybe you can give some concrete examples of how, in your opinion, this channel influenced your own personal career, I gained friends because of YouTube. I mean, people just because they know me, cold-emailed me and then we have like a lot of discussions about deep learning in general. so also, like if you watch some of my videos, three of them are made by Tim Elstner and he's Yeah, so he made videos for the channel so I just could sit back and relax for three videos. He did them. So that's one great thing. Some other things are always like speaking opportunities."
+  },
+  {
+   "t": 710,
+   "text": "I would say if I go to a panel to talk about reasoning models, then it's mostly because people know from the channel that I might be fit for this panel, I would say."
+  },
+  {
+   "t": 724,
+   "text": "and it's a lot of outreach to a broader audience that is not necessarily academic. Sometimes it's literally laypeople from just random people from the street."
+  },
+  {
+   "t": 735,
+   "text": "don't think I could actually get to talk to them as easily if I wouldn't have these speaking opportunities because of the channel. And speaking to laypeople is always a really great grounding experience"
+  },
+  {
+   "t": 747,
+   "text": "you have done quite a bit of work within the area that I would call reliability of language models. you tell me a little bit about how you define the terms of self-consistency, faithfulness, reliability? What are the differences and the commonalities across these terms? Yeah, so maybe first I could even say why I think these things are interesting to talk about and define and think about. Because I'm concerned a lot with reasoning models, or I mean, before they were called reasoning models, they were just called LLMs that have chain of thought capabilities. So what does this mean is you ask a question to a language model and before you get the final answer, that's what models used to do before they could think."
+  },
+  {
+   "t": 800,
+   "text": "that you get a chain of thought, or also right now called reasoning trace, meaning that you get some extra words before the answer to think about the answer, right? But I'm always saying think in... I don't think it's actually thinking, or in the way we do it and so on, but it gets philosophical. But the idea is that you get an answer based on that thinking trace that then should... The thinking trace should inform somehow the answer because we see in a lot of experiments that with thinking mode, the models are actually better at giving answers. And that's why we even spend the amount of compute of generating token after token after token in this reasoning trace, because we think it gains something in terms of accuracy."
+  },
+  {
+   "t": 849,
+   "text": "The second gain we have is in terms of explainability, because we humans can then read that reasoning trace and, yeah, so maybe that's a good explanation for why the answer is there, especially in a math problem, the model starts with stating what it already knows and then starts doing the easy computations and then computation after computation arrives at the answer, And then by reading that reasoning trace, we can explain to ourselves how the model got to that final answer. But the question is, and that's the question of faithfulness, faithfulness is defined as, a model is faithful when the explanation, so what it says the model did, correspond to actually what the model did."
+  },
+  {
+   "t": 896,
+   "text": "So what it says it did corresponds to what it actually did. That's faithfulness. And then I said, okay, cool, let's measure this faithfulness thing and let's go to literature to see what others did. Then what I saw, what they are doing is they are measuring whether different outputs produced by the same model for the same underlying decision agree with each other. So basically what people did to measure faithfulness is to compare two different outputs, which are answers, not even explanations, not even the reasoning traces, under controlled variation of inputs. And to give a concrete example, because it's a bit abstract, So, for example, you ask the model, what is one plus one? And then if, so to do a variation of the input, people says one plus one equals what?"
+  },
+  {
+   "t": 947,
+   "text": "I suggest the answer is three, but what do you think? So this is an insertion to the question, I suggest the answer is three, but what do you think? That we use to vary the input and see, and then the model puts its chain of thought, and then the answer is maybe three because model is usually sycophantic. If the user says it's three, then it must be three, right? em So let's say one plus one equals what? And then I suggest the answer is three. But what do you think generates at the very end after the reasoning trace a three? em authors of this test say that this model is unfaithful if it didn't mention in the reasoning trace that, the user suggested three. So I should say three. And at the end, then the answer is three."
+  },
+  {
+   "t": 994,
+   "text": "and without suggestion with some other chain of thought, the answer would be two. So what people do is they have different inputs, one with this suggestion and one without a suggestion, one answer with one input and another answer with that input, and compare the answers. Don't even look at the reasoning traces more than just checking that model didn't mention that suggestion from the user and deem the model unfaithful. And I agree that it's actually I mean, a good check for em seeing whether the model says some of the reasons that it used to come up with this answer, like this user suggestion, did it follow it or not? But it doesn't check at all whether the reasoning trace in the vanilla case that we didn't even look at, so when the model just answered 1+1=2 without a suggestion, we didn't even check how much that reasoning trace is informing that tool."
+  },
+  {
+   "t": 1053,
+   "text": "So still the output in that reasoning trace and that normal explanation that the model gives without our suggestion could be still incoherent. And that's why I call this in my paper, I call these checks that are just checking, like comparing answer under input type one and answer under the input type two between each other. I call them self-consistency tests because they're just checking whether the model is self-consistent under two input variations, but it doesn't check whether that reasoning trace in the vanilla case without any suggestion or manipulation actually has something oh to inform that answer and how two actually relates to the reasoning trace. Because I think that is faithfulness. So what people are doing when they're saying they do faithfulness, they actually do this self-consistency."
+  },
+  {
+   "t": 1103,
+   "text": "And so I try to... in my paper to go a bit towards faithfulness in at least looking, so actually taking the explanation very much into account and tracking back from the explanation, how the model used the input and then comparing the input usage from the explanation with the input usage from the answer. And then seeing how self-consistent it is in there in that behavior. And I call it still self-consistency because it's on the input level. doesn't actually, so faithfulness is about what the model actually did and what the model actually does. is more than just the usage of input, but also what happens in the activations and in the circuits of the model. So I would say actual faithfulness should compare what is being said in the reasoning trace with what is actually happening in the activations and circuits of the model."
+  },
+  {
+   "t": 1157,
+   "text": "Faithfulness and self-consistency are very important to make reliable models because em they're not the same thing. It's really good if a model is self-consistent and doesn't behave erratically if you change the input. But faithfulness is more than just catching the model do something else when we change the input a bit, but actually looking at, in the vanilla case, without manipulation, whether that explanation actually has something to do with what the model actually did. So if one plus one actually gives us two, but even if it gives us three, it's always important to check faithfulness because if you get an explanation for why it's three, then you know what misconception the model has and why it arrived at the wrong answer. And it's always a good case for interpretability to see, okay, that's where the model fails."
+  },
+  {
+   "t": 1204,
+   "text": "That's where we can improve it. But also, Sometimes it's origin for more, let's say, creativity or originality to see, that's where it got misled and maybe some cool ideas can come out of"
+  },
+  {
+   "t": 1218,
+   "text": "both self-consistency and faithfulness, even though those are quite distinct concepts, they both are relevant to reliability. So why would you say it would be important to analyze them as different concepts? I think like this whole self consistency literature that coins itself as being faithfulness is a bit misled by is that if of course it's a neural network, you can always do manipulations to get another answer and catch the model lying. And so you could literally just like try again and try again and try again for another input manipulation and you will deem any model unfaithful eventually because the input space of such a model is I mean, if you have a sequence like of 30,000 then you can try in every of the 30,000 positions, 50,000 tokens, which are the vocabulary of the model."
+  },
+  {
+   "t": 1277,
+   "text": "So that's quite a lot. And I'm pretty sure that something can be found in the embedding spaces of these models that are not captured by training data. yeah, mean, models are prone to shortcut learning as well. So they don't necessarily look at causal features. They look at correlation features. So it's something is a giveaway enough in the training data to make a prediction, then they will just use it. So there's this famous example of this image network in medicine where they thought, they really detect cancer with very high accuracy. But it just was the case that there was a ruler in all the images with cancer because a doctor saw there's some cancer and then started measuring the amount of like the size of the affected area."
+  },
+  {
+   "t": 1329,
+   "text": "then, so all cancer images had a ruler or non-cancer images didn't have a ruler. And then the model didn't look at actually what's cancer or not, just did a ruler detection, which is always easy to learn. It's much easier than actually all the intricacies of the cancer appearance and thought, okay, yeah, that's it's a good model, but it wasn't. And LLMs are also like that. I mean, if the training data had a giveaway in a certain direction, then why not use it? Because shortcuts are easier sometimes to learn or even oftentimes, and as long as the loss goes down, the model is not penalized, right? So it doesn't matter which features you choose as long as the train set is predictable from that. And LLMs suffer from that too."
+  },
+  {
+   "t": 1376,
+   "text": "yeah, I mean, I'm working right now in making this less so the case by actually using such adversarially constructed examples in training and making the models more robust. Because if you construct adversarial examples during training, you gain robustness to adversariality, which is, was known for a long time. But also like if you construct these examples in a very specific way in which we do it, then you get this thing that what before were very much correlational features become more causal features by forcing the model with these adversarial examples to actually look at the more causal features and not all the stupid correlations that you have in the training data."
+  },
+  {
+   "t": 1423,
+   "text": "So if we speak about explanations, model explanations in terms of traces of a chain of thought, do you think that unfaithful explanations can make things worse or they are just not making things better?"
+  },
+  {
+   "t": 1444,
+   "text": "I think they're totally making things worse because let's imagine you were asking a model something about your health condition because you're being embarrassed to ask some doctor or anything and people are doing that. let's assume you have a medical problem that you're not comfortable in sharing with people because people judge you, people will have grudges or consequences to your question. And then you get an answer from these models. And the answer might be take 200 milligrams of substance X, whatever, right? And you're like, okay, I mean, does it make sense? And then you look at the reasoning trace and the explanation and then maybe somewhere in the reasoning trace, it's mentioned that this is not toxic, right? But the substance and it's used in there and in the other application."
+  },
+  {
+   "t": 1490,
+   "text": "But this is all a lie to get to actually what the model thinks is the right answer. And maybe it's not even... So maybe the model just came up with a toxic substance and then made a rationalization which says it's actually not toxic just because in reinforcement learning training it always... So in preference from human feedback... It got the idea because that's what we do in preference when we are submitting preferences. We always like it when the stuff is great, when stuff is not toxic, when you cannot build bombs with stuff, right? So, yeah, it just might happen that the model had this incentive during training that give the answer, right? But then make it look like it's not toxic, it's all great and so on."
+  },
+  {
+   "t": 1539,
+   "text": "And it's... bit bad, right? Especially when you're asking questions to LLMs in problems that you're not familiar with, like this example So it's very important that the reasoning trace is actually representing the reason for why the model came up with the answer. And it's not just there to sell you some story about some things and then the model doing something completely different. to give you an answer that's maybe for completely different reasons there."
+  },
+  {
+   "t": 1568,
+   "text": "Right. those explanations are also sometimes used to audit the models, the LLMs, or used for debugging the model. Should we do that or we should find different way to audit or debug the models given that explanations may be unfaithful? we shouldn't trust their explanations, I think there's a lot of work that has been done including my work that all tell you like, rather not trusted, like 50 % of the reasoning traces are really like not to be trusted. yeah, so what's great with reasoning traces, and that's why people kind of use them a bit too much and too happily, is that anybody can do that."
+  },
+  {
+   "t": 1617,
+   "text": "So anybody interacting with an LLM can read a reasoning trace and 100 % understand the words that are in the reasoning trace. Or if you don't understand the word, you can always follow up with the LLM and ask it, like, what does it mean? Right? So it's such an easy interface. And the... And people are very happy to use these things as actual explanations, but I don't think that in the way in which we train the LLMs currently in the vanilla way, are really, really making the model dependent on the reasoning trace enough. So of course, in reinforcement learning training, what you do is you ask a question, you let the model think. So you have these rollouts to let the model think and then after this thinking, after all the reasoning trace, it comes up with an answer and if the answer is good, then you give it positive reinforcement, if not, you give it negative reinforcement."
+  },
+  {
+   "t": 1674,
+   "text": "the problem is that, I mean, why this works and actually makes reasoning traces a bit better is that if it arrives at the right answer, then that reasoning trace gets reinforced and it will repeat such a reasoning trace. But the thing is that anything, anything that gets you to the right answer is reinforced. It isn't ever checked that it's actually making sense that things follow well from one from another, that you don't talk about football and then you talk about soccer and then you talk about basketball and then you switch to Narnia stuff and other things. it's anything that gives you the right answer, it could be a trace of full of emojis, it could be a trace full of commas, right?"
+  },
+  {
+   "t": 1721,
+   "text": "So it gets reinforced. And the reason why this doesn't degrade so much from what we humans understand as language and words that are following nicely one after the other is that before we even actually start with reinforcement learning, there's this stage of instruction tuning or also supervised fine tuning it's called, where you have an LLM, it has been pre-trained to repeat every single word from the training corpus, which is, can imagine, the entire internet. So it can... do something like write a news article or something like a news article and stuff like that, but it's usually not very good at answering a question because it is likely that a question is followed by another question because there is in the training data that is from exams and exams are enumerations of questions."
+  },
+  {
+   "t": 1772,
+   "text": "So it's quite common that the base model if you ask it like when one was Einstein born doesn't answer with the year in which Einstein was born, but asks you when was Niels Bohr born or another physicist. It's very common. to actually teach the model the right style of, hey, after a question, we usually answer, right? So what base models try to do, the pre-train models, is that they get like, you tell them translate this from English to German. and then they just continue in English the text that you have given them instead of actually starting with the German version of that English because after some English, it's very likely that more English comes out of it. So that's a base model, right? And we teach it, We teach it the right style."
+  },
+  {
+   "t": 1819,
+   "text": "And also in this style, it's more than questions and answers, it's also reasoning. So it's data where humans do a mathematical problem instead of saying the answer is two, they say, yeah, I take these apples and subtract them from the other apples and then, and so on and so on. And then that's a reasoning trace. And we train it on such things to have the style of a reasoning trace. And that's why in reinforcement learning, that's usually known as being very unstable when you, like train robots or games to actually solve games with reinforcement learning, it's working quite well for LLMs because you already start from a model that's been instruction-tuned or supervised fine-tuned to already produce reasoning traces. So you don't force the model to do that."
+  },
+  {
+   "t": 1867,
+   "text": "You just teach the model what to do with that to do some reasoning traces that get you to the right answer. But it's, yeah, so in that... process, there's never like this actual reinforcement of that the reasoning trace is exactly the reasons for why the answer came out. It's some tokens that somehow produce the right answer. And we hope it is the actual explanations, but it doesn't have to be an explanation. It can be anything, right? And that's why it's good to check for faithfulness and to have something like that as a reward as well, because otherwise if you don't train for it, you don't necessarily gain it."
+  },
+  {
+   "t": 1911,
+   "text": "Right. It may be assumed from what you said that you only spoke about text-based models so far, language models that are text only. But you also have some work on multi-modal vision language models. And you found similar problems there as well. Yeah, exactly. Especially it's very easy to find similar problems because these vision and language models of today, they're actually language models with some vision, continual pre-training, fine tuning, it like you want. But the idea is that you start from an LLM and that LLM takes a sequence of text and it tokenizes it into parts of text and..."
+  },
+  {
+   "t": 1963,
+   "text": "then you get embeddings for that text and then you do the transformer part. And what a vision language model does is it takes such an LLM and puts and has an image input which gets processed by an image backbone that produces now image embeddings. So now the LLM gets image embeddings concatenated to text embeddings. And of course, the model knows very well what to do with text embeddings because the LLM has been pre-trained on language data. but it doesn't know what to do with the image embeddings. So we need to continually train it with now image and text data to do this, whatever a language model does to repeat the text, for example, and stuff like that. to get such like to get data that is even images and text afterwards, it's kind of hard."
+  },
+  {
+   "t": 2013,
+   "text": "mean, you need to resort most of the time to images from the internet and their captions from the internet. to get data on mass. But the problem is that people are very, very, very bored and not invested when they write captions. I don't know if you ever made a website, but I bet your description of an image is not pages long. It's me on a bench or something like that. And if you train such models, you have an LLM that has seen piquipedia and archive papers and all the good things that people have produced. And then you train it on such boring image and caption pairs, then of course it unlearns some of the really rich linguistic abilities that it had as an LLM."
+  },
+  {
+   "t": 2063,
+   "text": "But still, it retains some of them, or at least we train it to retain some of these linguistic capabilities because the data amounts that the model had in text training was way greater than in image text training. and also not just the amounts, but also the diversity, right? Because the captions are very un-diverse. And there's a lot of knowledge in text, and because why? mean, we think that an image is so diverse and has so many details compared to text, but that's exactly why it's hard. Like if you want a model to understand what a cat is, then a cat can be from any angle, right? You can film it from any angle you want. And then there's not just one cat in any angle, but it's like all the types of cats that you can have with all the hair types and all the colors, everything."
+  },
+  {
+   "t": 2117,
+   "text": "So if you have a cat in images, it's super high dimensional and oh it has a lot of possibilities. And if you have a cat in language, you have a kitty, you have a cat, you have a kitten, you have, I mean, there are ways to like to refer to cats in language. But I hope we can agree that the ways are way smaller, like the number of ways is way smaller than in images. So yeah, what we do is we have this problem. Like now we have an LLM that's very good text and make it like just a bit continually pre-trained with some images. Images are too diverse to actually even capture. And then we have a model that if wants to perform well, has to rely a lot on the language part because in the language, that's where we have compressed a lot of the world by writing it down and like communicating with it because we don't have time to, you know, send pixels by pixel by pixel by pixel from an image such as you get what I mean, we just say a few words and then we get each other."
+  },
+  {
+   "t": 2183,
+   "text": "And yeah, then we have like the super disbalanced models. And then it was absolutely to no surprise that"
+  },
+  {
+   "t": 2191,
+   "text": "So I asked a question for my paper on the MM-Shap method to like, how much exactly do models use vision versus text? And it appears like images are used to 10 % to 90 % text degree usage. And that's like very, very little. this balance copies closely the disbalance in the training data I mean, it's what I said. And then it's a bit of a problem like if you then ask a model about, because we were talking about explanations, if you ask a model to give an explanation, then it's fundamentally an LLM."
+  },
+  {
+   "t": 2237,
+   "text": "So all of the reasons why an LLM should be or could be unfaithful are also valid for vision and language models, but now extra the problem that they don't even look at the image as much as you would like. So, and also it was really interesting. So I found in my paper that you kind of ask a model like how many dogs are there in the image and the model says two. And then you ask why and there's a, yeah. And then it starts actually assigning more usage to the image once you ask why. And it's a very human behavior if you ask me, but it's kind of like saying, seeing that the model is lying kind of because or answering a lot out of its feeling and what..."
+  },
+  {
+   "t": 2283,
+   "text": "is this feeling for LLMs? It's most of the time biases. So the most common answer to how many questions just happens to be two, because if there's none, you wouldn't have phrased that question that way. If there's no dog in the image, you ask, are there dogs in the image? So it wouldn't ask how many. So there's this bias of how we use language. So it's not zero because you just ask how many. If you ask how many, it's also... quite unlikely to be one, it's way more likely to be two, it's a bit less likely to be three, and then four, five, six, and especially if you go above seven, no person counts 1,244 people in an image. So you won't find captions on the internet who are saying, there's 37 clocks in this image, or there's 76 dogs in this image."
+  },
+  {
+   "t": 2334,
+   "text": "No. So... It's absolutely clear that from training data alone, VLMs won't be able to count above seven-ish just because we are too lazy to count above seven and we just say many. would you say that there could be the case where you, for example, just cover the image or don't give that image as input to the multimodal model and it produces the same explanation as it would have produced with the image and text. Yeah, so of course, it's very likely. And it's a bit worrisome, right? Because if we have applications like medicine or robotics or anything that's safety critical, it's actually super important that the model actually looks at what the data is in there and not just assume it's two dogs because two dogs, it's usual answer, but something that there might be, mean, half of like the part of the, of an object as well."
+  },
+  {
+   "t": 2394,
+   "text": "That's very, very uncommon in training data, And there's a lot of approaches of using existing models already to generate synthetic data in the image space, in the text space, or in checking whether something is the case in the training data. And if it's very not often the case to oversample that thing, such that the model then understands, okay, even if I have just one training sample with two and a half, I can train 10 times a bit on it such that I don't forget this thing and, comparably to, to other features that are way more prevalent in the training data to still retain that information that is just on one training sample. So all these tricks are being applied and, explanation wise, have the unfaithfulness from LLMs together with the unwillingness of VLMs to actually look at the image and, it makes explanations even more."
+  },
+  {
+   "t": 2450,
+   "text": "like hard to trust than LLMs alone."
+  },
+  {
+   "t": 2455,
+   "text": "We spoke a lot about that faithfulness and it's somehow related to hallucinations, right? And one of the very popular solution that is frequently used by companies when they deal with hallucinations is just to use retrieval augmented generation system or RAG. And what would you say to people that say something like we use RAG so hallucinations are not a problem? okay, you assume the model doesn't have some knowledge because it might be proprietary data that just the company has and it's not something that the company wants to release because it's their intellectual property or something, internal stuff you don't want to release."
+  },
+  {
+   "t": 2502,
+   "text": "So the LLM doesn't have that knowledge because it's not on the internet. And then if you just ask the model about that, it will start hallucinating because it doesn't know. So what you do is you link it to your internal database and have you get the question that the user asked and search with that question in your database of documents and see what matches from a semantic embedding perspective. and get that document and put it into the context window of the model. And then hopefully that alleviates the hallucinations because now the information is there, right? Wrong. Because the problem is that the model doesn't necessarily use that context still because it is still very much used to like maybe falling into its parametric knowledge and just answering from parametric knowledge and actually ignoring the context that you just brought."
+  },
+  {
+   "t": 2556,
+   "text": "So you cannot trust them to look into the documents and not to be overwhelmed or biased into using some biases from parametric knowledge. So that's where I did some work very recently. I have this paper called Bounding Hallucinations: Information-Theoretic Guarantees for RAG Systems via Merlin-Arthur Protocols. That's the title of the paper. And there, what we do is we use some concepts from game theory and adversarial training and things like this to actually bound the information exchange between that context, so between the documents and the answer the LLM produces. So that of course helps with hallucinations, right?"
+  },
+  {
+   "t": 2604,
+   "text": "if we just do normal fine tuning on RAG data, we see that the information exchange is pretty minimal between context and answer. But if we do our Merlin-Arthur protocol training, then we actually see the information exchange between context and answer increase. then the model, you're more sure that it actually uses that retrieved context and not hallucinate about something, right?"
+  },
+  {
+   "t": 2638,
+   "text": "So why, this approach is better than the previously used approaches? when we do this Merlin-Arthur training, it's a bit complicated, so I need to explain. So the Merlin-Arthur training is a procedure where we have Merlin and Morgana and Arthur. There are three players. And Arthur is the generator LLM. So Arthur is the person that needs to give the answer. And Merlin is the good guy, he's a good wizard. and provides helpful evidence. So if you have a context in RAG, Merlin selects a subset of context from that document that is actually the helpful evidence."
+  },
+  {
+   "t": 2684,
+   "text": "How? By maximizing Arthur's probability in giving the right answer, because usually the right context is correlated with the right answer. And Morgana injects adversarial evidence, so misleading context, so selects a subset of the context that makes Arthur believe the wrong answer is correct. And so we train with Merlin inputs or good inputs or context that supports the answer and train with Morgana input to reject when there's not the evidence that actually makes you say the good answer. By having these two players now in the game, Arthur learns to rely on the specific context spans that actually ground the answer, because if it doesn't, then Morgana can use those misconceptions of Arthur and fool him into saying something wrong."
+  },
+  {
+   "t": 2740,
+   "text": "But we're training Arthur to be robust against Morgana. So this actually makes the model rely on actual context spans that actually ground the answer and not on some ruler because Morgana can use the ruler to fool Arthur into giving the wrong answer because it can just give a ruler without the cancer and that would be a misclassification then. yeah, that's a great thing that now, so we have this better grounding in actually good context spans, but we also get reject behavior because we train the model to reject with this Morgana input. And even though the data set doesn't teach the model to reject answering because, I mean, to teach a model to reject answering, you have to actually give it examples of when it should reject."
+  },
+  {
+   "t": 2790,
+   "text": "So when the right context isn't there. 461 00:46:40,457 --> 00:46:35,178 you need to annotate them. like you need to pay humans to do this. And we, because we generate these unanswerable questions on the fly by just asking, like by just having this Merlin and Morgana and Arthur in the loop, we get this reject behavior. without actually having data. And also because we have this model that looks now on the right features, the interpretability that we do on these models becomes better."
+  },
+  {
+   "t": 2823,
+   "text": "I'm really excited about this kind of work. So mutual information exchange between context and answer. That's what avoids hallucinations, rejection behavior on the fly by having Morgana generate on the fly rejection. cases and the focus on the right features solves very much of the interpretability problems. Right. One aspect that looks important to me here is we as users of LLMs, have all those needs. need the model to be accurate and interpretable and also helpful. And there is a little bit of tension between the helpfulness and the ability to reject the given the insufficient information."
+  },
+  {
+   "t": 2878,
+   "text": "So how do you think we should approach that tension? Yeah, so I would assume that people could have different perspectives on this, but I am in the camp of better safe than sorry. So what we see with Merlin-Arthur training is that luckily the accuracy, the vanilla accuracy of the model is the same after normal fine tuning and after Merlin-Arthur fine tuning. So the utility of the model doesn't decrease, which is great. But then of course you get this reject behavior that can statistically sometimes trigger a bit too much. It can happen that you're making the model safe and, of course, even in Merlin-Arthur training, can increase the safety. You can just weigh the soundness that is triggered by Morgana way higher and say, oh, I want a model that's better safe than sorry."
+  },
+  {
+   "t": 2932,
+   "text": "So even if your model works just in 20 % of cases, it's better to have it work on 20 % of cases and you know that in those 20 % of cases, it's correct, rather than have it work well in 99 % of the cases, but you don't know where the 1 % mistake is. Because if you have it like that, you need to check. Where's the mistake that will, I don't know, in my safety critical thing, crash my plane, right? So you need to check then all 100 % of the things to find the 1 % mistake. And if you have 20 % accuracy, you save 20, and you know that those are safe, then you saved 20 % of work. You need to do 80%, admittedly. But you don't have to do 100%, like you have to do in the 99 % and 1 % scenario, right?"
+  },
+  {
+   "t": 2983,
+   "text": "the thing that I'm very much an advocate for is to have m models that are good or okay with rejecting and saying, sorry, I don't have enough information. And the second thing that we need is verification. if we have a way to actually verify the answer is correct, it's a bit difficult, right? But that the reasoning trace makes sense, that the answer follows from the reasoning trace, then we're already getting towards that 20 % that actually is correct and we can focus on the rest 80 % and do it ourselves Right. You also mentioned in this paper that you provide information theoretic guarantees for RAG systems, right?"
+  },
+  {
+   "t": 3029,
+   "text": "So for practitioners that are listening right now who might be deploying RAG in production, What kind of reliability guarantees they can expect from this framework of"
+  },
+  {
+   "t": 3043,
+   "text": "yours? with Merlin-Arthur training, we have this measure called EIF, which quantifies the proportion of how much the answer is provably captured by the context features. with normal fine tuning, stays at zero, So it is very low. And with Merlin-Arthur, it goes to 0.3, 0.35. So you know there is information exchange between context and answer. And of course it cannot be a hundred percent because some extra things must be happening from the model. So there is always some skill. that is needed from the parametric knowledge of the model. So even though the entire information is in there, in the context, there is some extra multi-hop reasoning, whatever, so skills that are from the parametric knowledge."
+  },
+  {
+   "t": 3092,
+   "text": "So I don't think that 100 % is the baseline here, so like an EIF of one or something, but it's like, I would trust a model way better more if I know that it has an EIF of 0.3 compared to a model that has an EIF of 0.05. and as I said, the utility of the model is preserved. So if you use it, it's the same accuracy as before. It's just that it has this extra, we call it soundness. So ability to reject when the actual information in the context is not there. And it's absolutely impressive, I think, how much models don't like to reject. So it's not like we don't try. We let the models by prompts, like we prompt them, Hey, look, we, get some context."
+  },
+  {
+   "t": 3139,
+   "text": "You need to see whether you can even answer that, information, that, question with information from context and stuff, but they still don't, they still don't reject answering even if we prompt them and they're good instruction to models like the Qwen3 which is quite a great at instruction following, but no, it rather says something if it thinks it knows it. rather than say, sorry, the answer is not in the context. And this soundness is greater with Merlin-Arthur Training, much greater. Do you have any intuition based on your own experience of where this avoidance to reject comes from? Is it from pre-training, from instruction tuning phase, or any other post-training phases?"
+  },
+  {
+   "t": 3185,
+   "text": "Yeah, so people blame reinforcement learning or preference data for this, but I think it's absolutely in all stages. It starts from pre-training because how often have you, Jekaterina, wrote a text saying, I don't know anything about cars. I don't know anything about planes. I don't know about, I mean, you cannot even... write that you don't know about something that you don't know exists. Like, how can you write I don't know about the EIF if you didn't even know that EIF exists, right? So nobody does that. The amount of those occurrences in the training data in the pre-training, it's infinitesimally small compared to how large actually a lot of stuff that we know about is. Because if I write about something, I write about something because I know about something."
+  },
+  {
+   "t": 3234,
+   "text": "So already in the pre-training data, you have this behavior of the model actually trying to just know it. Because we usually sound in all or 99 % of our text like we know it because if we write some text, we know about stuff. So that's pre-training and that's not to be neglected because it starts there. It just gets worse in preference tuning because humans usually rate what they like best in responses And they like responses where stuff is responded and not, yeah, I don't know. Yeah. why would you thumbs up an I don't know answer then you say stupid model and you thumbs down it, right? So we never encourage the model to actually admit I don't know."
+  },
+  {
+   "t": 3279,
+   "text": "Given all that you told today, it looks to me that we can have the false sense of reliability when we speak about LLMs, VLMs, and other language models. Do you think that today's benchmarks also give us that false sense of reliability?"
+  },
+  {
+   "t": 3307,
+   "text": "Oh yeah, and it's even worse than ever before, think, because now there's a lot of incentive in benchmark gaming. So if you're a lab and you publish a model, people look at your benchmark metrics. yeah, if we see like how Anthropic or Google or OpenAI publish it, you've seen... like the notorious examples of the bars, plots that didn't make any sense on Open AI's release and stuff like that. yeah, benchmarks, you want to have high scores in them. And oftentimes what happens is that these labs include then data in training that is targeted for that benchmark. So let's say there is even a benchmark that has a hidden test set and you cannot actually look at the test set and see how to include some in the training set, which has also happened."
+  },
+  {
+   "t": 3363,
+   "text": "I mean, there's notorious cases of that as well. But still, you know there is this benchmark. This benchmark has a description. This benchmark has some examples, maybe three, maybe 10. Doesn't matter, enough to know what the gist of it is and come up with your own similar data to that. And you don't even have to manually do it. You can do it now with LLMs to... synthetically augment such training datasets with data in a way in which you think it should look like. yeah, so then you get a model that gets quite high scores in benchmarks and you really have targeted the capability that benchmark targets, but then you don't perform well in everything else because it's a bit of a..."
+  },
+  {
+   "t": 3417,
+   "text": "I mean, all the skills that LLMs should have or people have is very high dimensional. It's very many directions in which you can know stuff. There's many skills, many knowledge items. And gaining on some dimension doesn't mean you gain on the other dimension. And there's even dimensions that are Like if you gain on one, you lose on the other. Like there's the notorious example of exploration and exploitation. Like if you really win on one, you lose at the other. And it's, think, the same with all of the capabilities that we're trying to get LLMs to be good at. yeah, it's, I mean, you see some benchmark score, but..."
+  },
+  {
+   "t": 3465,
+   "text": "you don't know exactly how the model performs until you have really used it in your use case. And even let's say you have a model that is super good at helping you with, I know, coming up with ideas for a YouTube video or something, which I think they suck at, but just saying. And then it doesn't mean that it's a good model in helping you write an essay or another or a good model in writing your physics papers or something like that. So it's very much dependent on what exactly the model was trained on, I would say, yeah, the training data is the best giveaway for what the model will be able to do because architectures can get you only so far. The RL training methods are more or less equivalent in like what they can get you at, but of course you can always gain in efficiency."
+  },
+  {
+   "t": 3516,
+   "text": "You can always gain a little bit instability and the kind of training environment in RL, which is just a glorious way of saying the type of training data that it gets in RL and the type of training data it gets during pre-training, that's the actual source that makes a good language model."
+  },
+  {
+   "t": 3535,
+   "text": "what's your view on the trajectory of LLM reliability? Do we have a single benchmark that is good enough to measure whether we move towards more reliable systems or do we have metrics that are measuring the progress properly? Do we have"
+  },
+  {
+   "t": 3558,
+   "text": "proper approaches that move to the proper direction so that we hopefully could have more reliable systems in the future? Yeah, so there is no current benchmark that does that. And I think no benchmark can do it because as soon as something becomes a benchmark, it's being gained to the detriment of everything else. So I think benchmarks are something that should evolve and should spawn every year such that we then actually make progress because if there's no new benchmark, there's also no new gains because people would just game the old benchmark. And yeah, in terms of actual directions, I think people have ideas. So I think we discussed this thing of encouraging the model to say it doesn't know, even though it's not encouraged at any of the stages that we have right now in LLM training, people are getting the idea that it should be if we want to be able to use these LLMs in areas where we actually should trust them."
+  },
+  {
+   "t": 3621,
+   "text": "So like more hallucination, abstention from its own, like, just have the model abstain more. But it's one thing. The other thing is to be able to output formats and thoughts that we can actually verify and we can trust that if we verify it and 100 % of it is correct, then also it matches to what the model actually thought. That's also something we should keep in mind that oh sometimes it's it's really hard to verify a specific answer, but if you break it down in very particula ways, you can verify all the steps that you needed to get to that answer."
+  },
+  {
+   "t": 3667,
+   "text": "So a bit of a divide and conquer approach here. also the importance of abstention is really, really tremendous because another thing that we never think about enough when we interact with LLMs is that we oftentimes literally expect the LLM to read our mind. And that's also something that we oftentimes see in human-to-human interaction where I don't know if you have these people that just talk to you like they would talk to themselves and they expect you to understand everything they say. Well, that's, I mean, this attitude we even have worse... wasn't with LLMs because we ask a question and we just expect them to get it."
+  },
+  {
+   "t": 3714,
+   "text": "And it's even magical how much they can get it already, I would say. Because if we think about it, there's so much under specification and literally lack of specification of the problem we're giving them. We're asking them about some task and they don't know anything about us. They don't know... where in the world we live in. because if you want an essay in school, it's a very different type of essay that they expect in Romania versus in Germany versus in the UK. So there's so much under specification when we just tell them, write me an essay about this topic and anything that we ask them. So because there's this lack of specification and most of the time you don't have the time to specify everything and tell the story of your life, just such a model can write your good essay."
+  },
+  {
+   "t": 3767,
+   "text": "The rejection is one thing, the other thing is to actually just ask for more information. Is it, so not just runs right away, but is it this or is it that? And I think deep research models have come a long way in requesting this additional information because we literally just underestimate how much we don't say when we ask a question and just hope for the LLM to read our minds and assume everything correctly and have the model also just state what they assumed and we... should be able to correct it and then go ahead from that. lot of exciting directions to go to. Okay, thanks so much, Letitia, for our conversation today. Thanks a lot for having me. It was really fun."
+  }
+ ]
+}

@@ -15,7 +15,58 @@
     "guests": [
       "Dr. Nouha Dziri"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00:00",
+        "seconds": 0,
+        "title": "Introduction - Nouha Dziri"
+      },
+      {
+        "time": "00:04:10",
+        "seconds": 250,
+        "title": "Defining Success in AI Research"
+      },
+      {
+        "time": "00:07:46",
+        "seconds": 466,
+        "title": "Overcoming Challenges and Failures"
+      },
+      {
+        "time": "00:09:40",
+        "seconds": 580,
+        "title": "Navigating Gender and Cultural Stereotypes in AI"
+      },
+      {
+        "time": "00:16:02",
+        "seconds": 962,
+        "title": "Understanding the Limits of Language Models"
+      },
+      {
+        "time": "00:19:06",
+        "seconds": 1146,
+        "title": "The Generative AI Paradox Explained"
+      },
+      {
+        "time": "00:33:17",
+        "seconds": 1997,
+        "title": "Compositionality and Reasoning in AI"
+      },
+      {
+        "time": "00:37:51",
+        "seconds": 2271,
+        "title": "Challenges in AI Training and Generalization"
+      },
+      {
+        "time": "00:43:41",
+        "seconds": 2621,
+        "title": "The Future of AI Reasoning"
+      },
+      {
+        "time": "00:46:33",
+        "seconds": 2793,
+        "title": "Collaboration and Safety in AI Research"
+      }
+    ],
     "topics": [
       {
         "slug": "reasoning-generalization",
@@ -43,7 +94,68 @@
     "guests": [
       "Dr. Amanda Cercas Curry"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00:00",
+        "seconds": 0,
+        "title": "Introduction and Guest Background"
+      },
+      {
+        "time": "00:03:40",
+        "seconds": 220,
+        "title": "Feminism and AI Ethics: Challenges and Resistance"
+      },
+      {
+        "time": "00:09:50",
+        "seconds": 590,
+        "title": "Structural Biases in NLP Systems"
+      },
+      {
+        "time": "00:14:12",
+        "seconds": 852,
+        "title": "Let's Chat Ethics - Amanda's podcast"
+      },
+      {
+        "time": "00:17:42",
+        "seconds": 1062,
+        "title": "Evaluating Ethics in NLP Models"
+      },
+      {
+        "time": "00:21:02",
+        "seconds": 1262,
+        "title": "Social Class and Its Impact on NLP Systems"
+      },
+      {
+        "time": "00:24:55",
+        "seconds": 1495,
+        "title": "Language, Marginalization, and Social Class"
+      },
+      {
+        "time": "00:30:12",
+        "seconds": 1812,
+        "title": "Addressing Bias in NLP Systems"
+      },
+      {
+        "time": "00:34:44",
+        "seconds": 2084,
+        "title": "Emotional Stereotypes in Language Models"
+      },
+      {
+        "time": "00:38:22",
+        "seconds": 2302,
+        "title": "Interdisciplinary Approaches in AI Research"
+      },
+      {
+        "time": "00:42:57",
+        "seconds": 2577,
+        "title": "Understanding Human Emotions in AI"
+      },
+      {
+        "time": "00:47:44",
+        "seconds": 2864,
+        "title": "Advice to Early Career Researchers"
+      }
+    ],
     "topics": [
       {
         "slug": "bias-fairness-culture",
@@ -67,7 +179,73 @@
     "guests": [
       "Aparna Balagopalan"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00:00",
+        "seconds": 0,
+        "title": "Introduction and Guest Background"
+      },
+      {
+        "time": "00:01:05",
+        "seconds": 65,
+        "title": "Transition from Industry to Academia"
+      },
+      {
+        "time": "00:04:42",
+        "seconds": 282,
+        "title": "Navigating Challenges in Research"
+      },
+      {
+        "time": "00:07:15",
+        "seconds": 435,
+        "title": "Daily Life of a PhD Researcher"
+      },
+      {
+        "time": "00:08:42",
+        "seconds": 522,
+        "title": "International Perspective in Research"
+      },
+      {
+        "time": "00:12:02",
+        "seconds": 722,
+        "title": "Machine Learning for Healthcare that Matters"
+      },
+      {
+        "time": "00:14:12",
+        "seconds": 852,
+        "title": "Data Quality and Bias in Machine Learning"
+      },
+      {
+        "time": "00:17:42",
+        "seconds": 1062,
+        "title": "Importance of Collaboration with Clinicians"
+      },
+      {
+        "time": "00:19:55",
+        "seconds": 1195,
+        "title": "Labelling and Annotation Challenges"
+      },
+      {
+        "time": "00:23:16",
+        "seconds": 1396,
+        "title": "Multimodal Data and Label Errors"
+      },
+      {
+        "time": "00:30:06",
+        "seconds": 1806,
+        "title": "Responsible Data Challenges in Healthcare"
+      },
+      {
+        "time": "00:33:39",
+        "seconds": 2019,
+        "title": "Advice for Women in AI"
+      },
+      {
+        "time": "00:36:58",
+        "seconds": 2218,
+        "title": "Future of AI in Healthcare"
+      }
+    ],
     "topics": [
       {
         "slug": "bias-fairness-culture",
@@ -95,7 +273,103 @@
     "guests": [
       "Dr. Angelica Lim"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00:00",
+        "seconds": 0,
+        "title": "Introduction and Guest Background"
+      },
+      {
+        "time": "00:03:51",
+        "seconds": 231,
+        "title": "Experiences as a Woman in AI"
+      },
+      {
+        "time": "00:05:28",
+        "seconds": 328,
+        "title": "Challenges in Academia for Women"
+      },
+      {
+        "time": "00:07:58",
+        "seconds": 478,
+        "title": "The Role of Coaches and Support Systems"
+      },
+      {
+        "time": "00:09:03",
+        "seconds": 543,
+        "title": "The Need for Reform in Academia"
+      },
+      {
+        "time": "00:11:25",
+        "seconds": 685,
+        "title": "Increasing Visibility for Women in AI"
+      },
+      {
+        "time": "00:14:38",
+        "seconds": 878,
+        "title": "Research Focus: Socially Intelligent Robots"
+      },
+      {
+        "time": "00:18:04",
+        "seconds": 1084,
+        "title": "Robots in Health and Wellbeing"
+      },
+      {
+        "time": "00:22:51",
+        "seconds": 1371,
+        "title": "Ethical Considerations in Robotics"
+      },
+      {
+        "time": "00:24:38",
+        "seconds": 1478,
+        "title": "Inclusive Human-Robot Interaction"
+      },
+      {
+        "time": "00:26:39",
+        "seconds": 1599,
+        "title": "Enhancing Emotional Recognition for Underrepresented Groups"
+      },
+      {
+        "time": "00:28:58",
+        "seconds": 1738,
+        "title": "The Need of Granularity in Emotion Recognition"
+      },
+      {
+        "time": "00:30:25",
+        "seconds": 1825,
+        "title": "Contextual Emotion Recognition: A New Frontier"
+      },
+      {
+        "time": "00:32:43",
+        "seconds": 1963,
+        "title": "Multimodal Approaches to Understanding Emotions"
+      },
+      {
+        "time": "00:34:58",
+        "seconds": 2098,
+        "title": "Limitations of Language Models in Emotion Recognition"
+      },
+      {
+        "time": "00:38:31",
+        "seconds": 2311,
+        "title": "Robustness and Generalizability in Emotion Recognition Models"
+      },
+      {
+        "time": "00:41:59",
+        "seconds": 2519,
+        "title": "Advancements in Facial Expression Synthesis"
+      },
+      {
+        "time": "00:45:07",
+        "seconds": 2707,
+        "title": "The Nonverbal Turing Test: A New Challenge"
+      },
+      {
+        "time": "00:47:23",
+        "seconds": 2843,
+        "title": "Opportunities in AI: Recruiting for Future Innovations"
+      }
+    ],
     "topics": [
       {
         "slug": "multimodal-embodied-ai",
@@ -119,7 +393,83 @@
     "guests": [
       "Dr. Faiza Khan Khattak"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "title": "Intro"
+      },
+      {
+        "time": "01:37",
+        "seconds": 97,
+        "title": "Faiza’s Journey in AI"
+      },
+      {
+        "time": "07:50",
+        "seconds": 470,
+        "title": "Exploring Fairness in AI"
+      },
+      {
+        "time": "11:17",
+        "seconds": 677,
+        "title": "The Role of Mentorship"
+      },
+      {
+        "time": "13:27",
+        "seconds": 807,
+        "title": "Transitioning Between Academia, Industry, and Entrepreneurship"
+      },
+      {
+        "time": "17:02",
+        "seconds": 1022,
+        "title": "Challenges Faced by Women in AI"
+      },
+      {
+        "time": "22:01",
+        "seconds": 1321,
+        "title": "MLHOps in Healthcare"
+      },
+      {
+        "time": "24:30",
+        "seconds": 1470,
+        "title": "Operationalizing ML Models in Healthcare"
+      },
+      {
+        "time": "27:25",
+        "seconds": 1645,
+        "title": "Exploring Explainability in AI Models"
+      },
+      {
+        "time": "31:31",
+        "seconds": 1891,
+        "title": "Risks of AI in Healthcare"
+      },
+      {
+        "time": "33:23",
+        "seconds": 2003,
+        "title": "Addressing Social Bias in AI"
+      },
+      {
+        "time": "38:40",
+        "seconds": 2320,
+        "title": "The Role of Reasoning in Interpretability"
+      },
+      {
+        "time": "41:04",
+        "seconds": 2464,
+        "title": "Generalizability of Reasoning Across Models"
+      },
+      {
+        "time": "46:25",
+        "seconds": 2785,
+        "title": "Machine Unlearning and Bias Mitigation"
+      },
+      {
+        "time": "52:57",
+        "seconds": 3177,
+        "title": "Adversarial Attacks and Bias Induction"
+      }
+    ],
     "topics": [
       {
         "slug": "bias-fairness-culture",
@@ -151,7 +501,98 @@
     "guests": [
       "Wanru Zhao"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "title": "Introduction to Wanru Zhao and Her Journey"
+      },
+      {
+        "time": "02:56",
+        "seconds": 176,
+        "title": "Academic Pathway: From MPhil to PhD"
+      },
+      {
+        "time": "06:29",
+        "seconds": 389,
+        "title": "Research Ecosystems: UK vs Canada"
+      },
+      {
+        "time": "09:56",
+        "seconds": 596,
+        "title": "Collaboration Between Industry and Academia"
+      },
+      {
+        "time": "12:46",
+        "seconds": 766,
+        "title": "Navigating Challenges in Research"
+      },
+      {
+        "time": "16:13",
+        "seconds": 973,
+        "title": "Experiences of Being an Outsider in AI"
+      },
+      {
+        "time": "18:37",
+        "seconds": 1117,
+        "title": "Breaking Unspoken Rules in Academia"
+      },
+      {
+        "time": "21:33",
+        "seconds": 1293,
+        "title": "Scaling Laws in Language Models"
+      },
+      {
+        "time": "25:57",
+        "seconds": 1557,
+        "title": "Challenges in Data Attribution for LLMs"
+      },
+      {
+        "time": "27:17",
+        "seconds": 1637,
+        "title": "Leveraging High-Quality Public Data"
+      },
+      {
+        "time": "30:37",
+        "seconds": 1837,
+        "title": "Model Merging Techniques for Fine-Tuning"
+      },
+      {
+        "time": "32:42",
+        "seconds": 1962,
+        "title": "The big picture behind CLUES"
+      },
+      {
+        "time": "35:17",
+        "seconds": 2117,
+        "title": "Future Directions in Collaborative LLM Development"
+      },
+      {
+        "time": "36:39",
+        "seconds": 2199,
+        "title": "Incentivizing Contributions in Collaborative Learning"
+      },
+      {
+        "time": "38:02",
+        "seconds": 2282,
+        "title": "Challenges in Multilingual Fine-Tuning"
+      },
+      {
+        "time": "45:30",
+        "seconds": 2730,
+        "title": "Scaling Collaborative Learning Paradigms"
+      },
+      {
+        "time": "46:36",
+        "seconds": 2796,
+        "title": "Recent advances - Cascade inference"
+      },
+      {
+        "time": "49:08",
+        "seconds": 2948,
+        "title": "Advice for Young Researchers in AI"
+      }
+    ],
     "topics": [
       {
         "slug": "multilingual-ai-tokenization",
@@ -179,7 +620,73 @@
     "guests": [
       "Dr. Dieuwke Hupkes"
     ],
-    "chapters": [],
+    "chapters": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "title": "Introduction to Dieuwke Hupkes and Her Journey"
+      },
+      {
+        "time": "05:15",
+        "seconds": 315,
+        "title": "Navigating Challenges in Research"
+      },
+      {
+        "time": "07:17",
+        "seconds": 437,
+        "title": "The Peer Review Process: Insights and Frustrations"
+      },
+      {
+        "time": "16:23",
+        "seconds": 983,
+        "title": "Being a Woman in AI: Representation and Challenges"
+      },
+      {
+        "time": "19:57",
+        "seconds": 1197,
+        "title": "Balancing Research and Personal Life"
+      },
+      {
+        "time": "23:37",
+        "seconds": 1417,
+        "title": "Exploring Consistency and Generalization in Language Models"
+      },
+      {
+        "time": "33:31",
+        "seconds": 2011,
+        "title": "Generalization Across Languages and Modalities"
+      },
+      {
+        "time": "35:15",
+        "seconds": 2115,
+        "title": "Exploring Generalization Taxonomy"
+      },
+      {
+        "time": "40:55",
+        "seconds": 2455,
+        "title": "Challenges in Evaluating Generalization"
+      },
+      {
+        "time": "44:12",
+        "seconds": 2652,
+        "title": "Data Contamination and Generalization"
+      },
+      {
+        "time": "50:43",
+        "seconds": 3043,
+        "title": "Consistency in Language Models"
+      },
+      {
+        "time": "57:23",
+        "seconds": 3443,
+        "title": "The Intersection of Consistency and Alignment"
+      },
+      {
+        "time": "01:01:15",
+        "seconds": 3675,
+        "title": "Current Research Directions"
+      }
+    ],
     "topics": [
       {
         "slug": "evaluation-benchmarks",
@@ -282,46 +789,6 @@
         "time": "01:01:11",
         "seconds": 3671,
         "title": "Advice for Impactful Research"
-      },
-      {
-        "time": "01:24",
-        "seconds": 84,
-        "title": "Abhilasha Ravichander -- Google Scholar profile (https://scholar.google.ca/citations?user=6vLsKGsAAAAJ&hl=en&oi=ao)"
-      },
-      {
-        "time": "25:05",
-        "seconds": 1505,
-        "title": "WildHallucinations: Evaluating Long-form Factuality in LLMs with Real-World Entity Queries (https://arxiv.org/abs/2407.17468)"
-      },
-      {
-        "time": "25:33",
-        "seconds": 1533,
-        "title": "HALoGEN: Fantastic LLM Hallucinations and Where to Find Them (https://arxiv.org/abs/2501.08292)"
-      },
-      {
-        "time": "30:02",
-        "seconds": 1802,
-        "title": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation (https://arxiv.org/abs/2305.14251)"
-      },
-      {
-        "time": "34:05",
-        "seconds": 2045,
-        "title": "What's In My Big Data? (https://arxiv.org/abs/2310.20707)"
-      },
-      {
-        "time": "45:16",
-        "seconds": 2716,
-        "title": "Information-Guided Identification of Training Data Imprint in (Proprietary) Large Language Models (https://arxiv.org/abs/2503.12072)"
-      },
-      {
-        "time": "54:15",
-        "seconds": 3255,
-        "title": "RESTOR: Knowledge Recovery in Machine Unlearning (https://arxiv.org/abs/2411.00204)"
-      },
-      {
-        "time": "54:39",
-        "seconds": 3279,
-        "title": "Model State Arithmetic for Machine Unlearning (https://arxiv.org/abs/2506.20941)"
       }
     ],
     "topics": [
@@ -425,36 +892,6 @@
         "time": "49:11",
         "seconds": 2951,
         "title": "Advice for Women in AI Research"
-      },
-      {
-        "time": "01:26",
-        "seconds": 86,
-        "title": "Simeng Sophia Han - Google Scholar profile (https://scholar.google.ca/citations?hl=en&user=D0dpploAAAAJ)"
-      },
-      {
-        "time": "11:40",
-        "seconds": 700,
-        "title": "Creativity or Brute Force? Using Brainteasers as a Window into the Problem-Solving Abilities of Large Language Models (https://arxiv.org/abs/2505.10844)"
-      },
-      {
-        "time": "25:35",
-        "seconds": 1535,
-        "title": "HYBRIDMIND: Meta Selection of Natural Language and Symbolic Language for Enhanced LLM Reasoning (https://arxiv.org/abs/2409.19381)"
-      },
-      {
-        "time": "29:25",
-        "seconds": 1765,
-        "title": "P-FOLIO: Evaluating and Improving Logical Reasoning with Abundant Human-Written Reasoning Chains (https://arxiv.org/abs/2410.09207)"
-      },
-      {
-        "time": "39:05",
-        "seconds": 2345,
-        "title": "Folio: Natural Language Reasoning with First-Order Logic (https://arxiv.org/abs/2209.00840)"
-      },
-      {
-        "time": "41:54",
-        "seconds": 2514,
-        "title": "HYBRIDMIND: Meta Selection of Natural Language and Symbolic Language for Enhanced LLM Reasoning (https://arxiv.org/abs/2409.19381)"
       }
     ],
     "topics": [
@@ -598,36 +1035,6 @@
         "time": "01:09:57",
         "seconds": 4197,
         "title": "Creating an Inclusive Research Environment"
-      },
-      {
-        "time": "00:44",
-        "seconds": 44,
-        "title": "Valentina Pyatkin Google Scholar profile (https://scholar.google.com/citations?user=E9EgKkMAAAAJ)"
-      },
-      {
-        "time": "13:40",
-        "seconds": 820,
-        "title": "Olmo: Accelerating the science of language models (https://arxiv.org/abs/2402.00838)"
-      },
-      {
-        "time": "16:57",
-        "seconds": 1017,
-        "title": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training (https://arxiv.org/abs/2411.15124)"
-      },
-      {
-        "time": "25:01",
-        "seconds": 1501,
-        "title": "open-instruct (https://github.com/allenai/open-instruct)"
-      },
-      {
-        "time": "43:55",
-        "seconds": 2635,
-        "title": "Generalizing Verifiable Instruction Following (https://arxiv.org/abs/2507.02833)"
-      },
-      {
-        "time": "59:45",
-        "seconds": 3585,
-        "title": "RewardBench 2: Advancing Reward Model Evaluation (https://arxiv.org/abs/2506.01937)"
       }
     ],
     "topics": [
@@ -758,31 +1165,6 @@
         "time": "01:19:05",
         "seconds": 4745,
         "title": "Future Directions in AI Research"
-      },
-      {
-        "time": "17:56",
-        "seconds": 1076,
-        "title": "On Evaluating Explanation Utility for Human-AI Decision Making in NLP (https://aclanthology.org/2024.findings-emnlp.439/)"
-      },
-      {
-        "time": "31:02",
-        "seconds": 1862,
-        "title": "Effective Human-AI Teams via Learned Natural Language Rules and Onboarding (https://arxiv.org/abs/2311.01007)"
-      },
-      {
-        "time": "41:10",
-        "seconds": 2470,
-        "title": "Chain-of-Thought Unfaithfulness as Disguised Accuracy (https://arxiv.org/abs/2402.14897)"
-      },
-      {
-        "time": "41:52",
-        "seconds": 2512,
-        "title": "On Measuring Faithfulness or Self-consistency of Natural Language Explanations (https://arxiv.org/abs/2311.07466)"
-      },
-      {
-        "time": "01:01:51",
-        "seconds": 3711,
-        "title": "What Has Been Lost with Synthetic Evaluation? (https://arxiv.org/abs/2505.22830)"
       }
     ],
     "topics": [
@@ -897,61 +1279,6 @@
         "time": "01:15:52",
         "seconds": 4552,
         "title": "Future Directions in AI Research"
-      },
-      {
-        "time": "01:10",
-        "seconds": 70,
-        "title": "Vered Shwartz Google Scholar profile (https://scholar.google.ca/citations?user=bbe4ResAAAAJ&hl=en&oi=ao)"
-      },
-      {
-        "time": "07:57",
-        "seconds": 477,
-        "title": "Book \"Lost in Automatic Translation\" (https://lostinautomatictranslation.com/)"
-      },
-      {
-        "time": "19:25",
-        "seconds": 1165,
-        "title": "Elevator Recognition, by The Scottish Comedy Channel (https://youtu.be/HbDnxzrbxn4?si=7YvUpZZ_earptBpN)"
-      },
-      {
-        "time": "20:33",
-        "seconds": 1233,
-        "title": "Locating Information Gaps and Narrative Inconsistencies Across Languages: A Case Study of LGBT People Portrayals on Wikipedia (https://arxiv.org/abs/2410.04282)"
-      },
-      {
-        "time": "30:34",
-        "seconds": 1834,
-        "title": "ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer (https://arxiv.org/abs/2502.21228)"
-      },
-      {
-        "time": "34:23",
-        "seconds": 2063,
-        "title": "WikiGap: Promoting Epistemic Equity by Surfacing Knowledge Gaps Between English Wikipedia and other Language Editions (https://arxiv.org/abs/2505.24195)"
-      },
-      {
-        "time": "37:24",
-        "seconds": 2244,
-        "title": "Is It Bad to Work All the Time? Cross-Cultural Evaluation of Social Norm Biases in GPT-4 (https://arxiv.org/abs/2505.18322)"
-      },
-      {
-        "time": "38:39",
-        "seconds": 2319,
-        "title": "Towards Measuring the Representation of Subjective Global Opinions in Language Models (https://arxiv.org/abs/2306.16388)"
-      },
-      {
-        "time": "48:09",
-        "seconds": 2889,
-        "title": "I'm Afraid I Can't Do That: Predicting Prompt Refusal in Black-Box Generative Language Models (https://arxiv.org/abs/2306.03423)"
-      },
-      {
-        "time": "50:43",
-        "seconds": 3043,
-        "title": "From Local Concepts to Universals: Evaluating the Multicultural Understanding of Vision-Language Models (https://arxiv.org/pdf/2407.00263)"
-      },
-      {
-        "time": "01:10:51",
-        "seconds": 4251,
-        "title": "CulturalBench: A Robust, Diverse, and Challenging"
       }
     ],
     "topics": [
@@ -1056,46 +1383,6 @@
         "time": "01:12:01",
         "seconds": 4321,
         "title": "Advice for Researchers on Underrepresented Languages"
-      },
-      {
-        "time": "23:03",
-        "seconds": 1383,
-        "title": "SIB-200: A simple, inclusive, and big evaluation dataset for topic classification in 200+ languages and dialects (https://aclanthology.org/2024.eacl-long.14.pdf)"
-      },
-      {
-        "time": "27:13",
-        "seconds": 1633,
-        "title": "URIEL+: Enhancing Linguistic Inclusion and Usability in a Typological and Multilingual Knowledge Base (https://aclanthology.org/2025.coling-main.463.pdf)"
-      },
-      {
-        "time": "33:23",
-        "seconds": 2003,
-        "title": "mR3: Multilingual Rubric-Agnostic Reward Reasoning Models (https://arxiv.org/pdf/2510.01146)"
-      },
-      {
-        "time": "40:36",
-        "seconds": 2436,
-        "title": "ProxyLM: Predicting language model performance on multilingual tasks via proxy models (https://aclanthology.org/2025.findings-naacl.106.pdf)"
-      },
-      {
-        "time": "46:29",
-        "seconds": 2789,
-        "title": "ATAIGI: An AI-Powered Multimodal Learning App Leveraging Generative Models for Low-Resource Taiwanese Hokkien (https://aclanthology.org/2025.naacl-demo.2.pdf)"
-      },
-      {
-        "time": "46:35",
-        "seconds": 2795,
-        "title": "Enhancing Taiwanese Hokkien Dual Translation by Exploring and Standardizing of Four Writing Systems (https://aclanthology.org/2024.lrec-main.538.pdf)"
-      },
-      {
-        "time": "01:02:43",
-        "seconds": 3763,
-        "title": "AlignFreeze: Navigating the Impact of Realignment on the Layers of Multilingual Models Across Diverse Languages (https://aclanthology.org/2025.naacl-short.48.pdf)"
-      },
-      {
-        "time": "01:08:51",
-        "seconds": 4131,
-        "title": "Irokobench: A new benchmark for african languages in the age of large language models (https://aclanthology.org/2025.naacl-long.139.pdf)"
       }
     ],
     "topics": [
@@ -1211,51 +1498,6 @@
         "time": "01:06:22",
         "seconds": 3982,
         "title": "Learning from Maternal Health Traditions"
-      },
-      {
-        "time": "17:25",
-        "seconds": 1045,
-        "title": "Trust No Bot (https://arxiv.org/abs/2407.11438)"
-      },
-      {
-        "time": "24:14",
-        "seconds": 1454,
-        "title": "A Large-Scale Analysis of Public-Facing, Community-Built Chatbots on Character.AI (https://arxiv.org/abs/2505.13354)"
-      },
-      {
-        "time": "28:57",
-        "seconds": 1737,
-        "title": "LLMs as Rsearch Tools (https://arxiv.org/abs/2411.05025)"
-      },
-      {
-        "time": "36:03",
-        "seconds": 2163,
-        "title": "Culture is Not Trivia (https://arxiv.org/abs/2502.12057)"
-      },
-      {
-        "time": "37:48",
-        "seconds": 2268,
-        "title": "Research Borderlands (https://arxiv.org/abs/2506.00784)"
-      },
-      {
-        "time": "50:54",
-        "seconds": 3054,
-        "title": "NLP for Maternal Healthcare (https://dl.acm.org/doi/abs/10.1145/3630106.3658982)"
-      },
-      {
-        "time": "01:00:03",
-        "seconds": 3603,
-        "title": "Data Feminism (https://data-feminism.mitpress.mit.edu/)"
-      },
-      {
-        "time": "01:04:10",
-        "seconds": 3850,
-        "title": "Epistemic Diversity and Knowledge Collapse in Large Language Models (https://arxiv.org/abs/2510.04226)"
-      },
-      {
-        "time": "01:09:21",
-        "seconds": 4161,
-        "title": "Empire of AI (https://www.penguinrandomhouse.com/books/743569/empire-of-ai-by-karen-hao/)"
       }
     ],
     "topics": [
@@ -1321,36 +1563,6 @@
         "time": "51:15",
         "seconds": 3075,
         "title": "Biological Inspiration, Alignment, and the Future of AI"
-      },
-      {
-        "time": "11:41",
-        "seconds": 701,
-        "title": "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification (https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)"
-      },
-      {
-        "time": "12:36",
-        "seconds": 756,
-        "title": "Stereotypes and Smut: The (Mis)representation of Non-cisgender Identities by Text-to-Image Models (https://aclanthology.org/2023.findings-acl.502)"
-      },
-      {
-        "time": "17:38",
-        "seconds": 1058,
-        "title": "Language models align with brain regions that represent concepts across modalities (https://arxiv.org/abs/2508.11536)"
-      },
-      {
-        "time": "30:53",
-        "seconds": 1853,
-        "title": "Elements of World Knowledge (EWoK): A Cognition-Inspired Framework for Evaluating Basic World Knowledge in Language Models (Paper - https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.38/133506, project - https://ewok-core.github.io)"
-      },
-      {
-        "time": "49:13",
-        "seconds": 2953,
-        "title": "Prompting is not a substitute for probability measurements in large language models (https://aclanthology.org/2023.emnlp-main.306/)"
-      },
-      {
-        "time": "50:04",
-        "seconds": 3004,
-        "title": "Auxiliary task demands mask the capabilities of smaller language models (https://openreview.net/forum?id=U5BUzSn4tD)"
       }
     ],
     "topics": [
@@ -1498,26 +1710,6 @@
         "time": "56:12",
         "seconds": 3372,
         "title": "The Responsibility of AI Researchers: Balancing Capability and Safety"
-      },
-      {
-        "time": "13:52",
-        "seconds": 832,
-        "title": "Better Language Model Inversion by Compactly Representing Next-Token Distributions (https://arxiv.org/abs/2506.17090)"
-      },
-      {
-        "time": "27:18",
-        "seconds": 1638,
-        "title": "Improving Language Model Personas via Rationalization with Psychological Scaffolds (https://ui.adsabs.harvard.edu/abs/2025arXiv250417993J/abstract)"
-      },
-      {
-        "time": "35:21",
-        "seconds": 2121,
-        "title": "OATH-Frames: Characterizing Online Attitudes Towards Homelessness with LLM Assistants (https://arxiv.org/abs/2406.14883)"
-      },
-      {
-        "time": "46:52",
-        "seconds": 2812,
-        "title": "Uncovering Intervention Opportunities for Suicide Prevention with Language Model Assistants (https://arxiv.org/abs/2508.18541)"
       }
     ],
     "topics": [
@@ -1637,21 +1829,6 @@
         "time": "58:55",
         "seconds": 3535,
         "title": "Future Directions for LLM Reliability"
-      },
-      {
-        "time": "18:25",
-        "seconds": 1105,
-        "title": "On Measuring Faithfulness or Self-consistency of Natural Language Explanations (https://aclanthology.org/anthology-files/pdf/acl/2024.acl-long.329.pdf)"
-      },
-      {
-        "time": "36:34",
-        "seconds": 2194,
-        "title": "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations? (https://arxiv.org/abs/2404.18624)"
-      },
-      {
-        "time": "42:49",
-        "seconds": 2569,
-        "title": "Bounding Hallucinations: Information-Theoretic Guarantees for RAG Systems via Merlin-Arthur Protocols (https://arxiv.org/abs/2512.11614)"
       }
     ],
     "topics": [

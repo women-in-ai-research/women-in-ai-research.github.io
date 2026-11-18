@@ -13,7 +13,8 @@
         "export": "next build",
         "deploy": "gh-pages -d out",
         "serve": "serve out -l 3000",
-        "update-content": "npx tsx scripts/sync-youtube.ts"
+        "update-content": "npx tsx scripts/sync-youtube.ts",
+        "import-transcripts": "npx tsx scripts/import-transcripts.ts"
     },
     "dependencies": {
         "@radix-ui/react-slot": "^1.1.0",

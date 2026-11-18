@@ -1,0 +1,435 @@
+{
+ "episode": 7,
+ "videoId": "CuTWIW1JcsA",
+ "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "segments": [
+  {
+   "t": 12,
+   "text": "Hello and welcome to another episode of the Women in AI Research podcast. I'm Jekaterina and I'm joined by my co-host Malikeh as usual. And today we are excited to welcome Dieuwke Hupkes to the podcast. Dieuwke is currently a research scientist at Meta AI Research. She has completed her PhD in computational linguistics at the Institute of Logic, Language and Computation at the University of Amsterdam. And then she proceeded as a postdoc at the Amsterdam unit of ELLIS. And she started her academic journey in Physics before discovering her passion for what she calls the beautifully complex system that is natural language."
+  },
+  {
+   "t": 64,
+   "text": "Her PhD at the University of Amsterdam focused on hierarchy and the interpretability in neural models, exploring how AI systems can help us understand human language processing. And here is a fun twist. When she's not researching computational linguistics, she's competing in pole dancing championships, where she even won the Dutch national title in doubles in 2018, which is quite impressive. Welcome to the podcast, Dieuwke Thank you. Thank you for having me. Yeah, and let's start with your journey first. Could you please tell us a little bit about your research career trajectory?"
+  },
+  {
+   "t": 111,
+   "text": "And specifically, is there one thing that I didn't mention in my introduction, maybe, but you would wish people to know about your journey in AI?"
+  },
+  {
+   "t": 124,
+   "text": "good question. So yeah, as you did point out, I started with Physics. Specifically, I studied Physics because I was really intrigued by astrophysics. Though one thing that you said that's actually not entirely true is that I wasn't passionate about language before. In fact, when I started studying, I also studied a bit of linguistics, but somehow I had this idea that I wanted to have a technical background, and linguistics doesn't really qualify as a technical background. I was also very interested in the brain, but I'm not, I didn't want to study medicine. Yeah, I settled on Physics and Astronomy, which I think was, formed a very useful basis for everything that I did in my career afterwards. But I also discovered quite quickly that I, I mean, I wasn't bad at Physics in the sense that I always got good grades, but I think I got good grades mostly because I was good at seeing the structure of problems and the mathematical part of it, but I don't really have that intuition about Physics that I think you need to have to be a physicist."
+  },
+  {
+   "t": 190,
+   "text": "So my master's then was in logic, which I think was much closer to that actual puzzle solving and like abstractions and seeing patterns. And while I didn't really know that before, think I was very lucky to then discover that logic also has a very strong language component. And I think a large part there also I have to give credit to one of my teachers then, Willem Zuidema, who also later became oh the promoter of my PhD, who introduced me to many of these topics and also to AI, essentially. And then I realized that was basically the perfect combination of the things. that I'd always wanted to study. was a component of like the human brain and cognition. There was language, which I found beautiful, but also the structure and the math and the computers."
+  },
+  {
+   "t": 241,
+   "text": "yeah, in the end, think it was, it wasn't when I, don't know, sometimes it feel like it was planned in the sense that it all kind of fits, but it really wasn't. So it was basically just a, I guess a streak of lucky coincidences that led me to do something that I think was really The thing I was sort of supposed to, like it's something I enjoy a lot."
+  },
+  {
+   "t": 264,
+   "text": "That's amazing. Actually, the funny thing is several days ago, I have read the post on LinkedIn. in that post, the author wrote that nowadays, lot of AI researchers do actually have the background not in computer science or in artificial intelligence, but they come from Physics. specifically. Yeah. that studied Physics are then sort of everywhere. There are a lot of studied Physics and then went... Because it's, I don't know, it feels like it's, on the one hand, it's specific, but it's also kind of generic in terms of it teaches you to think about things."
+  },
+  {
+   "t": 309,
+   "text": "Yeah, I love those career trajectories that go in zigzag."
+  },
+  {
+   "t": 317,
+   "text": "Yeah, amazing. oh during your research, what's a challenge you faced in research that no one prepared you for?"
+  },
+  {
+   "t": 326,
+   "text": "I'm honestly not really sure. Like I think there are a lot of challenges that I'm not sure if I was really prepared for any of them, but that's also really exciting. You go with them as you go, so to say. One thing though that I thought about is that I think in research And at first I thought that this was mostly for more junior people or master students, PhD students. There's sort of this tendency to always work to the next deadline and think that you're in some sort of sprint mode because then you're going to make that deadline. Or then, I don't know, if you're studying, maybe it's the end of your course or the end of your PhD or whatever. But that after that deadline, there's always a new deadline. So there is a bit of this risk that you're just always in some sort of sprint."
+  },
+  {
+   "t": 374,
+   "text": "And I think it took me quite a long time to realize that is what was happening and that a lot of people are operating in that mode. And I think that is not like, that's not a sustainable way of doing things. Like if you want to be always in this print, but basically you can't, right? Then you need to acknowledge that you're in some sort of marathon. And I think that was something that, yeah, it took me, it took me quite some time to realize that. And I think that is something that definitely, if someone had told me earlier, look, you need to understand whether you're sprinting or whether you're running an ultra marathon, that might have been helpful for me."
+  },
+  {
+   "t": 417,
+   "text": "Hmm, that's interesting. I actually I thought about that quite early in my PhD program when my PhD advisor just literally told me that it's going to be a marathon, get prepared. So yeah, it's Yeah, they probably had this that experience, I also wonder"
+  },
+  {
+   "t": 439,
+   "text": "I want to ask you, as a researcher, there were probably some very challenging times for you sometimes. I specifically wanted to ask whether it ever happened to you that you have received a harsh paper review that you still recall with some bad feeling? And if so, then how you deal with that? What was the eventual outcome? Yeah, that is a that's a very good question. I think that in the beginning of my PhD, I was I think a bit more lucky with reviews, as in, I always found them very constructive, even when they were negative."
+  },
+  {
+   "t": 492,
+   "text": "And I think that's so getting a negative, I think getting a negative review, of course, is not a nice experience. But if at least you can read it and think, okay, that's, that's useful feedback, I can improve my paper now then okay, it's like, of course, you would have preferred that people liked it to begin with, but that's at least still so useful, you could do something with it. More, it happened to me more recently, actually, that I feel like I'm getting reviews that I just don't always agree with. And that's like a tougher thing, right? Because what do with that? Like, on the one hand, I want to respect the system, but sometimes If you feel like a reviewer just kind of missed the point, yeah, don't know, it you in a bit of a pickle, Specifically, this happened to me with a paper that I'm still a bit sad about this because this was a paper with some master students that I'm still quite convinced that there was quite some value in it."
+  },
+  {
+   "t": 544,
+   "text": "By now it has also been cited quite a lot, but it just, we rewrote and resubmitted it a few times, but. I'm not really sure there's something out that paper that doesn't quite resonate with that with reviewers. In the end, we submitted to a workshop and it will be presented at a workshop at ACL. So I'm happy about that. Because at least it gets a venue and especially for junior researchers that maybe want to go into a PhD later. I think that's, that is, that is important. I have to say I'm having like, I'm finding it more and more difficult to take part of that reviewing system because it has been so blown up. There are so many papers and that also means that it's really difficult to find committed and good reviewers. And I also get that."
+  },
+  {
+   "t": 590,
+   "text": "I mean, you're submitting a lot of papers. I also don't want to review hundreds of papers a year. And if that's needed, because there are lot of people, junior people that are submitting that can maybe not review yet, it's very challenging. And I don't think we've really found a solution to that. yet. But yeah, I'm hearing a lot of frustration also around me of people that basically say, okay, I'll just put my paper on arXiv and leave it there because I cannot deal with like, the disappointment of getting reviews that I don't know, either seem to be written by a language model or people that clearly haven't spent the time reading the paper. And it's, yeah, I think that's a bit of a challenge that we're facing. If we want to keep that system of peer review, which also I think has has a lot of volume."
+  },
+  {
+   "t": 637,
+   "text": "Can you maybe tell me what do you think the good review, how it should be, what is the good review in your opinion?"
+  },
+  {
+   "t": 648,
+   "text": "So I do I do think it depends a little bit on the paper so when I'm reviewing myself, what I usually try is not just to write down what I think are potential issues but also suggest how I think those can be resolved so good review shouldn't have these things like I don't know this question isn't interesting or I'm not surprised about these kind of results or because that's something that Yeah, I don't know like how can you how can you address that of course? That puts you in a bit of a problematic situation if you really think that the question that is asked for the research methodology is entirely unsound because then you need to have this feeling that something can still be salvaged, right? And that might not always be the case. And honestly, in that case, I'm not entirely sure what kind of review you should write."
+  },
+  {
+   "t": 700,
+   "text": "I don't know. I guess you should be honest about that. if that's how you feel about 90 % of the papers. Basically, when I'm writing a review and that is something that I hope everyone would do, I am thinking also what if I were the one receiving this review? So don't be mean just for the sake of it. If you find something that needs to be improved, write it down in a sort of constructive way. Write it down, I don't know, as if that person was your PhD student and you wanted them to improve. that paper as if that person is someone that you actually like rather than some unknown that's competing with you for a spot the in the conference. Yeah, yeah, that's a good point."
+  },
+  {
+   "t": 745,
+   "text": "Yeah, I've heard that advice as well to think about that, to try to think, try to find at least something positive, something good that was done in the work, because the person spent at least several months, maybe years working on this. It's impossible that there is nothing good in that paper at all."
+  },
+  {
+   "t": 777,
+   "text": "Actually, I was talking with one of my friends recently and he had a very great paper and submitted that to ICML and that was a review. Your paper is really great, the quality is great, the score was high, but you accepted too many papers. So because of not having capacity, that paper was rejected. That was the only reason not to accept. I would be devastated. Yeah, these are the things that are happening. So in your view, how can they make it more fair reviewing system in terms of who to select as reviewers and also what papers to select? Right now, maybe automation can help. We have LLMs, but on the other side, it can have negative effect there. But on the other side, we have some reviewers like as human beings that impose biases there."
+  },
+  {
+   "t": 825,
+   "text": "So what do you think about that? Yeah, that's a good question. I mean, the like the capacity issue, of course, I cannot speak to the logistics. But I that sounds very odd to me. I also like this idea that we need to very rigidly stick to, I don't know, having a 20 % or 25 % acceptance rate. I don't to me that doesn't really make a lot of sense. Like if there are a lot of papers that are good, I think you should just accept them because you're also wasting everyone's time if you force these people to resubmit it and have things re-reviewed. One thing that I think could improve the system that I think maybe they're implementing in some conference, but I'm not really sure. But where I was also really hoping that ARR could help out is to have some, at least some sort of reward, like basically some feedback loop also for the reviewers."
+  },
+  {
+   "t": 880,
+   "text": "Because currently what happened, and I've seen this many times, is that after a conference, you're asked to point out what are good reviewers or good ACs. Great, I mean, they get some recognition, but okay, like, it's nice. The bad thing though, is that you're also asked to, to point out which, which reviews weren't useful. And rather than, I don't know, having some consequences for those reviewers, what usually happens is that we don't ask them again the next time. And this seems to me like a bit of a wrong incentive, because that basically means that if you don't do your job while reviewing, you can save some time because you don't have to do it again next time. So I feel like, especially if you have systems like ARR, where basically there's a large number of conferences that is under the same umbrella, there could be some opportunity where basically if you don't provide high quality reviews, there are some consequences in terms of how you can submit in the next round or something like that."
+  },
+  {
+   "t": 941,
+   "text": "Like basically you need to meet some minimum bar because you're also asking good reviews from others. Now, I mean, obviously it's not that we're going to assign you bad reviews, but I feel like there are some opportunities there with a larger system that can encourage people to write better reviews because currently I think apart from maybe, I don't know, I'm not really sure what is the downside to writing a bad review, honestly, because you don't see the person that gets that review."
+  },
+  {
+   "t": 973,
+   "text": "Like you're just doing it because you think it's the right thing, I guess. Yeah, yeah, that's an interesting idea. I've never thought about that."
+  },
+  {
+   "t": 982,
+   "text": "That's true, amazing."
+  },
+  {
+   "t": 983,
+   "text": "I have another question for you. That's not relevant to reviewing systems. What does being a woman in AI mean to you personally?"
+  },
+  {
+   "t": 995,
+   "text": "I think I'm very proud to be a woman in AI. I think also we're seeing representation increase, which I think is great. To be honest with these things, I always go a bit back and forth between wanting to just say that it really doesn't matter whether I'm a woman or not, because I think ideally speaking, I guess it should be like that, right? But it does matter. And yeah, in that sense, I'm happy to be part of that representation. I also think that being a woman in AI, also sometimes, so sometimes it has downsides, but it can also make you quite unique, exactly because there are fewer women."
+  },
+  {
+   "t": 1038,
+   "text": "I do think one thing that we sometimes have to be careful. Luckily, it's been a while since that happened to me. But one time I was I was speaking at a conference or maybe it was a workshop. don't really remember. And at some point there was this discussion on Twitter on people saying women saying I wouldn't say want to be invited just because I'm a woman. And that I think I found"
+  },
+  {
+   "t": 1067,
+   "text": "I don't want to say painful, but maybe a little bit yes, because it gives the suggestion that the reason that I was speaking there was because I was a woman. And I don't think that was true, even if I was invited because I was a woman. Because I think the reason that we think about these things and that we try to be diverse is also that we know that in some cases, we might not invite women even if they are just as good speakers as men, just because of systems that... are in place or because of biases that are there or because, I don't know, it's sometimes just a bit the way it is. So when I get invited, when it's clear that I get invited because I need a female speaker, I still always feel like I kind of deserve the invitation. And I think it's important that women think about it also that way, because if you get invited because you're a female speaker, then this is probably because we have been under inviting female speakers."
+  },
+  {
+   "t": 1126,
+   "text": "So it's basically to correct for some bias I shouldn't have been there to begin with, not because the only interesting thing about you is the fact that you're a woman because it's not like that. Mm-hmm. Yeah, that's a very good point. That's that. I really like these kind of initiatives. So I'm very thankful. So that you're doing these, these things I was supposed to speak also last Tuesday at an event for a female junior researchers like early in their career. unfortunately it got canceled because it was a train strike in the Netherlands. Yeah, I really appreciate people organizing these kind of events also to make sure yeah, other women and also junior and junior researchers."
+  },
+  {
+   "t": 1173,
+   "text": "And yeah, hear a bit more about what that's like. And thanks for coming for these events. Without you coming, those events wouldn't maybe even happen. Yeah. enough. Yeah. Yeah, we need both the organizers and the participants, I guess."
+  },
+  {
+   "t": 1191,
+   "text": "Yeah, sure. Sure. That's true. Thanks for sharing your insights here."
+  },
+  {
+   "t": 1197,
+   "text": "I think for me, this podcast was really inspiring. There were some challenges that I had no clue how to deal with and talking with people like you is like, it's possible. So thank you for being here. As a follow up question, you've achieved championship level in pole dancing while building a successful research area, which is remarkable. So spill your secrets. How do you make time for it all? Any mindset shifts or routines that help? Yeah, I think so I was competing in both. I don't compete a lot anymore, but I was competing in both. I think mostly during my PhD. And I think it actually helped me also to, to, well, basically to, get rid of that sprint kind of regime."
+  },
+  {
+   "t": 1248,
+   "text": "Right. So I, since I had to train also for something else, that meant also that was also important to me. That meant that I couldn't work all the time. And I think that in the end that made me more productive somehow. I think that also when I talk with, when I supervise Master students or PhD students or whatever, it's actually always one of the first questions that I ask. Like, you have some workout regime or something? Like, of course you don't need to compete if you don't want to, but I think it's extremely important that you keep your body healthy and fit because if you just get exhausted or you're always in the office until 12, you can maybe do it for a little bit. But then at the end of the day, you're going to be both happier if you're doing some other things, and I think you're also going to be more productive and you have more energy if you're not just thinking about work all the time."
+  },
+  {
+   "t": 1302,
+   "text": "Of course, there might be some, like, I don't want to judge people that do that because there might be some people for whom that works. For me, I think it's not like that. I don't know if you also have this experience that sometimes when you're working on something for a couple of days, you're super productive and you think, okay, I'm gonna roll. Now I'm gonna finish this very quickly. But then for me, it's always that then all of a sudden it's like, no, now my brain wants to do something else. And I'm sort of losing the streak. Yeah, absolutely. At some point it's like a full stop here. Now I need either a break or a change. Exactly. And for me being active and having also other goals and yeah, specifically, like physical goals, like related to sports and stuff like that."
+  },
+  {
+   "t": 1351,
+   "text": "It helps me that helps me a lot. And also, so I think for me also the fact that it was doubles helped because it was it was another person. So it's not also as easy to say like, okay, I skipped my training tonight because something was happening. at work or something like that. And also pulled in doubles. I don't know if you've ever seen any videos, but like if you have someone like hanging on you or something like that, it's not like you go for a run and you're still thinking about a lot of things. Like I don't want to drop someone on their head or injure someone. So I would really have to be out of it for little bit to make sure that everything was safe. And I think for me that really contributed a lot."
+  },
+  {
+   "t": 1397,
+   "text": "It sounds like it's another way to meditate almost. Like you completely switch. exactly. Like force the, force brain somewhere else. No thinking about your latest reviews or whatever anymore because you can't afford to lose too much concentration."
+  },
+  {
+   "t": 1417,
+   "text": "That's fantastic. That's really cool. Awesome. So now let's dive into your research. Given all the research you've done in this area, how would you define consistency and generalization when it comes to language models? Great question. So let's start with generalization, maybe. So we I think generalization is a topic that I always sort of work on when I started to work on natural language processing and computational linguistics, even though in the beginning I wasn't as aware of it somehow. So the time that this work really got sort of linked to my name, I think was when we started to work on this generalization taxonomy a few years ago already."
+  },
+  {
+   "t": 1470,
+   "text": "And this is a paper I got later published in Nature and Machine Intelligence. And it listed several motivations for working on generalization. And one of these motivations was what we called it intrinsic. So how a model generalizes gives you some idea of is strongly linked to what it actually represents and what it's doing. And I think this for me has always been one of the most important reasons to study generalization because I'm just really interested in how these things work and how these things work, think is also very tightly linked to whether they work as intended and whether they do the things we think they do and we want they do at the like, yes, to basically also make some predictions and to have some faith in that."
+  },
+  {
+   "t": 1519,
+   "text": "For me, consistency, I think is a way to evaluate generalization. It's not, I wouldn't say it's like a goal in itself. It's more that where, When models are consistent or inconsistent and in which scenarios they are, think, gives some sort of insight into how they are representing things. Because if they're answering very differently to two questions that you think is essentially the same question, that tells you something about how things are represented. And there are many examples of that. Like, I don't know, if you slightly change the prompt and you get a different answer. that gives maybe pause in, did it actually, I mean, understand is a bit of a loaded word in this context, but did it actually understand that prompt or is something else going on?"
+  },
+  {
+   "t": 1572,
+   "text": "Similarly, If a model supposedly knows two languages, but it knows that Paris is the capital of France in one language and not in another, also that makes you wonder like how are these things actually represented in models? So I think both of these are actually big. Well, generalization, think, is a big open question or like many open questions there still with language models and consistency for me is sort of a tool to investigate generalization in scenarios where it is very difficult to directly do the classic. Let's compare the training test distributions because at the scale at which large language models are trained, that is just very, very challenging. Even if you have access to the training corpus, I can tell you."
+  },
+  {
+   "t": 1620,
+   "text": "you True. And what initially drew you to the problem of consistency and generalization in LLM? Was there a specific moment or observation that made you feel this area was underexplored and needs more attention to?"
+  },
+  {
+   "t": 1637,
+   "text": "Yeah, I think that it's probably when I started to work on that, on that paper with the generalization taxonomy, which by the way, it wasn't actually initially meant to be a generalization taxonomy. Like when that started, we wanted just to do some sort of literature review to see what there was already there in the area of generalization. And then in the end, that was just like, kind of blew up."
+  },
+  {
+   "t": 1661,
+   "text": "I think like for me there were so before I worked on generalization specifically, I worked on compositionality, which is also has a very strong generalization component, right? It's some specific, some specific form of generalization that I think is very well rooted in, well, in logic also. So that came from my, from my masters. That said, I think now I'm Now, my interest probably has broadened a little bit, but in the beginning, when I started to look at language, I was actually mostly interested in grammar and syntax. And this is something that still kind of baffles me. mean, in the context of LLMs, I think it's as interesting, or at least LLMs are not as informative because they're clearly very good at syntax. Like they don't say in grammatical things all the time."
+  },
+  {
+   "t": 1708,
+   "text": "But when I started to study language, we didn't really have models that could be grammatically correct very consistently."
+  },
+  {
+   "t": 1719,
+   "text": "Consistently. Like, for instance, I don't know that we would be looking at these subject-verb agreement kind of tasks and see that they would get very easily confused. And to me, it is actually still quite miraculous that humans can agree on a grammatical system that is quite complex in the sense that it's, the one hand, very structured, but there are also lot of exceptions. And we agree to a very large extent. on these exceptions and for your mother tongue is very natural. But then if you try to learn a different language, all of a sudden you realize how many exceptions there are."
+  },
+  {
+   "t": 1755,
+   "text": "So, yeah, I think I went from, I think generalization was something that I was always interested in because also for syntax, as I just said, it's generalization. Then when I came to compositionality, well, that was a natural way of different, like studying generalization in a different kind of context. that it started to become explicitly about generalization more broadly, I think was really when we started that literature review to prepare for our project on generalization. then that really became like... I don't know, it's also when you start thinking about generalization, you realize that almost everything that you... Well, maybe not everything, but like... Whatever you want to do, there's probably some way that you can phrase it as some form of generalization."
+  },
+  {
+   "t": 1801,
+   "text": "And then it becomes very difficult to not see everything as if it's about generalization. And in the end, I think a lot of things are about generalization."
+  },
+  {
+   "t": 1809,
+   "text": "I completely agree, especially with the idea that when you start thinking about generalization, then you see it everywhere. And it's also, I liked a lot that example of yours about being a native speaker versus non-native. And when you are a native speaker, I would say the analogy would be people that started their research now that LLMs exist that do not make those stupid grammatical mistakes and stuff like that as the previous generation of the models. to me it's very good analogy to the native speaker of the language and someone who is learning that."
+  },
+  {
+   "t": 1856,
+   "text": "When you're the native it sounds very natural and you feel like everything is okay, it should be like that in language. But when you're learning a different language, you see only those exceptions and why it's that way? It's like there is no structure here, no rules. Every rule has like 10 exceptions. why is that? And it's probably the same with LLMs that are smooth and coherent, but if you know how the previous models behaved, then you realize that, okay, there should be something else there. It's not like just the natural way the language models behave."
+  },
+  {
+   "t": 1905,
+   "text": "Yeah. why do you think it's important to study generalization in LLMs nowadays, especially these days?"
+  },
+  {
+   "t": 1917,
+   "text": "I think one thing is trustworthiness because I think this is also something that it was actually also one of the motivations for the generalization that we found in our, our taxonomy. if you, so generalization is a lot about understanding what a model will do and what kind of situations. And ideally, if a model makes the right generalizations, that means that you're not going to be too surprised by how it's acting. I think, I don't know, like you have this in natural language. for language, I guess it's a bit less clear that the sort of drastic things that can go wrong. But for instance, if you think about autonomous driving, right there, it's very clear. Like you want to know that a model generalizes in a way that it's not like it sees some kind of sign in a different light or something."
+  },
+  {
+   "t": 1965,
+   "text": "And all of a sudden it doesn't understand it anymore. So I think that is, that is an important reason just so that we know better how models are going to behave. And when we can count on them and when we need to be careful. Another reason that I think it's important though that is much more speculative is that I think that we haven't really solved out of distribution generalization, which I mean, this has been a problem basically from the beginning. Like this is difficult for models and we have made a lot of progress, but I think the way that I see it is that we've just made the training distribution a lot larger. So it becomes a lot more difficult to see that it's not generalizing out of distribution because there's just much less that is actually out of distribution."
+  },
+  {
+   "t": 2012,
+   "text": "I cannot stop but wonder though if models were better out of distribution generalization, this would maybe also decrease their data need. Because if you're not good at out of distribution generalization and you need to see examples of everything in the distribution, logically speaking, you're going to need more data. And I think that actually the multilingual example, think is a nice example of that. So say that you could learn everything in English and then you only need to learn a surface form in different languages. Of course, this is very simplistic because there are things that are different in different cultures and stuff like that. So I don't want to, I don't want to pretend that is not, not the case, but at least to some basics like factual knowledge or something like that."
+  },
+  {
+   "t": 2058,
+   "text": "If you could just like that, generalize that to other languages that you know, that would imply that you don't need to see all that factual knowledge in all those other languages. And I know, I think that's happening to some extent, but not to the extent that we want that to. And the same thing is true for a different modalities. For instance, ideally speaking, you'd want to generalize all the knowledge that you have in text to speech or even to images. or something like that. So that indeed alignment is the thing that you need, but it's not that you need to realign a bunch of things that you've already learned in another modality. Maybe even the other way around, like there are a lot of things that humans don't learn through language, but they learn through observing the world."
+  },
+  {
+   "t": 2103,
+   "text": "I think it would be really nice if we could generalize that knowledge from a visual modality to the language modality. And I think that would be really helpful. I cannot say for sure that's not happening."
+  },
+  {
+   "t": 2116,
+   "text": "Maybe it's happening to some extent, but I think, I don't think it's happening as much as it should. And I think it would be very helpful if we could figure out how to, how to improve that."
+  },
+  {
+   "t": 2129,
+   "text": "Right, right, that's interesting. You are speaking right now probably more about LLMs, right? But I know that at least when you wrote that paper that you have published in Nature, which is the \"Taxonomy and Review of Generalisation Research in NLP\", It was not just about LLMs at that time, right? So can you tell us a little bit about that work? I have heard personally about that paper when you have organized that first GenBench workshop and it was, yeah, it was like the supporting paper for the GenBench competition, right?"
+  },
+  {
+   "t": 2181,
+   "text": "In that work you present those five axes of generalisation taxonomy. So can you tell us a little bit about the work, the five axes and maybe even about the workshop if you have something interesting that came out of that. Yeah, yeah, of course. And you're very right that was almost not at all about LLMs because they weren't really that much of a thing then. I mean, there were like a couple words on. Well, I think we didn't even start to call them LLMs at that point. Maybe it was just language models. So there was there were some things about language models. But actually, I think the main point about language models in that paper was the recognition that in language models is really hard to evaluate generalization."
+  },
+  {
+   "t": 2233,
+   "text": "So in that paper, yeah, so how that started out is indeed we started out with some sort of literature review and then we tried to understand like what characterizes studies of generalization. And we came up with these five different axes. One of them I already mentioned is a motivation. I think that one is kind of true irrespective of what kind of paradigm you're looking at. Like people have some motivation to study generalization and depending on what that motivation is, you look at different. of problems. Like if you're interested in generalization from a cognitive perspective, you might not use language models and large language models. I'm not sure. think like from a cognitive perspective, they're probably not as interesting as interesting models. But also you might not, I don't know, you might not do a paradigm where you train on a lot of data and then test on some things because that's like, well, it depends a bit, but basically you want to ask a question that is cognitively relevant, right?"
+  },
+  {
+   "t": 2291,
+   "text": "Whereas if you're looking at generalization from a practical perspective, for instance, because you want to know how robust your system generalizes in particular situations, then you should have data that is sort of similar to the scenario that you're interested in, because otherwise, how do you know if your conclusions generalize? And similarly, it's like there are different motivations and they require different kind of setups."
+  },
+  {
+   "t": 2314,
+   "text": "Then one thing that we also observed is that the way that people study generalization Basically, generalization can be studied in different parts of the modeling pipeline. Now that is the one where in LLMs, it's not really very applicable. At that point, there were people that would train models and test them directly, or they would pre-train models and then fine tune them. And they were testing only in the fine tuning stage, or maybe from beginning to end. that was, I think, very relevant to point out at that point. And it really was like a defining axis then. For LLMs, obviously, that's not. like defining axes because there's that. Yeah, it's basically one paradigm. So it doesn't fit as well. So if you want to redo that taxonomy for LLMs, you could probably come up with different, different, different, like parts in the modeling pipeline that you're studying, namely within pre training or perhaps, I don't know how you pre train your model, how well it generalizes when you fine tune or maybe post training, but that would have to be a bit adaptive."
+  },
+  {
+   "t": 2379,
+   "text": "Then we saw different types of generalization. So one of them, for instance, was compositional generalization. That one, I think, is very challenging for LLMs, mostly because their form-only models in compositionality has this idea that you need to have a mapping between two different spaces. And in LLMs, it's very... in encoder-only models, it's very unclear how to understand what those two spaces are, so to say, because basically... both semantics and syntax are kind of conflated in one space."
+  },
+  {
+   "t": 2413,
+   "text": "So that one is also that I the types of generalization that one could evaluate in LLMs are not, like not all of them are relevant for LLMs. Then let me think."
+  },
+  {
+   "t": 2430,
+   "text": "We had also more statistical kind of axes. So for instance, what kind of shift there is between the training and the testing data. That is something that I think is also very challenging for algorithms because it's challenging in general to define that. mean, if we're saying that there is a covariate shift or a label shift, which would be either a shift in the output labels or a shift in the type of inputs."
+  },
+  {
+   "t": 2458,
+   "text": "This is something that is very difficult to really properly define, even in scenarios where you have a lot of control over your training and your testing data. But for large language models, defining what kind of input distribution it was trained on, think is, I don't think anyone really knows how to do that. So I think it's good to think like it can be a useful framework to think about it, though practically speaking, I,"
+  },
+  {
+   "t": 2482,
+   "text": "Yeah, I don't think we can do that. I don't know. We could look at like n-gram distributions or something. There's some great initiatives such as What's in My Big Data that allow you at least to like pull up some statistics of the pre-training corpus. And I think it would be cool if people like start to think about these things a bit like how can we define that? that's like, formally speaking, I think that's very difficult to do. I'm blanking a second on which X's I'm missing. Motivation."
+  },
+  {
+   "t": 2509,
+   "text": "of course, the shift source. Funny that I missed that one because it's actually one of my favorite ones. So basically, if you're looking at some out of distribution test set, you need to generate that in some kind of way, right? To make sure that it's not the same distribution as your training data. And there are several different ways that you can do that. And how you do that really informs also the type of conclusions that you can draw. So for instance, one thing that you can do, which is a bit more... I would almost say old school, but it's a logical way of doing this. But basically, if you have your entire corpus, you can split it in such a way that what you test on is different from your training corpus in some kind of way. a very logical, very clear example of this could be that, I don't know, if you're working on machine translation and you want to understand generalization to longer lengths, you just put all the longer sentences in your test corpus."
+  },
+  {
+   "t": 2563,
+   "text": "Of course, this is not, like this is in LLMs, not really. very feasible also because this would usually require that you do a bunch of different tests and you retrain your model a bunch of different times on different splits and that's not something that you can do at that scale. So for LLMs we would maybe generate test data so basically without having a lot of control over the training data you could you could generate test data that you think is distributionally different but yeah the main reason that I like I like a lot that specific axis, specifically in combination also with the motivation axis, is that one thing I really felt that reading all that work about generalization was that very often there were some claims about we're studying generalization because of this and that, and that's what we want to find out."
+  },
+  {
+   "t": 2616,
+   "text": "But then the way that the experiment was set out wasn't really matching that. yeah, for instance, if you want to know if an LLM or if any model generalizes robustly in a particular direction, and that is a model that's trained on real data and it's going to be deployed somewhere, whatever model that is, and you're going to train your model only on synthetic data and then investigate how it generalizes on other synthetic data. Like I think that kind of defeats a bit the purpose. Like it might tell you something about the architecture, but there's no way of knowing."
+  },
+  {
+   "t": 2651,
+   "text": "whether those results are going to be practically relevant for the model that you're training in your data."
+  },
+  {
+   "t": 2656,
+   "text": "So if you want to draw some practical conclusions, you should make sure that you're training your model on data that's kind of similar to the data that your model is going to be trained on so that the conclusions that you're drawing are actually informative for that scenario and not making some general statement about if a model is trained on this very specific split that you will never see when you're training your model on the data that you have, then it is not able to do that. Yeah, thank you for that description of what generalization is and how to systematically properly analyze that and how it is different for large language models comparing to what you have done in that work. I think it may be a great motivation to someone for some follow-up work applying these to LLMs."
+  },
+  {
+   "t": 2709,
+   "text": "amazing. If there's anyone that is interested in doing that, think it was something also we tried a little bit with, with GenBench, with a workshop to basically try to get people to come up with innovative ways to evaluate generalization in, in LLMs. But I think it's, it's very, I think it's very challenging. So yeah, if someone has like wants to deep dive on that and come up with, with different ways of. evaluating generalization and characterizing generalization in LLMs, I think that would be a very nice contribution to the field. So I would very much welcome it."
+  },
+  {
+   "t": 2744,
+   "text": "I think in classic machine learning, we had much more control over a train test like splits and knowing what is on scene and what is not. But right now, many people in the open source community just go for off the shelf models and you never know what was really included in the training data. You may do that like split or you may synthetically generate or use something that you assume that is not on scene or you trust the technical reports of the papers. But the question of whether it was already in the training data. and now my results are valid or not, it's much more challenging. Do you have any suggestions there of how to reverse engineer the thing and have a better sense of if this data is potentially part of the training data, but you don't have access to it?"
+  },
+  {
+   "t": 2793,
+   "text": "helps at all, because you've mentioned that. yeah, I think that's what I was going to say that I also feel like it's some sort of, I feel like it's a common misconception that if you have access to the training data that this sort of a sudden makes it much more easy to evaluate things. Because I do have access to the training data. And I have, I've in the recent past, and I'm still working on that, actually, I've also worked quite a bit on evaluation data contamination. And this is something that I think is"
+  },
+  {
+   "t": 2820,
+   "text": "Like on the axis from complicated to difficult, I would say that if you don't think about it for a long time, you would say that just checking if a training example is in the training data should be like the kind of very easiest way of the very easiest thing you can do, right? On that scale of checking similarity between what's in the training data and what is in the test data, which is essentially what generalization is about."
+  },
+  {
+   "t": 2848,
+   "text": "But that's really not the case. Like we spend, I think, I don't know, almost a year trying different things to understand if an evaluation data sample should be counted as contaminated. And even this, when you have access to the training corpus, and I'm even ignoring the fact that searching through the training corpus, it's not like you can just, I don't know, said search for this expression or something like that. Like you need very good engineers to scale this up for the data that we have. But even if you have very good engineers, it is not an easy question even to see if an example is supposed to be contaminated. And to give you some examples, like, I don't know, if there's like slight changes in formatting, does that count?"
+  },
+  {
+   "t": 2896,
+   "text": "And how do you measure that? Like, how do you make sure that you're catching the ones that like, there's a lot of difference between adding a comma or adding an adjective and changing the number, for instance, or adding a negation. So that is one thing. The other thing is how much overlap in general, like should there actually be for an example to be to be contaminated? Or what if there is so for a math example, for instance, say that there is a paraphrase that is a That's the same number as a question is the same, but it's phrased slightly differently. Maybe you think that's contamination. However, if it's about a factual question, obviously, if you don't have any version of that information in your training corpus, you cannot answer a question."
+  },
+  {
+   "t": 2947,
+   "text": "You need to have that. So that I wouldn't call it contamination. So why am I saying all this? Just, I think, to say that even if you have access to the training corpus, it is really difficult to..."
+  },
+  {
+   "t": 2962,
+   "text": "define generalization experiments. actually at the gem range workshop of the panel, I also asked this question to the panelists. So if you had access to the training corpus, what would you do? What generalization experiment would you set up? And it's not that people are like all of a sudden have a ton of ideas on how they would do that. So that it's also online on YouTube on the GenBench channel, if someone's interested in what the panelists are, we're actually answering. So, yeah, I think that it requires still also really some conceptual thinking of what kind of generalization we want and how we evaluate that. And it's a bit of a like a cop out to say, cannot evaluate that because I don't have access to the training corpus because there are different challenges depending on where you have you have access to the training corpus or not."
+  },
+  {
+   "t": 3018,
+   "text": "And this is something that actually I really like about the consistency evaluation because that doesn't require access to the training corpus. But it's still, and it also doesn't require actually having access to the training corpus. I'm not sure if that would even help you in that case. Well, it's something that you can do without, and it gives you some insights into what kind of generalizations are made irrespective of what was actually in the training corpus."
+  },
+  {
+   "t": 3044,
+   "text": "Right. Right. I like it about the consistency. Consistency is the behavioral thing, right? It's just evaluating the behavior. It's like in humans, you're just assessing the behavior without going deep into how the brain actually works and why. Then what's the cause of that behavior? Yeah. That is a very good thing, actually, because I like that analogy too, is that when we're evaluating generalization in humans, most of these results are really not based on knowing what a human has seen all its life. It has some general assumptions, of course, about what humans have seen. For instance, if we do work testing, we kind of assume that they haven't seen those works, so sure. We can make more assumptions about what humans have seen than about what LLMs have seen, but most of the results on generalization in humans are also based on either, I don't know, showing them small examples and seeing what happens, like how they adapt to that, or just about very approximate assumptions of what they have seen in their life and how they deal with that."
+  },
+  {
+   "t": 3107,
+   "text": "Also compositionality, it's not that's like a thing that we have, like the empirical evidence for that is definitely not based on knowing what adults have seen. in all of their past. I mean, there are some exceptions, I guess, with children, but just to say that I think we can all take inspiration from that and know that we've done a lot of interesting studies with humans, also with a bit of a black box in terms of what they were trained on. True, very interesting. I haven't thought about that from that perspective. Thank you for sharing those. So you have published multiple papers on consistency, for example, \"Separating Form and Meaning: Using Self-Consistency to Quantify Task Understanding Across Multiple Senses\"."
+  },
+  {
+   "t": 3156,
+   "text": "And also another paper \"From Forms to Meaning: Probing the Semantic Depths of Language Models Using Multisense Consistency\". So how has your understanding of consistency evolved? over the course of your work on these topics and these papers. I think I see some parallels also with generalization. So in the beginning, think we were using consistency really as a tool to also explore some more philosophical theories and so compositionality and yeah, a lot of philosophy of language. And the more I worked on it, the more I think I started to see how it's relevant in many, different places. Like I think consistency has a lot of potential and we should definitely work on it more."
+  },
+  {
+   "t": 3202,
+   "text": "That said, also maybe mellowed down a bit in some ways on how consistent I think models should be because the more you think about it, the more you also find scenarios in which it's very reasonable not to be consistent. And then I'm not even talking about humans not being consistent because the fact that humans are not always consistent doesn't mean that we don't want LLMs to be consistent because humans also have faults if we want to. make artificial general intelligence or however we will call it. I think I'd prefer that those models don't share the force of humans. But that said, the world is also a place where there are a lot of inconsistencies, right? And this is especially true if you have a model that needs to represent a lot of things at the same time."
+  },
+  {
+   "t": 3253,
+   "text": "So it's trained on data from a lot of humans. And some questions, if you ask them in some countries. I think the language one actually, I always like the multilingual examples because they are very clear. So as I said before, if you ask a factual question, then ideally speaking, you'd want to get the same answer in different languages, because this is a fact. But there are lot of exceptions. maybe. 95 % I maybe slightly disagree here. Depends on the languages."
+  },
+  {
+   "t": 3288,
+   "text": "I've read the examples that in some languages, let's say, there are like 15 different names for snow. So in that case, if you ask it in, let's say, in English and the answer is snow, then you ask the same question in that different language, maybe the answer is something else, like some... I completely agree. And I think 95 % is actually probably even an overestimation because when you think about it, so it sounds very logical. Okay, it's a fact. So you want it to be the same, but think about asking a question like, how many days of paternity leave does a dad get when his first child is born?"
+  },
+  {
+   "t": 3335,
+   "text": "Now, if you ask that question in a different language without giving any other context, it makes a lot of sense to actually give the answer that corresponds to whatever country they speak that language in. So there's always this question of how much context you are sharing or not sharing. And usually the questions that were asked are wildly underspecified in many different directions. there are a lot of assumptions and the language itself might actually provide some of that context resulting. in a different answer and that's actually correct. I think actually like with compositionality where it's very tempting to think, okay, language is super compositional, that's what we want. We want no real exceptions, we just want all the rules."
+  },
+  {
+   "t": 3382,
+   "text": "If you really try to operationalize that, you quickly come to the conclusion that no, doesn't work like that. Like if language was so compositional that there were no exceptions, we would just have stuck with the context free grammar and get it over with, right? Like we wouldn't have had that problem. The problem is that it's both structured and compositional, but there are also lot of exceptions. And the problem is that you need to be consistent in some dimensions, but then not in others. And this is, I don't know, it be frustrating when you're evaluating those things, but it's also the thing that for me makes it very exciting because thinking about what those differences are also kind of touching the core of what we actually want to do. So. Yeah, think it's maybe both a generalization and consistency, both I'm seeing it more, but also the more you work on something, think the more you also see all the nuances and the faults and it becomes also some almost some sort of tool to better understand what are the difficulties of the models or the problems that you're looking"
+  },
+  {
+   "t": 3444,
+   "text": "Exactly. And in your view, how do your consistency-based evaluations complement or challenge the current paradigms in alignment research in particular? So what do you mean with alignment research? Because that's also some word that has lot of different meanings in different contexts. Yeah, so I would say in terms of alignment, you can think about human values, like alignment with human values, that type of thing for developing the AGI, let's say, or whatever they call it, or just like the fair and trustworthy system. Mmm. That's a tough one. I'm not so..."
+  },
+  {
+   "t": 3490,
+   "text": "So the question is how does consistency inform alignment, like research in alignment? Yeah, so maybe let me rephrase that. Do you see any relation between consistency that you have explained, like your current understanding of consistency and the alignment research in the sense that alignment research is focused on aligning models, their values with human values. That's a great question. I got to start by saying that alignment with moral values and with human values, I have some colleagues that work on that. I think it's a very important and very interesting topic. I'm definitely not an expert in that."
+  },
+  {
+   "t": 3537,
+   "text": "I also think that morals and ethics is also a very philosophical topic that requires a lot of very specific expertise. I hope that we will also. require maybe even more in our field. So how important consistency is there? mean, I can imagine so just dumbing it down a bit and thinking, for instance, about like, the law or judges, I would say that they're an important component is also that they apply the law in a consistent way, I guess, right. So for instance, I don't know if two people"
+  },
+  {
+   "t": 3577,
+   "text": "commit the same crime. Maybe I shouldn't start talking about crimes, if, let's say if a language model makes, we don't want a language model to make"
+  },
+  {
+   "t": 3588,
+   "text": "to judge something differently, for instance, depending on the person that does it. So for instance, maybe there's some, there's already quite a while ago, also wasn't an LLM, I think it was a model that was some AI based model where Amazon was using AI to screen resumes. And at some point they learned that actually the name in the resume were... m I'm not sure if it was a nationality or what I'm not really sure what it focused on, but not that like not the skills in that in the resume. So there, I'd say that, like, that is, I guess, clear scenario where you could actually test consistency, because you could give the exact same resume and then change the name on top. ideally speaking, in that case, you'd want a judgment to be consistent, right?"
+  },
+  {
+   "t": 3634,
+   "text": "Because it shouldn't depend on things that aren't relevant for the moral judgment. Beyond that, I'm not sure. So I think that consistency is important in many different aspects. So I think it's also important in alignment. I haven't worked enough on moral alignment myself to really make very strong statements on this. So let me stick to, I cannot imagine that it's not important there. Okay, then let's maybe wrap up this conversation. I just want to ask you one additional question about your ongoing work. So can you tell us about like what you're working on these days?"
+  },
+  {
+   "t": 3677,
+   "text": "What's currently keeping you excited in your research? Yeah, I'm still working a lot on evaluation, which in my opinion is always related to generalization in some way. This is something that I think is extremely exciting to do at Meta because a lot of, there are a lot of people that are training very good models and they're trying all kinds of different things. And this also basically generates a wealth of data that I'm in a very privileged position to look at. Yeah, coming up with new ways to evaluate models, be that with consistency or making smart data sets is something that I'm so very excited about. Recently, we also published a new, or published, so far it's only on arXiv, but we spent quite some time making a new multilingual benchmark that I think will hopefully provide the opportunity to answer many questions about multilingual evaluation, also like meta questions, like how important is it that the data is generated from scratch for different languages, or can we get away with translating things?"
+  },
+  {
+   "t": 3740,
+   "text": "This is something I'm very excited about because I think multilingual evaluation is challenging but very important because, especially since LLMs are becoming more and more present in the world, like we kind of want them to be good, not just in English, but also in other languages."
+  },
+  {
+   "t": 3755,
+   "text": "Another... Yeah, sorry. Yeah, go on. Can you tell us the name of that benchmark or the title of that paper? a MultiLoKo. Yeah, so multi lingual local knowledge benchmark. Yeah, there's a paper about that online. We're also setting up a Kaggle page so that there can be can be score start. Great."
+  },
+  {
+   "t": 3777,
+   "text": "Another topic that I recently, so I've been working on this for a longer time. I already said it before is evaluation, data contamination. One of the reasons I'm really excited working on that is that, well, again, I'm in a very privileged position that there are a lot of very good engineers at Meta because this is something that I could definitely not do on my own because I simply don't have the technical skills to scale up looking through corpora that are trillions and trillions of tokens. But yeah, so one of the reasons that I'm excited about that is again, I think there's a lot of relationship with generalization. So how do we define when, because like the fundamental question there is like, when do we find an evaluation sample informative depending on what is in the training data?"
+  },
+  {
+   "t": 3830,
+   "text": "And on the very extreme cases, the examples were bottom in the training data. And I guess it's sort of clear that is not generalization. It's memorization. But how far do we need to go away from that to say, but no, but now we say that being able to do this example is actually generalization and it's going to be predictive for a model to be to do other things beyond that example. So I feel like that is a seemingly simple question that has a lot of very interesting spin-offs and also the type of tooling that you need to answer that question could be so useful in answering all other kinds of questions related to generalization. So I'm very excited about that too. Right, right, right. It reminds me actually of the paper that I recently read and its authors, first author comes from Meta, by the way, one of your colleagues, and the co-authors are from DeepMind and Cornell University."
+  },
+  {
+   "t": 3885,
+   "text": "It's called \"How Much Do Language Models Memorize?\" I'm gonna I think I saw that one That's it was extremely interesting for me because like they have the mathematical kind of proof of how much of the training data exactly depending on the size of the model on the size of LLM it memorizes and then after it is out of capacity to memorize it kind of starts general generalizing and yeah. worth reading the paper, very interesting. If you're interested, then find it. put it on my list somewhere. So thanks for the suggestion. I'm gonna, I'm gonna have a look at that. But yeah, this memorization versus generalization."
+  },
+  {
+   "t": 3933,
+   "text": "I think it's, it's also very, I it's just a very interesting topic from many different angles. Like it's practically very relevant. It's also philosophically very, very interesting. Even cognitively, I think it's sort of interesting because also with humans, I don't know, we say that we're very good generalizers, but a lot of it we also do. just by memorizing things. So yeah, very interesting topic. Great, thank you. Please keep up the great work. You're working on very, very important research topics. When I was in undergrad, like we had a prof, it was teaching software testing to us at the time, LLMs was not the hype, but at the time I remember he told me that he used to work at a flight agency and he was like, the software systems which are deployed on airplanes, believe me, they just have like..."
+  },
+  {
+   "t": 3987,
+   "text": "very limited number of unit tests and then they deployed a software system and god knows like when the flight like happens and the airplane is in the sky, if there is out of distribution scenario, how it will like kind of handle that. And now we're also dealing with something similar in LLM systems, like a very stochastic pipeline. And then we deploy them into sensitive areas like healthcare, finance, law systems, insurance, and people are Yeah, exactly hiring and then if people like you don't work on that like it's really important to address the potential biases to address the evaluation issues generalizability to out of distribution scenarios."
+  },
+  {
+   "t": 4032,
+   "text": "Nobody knows what the next like the scenario will be. So thank you for doing that. Please continue the great work. if I may add one thing, I think actually is also very exciting, then some cases may actually point us to these kind of biases, right? Because in the Amazon case, it was very clear that the model was doing that because it was mimicking what they had been doing in the past with their human judgments. And that is something that isn't always easy for us to see until someone starts to put a model under scrutiny and essentially points out a lot of errors that were biases that humans have been making as well. So I think one thing that I've always also found very exciting about any kind of models of natural language is what they tell us about natural language itself, or in this case, about decision making or whatever, and how they can aid us to get a better understanding of the things that we are asking them to model."
+  },
+  {
+   "t": 4085,
+   "text": "Because of course, humans are also not flawless. And this is actually a great way also of studying that and of understanding what are the actual gaps, because they're often well, not often, they're pretty much always reflective of the underlying data and the biases and issues that are there. And I think that's also a very nice way to basically turn it around and say, we can learn more about that by studying the models, not only make the models better by studying those kinds of things."
+  },
+  {
+   "t": 4115,
+   "text": "Yeah, great, great. Thank you. Yeah. thank you. And yeah, your insights into consistency and generalization were extremely interesting, especially those from the insider's point of view, who has access to the actual training data and it still does not solve all the problems as we would wish. Yeah, so we will include the links to Dieuwke's research papers in the episode description. Don't miss them. And we will see you next time for another deep dive with the researchers pushing the boundaries of AI."
+  }
+ ]
+}

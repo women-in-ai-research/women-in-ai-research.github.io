@@ -46,3 +46,86 @@ The workflow needs a YouTube Data API key saved as the repository secret `YOUTUB
 Topic pages (`/topics/<slug>/`) are built from `data/topics.json`. Each topic has a name, a short intro and a `videos` list of YouTube links: podcast episodes and event interviews can both go there. When a new video comes out, paste its link into the `videos` list of each of its topics (one to three) and save: the site rebuilds automatically. The daily update job lists any episode that has no topic yet.
 
 The Home page's "researchers interviewed" count adds the podcast guests to the researchers listed in `data/event-researchers.json` (each person counted once). Add a line there when you publish a new event interview.
+
+## 📄 Episode pages and transcripts
+
+Every full episode has its own page at `/episodes/<slug>/` with the video, guest, summary, key points, chapters, the papers and links mentioned, and (when available) the full transcript. Specials without a guest, such as the year-in-review, stay as plain YouTube links.
+
+**Adding a transcript**
+
+Two kinds of files work:
+
+- **Caption file (`.srt` / `.vtt`)**: in YouTube Studio, open the episode → **Subtitles** → your uploaded English track (not "automatic") → ⋮ → **Download** → `.srt`. Its timings match the published video exactly, but it has no speaker names.
+- **Speaker-labelled transcript (`.txt`)**, with one block per speaker turn:
+
+  ```
+  Julie Kallini (12:34.567)
+  What she said ...
+  ```
+
+  This shows who is speaking. Use it only if it was made from the **final published video**: a transcript of the raw recording has timestamps that drift wherever the video was trimmed, and includes parts that aren't in the video.
+
+Name the file after the episode (`wiair-ep27-....srt`, `Ep27-guest-name.txt`, or anything containing the video id) and run:
+
+```
+npm run import-transcripts -- path/to/file
+```
+
+Then commit the new `data/transcripts/NN.json`. The import joins lines into paragraphs (under each chapter heading for caption files), removes filler words (uh, um) and crosstalk such as "mm-hmm", and applies the corrections in `data/transcript-name-fixes.json` (per episode: wrong spelling → right spelling; `speakers` renames a speaker label, e.g. for a played clip). In a caption file you can also mark speakers by starting lines with the name, e.g. `Julie: ...`.
+
+## ✍️ Writing episode descriptions
+
+The episode page is built from the YouTube description. It recognises these section headings (capitalisation, emoji and colons don't matter):
+
+| On the website | Headings |
+|---|---|
+| About this episode | everything before the first heading |
+| Key points | In this episode · Key Topics · What you'll learn · Topics we cover · We explore |
+| Papers & links mentioned | Papers discussed · REFERENCES · Mentioned in this episode · Resources & Links |
+| Chapters | Chapters · ToC · Timestamps |
+| Researcher page bio | About [Guest Name] |
+| Researcher page link buttons | Connect with [Guest Name] (one link per line) |
+| Left off the website | WiAIR website · Follow us · About WiAIR · Subscribe lines · hashtags |
+
+Recommended template:
+
+```
+[1–2 opening paragraphs]
+
+In this episode:
+→ ...
+
+📄 Papers discussed
+• Title (Venue Year): https://arxiv.org/abs/...
+
+👩‍🔬 About [Guest Name]
+...
+
+Connect with [Guest Name]:
+• https://...
+
+⏱️ Chapters
+00:00 ...
+
+🎙️ About WiAIR
+...
+```
+
+Put each heading on its own line, write each paper as `Title: link` on one line, and spell the guest's name in "About …" as in the episode title. A timestamp before a reference (`[21:04] Title (link)`) adds a "mentioned at 21:04" link that jumps into the transcript.
+
+## 👩‍🔬 Researcher pages
+
+Each podcast guest has a page at `/guests/<id>/` and each event interviewee at `/researchers/<name>/` (listed by conference under "Also interviewed at events" on the Guests page). To add link buttons or research-area tags to a guest's page, add `links` and `researchAreas` to her entry in `data/guest-overrides.json`:
+
+```json
+{
+  "name": "Julie Kallini",
+  "links": [
+    { "label": "Website", "url": "https://..." },
+    { "label": "Google Scholar", "url": "https://scholar.google.com/..." }
+  ],
+  "researchAreas": ["Tokenization", "Byte-level modeling"]
+}
+```
+
+Links from "Connect with …" in the description are added automatically.
