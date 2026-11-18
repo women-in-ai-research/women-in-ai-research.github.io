@@ -2,9 +2,9 @@
   {
     "id": "julie-kallini",
     "name": "Julie Kallini",
-    "title": "",
+    "title": "PhD student at Stanford University, USA",
     "bio": "Julie is a fourth-year Computer Science PhD student at Stanford, advised by Chris Potts and Dan Jurafsky. Her research spans computational linguistics, tokenization, efficient language model architectures, and byte-level modeling.",
-    "imageUrl": "https://i.ytimg.com/vi/XLixB8pSdC4/maxresdefault.jpg",
+    "imageUrl": "/images/guests/julie-kallini.jpeg",
     "episodes": [
       {
         "number": 26,
@@ -14,11 +14,11 @@
     ]
   },
   {
-    "id": "greta-tuckute",
+    "id": "dr-greta-tuckute",
     "name": "Dr. Greta Tuckute",
-    "title": "",
+    "title": "Research Fellow at the Kempner Institute, Harvard University, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/efnZkH7Y9j0/maxresdefault.jpg",
+    "imageUrl": "/images/guests/greta-tuckute.jpg",
     "episodes": [
       {
         "number": 25,
@@ -28,11 +28,11 @@
     ]
   },
   {
-    "id": "elisa-kreiss",
+    "id": "dr-elisa-kreiss",
     "name": "Dr. Elisa Kreiss",
-    "title": "",
+    "title": "Assistant Professor of Communication at UCLA, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/jtQq8NspkY4/maxresdefault.jpg",
+    "imageUrl": "/images/guests/elisa-kreiss.png",
     "episodes": [
       {
         "number": 24,
@@ -42,11 +42,11 @@
     ]
   },
   {
-    "id": "malihe-alikhani",
+    "id": "dr-malihe-alikhani",
     "name": "Dr. Malihe Alikhani",
-    "title": "",
+    "title": "Assistant Professor at Northeastern University, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/PWPbhfVB0LU/maxresdefault.jpg",
+    "imageUrl": "/images/guests/malihe-alikhani.jpg",
     "episodes": [
       {
         "number": 23,
@@ -56,11 +56,11 @@
     ]
   },
   {
-    "id": "anna-ivanova",
+    "id": "dr-anna-ivanova",
     "name": "Dr. Anna Ivanova",
-    "title": "",
+    "title": "Assistant Professor at Georgia Tech, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/e36ryy0Dsdo/maxresdefault.jpg",
+    "imageUrl": "/images/guests/anna-ivanova.jpg",
     "episodes": [
       {
         "number": 22,
@@ -70,11 +70,11 @@
     ]
   },
   {
-    "id": "saadia-gabriel",
+    "id": "dr-saadia-gabriel",
     "name": "Dr. Saadia Gabriel",
-    "title": "",
+    "title": "Assistant Professor at UCLA, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/OZQqBWFUxQs/maxresdefault.jpg",
+    "imageUrl": "/images/guests/saadia-gabriel.png",
     "episodes": [
       {
         "number": 20,
@@ -89,11 +89,11 @@
     ]
   },
   {
-    "id": "hila-gonen",
+    "id": "dr-hila-gonen",
     "name": "Dr. Hila Gonen",
-    "title": "",
+    "title": "Assistant Professor at the University of British Columbia, Canada",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/Lsq3UzM8wIg/maxresdefault.jpg",
+    "imageUrl": "/images/guests/hila-gonen.jpg",
     "episodes": [
       {
         "number": 19,
@@ -103,11 +103,11 @@
     ]
   },
   {
-    "id": "letitia-parcalabescu",
+    "id": "dr-letitia-parcalabescu",
     "name": "Dr. Letitia Parcalabescu",
-    "title": "",
+    "title": "Creator of the AI Coffee Break YouTube channel",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/gzQiDCG_j7A/maxresdefault.jpg",
+    "imageUrl": "/images/guests/letitia-parcalabescu.jpeg",
     "episodes": [
       {
         "number": 18,
@@ -117,11 +117,11 @@
     ]
   },
   {
-    "id": "swabha-swayamdipta",
+    "id": "dr-swabha-swayamdipta",
     "name": "Dr. Swabha Swayamdipta",
-    "title": "",
+    "title": "Assistant Professor at the University of Southern California, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/rSC7L5WikcE/maxresdefault.jpg",
+    "imageUrl": "/images/guests/swabha-swayamdipta.jpeg",
     "episodes": [
       {
         "number": 17,
@@ -131,11 +131,11 @@
     ]
   },
   {
-    "id": "maria-ryskina",
+    "id": "dr-maria-ryskina",
     "name": "Dr. Maria Ryskina",
-    "title": "",
+    "title": "CIFAR AI Safety Postdoctoral Fellow at the Vector Institute for AI, Canada",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/PQx4IvJR8Bg/maxresdefault.jpg",
+    "imageUrl": "/images/guests/maria-ryskina.jpg",
     "episodes": [
       {
         "number": 15,
@@ -145,11 +145,11 @@
     ]
   },
   {
-    "id": "maria-antoniak",
+    "id": "dr-maria-antoniak",
     "name": "Dr. Maria Antoniak",
-    "title": "",
+    "title": "Assistant Professor at the University of Colorado Boulder, USA",
     "bio": "",
-    "imageUrl": "https://i.ytimg.com/vi/P-R0mU8_0U0/maxresdefault.jpg",
+    "imageUrl": "/images/guests/maria-antoniak.jpeg",
     "episodes": [
       {
         "number": 14,
@@ -163,7 +163,7 @@
     "name": "Dr. Annie En-Shiun Lee",
     "title": "Assistant professor at the OntarioTech University and the University of Toronto (status-only), Canada",
     "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
-    "imageUrl": "https://i.ytimg.com/vi/L9Sp-zauXwo/maxresdefault.jpg",
+    "imageUrl": "/images/guests/annie-lee.jpeg",
     "episodes": [
       {
         "number": 13,
