@@ -1,0 +1,412 @@
+{
+ "episode": 3,
+ "videoId": "DEdJltlFg4I",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
+ "segments": [
+  {
+   "t": 12,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, so welcome everyone to another exciting episode of the Women in AI Research podcast. My name is Jekaterina and I'm joined here by my co-host Malikeh. And today we have a very remarkable guest, Aparna Balagopalan. She is a final year PhD student at MIT and her research is centered on developing fair, interpretable and robust machine learning systems, especially within the domain that is sensitive and socially relevant, such as, for example, healthcare. Aparna, we are delighted to have you here today with us."
+  },
+  {
+   "t": 57,
+   "speaker": "Aparna Balagopalan",
+   "text": "Thank you for having me. And sure."
+  },
+  {
+   "t": 65,
+   "speaker": "Jekaterina Novikova",
+   "text": "Aparna, I would love to hear a little bit about your journey and specifically, you have an interesting career trajectory. So you have started as a research engineer in the industry, and then after some time, you have transition to a PhD program. Yeah. So I would love to hear what has inspired that shift and how the journey unfolded."
+  },
+  {
+   "t": 83,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah, sure. So I guess started my research journey when I started with my Master's degree at the University of Toronto. I was in the MScAC program, which has a co-op component, which is essentially you work at a company for a few months to see and do research on a specific project. So that's when I got my first entry into research project, working on a research publication where I work with Jekaterina, which is a great experience. So I guess I really loved doing research there, I loved the process of coming up with a research idea, testing hypotheses and then writing it up as a publication. And I realized that's something that I want to work on for a long time."
+  },
+  {
+   "t": 131,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, so I guess that was the motivation to apply for a PhD program. And I think, generally, I always, even before doing research, I was always wondering what specific area I would focus on. So I really found the area of machine learning for healthcare very interesting and relevant. So I could see myself working in that space, doing research in that space, which is why I applied for PhD programs."
+  },
+  {
+   "t": 157,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's such an intriguing transition. I'm curious as you worked both in industry and also academia and experienced research in both environments, what differences have you noticed between doing research in industry versus academia?"
+  },
+  {
+   "t": 172,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, honestly, I'm really glad I did some research in industry because I feel research is such a complex process and in industry, at least where we work, it seemed we could, we thought about breaking down the research project into concrete sub goals and tasks that we could test, which was I think a really helpful background. As somebody coming into a PhD, I think, without that background, I would have struggled a little bit more in the beginning, I feel. Though eventually, guess with PIs help, we all get there. And I think the other differences in industry, a lot of the times the research is tied to some product goal, which means there's some sort in which the research project should eventually be deployed in practice, in mind concretely when we potentially start with a research project."
+  },
+  {
+   "t": 225,
+   "speaker": "Aparna Balagopalan",
+   "text": "And that's not always the case, I think, in academic setting. There's always a practical application at hand. But I think there are a few steps that it's further removed from the more product-oriented research that usually industry sees."
+  },
+  {
+   "t": 240,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's true. I totally agree. And as you're getting close to the end of your PhD, what are your plans? Do you plan to return to industry or stay in academia?"
+  },
+  {
+   "t": 249,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, That's a great question. I have a broader approach right now. I'm on the job market. So I'm looking for positions both in industry as well as academic positions. So I've been interviewing for postdocs in the academic track and I've also been interviewing for industry positions at the same time."
+  },
+  {
+   "t": 268,
+   "speaker": "Jekaterina Novikova",
+   "text": "That sounds like a good approach, I think, to keep your options Yep. open. In general, I wonder if you don't mind me asking, Mm-hmm."
+  },
+  {
+   "t": 283,
+   "speaker": "Jekaterina Novikova",
+   "text": "You probably had both ups and downs during Mm-hmm. your career. And there are many places, many time points during the research journey, during the career, when you need to make some difficult decisions. Also, obviously, there are time points when you just achieved something and that's exciting, but then I think you, or everyone, tries to share it with everyone else anyways. Thank But in terms of those down points, that's something that people usually don't hear about too much. So can you share with us what was maybe some really difficult decision that you had to make during your career, with regards to your career?"
+  },
+  {
+   "t": 331,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, I guess, definitely there have been really difficult points. I think, the decision to pursue studies education outside India itself was difficult because it's, you know, very... I had never lived for more than a few months outside India and it would have been a completely, it was a completely new setup. And you're starting from scratch in a new country and you're expected to do classes, potentially do research and also get to know who's there. So I think that was pretty challenging. In the research process itself, during my PhD as well, were definitely hard points. So I think that I was so excited to do a PhD, that in the first year I definitely overworked myself too much, to the point of near a burnout. So I think the solution there was, I guess, it was hard to do at that point, but just to take a break."
+  },
+  {
+   "t": 381,
+   "speaker": "Aparna Balagopalan",
+   "text": "I feel like my research progress during the first year, I guess, potentially output during my first one and a half years was relatively low because of that, because I feel like I was taking, I realized that I was taking on too many projects and not being able to complete the projects because of too much, taking on too much at a time. But, and this is because of self-imposed pressure, not because of any other thing. So I feel like at that point, just taking a break, learning to focus and do better time management, often doing non research tasks to help your brain grasp things better, think that was also a slightly turning point. point. I think."
+  },
+  {
+   "t": 425,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, thanks for sharing your experiences. I think my question is also somehow relevant to what you said."
+  },
+  {
+   "t": 435,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I'd like to get a glimpse into your daily life. What does a typical day look like to you as a PhD researcher in AI? Especially these days, I wonder how you manage to navigate a rapid pace of AI while keeping a Mm-hmm. balanced daily routine?"
+  },
+  {
+   "t": 448,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah, no, that's a great question. I feel that is something that I've definitely struggled with. And I'm definitely still struggling with but trying to do my best, which is, have a more balanced situation and research and have a better work life balance. So generally, to do that I, even though once you are done with your class coursework, your PhD schedule is pretty flexible, but I still try to go into the office, to our lab space for fixed duration during the day and try to do most of my work there. So that's what the daily schedule looks like. And in the evening, I like to relax with reading or hanging out with people. And also, I think during my PhD, I've also tried to explore a bunch of different workout activities."
+  },
+  {
+   "t": 495,
+   "speaker": "Aparna Balagopalan",
+   "text": "So I've tried dancing, I've tried boxing, which is the latest one. I feel Yeah, yeah, was actually a really good friend who got me into it. It was, it was, I think, that also helps you bring in a little bit of balance."
+  },
+  {
+   "t": 511,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's great. That sounds really interesting and I should apply a couple of your insights to my own life, maybe even boxing for notes. Yeah. Yeah."
+  },
+  {
+   "t": 522,
+   "speaker": "Jekaterina Novikova",
+   "text": "You mentioned previously that you are from India yourself, Mm-hmm. right? And you moved to a different country to study and work. So you have studied and worked in Canada, and then you moved to the US where you are right now, right? To do your PhD. So it's quite, you have quite of the international background. Mm-hmm. And I wonder, do you feel any influence that international background made on your research, on your interests?"
+  },
+  {
+   "t": 557,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, I guess, definitely I think a little bit of perspective is drawn into the picture when you are interacting with different research environments in different countries as well as just, generally the process of doing research in different countries. But I think across say, India, when I was doing, I did very little research in India, it was very much focused on coursework. So in terms of coursework itself, I didn't find too much of a difference. But I do think that the opportunities and exposure that universities here get, in US and Canada, I think are much greater. I do recognize the privilege that I had, even in India I was in a good university so I had the path to potentially do a PhD or potentially apply to a Master's program, but it's really hard if you don't have that."
+  },
+  {
+   "t": 612,
+   "speaker": "Aparna Balagopalan",
+   "text": "So I think there's definitely an opportunity difference in access but I think that has helped me influence my research and the actual research projects as well. Often when you're working with data, real data, you think about systems being not just US-centric or Western-centric, you also think about systems in, say, India. So I think that is also a useful perspective. Though I do mostly work on data sets from the US so far."
+  },
+  {
+   "t": 641,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, right. But I think it's still, it's a very different perspective that you have by default anyways, and that's something that probably needs a little bit of more of emphasis anyways, even within our Western-centric research. Yeah. Yeah, thanks"
+  },
+  {
+   "t": 659,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "For sharing your experience. So from another perspective, I wonder as a woman researcher in AI or in tech in general, how you saw the contrast between these different communities, cultures? Yeah. Yeah, that would be great to hear from you."
+  },
+  {
+   "t": 676,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, I think that, honestly, for me, I have not faced a lot of differences because I think that's just because I've had supportive environments in all these different research environments. But I don't think that's the case everywhere. So I do feel like sometimes there are, systemic issues that are places where, you know, women do find it harder to do the same task. not because of anything that is different, but just that there are more barriers often. So I think in that sense, I'm lucky enough to not have faced too many of those across these different research environments, I think."
+  },
+  {
+   "t": 715,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's really great to hear that. Fantastic."
+  },
+  {
+   "t": 722,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I think that's the time to let's dive into your research focus a bit. You have a very interesting paper called Machine Learning for Healthcare that Matters. Thank you. A large part of your work has been in machine learning for healthcare and this one was really interesting piece of research work. In that paper you emphasize that the tangible impact of machine learning in healthcare has been limited despite Bye. significant technical advances in the field. What are the reasons for this in your opinion?"
+  },
+  {
+   "t": 747,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah, that's a great question. I should say that paper was actually a very interdisciplinary, I guess, across institutions collaboration. So we're all, it was just a discussion form that over multiple meetings, made its way into a paper. And a lot of the writing was done by Liam for the paper. But generally, I guess, through the discussions, the one of the motivating example that drove some of the discussion was that during the early years of the COVID-19 pandemic, there were many, many detection models developed basically to detect COVID from chest X-rays. So the input would be a chest X-ray and the output would be if somebody whose chest X-ray that is has COVID or not, COVID-19 or not."
+  },
+  {
+   "t": 792,
+   "speaker": "Aparna Balagopalan",
+   "text": "But when it came to actually using those systems in practice, this was in an article. Essentially, a lot of the systems failed in practice, potentially because the data quality that was used to train machine, those machine learning systems were not good. So very often the healthy cohort was that of kids in one specific example. So the model was learning to rely and learn not just, not just features of COVID, but age based some sort of decision. In some other cases, the model learned to associate spurious correlations in the data and try to rely on that for the prediction task. So data quality was definitely a big issue there. So generally thinking about the data that makes up machine learning models as well you as how such models are deployed."
+  },
+  {
+   "t": 841,
+   "speaker": "Aparna Balagopalan",
+   "text": "What's the actual clinical goal? I think those components have to be thought about a little bit more. And those are some challenges we're facing today."
+  },
+  {
+   "t": 852,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, right. So you mentioned data quality several times and it's definitely a big issue because the quality of data is probably one, if not the only, it's one of the really important parts of the quality of the model that was trained using that data as well. I wonder how much you think it's about the quality itself, which is probably Okay. a bit of a broader concept, versus the bias Bye! in the data and the diversity of the data? Do you have, can you remember some, can you recall some of the examples from maybe different projects that you have worked on?"
+  },
+  {
+   "t": 898,
+   "speaker": "Jekaterina Novikova",
+   "text": "Or was it more specifically to that project that you are speaking about right Yeah, now?"
+  },
+  {
+   "t": 903,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, that's a great question. I do think that... So, a lot of my PhD research is on this. So this is basically in my research - I'm thinking of machine learning as a pipeline. And I'm thinking about how different components of the pipeline impact reliability. So reliability could be robustness, fairness, accuracy. And data is definitely one important component. Biases, yes, the biases can creep in and how we select the data. For example, we're only selecting data from specific hospitals and, you know, really well funded hospitals. And then your training systems on that data, those models might not work on, say, another hospital, even if the system is relatively similar. It's related to how we have, if it's a supervised setting, the labels."
+  },
+  {
+   "t": 954,
+   "speaker": "Aparna Balagopalan",
+   "text": "There might have been historical biases that impact historical decisions. And if they're just learning to replicate those, we might have less reliable models. That's definitely the data, I think, it's an important component. But then you also have the model component, which is what you choose to optimize. Very often, we choose to optimize the average performance, things like empirical risk minimization and that might not be the best optimization objective. So I think there's also lots of work in choosing a better loss function, say looking at subgroup level performance to have better models. And then I think finally you also have a deployment perspective, which is even if you have a good model that is reliable and robust, the way that you show it to end users also really impacts the final decision that you make with the model."
+  },
+  {
+   "t": 1002,
+   "speaker": "Aparna Balagopalan",
+   "text": "So if that process is biased in some way, then you would have potentially incorrect decisions in the real world. So I think thinking about those components is one thing that I'm hoping to finish in my PhD thesis."
+  },
+  {
+   "t": 1014,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's fantastic and very insightful to look at the problem from both perspective, of model side and also data side. What about other structural issues? I think you covered many of those, but there is one particular part in your paper that you share an interesting observation that emphasis on targets that are easy to measure, but not be you clinically important. Could you elaborate Right. on this?"
+  },
+  {
+   "t": 1042,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah. So I guess, there are, I guess, two perspectives that in the paper we write about. One is, again, what we choose to optimize. very often we have a data set, and we just look at accuracy."
+  },
+  {
+   "t": 1062,
+   "speaker": "Aparna Balagopalan",
+   "text": "So the target for optimization might not necessarily be accuracy, it could have been something different. And the second part is, we also talk about this in the paper, where Basically, we want to do machine learning FOR healthcare, not machine learning ON healthcare data. So understanding the problem at hand and working together with clinicians, nurses, doctors to actually understand what would be helpful to them and what is the goal that they're aiming to achieve with the machine learning model at hand, I think is important. I think that's what was emphasized there."
+  },
+  {
+   "t": 1092,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, that sounds interesting. I hear you that in terms of collaboration with the actual users, right, with Mm-hmm. the doctors, it is worth to communicate with them more closely and to really understand the task in hand. And that, as far as I understand, is one of your recommendations on how to improve this area."
+  },
+  {
+   "t": 1115,
+   "speaker": "Aparna Balagopalan",
+   "text": "Right. Exactly."
+  },
+  {
+   "t": 1117,
+   "speaker": "Jekaterina Novikova",
+   "text": "What about those metrics that you have mentioned that sometimes Mm-hmm. the metrics are also the issue because they are used without understanding them clearly? Do you have any recommendation on how it could be possible to improve in this area?"
+  },
+  {
+   "t": 1133,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah, that's a great question. I think even that, Ideally, the metric selection should be informed by discussion with stakeholders, doctors, clinicians, often even patients. And I think, for example, if you're trying to diagnose a specific decision, you might care more about correctly identifying patients who actually have the disease. So instead of accuracy overall, you might want to look at metrics like true positives or false positives. False positive rate or false negative rate, in fact, might be more important here. So I think choosing that metric to evaluate models, I think, is really important."
+  },
+  {
+   "t": 1173,
+   "speaker": "Jekaterina Novikova",
+   "text": "Sounds good."
+  },
+  {
+   "t": 1174,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's great. Yeah, very great insights. I have never looked at it from that perspective. Fantastic. Thanks for sharing that. Go to another beautiful research work. One paper which is called Judging Facts, Judging Norms."
+  },
+  {
+   "t": 1195,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So I'd like to discuss your research on developing fair and robust machine learning models, especially in the sensitive area of healthcare. You have one Science paper, Judging Facts, Judging Norms. You presented a very fascinating observation about data annotation in particular, that data annotators're labeling objects differently depending on whether they are asked a factual question or normative question. Can you explain how you arrived at this insight? And with that, what's its impact on model fairness and model robustness in different scenarios?"
+  },
+  {
+   "t": 1222,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah, that's a great question. So actually, the background of the project is that this project was developed even before I even started my PhD. So my advisor (Marzyeh Ghassemi) along with other professors, Dylan, Gillian, and some other students, David Madras and David Yang, they had started working on this project, which is they were trying to identify when you can accept explanations of models, thinking about explanations that models provide as justifications for some decision. So I think the project started off with the goal of tying, if a model is making a specific decision, it should be based on facts and those facts should be presented as explanations. But then when they conducted the study, you the initial pilot study, they found that judging the presence of something in an object, so for example, one scenario that we had was we had a picture of a bowl of cereal."
+  },
+  {
+   "t": 1279,
+   "speaker": "Aparna Balagopalan",
+   "text": "And if you ask lots of annotators, does this bowl of cereal have high sugar content, a majority of them said that it did. So that was just a factual question. But if you have a normative context that depends on the very same facts, you get different judgments. So if you ask a different set of annotators, we have a school meal policy that prohibits meals with high sugar content. Now does this bowl of cereal have violated the school's meal policy, that is violated if there is high sugar content? And here only a small proportion of annotators said that the school meal policy was violated, which means that a fewer proportion of them thought that it contained high sugar content. So there was some difference in the way that annotators were judging facts versus norms."
+  },
+  {
+   "t": 1328,
+   "speaker": "Aparna Balagopalan",
+   "text": "That's, I guess, once I joined the project, that's what we were testing. That's the hypothesis that we were testing, that people judge the presence of facts differently versus the norms, norm violation related decisions differently. And this is really important because this assumption of the fact based, what we call descriptive labels, that can be repurposed for normative applications, is very prevalent nowadays in systems nowadays. So for example, we have toxicity classifiers that classify if text is toxic or not. And then we deploy them on online platforms to decide if a discussion forum policy is violated or not. So that's more of a normative setting. While very often the training data is descriptive. So it has, I think, real world implications."
+  },
+  {
+   "t": 1375,
+   "speaker": "Aparna Balagopalan",
+   "text": "So as to data fairness perspectives, we didn't really look at that in this work, though we did observe that if you were to use descriptive labels for normative applications, the performance for some groups were lower than other groups. So there are definitely various implications probably, but we didn't really test that much in our study."
+  },
+  {
+   "t": 1396,
+   "speaker": "Jekaterina Novikova",
+   "text": "That sounds really interesting because it's all about the question of whether we can trust the data sets that we consider to be ground truth. Exactly. And usually just the name ground truth means that it should be the absolute truth. Yeah. Yeah. And it's not necessarily the case. I wonder in that project that you speak about right Mm-hmm. now, whether you have found, and in general, what's your opinion, do you think that those differences in labeling, they can be caused by cultural Mm-hmm. differences or some demographic differences or something else? What do you think is the main reason?"
+  },
+  {
+   "t": 1439,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, so we actually tested for that, we control if we, all this data collection was done on Amazon Mechanical Turk. So for the subset, we actually do have demographics and we tested if the differences were driven by demographics. But essentially even adjusting for that, we still saw a difference. I think definitely the background of annotators play into how they label. There's, I think lots of work showing that, but in this specific case, it was probably because of how people judged the cost of specific facts being true. If a meal had high sugar content in the descriptive data labeling, I guess there was no... they had... had... annotators had their own cost of saying that it had high sugar content."
+  },
+  {
+   "t": 1486,
+   "speaker": "Aparna Balagopalan",
+   "text": "Sorry."
+  },
+  {
+   "t": 1487,
+   "speaker": "Jekaterina Novikova",
+   "text": "Is it something like the implicit understanding of the consequences of your label?"
+  },
+  {
+   "t": 1493,
+   "speaker": "Aparna Balagopalan",
+   "text": "Exactly, Exactly. Versus in the normative context, potentially a violation affects something or somebody. This is something that we didn't, I don't think with this study we can explain the reasons for the difference. That could potentially be a follow-up study. Here, maybe we just showed that they were different."
+  },
+  {
+   "t": 1512,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's super interesting. Also as a follow up question, I want to ask you, usually, the majority of your research, as far as I know, is both within the context of healthcare, Mm-hmm. machine learning, and also within the modality of text,"
+  },
+  {
+   "t": 1533,
+   "speaker": "Aparna Balagopalan",
+   "text": "I think. right?"
+  },
+  {
+   "t": 1534,
+   "speaker": "Jekaterina Novikova",
+   "text": "But I know that you have also worked with different modalities as well, such as, for example, vision. And you have that recent work that is a paper that is called LEMoN: Label Error Detection Using Multimodal Neighbors. And you also analyzed the label errors in multimodal data sets Okay, bye. in that work. So can you first of all tell us a little bit about this work as well, about multimodality? And I'm specifically interested whether you have noticed any differences or any similarities across modalities when it comes to incorrect labeling, label errors."
+  },
+  {
+   "t": 1576,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, that makes a lot of sense. I think I'll briefly talk about that work first. With that paper, we're essentially trying to develop a method for automatic label error identification. So a lot of the pre-trained models today are trained on data that is scraped off of the web, which means that labels might be noisy. But the size of these data sets are so large that you can't automatically go in and say that this label is wrong or this label is correct. So this automatic label error detection where the input to models is essentially your instance of interest and then a label. And then the output is a binary prediction or a score indicating likelihood of label error. Those systems are really important. So what we say is that when you have a vision language model, pre-trained, contrastively pre-trained vision language model like CLIP, you can embed both the instance of interest as well as its label."
+  },
+  {
+   "t": 1631,
+   "speaker": "Aparna Balagopalan",
+   "text": "Its label can be a text string. It can be a classification, it can be a classification index mapped to the group name, or it can be a caption that describes, say, if it's an image, what's in the image. You can embed both the instance and the label into the same representation space. And you can compare these two representations. This has been done in prior work, which is a CLIP similarities score for images and labels. But you can also look at neighborhood information, just identify if for... We have two components in our paper that we explored. One is retrieve neighbors in the image space and see how close captions of those image neighbors are to the caption of the instance of interest itself."
+  },
+  {
+   "t": 1679,
+   "speaker": "Aparna Balagopalan",
+   "text": "And similarly also retrieve neighbors in the image space, sorry, in the text space and compare how similar the images are to the image of interest itself. So with this, we're getting a closed form score. And we're saying that when the score is higher, there is a higher likelihood of label errors. And we validate the score in the paper. And we also test how, if you remove data points predicted to be label errors from your downstream model and you train your downstream model on these cleaned or filtered datasets, does your performance improve. So if you are training a captioning model, first you would run LEMoN on the whole training dataset and only retain instances that are predicted to be correct. And then you train your captioning model. you Is that better than training on the whole unclean data set or data set with some noisy labels?"
+  },
+  {
+   "t": 1730,
+   "speaker": "Aparna Balagopalan",
+   "text": "And we find that is the case. So yeah, that's the high level summary of the project. And in terms of the second question, which was related to data modality, quality or label errors. So in this specific paper, we looked at vision- language joint modalities. So it was the instance being labeled was the image and the label was any, it was text essentially. So we make the underlying assumption that the image modality is correct. The instance that is being labeled is correct. And the noise is in the text modality. This might not be true. The text image might be noisy. Maybe some part of it is missing. I think those are all interesting directions to explore in future work."
+  },
+  {
+   "t": 1778,
+   "speaker": "Aparna Balagopalan",
+   "text": "I think related to which modalities have higher label errors, I do think there's a task dependence there. It is potentially tied to how difficult tasks are, I think. The labeling task, I mean. So yeah, I guess it would vary across the context of the task."
+  },
+  {
+   "t": 1796,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, interesting. Yeah, that's great."
+  },
+  {
+   "t": 1806,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Somehow relevant to what you said, the question I'm going to ask, but from your experience or maybe the other research work that you've been through, what are the substantial similarities or differences between modalities when it comes to responsible data challenges? Because in healthcare, many different modalities are involved, as you said, audio, vision, language. So do you see any things in common or not in common?"
+  },
+  {
+   "t": 1823,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, I think regardless of the modality, I guess, there is definitely label noise. There's definitely issues related to data sets being from specific settings and not generalizing to other settings. So in my research, I've worked mostly with tabular data, as well as image data, as well as text data. So I think I've seen some of these issues across modalities. So it's a really hard task, I think. But collecting data from lots of environments and ideas, you thinking about goals, apart from just performance in a specific setting, I think would be one way to improve that."
+  },
+  {
+   "t": 1864,
+   "speaker": "Jekaterina Novikova",
+   "text": "Maybe one more follow-up question about this specific area of research about label errors, their identification, detection, mitigation. You have mentioned that it is not necessarily generalizable across Mm-hmm. different types of tasks. Mm-hmm. Can you elaborate a little bit more here? What is your intuition - are there any groups of tasks or Mm-hmm. types of tasks where you could expect similar errors? Or it's completely it's very difficult to expect any pattern?"
+  },
+  {
+   "t": 1903,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah. Yeah, that's a great question. I think this, in terms of reliability, it could be in terms of group level performance, you said, so, more related to the notions of fairness, where you might have imbalanced data sets. So for example, you could consider the race of patients in a data set, and that might be really balanced across different racial categories. So then you might have really low performance on subgroups that are less represented in the data. So I think that is one scenario. The other one example that comes into mind. The other sort of robustness issue is when models, when data sets or models learn, data sets are, I guess, don't consider all potential environments and models learn to rely on spurious associations."
+  },
+  {
+   "t": 1954,
+   "speaker": "Aparna Balagopalan",
+   "text": "So I guess one example in this space is when you're trying to, I think, the task is trying to distinguish between camels and cows or something like that. It's a classification task and all the camels are in deserts. So when you have an image of a camel in, I don't know, in grass, Do the model fails because the model is learning to detect grass instead of actual features of the camels. So I guess one way to solve it there would be collect examples or add examples of camels in the grass and cows in the desert and add them to the data set or modify the loss function in some way. So yeah, I guess that's another aspect to consider."
+  },
+  {
+   "t": 1995,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see. Interesting. Interesting and thank you for this great overview of all the different types of research that you have done during your PhD and even Of course, slightly before. So now as we wrap up our conversation, I'd like to ask you one question that many people find sometimes difficult, but it's a really important question, I"
+  },
+  {
+   "t": 2019,
+   "speaker": "Jekaterina Novikova",
+   "text": "Believe. What would be one piece of advice that you would give to the young women that are entering the field of artificial intelligence? Maybe from your personal experience, what was the mindset or approach that have helped you the most in navigating all the challenges and making the impact? I think that would be the best advice as well to those people."
+  },
+  {
+   "t": 2045,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, yeah. Yeah, thank you. I think that's also a great question. I feel, again, as I said,, I think for me, I was lucky enough to have a supportive environment, often with a lot of women you and Jekaterina and Malikeh and my PI, who I really like, I guess being great mentors and knowing that, you know, we can do research and we can do good research. So I think I've had positive examples, but I think there are definitely structural barriers that women face across countries, research context. So it's definitely hard, but I think if one key thing that I try to do is believe that I can do the research, I'm just as capable as the next person."
+  },
+  {
+   "t": 2091,
+   "speaker": "Aparna Balagopalan",
+   "text": "And especially in settings like academia, everybody's really smart, as well as industry, academy, industry, anybody doing research is really smart for sure. But I think thinking about when you're choosing to work with some specific people, think about how much you would gain from the collaboration and from a research perspective, but also from a mentorship perspective. And if you would, I guess, add a good project experience. So work with people who also have similar goals, for example. And I guess as we, other important component is, as we progress in our research careers, I think it's also important to pay forward. Essentially things what you both are doing with the podcast, I think those are really great initiatives."
+  },
+  {
+   "t": 2141,
+   "speaker": "Aparna Balagopalan",
+   "text": "And similarly I know that in our department here (at MIT), as well as in Toronto, there were mentorship sessions encouraging undergraduate students to consider PhDs, graduate careers. So I think participating in mentoring sessions like that, those are definitely some things that would help make a better environment for future researchers."
+  },
+  {
+   "t": 2161,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. So to summarize: mentorship, role models and our podcast, right? So I think one other point that I'd also like to bring, suggest, is building more diverse teams. So I think that's something we say in the Machine Learning for Healthcare that Matters are teams as well. So including diverse perspectives also helps improve the overall field for lots of future researchers. That's a great insight and I completely agree with that."
+  },
+  {
+   "t": 2198,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's great. Thank you. Yeah, I really agree also with the point of collaboration. I think that's the key to success. Sometimes you put a lot of rock stars together in a team and it fails, but a nice collaboration really is like parallel processing of different brains together. That's Yeah, yeah, yeah, yeah."
+  },
+  {
+   "t": 2218,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Ahead. What do you see as the most exciting or transformative development in your field of research?"
+  },
+  {
+   "t": 2224,
+   "speaker": "Aparna Balagopalan",
+   "text": "Yeah, I think we have seen lots of systems being proposed, but now I think we're actually seeing some systems potentially being deployed in practice at a higher scale than they were before. So one example is language translation systems. Now language translation systems are often used in hospital settings. To help different patients communicate with the doctors. So I think that is something that I'm really excited about - actually, thinking about the challenges of deploying systems in practice. And maybe in some cases you shouldn't deploy system in practice if it's not well built or reliable in some cases. Maybe machine learning is not the solution there. But when it does seem like a good solution, I think that transition, thinking about human perspectives, user interaction, and improving the whole, again, thinking about the whole pipeline perspective."
+  },
+  {
+   "t": 2281,
+   "speaker": "Aparna Balagopalan",
+   "text": "Thinking about actually having systems in practice, I think, it's very exciting."
+  },
+  {
+   "t": 2286,
+   "speaker": "Jekaterina Novikova",
+   "text": "I think that's the great suggestion not to use machine learning Yeah. absolutely everywhere. It's a great tool, but you need to know when to use it. Yeah, Yeah. sounds great. So yeah, I think we can wrap up now. So thank you so much, Aparna, for joining us and for sharing all the insights that you have, and for sharing your experience and your incredible job."
+  },
+  {
+   "t": 2314,
+   "speaker": "Aparna Balagopalan",
+   "text": "Thank you so much. Yeah, thank you so much for this opportunity."
+  },
+  {
+   "t": 2317,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Awesome, absolutely. This has been incredibly inspiring. Thanks again, Aparna. For our audience, feel free to drop your questions on our YouTube channel or on our social media posts. We'll get back to you very soon. Stay tuned for exciting episodes coming soon. See you very, very soon."
+  }
+ ]
+}

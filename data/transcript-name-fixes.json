@@ -1,19 +1,11 @@
 {
   "_comment": "Corrections applied by `npm run import-transcripts` to the transcript text of each episode (episode number → { wrong spelling: right spelling }). Whole words or phrases only. Add an entry when a transcript misspells a name or term, then re-run the import for that episode. `speakers` renames speaker labels in speaker-labelled transcripts.",
   "episodes": {
-    "8": {
-      "Abhalisha": "Abhilasha",
-      "Abhilesha": "Abhilasha"
+    "1": {
+      "Nooha": "Nouha"
     },
-    "18": {
-      "Leticia": "Letitia",
-      "Parcalabesco": "Parcalabescu"
-    },
-    "20": {
-      "Sadia": "Saadia"
-    },
-    "23": {
-      "Malikha": "Malihe"
+    "3": {
+      "Apana": "Aparna"
     },
     "4": {
       "CBPR": "CVPR",
@@ -27,6 +19,20 @@
       "Kimmage Center for Addiction and Mental Health": "the Centre for Addiction and Mental Health (CAMH)",
       "MLA chops": "MLHOps",
       "spot-fighting": "spotlighting"
+    },
+    "8": {
+      "Abhalisha": "Abhilasha",
+      "Abhilesha": "Abhilasha"
+    },
+    "18": {
+      "Leticia": "Letitia",
+      "Parcalabesco": "Parcalabescu"
+    },
+    "20": {
+      "Sadia": "Saadia"
+    },
+    "23": {
+      "Malikha": "Malihe"
     }
   },
   "speakers": {

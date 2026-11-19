@@ -53,25 +53,33 @@ Every full episode has its own page at `/episodes/<slug>/` with the video, guest
 
 **Adding a transcript**
 
-Two kinds of files work:
+The best result comes from giving **both** files for an episode:
 
-- **Caption file (`.srt` / `.vtt`)**: in YouTube Studio, open the episode → **Subtitles** → your uploaded English track (not "automatic") → ⋮ → **Download** → `.srt`. Its timings match the published video exactly, but it has no speaker names.
-- **Speaker-labelled transcript (`.txt`)**, with one block per speaker turn:
+- **Caption file (`.srt` / `.vtt`)**: in YouTube Studio, open the episode → **Subtitles** → your uploaded English track (not "automatic") → ⋮ → **Download** → `.srt`. Its words and timings match the published video exactly.
+- **Speaker-labelled transcript (`.txt`)** of the recording, with one block per speaker turn:
 
   ```
   Julie Kallini (12:34.567)
   What she said ...
   ```
 
-  This shows who is speaking. Use it only if it was made from the **final published video**: a transcript of the raw recording has timestamps that drift wherever the video was trimmed, and includes parts that aren't in the video.
+  It can be of the raw recording: it is only used for **who** is speaking.
 
-Name the file after the episode (`wiair-ep27-....srt`, `Ep27-guest-name.txt`, or anything containing the video id) and run:
+Name the files after the episode (`Ep27-captions.srt` and `Ep27-transcript.txt`, `wiair-ep27-....srt`, or anything containing the video id) and run:
 
 ```
-npm run import-transcripts -- path/to/file
+npm run import-transcripts -- Ep27-captions.srt Ep27-transcript.txt
 ```
 
-Then commit the new `data/transcripts/NN.json`. The import joins lines into paragraphs (under each chapter heading for caption files), removes filler words (uh, um) and crosstalk such as "mm-hmm", and applies the corrections in `data/transcript-name-fixes.json` (per episode: wrong spelling → right spelling; `speakers` renames a speaker label, e.g. for a played clip). In a caption file you can also mark speakers by starting lines with the name, e.g. `Julie: ...`.
+With both files, the import lines up the two word by word: the words and YouTube timestamps come from the captions (so anything cut from the video is left out, and teaser clips at the start are attributed to the right person), and the speaker names come from the transcript. It prints how much of the captions it matched; anything under 80% is flagged, which usually means the two files are for different episodes. Narration you recorded separately (intro, outro) is not in the recording transcript and is credited to the host.
+
+Other options:
+
+- **Only a `.txt`** for an episode whose captions were already imported: the existing transcript is used for the timings, so the speakers are added to it.
+- **Only a `.srt`**: a transcript without speaker names. In a caption file you can mark speakers by starting lines with the name, e.g. `Julie: ...`.
+- **Only a `.txt`, nothing imported before**: used as it is, so only do this if it was made from the final published video (a raw recording's timestamps drift wherever the video was trimmed).
+
+Then commit the new `data/transcripts/NN.json`. The import joins the words into paragraphs per speaker (and starts a new paragraph at each chapter), removes filler words (uh, um) and crosstalk such as "mm-hmm", and applies the corrections in `data/transcript-name-fixes.json` (per episode: wrong spelling → right spelling; `speakers` renames a speaker label, e.g. for a played clip). Speaker labels are tidied automatically: "WiAIR | Women In AI Research" and "Jekaterina WiAIR" become Jekaterina Novikova, "(She/Her)" is removed, and a first name alone ("Hila") becomes the guest's full name.
 
 ## ✍️ Writing episode descriptions
 

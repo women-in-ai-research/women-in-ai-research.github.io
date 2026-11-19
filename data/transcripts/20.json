@@ -1,179 +1,267 @@
 {
  "episode": 20,
  "videoId": "OZQqBWFUxQs",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 0,
-   "text": "I actually had a firsthand experience of being targeted by hate speech."
+   "speaker": "Saadia Gabriel",
+   "text": "I actually had a firsthand experience of being targeted by hate speech. So publishing this paper and then that paper also ended up getting a best paper nomination. It felt like in some way that was giving me back power over everything that I'd experienced"
   },
   {
-   "t": 9,
-   "text": "So publishing this paper and then that paper also ended up getting a best paper nomination. It felt like in some way that was giving me back power over everything that I'd experienced Our guest today is Saadia Gabriel, assistant professor at UCLA."
-  },
-  {
-   "t": 33,
-   "text": "thank you for joining me today, Saadia. And I'd like to start with a few questions that are a little bit more personal. So I just love to understand how you got here to the research that you're doing and what shapes the way you think about your work."
+   "t": 24,
+   "speaker": "Jekaterina Novikova",
+   "text": "Our guest today is Saadia Gabriel, assistant professor at UCLA. thank you for joining me today, Saadia. And I'd like to start with a few questions that are a little bit more personal."
   },
   {
    "t": 54,
-   "text": "your PhD was co-advised by two people. One was Yijin Choi, and she's better known for model training and reasoning type of work. And the another person was Franziska Rosner, and she works on security and privacy. And that's quite an interesting combination. I wonder how oh did this intersection early on during your career shape the way that you think about language models as systems that can be either trusted or misused? They each brought different perspectives on the problem that really inspired the work that I do now, Yejin always had very diverse interests within natural language processing."
+   "speaker": "Jekaterina Novikova",
+   "text": "So I just love to understand how you got here to the research that you're doing and what shapes the way you think about your work. your PhD was co-advised by two people. One was Yijin Choi, and she's better known for model training and reasoning type of work. And the another person was Franziska Rosner, and she works on security and privacy. And that's quite an interesting combination. I wonder how oh did this intersection early on during your career shape the way that you think about language models as systems that can be either trusted or misused?"
   },
   {
-   "t": 108,
-   "text": "The research group that she had at UW that I was in, it was always very multidisciplinary. Yezhin really pushed us to go for ambitious problems that sometimes would be counter to the conventional standards and wisdom in the field. With Franzi, then we were focusing more on the grounding and information security. So a lot of the work that she was doing in her group was focused on the interaction between systems, and users. And how do specific users interact with technologies? What risks could arise from those settings, particularly for minority users?"
+   "t": 97,
+   "speaker": "Saadia Gabriel",
+   "text": "They each brought different perspectives on the problem that really inspired the work that I do now, Yejin always had very diverse interests within natural language processing. The research group that she had at UW that I was in, it was always very multidisciplinary. Yezhin really pushed us to go for ambitious problems that sometimes would be counter to the conventional standards and wisdom in the field. With Franzi, then we were focusing more on the grounding and information security. So a lot of the work that she was doing in her group was focused on the interaction between systems, and users."
   },
   {
-   "t": 157,
-   "text": "And how do we take this really human-centric approach? to identifying vulnerabilities in systems and coming up with solutions. So it was less about I think that was really useful as well to my thinking that came afterward of How can we think about this in terms of this big picture of developing methodologies that can actually enable users to contribute to the process of AI safety and that empowers them to have a role in leading us towards responsible AI? it looks like going away from just focusing on language models alone and focusing on the high level interaction between users and the safety of AI systems."
+   "t": 144,
+   "speaker": "Saadia Gabriel",
+   "text": "And how do specific users interact with technologies? What risks could arise from those settings, particularly for minority users? And how do we take this really human-centric approach? to identifying vulnerabilities in systems and coming up with solutions. So it was less about I think that was really useful as well to my thinking that came afterward of How can we think about this in terms of this big picture of developing methodologies that can actually enable users to contribute to the process of AI safety and that empowers them to have a role in leading us towards responsible AI?"
   },
   {
-   "t": 216,
-   "text": "was important when you have set up your own lab, right?"
+   "t": 199,
+   "speaker": "Jekaterina Novikova",
+   "text": "It looks like going away from just focusing on language models alone and focusing on the high level interaction between users and the safety of AI systems. was important when you have set up your own lab, right?"
   },
   {
-   "t": 221,
-   "text": "And you have named your lab MARS, Misinformation, AI and Responsible Society."
+   "t": 222,
+   "speaker": "Jekaterina Novikova",
+   "text": "And you have named your lab MARS, Misinformation, AI and Responsible Society. I'm especially like that last part of Responsible Society. Can you tell me what does the Responsible Society concept mean to you? like as a research objective. Is it more of a destination that you're working towards or it's a bit of a constraint that you apply to your research projects and the projects that are done in your lab?"
   },
   {
-   "t": 230,
-   "text": "I'm especially like that last part of Responsible Society. Can you tell me what does the Responsible Society concept mean to you? like as a research objective. Is it more of a destination that you're working towards or it's a bit of a constraint that you apply to your research projects and the projects that are done in your lab? Yeah, I see it as a destination. I want to think about this not just in terms of how do we make AI safer, but how do we take advantage of the computational power that we have with AI and all the flexibility that we're given with AI to actually assist humans in making the world safer?"
+   "t": 269,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, I see it as a destination. I want to think about this not just in terms of how do we make AI safer, but how do we take advantage of the computational power that we have with AI and all the flexibility that we're given with AI to actually assist humans in making the world safer? and making them responsible users of that technology and citizens. And so some of the work that I'll get into later is around misinformation on social media platforms and trying to encourage critical thinking on social media platforms. That was a big driver of a lot of the work that's been going on in the research group and responsible society gets at that of We want to actually come up with frameworks that empower users to take a role in society and to actually mitigate some of the issues that we're dealing with, like rapid spread of misinformation."
   },
   {
-   "t": 296,
-   "text": "and making them responsible users of that technology and citizens. And so some of the work that I'll get into later is around misinformation on social media platforms and trying to encourage critical thinking on social media platforms. That was a big driver of a lot of the work that's been going on in the research group and responsible society gets at that of We want to actually come up with frameworks that empower users to take a role in society and to actually mitigate some of the issues that we're dealing with, like rapid spread of misinformation. m Yeah, that's definitely the very important goal."
-  },
-  {
-   "t": 348,
-   "text": "And also another aspect that looks very interesting to me, and I think it is quite relevant to this podcast as well a lot of your work, connects to very human questions, like who gets to define toxicity, whose languages matter, who bears the risk when models fail. questions like that."
+   "t": 340,
+   "speaker": "Jekaterina Novikova",
+   "text": "M Yeah, that's definitely the very important goal. And also another aspect that looks very interesting to me, and I think it is quite relevant to this podcast as well a lot of your work, connects to very human questions, like who gets to define toxicity, whose languages matter, who bears the risk when models fail. questions like that."
   },
   {
    "t": 383,
-   "text": "in your experience, do you think that women and the researchers from underrepresented groups are more frequently drawn to these type of questions? Yeah, so I want to be a little bit careful in answering this question. I don't want to necessarily make blanket statements But I think from my own experience, that's what I've observed. I do think that there are clear distinctions within AI safety of what traditionally underrepresented groups, people from traditionally underrepresented groups. are inclined to work on versus other people."
+   "speaker": "Jekaterina Novikova",
+   "text": "In your experience, do you think that women and the researchers from underrepresented groups are more frequently drawn to these type of questions?"
   },
   {
-   "t": 430,
-   "text": "I think it would make sense that for people where they're from groups that have been traditionally targeted by toxicity or their language minorities, then there can be an aspect where because it's so personal and because they have this prior experience, then working on that is very grounded and it feels like you can, you can really understand what impact the work is having. I think that is true for me of a lot of the work I did during my PhD was on content moderation and looking into a robustness of hate speech and where there might be issues around certain groups being discriminated against by content moderation systems."
+   "t": 396,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, so I want to be a little bit careful in answering this question. I don't want to necessarily make blanket statements But I think from my own experience, that's what I've observed. I do think that there are clear distinctions within AI safety of what traditionally underrepresented groups, people from traditionally underrepresented groups. are inclined to work on versus other people. I think it would make sense that for people where they're from groups that have been traditionally targeted by toxicity or their language minorities, then there can be an aspect where because it's so personal and because they have this prior experience, then working on that is very grounded and it feels like you can, you can really understand what impact the work is having."
   },
   {
-   "t": 480,
-   "text": "And so for me, I was used to being the only person or one of the few people who looked like me in spaces. I had experienced that kind of discrimination before my first paper on content moderation. I actually had a firsthand experience of being targeted by hate speech. So it felt like accomplishing, publishing this paper and then that paper also ended up getting a best paper nomination. It felt like in some way that was giving me back power over everything that I'd experienced and turning it into something that was actually quite positive and helpful to other people."
+   "t": 457,
+   "speaker": "Saadia Gabriel",
+   "text": "I think that is true for me of a lot of the work I did during my PhD was on content moderation and looking into a robustness of hate speech and where there might be issues around certain groups being discriminated against by content moderation systems. And so for me, I was used to being the only person or one of the few people who looked like me in spaces. I had experienced that kind of discrimination before my first paper on content moderation. I actually had a firsthand experience of being targeted by hate speech. So it felt like accomplishing, publishing this paper and then that paper also ended up getting a best paper nomination."
   },
   {
-   "t": 527,
-   "text": "So I can see that as being motivation and possibly drawing people in who might not be who might not otherwise see as clear what the impact is on their lives."
+   "t": 513,
+   "speaker": "Saadia Gabriel",
+   "text": "It felt like in some way that was giving me back power over everything that I'd experienced and turning it into something that was actually quite positive and helpful to other people. So I can see that as being motivation and possibly drawing people in who might not be who might not otherwise see as clear what the impact is on their lives."
   },
   {
    "t": 544,
-   "text": "That sounds like a very empowering story, when you speak about that experience of yours, Can you tell me if this is the motivation that is the stronger one for you in choosing the research problems even now, During COVID, I started working on misinformation. There was so much health misinformation that was going around. And I wanted to extend the work that I'd been doing primarily on hate speech in the past, then apply it to misinformation and see if we can model how do people interpret false and true news headlines and can we predict what societal consequences might be and then come up with some solutions for."
+   "speaker": "Jekaterina Novikova",
+   "text": "That sounds like a very empowering story, when you speak about that experience of yours, Can you tell me if this is the motivation that is the stronger one for you in choosing the research problems even now,"
   },
   {
-   "t": 595,
-   "text": "trying to control spread of misinformation. So that became the basis of my research group. As you can see from the title, it's a prominent part of what we work on. But I have been quite broad the whole time in what I work on. we do cover other areas as well. Like I've been doing work on, since my postdoc, I've been doing work on therapy. which was also related to the content moderation work. So you can see how the content moderation work elements of it has carried through to all these other projects where we're doing fairness and bias and content moderation and seeing where there might be discrepancies where it doesn't perform as well for certain groups and then seeing how that actually generalizes when we're thinking about other settings and other domains like chatbots for therapy."
+   "t": 566,
+   "speaker": "Saadia Gabriel",
+   "text": "During COVID, I started working on misinformation. There was so much health misinformation that was going around. And I wanted to extend the work that I'd been doing primarily on hate speech in the past, then apply it to misinformation and see if we can model how do people interpret false and true news headlines and can we predict what societal consequences might be and then come up with some solutions for. trying to control spread of misinformation. So that became the basis of my research group. As you can see from the title, it's a prominent part of what we work on. But I have been quite broad the whole time in what I work on."
+  },
+  {
+   "t": 615,
+   "speaker": "Saadia Gabriel",
+   "text": "We do cover other areas as well. Like I've been doing work on, since my postdoc, I've been doing work on therapy. which was also related to the content moderation work. So you can see how the content moderation work elements of it has carried through to all these other projects where we're doing fairness and bias and content moderation and seeing where there might be discrepancies where it doesn't perform as well for certain groups and then seeing how that actually generalizes when we're thinking about other settings and other domains like chatbots for therapy."
   },
   {
    "t": 652,
-   "text": "m That's super interesting. And I agree that the field of misinformation, quantum moderation, AI safety in general is sufficiently broad, And maybe because of that, there is also a little bit of ongoing"
+   "speaker": "Jekaterina Novikova",
+   "text": "M That's super interesting."
   },
   {
-   "t": 671,
-   "text": "debate in the research community about whether AI safety and the AI ethics are the same things or they are fundamentally different. So what's your take on that? Yes, I think that they're very related and oftentimes intertwined, but they are different. So I think you can have AI ethics outside of AI safety. AI ethics is getting, can get at some more trolley dilemma kind of problems and conversations that are probably going on at the Defense Department right now about when we actually might deploy AI in conflicts and thinking about AI is actually specifically not being safe as a weapon."
+   "t": 662,
+   "speaker": "Jekaterina Novikova",
+   "text": "And I agree that the field of misinformation, quantum moderation, AI safety in general is sufficiently broad, And maybe because of that, there is also a little bit of ongoing debate in the research community about whether AI safety and the AI ethics are the same things or they are fundamentally different. So what's your take on that?"
   },
   {
-   "t": 729,
-   "text": "so. I think that is a separate issue, but a lot of the motivation in AI safety can come from AI ethics and having this normative system where we typically expect AI systems to not be harming users and to not be discriminating against certain users."
+   "t": 686,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes, I think that they're very related and oftentimes intertwined, but they are different. So I think you can have AI ethics outside of AI safety. AI ethics is getting, can get at some more trolley dilemma kind of problems and conversations that are probably going on at the Defense Department right now about when we actually might deploy AI in conflicts and thinking about AI is actually specifically not being safe as a weapon. so. I think that is a separate issue, but a lot of the motivation in AI safety can come from AI ethics and having this normative system where we typically expect AI systems to not be harming users and to not be discriminating against certain users."
   },
   {
    "t": 759,
-   "text": "I liked a comment, there was a comment I saw from Timnit Giburu where she was talking about how a lot of times she gets labeled as an AI ethicist, but she doesn't really identify that so much as she identifies as an AI safety researcher."
+   "speaker": "Saadia Gabriel",
+   "text": "I liked a comment, there was a comment I saw from Timnit Giburu where she was talking about how a lot of times she gets labeled as an AI ethicist, but she doesn't really identify that so much as she identifies as an AI safety researcher. And I feel that there really are two separate communities that have arisen just around the label. There are certain people who want to... identify as being AI ethics versus AI safety. And there's people who really don't want to be identified as AI ethics. think for some people that feels like a much thornier issue. And I think for some in industry in particular, they might be more comfortable with AI safety as a liability concern."
   },
   {
-   "t": 776,
-   "text": "And I feel that there really are two separate communities that have arisen just around the label. There are certain people who want to... identify as being AI ethics versus AI safety. And there's people who really don't want to be identified as AI ethics. think for some people that feels like a much thornier issue. And I think for some in industry in particular, they might be more comfortable with AI safety as a liability concern. And from that motivation, more user experience more so than from dealing with what feels like more philosophical issues around AI ethics. I OK."
+   "t": 808,
+   "speaker": "Saadia Gabriel",
+   "text": "And from that motivation, more user experience more so than from dealing with what feels like more philosophical issues around AI ethics."
   },
   {
-   "t": 822,
-   "text": "So I can see how you look at AI safety versus AI ethics. And I also hear that your main area of research is AI safety, primarily. Yeah, I would say my main area research is AI safety, but I believe that AI ethics should be the motivation for AI safety. that's a very good point. So coming back to the AI safety let's dive a little bit deeper into your research. I think that em the understanding of safe AI and AI safety itself, even if we ignore AI ethics for now, the understanding of AI safety has shifted a little bit over the"
+   "t": 820,
+   "speaker": "Jekaterina Novikova",
+   "text": "I OK. So I can see how you look at AI safety versus AI ethics. And I also hear that your main area of research is AI safety, primarily."
   },
   {
-   "t": 879,
-   "text": "several recent years, moving closer to red teaming and the adversarial robustness being central concerns. Have you seen that evolution or do you see that the AI safety concept itself is evolving? think that it's evolving. It's becoming more nuanced. A lot of the progress has been driven through trial and error and just observation of where there are new areas that need to be covered in AI safety, which then can lead to a shift in focus and resources towards that. And then more recently, multilingual issues with vulnerabilities of multilingual models and multilingual jailbreaks, which really hasn't been explored that much yet, but there's some preliminary work on that."
+   "t": 838,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, I would say my main area research is AI safety, but I believe that AI ethics should be the motivation for AI safety."
   },
   {
-   "t": 937,
-   "text": "So I think it has, you have seen this clear expansion as people have identified new vulnerabilities within this concept of, within models. And then that's expanded the concept of what it means to actually achieve safe AI."
+   "t": 845,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's a very good point. So coming back to the AI safety let's dive a little bit deeper into your research. I think that em the understanding of safe AI and AI safety itself, even if we ignore AI ethics for now,"
+  },
+  {
+   "t": 873,
+   "speaker": "Jekaterina Novikova",
+   "text": "The understanding of AI safety has shifted a little bit over the several recent years, moving closer to red teaming and the adversarial robustness being central concerns. Have you seen that evolution or do you see that the AI safety concept itself is evolving?"
+  },
+  {
+   "t": 900,
+   "speaker": "Saadia Gabriel",
+   "text": "Think that it's evolving. It's becoming more nuanced. A lot of the progress has been driven through trial and error and just observation of where there are new areas that need to be covered in AI safety, which then can lead to a shift in focus and resources towards that. And then more recently, multilingual issues with vulnerabilities of multilingual models and multilingual jailbreaks, which really hasn't been explored that much yet, but there's some preliminary work on that. So I think it has, you have seen this clear expansion as people have identified new vulnerabilities within this concept of, within models."
+  },
+  {
+   "t": 951,
+   "speaker": "Saadia Gabriel",
+   "text": "And then that's expanded the concept of what it means to actually achieve safe AI."
   },
   {
    "t": 955,
-   "text": "And that brings me to one of your recent papers that is called X-Teaming: Multi-Turn Jailbreaks and Defenses with Adaptive Multi-Agents."
+   "speaker": "Jekaterina Novikova",
+   "text": "And that brings me to one of your recent papers that is called X-Teaming: Multi-Turn Jailbreaks and Defenses with Adaptive Multi-Agents. And it describes the approach to multitourn conversational jailbreaking. So can you give me a little bit of overview about this paper? What was the main motivation for that? What were the main findings?"
   },
   {
-   "t": 969,
-   "text": "And it describes the approach to multitourn conversational jailbreaking. So can you give me a little bit of overview about this paper? What was the main motivation for that? What were the main findings? Yes, so that actually started a few years ago. I was actually still a faculty fellow at NYU when we started this project. But our main motivation was that a lot of the previous jailbreaking work at that time was just focused on single turn. There wasn't work that was looking at multi-turn conversations. And this seemed like a major frontier in terms of future vulnerabilities in AI safety."
+   "t": 991,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes, so that actually started a few years ago. I was actually still a faculty fellow at NYU when we started this project. But our main motivation was that a lot of the previous jailbreaking work at that time was just focused on single turn. There wasn't work that was looking at multi-turn conversations. And this seemed like a major frontier in terms of future vulnerabilities in AI safety. And so we started exploring that while we were in the process of doing the brainstorming on this project, there was a paper that came out of Microsoft that was proposing a multi-turn attacks. It was a Crescendo paper, but they didn't, we reached out to the authors and they couldn't at the time share the data with us."
   },
   {
-   "t": 1023,
-   "text": "And so we started exploring that while we were in the process of doing the brainstorming on this project, there was a paper that came out of Microsoft that was proposing a multi-turn attacks. It was a Crescendo paper, but they didn't, we reached out to the authors and they couldn't at the time share the data with us. So we wanted to develop a open framework for actually evaluating these multi-turn jailbreaks. so we came up with this idea of we're going to do an automatic red team. So it's building on this concept of a human red team where we have different, they could be professionals or they could just be everyday users who are tasked with trying to break models and identify what the vulnerabilities of those models are."
+   "t": 1042,
+   "speaker": "Saadia Gabriel",
+   "text": "So we wanted to develop a open framework for actually evaluating these multi-turn jailbreaks. so we came up with this idea of we're going to do an automatic red team. So it's building on this concept of a human red team where we have different, they could be professionals or they could just be everyday users who are tasked with trying to break models and identify what the vulnerabilities of those models are. And we're going to have different LMs that play different roles within this red team. So we had an agent that was doing the planning."
   },
   {
-   "t": 1078,
-   "text": "And we're going to have different LMs that play different roles within this red team. So we had an agent that was doing the planning. They come up with this detailed scheme of how to perform an attack so that it elicits a certain type of specified harmful behavior. And then we have an attacker that actually comes up with what are the queries that get sent to an LLM to actually break the model. we have a optimization step as well that can iterate on the attack if it's unsuccessful and steer it to be more successful. So what we found was that even before we had the optimization step, these attacks could be quite successful and more successful than the single turn attacks."
+   "t": 1087,
+   "speaker": "Saadia Gabriel",
+   "text": "They come up with this detailed scheme of how to perform an attack so that it elicits a certain type of specified harmful behavior. And then we have an attacker that actually comes up with what are the queries that get sent to an LLM to actually break the model. we have a optimization step as well that can iterate on the attack if it's unsuccessful and steer it to be more successful. So what we found was that even before we had the optimization step, these attacks could be quite successful and more successful than the single turn attacks."
   },
   {
    "t": 1134,
-   "text": "And with the optimization step, then our findings were actually that even very robust models that were thought to be not vulnerable anymore to single turn attacks would break with almost 100 % attack success rate using these multi-turn approaches. Okay, one immediate question here is oh what do you think is the main reason of why multi-tone attacks work better than single tone based on the findings that you"
+   "speaker": "Saadia Gabriel",
+   "text": "And with the optimization step, then our findings were actually that even very robust models that were thought to be not vulnerable anymore to single turn attacks would break with almost 100 % attack success rate using these multi-turn approaches."
+  },
+  {
+   "t": 1161,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, one immediate question here is oh what do you think is the main reason of why multi-tone attacks work better than single tone based on the findings that you have?"
   },
   {
    "t": 1173,
-   "text": "have? Yeah, this is a great question. so. I think that there's part of it is just having more context. This is a general issue with language models is that they don't function as well on tasks when there's a larger context and they get confused. There's more noise and so it loses focus. But I think specific to this domain of jailbreaking is that you can because you have the multi-turn setting that you can develop attacks that disperse this behavior. across these steps. So it's not that any individual step necessarily seems harmful. It's when you're putting it together. So it's more implicit, the attack, than what you could actually achieve with a single turn attack. I think another aspect of it is that you could have a single step would actually itself be considered as harmful, but then because of the context, then that is similar to the issue I was bringing up at beginning, but it distracts."
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, this is a great question. so. I think that there's part of it is just having more context. This is a general issue with language models is that they don't function as well on tasks when there's a larger context and they get confused. There's more noise and so it loses focus. But I think specific to this domain of jailbreaking is that you can because you have the multi-turn setting that you can develop attacks that disperse this behavior. across these steps. So it's not that any individual step necessarily seems harmful. It's when you're putting it together. So it's more implicit, the attack, than what you could actually achieve with a single turn attack. I think another aspect of it is that you could have a single step would actually itself be considered as harmful, but then because of the context, then that is similar to the issue I was bringing up at beginning, but it distracts."
   },
   {
    "t": 1234,
-   "text": "the language model, so say if there's a lot of benign context or it's very positive, then that actually changes what the perceived meaning would be of the single query that initially would cause an identification of an attack. And so then it actually is fooled and it's masked by having this conversational context."
+   "speaker": "Saadia Gabriel",
+   "text": "The language model, so say if there's a lot of benign context or it's very positive, then that actually changes what the perceived meaning would be of the single query that initially would cause an identification of an attack. And so then it actually is fooled and it's masked by having this conversational context."
   },
   {
    "t": 1262,
-   "text": "And then you also mentioned that even without optimizer, the multi-turn attacks of X-teaming were sufficiently successful, like the attack success rate was high enough. So does it mean that optimizer is probably not that important say that the optimizer was important because then we're going from say 70 % to 100%. So that's a significant improvement. So I think that yeah, I was actually quite astonished by the performance when we had the optimization step. And I felt like that was one of the major takeaways that we had was that you even if you have these initially unsuccessful attacks, you can iterate on them using just textual feedback."
+   "speaker": "Jekaterina Novikova",
+   "text": "And then you also mentioned that even without optimizer, the multi-turn attacks of X-teaming were sufficiently successful, like the attack success rate was high enough. So does it mean that optimizer is probably not that important"
   },
   {
-   "t": 1315,
-   "text": "We had a verifier model that was identifying how likely it was an attack would be successful. We could just take feedback from that verifier model and then use that to decide how we edit these attacks. And without needing to do any kind of training, we can come up with these. incredibly successful attacks that generalize across models. So yeah, I think the optimizer was actually really important to the work. Right, and just to understand this approach a little bit better,"
+   "t": 1280,
+   "speaker": "Saadia Gabriel",
+   "text": "Say that the optimizer was important because then we're going from say 70 % to 100%. So that's a significant improvement. So I think that yeah, I was actually quite astonished by the performance when we had the optimization step. And I felt like that was one of the major takeaways that we had was that you even if you have these initially unsuccessful attacks, you can iterate on them using just textual feedback. We had a verifier model that was identifying how likely it was an attack would be successful. We could just take feedback from that verifier model and then use that to decide how we edit these attacks."
   },
   {
-   "t": 1354,
-   "text": "would you say that it is more about breadth of attacks that works in the multi-tone settings or it's about depth, meaning that you escalate the harmfulness of that attack or escalate something else using optimizer so that every new step is kind of more harmful. I think it's in terms of the attack success, then it's about both. you want to have the optimizer was helping with depth, with making these attacks for a specific behavior as effective as it could possibly be."
+   "t": 1328,
+   "speaker": "Saadia Gabriel",
+   "text": "And without needing to do any kind of training, we can come up with these. incredibly successful attacks that generalize across models. So yeah, I think the optimizer was actually really important to the work."
   },
   {
-   "t": 1401,
-   "text": "But we also wanted to make sure that we had coverage of a number of different behaviors and that we had diverse attacks. So that's something we measure for in the paper where we have results showing the diversity. And we took steps during the data generation of these attacks and make sure that we had diversity in our data set. Cause we want to make sure that we're covering, we're not just using the same effective attacks, but we're actually discovering behaviors that might broadly cover vulnerabilities. So we're not just patching for a couple of harmful behaviors, but then it turns out there's this whole other universe of vulnerabilities that we haven't considered. So it's important to have a breadth as well, but."
+   "t": 1348,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and just to understand this approach a little bit better, would you say that it is more about breadth of attacks that works in the multi-tone settings or it's about depth, meaning that you escalate the harmfulness of that attack or escalate something else using optimizer so that every new step is kind of more harmful."
   },
   {
-   "t": 1450,
-   "text": "What we were showing with the optimization step was that once we have that broad coverage, we can make it even more effective if we take the time to iterate on the attacks. I see. Yeah, that sounds like a successful method based on the results at least that you have presented in this paper."
+   "t": 1379,
+   "speaker": "Saadia Gabriel",
+   "text": "I think it's in terms of the attack success, then it's about both. you want to have the optimizer was helping with depth, with making these attacks for a specific behavior as effective as it could possibly be. But we also wanted to make sure that we had coverage of a number of different behaviors and that we had diverse attacks. So that's something we measure for in the paper where we have results showing the diversity. And we took steps during the data generation of these attacks and make sure that we had diversity in our data set. Cause we want to make sure that we're covering, we're not just using the same effective attacks, but we're actually discovering behaviors that might broadly cover vulnerabilities."
+  },
+  {
+   "t": 1435,
+   "speaker": "Saadia Gabriel",
+   "text": "So we're not just patching for a couple of harmful behaviors, but then it turns out there's this whole other universe of vulnerabilities that we haven't considered. So it's important to have a breadth as well, but. What we were showing with the optimization step was that once we have that broad coverage, we can make it even more effective if we take the time to iterate on the attacks."
+  },
+  {
+   "t": 1469,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see."
   },
   {
    "t": 1480,
-   "text": "So what about the defensive side? I know that it's probably not the purpose of the specific work, but in your opinion, what is the most promising way to... mitigate this kind of conversational attacks, multi-turn attacks. Right, so part of our motivation with the work is that we don't just want to break models, but we actually want to then use the information that we have from breaking the models to improve them. So there's two purposes here to the data, trying to figure out, trying to discover where there are gaps in safety, but then we also had some results where we're showing that training on data that was generated in this way can actually improve the robustness of those models."
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that sounds like a successful method based on the results at least that you have presented in this paper. So what about the defensive side? I know that it's probably not the purpose of the specific work, but in your opinion, what is the most promising way to... mitigate this kind of conversational attacks, multi-turn attacks."
   },
   {
-   "t": 1542,
-   "text": "And I have other work in adversarial robustness for content moderation systems that had a similar approach where we were looking at how there's a lot of gaps in existing data sets where there were... certain cases that were excluded in the underlying training data distribution, like benign mentions of minority groups. So minority groups would be mentioned primarily in the toxic examples, but not in the benign examples. And that leads to the various correlations being learned where every time this minority group is mentioned, it flags that as being offensive. And so we were looking at synthetic data generation to actually cover some of those."
+   "t": 1502,
+   "speaker": "Saadia Gabriel",
+   "text": "Right, so part of our motivation with the work is that we don't just want to break models, but we actually want to then use the information that we have from breaking the models to improve them. So there's two purposes here to the data, trying to figure out, trying to discover where there are gaps in safety, but then we also had some results where we're showing that training on data that was generated in this way can actually improve the robustness of those models. And I have other work in adversarial robustness for content moderation systems that had a similar approach where we were looking at how there's a lot of gaps in existing data sets where there were..."
   },
   {
-   "t": 1588,
-   "text": "missing gaps. And so this was a, this is a similar idea here where we're thinking of, we've identified where there's vulnerabilities and now we can actually use that information to craft. better training data and make the model more robust to those kind of vulnerabilities. And it comes to be used when we're thinking about inference time safeguards. So we have a better idea of how attacks may manifest than we could come up with approaches like inference time verifiers that can better detect impact or prompting strategies. there was work on universal triggers where they were showing that you could use gradient-based search to come up with attacks that would generalize across models and lead them to harmful behaviors."
+   "t": 1560,
+   "speaker": "Saadia Gabriel",
+   "text": "Certain cases that were excluded in the underlying training data distribution, like benign mentions of minority groups. So minority groups would be mentioned primarily in the toxic examples, but not in the benign examples. And that leads to the various correlations being learned where every time this minority group is mentioned, it flags that as being offensive. And so we were looking at synthetic data generation to actually cover some of those. missing gaps. And so this was a, this is a similar idea here where we're thinking of, we've identified where there's vulnerabilities and now we can actually use that information to craft. better training data and make the model more robust to those kind of vulnerabilities."
   },
   {
-   "t": 1640,
-   "text": "And then there was some follow-up work that was showing that you can also come up with defenses that using a similar kind of approach that generalize across models. So you use this search approach and then you come up with these suffixes that you can append to prompts that make the attacks fail. So whenever there's any kind of input, it will fail. If it's a benign prompt, then it still is able to execute the task. So I think that this work can also inform those kind of inference time defenses. Yeah, that's super interesting."
+   "t": 1605,
+   "speaker": "Saadia Gabriel",
+   "text": "And it comes to be used when we're thinking about inference time safeguards. So we have a better idea of how attacks may manifest than we could come up with approaches like inference time verifiers that can better detect impact or prompting strategies. there was work on universal triggers where they were showing that you could use gradient-based search to come up with attacks that would generalize across models and lead them to harmful behaviors. And then there was some follow-up work that was showing that you can also come up with defenses that using a similar kind of approach that generalize across models. So you use this search approach and then you come up with these suffixes that you can append to prompts that make the attacks fail."
   },
   {
-   "t": 1680,
-   "text": "when you say those approaches generalize across models, do you mean the same family of models or even beyond that? Yeah, different models. So thinking about open models versus proprietary models as well. So you might run it on Llama or Gemma or other open models, Qwen. And then also it works with models like GPT. Amazing. Yeah, so it makes it slightly more optimistic. It's not just that AI models can be broken, but there is also a lot of work being done on mitigating those em vulnerabilities and the attack success as well."
+   "t": 1659,
+   "speaker": "Saadia Gabriel",
+   "text": "So whenever there's any kind of input, it will fail. If it's a benign prompt, then it still is able to execute the task. So I think that this work can also inform those kind of inference time defenses."
   },
   {
-   "t": 1737,
-   "text": "oh certainly opens up new challenges. So all of these defenses were for single turn. But I think that you could adapt that for multi-turn. It's just that hasn't really been focused on yet. But I'm hoping that this and other work will start driving that. Right. This is Women in AI Research."
+   "t": 1675,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's super interesting. when you say those approaches generalize across models, do you mean the same family of models or even beyond that?"
+  },
+  {
+   "t": 1691,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, different models. So thinking about open models versus proprietary models as well. So you might run it on Llama or Gemma or other open models, Qwen. And then also it works with models like GPT."
+  },
+  {
+   "t": 1712,
+   "speaker": "Jekaterina Novikova",
+   "text": "Amazing. Yeah, so it makes it slightly more optimistic. It's not just that AI models can be broken, but there is also a lot of work being done on mitigating those em vulnerabilities and the attack success as well. oh"
+  },
+  {
+   "t": 1739,
+   "speaker": "Saadia Gabriel",
+   "text": "Certainly opens up new challenges. So all of these defenses were for single turn. But I think that you could adapt that for multi-turn. It's just that hasn't really been focused on yet. But I'm hoping that this and other work will start driving that."
+  },
+  {
+   "t": 1756,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. This is Women in AI Research."
   }
  ]
 }

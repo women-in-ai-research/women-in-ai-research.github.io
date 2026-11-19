@@ -1,323 +1,607 @@
 {
  "episode": 6,
  "videoId": "pq4km-unw_M",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 11,
+   "speaker": "Jekaterina Novikova",
    "text": "Hello and welcome to another episode of the Women in AI Research podcast. I'm Jekaterina and I'm joined by my co-host Malikeh. And today we are excited to welcome Wanru Zhao to the podcast. Wanru is a PhD student in Computer Science at the University of Cambridge in the UK, where she is supervised by Professor Nick Lane at the Cambridge Machine Learning Systems Lab. She is also a part of the Cambridge AI Safety Lab that is focusing on AI alignment and interpretability. And currently, she is visiting the Vector Institute in Toronto and collaborating with Professor Colin Raffel at the University of Toronto."
   },
   {
    "t": 56,
-   "text": "Her research targets the development of more decentralized AI by focusing on AI methods that are less centralized and more collaborative. So, Wanru, welcome to our podcast. We are very excited to have you here. And to start with, can you tell us a little bit about what first sparked your interest in Artificial Intelligence? Maybe there was some specific moment or some specific project that lit that spark. Yeah, yeah, thanks for your question. I'm truly honored to be here. Actually, after getting the invitation, I listened to our previous episode of this podcast. And I was really inspired by the incredible guests you've had."
+   "speaker": "Jekaterina Novikova",
+   "text": "Her research targets the development of more decentralized AI by focusing on AI methods that are less centralized and more collaborative. So, Wanru, welcome to our podcast. We are very excited to have you here. And to start with, can you tell us a little bit about what first sparked your interest in Artificial Intelligence? Maybe there was some specific moment or some specific project that lit that spark."
   },
   {
-   "t": 104,
-   "text": "So I feel very lucky to join this lineup. So I, for my first part, my interest, I would say as during my high school, I participated in the programming contest, and we call it Olympiad in Informatics in my high school, where I got touched with the coding and algorithms and One time after the competition, there was a lecture given by previous participants of the contest. It's about Monte Carlo tree search and A* algorithm. And at that moment, exactly at that year, AlphaGo came out."
+   "t": 89,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, yeah, thanks for your question. I'm truly honored to be here. Actually, after getting the invitation, I listened to our previous episode of this podcast. And I was really inspired by the incredible guests you've had. So I feel very lucky to join this lineup. So I, for my first part, my interest, I would say as during my high school, I participated in the programming contest, and we call it Olympiad in Informatics in my high school, where I got touched with the coding and algorithms and One time after the competition, there was a lecture given by previous participants of the contest."
   },
   {
-   "t": 149,
-   "text": "So I watched the whole game of AlphaGo at that moment. So at that moment, I was really inspired by the AI and machine learning algorithms. So after entering college, I started to explore AI research. That's exciting. So AlphaGo was your spark, right? Yeah, yeah, exactly. Great, great story. Sounds great."
+   "t": 138,
+   "speaker": "Wanru Zhao",
+   "text": "It's about Monte Carlo tree search and A* algorithm. And at that moment, exactly at that year, AlphaGo came out. So I watched the whole game of AlphaGo at that moment. So at that moment, I was really inspired by the AI and machine learning algorithms. So after entering college, I started to explore AI research."
+  },
+  {
+   "t": 167,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's exciting. So AlphaGo was your spark, right?"
+  },
+  {
+   "t": 171,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, yeah, exactly."
+  },
+  {
+   "t": 173,
+   "speaker": "Jekaterina Novikova",
+   "text": "Great, great story."
   },
   {
    "t": 176,
-   "text": "So can you walk us through your journey to pursuing a PhD at Cambridge? Were there any mentors, experiences, or turning points that shaped your decision to go into academic research in particular? Sure, my journey to Cambridge actually started during my MPhil year. So MPhil is like the Master of Philosophy in UK education system. So I finished MPhil in advanced computer science program, which is a kind of research-based Master's program, where I was first introduced to some like more rigorous academic research training. And we had several coursework where we call it modules that were very hands-on and our professors gave us detailed feedback."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Sounds great. So can you walk us through your journey to pursuing a PhD at Cambridge? Were there any mentors, experiences, or turning points that shaped your decision to go into academic research in particular?"
   },
   {
-   "t": 225,
-   "text": "And I think that shaped how I think about such research and my career plan. And at that time, my Master's project was part of the open source framework of FLOWER, which is a federated learning framework. And I was very excited about this direction at that moment. So I decided to continue to my PhD after graduating from my Master program."
+   "t": 188,
+   "speaker": "Wanru Zhao",
+   "text": "Sure, my journey to Cambridge actually started during my MPhil year. So MPhil is like the Master of Philosophy in UK education system. So I finished MPhil in advanced computer science program, which is a kind of research-based Master's program, where I was first introduced to some like more rigorous academic research training. And we had several coursework where we call it modules that were very hands-on and our professors gave us detailed feedback. And I think that shaped how I think about such research and my career plan. And at that time, my Master's project was part of the open source framework of FLOWER, which is a federated learning framework."
+  },
+  {
+   "t": 239,
+   "speaker": "Wanru Zhao",
+   "text": "And I was very excited about this direction at that moment. So I decided to continue to my PhD after graduating from my Master program."
   },
   {
    "t": 253,
-   "text": "That's amazing. Have you thought about doing research while entering the MPhil program as well? I'm just wondering, like, there is a slight difference between MPhil and the MSc, right? Master of Science. So was it in the back of your mind already in the beginning of the masters that maybe you will want to go to research. Yeah, it made my understanding where my experience showing the differences between the MPhil program and MSc program. So as far as I know, for MSc program, students are required to take a lot of courses, which are very helpful for finding a good job in industry as a software engineer or research engineer."
+   "speaker": "Jekaterina Novikova",
+   "text": "That's amazing. Have you thought about doing research while entering the MPhil program as well? I'm just wondering, like, there is a slight difference between MPhil and the MSc, right? Master of Science. So was it in the back of your mind already in the beginning of the masters that maybe you will want to go to research."
   },
   {
-   "t": 304,
-   "text": "But for MPhil projects and also combined the atmosphere at Cambridge, I feel like it's more academic driven. And it's more theoretical. for the coursework, what we need to do is to finish the tiny paper. And most of them are the independent work. And we are asked to go through the whole process of coming up with the idea. and design the experiments and then the write-up phase. Yeah, sounds interesting. Some of our audience, some of people from the audience will be interested in those different options as well and we'll explore them more."
+   "t": 281,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, it made my understanding where my experience showing the differences between the MPhil program and MSc program. So as far as I know, for MSc program, students are required to take a lot of courses, which are very helpful for finding a good job in industry as a software engineer or research engineer. But for MPhil projects and also combined the atmosphere at Cambridge, I feel like it's more academic driven. And it's more theoretical. for the coursework, what we need to do is to finish the tiny paper. And most of them are the independent work."
+  },
+  {
+   "t": 330,
+   "speaker": "Wanru Zhao",
+   "text": "And we are asked to go through the whole process of coming up with the idea. and design the experiments and then the write-up phase."
+  },
+  {
+   "t": 342,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, sounds interesting. Some of our audience, some of people from the audience will be interested in those different options as well and we'll explore them more."
   },
   {
    "t": 355,
-   "text": "I would say that my experience during Master's was pretty good. So I strongly encourage people to apply for this program. I really like it. Great. Yeah, thanks. So after, right now you moved to Canada during your PhD, right? And you work at the Vector Institute. And I know that you have also interned at Microsoft and also at AWS AI Lab, right?"
+   "speaker": "Wanru Zhao",
+   "text": "I would say that my experience during Master's was pretty good. So I strongly encourage people to apply for this program. I really like it."
+  },
+  {
+   "t": 369,
+   "speaker": "Jekaterina Novikova",
+   "text": "Great. Yeah, thanks. So after, right now you moved to Canada during your PhD, right? And you work at the Vector Institute."
   },
   {
    "t": 389,
-   "text": "So you have a lot of that very, I would say, diverse experience of working in different research ecosystems, like UK versus Canada, industry versus academia, research in both of those areas. I wonder how did that influence your perspective as a scientist? Yeah, I feel like the differences among those places are quite striking and enriching. And in UK, especially in like more academic parts of it, research is more independent. And people often take a very long-term view, not necessarily chasing the trends. And there's a strong focus on theoretical depths and curiosity-driven work."
+   "speaker": "Jekaterina Novikova",
+   "text": "And I know that you have also interned at Microsoft and also at AWS AI Lab, right? So you have a lot of that very, I would say, diverse experience of working in different research ecosystems, like UK versus Canada, industry versus academia, research in both of those areas. I wonder how did that influence your perspective as a scientist?"
   },
   {
-   "t": 438,
-   "text": "And it's a slower pace, it's a really valuable kind of training. And in Canada, what I feel is that particular Vector, felt much more collaborative and aligned with what's happening in the broader field. And there's a stronger emphasis on conceptual innovation, I would say, and building like maybe shared language across like slightly different sub fields of AI. And I really enjoyed that environment and I found that many research directions at Vector, they are connected with each other in surprising ways."
+   "t": 410,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, I feel like the differences among those places are quite striking and enriching. And in UK, especially in like more academic parts of it, research is more independent. And people often take a very long-term view, not necessarily chasing the trends. And there's a strong focus on theoretical depths and curiosity-driven work. And it's a slower pace, it's a really valuable kind of training. And in Canada, what I feel is that particular Vector, felt much more collaborative and aligned with what's happening in the broader field."
   },
   {
-   "t": 482,
-   "text": "And as for industry, actually my internships were all in research, very research focused teams. So, So it's all about like, it's almost similar to doing research in school, like in universities. And my mentors could often identify the core issue with just one or two comments, which was incredibly satisfying to me. Yeah, and I think that there's also more access to resources. So if you already have a concrete idea and want to try that aligns with the whole team's focus, the pace will be faster. Yeah, that's Yeah, so it sounds to me that like from what you have said, from your experience, it's maybe even possible that there is more difference between, there was more difference for you between UK and Canada rather than research in the industry and research in academia."
+   "t": 456,
+   "speaker": "Wanru Zhao",
+   "text": "And there's a stronger emphasis on conceptual innovation, I would say, and building like maybe shared language across like slightly different sub fields of AI. And I really enjoyed that environment and I found that many research directions at Vector, they are connected with each other in surprising ways. And as for industry, actually my internships were all in research, very research focused teams. So, So it's all about like, it's almost similar to doing research in school, like in universities. And my mentors could often identify the core issue with just one or two comments, which was incredibly satisfying to me."
+  },
+  {
+   "t": 511,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, and I think that there's also more access to resources. So if you already have a concrete idea and want to try that aligns with the whole team's focus, the pace will be faster."
+  },
+  {
+   "t": 526,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's Yeah, so it sounds to me that like from what you have said, from your experience, it's maybe even possible that there is more difference between, there was more difference for you between UK and Canada rather than research in the industry and research in academia."
   },
   {
    "t": 546,
-   "text": "Mmm. So I think that for the personal experience, oh it's based on the specific team, where supervisors, or people you are working with."
+   "speaker": "Wanru Zhao",
+   "text": "Mmm. So I think that for the personal experience, oh it's based on the specific team, where supervisors, or people you are working with. So I think it's largely dependent. It's largely dependent on the specific team or person. So I don't think like we cannot like one cannot do theoretical research in Canada where cannot do like more empirical research in the UK. And in both of the countries I observe like the passion, the same passion for research, for conducting good research."
   },
   {
-   "t": 562,
-   "text": "So I think it's largely dependent. It's largely dependent on the specific team or person. So I don't think like we cannot like one cannot do theoretical research in Canada where cannot do like more empirical research in the UK. And in both of the countries I observe like the passion, the same passion for research, for conducting good research. So which make me like really encouraged."
+   "t": 592,
+   "speaker": "Wanru Zhao",
+   "text": "So which make me like really encouraged."
   },
   {
    "t": 596,
-   "text": "Thanks. of the differences between industry versus academia. So right now, you told there's more access to resources there, but this is my long-term goal so that we break this wall between industry and academia. And like both communities have equal access to resources. And yeah, like in your opinion, how can we make these two... ecosystems more collaborative so that the students, the smart students have more access to the resources and industry also benefits from the deep research outcome, theoretical one that can be applied into their work and maybe be profitable for them at some point. So how do you think these two ecosystems can be more collaborative and we maybe the ones who are working in the field can help to actually fade away that drawn border between them."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Of the differences between industry versus academia. So right now, you told there's more access to resources there, but this is my long-term goal so that we break this wall between industry and academia. And like both communities have equal access to resources. And yeah, like in your opinion, how can we make these two... ecosystems more collaborative so that the students, the smart students have more access to the resources and industry also benefits from the deep research outcome, theoretical one that can be applied into their work and maybe be profitable for them at some point. So how do you think these two ecosystems can be more collaborative and we maybe the ones who are working in the field can help to actually fade away that drawn border between them."
   },
   {
    "t": 649,
+   "speaker": "Wanru Zhao",
    "text": "So the question is about the collaboration potential, like building potential collaboration between the academia and industry. Yeah, that's a pretty good question. So. I feel like some of the research topics, they are naturally suitable to be applied in the industry environment. While some of the topics, are almost purely curiosity driven. So I think it will be definitely perfect to... build such collaboration between industry and academia, especially for those very empirical research. Because industrial, there are more computing resources in industry. And it can be closely connected with certain products in industry."
   },
   {
    "t": 699,
-   "text": "But for some of the research directions, I feel like it's more long-term research line that we cannot see. We haven't seen many direct applications of those research topics. And I do see some of the industrial research labs working on those stuff. For example, DeepMind. you should be working on, like DeepMind is working on some like traditional RL algorithm. And also, there's some like very close collaboration between DeepMind and UCL ICN Center, Mm-hmm. which is working on the neuroscience part. And for like the AlphaGo I mentioned, and also some like AlphaZero, they are all based on such research."
+   "speaker": "Wanru Zhao",
+   "text": "But for some of the research directions, I feel like it's more long-term research line that we cannot see. We haven't seen many direct applications of those research topics. And I do see some of the industrial research labs working on those stuff. For example, DeepMind. you should be working on, like DeepMind is working on some like traditional RL algorithm. And also, there's some like very close collaboration between DeepMind and UCL ICN Center, which is working on the neuroscience part. And for like the AlphaGo I mentioned, and also some like AlphaZero, they are all based on such research."
   },
   {
    "t": 749,
+   "speaker": "Wanru Zhao",
    "text": "So those kinds of research directions might not be the mainstream at some moment, but it will be beneficial in the long run."
   },
   {
    "t": 760,
-   "text": "Cool. Yeah, it was very interesting. Thank you for your response. It was very interesting."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool. Yeah, it was very interesting. Thank you for your response."
   },
   {
    "t": 766,
-   "text": "In all those moments, either in industry or in academia, and like I don't know, in different countries, over all these years that you're doing research, have you ever felt like you're completely lost, maybe academically or personally, and you needed some guidance to see what the next steps are or how you can re-plan your roadmap? Were there any lost moments there? Yeah, yeah. There were one kind of the a moments. It's about feeling alone or feeling lonely, especially when I was working on things that didn't attract much attention. And it made me question whether my research matters. Mm-hmm."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "It was very interesting. In all those moments, either in industry or in academia, and like I don't know, in different countries, over all these years that you're doing research, have you ever felt like you're completely lost, maybe academically or personally, and you needed some guidance to see what the next steps are or how you can re-plan your roadmap? Were there any lost moments there?"
   },
   {
-   "t": 812,
-   "text": "And also another kind of lost moment as I feel like from the uncertainty of the research itself, because you cannot control all of the things. The experiments could fail and also you cannot control like the Fact, people really cares about your research, your research topic. And that, like, I feel like it's a constant unpredictability. And it could be very, like, emotionally draining. It resonates very strongly with me as well, because I can very well understand how both those points, like whether the research is failing and you do not control it."
+   "t": 790,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, yeah. There were one kind of the a moments. It's about feeling alone or feeling lonely, especially when I was working on things that didn't attract much attention. And it made me question whether my research matters. And also another kind of lost moment as I feel like from the uncertainty of the research itself, because you cannot control all of the things. The experiments could fail and also you cannot control like the Fact, people really cares about your research, your research topic."
   },
   {
-   "t": 865,
-   "text": "to the point, to the level where you feel confident about what you're doing and also when you're not sure as a scientist, as a researcher whether what you're doing is actually having any value for other people. So I wonder how do you usually deal with those moments? or maybe not even moments necessarily. How do you deal with them? Yeah, I often remind myself that passion can withstand the test of time. And also, I think finding like-minded people makes a huge difference. Knowing that someone else shares your values and vision makes you feel less alone. And on the practical level, I try to follow very structured methods or steps that give me a regular feedback."
+   "t": 836,
+   "speaker": "Wanru Zhao",
+   "text": "And that, like, I feel like it's a constant unpredictability. And it could be very, like, emotionally draining."
   },
   {
-   "t": 920,
-   "text": "So I can see my progress more clearly and stay grounded. And also having a constant daily routine and a supportive system around me is also very important, including friends and advisors, collaborators, families, or communities. I feel like I got much help from communities like Women in ML and also there's a club in my department at Cambridge called Women at CL, CL means computer laboratory. oh And that helps a lot too. That's great. That's great. I hope that even sharing those experiences may help some other people."
+   "t": 848,
+   "speaker": "Jekaterina Novikova",
+   "text": "It resonates very strongly with me as well, because I can very well understand how both those points, like whether the research is failing and you do not control it. to the point, to the level where you feel confident about what you're doing and also when you're not sure as a scientist, as a researcher whether what you're doing is actually having any value for other people. So I wonder how do you usually deal with those moments? or maybe not even moments necessarily. How do you deal with them?"
   },
   {
-   "t": 968,
-   "text": "So thank you for doing that. Yeah. Yeah, great. Thanks for sharing your experiences."
+   "t": 891,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, I often remind myself that passion can withstand the test of time. And also, I think finding like-minded people makes a huge difference. Knowing that someone else shares your values and vision makes you feel less alone. And on the practical level, I try to follow very structured methods or steps that give me a regular feedback. So I can see my progress more clearly and stay grounded. And also having a constant daily routine and a supportive system around me is also very important, including friends and advisors, collaborators, families, or communities."
+  },
+  {
+   "t": 940,
+   "speaker": "Wanru Zhao",
+   "text": "I feel like I got much help from communities like Women in ML and also there's a club in my department at Cambridge called Women at CL, CL means computer laboratory. oh And that helps a lot too."
+  },
+  {
+   "t": 960,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's great. That's great. I hope that even sharing those experiences may help some other people. So thank you for doing that."
+  },
+  {
+   "t": 970,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, great."
   },
   {
    "t": 973,
-   "text": "So following what you shared, have you ever felt like an outsider in your field, especially due to your gender? If so, how did you deal with that? Yeah. Mm-hmm. Yeah, absolutely. I think one example would be doing like, like, such kind of filling came from a very young age, like, for example, during my high school, as I mentioned, I was part of the, like the Olympiad Informatics teams in my high school, where I was very few, like one of the very few girls in my high school participating in such context, in such competition. And at that moment, I feel like I'm an outsider because the majority of the participants are boys."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Thanks for sharing your experiences. So following what you shared, have you ever felt like an outsider in your field, especially due to your gender? If so, how did you deal with that? Yeah."
   },
   {
-   "t": 1023,
-   "text": "So at that moment, I was trying to be like behave like the behave like others. For example, to show I'm a very competitive person, I'm a very aggressive person, so called such traits. But later on, when I got to know more girls or ladies in that field, I felt more at home. So finding like, like similar people, I think help helped me a lot. I don't need to be someone that's not like that's not me at all. And we can share our like ideas or thoughts or feelings with each other. I think that's a very good experience. And yeah, and I also believe that, like, that's why I really like our podcast."
+   "t": 985,
+   "speaker": "Wanru Zhao",
+   "text": "Mm-hmm. Yeah, absolutely. I think one example would be doing like, like, such kind of filling came from a very young age, like, for example, during my high school, as I mentioned, I was part of the, like the Olympiad Informatics teams in my high school, where I was very few, like one of the very few girls in my high school participating in such context, in such competition. And at that moment, I feel like I'm an outsider because the majority of the participants are boys. So at that moment, I was trying to be like behave like the behave like others. For example, to show I'm a very competitive person, I'm a very aggressive person, so called such traits."
   },
   {
-   "t": 1073,
-   "text": "And I think this, this is a very good platform that we can share some like, personal experience that may be very commonly seen in others' lives. Yeah, and if I Even if we cannot find someone that has experienced similar things before, sometimes I would tell myself, if I can manage to do this, then maybe others will come after me and will feel a little less alone when they see someone like them in this place. Amazing, I love those words. They, yeah, it resonates so, so well with me as well."
+   "t": 1038,
+   "speaker": "Wanru Zhao",
+   "text": "But later on, when I got to know more girls or ladies in that field, I felt more at home. So finding like, like similar people, I think help helped me a lot. I don't need to be someone that's not like that's not me at all. And we can share our like ideas or thoughts or feelings with each other. I think that's a very good experience. And yeah, and I also believe that, like, that's why I really like our podcast. And I think this, this is a very good platform that we can share some like, personal experience that may be very commonly seen in others' lives."
   },
   {
-   "t": 1116,
-   "text": "Wanru Let me ask this question and it will be the last out of research question."
+   "t": 1085,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, and if I Even if we cannot find someone that has experienced similar things before, sometimes I would tell myself, if I can manage to do this, then maybe others will come after me and will feel a little less alone when they see someone like them in this place."
   },
   {
-   "t": 1123,
-   "text": "So, there are multiple so-called unspoken rules. in the research culture, right, in academia. So if you were in the position that you could break one of these unspoken rules, which one would it be and why? Yeah, that's a great question. So I think One of the unspoken rules in academia is that it seems like only positive or novel results deserve to see the light of day. So in that case, if we have some negative or failed experiments, we cannot even write them up at all. So if I could break the rule, it could be the culture of burying negative results and actually sharing such like intermediate experimental results where some initial exploration does matter."
+   "t": 1109,
+   "speaker": "Jekaterina Novikova",
+   "text": "Amazing, I love those words. They, yeah, it resonates so, so well with me as well."
   },
   {
-   "t": 1178,
-   "text": "And I've seen similar patterns in some very frontier research lab in China. In China, the size of the labs is really big. And one advantage is that people are working on similar stuff. So they can share internally which error they encountered. and also share the failure examples. And those failure examples are very important for conducting research, even if we cannot include it in the paper. I love it. It reminds me, there was one workshop, think, sufficiently recently, maybe several years ago, started at one of the NLP conferences, which was called exactly like that negative results, something in the research."
+   "t": 1117,
+   "speaker": "Jekaterina Novikova",
+   "text": "Wanru Let me ask this question and it will be the last out of research question. So, there are multiple so-called unspoken rules. in the research culture, right, in academia. So if you were in the position that you could break one of these unspoken rules, which one would it be and why?"
   },
   {
-   "t": 1229,
-   "text": "So yeah, I completely agree there should be more places to share to. publicly those negative results because it's still These are still results. We need them as well to make progress. Not just like the cherry-picked best possible ones Yeah I totally agree. Yeah, great. I also really love that answer. I think people talk very little about their failure points on social media. And also, it's not only about research. think that's something we see. We just see half of the like actual research world there and I think especially speaking of gen.ai it's a very expensive industry and sharing those failure examples would save a lot of time and cost for everyone in the field but there's no stage for that no when you in particular to share so I hope people change the directions a bit."
+   "t": 1138,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, that's a great question. So I think One of the unspoken rules in academia is that it seems like only positive or novel results deserve to see the light of day. So in that case, if we have some negative or failed experiments, we cannot even write them up at all. So if I could break the rule, it could be the culture of burying negative results and actually sharing such like intermediate experimental results where some initial exploration does matter. And I've seen similar patterns in some very frontier research lab in China."
   },
   {
-   "t": 1284,
-   "text": "yeah, that was great. Thanks for sharing your personal journey very insightful. I personally learned a lot. So let's now dive into your research."
+   "t": 1185,
+   "speaker": "Wanru Zhao",
+   "text": "In China, the size of the labs is really big. And one advantage is that people are working on similar stuff. So they can share internally which error they encountered. and also share the failure examples. And those failure examples are very important for conducting research, even if we cannot include it in the paper."
+  },
+  {
+   "t": 1212,
+   "speaker": "Jekaterina Novikova",
+   "text": "I love it. It reminds me, there was one workshop, think, sufficiently recently, maybe several years ago, started at one of the NLP conferences, which was called exactly like that negative results, something in the research. So yeah, I completely agree there should be more places to share to. publicly those negative results because it's still These are still results. We need them as well to make progress. Not just like the cherry-picked best possible ones"
+  },
+  {
+   "t": 1246,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah I totally agree."
+  },
+  {
+   "t": 1249,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, great. I also really love that answer. I think people talk very little about their failure points on social media. And also, it's not only about research. think that's something we see. We just see half of the like actual research world there and I think especially speaking of gen.ai it's a very expensive industry and sharing those failure examples would save a lot of time and cost for everyone in the field but there's no stage for that no when you in particular to share so I hope people change the directions a bit. yeah, that was great. Thanks for sharing your personal journey very insightful. I personally learned a lot."
   },
   {
    "t": 1293,
-   "text": "To start us off, could you break down what the scaling laws are in the context of language models, especially for those who may not be familiar with this? Mm-hmm. Yeah, so scaling laws is like, the majority of the, like our, the majority of recent works in large language models, they follow such like scaling laws. I mean, like intuitively, it means that, like, if we put more compute into it, more data set into it, we can get better, better performance of the models."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So let's now dive into your research. To start us off, could you break down what the scaling laws are in the context of language models, especially for those who may not be familiar with this?"
+  },
+  {
+   "t": 1302,
+   "speaker": "Wanru Zhao",
+   "text": "Mm-hmm. Yeah, so scaling laws is like, the majority of the, like our, the majority of recent works in large language models, they follow such like scaling laws. I mean, like intuitively, it means that, like, if we put more compute into it, more data set into it, we can get better, better performance of the models."
   },
   {
    "t": 1327,
-   "text": "Right. So from your perspective, are there the limitations that we face today as researchers when we try to scale models further? And if so, what are those limitations, the way you see them? Yeah, so, Yeah, so when we are talking about the scaling law and thinking about the conventional deep learning model deployment, we are talking about essentially three elements, which are data, model, and compute. And we usually assume that these three things are located in the same place. So nowadays we're starting running into some serious resource bottlenecks that could prevent us from scaling the models much further."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. So from your perspective, are there the limitations that we face today as researchers when we try to scale models further? And if so, what are those limitations, the way you see them?"
   },
   {
-   "t": 1376,
-   "text": "So from the perspective of the data, so training large-length models needs numerous text dataset. And there have been some prediction that we could run out of publicly available dataset on the internet by around 2026 if we keep scaling normally. So in other words, just scrubbing more web text won't be enough. So we need new ways to access or generate training data. So this is one part. And the other part is a compute. So the standard approach is to use bigger and bigger GPU clusters with high-speed interconnects. But building such ultra large data centers is incredibly expensive and impractical because not everyone has such a sparse multi extra flop supercomputer."
+   "t": 1344,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, so, Yeah, so when we are talking about the scaling law and thinking about the conventional deep learning model deployment, we are talking about essentially three elements, which are data, model, and compute. And we usually assume that these three things are located in the same place. So nowadays we're starting running into some serious resource bottlenecks that could prevent us from scaling the models much further. So from the perspective of the data, so training large-length models needs numerous text dataset. And there have been some prediction that we could run out of publicly available dataset on the internet by around 2026 if we keep scaling normally."
   },
   {
-   "t": 1431,
-   "text": "So yeah, so, so, According to this, I'm wondering if we could instead scale out training across many modest models, for example, GPUs in the wild, connected by the normal internet. So essentially, it's turned the internet into training clusters. And that will let us use existing computer spread across the globe. rather than concentrating everything in one location. That's great. And I love how you pointed out that these scaling limitations, are not just, let's say, compute or just data or just model. They are coming from all three different places and probably should be addressed also in different ways."
+   "t": 1395,
+   "speaker": "Wanru Zhao",
+   "text": "So in other words, just scrubbing more web text won't be enough. So we need new ways to access or generate training data. So this is one part. And the other part is a compute. So the standard approach is to use bigger and bigger GPU clusters with high-speed interconnects. But building such ultra large data centers is incredibly expensive and impractical because not everyone has such a sparse multi extra flop supercomputer. So yeah, so, so, According to this, I'm wondering if we could instead scale out training across many modest models, for example, GPUs in the wild, connected by the normal internet."
+  },
+  {
+   "t": 1447,
+   "speaker": "Wanru Zhao",
+   "text": "So essentially, it's turned the internet into training clusters. And that will let us use existing computer spread across the globe. rather than concentrating everything in one location."
+  },
+  {
+   "t": 1460,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's great. And I love how you pointed out that these scaling limitations, are not just, let's say, compute or just data or just model. They are coming from all three different places and probably should be addressed also in different ways."
   },
   {
    "t": 1480,
+   "speaker": "Malikeh Ehghaghi",
    "text": "Yeah, that was very insightful. There were a lot of news headlines in late 2024 that AI scaling is hitting a wall. And I saw a very nice blog post a couple of months ago, and it was saying that there is a bit of misunderstanding or misconception about what a scaling laws mean. The reality is that all these scaling laws are exponential like kind of functions, but everywhere, especially like in all the relevant papers, we just see linear charts. And that's why the expectation of people in the field is that if you linearly put more data or more compute or linearly increase the size of the model, you should see a big jump in the performance, but actually the actual relation between the performance and all these factors is exponential."
   },
   {
    "t": 1528,
-   "text": "So to get to the next jump into the field, we need to pour a lot more data and compute in it. yeah. So speaking of the data part, so in general, you advocate for open and collaborative large model development, and innovative and timely strategy. I'm eager to explore how your research engages with all these different pillars of data, model, and compute."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So to get to the next jump into the field, we need to pour a lot more data and compute in it. yeah. So speaking of the data part, so in general, you advocate for open and collaborative large model development, and innovative and timely strategy."
   },
   {
    "t": 1557,
-   "text": "So in your NeurIPS paper which was called CLUES: Collaborative Private-domain High Quality Data Selection for LLMs via Training Dynamics, you talk about data attribution, essentially measuring how much a training example influences a model's predictions. So what are the main challenges of applying existing attribution methods to LLMs, especially in collaborative or federated settings? Thanks. Yeah. So previous data selection where data attribution works lie in the centralized setting. But as I just mentioned, we need to consider about such collaborative setting. And in such collaborative settings, different models may be trained on different sources of data. which makes the different data attribution."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I'm eager to explore how your research engages with all these different pillars of data, model, and compute. So in your NeurIPS paper which was called CLUES: Collaborative Private-domain High Quality Data Selection for LLMs via Training Dynamics, you talk about data attribution, essentially measuring how much a training example influences a model's predictions. So what are the main challenges of applying existing attribution methods to LLMs, especially in collaborative or federated settings? Thanks."
   },
   {
-   "t": 1603,
-   "text": "And how can we select those data that is beneficial for the global model instead of the local model independently? I think this is a critical question. And this is what we want to address in this paper."
+   "t": 1580,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah. So previous data selection where data attribution works lie in the centralized setting. But as I just mentioned, we need to consider about such collaborative setting. And in such collaborative settings, different models may be trained on different sources of data. which makes the different data attribution. And how can we select those data that is beneficial for the global model instead of the local model independently? I think this is a critical question. And this is what we want to address in this paper."
   },
   {
    "t": 1618,
+   "speaker": "Jekaterina Novikova",
    "text": "Right, what are your thoughts and how do you want to address this? How do you want to identify that high quality data from distributed sources? Some of them are privately held sources and they have all those different characteristics."
   },
   {
    "t": 1637,
+   "speaker": "Wanru Zhao",
    "text": "Yeah, so in that paper, we come up with a method that calculates the data scoring function on the user side based on the checkpoint during the training. And once we got the per sample scores, we send it to the server. And we have the global. standard, which is a global score threshold that could help us to filter out those data that we want in the collaborative training. So with that global standard, we can filter out those data which is lower than the standard and keep those data which is higher than the standard. And in that case, like, For the global collaborative learning, we did experiments on both of the settings, are model merging and federated learning."
   },
   {
    "t": 1688,
-   "text": "We showed that in both of the settings, our method can achieve the best performance. And you mentioned that global standard or global threshold. Where does that come from? So here our assumption is that we have a very small amount of data, which is public data. it is recognized as the high quality data. everyone can access to it. For example, the Wikipedia data. And we use those data as our anchor data to calculate such thresholds. So that's what we did in this paper. We are working on the forward paper, which we don't want to make such thresholds a fixed value."
+   "speaker": "Wanru Zhao",
+   "text": "We showed that in both of the settings, our method can achieve the best performance."
   },
   {
-   "t": 1737,
-   "text": "We want to adaptively adjust it. And it's coming out soon. That's nice. Yeah, that's very interesting. I'm looking forward to that new paper of yours. Would it be fair to say, with regards to that global threshold, would it be fair to say that it is coming from the domain knowledge? Like it can be domain specific or something about that? Yeah, so once it comes to the collaborative learning, because people train their own model on their own devices with their own source of data, that make it possible to apply it to some very sensitive domains, for example, like health care domains or financial domains."
+   "t": 1694,
+   "speaker": "Jekaterina Novikova",
+   "text": "And you mentioned that global standard or global threshold. Where does that come from?"
   },
   {
-   "t": 1783,
-   "text": "Yeah, I think that would be a very promising direction to apply our method. Interesting. So once you've selected high quality data, how do you perform collaborative learning, especially under low bandwidth or low communication constraints that are very common in real-world federated setups? Yeah, actually, this is sort of out of the scope of this paper, because we just use the normal federated learning setting and the model merging setting. We didn't change anything. Yeah, so because in this paper, we are focusing on more data-centric methods. I see. I see. So maybe some follow up in the next works if it is of interest. it can be compatible with some different variants of Federated learning paradigm or model training techniques."
+   "t": 1700,
+   "speaker": "Wanru Zhao",
+   "text": "So here our assumption is that we have a very small amount of data, which is public data. it is recognized as the high quality data. everyone can access to it. For example, the Wikipedia data. And we use those data as our anchor data to calculate such thresholds. So that's what we did in this paper. We are working on the forward paper, which we don't want to make such thresholds a fixed value. We want to adaptively adjust it. And it's coming out soon."
   },
   {
-   "t": 1835,
-   "text": "Yeah, makes sense."
+   "t": 1742,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's nice. Yeah, that's very interesting. I'm looking forward to that new paper of yours. Would it be fair to say, with regards to that global threshold, would it be fair to say that it is coming from the domain knowledge? Like it can be domain specific or something about that?"
+  },
+  {
+   "t": 1763,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, so once it comes to the collaborative learning, because people train their own model on their own devices with their own source of data, that make it possible to apply it to some very sensitive domains, for example, like health care domains or financial domains. Yeah, I think that would be a very promising direction to apply our method."
+  },
+  {
+   "t": 1790,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. So once you've selected high quality data, how do you perform collaborative learning, especially under low bandwidth or low communication constraints that are very common in real-world federated setups?"
+  },
+  {
+   "t": 1803,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, actually, this is sort of out of the scope of this paper, because we just use the normal federated learning setting and the model merging setting. We didn't change anything. Yeah, so because in this paper, we are focusing on more data-centric methods."
+  },
+  {
+   "t": 1821,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I see."
+  },
+  {
+   "t": 1822,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see. So maybe some follow up in the next works if it is of interest."
+  },
+  {
+   "t": 1827,
+   "speaker": "Wanru Zhao",
+   "text": "It can be compatible with some different variants of Federated learning paradigm or model training techniques."
   },
   {
    "t": 1837,
-   "text": "And you have mentioned in this paper that you also use model merging in your training phase. So could you tell a little bit about this model merging and how that enables collaborative fine-tuning of LLMs, especially when dealing with sensitive or private data that cannot be shared? Yeah, yeah, sure. Actually, I'm really passionate about model merging and such modularity architectures. And we held a workshop on modularity in collaborative, decentralized, and continued training in ICLR this year in Singapore. So for model merging, before mentioning model merging, there's a concept called a task vector."
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, makes sense. And you have mentioned in this paper that you also use model merging in your training phase. So could you tell a little bit about this model merging and how that enables collaborative fine-tuning of LLMs, especially when dealing with sensitive or private data that cannot be shared?"
   },
   {
-   "t": 1883,
-   "text": "this is A task vector is essentially a representation of a specific task's knowledge. And it is often called it as a set of parameter updates where differences in the neural network. And so model merging basically combines multiple task vectors or models together. By averaging, we're interpolating their parameters to create a single model that can perform multiple tasks effectively. So basically how it relates to modular architecture that, it is also closely connected with what I mentioned as a collaborative training paradigm. So if we can make the model in the modular and plugable architecture that would be very easy for people to achieve such collaborative development of it."
+   "t": 1858,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, yeah, sure. Actually, I'm really passionate about model merging and such modularity architectures. And we held a workshop on modularity in collaborative, decentralized, and continued training in ICLR this year in Singapore. So for model merging, before mentioning model merging, there's a concept called a task vector. this is A task vector is essentially a representation of a specific task's knowledge. And it is often called it as a set of parameter updates where differences in the neural network. And so model merging basically combines multiple task vectors or models together."
+  },
+  {
+   "t": 1903,
+   "speaker": "Wanru Zhao",
+   "text": "By averaging, we're interpolating their parameters to create a single model that can perform multiple tasks effectively. So basically how it relates to modular architecture that, it is also closely connected with what I mentioned as a collaborative training paradigm. So if we can make the model in the modular and plugable architecture that would be very easy for people to achieve such collaborative development of it."
   },
   {
    "t": 1937,
-   "text": "Cool. So you also ran different experiments across domains like medicine, finance. What were the key takeaways? In what ways did CLUES outperform existing data selection methods? Yeah, actually, yeah, yeah. So this is the general method. And it's not specializing in such domains, but it can be applicable to such domains."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool. So you also ran different experiments across domains like medicine, finance. What were the key takeaways? In what ways did CLUES outperform existing data selection methods?"
   },
   {
-   "t": 1961,
-   "text": "But maybe I can talk about"
+   "t": 1949,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, actually, yeah, yeah. So this is the general method. And it's not specializing in such domains, but it can be applicable to such domains."
   },
   {
-   "t": 1964,
-   "text": "a little bit about the big picture behind my paper. So when I was thinking about, like when I was coming up with this idea, I'm thinking about building such a continuous integration or continuous development component to the free demo, the GitHub, where the GitHub of the model version. For example, we have Hugging Face where people can share their check points of the model and in such of the community or platform, we wanted to use CLUES as a CI or CD component, which means that every user can commit their own model or adapters to the server or platform, but we cannot guarantee whether or not their models are trained on some bad data or poisoning data."
+   "t": 1962,
+   "speaker": "Wanru Zhao",
+   "text": "But maybe I can talk about a little bit about the big picture behind my paper. So when I was thinking about, like when I was coming up with this idea, I'm thinking about building such a continuous integration or continuous development component to the free demo, the GitHub, where the GitHub of the model version. For example, we have Hugging Face where people can share their check points of the model and in such of the community or platform, we wanted to use CLUES as a CI or CD component, which means that every user can commit their own model or adapters to the server or platform, but we cannot guarantee whether or not their models are trained on some bad data or poisoning data."
   },
   {
    "t": 2016,
+   "speaker": "Wanru Zhao",
    "text": "So this is one issue. And the other issue is that if we want to devise with the global model, for example, via model merging, we don't know if like such two checkpoints have conflict or interference between each other. So if we can introduce such CI/CD components, for example CLUES, we can do such fine-grained kind of unit test. so those are the models that pass the test and can be committed to the platform. Otherwise, We will report the evaluation results where the unit has results to the user. And user can adapt or update their model checkpoint a bit so that it can be successfully committed to the platform."
   },
   {
    "t": 2065,
-   "text": "I see. That's interesting. And thanks for that high level motivation for the work. It makes it more clear to me of how you combine that data attribution method with the modal merging and how it all goes into one place. Can you give me a little bit of intuition on how do you see the potential applications of this? So the potential applications, as I just mentioned, like as a big picture, I've already seen some trends or works recently working on such like building such a platform or interactive environments. And I'm really excited about that. And I think this kind of work like the can be very promising to be part of it."
+   "speaker": "Jekaterina Novikova",
+   "text": "I see. That's interesting. And thanks for that high level motivation for the work. It makes it more clear to me of how you combine that data attribution method with the modal merging and how it all goes into one place. Can you give me a little bit of intuition on how do you see the potential applications of this?"
+  },
+  {
+   "t": 2090,
+   "speaker": "Wanru Zhao",
+   "text": "So the potential applications, as I just mentioned, like as a big picture, I've already seen some trends or works recently working on such like building such a platform or interactive environments. And I'm really excited about that. And I think this kind of work like the can be very promising to be part of it."
   },
   {
    "t": 2115,
-   "text": "Mm-hmm. Yeah, that makes sense."
+   "speaker": "Jekaterina Novikova",
+   "text": "Mm-hmm."
   },
   {
    "t": 2117,
-   "text": "So if to think about the future, future research in collaborative LLM development and data quality control in situations like that you are describing, what is still missing, you think? What could be those blind spots that's... that are currently under research and need more exploration. Yeah, that's a good question. From my point of view, I think another very important component where other important kind of relevant direction is mechanism design to incentivize people to contribute their own models or adapters. So essentially because such data from like personal forces are very important to train the model, but it cannot be directly collected."
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that makes sense. So if to think about the future, future research in collaborative LLM development and data quality control in situations like that you are describing, what is still missing, you think? What could be those blind spots that's... that are currently under research and need more exploration."
   },
   {
-   "t": 2168,
-   "text": "it can, like those kind of data has its own value. And if we can find a good way to incentivize people to contribute their models, not directly their data, because when people train their own model, It's a combination of the data and the compute. So if we can find a way to give the users as a composition of their data and compute, which is their models that they contribute to the environment or community, that would be"
-  },
-  {
-   "t": 2198,
-   "text": "very helpful."
+   "t": 2140,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, that's a good question. From my point of view, I think another very important component where other important kind of relevant direction is mechanism design to incentivize people to contribute their own models or adapters. So essentially because such data from like personal forces are very important to train the model, but it cannot be directly collected. it can, like those kind of data has its own value. And if we can find a good way to incentivize people to contribute their models, not directly their data, because when people train their own model, It's a combination of the data and the compute."
   },
   {
    "t": 2199,
-   "text": "And I'm doing some, I have some ongoing work in this line and hopefully it can be released soon. Right, are you open to speaking a little bit more about that ongoing work? Yeah, so our initial attempt in this line is that we wanted to see in which case we can incentivize people to collaborate with each other. For example, we already mentioned several collaborative training paradigms, including model merging. And also, there's other training paradigm, like other collaborative paradigm. And mixture of expert could be one of them. And also, the model merging, which makes that each of the adapters are trained independently."
+   "speaker": "Wanru Zhao",
+   "text": "So if we can find a way to give the users as a composition of their data and compute, which is their models that they contribute to the environment or community, that would be very helpful. And I'm doing some, I have some ongoing work in this line and hopefully it can be released soon."
   },
   {
-   "t": 2247,
-   "text": "And then we have a router. to combine all of them. So those are different kind of collaborative development ways. And how can we select which subset can be formed as a collaborative Coalition? That could lead to... like larger benefit or larger revenue. that case, how can we incentivize each of the, like the model provider so that it could get benefit from joining certain coalition? So that's what I'm currently working on."
+   "t": 2206,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, are you open to speaking a little bit more about that ongoing work?"
+  },
+  {
+   "t": 2212,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, so our initial attempt in this line is that we wanted to see in which case we can incentivize people to collaborate with each other. For example, we already mentioned several collaborative training paradigms, including model merging. And also, there's other training paradigm, like other collaborative paradigm. And mixture of expert could be one of them. And also, the model merging, which makes that each of the adapters are trained independently. And then we have a router. to combine all of them. So those are different kind of collaborative development ways. And how can we select which subset can be formed as a collaborative Coalition?"
+  },
+  {
+   "t": 2265,
+   "speaker": "Wanru Zhao",
+   "text": "That could lead to... like larger benefit or larger revenue. that case, how can we incentivize each of the, like the model provider so that it could get benefit from joining certain coalition? So that's what I'm currently working on."
   },
   {
    "t": 2282,
-   "text": "Interesting. So turning to the model pillar, I would love to delve into your ICLR paper, Breaking Physical and Linguistic Borders: Multilingual Federated Prompt Tuning for Low-Resource Languages. So what are the primary linguistic and infrastructural challenges you've observed in multilingual fine tuning of LLMs, especially when working across diverse geographical locations or language families? Yeah, yeah, sure. As large language model develops, we found that not all languages have been treated equally by developers and researchers. And we found that there are around 7,000 languages spoken in a word. And approximately 400 languages have more than 1 million speakers."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. So turning to the model pillar, I would love to delve into your ICLR paper, Breaking Physical and Linguistic Borders: Multilingual Federated Prompt Tuning for Low-Resource Languages. So what are the primary linguistic and infrastructural challenges you've observed in multilingual fine tuning of LLMs, especially when working across diverse geographical locations or language families?"
   },
   {
-   "t": 2329,
-   "text": "So it's very long tailed distribution. But there's a scarce coverage of multilingual data sets. So this is especially true for low resource languages where data scarcity is a major bottleneck. And also the certain languages like some certain languages we don't have access to such datasets as well as compute resources. For example, the mobile data, the computing and other computational resources may often be very expensive or unavailable in the regions that are home to such under-representative languages. So unless we address this like kind of reputation, we will risk perturbating this divide and further widening the gap in language access to new technologies."
+   "t": 2307,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, yeah, sure. As large language model develops, we found that not all languages have been treated equally by developers and researchers. And we found that there are around 7,000 languages spoken in a word. And approximately 400 languages have more than 1 million speakers. So it's very long tailed distribution. But there's a scarce coverage of multilingual data sets. So this is especially true for low resource languages where data scarcity is a major bottleneck. And also the certain languages like some certain languages we don't have access to such datasets as well as compute resources."
   },
   {
-   "t": 2378,
-   "text": "And one example I can come up with is a, like one example I'm thinking about is biomedical data. So, like do this global scale. this digital content is accessible in a variety of languages, but most existing NLP tools remain English-centric. So this kind of situation highlights the need for such effective strategies about how we can exploit such abundant label data. search like, sorry, how can we exploit such data from resource research, sorry. It's about like, how can we exploit such data from resource rich languages to make predictions in research, like low languages."
+   "t": 2352,
+   "speaker": "Wanru Zhao",
+   "text": "For example, the mobile data, the computing and other computational resources may often be very expensive or unavailable in the regions that are home to such under-representative languages. So unless we address this like kind of reputation, we will risk perturbating this divide and further widening the gap in language access to new technologies. And one example I can come up with is a, like one example I'm thinking about is biomedical data. So, like do this global scale. this digital content is accessible in a variety of languages, but most existing NLP tools remain English-centric."
+  },
+  {
+   "t": 2398,
+   "speaker": "Wanru Zhao",
+   "text": "So this kind of situation highlights the need for such effective strategies about how we can exploit such abundant label data. search like, sorry, how can we exploit such data from resource research, sorry. It's about like, how can we exploit such data from resource rich languages to make predictions in research, like low languages."
   },
   {
    "t": 2428,
-   "text": "Yeah, and so your method leverages that federated learning, right, in multilingual settings. And can you tell us a little bit more about that? Because the motivation that you outlined seems to be really important. It's a really important problem, that's worth solving. So what's your approach to solving that? So the approach here is actually it's very straightforward and it can be quite similar to what federated learning is doing. So basically we train the model, we do the parameter-efficient training on the user side with their own compute and their own language data set. So we can get such prompt encoder, if we use prompt tuning, we can get such prompt encoder trained in different languages."
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, and so your method leverages that federated learning, right, in multilingual settings. And can you tell us a little bit more about that? Because the motivation that you outlined seems to be really important. It's a really important problem, that's worth solving. So what's your approach to solving that?"
   },
   {
-   "t": 2480,
-   "text": "And then we do the parameter aggregation of such prompt encoder to make sure that we get a global prompt encoder that extracts the common languages pattern. So in that case, we can but it benefits the low resource languages from the common languages pattern. Cool. And you highlight that your approach offers better generalization and stability, especially for lower-issue languages that are linguistically distant from the pre-training corpus. I'm curious, how do you define language distance in this context? What impact does it have on model performance? Yeah, yeah, that's a good question. We define a pre-trained language as a representative language formed by mixing each language in the multilingual corpus used for pre-training."
+   "t": 2452,
+   "speaker": "Wanru Zhao",
+   "text": "So the approach here is actually it's very straightforward and it can be quite similar to what federated learning is doing. So basically we train the model, we do the parameter-efficient training on the user side with their own compute and their own language data set. So we can get such prompt encoder, if we use prompt tuning, we can get such prompt encoder trained in different languages. And then we do the parameter aggregation of such prompt encoder to make sure that we get a global prompt encoder that extracts the common languages pattern. So in that case, we can but it benefits the low resource languages from the common languages pattern."
   },
   {
-   "t": 2531,
-   "text": "So we define the distance for a specific language in the downstream tasks in terms of the, cosine similarity to the pre-trained language. So here, like, if a language distance is really high, means that it's, It tend to be the low source language. Right, and the main language that you compare to is English, right? The main language we are compared to, so we have calculated the composition of the pre-trained languages. For example, in Lama 2 we used, because Lama 2 is trained on multilingual corpus, but it's not well trained on the low resource languages."
+   "t": 2500,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool. And you highlight that your approach offers better generalization and stability, especially for lower-issue languages that are linguistically distant from the pre-training corpus. I'm curious, how do you define language distance in this context? What impact does it have on model performance?"
   },
   {
-   "t": 2580,
-   "text": "So that's why we calculated the distance between the pretrain corpus and also our downstream corpus, because our downstream task may include some low-resource languages. And in our experiments, we used different kind of languages, including some African languages and also some other low-resource languages. Right, right. That makes sense. There is quite a lot of research nowadays, I guess, in multilinguality right? And can you speak a little bit more about how you see the future directions of this method of this work? And where do you see it can go further in the future? Yeah, thanks for your question."
+   "t": 2518,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, yeah, that's a good question. We define a pre-trained language as a representative language formed by mixing each language in the multilingual corpus used for pre-training. So we define the distance for a specific language in the downstream tasks in terms of the, cosine similarity to the pre-trained language. So here, like, if a language distance is really high, means that it's, It tend to be the low source language."
   },
   {
-   "t": 2627,
-   "text": "As I can see it, so based on my current development, my current methods for multilingual fine tuning, a way that we can do is to, it's sort of like client selection in the federated learning field. But I would say it's a clustering of some similar languages so that we can make sure that the prompt encoder that we trained is similar to others so that it can benefit with those languages that are similar to our downstream languages. This is one direction that we're exploring. Also, recently, I've seen many like progress happening in the Cohere's model called AYA."
+   "t": 2553,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and the main language that you compare to is English, right?"
+  },
+  {
+   "t": 2561,
+   "speaker": "Wanru Zhao",
+   "text": "The main language we are compared to, so we have calculated the composition of the pre-trained languages. For example, in Lama 2 we used, because Lama 2 is trained on multilingual corpus, but it's not well trained on the low resource languages. So that's why we calculated the distance between the pretrain corpus and also our downstream corpus, because our downstream task may include some low-resource languages. And in our experiments, we used different kind of languages, including some African languages and also some other low-resource languages."
+  },
+  {
+   "t": 2603,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, right. That makes sense. There is quite a lot of research nowadays, I guess, in multilinguality right? And can you speak a little bit more about how you see the future directions of this method of this work? And where do you see it can go further in the future?"
+  },
+  {
+   "t": 2625,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, thanks for your question. As I can see it, so based on my current development, my current methods for multilingual fine tuning, a way that we can do is to, it's sort of like client selection in the federated learning field. But I would say it's a clustering of some similar languages so that we can make sure that the prompt encoder that we trained is similar to others so that it can benefit with those languages that are similar to our downstream languages. This is one direction that we're exploring. Also, recently, I've seen many like progress happening in the Cohere's model called AYA."
   },
   {
    "t": 2678,
-   "text": "And this is what I like, I've following Cohere's work for a long time. And I've seen a very large community working on such multilingual data set and benchmark on AYA. And I feel really excited about that. Right, if to speak about Cohere's work on multilinguality, I would also mention several multilingual benchmarks that were out like late last year and this year as well. I'm mentioning them is also because I was involved in some of them and it's INCLUDE and the KALEIDOSCOPE. Those are the multilingual benchmarks for multiple choice questions. And we also have like a lot of different languages there."
+   "speaker": "Wanru Zhao",
+   "text": "And this is what I like, I've following Cohere's work for a long time. And I've seen a very large community working on such multilingual data set and benchmark on AYA. And I feel really excited about that."
   },
   {
-   "t": 2726,
-   "text": "So something else just for the context."
+   "t": 2695,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, if to speak about Cohere's work on multilinguality, I would also mention several multilingual benchmarks that were out like late last year and this year as well. I'm mentioning them is also because I was involved in some of them and it's INCLUDE and the KALEIDOSCOPE. Those are the multilingual benchmarks for multiple choice questions. And we also have like a lot of different languages there. So something else just for the context."
   },
   {
    "t": 2729,
+   "speaker": "Wanru Zhao",
    "text": "Wow, fantastic."
   },
   {
    "t": 2731,
-   "text": "Cool. Thank you, Wanru. So what do you see as the key challenges and opportunities for scaling this paradigm to support a wider array of languages, regions and device types given your research in the field? the key challenge might be the efficiency because if we want to do such collaborative learning paradigm, need to first train on the... We need to finish the training and we need to get the model or adapters and hopefully we could achieve such training. on personal devices. Once we can achieve that, I think there's a broader future of such collaborative training. So in that case, we need to find a good way to do such training on the user side."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool. Thank you, Wanru. So what do you see as the key challenges and opportunities for scaling this paradigm to support a wider array of languages, regions and device types given your research in the field?"
+  },
+  {
+   "t": 2744,
+   "speaker": "Wanru Zhao",
+   "text": "The key challenge might be the efficiency because if we want to do such collaborative learning paradigm, need to first train on the... We need to finish the training and we need to get the model or adapters and hopefully we could achieve such training. on personal devices. Once we can achieve that, I think there's a broader future of such collaborative training. So in that case, we need to find a good way to do such training on the user side."
   },
   {
    "t": 2778,
-   "text": "We spoke a lot about multilingual models and benchmarks. I wonder, you tell us about maybe some follow-up work that you are interested in? right now currently that you are working on that is somehow related to the topic."
+   "speaker": "Jekaterina Novikova",
+   "text": "We spoke a lot about multilingual models and benchmarks. I wonder, you tell us about maybe some follow-up work that you are interested in?"
+  },
+  {
+   "t": 2796,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right now currently that you are working on that is somehow related to the topic."
   },
   {
    "t": 2798,
+   "speaker": "Wanru Zhao",
    "text": "Sure, sure. I have a recent work just released on arXiv. It's about Cascade inference. It's called Cascadia. So this is a joint work with other fantastic collaborators. So the idea here is the motivation here is like the smaller, we all know that apart from large language models, there are more smaller models that are getting stronger. For example, like Qwen model families, there are super fantastic smaller models. And so this kind of the smaller model can achieve good results and less latency. But running those models on like the... And when we are considering running the models on resource-constrained devices or environments, there are several challenges or factors we need to consider, which is we need to balance the latency, quality, and limited compute resources."
   },
   {
    "t": 2859,
-   "text": "And this work is about addressing this by leveraging test-side compute. and Cascade inference. So the Cascade inference is essentially about the mixture of where a combination of large language models and small language models together. So the idea is very simple, which is to use small, fast models for easy queries and only use bigger, slower models for hard ones. That's interesting. When you say small and bigger, what does it mean? How big should be small and how big should be big models? So in our experiments, we use a smaller model, for example, the Deepseek 7B as a small model, where LAMA 3 8B as a small model."
+   "speaker": "Wanru Zhao",
+   "text": "And this work is about addressing this by leveraging test-side compute. and Cascade inference. So the Cascade inference is essentially about the mixture of where a combination of large language models and small language models together. So the idea is very simple, which is to use small, fast models for easy queries and only use bigger, slower models for hard ones."
   },
   {
-   "t": 2911,
-   "text": "And for the larger model, we use a Deepseek 671B model. And we also tried some. made it medium-sized model for demo Deepseek 70B and Llama 3 70B. So different size of the models. Interesting. Yeah, people have different definitions of what SLMs are versus LLMs. I think for industry leaders, 70 billion parameter models is still an SLM, but in academia, when you have limited research, sometimes 14B is also LLM. So yeah, interesting."
+   "t": 2886,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's interesting. When you say small and bigger, what does it mean? How big should be small and how big should be big models?"
+  },
+  {
+   "t": 2898,
+   "speaker": "Wanru Zhao",
+   "text": "So in our experiments, we use a smaller model, for example, the Deepseek 7B as a small model, where LAMA 3 8B as a small model. And for the larger model, we use a Deepseek 671B model. And we also tried some. made it medium-sized model for demo Deepseek 70B and Llama 3 70B. So different size of the models."
+  },
+  {
+   "t": 2930,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. Yeah, people have different definitions of what SLMs are versus LLMs. I think for industry leaders, 70 billion parameter models is still an SLM, but in academia, when you have limited research, sometimes 14B is also LLM."
   },
   {
    "t": 2948,
-   "text": "Thank you. So yeah. As one of our last questions, what's your top piece of advice for young researchers entering the AI and ML space today? Yeah, so, I would encourage people to talk to more people in this field and also seek for guidance or mentorship for those people who are more senior than them. And it's always good to collaborate or learn to collaborate with each other. because at that moment, it's very hard for people to achieve very good, very impactful, to do very impactful work independently."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So yeah, interesting. Thank you. So yeah. As one of our last questions, what's your top piece of advice for young researchers entering the AI and ML space today?"
   },
   {
-   "t": 2997,
-   "text": "So collaboration is always a key. yeah, and I also feel that when I was very, like several years ago, I was afraid of seeking advice from senior people. But later on, I found that, as like I am a mentor, I mentor students sometimes at the moment. And I can get a sense of satisfaction and achievement from mentoring younger people. Yeah, so don't hesitate to seek advice, collaboration with others. Exactly, love that. Also, it reminds me how you explained the differences that you have experienced between the UK's research ecosystem where people are more independent and Canada's slightly more collaborative vibe."
+   "t": 2960,
+   "speaker": "Wanru Zhao",
+   "text": "Yeah, so, I would encourage people to talk to more people in this field and also seek for guidance or mentorship for those people who are more senior than them. And it's always good to collaborate or learn to collaborate with each other. because at that moment, it's very hard for people to achieve very good, very impactful, to do very impactful work independently. So collaboration is always a key. yeah, and I also feel that when I was very, like several years ago, I was afraid of seeking advice from senior people."
   },
   {
-   "t": 3052,
-   "text": "So I'm glad that you're sharing that encouragement to collaborate. that maybe came from Canada. Cool, yeah. and also for like, as for my PhD group, I'm really lucky to be in a group that was a very good collaboration atmosphere. So yeah, I feel like I learned a lot from collaborating with other people. Yeah, exactly. Teamwork is the key. So thank you, Wanru. I really enjoyed our conversations and learned a lot. I'm a big fan of decentralized training and federated learning. So thank you for joining us today. So for listeners who want to learn more or follow your work, very can they find you or stay updated on your research. Feel free to reach out to via X or BlueSky where you can also find me on my personal website."
+   "t": 3011,
+   "speaker": "Wanru Zhao",
+   "text": "But later on, I found that, as like I am a mentor, I mentor students sometimes at the moment. And I can get a sense of satisfaction and achievement from mentoring younger people. Yeah, so don't hesitate to seek advice, collaboration with others."
+  },
+  {
+   "t": 3034,
+   "speaker": "Jekaterina Novikova",
+   "text": "Exactly, love that. Also, it reminds me how you explained the differences that you have experienced between the UK's research ecosystem where people are more independent and Canada's slightly more collaborative vibe. So I'm glad that you're sharing that encouragement to collaborate. that maybe came from Canada."
+  },
+  {
+   "t": 3058,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool, yeah."
+  },
+  {
+   "t": 3060,
+   "speaker": "Wanru Zhao",
+   "text": "And also for like, as for my PhD group, I'm really lucky to be in a group that was a very good collaboration atmosphere. So yeah, I feel like I learned a lot from collaborating with other people."
+  },
+  {
+   "t": 3076,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, exactly. Teamwork is the key. So thank you, Wanru. I really enjoyed our conversations and learned a lot. I'm a big fan of decentralized training and federated learning. So thank you for joining us today. So for listeners who want to learn more or follow your work, very can they find you or stay updated on your research."
+  },
+  {
+   "t": 3096,
+   "speaker": "Wanru Zhao",
+   "text": "Feel free to reach out to via X or BlueSky where you can also find me on my personal website."
   },
   {
    "t": 3104,
-   "text": "Great. Thanks, Wanru, for joining us today. for those of you who'd like to dive deeper into Wanru's research or connect with her, we will add links to her publications and socials in the podcast notes. Be sure to check them out. And we are going to be back in three weeks with another episode spot fighting the brilliant minds reshaping the future of AI. See you in three weeks. Bye. see you"
+   "speaker": "Jekaterina Novikova",
+   "text": "Great. Thanks, Wanru, for joining us today. for those of you who'd like to dive deeper into Wanru's research or connect with her, we will add links to her publications and socials in the podcast notes. Be sure to check them out. And we are going to be back in three weeks with another episode spot fighting the brilliant minds reshaping the future of AI. See you in three weeks. Bye."
+  },
+  {
+   "t": 3131,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "See you"
   }
  ]
 }

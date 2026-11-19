@@ -1,407 +1,567 @@
 {
  "episode": 22,
  "videoId": "e36ryy0Dsdo",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 0,
-   "text": "Language understanding is so tricky. We have these whole fields of studying language, artificially, neurally, psychologically, and we still don't have a working definition of what does it mean to understand the sentence. It's puzzling. What is that aha moment where you're like, I got it, right? We have this intuition when we know when we understand something or not. But what does it actually correspond to? It's mind boggling that we don't know what this actually means."
-  },
-  {
-   "t": 34,
-   "text": "we wanted to have a framework that is grounded in neuroscience that will help us clarify when we talk about model capabilities, are we really talking about language capabilities or something else that you can access through language?"
+   "speaker": "Anna Ivanova",
+   "text": "Language understanding is so tricky. We have these whole fields of studying language, artificially, neurally, psychologically, and we still don't have a working definition of what does it mean to understand the sentence. It's puzzling. What is that aha moment where you're like, I got it, right? We have this intuition when we know when we understand something or not. But what does it actually correspond to? It's mind boggling that we don't know what this actually means. we wanted to have a framework that is grounded in neuroscience that will help us clarify when we talk about model capabilities, are we really talking about language capabilities or something else that you can access through language?"
   },
   {
    "t": 77,
+   "speaker": "Jekaterina Novikova",
    "text": "Anna, welcome to the podcast. So I want to start with something that I think will be really interesting for our audience, because your background is kind of very unique. looking at your career, you did your undergrad in neuroscience and computer science, and then a PhD in brain and cognitive sciences. And you publish in the venues ranging from neuroscience journals to AI conferences and linguistics conferences. So I have to ask, do you think of yourself primarily as a neuroscientist, a cognitive scientist, or a computer scientist?"
   },
   {
    "t": 124,
+   "speaker": "Anna Ivanova",
    "text": "Yeah, thank you for having me here. I'm excited to be here. I've definitely integrated a lot of disciplines into the work that I do. And I think today to accommodate all the many directions I'm interested in, cognitive science seems like the best descriptor for the kind of work that I do. I think during the PhD, I was thinking of myself primarily as a cognitive neuroscientist, but then I started incorporating AI more and more, working with large language models, doing comparative studies of LLMs and human brains and minds. And so now it seems like neuroscience is only a part of what I do and cognitive science is this nice umbrella that incorporates different methods to study the mind."
   },
   {
    "t": 179,
-   "text": "That makes sense, but then I need to ask you also do a lot of work with the LLMs and the other machine learning models. How do you explain that part of your work? Like how does it incorporate? I am fundamentally interested in the relationship between language and thought, in figuring out how thinking works, what role language plays, is language merely a window into thought, does it shape thinking, and what are the mechanisms that allow us to reason and integrate linguistic information into our planning and thinking processes."
+   "speaker": "Jekaterina Novikova",
+   "text": "That makes sense, but then I need to ask you also do a lot of work with the LLMs and the other machine learning models. How do you explain that part of your work? Like how does it incorporate?"
   },
   {
-   "t": 230,
-   "text": "And most of the time that I've been interested in these questions and that people in general have been interested in these questions. We only had one system where these questions were relevant. We only had the human mind, which uses language flexibly to describe things in the present, past, future, talk about really abstract events. And so the questions of language and thought were really only relevant for humans. But now we have this whole other class of systems that use language, which are large language models and other AI systems that incorporate language modeling. And they've become really good at language and some would argue at certain thinking tasks."
+   "t": 201,
+   "speaker": "Anna Ivanova",
+   "text": "I am fundamentally interested in the relationship between language and thought, in figuring out how thinking works, what role language plays, is language merely a window into thought, does it shape thinking, and what are the mechanisms that allow us to reason and integrate linguistic information into our planning and thinking processes. And most of the time that I've been interested in these questions and that people in general have been interested in these questions. We only had one system where these questions were relevant. We only had the human mind, which uses language flexibly to describe things in the present, past, future, talk about really abstract events."
   },
   {
-   "t": 279,
-   "text": "And so now the question about language and thought and that relationship is very important for understanding AI systems better. And we can use LLMs as a way to study that relationship and dissect that relationship in more detail."
+   "t": 256,
+   "speaker": "Anna Ivanova",
+   "text": "And so the questions of language and thought were really only relevant for humans. But now we have this whole other class of systems that use language, which are large language models and other AI systems that incorporate language modeling. And they've become really good at language and some would argue at certain thinking tasks. And so now the question about language and thought and that relationship is very important for understanding AI systems better. And we can use LLMs as a way to study that relationship and dissect that relationship in more detail."
   },
   {
    "t": 297,
-   "text": "I wonder if you had to start your career right now, freshly as an undergraduate or PhD student. Now when all these models, ChatGPT, generative AI, and the LLMs are here already, do think it could have been different? So could you have been more on the computer science part? rather than on the cognitive science. I think I got lucky."
+   "speaker": "Jekaterina Novikova",
+   "text": "I wonder if you had to start your career right now, freshly as an undergraduate or PhD student. Now when all these models, ChatGPT, generative AI, and the LLMs are here already, do think it could have been different? So could you have been more on the computer science part? rather than on the cognitive science."
   },
   {
-   "t": 331,
-   "text": "started so when I first got into science, got into science through biology. Biology was the first science I was interested in. I had some research experiences. I worked in a wet lab and realized that's not my calling. I have a lot of respect for people who pipette all day long and spend weeks and months doing an experiment and I realized that I should try something else and then I realized that what I really care about is not the biology itself, but what it enables. So looking at the brain in order to understand the mind. So I zoomed out and went closer to psychology and cognitive science. And so I was applying for PhD programs to study that, to study human cognition by looking at the brain."
+   "t": 328,
+   "speaker": "Anna Ivanova",
+   "text": "I think I got lucky. started so when I first got into science, got into science through biology. Biology was the first science I was interested in. I had some research experiences. I worked in a wet lab and realized that's not my calling. I have a lot of respect for people who pipette all day long and spend weeks and months doing an experiment and I realized that I should try something else and then I realized that what I really care about is not the biology itself, but what it enables. So looking at the brain in order to understand the mind. So I zoomed out and went closer to psychology and cognitive science."
   },
   {
-   "t": 380,
-   "text": "But I was intrigued by computational methods. I thought that being able to model cognitive processes precisely would be important and useful and I knew nothing about it. I was an experimentalist and that wasn't going to be the focus of my PhD. But I wanted a program where I could learn at least something about computation, something about modeling. And oh MIT's Brain and Cognitive Science program was exactly that. I remember saying that I want to learn computational modeling during my PhD interviews. And one faculty member asking, well, what kind of models? do you want? I really don't know, right? I just know it's something that's important, but I don't quite know where to even start."
+   "t": 375,
+   "speaker": "Anna Ivanova",
+   "text": "And so I was applying for PhD programs to study that, to study human cognition by looking at the brain. But I was intrigued by computational methods. I thought that being able to model cognitive processes precisely would be important and useful and I knew nothing about it. I was an experimentalist and that wasn't going to be the focus of my PhD. But I wanted a program where I could learn at least something about computation, something about modeling. And oh MIT's Brain and Cognitive Science program was exactly that. I remember saying that I want to learn computational modeling during my PhD interviews. And one faculty member asking, well, what kind of models?"
   },
   {
-   "t": 428,
-   "text": "So I don't know. I think today maybe I actually would have been pushed out, maybe, depending on how early on I would start like I don't know if it's easier or harder to get into this field today, but it definitely looks very different. So for me, I saw large language models becoming big while in graduate school and starting to think about them from the cognitive perspective while in graduate school and before they really were well known to the broader public. And so our position paper looking at language models and brains and trying to make that comparison, we started writing that paper during COVID. GPT-3 wasn't even out yet."
+   "t": 421,
+   "speaker": "Anna Ivanova",
+   "text": "Do you want? I really don't know, right? I just know it's something that's important, but I don't quite know where to even start. So I don't know. I think today maybe I actually would have been pushed out, maybe, depending on how early on I would start like I don't know if it's easier or harder to get into this field today, but it definitely looks very different. So for me, I saw large language models becoming big while in graduate school and starting to think about them from the cognitive perspective while in graduate school and before they really were well known to the broader public. And so our position paper looking at language models and brains and trying to make that comparison, we started writing that paper during COVID."
   },
   {
-   "t": 476,
-   "text": "It came out around that time. And so with every new generation, we had to revise our thinking and see whether our arguments still apply. And then the paper came out, the preprint came out right around the time that ChatGPT launched. And so we got really lucky because now everybody knew what lot of language models are and everybody cared. But for us, we were able to do some thinking about this before things blew up."
+   "t": 473,
+   "speaker": "Anna Ivanova",
+   "text": "GPT-3 wasn't even out yet. It came out around that time. And so with every new generation, we had to revise our thinking and see whether our arguments still apply. And then the paper came out, the preprint came out right around the time that ChatGPT launched. And so we got really lucky because now everybody knew what lot of language models are and everybody cared. But for us, we were able to do some thinking about this before things blew up."
   },
   {
    "t": 502,
-   "text": "going a little bit back to the progression of your career, a couple of years ago, you have started running your own lab, right? And I believe that it is a very different experience from being just a postdoc or a PhD student. And I would like to ask a question about that experience, maybe a little bit of a twofold question. So on the one hand, what was the biggest surprise for you about running your own lab that maybe nobody has warned you about in advance."
+   "speaker": "Jekaterina Novikova",
+   "text": "Going a little bit back to the progression of your career, a couple of years ago, you have started running your own lab, right? And I believe that it is a very different experience from being just a postdoc or a PhD student. And I would like to ask a question about that experience, maybe a little bit of a twofold question. So on the one hand, what was the biggest surprise for you about running your own lab that maybe nobody has warned you about in advance."
   },
   {
    "t": 549,
-   "text": "And on the flip side, looking back at the advice that you received from your mentors maybe before you have started that lab, which one of those advices was the most useful? Yeah, I think I'm going to share a couple of surprising things to not just have them be negative surprises, positive surprises too. I think a really important point is that being in academia gives you the freedom to pursue questions that you think are important. And that's the reason why I wanted to be in academia."
+   "speaker": "Jekaterina Novikova",
+   "text": "And on the flip side, looking back at the advice that you received from your mentors maybe before you have started that lab, which one of those advices was the most useful?"
   },
   {
-   "t": 595,
-   "text": "But it was still surprising just how true that is, right? I don't have a boss. Nobody tells me what to do. It's running a lab seems a lot like running a startup. which I haven't done, but from what people have shared, you don't have a boss, you have a small team, you're responsible for bringing people into the team. and you're responsible for setting the direction of where your ship is going to go and what you're going to do and how to raise funding for that. So the fundraising process is also something that both a startup and a lab has to do. So it's really not like you're working in a big company when the university is big and there are rules that you have to follow there."
+   "t": 565,
+   "speaker": "Anna Ivanova",
+   "text": "Yeah, I think I'm going to share a couple of surprising things to not just have them be negative surprises, positive surprises too. I think a really important point is that being in academia gives you the freedom to pursue questions that you think are important. And that's the reason why I wanted to be in academia. But it was still surprising just how true that is, right? I don't have a boss. Nobody tells me what to do. It's running a lab seems a lot like running a startup. which I haven't done, but from what people have shared, you don't have a boss, you have a small team, you're responsible for bringing people into the team."
   },
   {
-   "t": 644,
-   "text": "But in terms of the big picture, you really are operating a lab as an autonomous unit. And I think it's definitely scary, but very, very cool. So that was the positive surprise, how just how startup like it is and how much freedom there is. And then the negative surprise is things that you know, you maybe I haven't been bored enough about is just how much bureaucracy there is. And I'm at a public university, so I'm sure it's worse. But yeah, finance, administrative duties, tracking, filling out forms. I was shielded from all of that as a PhD student in the postdoc. And now I try to delegate as much as possible when I can, but the multitasking struggle is real."
+   "t": 621,
+   "speaker": "Anna Ivanova",
+   "text": "And you're responsible for setting the direction of where your ship is going to go and what you're going to do and how to raise funding for that. So the fundraising process is also something that both a startup and a lab has to do. So it's really not like you're working in a big company when the university is big and there are rules that you have to follow there. But in terms of the big picture, you really are operating a lab as an autonomous unit. And I think it's definitely scary, but very, very cool. So that was the positive surprise, how just how startup like it is and how much freedom there is."
   },
   {
-   "t": 699,
-   "text": "And I agree with you that if it's a thing that you haven't been warned about, that's maybe when it's hardest to. adapt and prepare for it. Because the thing that I was worried about that also has to do with multitasking is just the volume of email that you start to get as faculty. You as a graduate student get a few emails here and there and then as a PI at Explosive I have a huge backlog right now. I try to operate an inbox zero system when there's nothing in my inbox once I've processed it and so right now This is very much not at zero. So it's hard. It's hard, at least that's something that actually I learned from a young faculty member way back in graduate school."
+   "t": 666,
+   "speaker": "Anna Ivanova",
+   "text": "And then the negative surprise is things that you know, you maybe I haven't been bored enough about is just how much bureaucracy there is. And I'm at a public university, so I'm sure it's worse. But yeah, finance, administrative duties, tracking, filling out forms. I was shielded from all of that as a PhD student in the postdoc. And now I try to delegate as much as possible when I can, but the multitasking struggle is real. And I agree with you that if it's a thing that you haven't been warned about, that's maybe when it's hardest to. adapt and prepare for it. Because the thing that I was worried about that also has to do with multitasking is just the volume of email that you start to get as faculty."
   },
   {
-   "t": 748,
-   "text": "So I knew that was coming. So it was easier to deal with because it was less of a surprise. you said that you have received some good advice before you started and then probably during you were running the lab as well. And I'd like to ask you -"
+   "t": 722,
+   "speaker": "Anna Ivanova",
+   "text": "You as a graduate student get a few emails here and there and then as a PI at Explosive I have a huge backlog right now. I try to operate an inbox zero system when there's nothing in my inbox once I've processed it and so right now This is very much not at zero. So it's hard. It's hard, at least that's something that actually I learned from a young faculty member way back in graduate school. So I knew that was coming. So it was easier to deal with because it was less of a surprise."
+  },
+  {
+   "t": 754,
+   "speaker": "Jekaterina Novikova",
+   "text": "You said that you have received some good advice before you started and then probably during you were running the lab as well."
   },
   {
    "t": 768,
-   "text": "what about you yourself being a mentor? How do you see yourself as a mentor? What do you think does it mean to be a good mentor? And maybe not in the abstract sense, but just in practice. What do you actually try to do for the people in your lab as a mentor? fascinating topic when When I was in graduate school, was part of a group we called Gradvocates. So it was kind of like an informal student council for graduate students. And so one topic we raised was that faculty play a really important role in their labs as mentors, but they aren't really trained for it."
+   "speaker": "Jekaterina Novikova",
+   "text": "And I'd like to ask you - what about you yourself being a mentor? How do you see yourself as a mentor? What do you think does it mean to be a good mentor? And maybe not in the abstract sense, but just in practice. What do you actually try to do for the people in your lab as a mentor?"
   },
   {
-   "t": 818,
-   "text": "When they start, most of them never had any kind of mentorship training. And so we were advocating for some kind of mentorship that new PIs would take. And when I got to Georgia Tech now as faculty, I thought, OK, it would be hypocritical for me not to follow my own advice. And so I sought out some mentorship training opportunities that are available on campus. They're fine. You've worked with some case studies, and you try to do things. And I actually signed up for a coaching program where they teach you professional coaching techniques to apply when talking to your students, We're in that program right now with one of my graduate students who signed up as a payer."
+   "t": 792,
+   "speaker": "Anna Ivanova",
+   "text": "Fascinating topic when When I was in graduate school, was part of a group we called Gradvocates. So it was kind of like an informal student council for graduate students. And so one topic we raised was that faculty play a really important role in their labs as mentors, but they aren't really trained for it. When they start, most of them never had any kind of mentorship training. And so we were advocating for some kind of mentorship that new PIs would take. And when I got to Georgia Tech now as faculty, I thought, OK, it would be hypocritical for me not to follow my own advice."
   },
   {
-   "t": 864,
-   "text": "But no mentorship experience is the same I have. Right now I have three graduate students, four graduate students, is called advised, opposed doc and opposed back. And the kind of mentorship experience they need, it's different for everybody. It changes so much depending on their personality. mentorship is a lot to me about seeing who the mentee is as a person. What do they want? What do they need? What are their strengths? Where do they need to develop? And how can I be most helpful in guiding them on that path toward becoming a successful researcher, having confidence in themselves, trying to make sure that they know what they're doing and that there is a good balance between them having autonomy and me providing the input."
+   "t": 839,
+   "speaker": "Anna Ivanova",
+   "text": "And so I sought out some mentorship training opportunities that are available on campus. They're fine. You've worked with some case studies, and you try to do things. And I actually signed up for a coaching program where they teach you professional coaching techniques to apply when talking to your students, We're in that program right now with one of my graduate students who signed up as a payer. But no mentorship experience is the same I have. Right now I have three graduate students, four graduate students, is called advised, opposed doc and opposed back. And the kind of mentorship experience they need, it's different for everybody."
   },
   {
-   "t": 929,
-   "text": "So that was the biggest discovery for me about mentorship, just how there really isn't the set of rules that"
+   "t": 889,
+   "speaker": "Anna Ivanova",
+   "text": "It changes so much depending on their personality. mentorship is a lot to me about seeing who the mentee is as a person. What do they want? What do they need? What are their strengths? Where do they need to develop? And how can I be most helpful in guiding them on that path toward becoming a successful researcher, having confidence in themselves, trying to make sure that they know what they're doing and that there is a good balance between them having autonomy and me providing the input. So that was the biggest discovery for me about mentorship, just how there really isn't the set of rules that you can apply to everybody."
   },
   {
-   "t": 940,
-   "text": "you can apply to everybody. But even like how you give feedback, some people are okay with direct feedback and some people you really need to cushion it. it's tricky. And of course, it's a two way street, right? Like they have their own personalities and I have my own personality. And there are some things like that I will not be able to change about myself or that will be harder for me to change. And so I try to give fair warning to all of my mentees. So I'm from Russia and so I do tend to be more direct. And so I, I warn them. mean, I, you know, I, I try to tone it down, but I think to an extent that's just who I am. And sometimes they appreciate the transparency or I hope they do. And so part of that is also me being like, look, this is how I am and it's not personal about you."
+   "t": 943,
+   "speaker": "Anna Ivanova",
+   "text": "But even like how you give feedback, some people are okay with direct feedback and some people you really need to cushion it. it's tricky. And of course, it's a two way street, right? Like they have their own personalities and I have my own personality. And there are some things like that I will not be able to change about myself or that will be harder for me to change. And so I try to give fair warning to all of my mentees. So I'm from Russia and so I do tend to be more direct. And so I, I warn them. mean, I, you know, I, I try to tone it down, but I think to an extent that's just who I am. And sometimes they appreciate the transparency or I hope they do. And so part of that is also me being like, look, this is how I am and it's not personal about you."
   },
   {
    "t": 992,
-   "text": "And like, I don't hate you. And, know, just trying to have transparency in our interaction and hopefully that will lead to trust. Right, I completely agree every person is different, right? And every relationship including the mentor mentee relationship is probably different staying for a little bit more on the topic of the lab, I can see that"
+   "speaker": "Anna Ivanova",
+   "text": "And like, I don't hate you. And, know, just trying to have transparency in our interaction and hopefully that will lead to trust."
+  },
+  {
+   "t": 1001,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, I completely agree every person is different, right? And every relationship including the mentor mentee relationship is probably different staying for a little bit more on the topic of the lab, I can see"
   },
   {
    "t": 1023,
-   "text": "the research agenda that you are doing with your lab team is very broad, basically. one of the reasons for that is because it's the interdisciplinary research. It's the intersection of neuroscience, cognitive science, AI to some extent, computation, behavioral studies, neuroimaging. all those different topics and you study them, you're interested in them all. So I wonder whether you see any specific special challenges of doing the interdisciplinary research in general."
+   "speaker": "Jekaterina Novikova",
+   "text": "That the research agenda that you are doing with your lab team is very broad, basically. one of the reasons for that is because it's the interdisciplinary research. It's the intersection of neuroscience, cognitive science, AI to some extent, computation, behavioral studies, neuroimaging. all those different topics and you study them, you're interested in them all. So I wonder whether you see any specific special challenges of doing the interdisciplinary research in general."
   },
   {
    "t": 1068,
-   "text": "sure. I am probably broader than many people in terms of the areas I dabble in and the approaches and the techniques that I use. So for me, the central focus is the research question, the language-thought relationship. And so then I'm happy to use pretty diverse sets of tools and methods to try to address this. So it's broad. And so that's one way to manage interdisciplinarity is to have an expert in the lab in topic and so different people can help each other and teach each other."
+   "speaker": "Anna Ivanova",
+   "text": "Sure. I am probably broader than many people in terms of the areas I dabble in and the approaches and the techniques that I use. So for me, the central focus is the research question, the language-thought relationship. And so then I'm happy to use pretty diverse sets of tools and methods to try to address this. So it's broad. And so that's one way to manage interdisciplinarity is to have an expert in the lab in topic and so different people can help each other and teach each other."
   },
   {
    "t": 1115,
-   "text": "And when I was admitting my first PhD students, I was hoping to get two, which I did. So very lucky. that regard. But and I wanted to have one who is an experimentalist and has a cognitive neuroscience background, and one who is an AI machine learning person. And that's exactly what I got. And I think they were very excited. I was, you know, it just me at the at the time the lab was just beginning. But because they knew that the other person was coming, they were motivated to be there and appreciated that opportunity to learn from each other as well. Right. Yeah, that's really interesting. I'm also wondering, like, the interdisciplinary interests of both you and other members in the team, it may be, I believe, difficult to stay within the research direction without going too broad."
+   "speaker": "Anna Ivanova",
+   "text": "And when I was admitting my first PhD students, I was hoping to get two, which I did. So very lucky. that regard. But and I wanted to have one who is an experimentalist and has a cognitive neuroscience background, and one who is an AI machine learning person. And that's exactly what I got. And I think they were very excited. I was, you know, it just me at the at the time the lab was just beginning. But because they knew that the other person was coming, they were motivated to be there and appreciated that opportunity to learn from each other as well."
   },
   {
-   "t": 1178,
-   "text": "So how do you make it happen that you still are focusing on something without going too broad. We're probably too broad, honestly, like that's probably the case, you know, and there are definitely areas where I say, like I don't want to go there. Let's say multilingualism, right? There are people who are doing this work that, and so I'm going to leave it to them or. syntax is not my thing. Okay, if somebody really wants to work on syntax in the lab, I'm going to be like, okay, but you know, I'm much more about meaning and cognition and going beyond sentence structure. And so there are topics where I'm saying, okay, you know, I'm not an expert in them. And so I'm going to stay away."
+   "t": 1152,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. Yeah, that's really interesting. I'm also wondering, like, the interdisciplinary interests of both you and other members in the team, it may be, I believe, difficult to stay within the research direction without going too broad. So how do you make it happen that you still are focusing on something without going too broad."
   },
   {
-   "t": 1223,
-   "text": "So I think again, it's more about the topic than the method where I am trying to carve out my niche and I kind of know what kind of impact I want to make. But Yeah, think most of that weeding out really happens at the initial stage of selecting people."
+   "t": 1188,
+   "speaker": "Anna Ivanova",
+   "text": "We're probably too broad, honestly, like that's probably the case, you know, and there are definitely areas where I say, like I don't want to go there. Let's say multilingualism, right? There are people who are doing this work that, and so I'm going to leave it to them or. syntax is not my thing. Okay, if somebody really wants to work on syntax in the lab, I'm going to be like, okay, but you know, I'm much more about meaning and cognition and going beyond sentence structure. And so there are topics where I'm saying, okay, you know, I'm not an expert in them. And so I'm going to stay away. So I think again, it's more about the topic than the method where I am trying to carve out my niche and I kind of know what kind of impact I want to make."
+  },
+  {
+   "t": 1234,
+   "speaker": "Anna Ivanova",
+   "text": "But Yeah, think most of that weeding out really happens at the initial stage of selecting people."
   },
   {
    "t": 1246,
-   "text": "What I loved the most about your answer was I was kind of trying to understand how do you keep within the controlled kind of path not being too broad and you're like I am too broad and that's fine."
+   "speaker": "Jekaterina Novikova",
+   "text": "What I loved the most about your answer was I was kind of trying to understand how do you keep within the controlled kind of path not being too broad and you're like I am too broad and that's fine. I love that."
   },
   {
-   "t": 1265,
-   "text": "I love that. We'll find out. Look, I'm only two years in, you know, I need to get funding. I need to get tenure. Am I going to be fine? We'll see. Hopefully. We'll find out. I don't know if what I'm doing is right. That's kind of part of the fun, also, yeah, a little intimidating. As long as you like it yourself right now, I think... Yeah, no, I'm very excited. Yeah, that natural curiosity is very much driving the work for me, for people in my lab, and I think that's the best part of doing science."
+   "t": 1266,
+   "speaker": "Anna Ivanova",
+   "text": "We'll find out. Look, I'm only two years in, you know, I need to get funding. I need to get tenure. Am I going to be fine? We'll see. Hopefully. We'll find out. I don't know if what I'm doing is right. That's kind of part of the fun, also, yeah, a little intimidating."
+  },
+  {
+   "t": 1280,
+   "speaker": "Jekaterina Novikova",
+   "text": "As long as you like it yourself right now, I think..."
+  },
+  {
+   "t": 1284,
+   "speaker": "Anna Ivanova",
+   "text": "Yeah, no, I'm very excited. Yeah, that natural curiosity is very much driving the work for me, for people in my lab, and I think that's the best part of doing science."
   },
   {
    "t": 1294,
-   "text": "Great. So now I'd love to move into the research itself without speaking any more about how you're doing that, but speaking more about what you're doing, what you're researching. So what I personally find compelling about your research agenda is that right now, at least, it feels very timely."
+   "speaker": "Jekaterina Novikova",
+   "text": "Great. So now I'd love to move into the research itself without speaking any more about how you're doing that, but speaking more about what you're doing, what you're researching. So what I personally find compelling about your research agenda is that right now, at least, it feels very timely. These are the questions that millions of people are having every day without even realizing that. every time that they are using a chat GPT or Claude or a similar tool, they, wonder whether this thing actually gets what I'm saying."
   },
   {
-   "t": 1324,
-   "text": "These are the questions that millions of people are having every day without even realizing that. every time that they are using a chat GPT or Claude or a similar tool, they, wonder whether this thing actually gets what I'm saying. And you are essentially building the scientific framework around that question to answer that properly. So I want to start with a little bit of a provocative question first before we get into these specific papers."
+   "t": 1348,
+   "speaker": "Jekaterina Novikova",
+   "text": "And you are essentially building the scientific framework around that question to answer that properly. So I want to start with a little bit of a provocative question first before we get into these specific papers. in your opinion, do LLMs understand language or simply parrot? Language"
   },
   {
-   "t": 1369,
-   "text": "in your opinion, do LLMs understand language or simply parrot? Language understanding is so tricky. We have these whole fields of studying language, artificially, neurally, psychologically, and we still don't have a working definition of what does it mean to understand the sentence. It's puzzling. can talk about processing the sounds of speech. We can talk about processing individual words, combining words into phrases. But what is the end result? What is that aha moment where you're like, I got it, right? We have this intuition when we know when we understand something or not. But what does it actually correspond to?"
+   "t": 1375,
+   "speaker": "Anna Ivanova",
+   "text": "Understanding is so tricky. We have these whole fields of studying language, artificially, neurally, psychologically, and we still don't have a working definition of what does it mean to understand the sentence. It's puzzling. can talk about processing the sounds of speech. We can talk about processing individual words, combining words into phrases. But what is the end result? What is that aha moment where you're like, I got it, right? We have this intuition when we know when we understand something or not. But what does it actually correspond to? It's mind boggling that we don't know what this actually means. We recently put out a preprint trying to answer this question in humans from the brain perspective, where we say that we can find neural signatures of deeper engagement that maybe is indicative of understanding, but that there is a difference between shallow process and you kind of hear a sentence and you're like, yeah, but you don't really understand it versus deep understanding where you're really engaging different cognitive systems to."
   },
   {
-   "t": 1415,
-   "text": "It's mind boggling that we don't know what this actually means. We recently put out a preprint trying to answer this question in humans from the brain perspective, where we say that we can find neural signatures of deeper engagement that maybe is indicative of understanding, but that there is a difference between shallow process and you kind of hear a sentence and you're like, yeah, but you don't really understand it versus deep understanding where you're really engaging different cognitive systems to. extract that meaning, store it for the future, integrate it with other things that you know. So even in humans, that question doesn't have a clear answer."
+   "t": 1453,
+   "speaker": "Anna Ivanova",
+   "text": "Extract that meaning, store it for the future, integrate it with other things that you know. So even in humans, that question doesn't have a clear answer. We're trying to get there. And so when we ask, do LLMs understand language? Well, we don't have a definition of understanding. And so that's where things are becoming really difficult. But I think for Most people understanding language is really a practical consideration, right? Will an LLM process the information that I provide in a context appropriate way in the way that I intended it to?"
   },
   {
-   "t": 1463,
-   "text": "We're trying to get there. And so when we ask, do LLMs understand language? Well, we don't have a definition of understanding. And so that's where things are becoming really difficult. But I think for Most people understanding language is really a practical consideration, right? Will an LLM process the information that I provide in a context appropriate way in the way that I intended it to? So it's for most people, it's not a philosophical question about the nature of LLM cognition and are they conscious and are they really there? It's like, it do the thing that I want it to do?"
+   "t": 1499,
+   "speaker": "Anna Ivanova",
+   "text": "So it's for most people, it's not a philosophical question about the nature of LLM cognition and are they conscious and are they really there? It's like, it do the thing that I want it to do? Right. And I think that's a very reasonable approach. Right. So mean, we, you know, we can talk about philosophy. That's, that's all good. That's important for legal about the rights and personhood and all of that, but for most people the functional definition of do LLM outputs, are LLM outputs consistent with what understanding would entail in humans? So then the goal shifts to how do we evaluate LLM capabilities? Do they perform appropriately across a broad range of domains and tasks where we expect them to be?"
   },
   {
-   "t": 1508,
-   "text": "Right. And I think that's a very reasonable approach. Right. So mean, we, you know, we can talk about philosophy. That's, that's all good. That's important for legal about the rights and personhood and all of that, but for most people the functional definition of do LLM outputs, are LLM outputs consistent with what understanding would entail in humans? So then the goal shifts to how do we evaluate LLM capabilities? Do they perform appropriately across a broad range of domains and tasks where we expect them to be? able to perform well in accordance with some standards."
-  },
-  {
-   "t": 1555,
-   "text": "So then it becomes a benchmarking and evaluation question and we can use a variety of tools. We'll have to test edge cases. We can look at LLM internals as well in order to then maybe predict its behavior on previously unseen examples. So then the whole science of LLM evaluation and LLM cognitive studies, that's a practical angle to the question of duality."
+   "t": 1551,
+   "speaker": "Anna Ivanova",
+   "text": "Able to perform well in accordance with some standards. So then it becomes a benchmarking and evaluation question and we can use a variety of tools. We'll have to test edge cases. We can look at LLM internals as well in order to then maybe predict its behavior on previously unseen examples. So then the whole science of LLM evaluation and LLM cognitive studies, that's a practical angle to the question of duality."
   },
   {
    "t": 1587,
-   "text": "Right, interesting. And also the way you framed it, that leads to the capabilities basically of the LLMs that fits perfectly into one of the papers that you have that I would like to speak about right now. So it's the paper that is called Dissociating Language and Thought in Large Language Models."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, interesting. And also the way you framed it, that leads to the capabilities basically of the LLMs that fits perfectly into one of the papers that you have that I would like to speak about right now. So it's the paper that is called Dissociating Language and Thought in Large Language Models. It was, I was really excited when I read it for the first time, because I, before reading that, I never thought about those competences from that perspective."
   },
   {
-   "t": 1621,
-   "text": "It was, I was really excited when I read it for the first time, because I, before reading that, I never thought about those competences from that perspective. And I would like you to introduce those two different types of linguistic competence to those in our audience who hasn't read the paper yet. Could you please explain those two competencies and the distinction between them? Sure. So the motivation behind this paper comes from the fact that people understand the term language very differently."
+   "t": 1635,
+   "speaker": "Jekaterina Novikova",
+   "text": "And I would like you to introduce those two different types of linguistic competence to those in our audience who hasn't read the paper yet. Could you please explain those two competencies and the distinction between them?"
   },
   {
-   "t": 1673,
-   "text": "Language is a very broad phenomenon. We use language to convey all sorts of information. And so often People might be tempted to say, oh, this is something that you learned through language, or maybe it's a question that was posed to you in language. Therefore, when you are thinking about an answer, responding to a question, you're using language, which is true, but you're not only using language. If you're asked a math question, you're doing mathematical. reasoning. If you're asked a question about somebody's feelings, you're doing theory of mind, which is a kind of social reasoning, trying to understand what somebody else's experience is like. And so language is just a step toward broader cognition."
+   "t": 1659,
+   "speaker": "Anna Ivanova",
+   "text": "Sure. So the motivation behind this paper comes from the fact that people understand the term language very differently. Language is a very broad phenomenon. We use language to convey all sorts of information. And so often People might be tempted to say, oh, this is something that you learned through language, or maybe it's a question that was posed to you in language. Therefore, when you are thinking about an answer, responding to a question, you're using language, which is true, but you're not only using language. If you're asked a math question, you're doing mathematical."
   },
   {
-   "t": 1722,
-   "text": "And it's really important for understanding and dissecting language in the brain, thinking about language processing as only a part of all cognition that might be evoked. through language, and it's important for AI because we have language models, but we don't really care about these models only as language processors. We care about them as AGI models or candidate AGI models, models of reasoning. we don't really care about ChatGPT being grammatically correct, if anything, take it for granted. And then the important questions are, what does it know? Can it reason all of the stuff that's beyond language itself?"
+   "t": 1706,
+   "speaker": "Anna Ivanova",
+   "text": "Reasoning. If you're asked a question about somebody's feelings, you're doing theory of mind, which is a kind of social reasoning, trying to understand what somebody else's experience is like. And so language is just a step toward broader cognition. And it's really important for understanding and dissecting language in the brain, thinking about language processing as only a part of all cognition that might be evoked. through language, and it's important for AI because we have language models, but we don't really care about these models only as language processors. We care about them as AGI models or candidate AGI models, models of reasoning."
   },
   {
-   "t": 1769,
-   "text": "And so we wanted to have a framework that is grounded in neuroscience that will help us clarify when we talk about model capabilities, are we really talking about language capabilities or something else that you can access through language? And so we introduced some terminology to help deal with that distinction. We use the term formal linguistic competence as knowledge of a particular language, just rules and patterns. So knowing, say, English grammar, knowing what specific words mean, what specific phrases and idioms mean. And in the brain, we think that there is a dedicated system that is processing language-specific information, and we call it the language brain."
+   "t": 1754,
+   "speaker": "Anna Ivanova",
+   "text": "We don't really care about ChatGPT being grammatically correct, if anything, take it for granted. And then the important questions are, what does it know? Can it reason all of the stuff that's beyond language itself? And so we wanted to have a framework that is grounded in neuroscience that will help us clarify when we talk about model capabilities, are we really talking about language capabilities or something else that you can access through language? And so we introduced some terminology to help deal with that distinction. We use the term formal linguistic competence as knowledge of a particular language, just rules and patterns."
   },
   {
-   "t": 1820,
-   "text": "But if you want to really understand the question and make use of that information, you might need to go beyond just language processing. You don't just care about grammar. You care about connecting the information in that sentence with other things you know about the world, maybe visual information. If you are also processing visual input, social reasoning and knowledge, all of these other capabilities. And so we call those functional linguistic competence. So these are all the capabilities that are not specific to language. You can reason about a question that's worded as a word problem or a math problem in symbols, or maybe thinking about somebody else's mind when you're talking to them or when you're just watching them visually."
+   "t": 1804,
+   "speaker": "Anna Ivanova",
+   "text": "So knowing, say, English grammar, knowing what specific words mean, what specific phrases and idioms mean. And in the brain, we think that there is a dedicated system that is processing language-specific information, and we call it the language brain. But if you want to really understand the question and make use of that information, you might need to go beyond just language processing. You don't just care about grammar. You care about connecting the information in that sentence with other things you know about the world, maybe visual information. If you are also processing visual input, social reasoning and knowledge, all of these other capabilities. And so we call those functional linguistic competence."
   },
   {
-   "t": 1870,
-   "text": "So cognition is definitely not tied to language, but you do need all these other cognitive capabilities. in order to use language appropriately and effectively and to do things in the world and to participate in a dialogue and respond well and how the other participant of the dialogue intends you to behave. so for models, models today have mastered formal linguistic competence as long as they have enough training data in that language. they will be producing grammatically correct outputs. Even GPT-2 was already pretty good at formal linguistic competence. So knowing that the keys on the table are old versus the keys on the table is old, right?"
+   "t": 1851,
+   "speaker": "Anna Ivanova",
+   "text": "So these are all the capabilities that are not specific to language. You can reason about a question that's worded as a word problem or a math problem in symbols, or maybe thinking about somebody else's mind when you're talking to them or when you're just watching them visually. So cognition is definitely not tied to language, but you do need all these other cognitive capabilities. in order to use language appropriately and effectively and to do things in the world and to participate in a dialogue and respond well and how the other participant of the dialogue intends you to behave. so for models, models today have mastered formal linguistic competence as long as they have enough training data in that language."
   },
   {
-   "t": 1923,
-   "text": "The models can detect that grammatical error in the second case. But functional competence is really where all the interesting stuff starts, right? So how do we make sure that these models reason appropriately logically, that they reason socially appropriately, that they retrieve factual, they collect information and not hallucinate, right? These are the questions that really capture the minds of many, and that's functional competence. And so we've seen that instead of just scaling up these models on next word prediction, there are all kinds of approaches that the field has invented to help boost functional whether it's specific kinds of fine-tuning, whether it's pairing an LLM with external tools."
+   "t": 1905,
+   "speaker": "Anna Ivanova",
+   "text": "They will be producing grammatically correct outputs. Even GPT-2 was already pretty good at formal linguistic competence. So knowing that the keys on the table are old versus the keys on the table is old, right? The models can detect that grammatical error in the second case. But functional competence is really where all the interesting stuff starts, right? So how do we make sure that these models reason appropriately logically, that they reason socially appropriately, that they retrieve factual, they collect information and not hallucinate, right? These are the questions that really capture the minds of many, and that's functional competence."
   },
   {
-   "t": 1971,
-   "text": "These are all various ways to advance functional competence capabilities. Right, I think what is the most interesting aspect here is actually that intersection overlap between those two capabilities, the way they work together and the way they depend on each other. And I believe it became so much easier to analyze having the LLMs comparing to people maybe because in healthy people, those two capabilities go in many situations probably more or less together."
+   "t": 1952,
+   "speaker": "Anna Ivanova",
+   "text": "And so we've seen that instead of just scaling up these models on next word prediction, there are all kinds of approaches that the field has invented to help boost functional whether it's specific kinds of fine-tuning, whether it's pairing an LLM with external tools. These are all various ways to advance functional competence capabilities."
+  },
+  {
+   "t": 1978,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, I think what is the most interesting aspect here is actually that intersection overlap between those two capabilities, the way they work together and the way they depend on each other. And I believe it became so much easier to analyze having the LLMs comparing to people maybe because in healthy people, those two capabilities go in many situations probably more or less together."
   },
   {
    "t": 2026,
+   "speaker": "Jekaterina Novikova",
    "text": "And of course, if with certain diseases, the... language, linguistic, formal linguistic ability can be oh not possible at all while the cognition is still oh good. Or maybe the other way around, I guess it's also the case. believe certain types of apacia oh could be with the linguistic ability intact. the cognitive capability being bad. But usually with people, we do not think about those two capabilities as distinct ones."
   },
   {
    "t": 2073,
+   "speaker": "Jekaterina Novikova",
    "text": "They usually go together, right? In adult people, in adult healthy people. With the LLMs though, I think these are two very, very distinct things. And I think that's something that you also claim in that paper, that em formal linguistic capabilities there, like was there longer, not too long ago, but let's say for several years already, while the functional is not necessarily even there. So my question would be, what aspects of functional competence can be acquired from linguistic signal alone in your opinion?"
   },
   {
    "t": 2120,
-   "text": "And what aspects cannot be learned from linguistic signals? Yeah, that's a really good summary of"
+   "speaker": "Jekaterina Novikova",
+   "text": "And what aspects cannot be learned from linguistic signals?"
   },
   {
-   "t": 2130,
-   "text": "our view that these capabilities do go together a lot of the time. even in models too, it's not necessarily easy for a lay person to distinguish them. So that's why we think our framework is helpful to be like, let's treat them separately because it just helps us understand the systems better by looking at these distinct subcomponents. And yeah. As you say, the formal competence seems to be emerging earlier than functional competence. It emerges in smaller models. It emerges earlier in the training process. It emerges from pre-training alone without the need to fine tune or augment the models in some other way."
+   "t": 2125,
+   "speaker": "Anna Ivanova",
+   "text": "Yeah, that's a really good summary of our view that these capabilities do go together a lot of the time. even in models too, it's not necessarily easy for a lay person to distinguish them. So that's why we think our framework is helpful to be like, let's treat them separately because it just helps us understand the systems better by looking at these distinct subcomponents. And yeah. As you say, the formal competence seems to be emerging earlier than functional competence. It emerges in smaller models. It emerges earlier in the training process."
   },
   {
-   "t": 2180,
-   "text": "And for functional competence, it's just the question of... these specific factors, right? So how big is the model? How much training has it seen? How has it been fine tuned and does it use external tools? And all of these will determine the model's performance on specific functional competency benchmarks. for mathematical capabilities, of course, we have all these discussions and models being trained on Olympiad problems and potentially doing well. And for theory of mind, theory of mind is a really original niche cognitive term, thinking about the minds of other people. But theory of mind is actually a pretty big deal in AI evaluation now."
+   "t": 2172,
+   "speaker": "Anna Ivanova",
+   "text": "It emerges from pre-training alone without the need to fine tune or augment the models in some other way. And for functional competence, it's just the question of... these specific factors, right? So how big is the model? How much training has it seen? How has it been fine tuned and does it use external tools? And all of these will determine the model's performance on specific functional competency benchmarks. for mathematical capabilities, of course, we have all these discussions and models being trained on Olympiad problems and potentially doing well. And for theory of mind, theory of mind is a really original niche cognitive term, thinking about the minds of other people."
   },
   {
-   "t": 2229,
-   "text": "There are a lot of papers talking about theory of mind in language models and debating whether or not these models have theory of mind. it's really hard to tell because we don't know, often we don't know how these models were trained. We don't know whether they've been exposed to examples that are either present in the benchmark directly or are very similarly worded to the examples that we're testing them on. then obviously these models are amazing pattern matchers. And so are they pattern matching? And if so, how abstract their pattern matching is? these are all live questions in evaluation."
+   "t": 2225,
+   "speaker": "Anna Ivanova",
+   "text": "But theory of mind is actually a pretty big deal in AI evaluation now. There are a lot of papers talking about theory of mind in language models and debating whether or not these models have theory of mind. it's really hard to tell because we don't know, often we don't know how these models were trained. We don't know whether they've been exposed to examples that are either present in the benchmark directly or are very similarly worded to the examples that we're testing them on. then obviously these models are amazing pattern matchers. And so are they pattern matching? And if so, how abstract their pattern matching is?"
   },
   {
-   "t": 2275,
-   "text": "And sometimes it can be really hard to tell whether the model is exhibiting a meaningful advance in functional competence Right, and you quickly mentioned the training data right now is one of the reasons that certain capabilities can emerge there or that the test case could be different, very different from what it was trained on. And there is another aspect that you also I'm sure are aware about is that the amount of data that is used to train these SLMs is enormous."
+   "t": 2271,
+   "speaker": "Anna Ivanova",
+   "text": "These are all live questions in evaluation. And sometimes it can be really hard to tell whether the model is exhibiting a meaningful advance in functional competence"
   },
   {
-   "t": 2326,
-   "text": "It's way, way, way bigger than the amount of data that people see, textual data, mean, people see during their entire lifetime."
+   "t": 2285,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and you quickly mentioned the training data right now is one of the reasons that certain capabilities can emerge there or that the test case could be different, very different from what it was trained on. And there is another aspect that you also I'm sure are aware about is that the amount of data that is used to train these SLMs is enormous. It's way, way, way bigger than the amount of data that people see, textual data, mean, people see during their entire"
   },
   {
    "t": 2340,
-   "text": "What can you say about this, about that difference specifically between people and the LLMs? Yeah, it's fascinating that LLMs are really an example of a blank slate, a system that's trained from scratch and nothing. And so the fact that we don't hard code anything in advance, that's why they need so much data to train on because they have to learn everything. And to me, that's not surprising. And for humans, we don't start exactly as a blank slate. Presumably, we have some inductive biases that evolution has brought to us."
+   "speaker": "Jekaterina Novikova",
+   "text": "Lifetime. What can you say about this, about that difference specifically between people and the LLMs?"
   },
   {
-   "t": 2387,
-   "text": "And that's probably why we need less training data in order to arrive at the same final solution. And in the developmental literature, in linguistics and philosophy and psychology, the big debate is about the nature of those inductive biases. How specific are they? Are they, say, language specific? That's the Chomskyan linguistics view. Or are they more domain general? They just help learn patterns more effectively and quicker. So it seems like when LLMs are learning, Their job is just harder because they don't have inductive biases to guide them in the right way. So it seems like for formal competence, the kinds of patterns that they need to pick up, there is much more common, right?"
+   "t": 2348,
+   "speaker": "Anna Ivanova",
+   "text": "Yeah, it's fascinating that LLMs are really an example of a blank slate, a system that's trained from scratch and nothing. And so the fact that we don't hard code anything in advance, that's why they need so much data to train on because they have to learn everything. And to me, that's not surprising. And for humans, we don't start exactly as a blank slate. Presumably, we have some inductive biases that evolution has brought to us. And that's probably why we need less training data in order to arrive at the same final solution."
   },
   {
-   "t": 2438,
-   "text": "Every text has grammatical agreement. The keys is versus the keys are, and so they can learn it. There is strong signal in the training data, so they need less time to learn it. Whereas if we're talking about sophisticated reasoning, reasoning phenomena or theory of mind phenomena, only a tiny fraction of the text is going to have these examples. It's unnatural that they're going to need much more data in order to accumulate enough to learn those specific kinds of patterns."
+   "t": 2397,
+   "speaker": "Anna Ivanova",
+   "text": "And in the developmental literature, in linguistics and philosophy and psychology, the big debate is about the nature of those inductive biases. How specific are they? Are they, say, language specific? That's the Chomskyan linguistics view. Or are they more domain general? They just help learn patterns more effectively and quicker. So it seems like when LLMs are learning, Their job is just harder because they don't have inductive biases to guide them in the right way. So it seems like for formal competence, the kinds of patterns that they need to pick up, there is much more common, right? Every text has grammatical agreement. The keys is versus the keys are, and so they can learn it."
+  },
+  {
+   "t": 2445,
+   "speaker": "Anna Ivanova",
+   "text": "There is strong signal in the training data, so they need less time to learn it. Whereas if we're talking about sophisticated reasoning, reasoning phenomena or theory of mind phenomena, only a tiny fraction of the text is going to have these examples. It's unnatural that they're going to need much more data in order to accumulate enough to learn those specific kinds of patterns."
   },
   {
    "t": 2467,
-   "text": "I think there is another view as well that another difference between people and LLMs is the nature of data. Like LLMs They learn from textual data only and the people learn from interaction with the environment. from physical data and all the other modalities. What do you think about that? Yeah, absolutely. But I think that's not always the answer, right? So it's absolutely a problem. Language doesn't reflect the physical world. We omit a lot of detail. There are some things that are hard to describe in language. And there are also some things that we wouldn't really talk about."
+   "speaker": "Jekaterina Novikova",
+   "text": "I think there is another view as well that another difference between people and LLMs is the nature of data. Like LLMs They learn from textual data only and the people learn from interaction with the environment. from physical data and all the other modalities. What do you think about that?"
   },
   {
-   "t": 2515,
-   "text": "My favorite example that I put in slides sometimes is I Googled them. phrase square wheels versus round wheels. And there were actually more direct matches for square wheels than for round wheels, because why would you specify that wheels are round? It's kind of obvious by default. And so those kinds of mismatches, that phenomenon in human language is called reporting bias. So we only report, we only talk about stuff that's not totally obvious. So reporting bias and in general, the difficulty of discretizing complex visual information into words, that definitely is a good explanation for some of the deficits that we observe."
+   "t": 2497,
+   "speaker": "Anna Ivanova",
+   "text": "Yeah, absolutely. But I think that's not always the answer, right? So it's absolutely a problem. Language doesn't reflect the physical world. We omit a lot of detail. There are some things that are hard to describe in language. And there are also some things that we wouldn't really talk about. My favorite example that I put in slides sometimes is I Googled them. phrase square wheels versus round wheels. And there were actually more direct matches for square wheels than for round wheels, because why would you specify that wheels are round? It's kind of obvious by default. And so those kinds of mismatches, that phenomenon in human language is called reporting bias."
   },
   {
-   "t": 2561,
-   "text": "But I don't think it's the only one. I think some of the differences between elements and humans do have to do with"
+   "t": 2542,
+   "speaker": "Anna Ivanova",
+   "text": "So we only report, we only talk about stuff that's not totally obvious. So reporting bias and in general, the difficulty of discretizing complex visual information into words, that definitely is a good explanation for some of the deficits that we observe. But I don't think it's the only one. I think some of the differences between elements and humans do have to do with internal encodings of information and that probably stems from the differences in the objective functions. So theory of mind, social reasoning, that in humans is actually famously an example of a functional competence, right, so not language specific ability that is rarely tightly interlinked with language throughout development."
   },
   {
-   "t": 2573,
-   "text": "internal encodings of information and that probably stems from the differences in the objective functions. So theory of mind, social reasoning, that in humans is actually famously an example of a functional competence, right, so not language specific ability that is rarely tightly interlinked with language throughout development. So deaf kids who don't get access to language for the first few years of life, they eventually get either get an implant or get exposed to sign language, but they miss some of the critical language input early on."
+   "t": 2604,
+   "speaker": "Anna Ivanova",
+   "text": "So deaf kids who don't get access to language for the first few years of life, they eventually get either get an implant or get exposed to sign language, but they miss some of the critical language input early on. They show delays on theory of mind, on understanding what other people are thinking or feeling. And so it does seem like language is the primary source of information in order for us to be able to reason about other people's minds, which makes sense, right? If you want to learn what somebody else is thinking, the easiest way is to talk to them, right? Get their verbal input on how they're feeling. It's harder to observe it directly. You can, but it's not quite the full picture."
   },
   {
-   "t": 2619,
-   "text": "They show delays on theory of mind, on understanding what other people are thinking or feeling. And so it does seem like language is the primary source of information in order for us to be able to reason about other people's minds, which makes sense, right? If you want to learn what somebody else is thinking, the easiest way is to talk to them, right? Get their verbal input on how they're feeling. It's harder to observe it directly. You can, but it's not quite the full picture. And so..."
-  },
-  {
-   "t": 2654,
-   "text": "LLMs still don't seem to master theory of mind quite to the extent that humans do. They can do kind of basic classic theory of mind problems because they pattern match. But that's, think to me, is a good example where I don't think it's the question about input alone. I think it's also about the internal organization of knowledge and being able to abstract away the right thing."
+   "t": 2652,
+   "speaker": "Anna Ivanova",
+   "text": "And so... LLMs still don't seem to master theory of mind quite to the extent that humans do. They can do kind of basic classic theory of mind problems because they pattern match. But that's, think to me, is a good example where I don't think it's the question about input alone. I think it's also about the internal organization of knowledge and being able to abstract away the right thing."
   },
   {
    "t": 2681,
-   "text": "one of the claims in your paper, and that's also something that you have mentioned a couple of times right now, is also that consistent performance on tasks that require functional competence, they need something more than just next board prediction training objective. And given this, do you think that we need some new models or architectures or training methods in order to achieve stronger functional competence? Or it's more about inductive biases, as you said, plus maybe a little bit of multimodality."
+   "speaker": "Jekaterina Novikova",
+   "text": "One of the claims in your paper, and that's also something that you have mentioned a couple of times right now, is also that consistent performance on tasks that require functional competence, they need something more than just next board prediction training objective. And given this, do you think that we need some new models or architectures or training methods in order to achieve stronger functional competence? Or it's more about inductive biases, as you said, plus maybe a little bit of multimodality."
   },
   {
    "t": 2727,
+   "speaker": "Anna Ivanova",
    "text": "So. When we wrote that paper, as I said, we started like slightly before GPT-3 came out and we put it out around the time that ChatGPT came out. So even reinforcement learning with human feedback was not really a thing. And that's part of what we suggested that, maybe these models shouldn't just rely on next word prediction. So in a way the field was moving in that direction where we said it would need to move, which is going beyond just naked the model's bigger and just feeding it more text-blindly. So now we have reinforcement learning with human feedback and reward-based learning for reasoning. So those objective functions, they are different than just breaking the next word."
   },
   {
    "t": 2779,
+   "speaker": "Anna Ivanova",
    "text": "So that's part of what we. talked about when we said that there needs to be more and whether I'm sure that's not the end of it, right? I'm sure people will keep experimenting and adding new objective functions. Another approach that we hinted at that we haven't seen yet is potentially providing some ways for these models to modularize as they learn. So one solution is just to build in modules in the system in advance, right? You have different models, have a vision, you have a language, you put them together, can be like fighting them to talk to each other, or you can maybe try feeding everything into the same system and then oh create the conditions for the system to develop sub modules within itself."
   },
   {
    "t": 2839,
+   "speaker": "Anna Ivanova",
    "text": "The closest thing to This now is maybe mixture of expert models, right, because they have those experts and then the system kind of decides by itself over the course of training what each expert is going to do. So something like that, but maybe larger scale because those experts are kind of tiny. And if we're thinking about the brain, the brain has those larger scale networks that end up being specialized for various things. So there are some approaches. There is a paper from a group in Switzerland that is using our formal functional competence framework as inspiration to develop this kind of larger scale mixture of models, mixture of experts. for a system."
   },
   {
    "t": 2886,
+   "speaker": "Anna Ivanova",
    "text": "So attempts exist. There are also attempts to develop say topographic models where topography is that principle in the biological brains where nearby neurons do the same thing. And so you can impose that kind of constraint in an artificial system as well. So we'll see, we'll see these are the kinds of like, I think that kind of emergent specialization is an interesting thing that we might be seeing more of. To be fair with industry models and everything being under the hood, we don't know how much of it has already happened, right? Is GPT-5 one model or many? Probably many. And so if that's the case, then like if you have a router and then you have the different models that are specialist, like that's essentially consistent to an extent, at least with the kind of framework that we discussed in the paper."
   },
   {
    "t": 2941,
-   "text": "I see. Yeah, that makes a lot of sense. And I think when we are speaking about these cognitive abilities of LLMs, one question that immediately pops up is the question of how to measure that. Like, what are the ways to evaluate? these capabilities. And that brings me to your paper, How to Evaluate the Cognitive Abilities of LLMs, the title says it all."
+   "speaker": "Jekaterina Novikova",
+   "text": "I see. Yeah, that makes a lot of sense. And I think when we are speaking about these cognitive abilities of LLMs, one question that immediately pops up is the question of how to measure that. Like, what are the ways to evaluate? these capabilities. And that brings me to your paper, How to Evaluate the Cognitive Abilities of LLMs, the title says it all. And in that paper, you lay out 14 dos and do nots for what you call the AI psychology."
   },
   {
-   "t": 2980,
-   "text": "And in that paper, you lay out 14 dos and do nots for what you call the AI psychology. So oh what are the most critical dos and don'ts in evaluating cognitive capabilities of LLMs."
+   "t": 2991,
+   "speaker": "Jekaterina Novikova",
+   "text": "So oh what are the most critical dos and don'ts in evaluating cognitive capabilities of LLMs."
   },
   {
    "t": 3001,
+   "speaker": "Anna Ivanova",
    "text": "The main one... I think the main big picture don't is not assuming that models and humans process information and do tasks in the same way. The AI psychology really boomed after CHPT came out because now you have this interface, right? This like perfect Turing test where you can take an evaluation that was originally written for humans and a lot of them are language, right? Just question here is that kind of stuff. you feed it to the model, you get the response back, boom, I evaluated a language model. And so I gave it a test, and it tells me that ChatGPT is an extrovert, like that kind of stuff. And the meaning of a test in the model."
   },
   {
    "t": 3052,
-   "text": "might be very different from what it would be for a human. I think, especially people outside the field, they might not be aware of these differences. And then kind of the rest of the do's and don'ts, they really follow that train of thought, right? What would you need to know and do in order to try to get a better understanding of how the model is doing the task and what does this really mean and how should we interpret these findings. one aspect that we already mentioned briefly today is are your evaluation items present in the model's training data?"
+   "speaker": "Anna Ivanova",
+   "text": "Might be very different from what it would be for a human. I think, especially people outside the field, they might not be aware of these differences. And then kind of the rest of the do's and don'ts, they really follow that train of thought, right? What would you need to know and do in order to try to get a better understanding of how the model is doing the task and what does this really mean and how should we interpret these findings. one aspect that we already mentioned briefly today is are your evaluation items present in the model's training data?"
   },
   {
-   "t": 3102,
-   "text": "you accidentally, it was just part of the training corpus, or intentionally was the model fine-tuned on that exact task that you were, that you are testing. Because in humans often we don't really care about performance on that particular test. We assume that if you perform well on this test, it represents your broader class of abilities. But for a model, if it was fine-tuned on this particular task, it will not represent its performance on this broader class of capabilities. And so that's one big limitation because in most cases we do want to go beyond just a single test. We want to try to make broader claims. you know, again, does the model have theory of mind?"
+   "t": 3103,
+   "speaker": "Anna Ivanova",
+   "text": "Accidentally, it was just part of the training corpus, or intentionally was the model fine-tuned on that exact task that you were, that you are testing. Because in humans often we don't really care about performance on that particular test. We assume that if you perform well on this test, it represents your broader class of abilities. But for a model, if it was fine-tuned on this particular task, it will not represent its performance on this broader class of capabilities. And so that's one big limitation because in most cases we do want to go beyond just a single test. We want to try to make broader claims. you know, again, does the model have theory of mind?"
   },
   {
    "t": 3150,
+   "speaker": "Anna Ivanova",
    "text": "And then you evaluate on this test, turns out the model has been fine tuned on this exact test. And so then it has nothing about this broader theory of mind capabilities. oh an obvious one that follows from what I just said is that more tests is better, right? If you have multiple different theory of mind evaluations and the model performs consistently on all of them, you have more confidence that you're measuring that construct, true for humans as well, but for models too. You don't want to assume that the human will do well on your specific test. it's really important to collect human data to be able to compare your model performance with humans fairly. If you care about making claims that It's similar to humans, exhibits human-like behavior, human-like capabilities."
   },
   {
    "t": 3206,
+   "speaker": "Anna Ivanova",
    "text": "And another interesting one is a question of cross-cultural differences. now have, in psychology, we have oh people claiming, hey, look, I can actually predict how humans will respond to a particular psychological evaluation or experiment. GPT will just tell me what humans would respond. So now we can just run those artificial experiments on human participants, but just replace humans with LLMs. And the big, well, in addition to potential ethical considerations, the philosophical consideration."
   },
   {
    "t": 3253,
-   "text": "there is a big question there of which humans are being represented, right? So model training reflects a very particular kind of human culture, predominantly English speaking, highly industrialized with access to the internet. And so it ends up reflecting pretty poorly the values and the knowledge that is not well represented in this industrialized, westernized culture. So we end up not serving all human populations well. there are good studies on that."
+   "speaker": "Anna Ivanova",
+   "text": "There is a big question there of which humans are being represented, right? So model training reflects a very particular kind of human culture, predominantly English speaking, highly industrialized with access to the internet. And so it ends up reflecting pretty poorly the values and the knowledge that is not well represented in this industrialized, westernized culture. So we end up not serving all human populations well. there are good studies on that."
   },
   {
    "t": 3300,
-   "text": "And this topic is being explored today. But m I often feel like it's important to mention. Absolutely, I completely agree. And we had one of our previous guests, Vera Swartz. She talked a lot, basically, her whole interview was about cross-cultural em aspects of LLMs and LLMs being Western-centric, It also shows the language thought dissociation, because if you ask a question in a different language, it often doesn't matter, right? Even though the model is answering in the language em corresponding to particular culture, it won't necessarily update its knowledge."
+   "speaker": "Anna Ivanova",
+   "text": "And this topic is being explored today. But m I often feel like it's important to mention."
+  },
+  {
+   "t": 3308,
+   "speaker": "Jekaterina Novikova",
+   "text": "Absolutely, I completely agree. And we had one of our previous guests, Vera Swartz. She talked a lot, basically, her whole interview was about cross-cultural em aspects of LLMs and LLMs being Western-centric,"
+  },
+  {
+   "t": 3332,
+   "speaker": "Anna Ivanova",
+   "text": "It also shows the language thought dissociation, because if you ask a question in a different language, it often doesn't matter, right? Even though the model is answering in the language em corresponding to particular culture, it won't necessarily update its knowledge."
   },
   {
    "t": 3349,
+   "speaker": "Jekaterina Novikova",
    "text": "Right, Going back to the AI psychology and em the things that you described in the paper of how to evaluate the cognitive abilities of LLM."
   },
   {
    "t": 3365,
+   "speaker": "Jekaterina Novikova",
    "text": "I want to ask one question, high level, like broader question. So let me put two extreme views in front of you. And I would be interested to know which one is closer to what you think. So the first view is that the LLMs are essentially irrelevant to human cognition because they are not the realistic model of human brain, they never intended to be the model of a human brain. It's just the machine learning model. And as a result, studying them tells us nothing about how people think."
   },
   {
    "t": 3411,
-   "text": "One view. Another view that is probably closer to the opposite is that LLMs are the only known system that can use language the way that we people do. And it makes them very useful as models of human cognition. So where do you stand? I of course think that LLMs are useful because I care about human cognition, right? And so if I thought they were completely irrelevant, I wouldn't be studying them and wouldn't be looking at them. I like the view of LLMs as a model organism. So you have a mouse that is a model organism of... I don't know, kidney function. All right, let's something completely non-cognition related."
+   "speaker": "Jekaterina Novikova",
+   "text": "One view. Another view that is probably closer to the opposite is that LLMs are the only known system that can use language the way that we people do. And it makes them very useful as models of human cognition. So where do you stand?"
   },
   {
-   "t": 3459,
-   "text": "so you can study how kidneys work in a mouse. You can learn a lot. You can learn a lot of principles that are shared across all mammals. But then there might be some weird mouse-specific things about kidneys that are related to the mouse size, lifespan, diet, whatever. And oh so we cannot assume that the mouse kidney is identical to the human kidney, but there might be a lot of similarities that might be useful for us. to pinpoint. So that's how I treat LLMs as well. I'm saying, hey, look, that's a cool system. It receives language as an input. It learns patterns. It can be evaluated on certain cognitive-like behaviors and tasks."
+   "t": 3436,
+   "speaker": "Anna Ivanova",
+   "text": "I of course think that LLMs are useful because I care about human cognition, right? And so if I thought they were completely irrelevant, I wouldn't be studying them and wouldn't be looking at them. I like the view of LLMs as a model organism. So you have a mouse that is a model organism of... I don't know, kidney function. All right, let's something completely non-cognition related. so you can study how kidneys work in a mouse. You can learn a lot. You can learn a lot of principles that are shared across all mammals. But then there might be some weird mouse-specific things about kidneys that are related to the mouse size, lifespan, diet, whatever. And oh so we cannot assume that the mouse kidney is identical to the human kidney, but there might be a lot of similarities that might be useful for us."
   },
   {
-   "t": 3506,
-   "text": "And it seems to act in a human-like way, at least to an extent. And so let's go ahead and study it and not assume that it is the same, but it's an empirical question and figuring out how. language processing and its interface with cognitive processing works in the system might help us understand some really fundamental principles about information processing and intelligence systems. If the something is shared between elements and humans, despite all of their differences, maybe it really is a fundamental feature of intelligence, at least in the environment that we find ourselves in."
+   "t": 3485,
+   "speaker": "Anna Ivanova",
+   "text": "To pinpoint. So that's how I treat LLMs as well. I'm saying, hey, look, that's a cool system. It receives language as an input. It learns patterns. It can be evaluated on certain cognitive-like behaviors and tasks. And it seems to act in a human-like way, at least to an extent. And so let's go ahead and study it and not assume that it is the same, but it's an empirical question and figuring out how. language processing and its interface with cognitive processing works in the system might help us understand some really fundamental principles about information processing and intelligence systems."
+  },
+  {
+   "t": 3538,
+   "speaker": "Anna Ivanova",
+   "text": "If the something is shared between elements and humans, despite all of their differences, maybe it really is a fundamental feature of intelligence, at least in the environment that we find ourselves in."
   },
   {
    "t": 3554,
-   "text": "so you think that the kind of intelligence that LLM has or will have at some point when developed further is fundamentally similar to the... I don't know, right? That's the question. think if there are similarities, then that reflects something deep and fundamental about the nature of intelligence and what an information processing system needs to achieve. so, yeah, we shouldn't take it for granted. We should go ahead and study it and find those similarities and differences. The fact that a language model can learn formal competence can learn the rules and patterns of language just from the data, that alone is really beneficial to know."
+   "speaker": "Jekaterina Novikova",
+   "text": "So you think that the kind of intelligence that LLM has or will have at some point when developed further is fundamentally similar to the..."
   },
   {
-   "t": 3606,
-   "text": "It serves as an existence proof for the possibility of learning this kind of structured knowledge from data alone. which was actually considered impossible by some linguists. So do humans learn in exactly the same way? No, the nature of the data is different. The amount of data is different. But just knowing how much you can do with just pattern learning in this domain can then encourage us to maybe rethink the way we even approach it in humans and help us design new experiments to find out how exactly it happens in humans. So LLMs can very much serve as a sort of inspiration for the kind of mechanisms that we didn't even think were possible. And then we can say, hey, let's do it this way."
+   "t": 3569,
+   "speaker": "Anna Ivanova",
+   "text": "I don't know, right? That's the question. think if there are similarities, then that reflects something deep and fundamental about the nature of intelligence and what an information processing system needs to achieve. so, yeah, we shouldn't take it for granted. We should go ahead and study it and find those similarities and differences. The fact that a language model can learn formal competence can learn the rules and patterns of language just from the data, that alone is really beneficial to know. It serves as an existence proof for the possibility of learning this kind of structured knowledge from data alone."
   },
   {
-   "t": 3653,
-   "text": "Do humans do it this way or maybe part of it? So I think it's really fun to look at another kind of intelligence and then say, hey, how similar or different it is from humans. With that, I 100 % agree. It's really interesting to see the intelligence, is, whether it is fundamentally different or not, we don't know, but it is at least to some extent different. Okay, now let me move to another paper of yours, which is very recent, and it takes a slightly different approach to what we talked about today, instead of asking what LLMs can or cannot do from the outside, from the outside behavior, it goes inside the model to look at how computation is organized across layers, layers of transformers."
+   "t": 3616,
+   "speaker": "Anna Ivanova",
+   "text": "Which was actually considered impossible by some linguists. So do humans learn in exactly the same way? No, the nature of the data is different. The amount of data is different. But just knowing how much you can do with just pattern learning in this domain can then encourage us to maybe rethink the way we even approach it in humans and help us design new experiments to find out how exactly it happens in humans. So LLMs can very much serve as a sort of inspiration for the kind of mechanisms that we didn't even think were possible. And then we can say, hey, let's do it this way. Do humans do it this way or maybe part of it? So I think it's really fun to look at another kind of intelligence and then say, hey, how similar or different it is from humans."
+  },
+  {
+   "t": 3666,
+   "speaker": "Jekaterina Novikova",
+   "text": "With that, I 100 % agree. It's really interesting to see the intelligence, is, whether it is fundamentally different or not, we don't know, but it is at least to some extent different. Okay, now let me move to another paper of yours, which is very recent, and it takes a slightly different approach to what we talked about today, instead of asking what LLMs can or cannot do from the outside, from the outside behavior, it goes inside the model to look at how computation is organized across layers, layers of transformers."
   },
   {
    "t": 3714,
-   "text": "And the paper is called, How Do LLMs Use Their Depth? So could you tell"
+   "speaker": "Jekaterina Novikova",
+   "text": "And the paper is called, How Do LLMs Use Their Depth?"
   },
   {
    "t": 3722,
-   "text": "what made you want to look into layer-wise prediction dynamics instead of just behavior. I'm a neuroscientist by nature and so even in humans it's useful. I've always found it useful to look beyond just behavior. And so it's been fascinating to me just how similar the approaches are for studying the human brain in an LLM. In both cases you can look at behavior, the final output, but you can also look inside and try to link internal representations with behavior. And it's tricky and it's not straightforward and all the questions that we've had in neuroscience for decades, they now apply to the study of How can you make claims about function from observing the internal representations?"
+   "speaker": "Jekaterina Novikova",
+   "text": "So could you tell what made you want to look into layer-wise prediction dynamics instead of just behavior."
   },
   {
-   "t": 3767,
-   "text": "So I've been interested in this topic for a while. We had an earlier paper where we did some basic probing of sentence plausibility and seeing how that information evolves across layers as well. Kind of fairly straightforward stuff by the field standards. And this project is actually a collaboration with a graduate student from Berkeley, Akshat Gupta. And it's really the project that he has led throughout. I gave a talk at the seminar in Berkeley about a year ago, and he came up to me after the talk and he said, hey, I'm really interested in this formal functional competence distinction. And I've read your paper and I'm working on a project which was inspired by the formal functional competence distinction because I want to be able to track it across layers of a model, try to see if you can localize, if formal competence happens first and then functional competence happens next."
+   "t": 3730,
+   "speaker": "Anna Ivanova",
+   "text": "I'm a neuroscientist by nature and so even in humans it's useful. I've always found it useful to look beyond just behavior. And so it's been fascinating to me just how similar the approaches are for studying the human brain in an LLM. In both cases you can look at behavior, the final output, but you can also look inside and try to link internal representations with behavior. And it's tricky and it's not straightforward and all the questions that we've had in neuroscience for decades, they now apply to the study of How can you make claims about function from observing the internal representations? So I've been interested in this topic for a while. We had an earlier paper where we did some basic probing of sentence plausibility and seeing how that information evolves across layers as well."
+  },
+  {
+   "t": 3780,
+   "speaker": "Anna Ivanova",
+   "text": "Kind of fairly straightforward stuff by the field standards. And this project is actually a collaboration with a graduate student from Berkeley, Akshat Gupta. And it's really the project that he has led throughout. I gave a talk at the seminar in Berkeley about a year ago, and he came up to me after the talk and he said, hey, I'm really interested in this formal functional competence distinction. And I've read your paper and I'm working on a project which was inspired by the formal functional competence distinction because I want to be able to track it across layers of a model, try to see if you can localize, if formal competence happens first and then functional competence happens next."
   },
   {
    "t": 3828,
+   "speaker": "Anna Ivanova",
    "text": "So it turned out that it's not as straightforward with the mapping from formal functional competence, onto the internal presentations is, is tricky. Another group has a mechanistic interpretability project that tried to do that a little bit. but this project kind of ended up evolving into its own thing. And so what we do here is we use a tool called Tuned Lens in order to track changes in representations in the model across layers. So Tuned Lens essentially is a linear readout tool that says, okay, instead of going through the entire model, if you were to just stop at this layer, which token would you predict?"
   },
   {
    "t": 3877,
+   "speaker": "Anna Ivanova",
    "text": "And so it forces the model to stop processing in the middle. And so we can try to see how far has the model gotten so far in its processing. Or at least that's the hope. And what we find from just looking at next word, next token prediction in just a regular prediction regime is that the model starts out by predicting the most frequent tokens, right? If you get the model to predict really early on, it ends up predicting things like the determiners, prepositions, like two really, really common words."
   },
   {
    "t": 3929,
+   "speaker": "Anna Ivanova",
    "text": "Mm-hmm. regardless of whether or not that's the actual word that's going to appear in the end. These words end up being overrepresented compared to their actual prediction probability. And then as the model keeps processing, that distribution evens out. So these words are still frequently predicted, but not quite as overwhelmingly frequently the model ends up matching the final in-text distribution for these tokens. And so It suggests that as information propagates through the model layers, it becomes more contextualized, and so the model can make more informed predictions as opposed to just frequency matching. So that's kind of the initial observation, and then we see how this principle plays out in specific case studies."
   },
   {
    "t": 3977,
+   "speaker": "Anna Ivanova",
    "text": "My favorite case study is multiple choice questions, where you have a fixed response, like ABCD. We'll look at a few. It looks like by the middle of the model, the first half, the model narrows down its choices. It now knows by the middle that it should give you, that it should output A, B, C, or D. And then the second half of processing is dedicated to selecting between these options. And usually if you just try to read out the model has a favor that has a bias for one, I don't remember which one, like let's say C. And so if you just force it to kind of guess before it's ready, it will just say C, but then toward the end it will actually calibrate and map the answer onto the appropriate response token."
   },
   {
    "t": 4027,
-   "text": "So I think this is a really fun result. We tried to validate tuned lens as a method to make sure that it's actually the language model and not tuned lens that is imposing all of this kind of structure. So we do some validation experiments. We also have some activation patching to causality test at least some of the observations that we have. But yeah, I love interpretability and trying to look at internal representations. It definitely gets messy. There are all kinds of tools available there. we're still lacking a theoretical framework to bring together all those disparate findings from all these different tools. So, do you have any plans for the follow-up work trying to answer these questions?"
+   "speaker": "Anna Ivanova",
+   "text": "So I think this is a really fun result. We tried to validate tuned lens as a method to make sure that it's actually the language model and not tuned lens that is imposing all of this kind of structure. So we do some validation experiments. We also have some activation patching to causality test at least some of the observations that we have. But yeah, I love interpretability and trying to look at internal representations. It definitely gets messy. There are all kinds of tools available there. we're still lacking a theoretical framework to bring together all those disparate findings from all these different tools."
+  },
+  {
+   "t": 4069,
+   "speaker": "Jekaterina Novikova",
+   "text": "So, do you have any plans for the follow-up work trying to answer these questions?"
   },
   {
    "t": 4077,
+   "speaker": "Anna Ivanova",
    "text": "Yeah, I'm very interested out of all domains of thought, conceptual knowledge, meaning semantic knowledge is very much the topic I'm most interested in. In AI, factual knowledge has been the biggest focus. For me, it's probably more about our general world knowledge, which in AI, the closest term is common sense. So these are the kinds of representations that I am most interested in and their relationship with language, how, at what point can we abstract away from language? And so hopefully we'll be able to do some projects where we examine these general knowledge representations in LLM and try to map them onto different layers, try to see the word extend their shared versus context specific."
   },
   {
    "t": 4134,
+   "speaker": "Anna Ivanova",
    "text": "These days also super exciting. have vision language models now. We no longer limit the language alone and cognitive science of vision language models is behind. Stuff is starting to come out, but there is so much more to do. There are so many tests we can run. So if I have a picture of a cat and the word cat and I ask some question about, you know, will it drink milk, does the model process this information the same way? Will picture and word representations for cat converge to that? Or does the model kind of store information for words and pictures separately and it doesn't really generalize? This question will have really important implications for model performance. But that question is still wide open."
   },
   {
    "t": 4180,
+   "speaker": "Jekaterina Novikova",
    "text": "Great. Anna, is there anything else that you would like to maybe mention or speak about"
   },
   {
    "t": 4189,
+   "speaker": "Anna Ivanova",
    "text": "We think about AI in human cognitive terms all the time. And so it seems only appropriate that we leverage what we know about human cognition in order to understand the systems better at the same time without assuming that they're the same as us. We talk about reasoning and cognition and these models act in a particular way. AI safety uses all these cognitive terms like deception, right? What is deception? How do you know if the model is deceiving you? Is deceiving in line the same thing? I would argue that they're not. I think being aware of the terms that you use, I'm okay with using these cognitive terms for models as long as we're not taking it for granted."
   },
   {
    "t": 4243,
+   "speaker": "Anna Ivanova",
    "text": "Cognition is relevant to understanding AI. Neuroscience is relevant to understanding AI. AI interpretability people are moving really fast, which is great, but they are running into the problems that neuroscience has been running into for a long time. And so having these interdisciplinary discussions can really help us. help each other, right? What kind of assumptions can we be making? What kind of assumptions are not warranted? What kind of tools are best to use? And I mean, in AI, you all have an unfair advantage where we can record from every single unit and we can cause the manipulate units in all kinds of powerful ways that in biological systems we can't. So it's easier, but a lot of the same questions and problems apply."
   },
   {
    "t": 4291,
-   "text": "So yeah, I just think. think there are so many cool parallels and so I love being at the intersection of all of these fields. Amazing. Anna, thanks for this absolutely exciting conversation. Yeah, thank you so much. Great talking to you."
+   "speaker": "Anna Ivanova",
+   "text": "So yeah, I just think. think there are so many cool parallels and so I love being at the intersection of all of these fields."
+  },
+  {
+   "t": 4299,
+   "speaker": "Jekaterina Novikova",
+   "text": "Amazing. Anna, thanks for this absolutely exciting conversation."
+  },
+  {
+   "t": 4305,
+   "speaker": "Anna Ivanova",
+   "text": "Yeah, thank you so much. Great talking to you."
   }
  ]
 }

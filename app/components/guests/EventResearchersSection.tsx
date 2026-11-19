@@ -54,7 +54,7 @@ export function EventResearchersSection({ groups }: { groups: EventGroups }) {
       </div>
       <div className="bg-gradient-to-br from-white/[0.07] to-white/[0.03] rounded-2xl border border-white/10 p-6 md:p-8">
         {groups.map(([e, list]) => (
-          <ul key={e} role="tabpanel" aria-label={e} hidden={e !== active} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8">
+          <ul key={e} role="tabpanel" aria-label={e} hidden={e !== active} className={`${e === active ? "grid" : "hidden"} grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8`}>
             {list.map((r) => <Name key={r.slug} r={r} />)}
           </ul>
         ))}
