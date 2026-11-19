@@ -1,807 +1,672 @@
 {
  "episode": 26,
  "videoId": "XLixB8pSdC4",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 0,
-   "text": "I think I did the classic machine learning thing, which is I said just try everything. Brute force. brute force. yes, but yeah, it's not a one size fits all thing."
+   "speaker": "Julie Kallini",
+   "text": "I think I did the classic machine learning thing, which is I said just try everything."
   },
   {
-   "t": 20,
-   "text": "we waste a lot of computation. Models are wasting computation on parts of the input that are very predictable. why can't we just, let's say, compress something like the MIT license into one token and not spend a ton of tokens processing the MIT license when we're when we're processing a code base?"
+   "t": 6,
+   "speaker": "Jekaterina Novikova",
+   "text": "Brute force."
   },
   {
-   "t": 37,
-   "text": "the same English sentence translated into Thai will just take up like twice as many tokens or so, just by virtue of how Thai text is tokenized."
-  },
-  {
-   "t": 50,
-   "text": "So this can cause users of different languages to be charged for different amounts purely just because their language takes up more tokens."
+   "t": 8,
+   "speaker": "Julie Kallini",
+   "text": "Brute force. yes, but yeah, it's not a one size fits all thing. we waste a lot of computation. Models are wasting computation on parts of the input that are very predictable. why can't we just, let's say, compress something like the MIT license into one token and not spend a ton of tokens processing the MIT license when we're when we're processing a code base? the same English sentence translated into Thai will just take up like twice as many tokens or so, just by virtue of how Thai text is tokenized. So this can cause users of different languages to be charged for different amounts purely just because their language takes up more tokens."
   },
   {
    "t": 61,
-   "text": "we can't sit a baby down and teach it impossible languages. It wouldn't And it wouldn't be ethical to raise a child on some new synthetic language I made up. But we could totally do that with a language model, right?"
+   "speaker": "Julie Kallini",
+   "text": "We can't sit a baby down and teach it impossible languages. It wouldn't And it wouldn't be ethical to raise a child on some new synthetic language I made up. But we could totally do that with a language model, right?"
   },
   {
    "t": 98,
-   "text": "Welcome to the Women in AI Research podcast, And I'm really excited to have you here with us today. So first of all, I'd like to start our conversation with something that I think anyone who is doing a PhD right now deals with in one way or another. It's about finding the right mentorship."
+   "speaker": "Jekaterina Novikova",
+   "text": "Welcome to the Women in AI Research podcast, And I'm really excited to have you here with us today. So first of all, I'd like to start our conversation with something that I think anyone who is doing a PhD right now deals with in one way or another. It's about finding the right mentorship. And you... are currently advised during your PhD by Chris Potts and Dan Jurafsky. My question would be, in your eyes, what makes an advisor a good one?"
   },
   {
-   "t": 125,
-   "text": "And you... are currently advised during your PhD by Chris Potts and Dan Jurafsky. My question would be, in your eyes, what makes an advisor a good one? Yes, thank you so much for having me. it was a pleasure to meet you at COLM as well. And it's a pleasure to be at the yeah, to be on your podcast. and I've really enjoyed seeing your previous guests. So I just feel like I'm very happy to be joining such a wonderful lineup of women."
-  },
-  {
-   "t": 160,
-   "text": "Yes, so thank you so much. so a little bit about me. yes, I'm Julie Kallini and I'm a fourth-year computer science PhD student at Stanford. My advisors, as you mentioned, are Chris Potts and Dan Jurafsky."
-  },
-  {
-   "t": 176,
-   "text": "And I think I could spend the whole podcast singing both Chris and Dan's praises because they're really great. I'm so grateful to have them both as advisors."
+   "t": 141,
+   "speaker": "Julie Kallini",
+   "text": "Yes, thank you so much for having me. it was a pleasure to meet you at COLM as well. And it's a pleasure to be at the yeah, to be on your podcast. and I've really enjoyed seeing your previous guests. So I just feel like I'm very happy to be joining such a wonderful lineup of women. Yes, so thank you so much. so a little bit about me. yes, I'm Julie Kallini and I'm a fourth-year computer science PhD student at Stanford. My advisors, as you mentioned, are Chris Potts and Dan Jurafsky. And I think I could spend the whole podcast singing both Chris and Dan's praises because they're really great. I'm so grateful to have them both as advisors."
   },
   {
    "t": 187,
-   "text": "And no doubt they're a huge reason why I've really enjoyed doing a PhD. But just so that, you know, we can wrap up the podcast on time, I'm going to only highlight a few things about what I love about both Dan and Chris."
-  },
-  {
-   "t": 200,
-   "text": "so I've actually worked with Chris Potts for longer than I've worked with Dan. at Stanford when you're admitted into the CS department, a faculty member indicates on your offer letter that they'd like to be your advisor. So for me that was Chris Potts. So I'm extremely grateful to him for changing my life because the PhD has been, you know it's really changed my life."
-  },
-  {
-   "t": 222,
-   "text": "and You know, Chris has this wonderful curiosity and ability to learn about almost any topic. if you go look at his list of students in his lab, he has students who work on a wide variety of topics."
+   "speaker": "Julie Kallini",
+   "text": "And no doubt they're a huge reason why I've really enjoyed doing a PhD. But just so that, you know, we can wrap up the podcast on time, I'm going to only highlight a few things about what I love about both Dan and Chris. so I've actually worked with Chris Potts for longer than I've worked with Dan. at Stanford when you're admitted into the CS department, a faculty member indicates on your offer letter that they'd like to be your advisor. So for me that was Chris Potts. So I'm extremely grateful to him for changing my life because the PhD has been, you know it's really changed my life. and You know, Chris has this wonderful curiosity and ability to learn about almost any topic. if you go look at his list of students in his lab, he has students who work on a wide variety of topics."
   },
   {
    "t": 236,
-   "text": "but he still follows each project like very closely and very carefully. So I've just been amazed by his expertise on so many different research areas. And that's really encouraged me to kind of explore different research areas rather than being siloed to just one area."
+   "speaker": "Julie Kallini",
+   "text": "But he still follows each project like very closely and very carefully. So I've just been amazed by his expertise on so many different research areas. And that's really encouraged me to kind of explore different research areas rather than being siloed to just one area. So in my PhD, I've been able to think about like computational linguistics questions, but also language model architectures, tokenization, efficient inference, and he's been really excited to advise all of those topics. My second advisor, Dan, he's also very he's wonderful and amazing. he also works on a wide range of range of topics. and I think he has this distinct ability to be able to frame research questions and think about the big picture."
   },
   {
-   "t": 253,
-   "text": "So in my PhD, I've been able to think about like computational linguistics questions, but also language model architectures, tokenization, efficient inference, and he's been really excited to advise all of those topics."
-  },
-  {
-   "t": 267,
-   "text": "My second advisor, Dan, he's also very he's wonderful and amazing. he also works on a wide range of range of topics. and I think he has this distinct ability to be able to frame research questions and think about the big picture. So for me, sometimes I can get stuck in the weeds and details of individual experiments, but he really knows how to kind of make sure that the overall problem is impactful and yeah, really think about the big picture. He also knows the like perfect advice to write the perfect abstract and intro and all of the all of the things that are making sure your papers phrase frame the problem. Clearly and show why it matters."
-  },
-  {
-   "t": 310,
-   "text": "Both Chris and Dan are like these lifelong learners, which I think is part of what makes them great professors and great academics. And they're very kind people, so they admit kind students. So my lab mates are my colleagues, not only my colleagues, but they're also my friends. So to kind of go back to your question about what advice I'd give to someone who's picking an advisor."
-  },
-  {
-   "t": 333,
-   "text": "I'd really say it's important to consider not only an advisor who's interested in the topics you work on,"
+   "t": 281,
+   "speaker": "Julie Kallini",
+   "text": "So for me, sometimes I can get stuck in the weeds and details of individual experiments, but he really knows how to kind of make sure that the overall problem is impactful and yeah, really think about the big picture. He also knows the like perfect advice to write the perfect abstract and intro and all of the all of the things that are making sure your papers phrase frame the problem. Clearly and show why it matters. Both Chris and Dan are like these lifelong learners, which I think is part of what makes them great professors and great academics. And they're very kind people, so they admit kind students. So my lab mates are my colleagues, not only my colleagues, but they're also my friends. So to kind of go back to your question about what advice I'd give to someone who's picking an advisor."
   },
   {
    "t": 341,
-   "text": "but can give you the feedback that's appropriate for you depending on your own needs and your own personality, and also who builds kind of a good community within their lab, which is what I've definitely found with both Dan and Chris. Yeah, that's interesting. It sounds from what you're saying that it's both the breadth of experience and the view, but it's also a structure at the same time is what is important. And you have both getting from those both people. And they also liked your advice that you should find that advisor who is giving the feedback that you need. The point is, when you're looking for the advisor, you only see the name, basically."
+   "speaker": "Julie Kallini",
+   "text": "I'd really say it's important to consider not only an advisor who's interested in the topics you work on, but can give you the feedback that's appropriate for you depending on your own needs and your own personality, and also who builds kind of a good community within their lab, which is what I've definitely found with both Dan and Chris."
   },
   {
-   "t": 392,
-   "text": "It's a rare case when you could have interacted with the person previously, right? before you go into a PhD program, you kind of you don't know the faculty personally, which was true in my case. I actually hadn't met Chris or Dan before I applied to the PhD program and I met them for the first time after I was admitted."
+   "t": 355,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's interesting. It sounds from what you're saying that it's both the breadth of experience and the view, but it's also a structure at the same time is what is important. And you have both getting from those both people. And they also liked your advice that you should find that advisor who is giving the feedback that you need. The point is, when you're looking for the advisor, you only see the name, basically. It's a rare case when you could have interacted with the person previously, right?"
   },
   {
-   "t": 416,
-   "text": "I'd say that usually the best way you can learn a bit about professors is through their students. So I did reach out to when I was making the decision process about which PhD program to join, I did talk to Chris's either former or current students to get a sense of like his advising style and his personality. people who know you from your papers might not know one interesting fact about you. The fact that at least I find interesting is that you also paint with the acrylics."
+   "t": 398,
+   "speaker": "Julie Kallini",
+   "text": "Before you go into a PhD program, you kind of you don't know the faculty personally, which was true in my case. I actually hadn't met Chris or Dan before I applied to the PhD program and I met them for the first time after I was admitted. I'd say that usually the best way you can learn a bit about professors is through their students. So I did reach out to when I was making the decision process about which PhD program to join, I did talk to Chris's either former or current students to get a sense of like his advising style and his personality."
   },
   {
-   "t": 454,
-   "text": "Can you Mm. share with me and all the listeners as well how painting"
+   "t": 439,
+   "speaker": "Jekaterina Novikova",
+   "text": "People who know you from your papers might not know one interesting fact about you. The fact that at least I find interesting is that you also paint with the acrylics. Can you Mm."
   },
   {
-   "t": 462,
-   "text": "became part of your life. that's such a fun question. Yes, so I actually put I I have an acrylic painting hobby and I've put a few of my acrylic paintings on my website. The same academic website that hosts my research also hosts my paintings."
+   "t": 460,
+   "speaker": "Jekaterina Novikova",
+   "text": "Share with me and all the listeners as well how painting became part of your life."
   },
   {
-   "t": 481,
-   "text": "so how did painting become a part of my life? Well, I really just enjoyed drawing when I was a kid. so I You know, maybe kids are outside running around. I used to just sit down and draw my favorite cartoon characters nonstop. So my mom still has several like three inch binders full of my drawings going back to when I was three or four years old."
+   "t": 464,
+   "speaker": "Julie Kallini",
+   "text": "That's such a fun question. Yes, so I actually put I I have an acrylic painting hobby and I've put a few of my acrylic paintings on my website. The same academic website that hosts my research also hosts my paintings. so how did painting become a part of my life? Well, I really just enjoyed drawing when I was a kid. so I You know, maybe kids are outside running around. I used to just sit down and draw my favorite cartoon characters nonstop. So my mom still has several like three inch binders full of my drawings going back to when I was three or four years old. Thanks. I n I never took any drawing, painting, or art classes."
   },
   {
-   "t": 506,
-   "text": "Thanks. I n I never took any drawing, painting, or art classes. but it's just always been something that I've loved to do. Around the time I was a teenager is when I first started to take up acrylic painting. so my mom bought me some canvases and some paints and I just started to paint. I usually paint either like portraits actors or like a famous actors or people and also still life paintings. So yeah, it's just something that I've always used to kind of unwind. Maybe I listen to a podcast while I paint as well. So I can listen back to your podcast while I'm while I'm painting next time. and I think it's just generally sorry, I-I-I-I- good to have a creative outlet."
+   "t": 510,
+   "speaker": "Julie Kallini",
+   "text": "But it's just always been something that I've loved to do. Around the time I was a teenager is when I first started to take up acrylic painting. so my mom bought me some canvases and some paints and I just started to paint. I usually paint either like portraits actors or like a famous actors or people and also still life paintings. So yeah, it's just something that I've always used to kind of unwind. Maybe I listen to a podcast while I paint as well. So I can listen back to your podcast while I'm while I'm painting next time. and I think it's just generally sorry, I-I-I-I- good to have a creative outlet. I think the PhD is also a creative thing."
   },
   {
-   "t": 554,
-   "text": "I think the PhD is also a creative thing. So yeah. Absolutely, So before your PhD, you spent nearly two years as a software engineer at Meta, right? Yes, that's right. How would you say this industry work compare with your experience of doing a PhD research? Yeah, that's a great question."
+   "t": 556,
+   "speaker": "Julie Kallini",
+   "text": "So yeah."
   },
   {
-   "t": 579,
-   "text": "so I think it might be useful to get a little bit of context on, you know, why I was a software engineer and why I eventually went on to do a PhD. Mm-hmm. so for context, I actually didn't plan to do a PhD while I was an undergrad. I was an undergraduate at Princeton. And as a computer science major, I was a computer science major, and the thing that Computer science majors did after they graduate was go on to be software engineers. Usually that's just the path we take."
+   "t": 559,
+   "speaker": "Jekaterina Novikova",
+   "text": "Absolutely, So before your PhD, you spent nearly two years as a software engineer at Meta, right? Yes, that's right. How would you say this industry work compare with your experience of doing a PhD research?"
   },
   {
-   "t": 613,
-   "text": "So that's what I had planned to do. right before my senior year started, I had gotten a full-time offer from Meta, and that was out what I was going to do."
+   "t": 577,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, that's a great question. so I think it might be useful to get a little bit of context on, you know, why I was a software engineer and why I eventually went on to do a PhD. Mm-hmm. so for context, I actually didn't plan to do a PhD while I was an undergrad. I was an undergraduate at Princeton. And as a computer science major, I was a computer science major, and the thing that Computer science majors did after they graduate was go on to be software engineers. Usually that's just the path we take. So that's what I had planned to do. right before my senior year started, I had gotten a full-time offer from Meta, and that was out what I was going to do."
   },
   {
    "t": 626,
-   "text": "but at the same time, the interesting thing about Princeton is that it's a tradition to do a senior thesis. Or do some large research project during your senior year."
+   "speaker": "Julie Kallini",
+   "text": "But at the same time, the interesting thing about Princeton is that it's a tradition to do a senior thesis. Or do some large research project during your senior year. So even though computer science majors are the only ones who are not required to do one, I still did one just to kind of keep with the Princeton tradition. And I worked with a wonderful computational linguist. Her name is Christiane Fellbaum. She's known for leading the WordNet project. And I really loved we worked on like something that was more of a kind of pure corpus linguistics research area. But I really enjoyed doing research with Christiana. And she was the one who kept telling me, like, Julie, you need to do a PhD."
   },
   {
-   "t": 638,
-   "text": "So even though computer science majors are the only ones who are not required to do one, I still did one just to kind of keep with the Princeton tradition."
+   "t": 676,
+   "speaker": "Julie Kallini",
+   "text": "And I really think she saw something in me, like that I had more of an academic inside me and kind of a potential to pursue like these bigger research questions. But I still went on to work at Meta. and When I was a software engineer, I really I did really value that experience. I was working more on like machine learning for the advertisements for Meta, which is, you know, one of the most impactful things in Meta in terms of driving the revenue for the company. it's just a very important part of how the company works. I do think that the difference between working as a there are differences between working as a software engineer at a company versus work working as a research scientist at a company."
   },
   {
-   "t": 648,
-   "text": "And I worked with a wonderful computational linguist. Her name is Christiane Fellbaum. She's known for leading the WordNet project."
+   "t": 721,
+   "speaker": "Julie Kallini",
+   "text": "So I can actually speak more to working as a research scientist at Meta maybe later during when we talk about one of one of the papers that came out of my recent internship. I was recently back at Meta as a research scientist intern. and that was a bit of a different experience from being a software engineer. Mm-hmm. but yeah, just to kind of speak on the general differences between industry and academia. I'd say like, especially now as people, you know, might be considering different career paths, the main variables in the research part. So to speak more about the research part, are how much like compute you have access to versus how much freedom you have to make your work open."
   },
   {
-   "t": 658,
-   "text": "And I really loved we worked on like something that was more of a kind of pure corpus linguistics research area. But I really enjoyed doing research with Christiana. And she was the one who kept telling me, like, Julie, you need to do a PhD. And I really think she saw something in me, like that I had more of an academic inside me and kind of a potential to pursue like these bigger research questions. But I still went on to work at Meta."
+   "t": 767,
+   "speaker": "Julie Kallini",
+   "text": "So these are going to be very individual factors and depend on an individual's specific goals. not only the individual person, but also what point you are in your career. There might be times where, you know, you you get to work on very exciting problems both in industry and academia. But do the problems you want to work on require tons of compute? that might be something to consider if you yeah, you might want to go to industry if you if you want to work on problems that can that need tons of compute. Or if your goal is more to create open research you might want to consider academia. but yeah."
   },
   {
-   "t": 690,
-   "text": "and When I was a software engineer, I really I did really value that experience. I was working more on like machine learning for the advertisements for Meta, which is, you know, one of the most impactful things in Meta in terms of driving the revenue for the company. it's just a very important part of how the company works. I do think that the difference between working as a there are differences between working as a software engineer at a company versus work working as a research scientist at a company. So I can actually speak more to working as a research scientist at Meta maybe later during when we talk about one of one of the papers that came out of my recent internship. I was recently back at Meta as a research scientist intern. and that was a bit of a different experience from being a software engineer."
+   "t": 812,
+   "speaker": "Jekaterina Novikova",
+   "text": "So what was your own motivation to go back to PhD after doing software engineering at Meta? Was it Yeah. the type of the problems or like the constraints or compute related questions, issues or Mm-hmm. anything else?"
   },
   {
-   "t": 739,
-   "text": "Mm-hmm. but yeah, just to kind of speak on the general differences between industry and academia."
+   "t": 830,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, so that's that's good. And that's why I should disentangle kind of working as a software engineer versus research at a company. I did feel like as a s as a software engineer, and I was working more on a product team, so like for the advertisements, you know, the the pace is very fast and it's very product facing. So you kind of have to deliver something. some new project every couple of months, right? And goals can change very quickly. I do feel like in a PhD or in a more of a research setting, you can have longer term goals and work on more open-ended and broader problems. And I think that those are the sorts of things that I really enjoyed while doing research."
   },
   {
-   "t": 749,
-   "text": "I'd say like, especially now as people, you know, might be considering different career paths, the main variables in the research part. So to speak more about the research part, are how much like compute you have access to versus how much freedom you have to make your work open. so these are going to be very individual factors and depend on an individual's specific goals."
-  },
-  {
-   "t": 775,
-   "text": "not only the individual person, but also what point you are in your career. There might be times where, you know, you you get to work on very exciting problems both in industry and academia. But do the problems you want to work on require tons of compute?"
-  },
-  {
-   "t": 791,
-   "text": "that might be something to consider if you yeah, you might want to go to industry if you if you want to work on problems that can that need tons of compute. Or if your goal is more to create open research you might want to consider academia."
-  },
-  {
-   "t": 806,
-   "text": "but yeah. So what was your own motivation to go back to PhD after doing software engineering at Meta?"
-  },
-  {
-   "t": 815,
-   "text": "Was it Yeah. the type of the problems or like the constraints or compute related questions, issues or Mm-hmm. anything else? Yeah, so that's that's good. And that's why I should disentangle kind of working as a software engineer versus research at a company. I did feel like as a s as a software engineer, and I was working more on a product team, so like for the advertisements,"
-  },
-  {
-   "t": 845,
-   "text": "you know, the the pace is very fast and it's very product facing. So you kind of have to deliver something. some new project every couple of months, right? And goals can change very quickly. I do feel like in a PhD or in a more of a research setting, you can have longer term goals and work on more open-ended and broader problems. And I think that those are the sorts of things that I really enjoyed while doing research. at least the the research that I did with Christiana, it was like, yeah, yeah, very broad open problem. I can spend a lot of time on it. and that's those are that's also reflective of the types of problems I'm able to pursue during my PhD. so yeah, I'd say that if you like to work on something for a very long time and it might not have the clearest answer right in front of you, a PhD might be the thing for you if you enjoy that sort of that sort of thing."
+   "t": 875,
+   "speaker": "Julie Kallini",
+   "text": "At least the the research that I did with Christiana, it was like, yeah, yeah, very broad open problem. I can spend a lot of time on it. and that's those are that's also reflective of the types of problems I'm able to pursue during my PhD. so yeah, I'd say that if you like to work on something for a very long time and it might not have the clearest answer right in front of you, a PhD might be the thing for you if you enjoy that sort of that sort of thing."
   },
   {
    "t": 911,
-   "text": "amazing. And I think that's exactly the place where I would like to turn to your research and all the big questions behind it. Because what you're doing right now, you are working on those more ambiguous problems with no clear answer."
+   "speaker": "Jekaterina Novikova",
+   "text": "Amazing. And I think that's exactly the place where I would like to turn to your research and all the big questions behind it. Because what you're doing right now, you are working on those more ambiguous problems with no clear answer. And my I wonder, as an introduction to what you're doing, I wanted to say that there is that ongoing debate about whether language models can teach us anything about how we as humans learn language."
   },
   {
-   "t": 936,
-   "text": "And my I wonder, as an introduction to what you're doing, I wanted to say that there is that ongoing debate about whether language models can teach us anything about how we as humans learn language. Where do you personally stand on that question? Yeah, I think this is an excellent question. It's a it's a huge question for our field. it's not only something that concerns people who work on AI or machine learning, but also linguists and cognitive scientists."
+   "t": 965,
+   "speaker": "Jekaterina Novikova",
+   "text": "Where do you personally stand on that question?"
   },
   {
-   "t": 985,
-   "text": "so yeah, this is something I've thought about a ton during my PhD. I'd first want to say I try not to or I think it's important not to overclaim what language models can tell us about human language learning. so I couldn't sit here and list all the ways that language models are not very much like humans at all. I think that sh that should be pretty clear. But it is remarkable that language models are like the only things other than humans that can learn and generate convincing human language."
+   "t": 970,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, I think this is an excellent question. It's a it's a huge question for our field. it's not only something that concerns people who work on AI or machine learning, but also linguists and cognitive scientists. so yeah, this is something I've thought about a ton during my PhD. I'd first want to say I try not to or I think it's important not to overclaim what language models can tell us about human language learning. so I couldn't sit here and list all the ways that language models are not very much like humans at all. I think that sh that should be pretty clear. But it is remarkable that language models are like the only things other than humans that can learn and generate convincing human language."
   },
   {
    "t": 1021,
-   "text": "and that's something that we've always taken to just be inherently unique to humans. There isn't any non-human animal that can use language or communicate in a similar way to us or quite like us. So in my view and the view of many other computational linguists, this is a real opportunity to be able to test claims about language acquisition and learning."
+   "speaker": "Julie Kallini",
+   "text": "And that's something that we've always taken to just be inherently unique to humans. There isn't any non-human animal that can use language or communicate in a similar way to us or quite like us. So in my view and the view of many other computational linguists, this is a real opportunity to be able to test claims about language acquisition and learning. This being the advent of language models and the success of language models at acquiring human language. So I think the yeah the most prominent question in linguistics that language models can come to bear on is something called the argument from the poverty of the stimulus."
   },
   {
-   "t": 1047,
-   "text": "This being the advent of language models and the success of language models at acquiring human language."
-  },
-  {
-   "t": 1056,
-   "text": "So I think the yeah the most prominent question in linguistics that language models can come to bear on is something called the argument from the poverty of the stimulus. So this is a question in linguistics. Mm-hmm. at a very high level, the argument is that knowledge of grammar or knowledge of language that children acquire is very limited. in the input, meaning children don't hear r that much language i in order to acquire in order to acquire language. So they've they have very limited language input."
-  },
-  {
-   "t": 1097,
-   "text": "And because of that, because children are able to learn language very well and very quickly, that would require substantial innate structure and learning biases in their in their brains or in or cognitive, you know, cognitive biases for that."
+   "t": 1070,
+   "speaker": "Julie Kallini",
+   "text": "So this is a question in linguistics. Mm-hmm. at a very high level, the argument is that knowledge of grammar or knowledge of language that children acquire is very limited. in the input, meaning children don't hear r that much language i in order to acquire in order to acquire language. So they've they have very limited language input. And because of that, because children are able to learn language very well and very quickly, that would require substantial innate structure and learning biases in their in their brains or in or cognitive, you know, cognitive biases for that."
   },
   {
    "t": 1115,
-   "text": "yet we have these language models that learn to generate fluent and convincing language without strong innate structures or learning biases. So they're they're very general learners. We don't hand engineer them, say, to follow the rules of English grammar, right? the Transformer, which is like the building block inside of all of these language models,"
+   "speaker": "Julie Kallini",
+   "text": "Yet we have these language models that learn to generate fluent and convincing language without strong innate structures or learning biases. So they're they're very general learners. We don't hand engineer them, say, to follow the rules of English grammar, right?"
   },
   {
-   "t": 1136,
-   "text": "is very it's a very general learner and basically all it does is like create these"
+   "t": 1137,
+   "speaker": "Julie Kallini",
+   "text": "The Transformer, which is like the building block inside of all of these language models, is very it's a very general learner and basically all it does is like create these vector representations of words using information from surrounding words and predict the next word given the previous words. And really just from this very general architecture and training objective, they can learn language very fluently. So I think that this has a lot to bear or this has huge like implications for the poverty of the stimulus argument and what parts of human language can be learned just from data alone without the innate structure. But of course there's like a lot of caveats. So language models consume way more data than any child."
   },
   {
-   "t": 1140,
-   "text": "vector representations of words using information from surrounding words and predict the next word given the previous words."
+   "t": 1178,
+   "speaker": "Julie Kallini",
+   "text": "So you know we really need to kind of you know make sure the claims are properly hedged, right? I think that there's Mm-hmm. a lot to be done on making smaller, more cog cognitively plausible models. So there's like work on this Or there's a data set called the BabyLM dataset, which is like a challenge in order to like design the best language model you can with like a small amount of data or data more that's more comparable to what a child would hear in the first like 10-ish years of their life. yeah, I think this is very cool. So I think just to summarize, language models ha can say a lot about questions of language acquisition. but we should just be careful to not say that they are acquiring language in exactly the same way as humans."
   },
   {
-   "t": 1149,
-   "text": "And really just from this very general architecture and training objective, they can learn language very fluently. So I think that this has a lot to bear or this has huge like implications for the poverty of the stimulus argument and what parts of human language can be learned just from data alone without the innate structure."
+   "t": 1228,
+   "speaker": "Julie Kallini",
+   "text": "I think they c they can be good about kind of generating hypotheses or testing hypotheses. Yeah."
   },
   {
-   "t": 1170,
-   "text": "But of course there's like a lot of caveats. So language models consume way more data than any child. So you know we really need to kind of you know make sure the claims are properly hedged, right? I think that there's Mm-hmm. a lot to be done on making smaller, more cog cognitively plausible models. So there's like work on this"
-  },
-  {
-   "t": 1195,
-   "text": "Or there's a data set called the BabyLM dataset, which is like a challenge in order to like design the best language model you can with like a small amount of data or data more that's more comparable to what a child would hear in the first like 10-ish years of their life."
-  },
-  {
-   "t": 1211,
-   "text": "yeah, I think this is very cool. So I think just to summarize, language models ha can say a lot about questions of language acquisition. but we should just be careful to not say that they are acquiring language in exactly the same way as humans. I think they c they can be good about kind of generating hypotheses or testing hypotheses."
-  },
-  {
-   "t": 1235,
-   "text": "Yeah. And in terms of testing hypothesis, I think your paper, which is called the \"Mission: Impossible Language Models\", was one of such works that were testing one of those possible hypothesis about what kind of language can be learned by language model as a model of human language. And this paper, won the best paper award at ACL 2024, where it was published, and also got quite a lot of attention even after the conference. in this paper, you, with co-authors, created some synthetic languages that break the rules of natural human language."
+   "t": 1236,
+   "speaker": "Jekaterina Novikova",
+   "text": "And in terms of testing hypothesis, I think your paper, which is called the \"Mission: Impossible Language Models\", was one of such works that were testing one of those possible hypothesis about what kind of language can be learned by language model as a model of human language. And this paper, won the best paper award at ACL 2024, where it was published, and also got quite a lot of attention even after the conference. in this paper, you, with co-authors, created some synthetic languages that break the rules of natural human language."
   },
   {
    "t": 1292,
-   "text": "and then train the language model, GPT-2 models on them. So could you walk us through what you were trying to find out in this work? Yes, so I'm happy to talk more about the Mission Impossible Language Models paper. So yeah, this work was motivated in part by a New York Times article that Noam Chomsky published. At this point, it's been a couple of years. I think it was in 2023."
+   "speaker": "Jekaterina Novikova",
+   "text": "And then train the language model, GPT-2 models on them. So could you walk us through what you were trying to find out in this work?"
   },
   {
-   "t": 1320,
-   "text": "so he and his co-authors argued that language models could learn possible and impossible human language equ languages equally well. so at a high level, what do we mean by ho possible versus impossible?"
+   "t": 1302,
+   "speaker": "Julie Kallini",
+   "text": "Yes, so I'm happy to talk more about the Mission Impossible Language Models paper. So yeah, this work was motivated in part by a New York Times article that Noam Chomsky published. At this point, it's been a couple of years. I think it was in 2023. so he and his co-authors argued that language models could learn possible and impossible human language equ languages equally well. so at a high level, what do we mean by ho possible versus impossible? according to where what we would take to be impossible would just be languages that have patterns that linguists hypothesize humans wouldn't be able to learn."
   },
   {
-   "t": 1338,
-   "text": "according to where what we would take to be impossible would just be languages that have patterns that linguists hypothesize humans wouldn't be able to learn. Like even if you gave a you sat a baby down and gave it tons the same amount of data, like expose it to the same language data in this impossible language. The baby wouldn't be able to acquire it, or would at least, you know, adapt or change that language in some way to make it resemble more of the patterns of possible human languages. And I'll talk a little bit more what about what those patterns are if we go into more experiment more details of the experiments a bit later. But at a high level, these are just languages that humans wouldn't be able to learn, no matter what you Mm-hmm. what you did. and"
+   "t": 1348,
+   "speaker": "Julie Kallini",
+   "text": "Like even if you gave a you sat a baby down and gave it tons the same amount of data, like expose it to the same language data in this impossible language. The baby wouldn't be able to acquire it, or would at least, you know, adapt or change that language in some way to make it resemble more of the patterns of possible human languages. And I'll talk a little bit more what about what those patterns are if we go into more experiment more details of the experiments a bit later. But at a high level, these are just languages that humans wouldn't be able to learn, no matter what you Mm-hmm. what you did. and Chomsky's argument wasn't that human language learning, or his argument was that human language learning is constrained in ways that language models aren't."
   },
   {
-   "t": 1386,
-   "text": "Chomsky's argument wasn't that human language learning, or his argument was that human language learning is constrained in ways that language models aren't. And therefore, you know, language basically he said that language models could learn almost any language. Therefore, they can't tell us anything about human language."
+   "t": 1397,
+   "speaker": "Julie Kallini",
+   "text": "And therefore, you know, language basically he said that language models could learn almost any language. Therefore, they can't tell us anything about human language. I'm not so sure I agree even with that implication, but what we decided to test was the first part of the of that claim where language models aren't constrained in the ways that they learn. We wanted to test that claim. You so kind of yeah, drawing on the previous question, we can test that c claim with language models. you know, we can't sit a baby down and teach it impossible languages. people do artificial language experiments with children, but those are like extremely limited."
   },
   {
-   "t": 1410,
-   "text": "I'm not so sure I agree even with that implication, but what we decided to test was the first part of the of that claim where"
-  },
-  {
-   "t": 1421,
-   "text": "language models aren't constrained in the ways that they learn. We wanted to test that claim. You so kind of yeah, drawing on the previous question, we can test that c claim with language models."
-  },
-  {
-   "t": 1434,
-   "text": "you know, we can't sit a baby down and teach it impossible languages. people do artificial language experiments with children, but those are like extremely limited. It wouldn't And it wouldn't be ethical to raise a child on some new synthetic language I made up. But we could totally do that with a language model, right? so in this paper,"
+   "t": 1443,
+   "speaker": "Julie Kallini",
+   "text": "It wouldn't And it wouldn't be ethical to raise a child on some new synthetic language I made up. But we could totally do that with a language model, right?"
   },
   {
    "t": 1456,
-   "text": "we took English text from that Baby LM dataset I mentioned. That's more it's a more cognitively plausible data set, so more along the lines of what a child might hear during their lifetime. And we just systematically kind of applied these"
+   "speaker": "Julie Kallini",
+   "text": "So in this paper, we took English text from that Baby LM dataset I mentioned. That's more it's a more cognitively plausible data set, so more along the lines of what a child might hear during their lifetime. And we just systematically kind of applied these Transformations to that data set to create these synthetic artificial languages with grammars that r resemble like impossible languages or languages that humans wouldn't be able to learn. And then we trained a bunch of small GPT-2 models from scratch on each version of this dataset in order to see whether the GPT-2 would learn the impossible language better than English as a control."
   },
   {
-   "t": 1474,
-   "text": "Transformations to that data set to create these synthetic artificial languages with grammars that r resemble like impossible languages or languages that humans wouldn't be able to learn. And then we trained a bunch of small GPT-2 models from scratch on each version of this dataset in order to see whether"
+   "t": 1510,
+   "speaker": "Julie Kallini",
+   "text": "So so English is our control, train on the natural language. But not only how not only whether it learned the languages, but also how well it learned and how quickly it learned each language. And generally what we found was the models could learn natural language. For us that was just English, the unchanged BabyLM data set more easily. they could learn they can, you know, they can learn some of the unnatural languages too, but it wasn't learned as easily or as readily if we look at things like loss over training steps or perplexity over training steps. yeah, if you'd like I could talk more about the experiments or yeah."
   },
   {
-   "t": 1502,
-   "text": "whether the GPT-2 would learn the impossible language better than English as a control. So so English is our control, train on the natural language. But not only how not only whether it learned the languages, but also how well it learned and how quickly it learned each language. And generally what we found was the models could learn natural language. For us that was just English, the unchanged BabyLM data set more easily."
-  },
-  {
-   "t": 1534,
-   "text": "they could learn they can, you know, they can learn some of the unnatural languages too, but it wasn't learned as easily or as readily if we look at things like loss over training steps or perplexity over training steps."
-  },
-  {
-   "t": 1552,
-   "text": "yeah, if you'd like I could talk more about the experiments or yeah. Yeah, let's talk a little bit more about that. for example, for those listeners who haven't read your paper yet,"
-  },
-  {
-   "t": 1568,
-   "text": "can you give an example of one of your impossible languages? for example, what would be a simple English sentence, how it would look like after you transform it into an impossible language."
+   "t": 1555,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, let's talk a little bit more about that. for example, for those listeners who haven't read your paper yet, can you give an example of one of your impossible languages? for example, what would be a simple English sentence, how it would look like after you transform it into an impossible language."
   },
   {
    "t": 1584,
-   "text": "Yeah, yeah, absolutely. so I think one of the weirder languages that we have, we call it like the Hop languages, but basically in English verbs have this marker for tense or agreement with the subject. So the example that I give in the paper is like he cleans his messy bookshelf or his very messy bookshelf. Like the S in cleans is kind of what marks that he is like a singular subject, and the verb has to agree with it."
+   "speaker": "Julie Kallini",
+   "text": "Yeah, yeah, absolutely. so I think one of the weirder languages that we have, we call it like the Hop languages, but basically in English verbs have this marker for tense or agreement with the subject. So the example that I give in the paper is like he cleans his messy bookshelf or his very messy bookshelf. Like the S in cleans is kind of what marks that he is like a singular subject, and the verb has to agree with it. a very simple rule that you could a very simple way you could create a different rule that's you know equally expressive, meaning it expresses the same kind of subject-verb agreement, but in a way that a human wouldn't be able to acquire is if like this s that marks you know the agreement with the subject just appeared like four words later."
   },
   {
-   "t": 1622,
-   "text": "a very simple rule that you could a very simple way you could create a different rule that's you know equally expressive, meaning it expresses the same kind of subject-verb agreement,"
+   "t": 1649,
+   "speaker": "Julie Kallini",
+   "text": "This is very simple. It's just you count four words later and you kind of deposit that's that suffix on whatever the fourth word later is."
   },
   {
-   "t": 1638,
-   "text": "but in a way that a human wouldn't be able to acquire is if like this s that marks you know the agreement with the subject just appeared like four words later. This is very simple. It's just you count four words later and you kind of deposit that's that suffix on whatever the fourth word later is."
+   "t": 1664,
+   "speaker": "Julie Kallini",
+   "text": "So this is actually like it actually there was a follow-up paper to our paper. I think it's Someya et al. I met him, but I didn't I'm hoping I pronounced his name correctly. who kind of like characterizes the entropy of all of our languages. So all of like we kind of state this in the paper implicitly, but didn't didn't do it outright. All of our languages actually preserve all of our languages barring one of them, which is the complete non-deterministic shuffling languages. All of them preserve the entropy, global entropy of the original English text. They also pr preserve like the next symbol entropy."
   },
   {
-   "t": 1662,
-   "text": "So this is actually like it actually there was a follow-up paper"
-  },
-  {
-   "t": 1668,
-   "text": "to our paper. I think it's Someya et al. I met him, but I didn't I'm hoping I pronounced his name correctly. who kind of like characterizes the entropy of all of our languages. So all of like we kind of state this in the paper implicitly, but didn't didn't do it outright. All of our languages actually preserve all of our languages barring one of them, which is the complete non-deterministic shuffling languages."
-  },
-  {
-   "t": 1700,
-   "text": "All of them preserve the entropy, global entropy of the original English text. They also pr preserve like the next symbol entropy. So this is basically just a measure of like how uncertain the model would be to predict the next symbol. So the text itself is inherently not more chaotic than Mm-hmm. the original English text, at least from"
-  },
-  {
-   "t": 1729,
-   "text": "information theory perspective. so t kind of to go back to the sentence that I stated, like the example I gave with marker for words later, this is like you know, completely preserves the same information of the original English text, but it's something that a human wouldn't be able to learn."
-  },
-  {
-   "t": 1749,
-   "text": "we just don't kind of have rules that involve counting like that. and this is kind of Mm-hmm. r kind of robustly described in I guess theor theoretical linguistics literature."
+   "t": 1712,
+   "speaker": "Julie Kallini",
+   "text": "So this is basically just a measure of like how uncertain the model would be to predict the next symbol. So the text itself is inherently not more chaotic than Mm-hmm. the original English text, at least from information theory perspective. so t kind of to go back to the sentence that I stated, like the example I gave with marker for words later, this is like you know, completely preserves the same information of the original English text, but it's something that a human wouldn't be able to learn. we just don't kind of have rules that involve counting like that. and this is kind of r kind of robustly described in I guess theor theoretical linguistics literature."
   },
   {
    "t": 1763,
-   "text": "Yeah. Right. given what you describe in your paper, you had multiple ways to create these different types of impossible languages. How did you decide where each language sits in that impossibility spectrum? Yeah, that's a great question as well."
+   "speaker": "Julie Kallini",
+   "text": "Yeah."
   },
   {
-   "t": 1790,
-   "text": "so something I should be clear about that I think I didn't say explicitly previously is that linguists don't actually have an agreed upon definition of impossible versus possible. so that's why we present a continuum. I think if we had an answer Mm-hmm. to that question, we would have solved basically all of linguistics."
+   "t": 1764,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. given what you describe in your paper, you had multiple ways to create these different types of impossible languages. How did you decide where each language sits in that impossibility spectrum?"
   },
   {
-   "t": 1811,
-   "text": "you if you could be able to describe exactly what makes a language a human language or not. And when we were c kind of putting this paper together,"
+   "t": 1786,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, that's a great question as well. so something I should be clear about that I think I didn't say explicitly previously is that linguists don't actually have an agreed upon definition of impossible versus possible. so that's why we present a continuum. I think if we had an answer Mm-hmm. to that question, we would have solved basically all of linguistics. you if you could be able to describe exactly what makes a language a human language or not."
   },
   {
-   "t": 1826,
-   "text": "mainly that continuum was kind of a way to structure or categorize the different types of transformations we were trying to study, transformations on the English data, and you know, how much structure it preserves, whether it keeps information and the text close together, which is actually a very important property of natural language. It's that words that are predictive of each other tend to be close together in like the order in the sentence. This is called information locality. in general we like to keep the things that are very related to each other close together. So if you have a long something long that's going to come after take, you we tend to like to put out right after take."
+   "t": 1825,
+   "speaker": "Julie Kallini",
+   "text": "And when we were c kind of putting this paper together, mainly that continuum was kind of a way to structure or categorize the different types of transformations we were trying to study, transformations on the English data, and you know, how much structure it preserves, whether it keeps information and the text close together, which is actually a very important property of natural language. It's that words that are predictive of each other tend to be close together in like the order in the sentence. This is called information locality. in general we like to keep the things that are very related to each other close together. So if you have a long something long that's going to come after take, you we tend to like to put out right after take."
   },
   {
    "t": 1872,
+   "speaker": "Julie Kallini",
    "text": "So we'll say take out the trash that was very smelly and full of garbage, something like this, rather than Mm-hmm. say take the trash that was smelly and very full of garbage out, which is a little bit weirder. So this is information locality. The words that are predictive of each other like to be close together. Mm-hmm. also we just kind of especially with the example I gave previously about the verb conjugations, we also just kind of looked at linguistics literature and were inspired by, you know what sorts of things from theoretical linguistics have been said to be possible or impossible. So things like the counting pattern that I mentioned is something that kind of linguists I think It would be uncontroversial to say that's impossible."
   },
   {
    "t": 1922,
-   "text": "yeah. Yeah, what I'm also curious about is your impossible languages are transformations out of the normal possible English language, Have you maybe thought about creating impossible language from scratch rather than transforming natural language into impossible? Yeah, that's a that's a great excellent that's an excellent question."
+   "speaker": "Julie Kallini",
+   "text": "Yeah."
   },
   {
-   "t": 1952,
-   "text": "so yeah, I think that w at the time we had considered like let's say designing something like"
+   "t": 1924,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, what I'm also curious about is your impossible languages are transformations out of the normal possible English language, Have you maybe thought about creating impossible language from scratch rather than transforming natural language into impossible?"
   },
   {
-   "t": 1963,
-   "text": "context-free grammar. so maybe I I don't know if I should explain the details of context-free grammar, but this is basically like a generator, it can help you generate certain strings that follow a structure that I've kind of predefined. You know, you we could have designed synthetic languages from scratch. At the time, the reason why we went t we focused on transformations from English is number one, like we could do the sort of pre-training"
+   "t": 1947,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, that's a that's a great excellent that's an excellent question. so yeah, I think that w at the time we had considered like let's say designing something like context-free grammar. so maybe I I don't know if I should explain the details of context-free grammar, but this is basically like a generator, it can help you generate certain strings that follow a structure that I've kind of predefined. You know, you we could have designed synthetic languages from scratch. At the time, the reason why we went t we focused on transformations from English is number one, like we could do the sort of pre-training That could get you to train something like a GPT-2 and be able to generate fluent language, which you could you wouldn't"
   },
   {
-   "t": 2002,
-   "text": "That could get you to train something like a GPT-2 and be able to generate fluent language, which you could you wouldn't necessarily be able to do with"
+   "t": 2010,
+   "speaker": "Julie Kallini",
+   "text": "Necessarily be able to do with some very small set of like s if i let's say I tried to design like a small synthetic set of synthetic data of my impossible language. maybe you know p i it's something that lots of people research. It's like training very small models on kind of very synthetic or toy data. but we wanted to do something that's a little bit l larger scale. It's not super huge scale, but we could at least train s GPT-2 Small on that corpora. it also kind of allowed us to ch just tweak one thing about a about natural language and see what that effect would be."
   },
   {
-   "t": 2013,
-   "text": "some very small set of like s if i let's say I tried to design like a small synthetic set of synthetic data of my impossible language."
+   "t": 2057,
+   "speaker": "Julie Kallini",
+   "text": "It might be hard for us to design a synthetic language that is natural in every way, except for one thing that we want to change. whereas with this setup we were able to do that in a very controlled way. but there has been follow-up work that kind of does the same sorts of experiments that we've done, but trying to do yeah, more con more s like smaller, yeah, smaller synthetic languages. Like for instance the paper that I mentioned before, the Someya et al. paper, did use like probabilistic context-free grammars to generate languages with different structures, and I thought that was very cool. and I'm sure there's more there's more work that I don't have off the top of my head that does experiments of that sort."
   },
   {
-   "t": 2028,
-   "text": "maybe you know p i it's something that lots of people research. It's like training very small models on kind of very synthetic or toy data. but we wanted to do something that's a little bit l larger scale. It's not super huge scale, but we could at least train s GPT-2 Small on that corpora. it also kind of allowed us to ch just tweak one thing about a about natural language and see what that effect would be. Mm-hmm. it might be hard for us to design a synthetic language that is natural in every way, except for one thing that we want to change."
+   "t": 2108,
+   "speaker": "Julie Kallini",
+   "text": "I think there yeah. Yes."
   },
   {
-   "t": 2067,
-   "text": "whereas with this setup we were able to do that in a very controlled way. but there has been follow-up work that kind of does the same sorts of experiments that we've done, but trying to do yeah, more con more s like smaller,"
+   "t": 2110,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. that work on impossible language models that we have discussed so far, it was about which languages models can learn. But later, your research focus kind of moved a little bit away from that. towards the topic of tokenization or like how models read text. How did you get from one question to the other?"
   },
   {
-   "t": 2084,
-   "text": "yeah, smaller synthetic languages. Like for instance the paper that I mentioned before, the Someya et al. paper, did use like probabilistic context-free grammars to generate languages with different structures, and I thought that was very cool."
+   "t": 2142,
+   "speaker": "Julie Kallini",
+   "text": "That's a that's a great question. so I was actually rotating during my first year, I was rotating with both Chris Potts and Dan Jurafsky, who, you know, would eventually be both of my advisors. and at the time I kind of was working on an interpretability project of character level models. So these are models that take in one character at a time or one byte at a time rather than entire words at a time. Most language models take in tokens which correspond to words or part of words. But these character models these character and byte level models will take in yeah, the individual letters at a time."
   },
   {
-   "t": 2100,
-   "text": "and I'm sure there's more there's more work that I don't have off the top of my head that does experiments of that sort. I think there yeah. Yes. Right."
-  },
-  {
-   "t": 2113,
-   "text": "that work on impossible language models that we have discussed so far, it was about which languages models can learn. But later, your research focus kind of moved a little bit away from that. towards the topic of tokenization or like how models read text."
-  },
-  {
-   "t": 2138,
-   "text": "How did you get from one question to the other? that's a that's a great question. so I was actually rotating during my first year, I was rotating with both Chris Potts and Dan Jurafsky, who, you know, would eventually be both of my advisors."
-  },
-  {
-   "t": 2163,
-   "text": "and at the time I kind of was working on an interpretability project of character level models. So these are models that take in one character at a time or one byte at a time rather than entire words at a time. Most language models take in tokens which correspond to words or part of words. But these character models these character and byte level models will take in yeah, the individual letters at a time. So each token is a letter. And I was doing some interpretability work on these models. But eventually I think it was maybe Chris"
+   "t": 2190,
+   "speaker": "Julie Kallini",
+   "text": "So each token is a letter. And I was doing some interpretability work on these models."
   },
   {
    "t": 2200,
-   "text": "Who suggested, why don't you actually, you know, there were so few models at the time working just at the character level. He's like, why don't you just work on making these better?"
+   "speaker": "Julie Kallini",
+   "text": "But eventually I think it was maybe Chris Who suggested, why don't you actually, you know, there were so few models at the time working just at the character level. He's like, why don't you just work on making these better? Mm-hmm. so this is where I got into the space of working on what are called byte level or tokenizer-free models, and at the same time, just working on tokenization in general. And I think that also tokenization is one of those things that still has like a touch of linguistics in it, but still lots of engineering implications. I like to think about what's the best way to kind of split up text into words."
   },
   {
-   "t": 2210,
-   "text": "Mm-hmm. so this is where I got into the space of working on what are called byte level or tokenizer-free models, and at the same time, just working on tokenization in general."
-  },
-  {
-   "t": 2225,
-   "text": "Mm-hmm. And I think that also tokenization is one of those things that still has like a touch of linguistics in it, but still lots of engineering implications."
-  },
-  {
-   "t": 2236,
-   "text": "I like to think about what's the best way to kind of split up text into words. It's it feels like a almost a linguistics question. although I will completely admit that a lot of the methods don't involve linguistics anymore. Some of them do, but I just felt like it yeah, it felt close to home while still having large engineering implications and yeah, that's why I enjoyed it or I enjoy it to this day."
+   "t": 2242,
+   "speaker": "Julie Kallini",
+   "text": "It's it feels like a almost a linguistics question. although I will completely admit that a lot of the methods don't involve linguistics anymore. Some of them do, but I just felt like it yeah, it felt close to home while still having large engineering implications and yeah, that's why I enjoyed it or I enjoy it to this day."
   },
   {
    "t": 2268,
-   "text": "I like that distinction between a linguistic approach and the engineering approach to tokenization. I personally always, like not always, but primarily look at that as an engineering decision"
+   "speaker": "Jekaterina Novikova",
+   "text": "I like that distinction between a linguistic approach and the engineering approach to tokenization. I personally always, like not always, but primarily look at that as an engineering decision because it's like tokenization is not only done with the language, it is done... with images and other types of data as well, Right. But yeah, it's interesting that you mentioned the linguistic view as well here. And also you have also mentioned that today almost every language model basically uses subword tokens, right?"
   },
   {
-   "t": 2286,
-   "text": "because it's like tokenization is not only done with the language, it is done... with images and other types of data as well, Right. But yeah, it's interesting that you mentioned the linguistic view"
+   "t": 2320,
+   "speaker": "Jekaterina Novikova",
+   "text": "Word or subword. tokens when it comes to preparing text for training. What is your take on the costs and benefits of this choice, the subword tokenization?"
   },
   {
-   "t": 2306,
-   "text": "as well here. And also you have also mentioned that today almost every language model basically uses subword tokens, right? Word or subword. tokens when it comes to preparing text for training."
+   "t": 2334,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, absolutely. I do think that tokenization is an often overlooked part of a language model, but it's so fundamental to how the language model will learn and how it will process text. so first, you know, tokenizing text can be seen as a form of compression. We take a byte sequence or a text sequence, chunk it into subword tokens, and then those tokens are the Are what we pass into the language model. So having a more or less compressive tokenizer will then influence the model's compute. So a more compressive tokenizer means a model will spend more compute per string."
   },
   {
-   "t": 2328,
-   "text": "What is your take on the costs and benefits of this choice, the subword tokenization? Yeah, absolutely. I do think that tokenization is an often overlooked part of a language model, but it's so fundamental to how the language model will learn and how it will process text. so first, you know, tokenizing text can be seen as a form of compression. We take a byte sequence or a text sequence, chunk it into subword tokens, and then those tokens are the"
+   "t": 2380,
+   "speaker": "Julie Kallini",
+   "text": "If you do more compression, that means you get, you know, each token packs in a lot more characters. So you get fewer overall tokens for a string. And that means less compute the model is spending per string. But for a less compressive tokenizer, let's say at the other extreme we do no compression, we just pass in individual characters, like I was mentioning before, that model will spend much more compute per string. So tokenization directly ties to the model's compute. It also ties to the model's vocabulary. A more compressive tokenizer will generally have a larger vocabulary. because it represents longer spans of text as a single token."
   },
   {
-   "t": 2364,
-   "text": "Are what we pass into the language model. So having a more or less compressive tokenizer will then influence the model's compute. So a more compressive tokenizer means a model will spend more compute per string. If you do more compression, that means you get, you know, each token packs in a lot more characters. So you get fewer overall tokens for a string. And that means less compute the model is spending per string."
+   "t": 2429,
+   "speaker": "Julie Kallini",
+   "text": "In turn, this will influence how big the model's embedding matrix is. So it will affect the model's overall parameter count. I think the crucial thing is to keep in mind is that all of these factors are decided before the language model is even trained. So the tokenizer is trained separately from the main language model. And you know, the so first you'll train your tokenizer and then you'll pre-train your language model once you've determined the tokenizer's vocabulary. And because the models are not trained to see They they don't have like direct access to the characters within the text, at least if it's using a subword tokenizer. this could create some like weird and undesirable model behaviors."
   },
   {
-   "t": 2396,
-   "text": "But for a less compressive tokenizer, let's say at the other extreme we do no compression, we just pass in individual characters, like I was mentioning before, that model will spend much more compute per string."
-  },
-  {
-   "t": 2411,
-   "text": "So tokenization directly ties to the model's compute. It also ties to the model's vocabulary. A more compressive tokenizer will generally have a larger vocabulary."
-  },
-  {
-   "t": 2423,
-   "text": "because it represents longer spans of text as a single token. In turn, this will influence how big the model's embedding matrix is. So it will affect the model's overall parameter count. I think the crucial thing is to keep in mind is that all of these factors are decided before the language model is even trained. So the tokenizer is trained separately from the main language model."
-  },
-  {
-   "t": 2450,
-   "text": "And you know, the so first you'll train your tokenizer and then you'll pre-train your language model once you've determined the tokenizer's vocabulary. And because the models are not trained to see They they don't have like direct access to the characters within the text, at least if it's using a subword tokenizer. this could create some like weird and undesirable model behaviors. So the example I like to use a couple years back, you might remember, is like when ChatGPT didn't know how many R's are in Strawberry."
-  },
-  {
-   "t": 2488,
-   "text": "Mm-hmm."
+   "t": 2479,
+   "speaker": "Julie Kallini",
+   "text": "So the example I like to use a couple years back, you might remember, is like when ChatGPT didn't know how many R's are in Strawberry."
   },
   {
    "t": 2489,
-   "text": "like there are a lot of factors that go into why, you know. of course there are a lot of factors that go into why ChatGPT would think that it only has two R's. but at the same time, like I think it's tokenization has like a strong effect there because you know"
-  },
-  {
-   "t": 2509,
-   "text": "ChatGPT will see strawberry as like token number, I don't know, five thousand, whatever, right? It's not gonna know that in d inside strawberry there are these three R's. It has to learn it implicitly."
-  },
-  {
-   "t": 2521,
-   "text": "so that's one weird thing about tokenization. You don't have access to the characters that make up the units, make up the tokens. you know, changing one character could the if you insert a typo, you could just s make a word be tokenized into a completely different set of tokens, which will then, you know, influence compute and things that I mentioned before."
+   "speaker": "Julie Kallini",
+   "text": "Mm-hmm. like there are a lot of factors that go into why, you know. of course there are a lot of factors that go into why ChatGPT would think that it only has two R's. but at the same time, like I think it's tokenization has like a strong effect there because you know ChatGPT will see strawberry as like token number, I don't know, five thousand, whatever, right? It's not gonna know that in d inside strawberry there are these three R's. It has to learn it implicitly. so that's one weird thing about tokenization. You don't have access to the characters that make up the units, make up the tokens. you know, changing one character could the if you insert a typo, you could just s make a word be tokenized into a completely different set of tokens, which will then, you know, influence compute and things that I mentioned before."
   },
   {
    "t": 2544,
-   "text": "and then also like tokenization can just be bad for different languages. so I actually when I was teaching Stanford's natural language processing course, I I taught a lecture on tokenization and I gave this example of English and Thai text. Like you know, the same English sentence translated into Thai will just take up like twice as many tokens or so,"
+   "speaker": "Julie Kallini",
+   "text": "And then also like tokenization can just be bad for different languages. so I actually when I was teaching Stanford's natural language processing course, I I taught a lecture on tokenization and I gave this example of English and Thai text. Like you know, the same English sentence translated into Thai will just take up like twice as many tokens or so, just by virtue of how Thai text is tokenized. So this can cause users of different languages to be charged for different amounts purely just because their language takes up more tokens. Yeah."
   },
   {
-   "t": 2573,
-   "text": "just by virtue of how Thai text is tokenized. So this can cause users of different languages to be charged for different amounts"
+   "t": 2587,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's super interesting. Very nice example. So there are all those different problems that can and need to be solved when it comes to tokenization. Let's speak about your paper MrT5, Dynamic Token Merging for Efficient Byte Level Language Models. Can you walk us through what kind of model, what problem, sorry, not model, what problem you're trying to solve in this paper."
   },
   {
-   "t": 2584,
-   "text": "purely just because their language takes up more tokens. Yeah. That's super interesting. Very nice example. So there are all those different problems that can and need to be solved when it comes to tokenization. Let's speak about your paper MrT5, Dynamic Token Merging for Efficient Byte Level Language Models."
+   "t": 2623,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, absolutely. happy to. so yes, so this MrT5, we actually call it Mr. T5. Mr. T is like an American actor from the 80s. and I think both me and my advisor Chris were like very excited to have him kind of called out in the name of the this paper. but it's generally supposed to represent like merge T5 because we're kind of doing this merging of sequences with inside the model. I'll I'll I'll explain what I mean by this in a bit. But yeah, I was motivated to work on this project. I actually mentioned a bit of the origin a couple minutes ago when I was describing how like we had just decided to stop, you know, we're not going to do interpretability on the existing byte level models."
   },
   {
-   "t": 2612,
-   "text": "Can you walk us through what kind of model, what problem, sorry, not model, what problem you're trying to solve in this paper. Yeah, absolutely. happy to. so yes, so this MrT5, we actually call it Mr. T5. Mr. T is like an American actor from the 80s."
+   "t": 2679,
+   "speaker": "Julie Kallini",
+   "text": "At the time there was really There were a few, but you know, the main ones were ByT5 and CANINE. CANINE was like Google's, both of them are Google's byte level models. and the main like ByT5 was very competitive with its T5 like the subword model that it's is like its corresponding subword model. very competitive in terms of performance, but the main issue is compute. because it's processing entire byte sequences on average. a subword token is four bytes. So if you're processing each byte as one token, you will have four times the sequence will be four times as long on average. so we kind of just said, why don't we make a better or more efficient byte level model?"
   },
   {
-   "t": 2637,
-   "text": "and I think both me and my advisor Chris were like very excited to have him kind of called out in the name of the this paper. but it's generally supposed to represent like merge T5 because we're kind of doing this merging of sequences with inside the model. I'll I'll I'll explain what I mean by this in a bit."
+   "t": 2730,
+   "speaker": "Julie Kallini",
+   "text": "And yeah, our motivation was, you know, could we take ByT5, which is already a very, you know. a competitive byte level encoder decoder model and see if we can make it more efficient. So it this was addressing mainly the compute the compute cost of operating ByT5. So the way MrT5 works is the MrT5 learns via a gate, like a how to like which bytes are relevant To be processed by the majority of transformer layers and which bytes can be kind of be pruned or deleted. And then it can kind of merge the bytes that are relevant into a shorter sequence."
   },
   {
-   "t": 2661,
-   "text": "But yeah, I was motivated to work on this project. I actually mentioned a bit of the origin a couple minutes ago when I was describing how like we had just decided to stop, you know, we're not going to do interpretability on the existing byte level models. At the time there was really There were a few, but you know, the main ones were ByT5 and CANINE. CANINE was like Google's, both of them are Google's byte level models."
+   "t": 2776,
+   "speaker": "Julie Kallini",
+   "text": "So that's where the name comes from."
   },
   {
-   "t": 2692,
-   "text": "and the main like ByT5 was very competitive with its T5 like the subword model that it's is like its corresponding subword model."
+   "t": 2786,
+   "speaker": "Julie Kallini",
+   "text": "So yeah, ByT5 has this, you have your transformer encoder. after the few first few encoder layers, the bytes are contextualized, meaning they've kind of seen. they've gathered information from each other via the attention mechanism in the transformer, which kind of creates this mixing this mixing effect. at just a couple of layers, we put our MrT5 gate that learns what bytes can be dropped and what can be kept, making the sequence much shorter for the remaining process of the encoder. And that's that's the architecture at a high level."
   },
   {
-   "t": 2704,
-   "text": "very competitive in terms of performance, but the main issue is compute. because it's processing entire byte sequences on average."
+   "t": 2827,
+   "speaker": "Julie Kallini",
+   "text": "And in our Main experiments we could like roughly half the sequence length just after a few layers, which could substantially in reduce the inference runtime. And it only has a relatively small increase in the loss compared to ByT5. And this is all done with minimal continued pre-training, meaning we took the pre-trained ByT5 and just kind of trained it to do this pruning. in a very few number of gradient steps of continued pre-training. So it's not like we pre-trained a whole model from scratch. I think that would be very interesting, but we at the time we didn't have the ability to kind of pre-train an entire MrT5 from scratch."
   },
   {
-   "t": 2713,
-   "text": "a subword token is four bytes. So if you're processing each byte as one token, you will have four times the sequence will be four times as long on average."
-  },
-  {
-   "t": 2723,
-   "text": "so we kind of just said, why don't we make a better or more efficient byte level model? and yeah, our motivation was, you know, could we take ByT5, which is already a very, you know. a competitive byte level encoder decoder model and see if we can make it more efficient. So it this was addressing mainly the compute the compute cost of operating ByT5. So the way MrT5 works is the MrT5 learns via a gate, like a how to like which bytes are relevant"
-  },
-  {
-   "t": 2766,
-   "text": "To be processed by the majority of transformer layers and which bytes can be kind of be pruned or deleted. And then it can kind of merge the bytes that are relevant into a shorter sequence. So that's where the name comes from. So yeah, ByT5 has this, you have your transformer encoder."
-  },
-  {
-   "t": 2787,
-   "text": "after the few first few encoder layers, the bytes are contextualized, meaning they've kind of seen. they've gathered information from each other via the attention mechanism in the transformer, which kind of creates this mixing this mixing effect. at just a couple of layers, we put our MrT5 gate that learns what bytes can be dropped and what can be kept,"
-  },
-  {
-   "t": 2817,
-   "text": "making the sequence much shorter for the remaining process of the encoder. And that's that's the architecture at a high level. and in our Main experiments we could like roughly half the sequence length just after a few layers, which could substantially in reduce the inference runtime. And it only has a relatively small increase in the loss compared to ByT5. And this is all done with minimal continued pre-training, meaning we took the pre-trained ByT5 and just kind of trained it to do this pruning."
-  },
-  {
-   "t": 2858,
-   "text": "in a very few number of gradient steps of continued pre-training. So it's not like we pre-trained a whole model from scratch. I think that would be very interesting, but we at the time we didn't have the ability to kind of pre-train an entire MrT5 from scratch. It might be completely matched performance with ByT5 if you could. yeah so that's the that's the gist of the that project."
+   "t": 2875,
+   "speaker": "Julie Kallini",
+   "text": "It might be completely matched performance with ByT5 if you could. yeah so that's the that's the gist of the that project."
   },
   {
    "t": 2885,
-   "text": "Right, and you have mentioned briefly already that the decision about which tokens to merge or delete comes from that gate that is learned, not a fixed rule, not some fixed rule. Can you speak a little bit more about what's the efficiency gain and how exactly the model decides what to keep and what"
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and you have mentioned briefly already that the decision about which tokens to merge or delete comes from that gate that is learned, not a fixed rule, not some fixed rule. Can you speak a little bit more about what's the efficiency gain and how exactly the model decides what to keep and what can be removed safely."
   },
   {
-   "t": 2915,
-   "text": "can be removed safely. Yeah, yeah, I'm happy to talk more about that."
+   "t": 2919,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, yeah, I'm happy to talk more about that. so how the model learns to remove tokens safely is all done via balancing the normal task objective. So for us most of the time that is like the language modeling loss versus a loss on the gate that puts some pressure on the gate to remove tokens. So it's a balance between these two losses. And the and really that's the only sort of influence we give to the model to delete tokens. We have no like sort of supervision on like these are the sorts of tok these are the sorts of bytes you should delete. Like n none of that."
   },
   {
-   "t": 2923,
-   "text": "so how the model learns to remove tokens safely is all done via balancing the normal task objective. So for us most of the time that is like the language modeling loss versus a loss on the gate that puts some pressure on the gate to remove tokens. So it's a balance between these two losses. And the and really that's the only sort of influence we give to the model to delete tokens. We have no like sort of supervision on like these are the sorts of tok these are the sorts of bytes you should delete. Like n none of that. The model learns it all implicitly all implicitly. And it's just using it's very similar to like a linear layer, so line Yeah, a linear layer on the hidden states of the model."
+   "t": 2965,
+   "speaker": "Julie Kallini",
+   "text": "The model learns it all implicitly all implicitly. And it's just using it's very similar to like a linear layer, so line Yeah, a linear layer on the hidden states of the model. So after each transformer layer, you output it outputs a vector that's a new hidden state, a new contextualized representation for that token. And it's like a very simple very simple gate on that representation. And we actually designed some synthetic tasks to kind of check what the gate was learning."
   },
   {
-   "t": 2978,
-   "text": "So after each transformer layer, you output it outputs a vector that's a new hidden state, a new contextualized representation for that token."
+   "t": 3010,
+   "speaker": "Julie Kallini",
+   "text": "So these are very small synthetic tasks on small models to really kind of be able to see what the model would learn when we know what sort of merging or deletion rule is optimal. So, like for instance, we had these repeated patterns, like a translation task where there were repeated patterns, like every three consecutive characters, like A, B, C. always gets translated to the letter D, like something very simple, right? and the MrT model would learn that it could basically delete or remove positions B and C within the ABC sequence and still produce D with nearly with very high accuracy."
   },
   {
-   "t": 2989,
-   "text": "And it's like a very simple very simple gate on that representation. And we actually designed some synthetic tasks to kind of check what the gate was learning. Mm-hmm. So these are very small synthetic tasks on small models to really kind of be able"
+   "t": 3053,
+   "speaker": "Julie Kallini",
+   "text": "So it had learned that these three things, these three characters operate as a unit and this was an opportunity for compression. so those synthetic tasks were useful for kind of characterizing the model what the model can learn outside of like natural language data, which can be like more, you know, I guess more messy and less controlled. So yeah, we were able to kind of characterize that with synthetic tasks. and in terms of the efficiency gain, it's going to mainly come from putting you wanna put the gate as low as possible while still maintaining as much task performance as you can. So for us, that was like let's say I think it was a fourth of the way through the model's encoder. So the majority of the encoder is actually operating on a much shorter sequence."
   },
   {
-   "t": 3009,
-   "text": "to see what the model would learn when we know what sort of merging or deletion rule"
+   "t": 3101,
+   "speaker": "Julie Kallini",
+   "text": "So that's where the efficiency gain comes from. It's operating on a much shorter sequence for the majority of the transformer layers."
   },
   {
-   "t": 3016,
-   "text": "is optimal. So, like for instance, we had these repeated patterns, like a translation task where there were repeated patterns, like every three consecutive characters, like A, B, C. always gets translated to the letter D, like something very simple, right?"
-  },
-  {
-   "t": 3035,
-   "text": "and the MrT model would learn that it could basically delete or remove positions B and C within the ABC sequence and still produce D with nearly with very high accuracy. So it had learned that these three things, these three characters operate as a unit and this was an opportunity for compression."
-  },
-  {
-   "t": 3062,
-   "text": "so those synthetic tasks were useful for kind of characterizing the model what the model can learn outside of like natural language data, which can be like more, you know, I guess more messy and less controlled. So yeah, we were able to kind of characterize that with synthetic tasks."
-  },
-  {
-   "t": 3079,
-   "text": "and in terms of the efficiency gain, it's going to mainly come from putting you wanna put the gate as low as possible while still maintaining as much task performance as you can. So for us, that was like let's say I think it was a fourth of the way through the model's encoder. So the majority of the encoder is actually operating on a much shorter sequence. So that's where the efficiency gain comes from. It's operating on a much shorter sequence for the majority of the transformer layers. Absolutely, and byte-level models became way more popular"
-  },
-  {
-   "t": 3114,
-   "text": "in the research community because they now can match token-based models on quality without needing all that subword vocabulary and all the associated issues solving. How close you think"
-  },
-  {
-   "t": 3140,
-   "text": "they are to everyday use right now in your view? Not in the research community, but in the AI."
+   "t": 3108,
+   "speaker": "Jekaterina Novikova",
+   "text": "Absolutely, and byte-level models became way more popular in the research community because they now can match token-based models on quality without needing all that subword vocabulary and all the associated issues solving. How close you think they are to everyday use right now in your view? Not in the research community, but in the AI."
   },
   {
    "t": 3153,
-   "text": "Yeah, that's a great question. One of the bigger issues that I actually worked on during my internship at Meta,"
+   "speaker": "Julie Kallini",
+   "text": "Yeah, that's a great question."
   },
   {
-   "t": 3161,
-   "text": "so I joined the team behind the Byte Latent Transformer and worked on a follow-up to that is addressing the generation bottleneck. So let's say you have a model like MrT5 that does internal compression of the byte sequence. So it can you know, prune off bytes on the encoding side and process fewer bytes in the internal layers. at the decoder, w when it's still when it's generating, it still generates just one byte at a time."
+   "t": 3157,
+   "speaker": "Julie Kallini",
+   "text": "One of the bigger issues that I actually worked on during my internship at Meta, so I joined the team behind the Byte Latent Transformer and worked on a follow-up to that is addressing the generation bottleneck. So let's say you have a model like MrT5 that does internal compression of the byte sequence. So it can you know, prune off bytes on the encoding side and process fewer bytes in the internal layers. at the decoder, w when it's still when it's generating, it still generates just one byte at a time. And this is this can be very slow for inference, even if you have a model that's doing the majority of the compute on shorter sequences."
   },
   {
-   "t": 3192,
-   "text": "And this is this can be very slow for inference, even if you have a model that's doing the majority of the compute on shorter sequences. because actually when you're when you're doing auto regressive generation, so left to right generation,"
+   "t": 3202,
+   "speaker": "Julie Kallini",
+   "text": "Because actually when you're when you're doing auto regressive generation, so left to right generation, you this can create what's called like a memory bandwidth bottleneck because every time you generate a token you kind of have to load the model's parameters in memory. You have to load like the previous key value caches which are part of like a part of like the attention computation. You have to load those into memory. so yeah that could be a bottleneck. So I think a lot of it has to do I think a lot of the you know, what stands between byte level models and everyday use. It does have to do with efficiency and these engineering considerations."
   },
   {
-   "t": 3211,
-   "text": "you this can create what's called like a memory bandwidth bottleneck because every time you generate a token you kind of have to load the model's parameters in memory. You have to load like the previous key value caches which are part of like a part of like the attention computation. You have to load those into memory."
+   "t": 3248,
+   "speaker": "Julie Kallini",
+   "text": "And also the thing that I that I worked on at Meta was the generation bottleneck and memory bottleneck there."
   },
   {
-   "t": 3231,
-   "text": "so yeah that could be a bottleneck. So I think a lot of it has to do I think a lot of the you know, what stands between byte level models and everyday use. It does have to do with efficiency and these engineering considerations. And also the thing that I that I worked on at Meta was the generation bottleneck and memory bottleneck there. Right, and that's a great opportunity to speak a little bit about your paper, Fast Byte Latent Transformer that you already mentioned,"
+   "t": 3256,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and that's a great opportunity to speak a little bit about your paper, Fast Byte Latent Transformer that you already mentioned, where you just proposed several ways to speed up the BLT Byte Latent Transformer, the original version of that. Could you walk us through those three different methods that you have proposed?"
   },
   {
-   "t": 3270,
-   "text": "where you just proposed several ways to speed up the BLT Byte Latent Transformer, the original version of that."
+   "t": 3289,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, absolutely. I could talk a bit about where the also these ideas kind of came from. Or maybe first Mm-hmm. first I'll explain. Actually I'll first explain the different methods. So we I kind of tried a bunch of different things during my internship and put the things that worked well into one paper. so the main thing that I spent most of my internship working on was A new variant of the Byte Latent Transformer. Well, first I should give a an overview of the Byte Latent Transformer. It's another byte level model developed by Meta. It has like an encoder that processes byte sequences. It chunks them into these latent patches. So patch is the term that the BLT team uses for the kind of text segmentation that you that you get for BLT."
   },
   {
-   "t": 3283,
-   "text": "Could you walk us through those three different methods that you have proposed? Yeah, absolutely. I could talk a bit about where the also these ideas kind of came from. Or maybe first Mm-hmm. first I'll explain. Actually I'll first explain the different methods. So we I kind of tried a bunch of different things during my internship and put the things that worked well into one paper."
+   "t": 3344,
+   "speaker": "Julie Kallini",
+   "text": "It's actually determined from like entropy spikes in the bytes. So it's still kind of it's not it's it's not determined by a tokenizer, but it's it's kind of dynamic determined by entropy spikes in the bytes. so after this encoder that processes bytes, it processes it kind of pools them into these latent tokens that are then processed by them in like by a big transformer. yeah, so these patches are pooled into latent tokens into this big transformer and then a decoder at the top decodes from those patches back into bytes. and that's all of this is auto all of this model is auto-regressive. And what I did was I created a new version of BLT, a new model."
   },
   {
-   "t": 3309,
-   "text": "so the main thing that I spent most of my internship working on was"
-  },
-  {
-   "t": 3318,
-   "text": "A new variant of the Byte Latent Transformer. Well, first I should give a an overview of the Byte Latent Transformer. It's another byte level model developed by Meta. It has like an encoder that processes byte sequences. It chunks them into these latent patches. So patch is the term that the BLT team uses for the kind of text segmentation that you that you get for BLT. It's actually determined from"
-  },
-  {
-   "t": 3347,
-   "text": "like entropy spikes in the bytes. So it's still kind of it's not it's it's not determined by a tokenizer, but it's it's kind of dynamic determined by entropy spikes in the bytes. so after this encoder that processes bytes,"
-  },
-  {
-   "t": 3363,
-   "text": "it processes it kind of pools them into these latent tokens that are then processed by them in like by a big transformer."
-  },
-  {
-   "t": 3374,
-   "text": "yeah, so these patches are pooled into latent tokens into this big transformer and then a decoder at the top decodes from those patches back into bytes."
-  },
-  {
-   "t": 3384,
-   "text": "and that's all of this is auto all of this model is auto-regressive. And what I did was I created a new version of BLT, a new model. it was BLT Diffusion. So this was a brand new model. It's trained on both next byte prediction and And a masked recon kind of reconstruction of these masked blocks. That's the text diffusion part. So I should also explain text diffusion. It's very similar to BERT. If you remember BERT, BERT has these masked tokens and BERT learns how to kind of fill in the mask tokens."
-  },
-  {
-   "t": 3426,
-   "text": "diffusion is very similar. You can imagine gener generating from a BERT model by let's say feeding in A sequence of all masks, like all mask tokens to the BERT model. You pass it through BERT and it let's say it unmasks a couple of tokens, like whatever it was most confident about."
+   "t": 3394,
+   "speaker": "Julie Kallini",
+   "text": "It was BLT Diffusion. So this was a brand new model. It's trained on both next byte prediction and And a masked recon kind of reconstruction of these masked blocks. That's the text diffusion part. So I should also explain text diffusion. It's very similar to BERT. If you remember BERT, BERT has these masked tokens and BERT learns how to kind of fill in the mask tokens. diffusion is very similar. You can imagine gener generating from a BERT model by let's say feeding in A sequence of all masks, like all mask tokens to the BERT model. You pass it through BERT and it let's say it unmasks a couple of tokens, like whatever it was most confident about."
   },
   {
    "t": 3445,
-   "text": "you could then feed that sequence back into BERT with the few couple of tokens revealed, but still mostly mask tokens. You do another iteration. you clean or clean up or unmask a few more tokens. You do this repeatedly until you've generated a sentence. That's basically what you can think of text diffusion. You can think of text diffusion as this way. And yes, the main the main thing here is that because you can unmask many tokens at a time, you can actually generate faster rather than just generating one token at a time. So I basically took this masked diffusion idea and put it on top of BLT to make to unmask multiple bytes at a time."
+   "speaker": "Julie Kallini",
+   "text": "You could then feed that sequence back into BERT with the few couple of tokens revealed, but still mostly mask tokens. You do another iteration. you clean or clean up or unmask a few more tokens. You do this repeatedly until you've generated a sentence. That's basically what you can think of text diffusion. You can think of text diffusion as this way. And yes, the main the main thing here is that because you can unmask many tokens at a time, you can actually generate faster rather than just generating one token at a time. So I basically took this masked diffusion idea and put it on top of BLT to make to unmask multiple bytes at a time."
   },
   {
    "t": 3495,
-   "text": "and this is what makes the model faster. the other the other variations are both inspired, or the other variations of things that I tried. There's a BLT Self-speculation and a BLT Diffusion + Verification. I know there's many variants in this paper, but both are more inspired by speculative decoding."
-  },
-  {
-   "t": 3516,
-   "text": "Which is this idea that you can use a small model to kind of draft sequences"
+   "speaker": "Julie Kallini",
+   "text": "And this is what makes the model faster. the other the other variations are both inspired, or the other variations of things that I tried. There's a BLT Self-speculation and a BLT Diffusion + Verification. I know there's many variants in this paper, but both are more inspired by speculative decoding."
   },
   {
    "t": 3521,
-   "text": "for a larger model. And the smaller model can run fast. The bigger model can verify the models, the small model's generations very quickly. So we applied this into the BLT setting. We actually found that BLT's decoder,"
+   "speaker": "Julie Kallini",
+   "text": "Which is this idea that you can use a small model to kind of draft sequences for a larger model. And the smaller model can run fast. The bigger model can verify the models, the small model's generations very quickly. So we applied this into the BLT setting. We actually found that BLT's decoder, if you let's say just allowed the decoder to generate long sequences, it serves as a very good draft model for the entire BLT model, which is something cool that I don't think anyone has really looked at for architectures of this type that have modular components. Like just take the decoder and use it as a draft model for the entire model. And it's since it's trained with the model, it's actually very aligned with it."
   },
   {
-   "t": 3539,
-   "text": "if you let's say just allowed the decoder to generate long sequences, it serves as a very good draft model for the entire BLT model,"
+   "t": 3564,
+   "speaker": "Julie Kallini",
+   "text": "Because you need a draft model that's well aligned with your target larger model in order for speculative decoding to work well. So yeah, this is I think so the the s BLT self-speculation, it was also in the fast BLT paper. We just kind of packaged everything together. Mm-hmm. I think there were a lot of yeah, a lot of findings in that paper. the diffusion was a brand new model, which is kind of why we put it at the forefront. But speculative decoding in the same way that diffusion is kind of viewed as like a parallel generation method, meaning you can generate more tokens at a time. So so is speculative decoding."
   },
   {
-   "t": 3548,
-   "text": "which is something cool that I don't think anyone has really looked at for architectures of this type that have modular components. Like just take the decoder and use it as a draft model for the entire model. And it's since it's trained with the model, it's actually very aligned with it. Because you need a draft model that's well aligned with your target larger model in order for speculative decoding to work well."
-  },
-  {
-   "t": 3572,
-   "text": "So yeah, this is I think so the the s BLT self-speculation, it was also in the fast BLT paper. We just kind of packaged everything together. Mm-hmm. I think there were a lot of yeah, a lot of findings in that paper."
-  },
-  {
-   "t": 3592,
-   "text": "the diffusion was a brand new model, which is kind of why we put it at the forefront. But speculative decoding in the same way that diffusion is kind of"
-  },
-  {
-   "t": 3602,
-   "text": "viewed as like a parallel generation method, meaning you can generate more tokens at a time. So so is speculative decoding. So we were exploring all of these kind of topics in order to address BLT's generation inefficiencies. so all of these things are in the fast BLT paper."
+   "t": 3609,
+   "speaker": "Julie Kallini",
+   "text": "So we were exploring all of these kind of topics in order to address BLT's generation inefficiencies. so all of these things are in the fast BLT paper."
   },
   {
    "t": 3619,
-   "text": "And also, like, you now have that experience of working at Meta as software engineer before doing your PhD and now as a research scientist and you promised us in the beginning of the Right. episode to speak a little bit about that difference. Yeah, so at the beginning of the episode I talked a bit about being a software engineer at Meta. During my research scientist internship, I was a part of FAIR, so that's Facebook AI Research, or after it's been re renamed to Meta, it's now called Fundamental AI Research."
+   "speaker": "Jekaterina Novikova",
+   "text": "And also, like, you now have that experience of working at Meta as software engineer before doing your PhD and now as a research scientist and you promised us in the beginning of the Right. episode to speak a little bit about that difference."
   },
   {
-   "t": 3657,
-   "text": "and I was in Seattle. So the team there is wonderful actually. So th there's a lot of"
+   "t": 3638,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, so at the beginning of the episode I talked a bit about being a software engineer at Meta. During my research scientist internship, I was a part of FAIR, so that's Facebook AI Research, or after it's been re renamed to Meta, it's now called Fundamental AI Research. and I was in Seattle. So the team there is wonderful actually. So th there's a lot of kind of connections to University of Washington. So a lot of people in the office were like other PhD students from UW or also professors who work part-time at Meta. so really working in FAIR felt like working in an academic lab, but just with more resources."
   },
   {
-   "t": 3665,
-   "text": "kind of connections to University of Washington. So a lot of people in the office were like other PhD students from UW or also professors who work part-time at Meta."
+   "t": 3684,
+   "speaker": "Julie Kallini",
+   "text": "So everyone there is really everyone there was really excited about you know the same sorts of topics as me. Everyone was also very into the byte level models and token tokenizer research and they're academics too. So you know, we read papers together. a lot of them go to conferences. So I was at we were both at COLM last week, the conference on language modeling. a lot of my former co-workers from FAIR were also at that conference. so really working in FAIR was like working at a academic lab. That's at least that's how it felt to me at the time of my internship."
   },
   {
-   "t": 3678,
-   "text": "so really working in FAIR felt like working in an academic lab, but just with more resources. so everyone there is really everyone there was really excited about you know the same sorts of topics as me. Everyone was also very into the byte level models and token tokenizer research and they're academics too. So you know, we read papers together."
+   "t": 3732,
+   "speaker": "Julie Kallini",
+   "text": "Whereas I think during my software and time as a software engineer it was very, very product focused and a different environment altogether."
   },
   {
-   "t": 3703,
-   "text": "a lot of them go to conferences. So I was at we were both at COLM last week, the conference on language modeling. a lot of my former co-workers from FAIR were also at that conference."
-  },
-  {
-   "t": 3716,
-   "text": "so really working in FAIR was like working at a academic lab. That's at least that's how it felt to me at the time of my internship. Whereas I think during my software and time as a software engineer it was very, very product focused and a different environment"
-  },
-  {
-   "t": 3735,
-   "text": "altogether. Right, so it sounds like it's maybe a more straightforward decision in choosing between software engineering job versus PhD research job, while the choice between a research scientist in the industry versus research in academia is the difference between them. it's way more blurry."
+   "t": 3737,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, so it sounds like it's maybe a more straightforward decision in choosing between software engineering job versus PhD research job, while the choice between a research scientist in the industry versus research in academia is the difference between them. it's way more blurry."
   },
   {
    "t": 3771,
-   "text": "Yeah, I would say so because I felt like I was doing very cool research at Meta. at the same time I have more compute resources, especially because a lot of my research involves language model pre training,"
+   "speaker": "Julie Kallini",
+   "text": "Yeah, I would say so because I felt like I was doing very cool research at Meta. at the same time I have more compute resources, especially because a lot of my research involves language model pre training, which requires tons of resources. And if you want to train at the sort of scale where you can get very impressive capabilities, it's just usually not something you can get in like just from a university budget, but the companies can really help with that. so if your research direction is very compute intensive, a nice research lab at a company could be a great option. At the same time, you know, still when you work at a company, there are some considerations about what you can work on, what you can publish."
   },
   {
-   "t": 3787,
-   "text": "which requires tons of resources. And if you want to train at the sort of scale where you can get very impressive capabilities, it's just usually not something you can get in"
+   "t": 3824,
+   "speaker": "Julie Kallini",
+   "text": "So yeah, they're all sorts of considerations. To keep in mind."
   },
   {
-   "t": 3799,
-   "text": "like just from a university budget, but the companies can really help with that. so if your research direction is very compute intensive, a nice research lab at a company could be a great option. At the same time, you know, still when you work at a company, there are some considerations about what you can work on, what you can publish. So yeah, they're all sorts of considerations."
+   "t": 3830,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see. Yeah, that's interesting to hear. Let's slowly move towards wrapping up our conversation. When you presented this last... work of yours on the Fast Byte Latent Transformer, you spoke a bit about diffusion versus autoregressive generation. And these two approaches, they are often seen as competing approaches when it comes to language. Do you have any advices for practitioners that would love to choose one method versus another for some of their own use cases?"
   },
   {
-   "t": 3829,
-   "text": "To keep in mind. I see. Yeah, that's interesting to hear. Let's slowly move towards wrapping up our conversation."
+   "t": 3888,
+   "speaker": "Julie Kallini",
+   "text": "Yes, that's a great question. so kind of going from or kind of drawing from the way I operated during my internship and trying a bunch of different things, I think that if you need to guarantee you need to guarantee a certain performance."
   },
   {
-   "t": 3844,
-   "text": "When you presented this last... work of yours on the Fast Byte Latent Transformer,"
+   "t": 3913,
+   "speaker": "Julie Kallini",
+   "text": "Auto-regressive models are right now are tend to outperform diffusion models. and if you want some speed ups, speculative decoding is a very promising way. It's it's a completely lossless way to speed up your model. but if you need very fast generation, I think diffusion at some cost in performance, text diffusion seems promising to me. Although, yes, it is true that diffusion is, I guess, at this moment in time more experimental. who knows like what the next couple years will bring. They might they might completely take off. especially with the methods of kind of drawing from some of the benefits of auto-regressive modeling, like KV caching, as I mentioned before."
   },
   {
-   "t": 3856,
-   "text": "you spoke a bit about diffusion versus autoregressive generation. And these two approaches, they are often seen as competing approaches when it comes to language. Do you have any advices for practitioners that would love to choose one method versus another for some of their own use cases? Yes, that's a great question. so kind of going from or kind of drawing from the way I operated during my internship and trying a bunch of different things, I think that if you need to guarantee"
+   "t": 3955,
+   "speaker": "Julie Kallini",
+   "text": "But in general, the yeah, the major trade-off with diffusion is the performance. But if you need a if you need a very large speed up, which is what we saw also saw in the paper, the diffusion model was able to be very fast. at the same time, it's worth also comparing to just having a smaller autoregressive model and seeing if you can just, you know, take a performance hit by having a smaller autoregressive model. but hopefully or you know it would be kind of faster to run than a larger autoregressive model. So having all of these comparisons in place is important. I think I did the classic machine learning thing, which is I said just try everything."
   },
   {
-   "t": 3906,
-   "text": "you need to guarantee a certain performance. auto-regressive models are right now are tend to outperform diffusion models."
+   "t": 4003,
+   "speaker": "Jekaterina Novikova",
+   "text": "Brute force."
   },
   {
-   "t": 3915,
-   "text": "and if you want some speed ups, speculative decoding is a very promising way. It's it's a completely lossless way to speed up your model."
+   "t": 4005,
+   "speaker": "Julie Kallini",
+   "text": "Brute force. yes, but yeah, it's not a one size fits all thing."
   },
   {
-   "t": 3923,
-   "text": "but if you need very fast generation, I think diffusion at some cost in performance, text diffusion seems promising to me. Although, yes, it is true that diffusion is, I guess, at this moment in time more experimental. who knows like what the next couple years will bring. They might they might completely take off."
+   "t": 4012,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see. You have done a lot of work in the area of tokenization. Based on your experience, what are the things that are very easy to overlook when we think about tokenization?"
   },
   {
-   "t": 3946,
-   "text": "especially with the methods of kind of drawing from some of the benefits of auto-regressive modeling, like KV caching, as I mentioned before. but in general, the yeah, the major trade-off with diffusion is the performance. But if you need a if you need a very large speed up, which is what we saw also saw in the paper, the diffusion model was able to be very fast. at the same time, it's worth also comparing to"
+   "t": 4029,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, that's a great question. I would say the probab maybe the biggest thing that people overlook in general is just how well their tokenizer tokenizes their specific domain. We talked a lot about, you know, applying tokenizers to other languages, but we haven't, you know, talked about How tokenizers work on different domains. Like let's say a tokenizer trained on English wouldn't necessarily be the best tokenizer for code or the best tokenizer for HTML. there are plenty of other domains. Like we can even think about starting to go when thinking about like multimodal things."
   },
   {
-   "t": 3974,
-   "text": "just having a smaller autoregressive model and seeing if you can just, you know, take a performance hit by having a smaller autoregressive model. but hopefully or you know it would be kind of faster to run than a larger autoregressive model. So having all of these comparisons in place is important."
+   "t": 4075,
+   "speaker": "Julie Kallini",
+   "text": "The tok that's beyond my expertise, but Tokenizers for different modalities, or when you want to, let's say, model both text and images together or something like that, you know, the way you encode that data is very important. Ki I kind of talked about how the tokenizer defines the compute cost when modeling text. But the tokenizer could also, you know, in a multimodal setting, let's say determine how much bias the text has versus the image. If you encode the text into a lot of tokens and but encode the image into like let's say some fixed 256, like people usually split up an image into like a 256 set of patches, like a grid."
   },
   {
-   "t": 3996,
-   "text": "I think I did the classic machine learning thing, which is I said just try everything. Brute force. brute force. yes, but yeah, it's not a one size fits all thing. I see. You have done a lot of work in the area of tokenization."
+   "t": 4128,
+   "speaker": "Julie Kallini",
+   "text": "If your text that's actually like relatively short and less information has less information than the image, is tokenized into the like also like hundreds of tokens, but your image is only 256 tokens. You're biasing how much the model is going to get learning signal from the text versus the image. Yeah, there so I I guess to summarize what I've just said is yeah, really think about how your tok tokenizer works in different domains. If you're going to be applying an off-the-shelf tokenizer from some, like let's say from Hugging Face, you just download some off-the-shelf tokenizer. how well does it actually work for your domain?"
   },
   {
-   "t": 4021,
-   "text": "Based on your experience, what are the things that are very easy to overlook when we think about tokenization? Yeah, that's a great question."
+   "t": 4166,
+   "speaker": "Julie Kallini",
+   "text": "Is is it what is your domain? Is it language? Is it code? what are you doing with that tokenizer? Yeah."
   },
   {
-   "t": 4032,
-   "text": "I would say the probab maybe the biggest thing that people overlook in general is just how well their tokenizer tokenizes their specific domain. We talked a lot about, you know, applying tokenizers to other languages, but we haven't, you know, talked about"
+   "t": 4175,
+   "speaker": "Jekaterina Novikova",
+   "text": "That's a very interesting open question that I think it's worth keeping in mind."
   },
   {
-   "t": 4052,
-   "text": "How tokenizers work on different domains. Like let's say a tokenizer trained on English wouldn't necessarily be the best tokenizer for code or the best tokenizer for HTML."
+   "t": 4187,
+   "speaker": "Julie Kallini",
+   "text": "Yeah. I should also add to add to that question, I just remembered, yeah, tokenization can really affect how models do arithmetic. So having access to individual digits actually makes the model better at math and generalizing on math. whereas, you know, I think many for a long time many tokenizers will just kind of chunk a number into three digit chunks. which is bet that's that's fine, but you can actually get better performance on math by considering tokenizing digits individually. Yeah. So this is just another example of thinking about the domain."
   },
   {
-   "t": 4066,
-   "text": "there are plenty of other domains. Like we can even think about starting to go when thinking about like multimodal things. The tok that's beyond my expertise, but"
+   "t": 4230,
+   "speaker": "Jekaterina Novikova",
+   "text": "Mm-hmm. Yeah, it definitely makes more sense. Yeah. Absolutely. Yeah. So if to summarize all the work that we have discussed today during the episode, like the work on the impossible language models, the tokenization, multilinguality, What are some open questions that you're most excited about and would love to work on next?"
   },
   {
-   "t": 4080,
-   "text": "Tokenizers for different modalities, or when you want to, let's say, model both text and images together or something like that, you know, the way you encode that data is very important. Ki I kind of talked about how the tokenizer defines the compute cost when modeling text. But the tokenizer could also, you know, in a multimodal setting, let's say determine how much bias the text has versus the image. If you encode the text into a lot of tokens and but encode the image into like let's say some fixed 256, like people usually split up an image into like a 256 set of patches, like a grid."
+   "t": 4265,
+   "speaker": "Julie Kallini",
+   "text": "Yeah, I'd be happy to tack talk more about what I'm thinking about next. but yeah, I think the through line through all of my research has been thinking about how models represent data and how well they learn from that data. And I've actually been thinking a lot more about kind of my architecture work. That has been mainly on byte-level models and how to best compress byte sequences into these useful internal representations for language modeling. But in reality, these architectures could be applied over subword tokens as well. Like let's say you love your subword tokenizer. These architectures could make any model more efficient."
   },
   {
-   "t": 4120,
-   "text": "if your text that's actually like relatively short and less information has less information than the image, is tokenized into the like also like hundreds of tokens,"
+   "t": 4312,
+   "speaker": "Julie Kallini",
+   "text": "And what I've been thinking about is like, How can we, what is the best way to represent, or how can models learn on their own what to represent in detail and then what they can compress? So I've kind I'm kind of calling this adaptive compression. Because in general, whether you're talking about bytes or you're talking about subword tokens, an input's length doesn't necessarily tell you how much information that text contains. So if we go to like a coding example, a short function inside of a big code base could be more information dense than let's say a long block of boilerplate code. why can't we just, let's say, compress something like the MIT license into one token and not spend a ton of tokens processing the MIT license when we're when we're processing a code base?"
   },
   {
-   "t": 4132,
-   "text": "but your image is only 256 tokens. You're biasing how much the model is going to get learning signal from the text versus the image. Yeah, there so I I guess to summarize what I've just said is yeah, really think about how your tok tokenizer works in different domains. If you're going to be applying an off-the-shelf tokenizer from some, like let's say from Hugging Face, you just download some off-the-shelf tokenizer."
+   "t": 4364,
+   "speaker": "Julie Kallini",
+   "text": "When we could be spending that compute on shorter functions that actually matter. But since we def decide these tokens on it in advance, we waste a lot of computation. Models are wasting computation on parts of the input that are very predictable. And I'm basically thinking about how we can kind of think about the sort the same sorts of compression problems that we think about for byte-level models, but just for broader questions like related to long context modeling. For instance, like that, you know, getting in general models to be able to fit longer context windows in order to process something like a large code base more efficiently."
   },
   {
-   "t": 4163,
-   "text": "how well does it actually work for your domain? Is is it what is your domain? Is it language? Is it code? what are you doing with that tokenizer?"
+   "t": 4413,
+   "speaker": "Julie Kallini",
+   "text": "Also things like test-time scaling. So when yeah test-time scaling is basically this idea that if you use more compute at test time you can get better capabilities out of your model. And compression could be another factor there. how much you compress an input versus how much you keep it like kind of fine-grained and finely represented that allows you to spend more compute at test time to get more performance on the parts of the input that matter. So these are very high-level ideas, but basically taking the kind of learnings that we've had from trying to model bytes and just applying it to broader domains to make models more efficient and more flexible. and be able to process data in the you know, learn how to process their data end to end."
   },
   {
-   "t": 4174,
-   "text": "Yeah. That's a very interesting open question that I think it's worth keeping in mind. Yeah. I should also add to add to that question, I just remembered, yeah, tokenization can really affect how models do arithmetic. So having access to individual digits actually makes the model better at math and generalizing on math. whereas, you know, I think many for a long time many tokenizers will just kind of chunk"
+   "t": 4464,
+   "speaker": "Julie Kallini",
+   "text": "Yeah."
   },
   {
-   "t": 4213,
-   "text": "a number into three digit chunks. which is bet that's that's fine, but you can actually get better performance on math by considering tokenizing digits individually. Yeah. So this is just another example of thinking about the domain. Mm-hmm. Yeah, it definitely makes more sense. Yeah. Absolutely. Yeah. So if to summarize all the work that we have discussed today during the episode, like the work on the impossible language models,"
+   "t": 4465,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's awesome. I look forward to seeing your new papers in the next conferences that are discussing some of those questions. looks like you are turning towards code as data, other than language, but I would love to see anything that you are going to come up with."
   },
   {
-   "t": 4251,
-   "text": "the tokenization, multilinguality, What are some open questions that you're most excited about and would love to work on next? Yeah, I'd be happy to tack talk more about what I'm thinking about next."
+   "t": 4491,
+   "speaker": "Julie Kallini",
+   "text": "Yes, so I'm very excited about yeah, continuing topics on tokenization, continuing topics on architectures. I still love linguistics and I have a lot of like computational linguistics thoughts in my head all the time. but also applying these architectures to different modalities I think is very promising as well."
   },
   {
-   "t": 4271,
-   "text": "but yeah, I think the through line through all of my research has been thinking about how models represent data and how well they learn from that data. And I've actually been thinking a lot more about kind of my architecture work."
-  },
-  {
-   "t": 4289,
-   "text": "That has been mainly on byte-level models and how to best compress byte sequences into these useful internal representations for language modeling. But in reality, these architectures could be applied over subword tokens as well. Like let's say you love your subword tokenizer. These architectures could make any model more efficient. And what I've been thinking about is like, How can we, what is the best way to represent, or how can models learn on their own what to represent in detail and then what they can compress? So I've kind I'm kind of calling this adaptive compression. Because in general, whether you're talking about bytes or you're talking about subword tokens, an input's length doesn't necessarily tell you how much information that text contains."
-  },
-  {
-   "t": 4341,
-   "text": "So if we go to like a coding example, a short function inside of a big code base could be more information dense than let's say a long block of boilerplate code."
-  },
-  {
-   "t": 4353,
-   "text": "why can't we just, let's say, compress something like the MIT license into one token and not spend a ton of tokens processing the MIT license when we're when we're processing a code base? When we could be spending that compute on shorter functions that actually matter."
-  },
-  {
-   "t": 4370,
-   "text": "But since we def decide these tokens on it in advance, we waste a lot of computation. Models are wasting computation on parts of the input that are very predictable."
-  },
-  {
-   "t": 4382,
-   "text": "And I'm basically thinking about how we can kind of think about the sort the same sorts of compression problems that we think about for byte-level models, but just for broader questions like related to long context modeling. For instance, like that, you know, getting in general models to be able to fit longer context windows"
-  },
-  {
-   "t": 4407,
-   "text": "in order to process something like a large code base more efficiently. also things like test-time scaling. So when yeah test-time scaling is basically this idea that if you use more compute at test time you can get better capabilities out of your model. And compression could be another factor there."
-  },
-  {
-   "t": 4430,
-   "text": "how much you compress an input versus how much you keep it like kind of fine-grained and finely represented that allows you to spend more compute at test time to get more performance on the parts of the input that matter."
-  },
-  {
-   "t": 4444,
-   "text": "So these are very high-level ideas, but basically taking the kind of learnings that we've had from trying to model bytes and just applying it to broader domains to make models more efficient and more flexible. and be able to process data in the you know, learn how to process their data end to end. Yeah. Yeah, that's awesome. I look forward to seeing your new papers in the next conferences that are discussing some of those questions. looks like you are turning towards code as data,"
-  },
-  {
-   "t": 4484,
-   "text": "other than language, but I would love to see anything that you are going to come up with. Yes, so I'm very excited about yeah, continuing topics on tokenization, continuing topics on architectures. I still love linguistics and I have a lot of like computational linguistics thoughts in my head all the time. but also applying these architectures to different modalities I think is very promising as well. I agree. Thank you very much for your time today."
+   "t": 4509,
+   "speaker": "Jekaterina Novikova",
+   "text": "I agree. Thank you very much for your time today."
   },
   {
    "t": 4515,
-   "text": "Yes, thank you so much. It was such a pleasure to come onto your podcast. Thanks for watching this far. If you know a researcher who would get something out of this episode, please share it with them. Here is one more thing. I'd love for 50 % of you watching to be subscribers. If you enjoy these conversations with the brilliant women in AI research, just hit subscribe and it's the easiest way to support the show. It will help me to keep bringing you new guests and new episodes. now what should you watch next? I think you would love this one and this one."
+   "speaker": "Julie Kallini",
+   "text": "Yes, thank you so much. It was such a pleasure to come onto your podcast."
   },
   {
-   "t": 4558,
-   "text": "Check it out and I will see you in the next episode."
+   "t": 4520,
+   "speaker": "Jekaterina Novikova",
+   "text": "Thanks for watching this far. If you know a researcher who would get something out of this episode, please share it with them. Here is one more thing. I'd love for 50 % of you watching to be subscribers. If you enjoy these conversations with the brilliant women in AI research, just hit subscribe and it's the easiest way to support the show. It will help me to keep bringing you new guests"
+  },
+  {
+   "t": 4550,
+   "speaker": "Julie Kallini",
+   "text": "And new episodes."
+  },
+  {
+   "t": 4551,
+   "speaker": "Jekaterina Novikova",
+   "text": "Now what should you watch next? I think you would love this one and this one. Check it out and I will see you in the next episode."
   }
  ]
 }

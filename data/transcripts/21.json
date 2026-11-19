@@ -1,187 +1,282 @@
 {
  "episode": 21,
  "videoId": "3QXHr743kwk",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 2,
-   "text": "even very robust models would break with almost 100 % attack success rate it's not that any individual step necessarily seems harmful. It's when you're putting it together. Our guest today is Saadia Gabriel, assistant professor at UCLA."
+   "speaker": "Saadia Gabriel",
+   "text": "Even very robust models would break with almost 100 % attack success rate it's not that any individual step necessarily seems harmful. It's when you're putting it together."
   },
   {
-   "t": 23,
-   "text": "And even though all that research is being done on mitigating the attacks, it's still the open problem. It's still cases where it is difficult, hard to catch the manipulation of models."
+   "t": 14,
+   "speaker": "Jekaterina Novikova",
+   "text": "Our guest today is Saadia Gabriel, assistant professor at UCLA. And even though all that research is being done on mitigating the attacks, it's still the open problem. It's still cases where it is difficult, hard to catch the manipulation of models."
   },
   {
    "t": 45,
-   "text": "And That brings us to the next part of this conversation about what actually happens in real world when these models are manipulated in all those sophisticated ways. Saadia, how do you think about the relationship between model vulnerabilities and the harms in the real world. Yes, yes. So... When we were doing this work, one of the specific things that we wanted was that we wanted to look at realistic kind of conversations and attacks that might actually happen when you have, say, a model API. And then there's some bad actor who's interacting with that model API and trying to steer it towards a certain behavior, like, tell me how to build a bomb or plan an attack on this building."
+   "speaker": "Jekaterina Novikova",
+   "text": "And That brings us to the next part of this conversation about what actually happens in real world when these models are manipulated in all those sophisticated ways. Saadia, how do you think about the relationship between model vulnerabilities and the harms in the real world."
   },
   {
-   "t": 102,
-   "text": "So. We specifically want to defend against these real world kind of scenarios it could be explained for that purpose. We were thinking less in terms of just the, some of the earlier work was just saying, oh, can we fool models at all? the work that we've been more focusing on is how to deal with LMs actually being weaponized for the jailbreaking work or other cases where maybe it isn't even"
+   "t": 73,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes, yes. So... When we were doing this work, one of the specific things that we wanted was that we wanted to look at realistic kind of conversations and attacks that might actually happen when you have, say, a model API. And then there's some bad actor who's interacting with that model API and trying to steer it towards a certain behavior, like, tell me how to build a bomb or plan an attack on this building. So. We specifically want to defend against these real world kind of scenarios it could be explained for that purpose. We were thinking less in terms of just the, some of the earlier work was just saying, oh, can we fool models at all?"
   },
   {
-   "t": 143,
-   "text": "an explicit attack, maybe there's not necessarily malicious behavior, but we see an outcome that is then harmful to a user. So that's more of the fairness work. Mm-hmm. I see. When I think about the real world em harms and the type of research that you have done, one area that comes to my mind is misinformation. and specifically you had the paper which is named Generative AI in the Era of"
+   "t": 140,
+   "speaker": "Saadia Gabriel",
+   "text": "The work that we've been more focusing on is how to deal with LMs actually being weaponized for the jailbreaking work or other cases where maybe it isn't even an explicit attack, maybe there's not necessarily malicious behavior, but we see an outcome that is then harmful to a user. So that's more of the fairness work."
   },
   {
-   "t": 182,
-   "text": "Alternative Facts'. And I know that you have received the MIT Generative AI Impact Award for that work. Congratulations."
+   "t": 157,
+   "speaker": "Jekaterina Novikova",
+   "text": "Mm-hmm. I see. When I think about the real world em harms and the type of research that you have done, one area that comes to my mind is misinformation."
   },
   {
-   "t": 194,
-   "text": "And yeah, I'd love to start with your overview of this work. If you could walk us through what's the core argument here and what did you find there that was alarming. Right, right. So this grew out of work that I'd started during my PhD, where I had mentioned that I was working on misinformation during COVID. And I was interested in the work of Charles Fillmore on frame semantics and this idea of developing cognitive models or cognitive scenes of that capture."
+   "t": 180,
+   "speaker": "Jekaterina Novikova",
+   "text": "And specifically you had the paper which is named Generative AI in the Era of Alternative Facts'. And I know that you have received the MIT Generative AI Impact Award for that work. Congratulations. And yeah, I'd love to start with your overview of this work. If you could walk us through what's the core argument here and what did you find there that was alarming."
   },
   {
-   "t": 243,
-   "text": "context-specific meaning of language and how certain messages might be perceived. I wanted to then apply this to the setting of news and seeing how do people perceive news or fake news and how oh does that change, how does that affect them? How does that change their thinking? How does that compel them to take certain actions? How does that lead to broader societal consequences in terms of how people are interacting with each other and with the rest of the world?"
+   "t": 211,
+   "speaker": "Saadia Gabriel",
+   "text": "Right, right. So this grew out of work that I'd started during my PhD, where I had mentioned that I was working on misinformation during COVID. And I was interested in the work of Charles Fillmore on frame semantics and this idea of developing cognitive models or cognitive scenes of that capture. context-specific meaning of language and how certain messages might be perceived. I wanted to then apply this to the setting of news and seeing how do people perceive news or fake news and how oh does that change, how does that affect them?"
   },
   {
-   "t": 280,
-   "text": "So my idea was that we can actually use AI to inform users about how they might be manipulated or persuaded by certain content that they're exposed to, whether that content may have come from another AI or from a human. and whether or not that might be more or less likely to be reliable. And for that specific work that I did at MIT, I was particularly interested in how this might fill in gaps in the current state of misinformation intervention, where we have cognitively biased. users."
+   "t": 266,
+   "speaker": "Saadia Gabriel",
+   "text": "How does that change their thinking? How does that compel them to take certain actions? How does that lead to broader societal consequences in terms of how people are interacting with each other and with the rest of the world? So my idea was that we can actually use AI to inform users about how they might be manipulated or persuaded by certain content that they're exposed to, whether that content may have come from another AI or from a human. and whether or not that might be more or less likely to be reliable. And for that specific work that I did at MIT, I was particularly interested in how this might fill in gaps in the current state of misinformation intervention, where we have cognitively biased."
   },
   {
-   "t": 326,
-   "text": "So we have people who have a bias where they're already inclined to say, believe a certain conspiracy theory. They already think COVID-19 vaccines are a government trick. How do we actually get those populations of people when just exposing them to facts, which is one of the standard interventions all the standard interventions were based around these fact-based approaches, might not be sufficient enough to actually reach these people with deeply entrenched confirmation bias and beliefs. And so I thought AI is useful because we can scale this, we can reach so many different people, but also because of how flexible it is, because we can do control generation."
+   "t": 323,
+   "speaker": "Saadia Gabriel",
+   "text": "Users. So we have people who have a bias where they're already inclined to say, believe a certain conspiracy theory. They already think COVID-19 vaccines are a government trick. How do we actually get those populations of people when just exposing them to facts, which is one of the standard interventions all the standard interventions were based around these fact-based approaches, might not be sufficient enough to actually reach these people with deeply entrenched confirmation bias and beliefs. And so I thought AI is useful because we can scale this, we can reach so many different people, but also because of how flexible it is, because we can do control generation."
   },
   {
    "t": 383,
-   "text": "we can actually have some cognitive model of a user so we can say, oh, this is a person who leaves on COVID-19 conspiracies. And we can tailor a message that's not just factual, but also can appeal to people with that mindset so that it presents, it doesn't just present facts in an authoritative way, but it presents it."
+   "speaker": "Saadia Gabriel",
+   "text": "We can actually have some cognitive model of a user so we can say, oh, this is a person who leaves on COVID-19 conspiracies. And we can tailor a message that's not just factual, but also can appeal to people with that mindset so that it presents, it doesn't just present facts in an authoritative way, but"
   },
   {
-   "t": 411,
-   "text": "in a manner that is tailored to the user and that is more likely to actually reach the user and make them feel like their standpoint is understood. But this is another way of thinking. Right, so it almost sounds like it's not necessarily only about the harmful data or some data and detecting and filtering out certain content, but it's also about how to design that message. And if we think about AI, then it is about like how to design and deploy those AI systems so that they reach people in certain ways, right?"
+   "t": 410,
+   "speaker": "Saadia Gabriel",
+   "text": "It presents it. in a manner that is tailored to the user and that is more likely to actually reach the user and make them feel like their standpoint is understood. But this is another way of thinking."
+  },
+  {
+   "t": 427,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, so it almost sounds like it's not necessarily only about the harmful data or some data and detecting and filtering out certain content, but it's also about how to design that message. And if we think about AI, then it is about like how to design and deploy those AI systems so that they reach people in certain ways, right?"
   },
   {
    "t": 469,
-   "text": "Right, exactly. Yeah, we need, I was thinking that we really would need some degree of personalization. Because if you just tell people you're wrong, then that's not, that's not very likely to then change the person's mind. And there might actually be retaliation to that. So we do need empathy. We do need, we do need there to be connection with the message that's being conveyed. Do you think generative AI is a good tool for that? I think that it's gotten quite good at mimicking"
+   "speaker": "Saadia Gabriel",
+   "text": "Right, exactly. Yeah, we need, I was thinking that we really would need some degree of personalization. Because if you just tell people you're wrong, then that's not, that's not very likely to then change the person's mind. And there might actually be retaliation to that. So we do need empathy. We do need, we do need there to be connection with the message that's being conveyed."
   },
   {
-   "t": 514,
-   "text": "that. that was what I was seeing as the positive use case of it. And so I was thinking that you could actually appeal to people who may be in those communities or maybe not that far down the spectrum, but they're leaning in that direction. And they're outside of the mainstream scientific consensus. and norms, societal norms, and that you could mimic their perspective, but in a presentation manner, but not in the actual content."
+   "t": 504,
+   "speaker": "Jekaterina Novikova",
+   "text": "Do you think generative AI is a good tool for that?"
+  },
+  {
+   "t": 510,
+   "speaker": "Saadia Gabriel",
+   "text": "I think that it's gotten quite good at mimicking that. that was what I was seeing as the positive use case of it. And so I was thinking that you could actually appeal to people who may be in those communities or maybe not that far down the spectrum, but they're leaning in that direction. And they're outside of the mainstream scientific consensus. and norms, societal norms, and that you could mimic their perspective, but in a presentation manner, but not in the actual content."
   },
   {
    "t": 561,
+   "speaker": "Saadia Gabriel",
    "text": "So the content is what you're trying to convey of actually being able to assess reliability on what we know from scientific knowledge. But the presentation is within the realm of what we see coming out of these communities."
   },
   {
    "t": 580,
-   "text": "Right, I very much like this approach and this idea of generative AI is just the tool you can use it to misinform people or you can use it as an empathetic information tool. Exactly. I was looking into interventions. personalized interventions against misinformation where there might be cases of confirmation bias. So we started to touch on that in that work. And then we had a NeurIPS paper last year that was really delving into this more, that was looking at when you have a contrastive setup where you have one LM that's arguing for one answer to a claim, whether or not the claim's correct."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, I very much like this approach and this idea of generative AI is just the tool you can use it to misinform people or you can use it as an empathetic information tool. Exactly."
   },
   {
-   "t": 632,
-   "text": "another LM that's arguing for the opposing answer, that this can actually assist human judges who have particular beliefs in assessing reliability. So we found that this is particularly helpful when people have more moderate beliefs. So they're not necessarily conspiracy theorists. They don't have really deeply entrenched perspectives. But It also helps when we have people who have strong prior, so they have strong say beliefs in COVID-19 vaccine conspiracies. And so this is a direction that I'm really excited about for some of the future work we're doing in terms of actually being able to..."
+   "t": 599,
+   "speaker": "Saadia Gabriel",
+   "text": "I was looking into interventions. personalized interventions against misinformation where there might be cases of confirmation bias. So we started to touch on that in that work. And then we had a NeurIPS paper last year that was really delving into this more, that was looking at when you have a contrastive setup where you have one LM that's arguing for one answer to a claim, whether or not the claim's correct. another LM that's arguing for the opposing answer, that this can actually assist human judges who have particular beliefs in assessing reliability."
   },
   {
-   "t": 685,
-   "text": "use persuasiveness of AI to guide human users towards critical thinking."
+   "t": 648,
+   "speaker": "Saadia Gabriel",
+   "text": "So we found that this is particularly helpful when people have more moderate beliefs. So they're not necessarily conspiracy theorists. They don't have really deeply entrenched perspectives. But It also helps when we have people who have strong prior, so they have strong say beliefs in COVID-19 vaccine conspiracies. And so this is a direction that I'm really excited about for some of the future work we're doing in terms of actually being able"
+  },
+  {
+   "t": 683,
+   "speaker": "Jekaterina Novikova",
+   "text": "To... use persuasiveness of AI to"
+  },
+  {
+   "t": 689,
+   "speaker": "Saadia Gabriel",
+   "text": "Guide human users towards critical thinking."
   },
   {
    "t": 693,
-   "text": "Another form of harm in addition to misinformation is toxicity, right? And it may be slightly more subtle."
+   "speaker": "Jekaterina Novikova",
+   "text": "Another form of harm in addition to misinformation is toxicity, right? And it may be slightly more subtle. And when I think about toxicity, what comes to my mind is one of your papers that's named ModelCitizens, which is about toxicity detection and the analysis of that. So could you work me through that work as well?"
   },
   {
-   "t": 713,
-   "text": "And when I think about toxicity, what comes to my mind is one of your papers that's named ModelCitizens, which is about toxicity detection and the analysis of that. So could you work me through that work as well? Yes, so this was work that built on a lot of the previous papers that I'd done around content moderation, where we wanted to specifically address a limitation of existing systems and content moderation, where they do not necessarily take into account perspectives from within communities that are commonly targeted by hate speech."
+   "t": 735,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes, so this was work that built on a lot of the previous papers that I'd done around content moderation, where we wanted to specifically address a limitation of existing systems and content moderation, where they do not necessarily take into account perspectives from within communities that are commonly targeted by hate speech. we wanted a system that we wanted to develop a framework for content moderation that would be able to handle of nuances and variations across different communities for which it would be deployed."
   },
   {
-   "t": 767,
-   "text": "we wanted a system that we wanted to develop a framework for content moderation that would be able to handle of nuances and variations across different communities for which it would be deployed. And so we initially just started out with looking at alignment of existing systems with more diverse annotations. So I'll give a little bit background on the way that content moderation systems are typically developed as well, where a lot of the training data is coming from online crowdsourcing The workers on online crowdsourcing platforms are predominantly not underrepresented workers."
+   "t": 785,
+   "speaker": "Saadia Gabriel",
+   "text": "And so we initially just started out with looking at alignment of existing systems with more diverse annotations. So I'll give a little bit background on the way that content moderation systems are typically developed as well, where a lot of the training data is coming from online crowdsourcing The workers on online crowdsourcing platforms are predominantly not underrepresented workers. And there are ways to steer them towards making different more inclusive decisions."
   },
   {
-   "t": 819,
-   "text": "And there are ways to steer them towards making different more inclusive decisions. then we found that there's ways that you can prime annotators so that they consider perspectives on defensiveness that might not necessarily be their perspective, but could cover cases from other communities of annotators and people who actually have lived experiences with hate speech. That still doesn't necessarily cover all the kinds of cases that we would see. And what we actually found when we looking at alignment of existing content moderation systems with perspectives from in-group, which was the groups that were targeted by the hate speech and out-group, which was people outside of those communities, was that the systems were more aligned with people outside of those communities."
+   "t": 830,
+   "speaker": "Saadia Gabriel",
+   "text": "Then we found that there's ways that you can prime annotators so that they consider perspectives on defensiveness that might not necessarily be their perspective, but could cover cases from other communities of annotators and people who actually have lived experiences with hate speech. That still doesn't necessarily cover all the kinds of cases that we would see. And what we actually found when we looking at alignment of existing content moderation systems with perspectives from in-group, which was the groups that were targeted by the hate speech and out-group, which was people outside of those communities, was that the systems were more aligned with people outside of those communities."
   },
   {
-   "t": 876,
-   "text": "And there are actually a number of cases where it made decisions that were not the decisions that people in those communities might have made."
+   "t": 880,
+   "speaker": "Saadia Gabriel",
+   "text": "And there are actually a number of cases where it made decisions that were not the decisions that people in those communities might have made. And so."
   },
   {
    "t": 882,
-   "text": "And so. Can you maybe give an example of... Yeah, so we had a couple of examples in the paper that was showing how this can happen. We saw, we broke it into two kinds of cases where there's cases that In-Group might have actually not seen it as offensive and the Out-Group was over labeling as offensive. So maybe it's something that It could be, reclaimed language is a really good example of that, where it's considered benign in that community. It's not a big deal to people from that community, but outside of that, they think that the default would be that this is offensive."
+   "speaker": "Jekaterina Novikova",
+   "text": "Can you maybe give an example of..."
   },
   {
-   "t": 931,
-   "text": "Another case might be, where it's actually deemed offensive to people in the community and it was not observed by people outside of the community. So those are some implicit cases. Like actually an example is there was, There was one post I saw that mentioned a misogynistic group. It's a misogynistic online group and they were just saying how this group is so great and they love the group and they are so happy to be part of this. And that's a case where outgroup annotators did not identify there being any issue because they didn't know what the group was, but in group did. Okay So yeah, those are a few of the cases that I can bring up that we saw."
+   "t": 886,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, so we had a couple of examples in the paper that was showing how this can happen. We saw, we broke it into two kinds of cases where there's cases that In-Group might have actually not seen it as offensive and the Out-Group was over labeling as offensive. So maybe it's something that It could be, reclaimed language is a really good example of that, where it's considered benign in that community. It's not a big deal to people from that community, but outside of that, they think that the default would be that this is offensive. Another case might be, where it's actually deemed offensive to people in the community and it was not observed by people outside of the community."
   },
   {
-   "t": 973,
-   "text": "then got relabeled using this approach. So. The work was really emphasizing the need for having people who have lived experiences involved in the process. We showed that after we had collected this idea with this data with the in-group oh annotations, then we were able to significantly improve systems to be in line with them. And this actually, interestingly enough, helped with other content moderation benchmarks Right. oh From everything that you said, sounds like engagement with those in-group communities is one of the very important things when collecting that type of data."
+   "t": 937,
+   "speaker": "Saadia Gabriel",
+   "text": "So those are some implicit cases. Like actually an example is there was, There was one post I saw that mentioned a misogynistic group. It's a misogynistic online group and they were just saying how this group is so great and they love the group and they are so happy to be part of this. And that's a case where outgroup annotators did not identify there being any issue because they didn't know what the group was, but in group did."
   },
   {
-   "t": 1025,
-   "text": "What would be your recommendation to other researchers that are working on this small kind of work? Yes, so. I think it's important to have these design considerations from the very beginning, because if you just put out a study on an online crowdsourcing platform like Prolific or Amazon Mechanical Turk, then you're unlikely to get that representation. So you have to explicitly recruit for that. And then I think that there's a lot of considerations also with thinking about how you're presenting instructions to annotators if this is online platform task, and making it clear that they're not just making decisions for themselves, but to try to think more holistically about how something would be perceived and whether or not it's offensive in different contexts."
+   "t": 970,
+   "speaker": "Saadia Gabriel",
+   "text": "Okay So yeah, those are a few of the cases that I can bring up that we saw. then got relabeled using this approach. So. The work was really emphasizing the need for having people who have lived experiences involved in the process. We showed that after we had collected this idea with this data with the in-group oh annotations, then we were able to significantly improve systems to be in line with them. And this actually, interestingly enough, helped with other content moderation benchmarks"
+  },
+  {
+   "t": 1005,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. oh From everything that you said, sounds like engagement with those in-group communities is one of the very important things when collecting that type of data. What would be your recommendation to other researchers that are working on this small kind of work?"
+  },
+  {
+   "t": 1033,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes, so. I think it's important to have these design considerations from the very beginning, because if you just put out a study on an online crowdsourcing platform like Prolific or Amazon Mechanical Turk, then you're unlikely to get that representation. So you have to explicitly recruit for that. And then I think that there's a lot of considerations also with thinking about how you're presenting instructions to annotators if this is online platform task, and making it clear that they're not just making decisions for themselves, but to try to think more holistically about how something would be perceived and whether or not it's offensive in different contexts."
   },
   {
    "t": 1090,
+   "speaker": "Saadia Gabriel",
    "text": "We did do some on the ground community work for another paper that we had out more recently that was looking at personalized psychotherapy using LLM chatbots. So for that, we actually had patients that we were recruiting from the university campus. and we were interacting with them and getting their perspectives. But I think the main things are to really take representation into account from the beginning and include it in the design. And also work with experts outside of computer science and AI to understand more of the background of how certain behaviors manifest and cultural nuances of groups who are targeted and how they've had to interact with these harmful behaviors over time."
   },
   {
    "t": 1155,
-   "text": "so for the model systems work, then it was part of a collaboration with initiatives to study hate at UCLA, which is a very interdisciplinary group that brings together people from not just AI backgrounds, but from... political science, anthropology, all these different areas who have been spending a lot of time studying how does hate manifest, who is affected by it, what is it, how do we define it, what are the factors that give rise to it? And so that, think being able to engage with people who have these different expertise on the same topic, who are coming from these different perspectives, helps in being able to form what is the actual best approach to take and to be able to verify ourselves."
+   "speaker": "Saadia Gabriel",
+   "text": "So for the model systems work, then it was part of a collaboration with initiatives to study hate at UCLA, which is a very interdisciplinary group that brings together people from not just AI backgrounds, but from... political science, anthropology, all these different areas who have been spending a lot of time studying how does hate manifest, who is affected by it, what is it, how do we define it, what are the factors that give rise to it? And so that, think being able to engage with people who have these different expertise on the same topic, who are coming from these different perspectives, helps in being able to form what is the actual best approach to take and to be able to verify ourselves."
   },
   {
    "t": 1212,
+   "speaker": "Saadia Gabriel",
    "text": "So being able to identify, say that there are certain social movements that are happening right now online that have malicious agendas and who behave in certain coordinated ways and have their own lingo. Understanding that is really important to actually being able to perform this kind of research and to know what to focus on and then be able to identify when that's appearing in the data that we're gathering."
   },
   {
    "t": 1250,
-   "text": "When we speak about AI vulnerabilities, harms and all these topics, I keep thinking that it's not just that AI models may cause harm or may be broken on purpose. It's also that we... often don't even have the right tool to measure where the harm is happening or to whom it is happening."
+   "speaker": "Jekaterina Novikova",
+   "text": "When we speak about AI vulnerabilities, harms and all these topics, I keep thinking that it's not just that AI models may cause harm or may be broken on purpose. It's also that we... often don't even have the right tool to measure where the harm is happening or to whom it is happening. with this, want to move to a next research thread and speak a little bit about how to measure more carefully broken cases."
   },
   {
-   "t": 1293,
-   "text": "with this, want to move to a next research thread and speak a little bit about how to measure more carefully broken cases. So a threat that I see running through your work seems to be that evolution itself sometimes has issues and that the way we measure AI performance systematically advantages certain languages, certain communities and certain perspectives. Would it be fair to say this? Yes, I think that's a very accurate description."
+   "t": 1307,
+   "speaker": "Jekaterina Novikova",
+   "text": "So a threat that I see running through your work seems to be that evolution itself sometimes has issues and that the way we measure AI performance systematically advantages certain languages, certain communities and certain perspectives. Would it be fair to say this?"
+  },
+  {
+   "t": 1334,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes, I think that's a very accurate description."
   },
   {
    "t": 1340,
-   "text": "Yeah, so would you say that we're still right now in the phase where benchmark performance is treated as a proxy for real-world performance, Yeah, that's actually something that I'm quite concerned about is that, especially with this push for reasoning models, I feel like a lot of the focus is on objective tasks that are straightforward and easy to verify both in industry and in academia, but not necessarily on how people may be interacting with these models. So I do like more dynamic benchmarking efforts, like even though they have their own flaws, like Chatbot Arena and others that are more focused on how do people actually interact with language models and what might be issues with conversational use cases or with certain real-world deployment use cases."
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, so would you say that we're still right now in the phase where benchmark performance is treated as a proxy for real-world performance,"
   },
   {
-   "t": 1409,
-   "text": "You have that paper that's named Translation as a Scalable Proxy for Multilingual Evaluation."
+   "t": 1353,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, that's actually something that I'm quite concerned about is that, especially with this push for reasoning models, I feel like a lot of the focus is on objective tasks that are straightforward and easy to verify both in industry and in academia, but not necessarily on how people may be interacting with these models. So I do like more dynamic benchmarking efforts, like even though they have their own flaws, like Chatbot Arena and others that are more focused on how do people actually interact with language models and what might be issues with conversational use cases or with certain real-world deployment use cases."
   },
   {
-   "t": 1420,
-   "text": "from the title, it is clear that it is about evaluation across multiple languages. And you just start there with the very simple fact that current benchmarks only exist for fewer than 30 languages out of all the world's languages Could you briefly summarize that paper and again what motivated you to tackle this particular problem of multilingual evaluation. Yes. So that particular paper was looking into how multilingual LLMs are typically evaluated and how translation actually strongly correlates."
+   "t": 1410,
+   "speaker": "Jekaterina Novikova",
+   "text": "You have that paper that's named Translation as a Scalable Proxy for Multilingual Evaluation. from the title, it is clear that it is about evaluation across multiple languages. And you just start there with the very simple fact that current benchmarks only exist for fewer than 30 languages out of all the world's languages Could you briefly summarize that paper and again what motivated you to tackle this particular problem of multilingual evaluation."
   },
   {
-   "t": 1471,
-   "text": "That's what we showed was that translation can actually strongly correlate with existing benchmarks that are supposed to measure for"
+   "t": 1451,
+   "speaker": "Saadia Gabriel",
+   "text": "Yes. So that particular paper was looking into how multilingual LLMs are typically evaluated and how translation actually strongly correlates. That's what we showed was that translation can actually strongly correlate with existing benchmarks that are supposed to measure for diverse multilingual capabilities like logical reasoning, solving particular kinds of math problems, reading comprehension, and others. And so we're proposing from these findings that you can actually use machine translation as a first pass proxy."
   },
   {
-   "t": 1482,
-   "text": "diverse multilingual capabilities like logical reasoning, solving particular kinds of math problems, reading comprehension, and others. And so we're proposing from these findings that you can actually use machine translation as a first pass proxy. So when you're developing a model, then you can evaluate it just on machine translation. And that's as effective as running the model through these reasoning benchmark suites. And why you would want to do this is that if you are focusing on translation, then We have a lot of translation data, but it's a lot more time intensive and expensive to actually develop these reasoning benchmarks for specific capabilities."
+   "t": 1504,
+   "speaker": "Saadia Gabriel",
+   "text": "So when you're developing a model, then you can evaluate it just on machine translation. And that's as effective as running the model through these reasoning benchmark suites. And why you would want to do this is that if you are focusing on translation, then We have a lot of translation data, but it's a lot more time intensive and expensive to actually develop these reasoning benchmarks for specific capabilities. And so what we're showing is that we already have the data to cover a lot more languages than are currently covered by these specific capabilities benchmarks."
   },
   {
-   "t": 1541,
-   "text": "And so what we're showing is that we already have the data to cover a lot more languages than are currently covered by these specific capabilities benchmarks. And that data alone would already give you as good of an evaluation as what you would get with those. benchmarks. Right, and it sounds like a scalable and elegant solution, right? But on the other hand, I'm a little bit skeptical about that."
+   "t": 1551,
+   "speaker": "Saadia Gabriel",
+   "text": "And that data alone would already give you as good of an evaluation as what you would get with those. benchmarks."
   },
   {
-   "t": 1574,
-   "text": "one of the reasons is even at this podcast, we have recently had a conversation with Vered Schwartz. and we spoke with her about cultural blind spots in language and vision models. one of the things that came up was how much actually gets lost, even in the act of translation itself, like how much of cultural information gets lost. What do you think about that in connection to your work?"
+   "t": 1558,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and it sounds like a scalable and elegant solution, right? But on the other hand, I'm a little bit skeptical about that. one of the reasons is even at this podcast, we have recently had a conversation with Vered Schwartz. and we spoke with her about cultural blind spots in language and vision models. one of the things that came up was how much actually gets lost, even in the act of translation itself, like how much of cultural information gets lost."
+  },
+  {
+   "t": 1607,
+   "speaker": "Jekaterina Novikova",
+   "text": "What do you think about that in connection to your work?"
   },
   {
    "t": 1612,
+   "speaker": "Saadia Gabriel",
    "text": "Yeah, this is a great question and I love Vered's work. We overlapped a bit when she was doing a postdoc with Yejin. I think that, yeah, this is a good point to bring up. That's why we emphasize a first pass proxy. We don't want to say that you should completely stop evaluation at translation and then do nothing else. Obviously, there's a lot of things that are not necessarily covered even by these benchmarks that we're comparing. safety and some of those cultural nuances that you're talking about are probably not well covered by the existing state of benchmarking. So I think that more needs to be done in terms of that."
   },
   {
    "t": 1660,
+   "speaker": "Saadia Gabriel",
    "text": "One of the papers that we cite is a TACL paper that was giving a very detailed overview of some of what's been done in terms of trying to define culture in the different aspects and dimensions of that, getting at norms and differences in norms and in dialectical differences and other aspects that all come together into what we think of as culture. So I think we do really need to have specific evaluation for that. And we need to have evaluations that are tailored to what we define as being recommended proposed use cases of whatever system we're developing."
   },
   {
    "t": 1711,
-   "text": "But what we're saying in this work is that given the current state of benchmarking that's mostly focused on these objective tasks, then you could do something comparable with just translation. And that's fine for an initial pass over a developed system to say, is this something that we should then continue on to evaluate more deeply? And we need to do that deeper evaluation before we have any interaction between that system and real users. I see. That's a good point."
+   "speaker": "Saadia Gabriel",
+   "text": "But what we're saying in this work is that given the current state of benchmarking that's mostly focused on these objective tasks, then you could do something comparable with just translation. And that's fine for an initial pass over a developed system to say, is this something that we should then continue on to evaluate more deeply? And we need to do that deeper evaluation before we have any interaction between that system and real users."
+  },
+  {
+   "t": 1748,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see."
   },
   {
    "t": 1750,
-   "text": "It's better to do something than not to do anything at all. What you think is the path forward in the multilingual evaluation? Yeah, so I think part of what you just brought up where we do want to have more comprehensive evaluation of cultural appropriateness and other aspects of safety. I think that I would like to see more dynamic benchmarking as well of multilingual models. So we could have something where we have interaction with native speakers and they can actually identify any issues that come up over the course of conversations with a model or trying to perform more complex tasks with models and where it deviates from what they would expect or what would be desired behavior within their communities and from their regional knowledge."
+   "speaker": "Jekaterina Novikova",
+   "text": "That's a good point. It's better to do something than not to do anything at all. What you think is the path forward in the multilingual evaluation?"
+  },
+  {
+   "t": 1764,
+   "speaker": "Saadia Gabriel",
+   "text": "Yeah, so I think part of what you just brought up where we do want to have more comprehensive evaluation of cultural appropriateness and other aspects of safety. I think that I would like to see more dynamic benchmarking as well of multilingual models. So we could have something where we have interaction with native speakers and they can actually identify any issues that come up over the course of conversations with a model or trying to perform more complex tasks with models and where it deviates from what they would expect or what would be desired behavior within their communities and from their regional knowledge."
   },
   {
    "t": 1817,
-   "text": "I think that I'd like to see more work on a multilingual adversarial robustness too, because that's something where most of the jailbreaking work has been on English. And there was a paper a couple of years back that was showing that"
+   "speaker": "Saadia Gabriel",
+   "text": "I think that I'd like to see more work on a multilingual adversarial robustness too, because that's something where most of the jailbreaking work has been on English. And there was a paper a couple of years back that was showing that multilingual jailbugs really need to be explored more where there's these models are much more vulnerable. to jailbreaks and low resource languages, but there hasn't been a lot of work actually focusing on that or how to improve robustness in those scenarios. So I would like to see more focus on multilingual safety."
   },
   {
-   "t": 1839,
-   "text": "multilingual jailbugs really need to be explored more where there's these models are much more vulnerable. to jailbreaks and low resource languages, but there hasn't been a lot of work actually focusing on that or how to improve robustness in those scenarios. So I would like to see more focus on multilingual safety. Yeah, great. Okay, so I think it's time to wrap up and I want to wrap up by Looking across all of the work that we have discussed today, adversarial robustness, misinformation, community centered, toxicity detection, multilingual evaluation, looking across all of these, what would you name as a unifying conviction that drives it?"
+   "t": 1866,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, great. Okay, so I think it's time to wrap up and I want to wrap up by Looking across all of the work that we have discussed today, adversarial robustness, misinformation, community centered, toxicity detection, multilingual evaluation, looking across all of these, what would you name as a unifying conviction that drives it?"
   }
  ]
 }

@@ -1,0 +1,417 @@
+{
+ "episode": 1,
+ "videoId": "SL8reoM8pGE",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
+ "segments": [
+  {
+   "t": 10,
+   "speaker": "Jekaterina Novikova",
+   "text": "Welcome to the new episode of the Women in AI Research podcast. My name is Jekaterina. I am joined by Malikeh, my co-host, and our guest today is Nouha Dziri. Nouha is a research scientist at the Institute for AI, and she's focusing on safety and the alignment of large language models and also is interested in exploring the limits of transformers and the inner workings of large language models. Previously, Nouha worked at different wonderful places like Mila Artificial Intelligence Institute, Google Research, Microsoft Research."
+  },
+  {
+   "t": 55,
+   "speaker": "Jekaterina Novikova",
+   "text": "And I am following Nouha's research for several years already because I have similar interests in the LLM evaluation. And I must say that just in the couple of last years, Nouha had published a lot of very interesting papers, like for example, Self-refine on the Iterative Refinement with Self-feedback. On the Origin of Hallucinations in Conversational Models, Faith and Fate, the Generative AI paradox, Reward bench, the paper on OLMO 2 models. And it's just few of them. And they are all extremely interesting and impactful. as well. So I'm very glad to speak with Nouha today and discuss some of her research in more detail."
+  },
+  {
+   "t": 105,
+   "speaker": "Jekaterina Novikova",
+   "text": "But first, I would like you, Nouha, to introduce yourself and to tell our audience about yourself."
+  },
+  {
+   "t": 114,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, thank you so much. Thank you for having me. I'm glad to be here. So yeah, as you mentioned, I'm a research scientist at the Allen Institute for AI. So I do a lot of things related to language models. And so I started by studying the limits of Transformer on reasoning tasks. I wanted to understand how these models work, if they work, why they work, if they fail, why they fail. And so I spent some time working on that. And then actually I somehow transitioned to work on safety and alignment. And that was, I would say, it didn't come naturally because I spent some time working on reasoning and I didn't believe too much in like the risk of AI on the society."
+  },
+  {
+   "t": 160,
+   "speaker": "Nouha Dziri",
+   "text": "I knew there is some risk, but I didn't believe in existential risk until I think a year and a half ago or probably a year ago, basically there was a turning point for me. I was attending one of the workshops, it's an alignment workshop, and I actually didn't know much about jailbreaking. And so I attended a keynote about jailbreaking and I was mind blown. I thought that actually safety is just about collecting some data, safety and training the model and all is done. But it was more than that. These models are very capable and they can cause a huge amount of risk. And so I would say I haven't really clicked at an emotional level until that point. And so I started really studying what's jail breaking, how can we make our alignment techniques better and all of that."
+  },
+  {
+   "t": 205,
+   "speaker": "Nouha Dziri",
+   "text": "And so I was leading last year the post-training team at the Allen Institute trying to build a Olmo and I learned Olmo to be safe. Olmo is the new language model from AI too. And so I was closely working with the post-training team to ensure that these models are very capable to advance their capabilities, but at the same time, they remain safe. So, so yeah, so I actually do work on reasoning and at the same time, I try to also ensure that these models are aligned with human values and most importantly are safe when deployed in high-stake domains."
+  },
+  {
+   "t": 239,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Amazing. Thank you for joining us today. Very excited to see you here. I'm sure that the audience, including myself, are going to learn a lot today."
+  },
+  {
+   "t": 250,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So in my view, you have a very successful career in the AI. So what does success mean for you personally? How would you define it?"
+  },
+  {
+   "t": 258,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, I think that's a very tough question. think Success means that I'm feeling happy and fulfilled in what I do, no matter, I think, how things go, even if they don't go perfectly. And I know lots of people may define success as like publishing papers in like top conferences, NeurIPS, ICLR, ICML, ACL, et cetera, et cetera, or I don't know, working at a top lab or being a co-author in a breakthrough paper. Those are amazing. I'm not saying these are not the meaning of success, but I think it's not the only measure of success. Why do I think that way? Because I feel like if you are achieving those things, but at the same time feeling miserable, does it really matter to go through that hardship and why not you're enjoying your life?"
+  },
+  {
+   "t": 307,
+   "speaker": "Nouha Dziri",
+   "text": "And so I truly think that success means that you enjoy your, you know, what you do, like knowing that there are lots of challenges and struggle in what you do. Right. So it's like, you know, having in mind that, okay, I really need to love what I do. Otherwise it's going to be like a torture for my soul because research is not something that's easy. It has its ups and downs. And so I guess, yeah, so that's one thing. Also, I think that success over the many years now of doing AI research, I learned that success probably also means that you learn how you handle your failures, how you quickly actually move on. And because there were lots of disappointments in my research careers, I had rejected papers, I was rejected from scholarships, I had rejection from pitchy programs, etc."
+  },
+  {
+   "t": 358,
+   "speaker": "Nouha Dziri",
+   "text": "Etc. I had project that failed, I was scooped. And so it really hurt at that moment, feel, but I just keep going. And there is the other thing that I truly believe in, is that sometimes, you know, what's not meant for you, it's actually probably for the best. You don't always... see it in the moment because you feel like disappointed, you feel that, my God, it feels terrible, I missed this chance, this rejection hurts and all of that. But I felt like every failure you can go through, it's like teaching you something. It's like, okay, this is a wake up call to fix this and refine this. And, you know, this is how you should learn. So, and yeah, I think it's really, it's not that easy at the beginning, but you go with it."
+  },
+  {
+   "t": 401,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, so that's interesting. That's interesting that you spoke not just about what this success means for you, but also that it always comes together with some low points, right? So how do you deal with those challenges or those lowest points? Can you give some advice?"
+  },
+  {
+   "t": 424,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, so how do I deal with them? Very interesting question. So I think the main thing is, you I think it's just you stay focused. This is what I all the time try to remind myself to stay focused. And also, when you fail, you should all the time try to step back and look at your accomplishments and achievements. Because at the end of the day, failure is part of your learning process. It's not the end of the world, but this is how you develop. You grow. And so I think staying focused, reminding yourself of your achievement and also developing this sort of like thick skin."
+  },
+  {
+   "t": 466,
+   "speaker": "Nouha Dziri",
+   "text": "So I think you should at some point stop thinking of these rejections so personally, right? And you start thinking, my God, instead of like, I failed or I got rejected or these things, you say, my God, this is an opportunity to sort of learn something new. And so I think the minute you start thinking of failure differently, everything changes, right? And it's just, part of your growth. Without it, you wouldn't actually, if you think about it, imagine like a world, the perfect world with no failures, how can you push yourself? How can you improve and learn? And so I think the other thing is like why I mentioned staying focused, because I know right now the AI field, seriously feels like a storm."
+  },
+  {
+   "t": 504,
+   "speaker": "Nouha Dziri",
+   "text": "Every day there are new papers, new model releases. I don't know, many things going on. And right now, actually, everyone knows about AI thanks to these frontier models. And so what I remind myself, you know when horses you are in a race? So they wear these blinders on their eyes so they don't get distracted. And so I think this is what you need to do. If you believe in something, you have an idea, and you don't want to get so much distracted. I need to jump from this project. There is this nice idea. There is this new paper, there is this and that. And so because that makes you feel a lot of pressure, and you get so super distracted. And so that's very important for me. And so yeah, it's just you have to remind yourself every day that, you know, success isn't just about never getting rejected, but it's about never stopping your perseverance toward achieving your goal."
+  },
+  {
+   "t": 559,
+   "speaker": "Jekaterina Novikova",
+   "text": "I like that. Stay focused."
+  },
+  {
+   "t": 562,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I like that too. And also I think you have to write another paper about self-refine and human life. It's right to refinement from Yeah? You- you- self-feedback. So I think that's true for human life as well. Like all from failures, lessons from that's very precious. Exactly. That was very insightful."
+  },
+  {
+   "t": 580,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "And other than that, I know that you're originally from Tunisia. You're a woman, you're bilingual. So all of these characteristics make you very unique compared to some standard AI researcher that many people may imagine. So in what ways, if any, has the gap between common stereotypes and your true self shaped your research interests and career path?"
+  },
+  {
+   "t": 604,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, I think when people picture what an AI researcher, they wouldn't immediately think of a female to start with, let alone a female coming from a completely different country background. I would say coming from not the very traditional pipeline of elite US universities. And so I guess when I moved here, when I moved to Canada first, because this is where I did my Master and PhD, and then I moved to the US, to be honest, didn't know that females struggle too much here in North America. Like struggle, I mean, in science. Because I come from a you place where females are heavily present in STEM, whether mathematics, whether physics, computer science, engineering, medical schools, et cetera, et cetera."
+  },
+  {
+   "t": 655,
+   "speaker": "Nouha Dziri",
+   "text": "And so I never thought that females are less capable than males by any means. And so basically, I started moving here and I started seeing it. Like, we are really a minority. And I started really questioning this. And there was something that I really want to mention today. Besides the cultural and societal biases that block female from joining this field, there is a very big misconception that even females believe in, because I spoke to few females. And it actually shocked me that females think that men are inherently better and smarter than women for biological reasons. I don't know from where this misconception comes from, but because men's on average, yes, it's true that men's on average, their brain size is like 10 % is bigger than women's size on average."
+  },
+  {
+   "t": 702,
+   "speaker": "Nouha Dziri",
+   "text": "But this does not translate into greater intelligence. This is what females think of. And so even neuroscience studies have shown that this is completely wrong, because intelligence is just linked to neural efficiency, basically, like these neurons that trigger and the connectivity that happens, but not the raw brain size, per se. So this is just to mention about my views when I just moved here and I just saw you how chaotic the field is for females. And so I guess from that point, I somehow felt like, I think I need to somehow prove that it's actually success is possible for females. It's not just success. You can actually work on some breakthrough and impactful research work and you can do it."
+  },
+  {
+   "t": 748,
+   "speaker": "Nouha Dziri",
+   "text": "And I think you know, not seeing many people like, you know, in AI. Like, for example, there like, there is not much, not much diverse and not a lot of diversity in AI. So it means that there is lots of room for new perspective, lots of room for like more voices and more change. And so I think this somehow taught me, okay, you need to be more resilient against people who don't believe in you because you are a female, you need to somehow show that you can do it. And so this is why I think also if you look at my research papers, some of the papers are really about things that I really cared about, like for example, pluralistic alignment, like culturally aware language models. I worked on those because I felt that AI people have different intentions, different values, different goals, et cetera, et cetera."
+  },
+  {
+   "t": 804,
+   "speaker": "Nouha Dziri",
+   "text": "And so we need systems that can understand a broader set of needs. We need systems that can be pluralistic, capable of representing diverse set of human values and perspective because also at the end of the day that these models are heavily trained on Western culture. And so some of the cultures are completely, you know, omitted from the language knowledge, from the language model knowledge. And that's worrisome because I guess, you know, at the end of the day, we're trying to build this language model that's universal, I would say language model that's going to be used by millions if not billions of users. And so I knew that this cultural and individual variability, it's going to make creating this universal language model that's very, very challenging."
+  },
+  {
+   "t": 855,
+   "speaker": "Nouha Dziri",
+   "text": "And so I noticed that not many people are working on that because at the end of the day, I don't know, either they don't care or for them it's not as important as making the model solve very complex mathematical task or like coding challenges and stuff like that. And so that was very important for me. And I think it's somehow like my background and the culture somehow shaped my research work in the sense that I focused on advancing these models capabilities, yes, and I tried to understand how they work. But at the same time, I tried also to push this cultural side of it to make it better, to make it more inclusive for not only females, but also for people from all over the world."
+  },
+  {
+   "t": 898,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's great. I think not too many people, work on those topics just because they maybe don't think about that. People just don't go outside the stereotypical research questions sometimes. Yeah, so given all that you have said, let's switch to the technical topic and speak a little bit more about the research that you have done. I know that you have done a lot of work on understanding the limits of large language models and transformer models, not only in relation to the diversity but also other aspects of those limitations. I wonder, what's your opinion? Could you please explain why you think this topic is important and why people should care about that and who actually should care about it."
+  },
+  {
+   "t": 954,
+   "speaker": "Jekaterina Novikova",
+   "text": "Is it just researchers or is it also the public, the users?"
+  },
+  {
+   "t": 959,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah. Yeah."
+  },
+  {
+   "t": 962,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, so I think the reason why I focused on, I think, understanding language model limits is because we currently have these models that are extremely, shockingly capable at many, many tasks. But the problem is that we don't fully understand how they function. And we don't know how to control them. It's very bad for ensure their safety. And so we have these models that can ace mathematical Olympiad problems and at the same time they can struggle with basic multiplication, for example. They can write this amazing sophisticated code, but they might fail with some simple common sense reasoning questions. And so this is what I call actually the complexity paradox. They can ace very hard problems for human, but at the same time fall at simple ones."
+  },
+  {
+   "t": 1008,
+   "speaker": "Nouha Dziri",
+   "text": "Obviously, I think it's urgent to be honest to work on understanding how these models work, the fundamental nature of their reasoning capabilities. Is it true reasoning? Or it's just an incredibly sophisticated form of pattern matching based on what they have seen during the training data? And so the reason I think it's important to study this is because if we somehow figure out how to answer these questions, we'll definitely be able to push their capabilities even further rather than just focusing on scale and more data. cetera, et cetera. And so who are the people who I think should care about this? I guess like researchers specifically because we are people, we are builders of these models. So one common path right now, you can see it happening in the communities that we notice that scaling and data works and so this is what most of people are doing."
+  },
+  {
+   "t": 1065,
+   "speaker": "Nouha Dziri",
+   "text": "But I think something more important is to also try to understand how they truly function. From a user perspective, I don't think that users really care whether these models are really reasoning or not. Because I talk to many people, and for them, as long as these models are capable of executing that task, that's good enough for them. They don't care much about whether they truly understand things or not. Probably in the long term, when these models will be like, we're already seeing it, like these models are being deployed into many high-stake domains, are being deployed into agents to achieve tasks autonomously from Thank A to Z. That probably would. If the user is super attached emotionally to the model and they speak to it as a friend, probably the user at that point would care whether it's actually truly understanding what I'm saying or it's like mimicking some patterns it had seen during the training."
+  },
+  {
+   "t": 1119,
+   "speaker": "Nouha Dziri",
+   "text": "But I still have that feeling that most people don't care, at least the public users. And researchers should. And developers should care about this. And also policymakers should care about understanding how these models work."
+  },
+  {
+   "t": 1134,
+   "speaker": "Jekaterina Novikova",
+   "text": "Makes sense."
+  },
+  {
+   "t": 1136,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "True, very insightful. Yeah, thanks for sharing all those. These are very critical things to be addressed and to be thought about actually."
+  },
+  {
+   "t": 1146,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "In 2023, you published a very interesting paper called the Generative AI Paradox, What It Can Create It May Not Understand. So the paper introduces the generative AI paradox hypothesis, which is somehow relevant to what you said, which suggests that AI models are trained to mimic expert-like outputs without necessarily understanding them. This is a bit different from what human do, who first sometimes develop understanding and then they generate expert level language. So this might sound counterintuitive. So firstly, can you tell us more about this research and the findings in this paper? That's one of my favorite ones, actually."
+  },
+  {
+   "t": 1189,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, that was a fun project. I just talked about something I call the complexity paradox. What's easy for humans, it's hard for machines and vice versa. Obviously, this is not a universal thing for model, but at least we know that's happening. So for the generative Yeah. AI paradox, it actually was a paradox between generation versus understanding between models and humans. And we noticed that generative models seem to acquire generation abilities more effectively than understanding. Versus humans who seem to have a Versus humans where for them it's harder than understanding. And so this was the first thing that we noticed and then also we noticed that basic understanding for human is like a prerequisite for, to be able to answer the question correctly."
+  },
+  {
+   "t": 1239,
+   "speaker": "Nouha Dziri",
+   "text": "And so on the other hand, we noticed that machines can generate incredibly correct answers, but in reality, they might not necessarily understand what they generated. And so that was the paradox. So just to give you an example, we started by asking, you know, just to compare now the generative capabilities of machine versus human. And so I think you can agree in general, like for you, if we ask any human, write me a poem, and you would struggle to write that poem, right? Versus like, can you explain this poem or something like that? You would have an easier time doing that task. Versus machines, I guess, they can like in few seconds generate like a very like beautiful poem. But in any case, we... So we actually used a Midjourney and we asked, sorry, first we started by asking human, okay, we want you to draw like an astronaut doing like a plank on a table."
+  },
+  {
+   "t": 1294,
+   "speaker": "Nouha Dziri",
+   "text": "And so basically a human will generate a very poor image, especially if we're not talking about like a painter or something like that. But on the other hand, Midjourney will generate an incredible image. And so this is just the first stark difference. And then how did we measure understanding? We tried to see, compare the understanding of human versus machines. So understanding, we basically tried to map it to discrimination. Your capability of given a task and like a list of candidates. We wanted to see how capable you are in selecting the right answer from this list of hard candidates. And so, yeah, we asked the model to generate this list of this astronaut doing a plank on the table. And then we just actually gave a list of images that were hard."
+  },
+  {
+   "t": 1343,
+   "speaker": "Nouha Dziri",
+   "text": "And we asked the model to pick the man doing the plank, the astronaut doing the plank on a table. And it actually shows the wrong answer. And so, basically here what we notice is that models in the wild can generate beyond human capabilities, but not necessarily select and discriminate between different responses. And so basically here the paradox to explain it is that they have trouble understanding what their own generation, because in another experiment that we did with GPT-4, so we started by asking GPT-4 a few questions about doing certain tasks. I don't know, generate, think it's a constrained task where you have to generate a paragraph describing certain things. And then actually the other thing what we try to do is that we try to ask back the model questions about its own generation."
+  },
+  {
+   "t": 1391,
+   "speaker": "Nouha Dziri",
+   "text": "And this is where we started seeing the models failing. So if you like... a human. think we also... Here, if you do like an analogy with a human failure, I guess humans who can successfully generate things without necessarily understanding is just when they cheat, right? In an exam or something. you I don't know. Probably there are other edge cases where humans are capable of that, like maybe memorize things by heart and it becomes like very easy for them to answer without really thinking through. But in the case of pure memorization without really understanding, this is where you can actually, if you ask the person again, the question about its own response, the person will struggle to respond back. And this is why here we started thinking that probably what machines are doing is not true reasoning and maybe it's something else."
+  },
+  {
+   "t": 1440,
+   "speaker": "Nouha Dziri",
+   "text": "It's another form of reasoning based on some sophisticated pattern matching based on what the model has seen during training. Yeah."
+  },
+  {
+   "t": 1447,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Amazing. Yeah, actually, so this paper was published in late 2023. So today, again, I went back through the examples and I was curious if the problem is still persists. So there is one example in the paper that is asking from GPT-4, think, Austin had a rough day at work and decided to go to the bar. Austin had a drink that night. Why did Austin do this? And the model responds that Yeah, he took a break from the work and just to relax. So that's the idea behind doing that. And as a follow up question for understanding, you ask the model to select the best option from three options that describes this thing. One is to settle down. The other one is go to the bar and order a drink."
+  },
+  {
+   "t": 1494,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So although it's talking about go to the bar, we expect the model to talk about settling down because it's all about taking a break and relaxing. But the model selects go to the bar. This or the overall thing that is happening there. So I asked the same question today from GPT-4 with reasoning option on, Claude sonnet 3.7 and Mistral. And the answer is very again the same, just go to the bar. I asked why, and they started telling me that settling down is all about, just feeling comfortable, taking break and everything. And even with the reasoning option on, was still there. But when I replaced settle down with relax, it went for relax the, like, I just changed the word, so it couldn't connect the settle down idea with whole context of the thing that was taking a break."
+  },
+  {
+   "t": 1544,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "But it was interesting to me because I think over the past year we had a lot of papers about self-reflection, reasoning, decoding level kind of reasoning. So I thought the answer would differ, but it didn't. So I just wanted to share that. There are a lot of nice examples in this paper. you I just tried it today."
+  },
+  {
+   "t": 1561,
+   "speaker": "Nouha Dziri",
+   "text": "Oh my god. I actually thought that maybe now, often AI has trained the model to fix that issue because they keep like training model and release. But yeah, that's, don't know, good news for us as a researcher that these models are not perfect by any means and they're still really lagging behind humans and probably AGI is not around the corner, as lots of people say. But yeah, it's actually like the reason is like these models are very brittle. So that's the main also difference between models and humans. Yes, it's true that we humans do mistakes. We sometimes don't know how to generate perfectly. But we are, on average, very consistent with our answers. We don't do these brittle, stupid mistakes that these humans do. Humans sometimes, even though they can be incredibly good, they can be shockingly stupid at certain simple stuff."
+  },
+  {
+   "t": 1612,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's true. There is That's true. another paper as well, a very similar one, and it was also presented at ICLR conference last year. I think that's where your Generative AI paradox was presented as well. So that other paper is called the Reversal Curse. LLMs trained on \"A is B\", fail to learn \"B is A\". I don't know if you have heard of that paper,"
+  },
+  {
+   "t": 1637,
+   "speaker": "Nouha Dziri",
+   "text": "Oh, oh yeah, yeah, I know that paper,"
+  },
+  {
+   "t": 1638,
+   "speaker": "Jekaterina Novikova",
+   "text": "But yeah. yeah, their main idea is, probably like the example of their idea would be if they ask, if the user asks the GPT, for example, who is Tom Cruise's mother, the GPT answers correctly that Tom Cruise's mother is Mary Lee Pfeiffer. But if you ask the model who is Mary Lee, Pfeiffer's son, the GPT says that something within the lines that there is no widely known information about the person named Mary Lee Pfeiffer having a notable son, which is again that completely opposite to in terms of the knowledge. And I wonder what is your opinion, Nouha? How strong is the connection between your work or your understanding of the complexity paradox or generative AI paradox and this paper."
+  },
+  {
+   "t": 1691,
+   "speaker": "Jekaterina Novikova",
+   "text": "Where do you think are the limits of that generalisation of the actual lack of understanding, lack of self-consistency of the elements?"
+  },
+  {
+   "t": 1701,
+   "speaker": "Nouha Dziri",
+   "text": "So I think there are many reasons why the model might be behaving this way. And I think the primary reason why it's behaving like this is the training objective, right? Because basically, transformer are somehow incentivized to do this pattern matching as they are trained to predict the next word, given all the previous words. And so, they are basically explicitly trained to generate outputs that resemble human responses. So basically understanding here is just an implicit byproduct of their training, but they're not necessarily trained to understand a certain task. I don't know. Maybe some people will think of that as a way for them to understand. And I'm not, by the way, by any means denying that these models cannot think or understand, but I'm just also seeing some signs that they might not be doing the reasoning as we do human."
+  },
+  {
+   "t": 1757,
+   "speaker": "Nouha Dziri",
+   "text": "They are doing another sort of reasoning. Pattern matching can be one way on how to do reasoning, but it's pretty different on how we actually think. And so the other thing is that why this paradox might be happening is that because they are trained on too many documents. It will take, actually, a human over, I think, this is a set by Yann LeCun. I don't know how they computed that. But it will take a human over 20,000 years to go over the entire web, the same amount of data that the model was trained on. And so this diversity of knowledge, I guess, encourages the model to use existing solution to problem without really thinking about how it should reach to the solution."
+  },
+  {
+   "t": 1802,
+   "speaker": "Nouha Dziri",
+   "text": "This is different. Humans, they try to understand the problem and go through it step by step. They make mistakes, they receive feedback, and they refine. Now, I guess some people might also argue that, well, doing reinforcement learning is somehow encouraging the model to self-correct, to search for the right answer, and to continue refining. that is true, but also there is still something that we cannot fully understand about this problem of failing super bad in simple tasks. so I guess there is this also problem of statistical versus this conceptual knowledge in models."
+  },
+  {
+   "t": 1848,
+   "speaker": "Nouha Dziri",
+   "text": "As I mentioned, the models might just rely on pattern recognition and statistical inference from the training data. this is how, like, they're just encouraged to do that because of the cross-entropy loss. But also humans, know, human thinking involve this conceptual abstraction, this causal reasoning, this adaptability to new problems. And so this lacks a lot in existing methods. So, yeah, guess, I guess, and lots of actually other work shows that reinforcement learning somehow encourages these models Mm-hmm. to memorize more compared to just doing supervised fine-tuning. Actually, I have this paper that's called the Creativity Index. And then in that paper we try to understand whether these models are create more creative than humans whether they are they can basically because lots of people say well, I mean These models can generalize to new scenarios."
+  },
+  {
+   "t": 1905,
+   "speaker": "Nouha Dziri",
+   "text": "They can be more creative than humans. They can come up with few things that are incredibly good And that exceeds human level intelligence and so we try to do that study and we try to basically ask the model and humans to generate certain creative tasks, like generate a poem, letter of recommendation, you things like that. And we noticed that the model meant to basically generate lots of copy, lots of chunks from the training data and somehow piece them together. It's like you can think, and actually our algorithm called the DJ algorithm where the model will go from different documents that it has in the training data and try to copy few chunks. OK, this chunk with this chunk and with such chunk."
+  },
+  {
+   "t": 1950,
+   "speaker": "Nouha Dziri",
+   "text": "It's like doing this mashup of different sequences to produce the final answer. Well, I think you can probably think of that as something maybe creative because copying different things to arrive to your solution. But compared to human, if we compare how human will produce attacks, we notice that when we compared how much copied sequences from the training data, the human tend to copy less in general, and their phrases are much more creative than model's generation. so, yeah, this Yeah, is explained about that. But yeah, I don't know the exact reason why they're behaving in this paradoxical way. But it must be, it must be their training data and also the objective function."
+  },
+  {
+   "t": 1997,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, it also sounds, you have mentioned that concept of compositionality a couple of times when you explained that creativity as well. And I know that you have that paper, Faith and Fate, which also addresses compositionality, but Yeah. in reasoning already, right? Yeah. So what do you think about the relation between reasoning and compositionality?"
+  },
+  {
+   "t": 2025,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, so compositional problem means that you use the same function over and over to solve the reasoning problem. Just if you think about arithmetic task, for example, addition or multiplication, we are all the time using the same function over and over, whether you want to multiply the first digit by the first digit with the second digit, do the carryover, do the summation, and again, repeat that over and over until you reach the end. The same thing can happen for dynamic programming, for like some puzzle task. It's like you can actually break down the problem into smaller problem and you can compose them together in order to reach to the solution. And the nicest thing about, I guess, compositional task is that you can easily control the complexity of the task and you can represent each step in the reasoning chain as a graph."
+  },
+  {
+   "t": 2076,
+   "speaker": "Nouha Dziri",
+   "text": "Why a graph? Because graph has this nice property. It allows you to sort of monitor what went wrong at each step. It can also measure the complexity of the problem, like the depth, the width. It has lots of very nice properties that can actually explain what's going on and tell us what kind of mistakes the model is doing. And so, and so yeah, so what we did basically, we tried to sort of frame our task as a graph structure where each node is actually the partial solution for that reasoning task. And the branches basically represent the operation that can be applied to modify that solution. So yeah, compositional tasks are very related to reasoning because they involve a step-by-step solution to reach to the final, like step by step partial solution to reach to the final solution."
+  },
+  {
+   "t": 2128,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So yeah, that's very interesting. And again, this paper was published in 2023, I guess. So has there been any progress since then? Have any of these limitations been addressed in your opinion based on your maybe recent experiments?"
+  },
+  {
+   "t": 2142,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, we're working on that. But I think one thing that we mentioned in that paper is that because lots of people feel offended, my god, how can you say that these models cannot do multiplication and stuff? But in reality, it's not like the easy multiplication, they can solve it as long as you train on a lot of data points from that problem. But I think as you increase the complexity, this is where when they start degrading. And actually, we specifically mentioned in the paper that these models are not terribly bad, even though when they fail on certain arithmetic tasks like multiplication, the answer is not far away. It's there. These models can do a very good approximation of the answer, but still they miss on like few digits, right? It's very close to the answer, but they sort of fail."
+  },
+  {
+   "t": 2189,
+   "speaker": "Nouha Dziri",
+   "text": "And so this is why we call them, they are transformers, are very good approximators, but not necessarily perfect problem solvers. And this is why we also say that one way on how to fix those mistakes that happen at every step is to add a module to the model to sort of refine its answer. And this is where self-refinement comes into play, right? So you keep refining the model answer until you reach the right solution. And if you think about it, it's very similar to how we humans also function. We sometimes don't necessarily output the right solution from the start. We basically write the first answer, and then we just review that answer. And then we try to fix some issues, and then we keep refining until we reach a better stage."
+  },
+  {
+   "t": 2237,
+   "speaker": "Nouha Dziri",
+   "text": "And so right now, honestly, I guess we're trying, we're trying, I don't think that these issues went away, to be honest. I can see still even those reasoning model like O1 and Deepseek R1 are still struggling in these compositional tasks. They're still failing. And we're trying, currently trying to understand why is that, why this sort of CoT training somehow is not helping, what can we do better? And yeah, yeah. So it's still a mystery. We're not still able to understand what's going on."
+  },
+  {
+   "t": 2271,
+   "speaker": "Jekaterina Novikova",
+   "text": "Do you think that there is some fundamental limitation of the architecture of the model itself? Or it's rather the problem that can be solved potentially like in a more hacky way, let's say just train for longer, just add more data, just do something else which is... seemingly simple."
+  },
+  {
+   "t": 2295,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, yeah. I think in Faith and Fate, we sort of tried to show their limits in two ways, empirically and theoretically. And so to answer, think, OK, the main highlight is that we sort of came to the conclusion that these models cannot generalize beyond what they might not be capable of generalizing beyond what they've seen in the training data. And I don't think that the failure is due to insufficient training, to be honest or compute, because we run experiments just to make sure that it's not that the model need more training. And this is what it's actually called in the literature, grokking. I don't know if you know this term, but lots of people refer to the fact that you should train them."
+  },
+  {
+   "t": 2340,
+   "speaker": "Nouha Dziri",
+   "text": "There are certain tasks that can be solved by these transformers if you train the model long enough, even beyond the overfitting phase. And it will learn to generalize. And somehow magic happens. And these models can unlock certain skills. We have tried that. We actually trained long enough. It was super expensive. But we haven't seen such things emerging. And for whether maybe it's like a lack of compute, maybe we need to scale these models even further, I don't think it's going to solve that 100%. Like maybe it's for sure it's going to improve it because probably the model will have more data trained on in that problem. So it will be able to solve more question in that domain, but not necessarily figure out the underlying algorithm behind that reasoning task."
+  },
+  {
+   "t": 2388,
+   "speaker": "Nouha Dziri",
+   "text": "Because right now we're seeing, for example, GPT-4 used to struggle a lot with 4x4 multiplication. Right now, GPT-4 can excel at that, but struggle with higher digit multiplication like 10x10. Now, I thought that with O1, probably that O1 or Deepseek R1 with a reasoning involved, this problem will go away, but actually, no. So the model can still be good up to 15 by 15, but still will struggle in later digits. And so I do think that there is some kind of limits associated with how they are trained on this huge amount of data. The other one, the theoretical bound that we actually explain is that these models can perform significantly worse in these compositional [tasks] as the size of the problem increases."
+  },
+  {
+   "t": 2435,
+   "speaker": "Nouha Dziri",
+   "text": "And it's very unlikely that using the same architecture and using the same objective function that they will achieve this full mastery at the task. Because there is this problem, as I mentioned, these models can be good approximators, but not necessarily perfect approximators. So it means that they can do a mistake at step t. And so if the probability of making an error in a single reasoning step is epsilon, so the probability of success is exponentially very, very low. And so it's very, very hard, I think. Also this autoregressive nature of these language models, right? This autoregressive nature, if the model makes a mistake at time step t, the error will snowball and it's going to continue just generating more error, erroneous output."
+  },
+  {
+   "t": 2482,
+   "speaker": "Nouha Dziri",
+   "text": "There is also the problem of these models not being able to do this look ahead, predicting the consequences of their actions several steps ahead. And so if you're not able to do that, you will end up generating something completely wrong. And if you cannot really back up and somehow do some search and refinement, it's going to be wrong. Now, I agree that RL is somehow nudging probably us toward a better space in the sense that these model with this aha moment that was discovered in Deepseek R1, we're seeing some signs that these models at some point they can sort of... figure out that they did a mistake and they somehow go back to their answer and try to define."
+  },
+  {
+   "t": 2528,
+   "speaker": "Nouha Dziri",
+   "text": "That's very encouraging, honestly. And I was really mind blown by seeing how capable these models can be. So I do think it's all about how we are training these models. We have to incentivize this search in their behavior rather than like spoon feeding them the solution for each problem, because that doesn't go anywhere. Compare to kids, don't know. Imagine like a kid has an assignment and their parents just do all the assignment for them. Like the kid wouldn't necessarily learn. Instead compare to the kid goes over the problem, does lots of mistakes and the parent give feedback or the teacher. So they will be capable of generalizing and figuring out the issue on their own. And that's where I guess magic can truly happen and true reasoning might happen for real."
+  },
+  {
+   "t": 2576,
+   "speaker": "Jekaterina Novikova",
+   "text": "It's a little bit ironic to sometimes read that media claims that human-like reasoning is practically solved already and a Thank lot of things that you have mentioned kind of say that."
+  },
+  {
+   "t": 2590,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, maybe I all the time like to sort of think of machine reasoning as like another type of reasoning that's different from how we human reason. It's working. It's amazing. Lots of people like the output. I use language models every day because they make my life easier. But probably I don't know. I wouldn't say they reason like humans for 100%."
+  },
+  {
+   "t": 2615,
+   "speaker": "Jekaterina Novikova",
+   "text": "Exactly. was my Thanks. next question."
+  },
+  {
+   "t": 2621,
+   "speaker": "Jekaterina Novikova",
+   "text": "Do you think that the reasoning problem with the large language models with transformers will ever be solved in a human-like way?"
+  },
+  {
+   "t": 2629,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, I don't know. I don't know. Probably if we sort of reach the point where we even understand how we humans think, right? Because like neuroscientists, there is a huge mystery around how the human brain work. Sometimes we don't even understand how we reach to the solution. We somehow click, like, oh, I think I got it. But. I mean, if that happens, it would be amazing. But for now, think it wouldn't happen in the next years. I think we're still far. We need to understand how our brain works first to achieve that kind of reasoning."
+  },
+  {
+   "t": 2671,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's very true. think one part is about the scaling law, like how big the model should be, how much data we should have. And the other thing is architecture. So we see small changes across the papers, but they are all around transformer architecture. So I'm really curious how the new models will be like. I saw some patterns around like some work around Mamba style models and stuff, but still that's very true. The first question is, are our assumptions correct? And also how the brain actually works? I think we are solving a lot of toy problems that are approximation of real world reasoning, real world thinking, real world understanding. So in line with what you said, so talking about cognitive limit, so is there some upper limit on how much cognition LLMs can obtain from language alone?"
+  },
+  {
+   "t": 2723,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, think, no, 100%. And I think we need more than language because we humans as well, we interact with the environment, we see things, we interact with things, we touch things, we smell things. And I don't think that language on its own can achieve all of those things, like achieve the kind of reasoning that human will require. And so this is why we're now seeing also multimodal that can achieve better performance compared to just language model in its own. But I think progress is needed there to somehow have a model that interact with the environment, like a robot that's going to be technically very, very complex. But I do think that these signals are essential for making the model learn better and be more data efficient."
+  },
+  {
+   "t": 2776,
+   "speaker": "Nouha Dziri",
+   "text": "Interacting, that interaction gives a reward. You can learn from it and then you can basically explore. Definitely, I see that as a nice direction for unlocking better capabilities."
+  },
+  {
+   "t": 2788,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, interesting. very insightful answers."
+  },
+  {
+   "t": 2793,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So in one of your previous interviews, you mentioned that you believe collaboration is key for success. This is how we advance as humans, as scientists. Is there any specific research topic that you'd be open to and interested in collaborating on? Any opportunities you'd like to share with our audience in particular?"
+  },
+  {
+   "t": 2810,
+   "speaker": "Nouha Dziri",
+   "text": "Yeah, yeah, I love collaboration. I do think that we should collaborate. I think one thing that I'm thinking a lot about these days as well is safety. I mentioned safety a couple of times today. I guess that, to be honest, that safety is one of the most challenging problems of our time. I think we all know that, you know, I just mentioned how these language models struggle from many limitations. And so now the worrisome part is that these models are being deployed into these agents. And we know that models can fail and now the failure can be really catastrophic if these are, you know, people are using them in high-stake domains. So I think we really need to work as a community together to sort of ensure that these models are safe and most important, we really need to spend time understanding how to align them better and how to control them."
+  },
+  {
+   "t": 2865,
+   "speaker": "Nouha Dziri",
+   "text": "And I know lots of people are doing that, but that's good news. But we need to put more research effort into safeguarding them, building alternative methods that are more compute efficient, models that are more interpretable so that when they make a mistake, we do understand why they made a mistake and sort of fix that pretty fast. And so I think safety, it's pretty hot topic, guess, nowadays. It was not the case, like I would say, two years ago or one year and a half ago. And so that's a good news. And I hope that people will think and work seriously on it. Yeah."
+  },
+  {
+   "t": 2897,
+   "speaker": "Jekaterina Novikova",
+   "text": "Thanks, Nouha. I hope very much that you will find collaborators, people who are trying to answer the same research questions and who care about safety, interpretability of large language models. And thank you for this conversation. It was an extremely interesting conversation to me at least and I hope to our audience as well. Thank you for joining us today. And to our audience, if you enjoyed this episode, please subscribe and join us for the next episodes, next discussions with the female researchers that are doing great work in the artificial intelligence. Thank you. Bye."
+  },
+  {
+   "t": 2941,
+   "speaker": "Nouha Dziri",
+   "text": "Thank you for having me. Thank you so much."
+  }
+ ]
+}

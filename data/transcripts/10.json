@@ -1,422 +1,646 @@
 {
  "episode": 10,
  "videoId": "DPhqm1EHxtU",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 0,
-   "text": "Welcome to another episode of the Women in AI Research podcast. I'm Jekaterina and I'm joined by my co-host Malikeh, as always. And today our episode is all about open science and how to extend language model capabilities. Did you know that open AI models can actually outperform closed ones like Claude 3.5, for example?"
+   "speaker": "Jekaterina Novikova",
+   "text": "Welcome to another episode of the Women in AI Research podcast. I'm Jekaterina and I'm joined by my co-host Malikeh, as always. And today our episode is all about open science and how to extend language model capabilities. Did you know that open AI models can actually outperform closed ones like Claude 3.5, for example? And did you know that there are researchers who don't just release the model, they give away the entire recipe data sets and the training infrastructure for free. So our guest today is Valentina Pyatkin."
   },
   {
-   "t": 29,
-   "text": "And did you know that there are researchers who don't just release the model, they give away the entire recipe data sets and the training infrastructure for free. So our guest today is Valentina Pyatkin. She is a postdoctoral researcher and the young investigator at the Allen Institute for AI and the University of Washington. She earned her PhD in computer science at the NLP lab at Bar-Ilan University. And she was also a visiting PhD student at the University of Washington. Her academic path includes a Master degree from the University of Edinburgh."
+   "t": 46,
+   "speaker": "Jekaterina Novikova",
+   "text": "She is a postdoctoral researcher and the young investigator at the Allen Institute for AI and the University of Washington. She earned her PhD in computer science at the NLP lab at Bar-Ilan University. And she was also a visiting PhD student at the University of Washington. Her academic path includes a Master degree from the University of Edinburgh. (and actually, that's the city I spent several years of my life as well) And her undergrad was from the University of Zurich and she also did a research internship at Google."
   },
   {
-   "t": 77,
-   "text": "(and actually, that's the city I spent several years of my life as well) And her undergrad was from the University of Zurich and she also did a research internship at Google. Her outstanding work has been recognized with several awards, including the ACL Outstanding Paper award, the ACL Best Theme Paper award, and the Outstanding Intern of the Year award from the Allen Institute for AI. Valentina's work on open models such as Olmo or Tulu isn't just about another model release, it's a complete blueprint for building world-class language models that anyone can reproduce."
+   "t": 94,
+   "speaker": "Jekaterina Novikova",
+   "text": "Her outstanding work has been recognized with several awards, including the ACL Outstanding Paper award, the ACL Best Theme Paper award, and the Outstanding Intern of the Year award from the Allen Institute for AI. Valentina's work on open models such as Olmo or Tulu isn't just about another model release, it's a complete blueprint for building world-class language models that anyone can reproduce. And today, other than just talking about the technical breakthroughs only, we will also discuss the role and the value of open science and how academic researchers could compete with the billion-dollar labs."
   },
   {
-   "t": 134,
-   "text": "And today, other than just talking about the technical breakthroughs only, we will also discuss the role and the value of open science and how academic researchers could compete with the billion-dollar labs. So we will dive deep into several novel post-training techniques, synthetic data generation, and why traditional benchmarks sometimes might be lying to us about model capabilities. So let's welcome Valentina Pyatkin to the podcast."
+   "t": 151,
+   "speaker": "Jekaterina Novikova",
+   "text": "So we will dive deep into several novel post-training techniques, synthetic data generation, and why traditional benchmarks sometimes might be lying to us about model capabilities. So let's welcome Valentina Pyatkin to the podcast."
   },
   {
    "t": 172,
-   "text": "It's wonderful to have you here. We are very excited to dive deep into your research. But let's start with your personal journey. Valentina, you've co-authored papers with some really well-known names in AI and NLP. Did you see these people as mentors or was it more like collaborative partnerships? Yeah, good question. I think it's a bit of both."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "It's wonderful to have you here. We are very excited to dive deep into your research. But let's start with your personal journey. Valentina, you've co-authored papers with some really well-known names in AI and NLP. Did you see these people as mentors or was it more like collaborative partnerships?"
   },
   {
-   "t": 201,
-   "text": "If I think about it, if I think about my whole career, and I think about who my mentors were, I actually noticed that I had a lot of very great female mentors. So it starts even just with my Master's in Edinburgh, where I worked or did my thesis with Bonnie Webber and afterwards, during my PhD, I was co-advised by Reut Tsarfaty, and then also during my post-doc, I had the pleasure of working with Yejin Choi and also Hannaneh Hajishirzi. I feel like throughout my career, I've always had really, really great mentors, so those are really great people to work with."
+   "t": 195,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, good question. I think it's a bit of both. If I think about it, if I think about my whole career, and I think about who my mentors were, I actually noticed that I had a lot of very great female mentors. So it starts even just with my Master's in Edinburgh, where I worked or did my thesis with Bonnie Webber and afterwards, during my PhD, I was co-advised by Reut Tsarfaty, and then also during my post-doc, I had the pleasure of working with Yejin Choi and also Hannaneh Hajishirzi. I feel like throughout my career, I've always had really, really great mentors, so those are really great people to work with."
   },
   {
    "t": 248,
-   "text": "Now in the post-training team, I worked a lot with Nathan Lambert. Then also at the same time, even just by going to conferences, for example, it happened that I was able to start some collaborations by going to some poster or somebody coming up to me, so I think it's a bit of everything. So in general, what's your take on mentorship and how do you think about building that kind of research community you actually want to be part of?"
+   "speaker": "Valentina Pyatkin",
+   "text": "Now in the post-training team, I worked a lot with Nathan Lambert. Then also at the same time, even just by going to conferences, for example, it happened that I was able to start some collaborations by going to some poster or somebody coming up to me, so I think it's a bit of everything."
+  },
+  {
+   "t": 272,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "So in general, what's your take on mentorship and how do you think about building that kind of research community you actually want to be part of?"
   },
   {
    "t": 282,
+   "speaker": "Valentina Pyatkin",
    "text": "I've had the pleasure of mentoring a couple of interns at AI2, but also in general, during my PhD for example, Master's students. So I really, really like mentoring people in terms of research. There, I think, it's very important for me to get people excited about research and to show them what it means to do good research and to have good research practices. So that's on the one hand. And then also in terms of mentorship, I think it's important to understand what does this person want, where do they want to go and then support them in their goals. So for example, not everybody wants to stay in academia, some people want to go into industry."
   },
   {
    "t": 330,
-   "text": "And I think for different people, there're different ways to kind of get them to where they want to go. And then in general, I think, I have some advice for the people I mentor in terms of what it's to go to conferences, how to collaborate and so on. Great, indeed. And I like how you approach mentorship from the perspective that you want to support people and also to show them how to do good work, right? The good science."
+   "speaker": "Valentina Pyatkin",
+   "text": "And I think for different people, there're different ways to kind of get them to where they want to go. And then in general, I think, I have some advice for the people I mentor in terms of what it's to go to conferences, how to collaborate and so on."
   },
   {
-   "t": 372,
-   "text": "From my point of view at least, your science is really good and you have also an impressive track record of awards and recognitions, fellowships that you have received by now."
+   "t": 349,
+   "speaker": "Jekaterina Novikova",
+   "text": "Great, indeed. And I like how you approach mentorship from the perspective that you want to support people and also to show them how to do good work, right? The good science."
   },
   {
-   "t": 392,
-   "text": "And you're still sufficiently early in your career, right, but already successful. What does success mean to you personally? That's a hard question to answer. So my philosophy has always been - try everything, apply to everything, you will most likely not get everything and also receive a lot of rejections. So behind all of the success that people see, there's often a lot of rejections as well."
+   "t": 378,
+   "speaker": "Jekaterina Novikova",
+   "text": "From my point of view at least, your science is really good and you have also an impressive track record of awards and recognitions, fellowships that you have received by now. And you're still sufficiently early in your career, right, but already successful. What does success mean to you personally?"
   },
   {
-   "t": 437,
-   "text": "I think my philosophy behind all that is - just try, and the worst thing is that you can get rejected. But then I think at some point you just get used to a lot of rejections. But then in terms of success, I think something that's nice or personal to me is that I think it's nice to see when something you've put a lot of work in, like a paper and a more research product, that gets appreciated by other people, gets used by other people, gets read by other people. So I think that's something very great to me."
+   "t": 407,
+   "speaker": "Valentina Pyatkin",
+   "text": "That's a hard question to answer. So my philosophy has always been - try everything, apply to everything, you will most likely not get everything and also receive a lot of rejections. So behind all of the success that people see, there's often a lot of rejections as well. I think my philosophy behind all that is - just try, and the worst thing is that you can get rejected. But then I think at some point you just get used to a lot of rejections."
+  },
+  {
+   "t": 453,
+   "speaker": "Valentina Pyatkin",
+   "text": "But then in terms of success, I think something that's nice or personal to me is that I think it's nice to see when something you've put a lot of work in, like a paper and a more research product, that gets appreciated by other people, gets used by other people, gets read by other people. So I think that's something very great to me."
   },
   {
    "t": 480,
-   "text": "So you're getting quite resilient to rejections because in the end it gives so much value to you when you see that acceptance, right, that people accept the work that you're doing? Right, exactly. It's just, especially in academia, I mean, it's full of rejections, paper rejections, grant rejections, positions you applied to rejections, it's just something you have to deal with. And yeah, resilience is a good word. I think that's something that I recommend everybody should work on, including myself."
+   "speaker": "Jekaterina Novikova",
+   "text": "So you're getting quite resilient to rejections because in the end it gives so much value to you when you see that acceptance, right, that people accept the work that you're doing?"
   },
   {
-   "t": 526,
-   "text": "Good advice. That's a very nice perspective."
+   "t": 500,
+   "speaker": "Valentina Pyatkin",
+   "text": "Right, exactly. It's just, especially in academia, I mean, it's full of rejections, paper rejections, grant rejections, positions you applied to rejections, it's just something you have to deal with. And yeah, resilience is a good word. I think that's something that I recommend everybody should work on, including myself. Good advice."
   },
   {
-   "t": 529,
-   "text": "Other than showing the value of the work that you're doing, all the awards and recognitions that you've received so far also mean that you've done an exceptional job making your research visible and impactful. Honestly, what I see as a very common challenge in the research community is that there are many brilliant researchers with outstanding profiles, but they struggle to communicate their work effectively. They may produce excellent research in isolation, but often lack the skills to showcase their ideas, build visibility or engage constructively through social media and in-person interactions. So I'm curious, how did you figure out how to share your work so people actually pay attention? And how do you share your wins without feeling awkward or uncomfortable about selling your ideas, your work or promoting yourself?"
+   "t": 528,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's a very nice perspective. Other than showing the value of the work that you're doing, all the awards and recognitions that you've received so far also mean that you've done an exceptional job making your research visible and impactful. Honestly, what I see as a very common challenge in the research community is that there are many brilliant researchers with outstanding profiles, but they struggle to communicate their work effectively. They may produce excellent research in isolation, but often lack the skills to showcase their ideas, build visibility or engage constructively through social media and in-person interactions. So I'm curious, how did you figure out how to share your work so people actually pay attention?"
+  },
+  {
+   "t": 573,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "And how do you share your wins without feeling awkward or uncomfortable about selling your ideas, your work or promoting yourself?"
   },
   {
    "t": 581,
+   "speaker": "Valentina Pyatkin",
    "text": "Yeah, so I think the last part of the question is something that I have experienced, it does feel awkward often. Also, especially when I was just starting out as a PhD student, I remember I was thinking - no, I don't have enough publications, I don't have enough of that, maybe I will make a website as soon as I have, I don't know, one or two publications or so. I think that's what I was thinking, but it's probably the wrong way to think about these things. So even now, I tell younger PhD students - get a website now. It doesn't matter, it's just good to have a website. If people are interested in what you're doing, they can look it up and they can look up your Google scholar. It doesn't have to be perfect, you're just starting out."
   },
   {
    "t": 629,
+   "speaker": "Valentina Pyatkin",
    "text": "In terms of tweeting or generally advertising your work on different platforms, there's this fine line that you have to thread or to walk on, where you don't want to come off as bragging, but at the same time, you also want to show what you've worked on. And I think there's a couple of things that you can maybe do, too. Such as for example, you can try to focus on the work and maybe talk about the work and not talk about... So there're these tweets, I guess, that you've seen where people post - oh, I got 6 out of 10 NeurIPS papers accepted or so, which maybe it's nice, but I think it's much nicer if you actually tweet about your paper and tweet out the link and say - okay, this is what I worked on."
   },
   {
    "t": 687,
+   "speaker": "Jekaterina Novikova",
    "text": "And let's now dive into your research, into what you are actually doing."
   },
   {
    "t": 694,
+   "speaker": "Jekaterina Novikova",
    "text": "And I'd like to start with your high-level research philosophy. Right now, we see that interesting trade-off in AI development, that some of the most capable models, when we speak about LLMs, they come from closed labs. And on the other hand, there is some tremendous value in open research as well. So how do you view the role that open science, open research, should play in advancing AI?"
   },
   {
    "t": 740,
-   "text": "In your opinion, what principles should guide how we share research artifacts and the data in this field of rapid progress? I think, there's a couple of things. So first of all, I think open science is super important, which you probably could have guessed that this would be my answer. But I think it's important because as you pointed out, there's been this trend in recent years. In the past, it used to be that industry really benefited a lot from academia, but also at the same time in industry labs, you could publish a lot. And so, there was this nice interaction between industry and academia."
+   "speaker": "Jekaterina Novikova",
+   "text": "In your opinion, what principles should guide how we share research artifacts and the data in this field of rapid progress?"
   },
   {
-   "t": 787,
-   "text": "But I think now, in the past couple of years, as you also have pointed out, there's been more of a closing up of industry where less of an exchange's happening, which is a pity, I think, especially because industry obviously also has a lot more resources to do things. What I think the role of open science and advancing AI is, that for example, at AI2, we work on Olmo, which is an open language model. And I think that's really important because there we actually really release everything. And I really mean EVERYTHING. We release the checkpoints, obviously, of the model, but then we also release the data, that it was trained on, which is a really important thing because without having the data, you cannot say a lot about the model."
+   "t": 753,
+   "speaker": "Valentina Pyatkin",
+   "text": "I think, there's a couple of things. So first of all, I think open science is super important, which you probably could have guessed that this would be my answer. But I think it's important because as you pointed out, there's been this trend in recent years. In the past, it used to be that industry really benefited a lot from academia, but also at the same time in industry labs, you could publish a lot. And so, there was this nice interaction between industry and academia. But I think now, in the past couple of years, as you also have pointed out, there's been more of a closing up of industry where less of an exchange's happening, which is a pity, I think, especially because industry obviously also has a lot more resources to do things."
   },
   {
-   "t": 845,
-   "text": "So you cannot do any data attribution, you cannot do much. And then we also release different checkpoints along training, we release our evaluation suites. And then we obviously also release a tech report, a full tech report where we detail everything. And I think, through all of these releases or by doing all of this very openly, there's a lot of reproducibility that's possible. And also we've seen that a lot of follow-up work is using Olmo in research in academia to have new findings about different things, about data, about architecture."
+   "t": 809,
+   "speaker": "Valentina Pyatkin",
+   "text": "What I think the role of open science and advancing AI is, that for example, at AI2, we work on Olmo, which is an open language model. And I think that's really important because there we actually really release everything. And I really mean EVERYTHING. We release the checkpoints, obviously, of the model, but then we also release the data, that it was trained on, which is a really important thing because without having the data, you cannot say a lot about the model. So you cannot do any data attribution, you cannot do much. And then we also release different checkpoints along training, we release our evaluation suites."
   },
   {
-   "t": 891,
-   "text": "And so it's really great to see that this can actually encourage new types of research. And also it can be as important for things like safety research when we release things on, for example, when we release data or when you work with data, we put a lot of focus on"
+   "t": 859,
+   "speaker": "Valentina Pyatkin",
+   "text": "And then we obviously also release a tech report, a full tech report where we detail everything. And I think, through all of these releases or by doing all of this very openly, there's a lot of reproducibility that's possible. And also we've seen that a lot of follow-up work is using Olmo in research in academia to have new findings about different things, about data, about architecture. And so it's really great to see that this can actually encourage new types of research. And also it can be as important for things like safety research when we release things on, for example, when we release data or when you work with data, we put a lot of focus on taking data that is permissively licensed and releasing that or decontaminating the data by checking for train-test overlap, by removing personally identifiable information."
   },
   {
-   "t": 913,
-   "text": "taking data that is permissively licensed and releasing that or decontaminating the data by checking for train-test overlap, by removing personally identifiable information. There's a lot of filters that you can put on top of the data when you do releases, so I think that's also very important. Right. To me, it almost looks like there are just benefits of open science. Do you see any drawbacks? There's a couple of things I could think of from other perspectives. Obviously if you're a company and you want to make a profit out of your product, then it makes sense not to release your product openly."
+   "t": 929,
+   "speaker": "Valentina Pyatkin",
+   "text": "There's a lot of filters that you can put on top of the data when you do releases, so I think that's also very important."
   },
   {
-   "t": 963,
-   "text": "And then some people say that releasing everything could, for example, potentially be harmful if it gets into the hand of malicious user or researchers."
+   "t": 938,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. To me, it almost looks like there are just benefits of open science. Do you see any drawbacks?"
   },
   {
-   "t": 979,
-   "text": "That's a tricky point. But yeah, it's also something to be aware of. Yeah, that's true. There is a trade-off. But in general, I'm really glad how open source AI is helping to decentralize the power system all across the world and is helping with democratizing AI access. But as you said, it comes with its own drawbacks, which is part of it. Speaking of your Tulu 3 data, I really want to"
+   "t": 948,
+   "speaker": "Valentina Pyatkin",
+   "text": "There's a couple of things I could think of from other perspectives. Obviously if you're a company and you want to make a profit out of your product, then it makes sense not to release your product openly. And then some people say that releasing everything could, for example, potentially be harmful if it gets into the hand of malicious user or researchers. That's a tricky point. But yeah, it's also something to be aware of."
   },
   {
-   "t": 1012,
-   "text": "talk about that. I was really excited about this moment."
+   "t": 986,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's true. There is a trade-off. But in general, I'm really glad how open source AI is helping to decentralize the power system all across the world and is helping with democratizing AI access. But as you said, it comes with its own drawbacks, which is part of it. Speaking of your Tulu 3 data, I really want to talk about that."
   },
   {
    "t": 1016,
-   "text": "Let's talk about your work on Tulu 3, which represents a comprehensive approach to open language model post-training, releasing not just models, but complete training recipes, data sets, evaluation frameworks, and infrastructure. Could you start by giving us an overview of what Tulu 3 is and what you set out to achieve with this work? Yeah, the main goal was to build a really strong open post-training recipe, so we started off by taking a base Llama model and we then said, okay, given only open resources, how far can we get and what is the best we can do? So that was the goal of the project."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I was really excited about this moment. Let's talk about your work on Tulu 3, which represents a comprehensive approach to open language model post-training, releasing not just models, but complete training recipes, data sets, evaluation frameworks, and infrastructure. Could you start by giving us an overview of what Tulu 3 is and what you set out to achieve with this work?"
   },
   {
-   "t": 1061,
-   "text": "Then through a lot of experimentation and different ablations, we developed this Tulu 3 recipe that consists of different pipeline steps such as SFT, RLHF, and then also RLVR. And in the end, it led to really good performance, so it's a well-working post-trending recipe. Right, building on that, can you give a little bit more details of what makes Tulu 3 approach different from typical model releases? Maybe not necessarily completely closed models, but semi-open, any other models that you can find out there?"
+   "t": 1036,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, the main goal was to build a really strong open post-training recipe, so we started off by taking a base Llama model and we then said, okay, given only open resources, how far can we get and what is the best we can do? So that was the goal of the project. Then through a lot of experimentation and different ablations, we developed this Tulu 3 recipe that consists of different pipeline steps such as SFT, RLHF, and then also RLVR. And in the end, it led to really good performance, so it's a well-working post-trending recipe."
   },
   {
-   "t": 1108,
-   "text": "And what specific barriers you were trying to remove for the research community and the AI researchers? I think one thing that was new was that it really looked at the whole recipe of post-training and it didn't just look at, for example, there's a lot of papers or releases looking maybe at DPO or at SFT, but here it was really, let's look at the whole pipeline, let's put everything together. So I think that was something additional new. And then also we again did a lot of data work for this project, both synthetic and not synthetic data work."
+   "t": 1084,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, building on that, can you give a little bit more details of what makes Tulu 3 approach different from typical model releases? Maybe not necessarily completely closed models, but semi-open, any other models that you can find out there? And what specific barriers you were trying to remove for the research community and the AI researchers?"
   },
   {
-   "t": 1155,
-   "text": "By releasing all of that data and by showing that this data works well, I think, that was also something very useful to the community. Absolutely agree. And your Tulu 3 models achieved remarkable results, outperforming all open models in their size and even matching closed models, like Claude 3.5 Haiku. What were the key innovations that allowed you to close this performance gap? A couple of things. First of all, I think, every step of the pipeline contributed a bit. But then also, as I said, a lot of data work went into it and especially a lot of data mixing, and also filtering and checking."
+   "t": 1117,
+   "speaker": "Valentina Pyatkin",
+   "text": "I think one thing that was new was that it really looked at the whole recipe of post-training and it didn't just look at, for example, there's a lot of papers or releases looking maybe at DPO or at SFT, but here it was really, let's look at the whole pipeline, let's put everything together. So I think that was something additional new. And then also we again did a lot of data work for this project, both synthetic and not synthetic data work. By releasing all of that data and by showing that this data works well, I think, that was also something very useful to the community."
   },
   {
-   "t": 1207,
-   "text": "First of all, we collected a lot of existing data sources for SFT, for example, and then we thought - okay, let's try to mix it in a way that actually improves performance on different benchmarks. And we have this suite of development benchmarks that we used to evaluate on during development. And by having these benchmarks, we could actually do a lot of mixing and ablations and see what data sources actually harm performance, for example, or what data sources do help. And I think that was really important. And then lastly, we had this RLVR steps, reinforcement learning from verifiable rewards, and that step at the time was kind of new, not completely new, it has been done before in research, but kind of new."
+   "t": 1166,
+   "speaker": "Jekaterina Novikova",
+   "text": "Absolutely agree."
   },
   {
-   "t": 1262,
-   "text": "If you use this for targeted evals or for targeted skills, you get really nice performance gains as well. I think that's another benefit of open science actually, which probably was missed before."
+   "t": 1167,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "And your Tulu 3 models achieved remarkable results, outperforming all open models in their size and even matching closed models, like Claude 3.5 Haiku. What were the key innovations that allowed you to close this performance gap?"
   },
   {
-   "t": 1283,
-   "text": "It's not just about what worked well, but it's also about releasing the results of what did not work, what harmed the model. It's really important."
+   "t": 1184,
+   "speaker": "Valentina Pyatkin",
+   "text": "A couple of things. First of all, I think, every step of the pipeline contributed a bit. But then also, as I said, a lot of data work went into it and especially a lot of data mixing, and also filtering and checking. First of all, we collected a lot of existing data sources for SFT, for example, and then we thought - okay, let's try to mix it in a way that actually improves performance on different benchmarks. And we have this suite of development benchmarks that we used to evaluate on during development. And by having these benchmarks, we could actually do a lot of mixing and ablations and see what data sources actually harm performance, for example, or what data sources do help."
+  },
+  {
+   "t": 1239,
+   "speaker": "Valentina Pyatkin",
+   "text": "And I think that was really important. And then lastly, we had this RLVR steps, reinforcement learning from verifiable rewards, and that step at the time was kind of new, not completely new, it has been done before in research, but kind of new. If you use this for targeted evals or for targeted skills, you get really nice performance gains as well."
+  },
+  {
+   "t": 1271,
+   "speaker": "Jekaterina Novikova",
+   "text": "I think that's another benefit of open science actually, which probably was missed before. It's not just about what worked well, but it's also about releasing the results of what did not work, what harmed the model. It's really important."
   },
   {
    "t": 1296,
-   "text": "We actually have in the Tulu Tech Report a whole section about what didn't work. Feel free to read it if you're interested. Also in developing Tulu 3 you made several important decisions about data, about data provenance, about licensing, and you even excluded some data sets due to legal concerns,"
+   "speaker": "Valentina Pyatkin",
+   "text": "We actually have in the Tulu Tech Report a whole section about what didn't work. Feel free to read it if you're interested."
   },
   {
-   "t": 1321,
-   "text": "right? So it's interesting how you navigated that tension between accessing high quality training data, trying to get as much as possible of the high quality data, and at the same time maintaining strict ethical standards and filtering out some data, even if it is a high quality, due to ethical reasons. Can you speak a little bit about that? Yeah, this was a really big thing that we focused on, you're right by pointing that out."
+   "t": 1307,
+   "speaker": "Jekaterina Novikova",
+   "text": "Also in developing Tulu 3 you made several important decisions about data, about data provenance, about licensing, and you even excluded some data sets due to legal concerns, right? So it's interesting how you navigated that tension between accessing high quality training data, trying to get as much as possible of the high quality data, and at the same time maintaining strict ethical standards and filtering out some data, even if it is a high quality, due to ethical reasons."
   },
   {
-   "t": 1364,
-   "text": "Our main concern was really - let's look at all the licenses. Let's only use things that are permissively licensed because afterwards we also wanted to release all of these artifacts with a good license. So this is what allowed us to do that. And it unfortunately is an issue that often the highest quality data is not permissively licensed or maybe not even released and probably kept behind closed doors, so we could not use that. But at the same time, as you see, even when using whatever was available to us, we still were able to achieve good performance."
+   "t": 1353,
+   "speaker": "Jekaterina Novikova",
+   "text": "Can you speak a little bit about that?"
   },
   {
-   "t": 1413,
-   "text": "And I think that's also encouraging to see that given all of these limitations, it's still possible to achieve good performance. So that was nice. I think, another thing to look into is, for example, synthetic data generation, generating synthetic data from models that have the right license to do so. You need to check that as well, and possibly there's different methods for generating good and diverse high quality synthetic data even from weaker models. So I think that's something people can look into if they're interested in getting more data."
+   "t": 1356,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, this was a really big thing that we focused on, you're right by pointing that out. Our main concern was really - let's look at all the licenses. Let's only use things that are permissively licensed because afterwards we also wanted to release all of these artifacts with a good license. So this is what allowed us to do that. And it unfortunately is an issue that often the highest quality data is not permissively licensed or maybe not even released and probably kept behind closed doors, so we could not use that."
+  },
+  {
+   "t": 1401,
+   "speaker": "Valentina Pyatkin",
+   "text": "But at the same time, as you see, even when using whatever was available to us, we still were able to achieve good performance. And I think that's also encouraging to see that given all of these limitations, it's still possible to achieve good performance. So that was nice. I think, another thing to look into is, for example, synthetic data generation, generating synthetic data from models that have the right license to do so. You need to check that as well, and possibly there's different methods for generating good and diverse high quality synthetic data even from weaker models."
+  },
+  {
+   "t": 1447,
+   "speaker": "Valentina Pyatkin",
+   "text": "So I think that's something people can look into if they're interested in getting more data."
   },
   {
    "t": 1454,
-   "text": "Beyond just releasing models, Tulu 3 provides extensive tooling, from decontamination frameworks to evaluation suites. What impact have you seen from these community-facing contributions and how do they advance open science? I've seen big impact actually. This is word that we like to use there, too, called \"adoption\", nd that's actually one of our core focuses - we really want people to \"adopt\" our methodology, our tools, other things that we release. What do I mean by that? I mean that we want people to use them, we want them to have some sort of impact. And by releasing, for example, open-instruct, which is this post-training code base, we saw really a huge adoption."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Beyond just releasing models, Tulu 3 provides extensive tooling, from decontamination frameworks to evaluation suites. What impact have you seen from these community-facing contributions and how do they advance open science?"
   },
   {
-   "t": 1508,
-   "text": "A lot of people are using it to train their own models, which is great, and also the data sets are heavily used and our evals as well. So it's really great to see that when you release something that actually works and that is easy to run, people will immediately start using it and get excited about it. So I think that's actually something that's very important for research as well and something that maybe often researchers don't think about. They often prefer to write their papers, but then there's actually much more that you can do and release, such as code, for example, that will make your research much more accessible."
+   "t": 1470,
+   "speaker": "Valentina Pyatkin",
+   "text": "I've seen big impact actually. This is word that we like to use there, too, called \"adoption\", nd that's actually one of our core focuses - we really want people to \"adopt\" our methodology, our tools, other things that we release. What do I mean by that? I mean that we want people to use them, we want them to have some sort of impact. And by releasing, for example, open-instruct, which is this post-training code base, we saw really a huge adoption. A lot of people are using it to train their own models, which is great, and also the data sets are heavily used and our evals as well."
+  },
+  {
+   "t": 1518,
+   "speaker": "Valentina Pyatkin",
+   "text": "So it's really great to see that when you release something that actually works and that is easy to run, people will immediately start using it and get excited about it. So I think that's actually something that's very important for research as well and something that maybe often researchers don't think about. They often prefer to write their papers, but then there's actually much more that you can do and release, such as code, for example, that will make your research much more accessible."
   },
   {
    "t": 1552,
+   "speaker": "Jekaterina Novikova",
    "text": "And much more popular as a result. Let's explore post-training and post-training methods more deeply."
   },
   {
    "t": 1566,
-   "text": "Unlike pre-training, which teaches general knowledge, post-training seems to be about learning specific behaviors for the model, like following instructions, aligning with preferences, or presenting some particular skills. So how do you conceptualize this distinction and what unique opportunities in your opinion does this behavioral focus provide? Behavioral focus of the post-training. Yeah, I really like post-training because this is the part where language models get actually usable. After post-training, you can actually interact with them and teach them new skills and do many more fun things."
+   "speaker": "Jekaterina Novikova",
+   "text": "Unlike pre-training, which teaches general knowledge, post-training seems to be about learning specific behaviors for the model, like following instructions, aligning with preferences, or presenting some particular skills. So how do you conceptualize this distinction and what unique opportunities in your opinion does this behavioral focus provide? Behavioral focus of the post-training."
   },
   {
-   "t": 1620,
-   "text": "I think that's one of the things that attracts me to post-training as well. I think there's also a lot of very interesting challenges. First of all, defining the skills that you want a model to have. But then also even just instructions, the concept of instructions itself is very interesting to me because there's a lot of pragmatics that goes into instruction. How do people ask things? What do they ask about? Often instructions are underspecified and having this more pragmatic aspect is very interesting to me between humans and models. So there's this language models-as-interfaces concept and that's one thing that fascinates me about post-training."
+   "t": 1602,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, I really like post-training because this is the part where language models get actually usable. After post-training, you can actually interact with them and teach them new skills and do many more fun things. I think that's one of the things that attracts me to post-training as well. I think there's also a lot of very interesting challenges. First of all, defining the skills that you want a model to have. But then also even just instructions, the concept of instructions itself is very interesting to me because there's a lot of pragmatics that goes into instruction. How do people ask things?"
+  },
+  {
+   "t": 1648,
+   "speaker": "Valentina Pyatkin",
+   "text": "What do they ask about? Often instructions are underspecified and having this more pragmatic aspect is very interesting to me between humans and models. So there's this language models-as-interfaces concept and that's one thing that fascinates me about post-training."
   },
   {
    "t": 1673,
-   "text": "That's great. I'm curious if you think that even pre-training is needed. Because I saw some papers and some signals last year, for example, instruction pre-training and some people talk about mixing instruction data with raw text. Do you think if it is even worth spending billions of dollars and just knowledge injection with raw text and then going through phases of multi-stage post-training? I'm just curious what's your perspective on it. Yeah, I think pre-training is super important and really needed, so I would not remove the pre-training step. But you're right. So one thing, for example, that we do is we have this mid-training step where we, for the last couple of training points during pre-training, we actually show the model the highest quality data that we have for pre-training and also show it some instruction data, as you mentioned."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's great. I'm curious if you think that even pre-training is needed. Because I saw some papers and some signals last year, for example, instruction pre-training and some people talk about mixing instruction data with raw text. Do you think if it is even worth spending billions of dollars and just knowledge injection with raw text and then going through phases of multi-stage post-training? I'm just curious what's your perspective on it."
   },
   {
-   "t": 1741,
-   "text": "And we've seen that adding this mid-training stage somewhere between post-training and pre-training really improves a model's performance on certain benchmarks. So that's something that you could do, but I think pre-training in general is very important just to give a model basic skills and also basic knowledge that probably you will never be able to teach a model during post-training. There's been a couple of papers that show that post-training mainly amplifies existing knowledge that's already there from pre-training rather than teaches new knowledge, so I think pre-training is very important still. Cool, yeah, thanks for sharing your insights."
+   "t": 1705,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, I think pre-training is super important and really needed, so I would not remove the pre-training step. But you're right. So one thing, for example, that we do is we have this mid-training step where we, for the last couple of training points during pre-training, we actually show the model the highest quality data that we have for pre-training and also show it some instruction data, as you mentioned. And we've seen that adding this mid-training stage somewhere between post-training and pre-training really improves a model's performance on certain benchmarks."
+  },
+  {
+   "t": 1753,
+   "speaker": "Valentina Pyatkin",
+   "text": "So that's something that you could do, but I think pre-training in general is very important just to give a model basic skills and also basic knowledge that probably you will never be able to teach a model during post-training. There's been a couple of papers that show that post-training mainly amplifies existing knowledge that's already there from pre-training rather than teaches new knowledge, so I think pre-training is very important still."
   },
   {
    "t": 1786,
-   "text": "As you said, post-training has evolved from simple instruction tuning to sophisticated multi-stage pipelines involving preference learning, reinforcement learning, and specialized objectives. How do you see this evolution and what fundamental insights are driving increasing complexity in post-training methods? Yeah, in the past people mainly just did fine tuning. They took a BERT model and then fine tuned it maybe for SRL or so, and now you have all these different steps as you pointed out. I think they're actually all very interesting. Obviously, SFT or instruction tuning is very important to get this instruction format right, to teach models how to follow instructions."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool, yeah, thanks for sharing your insights. As you said, post-training has evolved from simple instruction tuning to sophisticated multi-stage pipelines involving preference learning, reinforcement learning, and specialized objectives. How do you see this evolution and what fundamental insights are driving increasing complexity in post-training methods?"
   },
   {
-   "t": 1836,
-   "text": "And then preference tuning is maybe more important for things like style or general chat capabilities and things like certain formatting, output formatting. And then for RLVR, that's another important step, but there, unfortunately, you can only do RLVR for things that are verifiable. Tasks like math and coding, those are very verifiable, verifiable instruction following. So there's these different steps which teach different things, I would say. There's also interesting things like model merging and model souping, so you can really do a lot of things or looking at more tests and compute."
+   "t": 1806,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, in the past people mainly just did fine tuning. They took a BERT model and then fine tuned it maybe for SRL or so, and now you have all these different steps as you pointed out. I think they're actually all very interesting. Obviously, SFT or instruction tuning is very important to get this instruction format right, to teach models how to follow instructions. And then preference tuning is maybe more important for things like style or general chat capabilities and things like certain formatting, output formatting. And then for RLVR, that's another important step, but there, unfortunately, you can only do RLVR for things that are verifiable."
   },
   {
-   "t": 1883,
-   "text": "Yeah, you mentioned those several different ways of post-training already, so I want to follow up a little bit on that. In your Tulu 3 work, you have that four-stage pipeline, where the first stage is data curation, then it's supervised fine-tuning, SFT, then it's direct preference optimization, DPO, and finally you have that reinforcement learning with the verifiable rewards. And this is quite a substantial advancement in post-training sophistication."
+   "t": 1861,
+   "speaker": "Valentina Pyatkin",
+   "text": "Tasks like math and coding, those are very verifiable, verifiable instruction following. So there's these different steps which teach different things, I would say. There's also interesting things like model merging and model souping, so you can really do a lot of things or looking at more tests and compute. Yeah,"
+  },
+  {
+   "t": 1884,
+   "speaker": "Jekaterina Novikova",
+   "text": "You mentioned those several different ways of post-training already, so I want to follow up a little bit on that. In your Tulu 3 work, you have that four-stage pipeline, where the first stage is data curation, then it's supervised fine-tuning, SFT, then it's direct preference optimization, DPO, and finally you have that reinforcement learning with the verifiable rewards."
   },
   {
    "t": 1929,
-   "text": "Can you trace the key insights for us that led you from simpler approaches, just maybe a single stage alone or something else alone, to this complex recipe and what performance gains you achieved with each stage? So we initially we knew, okay, we will do instruction tuning and we will do some sort of RLHF or DPO. So this is what we started off with. But then at some point we got some advice from John Schulman, who told us - actually, you should look into verifiable rewards, I think that could really help you."
+   "speaker": "Jekaterina Novikova",
+   "text": "And this is quite a substantial advancement in post-training sophistication. Can you trace the key insights for us that led you from simpler approaches, just maybe a single stage alone or something else alone, to this complex recipe and what performance gains you achieved with each stage?"
   },
   {
-   "t": 1981,
-   "text": "So this small little piece of advice was really helpful. And we then looked into that and started working on RLVR. For that we looked at three different tasks: math, code and instruction following. And you also asked about the gains from each step or what each step"
+   "t": 1952,
+   "speaker": "Valentina Pyatkin",
+   "text": "So we initially we knew, okay, we will do instruction tuning and we will do some sort of RLHF or DPO. So this is what we started off with. But then at some point we got some advice from John Schulman, who told us - actually, you should look into verifiable rewards, I think that could really help you. So this small little piece of advice was really helpful. And we then looked into that and started working on RLVR. For that we looked at three different tasks: math, code and instruction following."
   },
   {
-   "t": 2011,
-   "text": "gives you, so I think, some insights that we have had was we had this paper called \"Unpacking DPO and PPO\" at some point where we compared should you use DPO or should you use PPO? And generally we found that reinforcement learning always leads to better performance. Not always, but tends to lead to better performance compared to just doing DPO. But then there's also trade-offs like it's more resource intensive and sometimes a bit finicky, so you kind of need to balance these trade-offs. But in the end, reinforcement learning will always work better in most cases, which we've also seen with RLVR."
+   "t": 2001,
+   "speaker": "Valentina Pyatkin",
+   "text": "And you also asked about the gains from each step or what each step gives you, so I think, some insights that we have had was we had this paper called \"Unpacking DPO and PPO\" at some point where we compared should you use DPO or should you use PPO? And generally we found that reinforcement learning always leads to better performance. Not always, but tends to lead to better performance compared to just doing DPO. But then there's also trade-offs like it's more resource intensive and sometimes a bit finicky, so you kind of need to balance these trade-offs."
   },
   {
-   "t": 2064,
-   "text": "So that's one of the insights that we had. And then we also found, given our dev set of tasks that we evaluated on, we found, for example, that the DPO step really helps with AlpacaEval and really increases performance there. And for example, SFT really helps with other types of evals. And I think each step gives you performance gain, so you really need each step. And lastly, we also found some insights that we had where that there's a lot of data contamination. So a lot of training data sets had actually test prompts in them, so we had to remove those."
+   "t": 2054,
+   "speaker": "Valentina Pyatkin",
+   "text": "But in the end, reinforcement learning will always work better in most cases, which we've also seen with RLVR. So that's one of the insights that we had. And then we also found, given our dev set of tasks that we evaluated on, we found, for example, that the DPO step really helps with AlpacaEval and really increases performance there. And for example, SFT really helps with other types of evals. And I think each step gives you performance gain, so you really need each step."
   },
   {
-   "t": 2117,
-   "text": "And we also found that synthetic data can really work well for specific tasks. Again, I already mentioned the mixing and filtering steps, so think those were all insights where we saw that really helps."
+   "t": 2099,
+   "speaker": "Valentina Pyatkin",
+   "text": "And lastly, we also found some insights that we had where that there's a lot of data contamination. So a lot of training data sets had actually test prompts in them, so we had to remove those. And we also found that synthetic data can really work well for specific tasks. Again, I already mentioned the mixing and filtering steps, so think those were all insights where we saw that really helps."
   },
   {
    "t": 2133,
-   "text": "You mentioned that DPO, for example, showed the best gains on specific benchmarks, like AlpacaEval, I guess, you said, and there are other specific gains when you use other methods. How could you explain this? I understand that it's just the observation, but do you have any ideas why a specific method achieves better performance on certain specific data sets or benchmarks? Yes, so the preference tuning step, which can be either DPO or PPO, that one was really good for AlpacaEval because AlpacaEval is more like an eval that tests for general chat abilities."
+   "speaker": "Jekaterina Novikova",
+   "text": "You mentioned that DPO, for example, showed the best gains on specific benchmarks, like AlpacaEval, I guess, you said, and there are other specific gains when you use other methods. How could you explain this? I understand that it's just the observation, but do you have any ideas why a specific method achieves better performance on certain specific data sets or benchmarks?"
   },
   {
-   "t": 2193,
-   "text": "How is your response, is it better than another strong models response, for example?"
+   "t": 2174,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yes, so the preference tuning step, which can be either DPO or PPO, that one was really good for AlpacaEval because AlpacaEval is more like an eval that tests for general chat abilities. How is your response, is it better than another strong models response, for example? And I think also the prompts are general chat prompts in that eval. And so by being good at this through DPO, we see that training on preference data, which does exactly that, which shows which response is better than the other, can be beneficial for these types of tasks."
   },
   {
-   "t": 2203,
-   "text": "And I think also the prompts are general chat prompts in that eval. And so by being good at this through DPO, we see that training on preference data, which does exactly that, which shows which response is better than the other, can be beneficial for these types of tasks. So it can make your output maybe sounds slightly better, look a bit better, be formatted in a way that is kind of preferable to humans or maybe machines as well. So that's why it was better on chat. And then for SFT, there you actually can evaluate on things like multiple choice."
+   "t": 2225,
+   "speaker": "Valentina Pyatkin",
+   "text": "So it can make your output maybe sounds slightly better, look a bit better, be formatted in a way that is kind of preferable to humans or maybe machines as well. So that's why it was better on chat. And then for SFT, there you actually can evaluate on things like multiple choice. The model will start understanding the task of multiple choice or it will start being able to perform other types of evals that you can't even perform on base models. So that's what is important there."
   },
   {
-   "t": 2249,
-   "text": "The model will start understanding the task of multiple choice or it will start being able to perform other types of evals that you can't even perform on base models. So that's what is important there. Interesting, great insights. Thanks for sharing. I see that in many of the companies that I used to work with as clients, they really don't know where to start from and what stages to include and what is the benefit of each stage in training from pre-training, continual pre-training, to all these like SFT, DPO stages. And I think those insights are very, very helpful. In particular, I have a few questions about RLVR."
+   "t": 2265,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting, great insights. Thanks for sharing. I see that in many of the companies that I used to work with as clients, they really don't know where to start from and what stages to include and what is the benefit of each stage in training from pre-training, continual pre-training, to all these like SFT, DPO stages. And I think those insights are very, very helpful."
   },
   {
    "t": 2292,
-   "text": "First of all, for our audience who might not be familiar with, what do you mean by verifiable rewards? So here, I think of a variable reward as something where you can check for the ground truth. So what do I mean with that? Let's say you have a math question and let me give you a simple one - two plus two equals four. And then you ask the model two plus two, and the model outputs four, and your gold answer is four. So it's just checking for accuracy basically. And if it's correct, then you give a reward of one, and if it's wrong, you give a reward of zero. So it's actually really in some way a dumb reward, and it's very basic."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "In particular, I have a few questions about RLVR. First of all, for our audience who might not be familiar with, what do you mean by verifiable rewards?"
   },
   {
-   "t": 2340,
-   "text": "And you can do the same for code, for example, where you can say - check, does the Python program run, or does it output the thing that I wanted to output? So these are things that are verifiable where you can get to some kind of ground truth. Then there're also things that are not verifiable. Like if you ask a model - give me a summary about Seattle, then it will output a summary but you cannot verify to the ground truth whether this is a perfect summary or a good summary. You can give some approximations but you can never get the ground truth."
+   "t": 2298,
+   "speaker": "Valentina Pyatkin",
+   "text": "So here, I think of a variable reward as something where you can check for the ground truth. So what do I mean with that? Let's say you have a math question and let me give you a simple one - two plus two equals four. And then you ask the model two plus two, and the model outputs four, and your gold answer is four. So it's just checking for accuracy basically. And if it's correct, then you give a reward of one, and if it's wrong, you give a reward of zero. So it's actually really in some way a dumb reward, and it's very basic. And you can do the same for code, for example, where you can say - check, does the Python program run, or does it output the thing that I wanted to output?"
+  },
+  {
+   "t": 2353,
+   "speaker": "Valentina Pyatkin",
+   "text": "So these are things that are verifiable where you can get to some kind of ground truth. Then there're also things that are not verifiable. Like if you ask a model - give me a summary about Seattle, then it will output a summary but you cannot verify to the ground truth whether this is a perfect summary or a good summary. You can give some approximations but you can never get the ground truth."
   },
   {
    "t": 2379,
-   "text": "As a follow up, I was just curious about fundamental problems we were trying to solve with RLVR compared to traditional RLHF that used to be used before. Yeah, that's a good question. When we did traditional RLHF, so PPO training with a reward model, we noticed that across different training steps, or longer training steps, we saw that our AlpacaEval, for example, went up with training. So that was great. But then other tasks like, for example, math evals or so, started to degrade. So doing too much preference tuning actually harmed certain tasks if you trained it for too long."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "As a follow up, I was just curious about fundamental problems we were trying to solve with RLVR compared to traditional RLHF that used to be used before."
   },
   {
-   "t": 2427,
-   "text": "And so we thought, okay, this type of over optimization is happening with PPO and a reward model. So why is that happening? And our assumption was that this is happening because we're using a reward model and reward models are not perfect. They're trained on data that often has some kind of spurious correlations and other issues. So we found that when you really damnit done use a very basic verifiable reward, you get a much stronger signal, a reinforcement learning signal, than using this finicky reward model."
+   "t": 2390,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, that's a good question. When we did traditional RLHF, so PPO training with a reward model, we noticed that across different training steps, or longer training steps, we saw that our AlpacaEval, for example, went up with training. So that was great. But then other tasks like, for example, math evals or so, started to degrade. So doing too much preference tuning actually harmed certain tasks if you trained it for too long. And so we thought, okay, this type of over optimization is happening with PPO and a reward model."
+  },
+  {
+   "t": 2435,
+   "speaker": "Valentina Pyatkin",
+   "text": "So why is that happening? And our assumption was that this is happening because we're using a reward model and reward models are not perfect. They're trained on data that often has some kind of spurious correlations and other issues. So we found that when you really damnit done use a very basic verifiable reward, you get a much stronger signal, a reinforcement learning signal, than using this finicky reward model."
   },
   {
    "t": 2463,
-   "text": "Interesting, yeah. Another aspect, another interesting aspect of your work is that it demonstrates strong results from persona-driven synthetic data generation."
+   "speaker": "Jekaterina Novikova",
+   "text": "Interesting, yeah. Another aspect, another interesting aspect of your work is that it demonstrates strong results from persona-driven synthetic data generation. Can you explain this strategy? You have mentioned that already a couple of times, but can you explain this strategy specifically and how it addresses challenges and post training data generation?"
   },
   {
-   "t": 2480,
-   "text": "Can you explain this strategy? You have mentioned that already a couple of times, but can you explain this strategy specifically and how it addresses challenges and post training data generation? Yeah, so one issue that we had is that we wanted to have more prompts. And as we already discussed before, there's not a lot of prompts available out there, especially not prompts that are permissively licensed. And so we said - okay, let's generate synthetic prompts for the specific tasks that we cared about. There we initially had a lot of issues generating good and interesting prompts that actually improved our evals until we encountered this persona approach, which actually is not our own approach, it has been proposed by other researchers, we just use their method."
+   "t": 2495,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, so one issue that we had is that we wanted to have more prompts. And as we already discussed before, there's not a lot of prompts available out there, especially not prompts that are permissively licensed. And so we said - okay, let's generate synthetic prompts for the specific tasks that we cared about. There we initially had a lot of issues generating good and interesting prompts that actually improved our evals until we encountered this persona approach, which actually is not our own approach, it has been proposed by other researchers, we just use their method."
   },
   {
    "t": 2541,
-   "text": "And the idea behind using personas for synthetic data generation is that you"
-  },
-  {
-   "t": 2549,
-   "text": "have a set of different personas. And what is a persona? It's something like a description of a person. So it can be something like a high school teacher or another profession, a chemist, or a pilot, or something like that. So different types of professions or descriptions of people. And then you ask it - give me a math question that a pilot would ask. And then it outputs a prompt that potentially a pilot might ask. By doing this type of prompting, that is conditioned on these different personas, we saw that we get very diverse prompts, which was really great and it was much better."
+   "speaker": "Valentina Pyatkin",
+   "text": "And the idea behind using personas for synthetic data generation is that you have a set of different personas. And what is a persona? It's something like a description of a person. So it can be something like a high school teacher or another profession, a chemist, or a pilot, or something like that. So different types of professions or descriptions of people. And then you ask it - give me a math question that a pilot would ask. And then it outputs a prompt that potentially a pilot might ask. By doing this type of prompting, that is conditioned on these different personas, we saw that we get very diverse prompts, which was really great and it was much better."
   },
   {
    "t": 2597,
-   "text": "And we also saw that training on these prompts gave us really nice improvements for specific tasks, such as math or also instruction following."
+   "speaker": "Valentina Pyatkin",
+   "text": "And we also saw that training on these prompts gave us really nice improvements for specific tasks, such as math or also instruction following. I think the main benefit there is that you get diversity, so you get very diverse problems."
   },
   {
-   "t": 2609,
-   "text": "I think the main benefit there is that you get diversity, so you get very diverse problems. Do you need many different personas or three, five, six are enough? There's this one paper that introduced more than a thousand personas. So yeah, the more the better if you really want diversity. Cool. Your work on \"Generalizing Verifiable Instruction Following\" builds directly on the RLVR techniques from Tulu 3, applying them specifically to the challenge of following precise constraints and instructions. This research introduces both new benchmarks and training methods for instruction following. Could you give us an overview of this research and what problems it addresses?"
+   "t": 2616,
+   "speaker": "Jekaterina Novikova",
+   "text": "Do you need many different personas or three, five, six are enough?"
+  },
+  {
+   "t": 2624,
+   "speaker": "Valentina Pyatkin",
+   "text": "There's this one paper that introduced more than a thousand personas. So yeah, the more the better if you really want diversity."
+  },
+  {
+   "t": 2634,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Cool. Your work on \"Generalizing Verifiable Instruction Following\" builds directly on the RLVR techniques from Tulu 3, applying them specifically to the challenge of following precise constraints and instructions. This research introduces both new benchmarks and training methods for instruction following. Could you give us an overview of this research and what problems it addresses?"
   },
   {
    "t": 2657,
+   "speaker": "Valentina Pyatkin",
    "text": "Yeah, I'm a big fan of precise instruction following because I think it's a very interesting task. So what is precise instruction following? We can also call it very, very fine-grained instruction following. It's when you have a prompt with a verifiable constraint. For example, give me a summary about Seattle. And then you have the constraint, which can be something like, a very basic one, would be something like only output 300 words. But then there's also more interesting constraints, like the first word of every sentence should start with the letter 'A', or things like don't include the word 'and' in your response."
   },
   {
    "t": 2706,
+   "speaker": "Valentina Pyatkin",
    "text": "There can be many different constraints that you can even think of. And the nice thing about these is that often, very often they're verifiable. For example, for length constraints, you can just check is the answer 300 words or does every sentence start with letter 'A', you can easily check that with Python functions. So this is a task and we then were thinking, okay, great. So for Tulu 3, we improved on this task. So there's this existing benchmark called IFEval and we were able to get good performance on it, but one thing that I always wondered was, does it actually generalize because in the IFEval dataset, you have, I think, 25 constraints that you evaluate on, which is not a lot."
   },
   {
    "t": 2768,
+   "speaker": "Valentina Pyatkin",
    "text": "And actually most of the existing model or post-training approaches for precise instruction following use these 25 constraints also during their training. And so I was suspecting that there might potentially be a lot of contamination and also a lot of overfitting on these constraints. So the first thing that I did was I built this benchmark that is very similar to IFEval, but just has different constraints and different verifier functions. So by building that, I was then able to see how do models perform on IFEval versus on IFBench, do they perform similarly. And actually we found that their performance is much, much worse on this unseen benchmark that contains constraints that the models have not seen, which was very interesting."
   },
   {
    "t": 2826,
-   "text": "So that shows to us that even the best models out there, the frontier models are not able to actually follow all types of constraints, mainly trained to follow the ones mentioned in IFEval. Also including Tulu, so that's also our own problem. And then another thing I looked into was, so how can we actually do training for precise instruction following to improve generalization? Another thing I looked into, can say more about that maybe... Yes please, say a litle bit more about it. How specifically"
+   "speaker": "Valentina Pyatkin",
+   "text": "So that shows to us that even the best models out there, the frontier models are not able to actually follow all types of constraints, mainly trained to follow the ones mentioned in IFEval. Also including Tulu, so that's also our own problem. And then another thing I looked into was, so how can we actually do training for precise instruction following to improve generalization? Another thing I looked into, can say more about that maybe..."
   },
   {
-   "t": 2867,
-   "text": "did you extend that RLVR approach from Tulu 3? And I'm especially interested in what new capabilities that brought for precise instruction following. So one thing I did is I added more training constraints, also to the training data, with more verifiers as well. Compared to Tulu 3 for this paper here, for IFBench, we used GRPO. So that was I think something that added more gains or better performance. And then we looked at a couple of different things."
+   "t": 2861,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yes please, say a litle bit more about it. How specifically did you extend that RLVR approach from Tulu 3? And I'm especially interested in what new capabilities that brought for precise instruction following."
   },
   {
-   "t": 2913,
-   "text": "So one thing that I found is that actually when you take an instruction and then add more than one constraint, so you train on, let's say, for example, instruction plus three constraints or four constraints, you get much better generalization and much better performance on these benchmarks than just training on one constraint per instruction. So that was one finding. Then we also found, I also found that again, adding additional training constraints helps. Also, in these constraints, often you have variables. Like for example, on the 'output X number of words'."
+   "t": 2884,
+   "speaker": "Valentina Pyatkin",
+   "text": "So one thing I did is I added more training constraints, also to the training data, with more verifiers as well. Compared to Tulu 3 for this paper here, for IFBench, we used GRPO. So that was I think something that added more gains or better performance. And then we looked at a couple of different things. So one thing that I found is that actually when you take an instruction and then add more than one constraint, so you train on, let's say, for example, instruction plus three constraints or four constraints, you get much better generalization and much better performance on these benchmarks than just training on one constraint per instruction."
   },
   {
-   "t": 2959,
-   "text": "So this 'X', you can sample that from a different type, different ranges, right? And when you increase the range of 'X' that you sample from and train on that, you get also improved performance. And another thing that was interesting is, so I compared doing RLVR from a base model versus doing RLVR from an Instruct model. Two things that we found is we found that if you do RLVR from a base model for precise instruction following, it will perform much better at the unseen benchmarks. So it's better generalization. But at the same time, when you do RLVR from an Instruct model, actually, it performs worse on the unseen benchmark, but slightly better on the seen benchmark."
+   "t": 2937,
+   "speaker": "Valentina Pyatkin",
+   "text": "So that was one finding. Then we also found, I also found that again, adding additional training constraints helps. Also, in these constraints, often you have variables. Like for example, on the 'output X number of words'. So this 'X', you can sample that from a different type, different ranges, right? And when you increase the range of 'X' that you sample from and train on that, you get also improved performance. And another thing that was interesting is, so I compared doing RLVR from a base model versus doing RLVR from an Instruct model."
   },
   {
-   "t": 3018,
-   "text": "So, which probably tells you also that there's a bit of, that it sees some sort of instruction following data also during SFT and other stages of post-training. But I think it was interesting to see that even just training from a base model can lead to really good generalization results, probably also due to the reasoning chain of thought steps. So yeah, that was interesting. And then, all those results on generalisation, that impact positively generalisation, sound super interesting to me. One of them was that you mentioned is that when you are adding constraints, it improves generalisation, right?"
+   "t": 2987,
+   "speaker": "Valentina Pyatkin",
+   "text": "Two things that we found is we found that if you do RLVR from a base model for precise instruction following, it will perform much better at the unseen benchmarks. So it's better generalization. But at the same time, when you do RLVR from an Instruct model, actually, it performs worse on the unseen benchmark, but slightly better on the seen benchmark. So, which probably tells you also that there's a bit of, that it sees some sort of instruction following data also during SFT and other stages of post-training. But I think it was interesting to see that even just training from a base model can lead to really good generalization results, probably also due to the reasoning chain of thought steps."
   },
   {
-   "t": 3066,
-   "text": "Have you tested maybe, or have you thought about the question of whether it's just the number of constraints or it's also about the nature of the constraints that you add? Yeah, that's a good question. I think maybe a bit of both. And probably there's also some sort of interaction happening between the constraints that the model is learning. But yeah, I've seen that, for example, models do really good on certain constraints and then really struggle with other types of constraints."
+   "t": 3040,
+   "speaker": "Valentina Pyatkin",
+   "text": "So yeah, that was interesting. And then,"
   },
   {
-   "t": 3109,
-   "text": "For example, everything related to counting is very hard for models, probably also because of the tokenizer. And then things like include the words, some random word, is very easy for models. So yeah, I think it's also interesting to see what things are easier to follow than others. And do you see those things as something that is common across different models or it's more model-specific,"
+   "t": 3045,
+   "speaker": "Jekaterina Novikova",
+   "text": "All those results on generalisation, that impact positively generalisation, sound super interesting to me. One of them was that you mentioned is that when you are adding constraints, it improves generalisation, right? Have you tested maybe, or have you thought about the question of whether it's just the number of constraints or it's also about the nature of the constraints that you add?"
   },
   {
-   "t": 3144,
-   "text": "model-specific lack of capabilities for specific constraints? I would say generally very similar across different models, which is interesting. Except we found that o1 was really good at following constraints in general. So that's a good model if you're looking into a good constraint model. Is this the reason why you're saying that it's maybe something about reasoning? Probably, yeah. Especially for more complex constraints, might need to decompose them and think about them step by step. Yeah, reasoning might help. You almost covered it like your IF-RLVR research uncovered an interesting tension: models optimized for constraint following sometimes sacrifice general response quality."
+   "t": 3085,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, that's a good question. I think maybe a bit of both. And probably there's also some sort of interaction happening between the constraints that the model is learning."
   },
   {
-   "t": 3197,
-   "text": "So I'm curious, what does this reveal about current optimization approaches and how might we better balance competing objectives and post-training in your opinion? Yeah, it is a big issue. I think one thing there is the fact that we, but also other people, often use these evals during development. So they really hill climb on them during development and just try to get the best combination of data and algorithms to work on these specific benchmarks. That's also, for example, for Tulu 3, we introduced these unseen test sets, completely unseen, that we didn't use during development, at the very end."
+   "t": 3099,
+   "speaker": "Valentina Pyatkin",
+   "text": "But yeah, I've seen that, for example, models do really good on certain constraints and then really struggle with other types of constraints. For example, everything related to counting is very hard for models, probably also because of the tokenizer. And then things like include the words, some random word, is very easy for models. So yeah, I think it's also interesting to see what things are easier to follow than others."
   },
   {
-   "t": 3245,
-   "text": "And I think in general, that's one recommendation that I have: it's really helpful to have development evals and use them during development, but then also keep some for the end, where you can actually assess how well your model is generally doing without worrying that you just hill climbed on your evals without knowing whether your model is able to generalize. That's my recommendation."
+   "t": 3131,
+   "speaker": "Jekaterina Novikova",
+   "text": "And do you see those things as something that is common across different models or it's more model-specific, model-specific lack of capabilities for specific constraints?"
+  },
+  {
+   "t": 3147,
+   "speaker": "Valentina Pyatkin",
+   "text": "I would say generally very similar across different models, which is interesting. Except we found that o1 was really good at following constraints in general. So that's a good model if you're looking into a good constraint model."
+  },
+  {
+   "t": 3166,
+   "speaker": "Jekaterina Novikova",
+   "text": "Is this the reason why you're saying that it's maybe something about reasoning?"
+  },
+  {
+   "t": 3172,
+   "speaker": "Valentina Pyatkin",
+   "text": "Probably, yeah. Especially for more complex constraints, might need to decompose them and think about them step by step. Yeah, reasoning might help."
+  },
+  {
+   "t": 3183,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "You almost covered it like your IF-RLVR research uncovered an interesting tension: models optimized for constraint following sometimes sacrifice general response quality. So I'm curious, what does this reveal about current optimization approaches and how might we better balance competing objectives and post-training in your opinion?"
+  },
+  {
+   "t": 3208,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, it is a big issue. I think one thing there is the fact that we, but also other people, often use these evals during development. So they really hill climb on them during development and just try to get the best combination of data and algorithms to work on these specific benchmarks. That's also, for example, for Tulu 3, we introduced these unseen test sets, completely unseen, that we didn't use during development, at the very end. And I think in general, that's one recommendation that I have: it's really helpful to have development evals and use them during development, but then also keep some for the end, where you can actually assess how well your model is generally doing without worrying that you just hill climbed on your evals without knowing whether your model is able to generalize."
+  },
+  {
+   "t": 3269,
+   "speaker": "Valentina Pyatkin",
+   "text": "That's my recommendation."
   },
   {
    "t": 3272,
+   "speaker": "Jekaterina Novikova",
    "text": "Let's speak a little bit about evaluation. That's the topic that I personally am interested in a lot. I think that many people have noticed recently that across AI we are seeing benchmarks rapidly saturate as models improve. And often these reveals that high scores don't necessarily translate to robust capabilities. And there were several papers that attracted a lot of attention recently about problems with the benchmarks, So I'm interested, Valentina, what's your take on benchmarking, on the fundamental issues with the benchmarking and how in your opinion we should think about creating evaluations that are actually useful, that provide lasting scientific insights?"
   },
   {
    "t": 3348,
+   "speaker": "Valentina Pyatkin",
    "text": "Yeah, I agree with you. It's a big issue and I probably can say more about the issues than about good solutions for it. I think it's an unsolved problem currently. I think one issue that I also noticed with evaluation is that often there's an overreliance, at least in our research community, on LLM-as-judge. I understand why this is happening, and I also use LLM-as-judge as well in my evals. But I think it's a bit problematic and I think it would be great to have evals that use other types of metrics. But there we again go into this issue of what is verifiable, what is not verifiable, how do we evaluate things that are not verifiable."
   },
   {
    "t": 3396,
+   "speaker": "Valentina Pyatkin",
    "text": "And yeah, it's an unsolved issue. And then also the hill climbing on evals, it's another issue. For there, I maybe already mentioned it, what I suggest is to really differentiate between evals that you use during development versus at the end. And I think another thing that we also encountered during decontamination is that actually, especially if you train on datasets that contain real user prompts, you get a lot of test contamination because one thing that users do is, for example, they're curious about models performance on certain tests."
   },
   {
    "t": 3445,
-   "text": "So they use these test prompts and input them into models. And then afterwards these prompts from these users get released as some real user data sets. But then you have a lot of test prompts in your data set as well. So one thing I recommend is to really do lot of decontamination, especially when you use real user prompts, because people like to ask prompts regarding benchmarks. And I think one thing that's interesting, but I don't have a good solution, is to build more real world evaluations. Agree, it's very hard. Yeah. These are very interesting advices. Fantastic."
+   "speaker": "Valentina Pyatkin",
+   "text": "So they use these test prompts and input them into models. And then afterwards these prompts from these users get released as some real user data sets. But then you have a lot of test prompts in your data set as well. So one thing I recommend is to really do lot of decontamination, especially when you use real user prompts, because people like to ask prompts regarding benchmarks. And I think one thing that's interesting, but I don't have a good solution, is to build more real world evaluations. Agree, it's very hard."
+  },
+  {
+   "t": 3481,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah. These are very interesting advices. Fantastic."
   },
   {
    "t": 3487,
-   "text": "One of your interesting findings in the instruction following paper is that models are scoring 80% plus on IFEVal dropped below 50 % on IFBench, a dramatic generalization failure that likely extends beyond instruction following. What does this pattern reveal about current evaluation practices? How should the field respond to these insights about overfitting generalization, in your opinion? Yeah, I think people tend to narrowly just focus on a given task and trying to do good on a specific benchmark instead of just focusing on whether the model is good in general or good beyond that, just performing well in that specific benchmark."
+   "speaker": "Malikeh Ehghaghi",
+   "text": "One of your interesting findings in the instruction following paper is that models are scoring 80% plus on IFEVal dropped below 50 % on IFBench, a dramatic generalization failure that likely extends beyond instruction following. What does this pattern reveal about current evaluation practices? How should the field respond to these insights about overfitting generalization, in your opinion?"
   },
   {
-   "t": 3532,
-   "text": "I think in general, I think, one research area that's super interesting to focus on is generalization because it is still unsolved. So I think there's a lot to be done there, how to train models to generalize better. And part of that, as part of that research, I think, you also need to develop kind of new benchmarks that test these types of generalizations. So for example, using IFBench, but also can build your own. So yeah, that's something I would look into. Yeah, let's discuss a little bit your work on benchmarks."
+   "t": 3514,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, I think people tend to narrowly just focus on a given task and trying to do good on a specific benchmark instead of just focusing on whether the model is good in general or good beyond that, just performing well in that specific benchmark. I think in general, I think, one research area that's super interesting to focus on is generalization because it is still unsolved. So I think there's a lot to be done there, how to train models to generalize better. And part of that, as part of that research, I think, you also need to develop kind of new benchmarks that test these types of generalizations."
+  },
+  {
+   "t": 3564,
+   "speaker": "Valentina Pyatkin",
+   "text": "So for example, using IFBench, but also can build your own. So yeah, that's something I would look into."
   },
   {
    "t": 3578,
-   "text": "You have this RewardBench and RewardBench 2 papers and in RewardBench 2, this work tackles the challenge of evaluating reward models, which is something that is often overlooked when we speak about components of post-training pipelines, right? And this work, RewardBench 2, it involved creating a more challenging benchmark and the systematic retraining of 100 reward models to understand what makes them effective. Can you tell us a little bit about what motivated this research and what you're trying to accomplish with the RewardBench 2?"
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, let's discuss a little bit your work on benchmarks. You have this RewardBench and RewardBench 2 papers and in RewardBench 2, this work tackles the challenge of evaluating reward models, which is something that is often overlooked when we speak about components of post-training pipelines, right? And this work, RewardBench 2, it involved creating a more challenging benchmark and the systematic retraining of 100 reward models to understand what makes them effective."
+  },
+  {
+   "t": 3621,
+   "speaker": "Jekaterina Novikova",
+   "text": "Can you tell us a little bit about what motivated this research and what you're trying to accomplish with the RewardBench 2?"
   },
   {
    "t": 3633,
+   "speaker": "Valentina Pyatkin",
    "text": "Yeah, so here a quick shout out to Saumya Malik, who was the first author on this project. She's a pre-doctoral young investigator and she's really great and she really led this research and did a lot of great things there. Yeah, and so I think the main motivation for this research or for this follow up to RewardBench 1 was that, as you said, Rewardbench 1 was already quite saturated. So models really performed very highly on them, and then a lot of people also pointed out that there's no good correlation with downstream evals. So a reward model might do really well in RewardBench, but then when you use it to, for example, PPO train a policy, you might not get really, really good performance afterwards."
   },
   {
    "t": 3691,
+   "speaker": "Valentina Pyatkin",
    "text": "So we thought, okay, let's build a more challenging benchmark, which is, first of all, more challenging, but also correlates better with downstream evals. And so we had this two-step paper where we first of all built this benchmark, but then also did a lot of evaluations on downstream correlations and how to train your world models that actually give you good performance. For building the benchmarks, a couple of things that made it more challenging were things like: we included a lot of new unseen prompts, completely unseen ones, and then additional more challenging subsets, like instruction following or math."
   },
   {
    "t": 3739,
+   "speaker": "Valentina Pyatkin",
    "text": "And one thing that I also found very interesting is we had this new subset of ties, tie data. What does that mean? So the idea there was - let's say you have a prompt, like 'give me a number between 1 and 10'. And in that case, the model might output something like 2, but it could also output something like 4. But between 2 and 4, both of them are equally good, right? So those are ties and it would not be correct to, for example, have a reward model that judges the 4 as much better than the 2. And so there the idea was that we want to test whether reward models are able to identify ties and actually say, both of these responses are plus-minus equally as good."
   },
   {
    "t": 3790,
-   "text": "So that's an interesting subset. And we actually saw that models are not very good at that. And then another improvement we did is we, instead of just having two completions and saying, this is the chosen and this is the rejected one, we had four, so best of four, and we told the task there is for the reward model to choose the best out of four. So you have more distraction for the model and it makes it more challenging. And you also mentioned that best-of-4 sampling and in general your work revealed that reward model performance correlates well with best-of-N but it shows different patterns with the PPO training, right?"
+   "speaker": "Valentina Pyatkin",
+   "text": "So that's an interesting subset. And we actually saw that models are not very good at that. And then another improvement we did is we, instead of just having two completions and saying, this is the chosen and this is the rejected one, we had four, so best of four, and we told the task there is for the reward model to choose the best out of four. So you have more distraction for the model and it makes it more challenging."
   },
   {
-   "t": 3838,
-   "text": "And this seems to challenge the simple notions of reward model quality. Can you explain this phenomenon and its implications for evaluation design? Yeah, it's actually really hard to know what makes a good reward model. It's very hard and we found this contradicting evidence. On the one hand, we found that there's models that perform really well on certain benchmarks, reward models, but then also not well in terms of downstream performance. And so in our case here, looked at using a reward model with PPO"
+   "t": 3817,
+   "speaker": "Jekaterina Novikova",
+   "text": "And you also mentioned that best-of-4 sampling and in general your work revealed that reward model performance correlates well with best-of-N but it shows different patterns with the PPO training, right? And this seems to challenge the simple notions of reward model quality. Can you explain this phenomenon and its implications for evaluation design?"
   },
   {
-   "t": 3882,
-   "text": "versus using a reward model to score, to do best-of-N evaluation. So what does best-of-N evaluation mean? It means you take some evaluation benchmark or evaluation test set, you take the prompts and you get 16 completions from different models. And then you take a reward model and you let it choose the best completion out of these 16, and then use that as your answer for this benchmark and then just evaluate on that benchmark and see given these answers that the reward model selected and see how well the reward model selected the correct response, or a good response. And we found that for example, this best-of-N evaluation really correlated very well with our RewardBench 2 benchmark."
+   "t": 3854,
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, it's actually really hard to know what makes a good reward model. It's very hard and we found this contradicting evidence. On the one hand, we found that there's models that perform really well on certain benchmarks, reward models, but then also not well in terms of downstream performance. And so in our case here, looked at using a reward model with PPO versus using a reward model to score, to do best-of-N evaluation. So what does best-of-N evaluation mean? It means you take some evaluation benchmark or evaluation test set, you take the prompts and you get 16 completions from different models."
   },
   {
-   "t": 3934,
-   "text": "But at the same time, we also did see some correlation with RewardBench 2 and using a reward model with PPO in terms of downstream performance, but there it was a bit of more mixed signal. So if a model does really poorly on RewardBench 2, then it will probably also do poorly in terms of downstream evaluation. But as soon as it gets above a certain threshold, it's very hard to say which of these will make a better reward model in terms of downstream performance. But then we have certain recommendations there also for what you can do. Like for example? So, okay, one thing that we found in our experiments is that when you select a reward model, don't just select the top performing one on the RewardBench 2, but for example, select the top performing one on the RewardBench 2 out of the ones that use the same base model as your policy."
+   "t": 3902,
+   "speaker": "Valentina Pyatkin",
+   "text": "And then you take a reward model and you let it choose the best completion out of these 16, and then use that as your answer for this benchmark and then just evaluate on that benchmark and see given these answers that the reward model selected and see how well the reward model selected the correct response, or a good response. And we found that for example, this best-of-N evaluation really correlated very well with our RewardBench 2 benchmark. But at the same time, we also did see some correlation with RewardBench 2 and using a reward model with PPO in terms of downstream performance, but there it was a bit of more mixed signal."
   },
   {
-   "t": 3996,
-   "text": "So let's say you're trying to optimize a Llama model, then ideally you should also use a Llama reward model. We saw the performance better than when let's say you use a Qwen reward model, but a Llama policy."
+   "t": 3952,
+   "speaker": "Valentina Pyatkin",
+   "text": "So if a model does really poorly on RewardBench 2, then it will probably also do poorly in terms of downstream evaluation. But as soon as it gets above a certain threshold, it's very hard to say which of these will make a better reward model in terms of downstream performance. But then we have certain recommendations there also for what you can do."
   },
   {
-   "t": 4010,
-   "text": "We also found that in general, Llama 3.1 Instruct models are really good as reward models. We also found that if you want to do well on different or specific domains, you might need different training data. So different training data sources led to different performance in different domains. And also that we found that actually training for longer... So in the past, the recommendation was train your reward model only for one epoch, but we actually found that if you train for longer, it can actually lead to improved results as well. Interesting. Yeah, and speaking about exploring more of interesting research questions, I just want to ask you about the future."
+   "t": 3973,
+   "speaker": "Jekaterina Novikova",
+   "text": "Like for example?"
   },
   {
-   "t": 4068,
-   "text": "So as we look toward the future, what do you see as the most promising research directions for the open LLM community? Or maybe even if it's not necessarily the most promising, what would be the most interesting research directions for you personally?"
+   "t": 3974,
+   "speaker": "Valentina Pyatkin",
+   "text": "So, okay, one thing that we found in our experiments is that when you select a reward model, don't just select the top performing one on the RewardBench 2, but for example, select the top performing one on the RewardBench 2 out of the ones that use the same base model as your policy. So let's say you're trying to optimize a Llama model, then ideally you should also use a Llama reward model."
+  },
+  {
+   "t": 4009,
+   "speaker": "Valentina Pyatkin",
+   "text": "We saw the performance better than when let's say you use a Qwen reward model, but a Llama policy. We also found that in general, Llama 3.1 Instruct models are really good as reward models. We also found that if you want to do well on different or specific domains, you might need different training data. So different training data sources led to different performance in different domains. And also that we found that actually training for longer... So in the past, the recommendation was train your reward model only for one epoch, but we actually found that if you train for longer, it can actually lead to improved results as well."
+  },
+  {
+   "t": 4053,
+   "speaker": "Jekaterina Novikova",
+   "text": "Interesting. Yeah, and speaking about exploring more of interesting research questions, I just want to ask you about the future. So as we look toward the future, what do you see as the most promising research directions for the open LLM community? Or maybe even if it's not necessarily the most promising, what would be the most interesting research directions for you personally?"
   },
   {
    "t": 4089,
-   "text": "Yeah, for me personally, I think one thing that really interests me is to look more into designing new types of rewards for language models. Maybe beyond preference awards and verifiable rewards. Is there something else that could be interesting that we want to reward models with? Not reward models, policy models with."
+   "speaker": "Valentina Pyatkin",
+   "text": "Yeah, for me personally, I think one thing that really interests me is to look more into designing new types of rewards for language models. Maybe beyond preference awards and verifiable rewards. Is there something else that could be interesting that we want to reward models with? Not reward models, policy models with. That's something I would love to explore. Then I think another thing, that me personally interests a lot, is instructions in general, then also on the specification in instructions, and also contradictions. So for example, what if you have an instruction where one part of the instruction contradicts the other instruction?"
   },
   {
-   "t": 4116,
-   "text": "That's something I would love to explore. Then I think another thing, that me personally interests a lot, is instructions in general, then also on the specification in instructions, and also contradictions. So for example, what if you have an instruction where one part of the instruction contradicts the other instruction? What should the model follow, what type of behavior do you want to see there? And then things like a lot of data work and understanding the interaction between data and training models better. It's super important, I think, and also can be very impactful."
+   "t": 4141,
+   "speaker": "Valentina Pyatkin",
+   "text": "What should the model follow, what type of behavior do you want to see there? And then things like a lot of data work and understanding the interaction between data and training models better. It's super important, I think, and also can be very impactful. And one thing that we also touched upon a lot today is evaluation. So building better benchmarks that can assess generalization or more real world evaluations as well. I think that's also very interesting to me personally."
   },
   {
-   "t": 4163,
-   "text": "And one thing that we also touched upon a lot today is evaluation. So building better benchmarks that can assess generalization or more real world evaluations as well. I think that's also very interesting to me personally. Yeah, sounds fantastic. Looking forward to your research. As we wrap up, when you think about the impact you want to have, not just for your research, but as a woman in the field, what do you hope people remember or take away from"
-  },
-  {
-   "t": 4196,
-   "text": "your story?"
+   "t": 4181,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, sounds fantastic. Looking forward to your research. As we wrap up, when you think about the impact you want to have, not just for your research, but as a woman in the field, what do you hope people remember or take away from your story?"
   },
   {
    "t": 4198,
+   "speaker": "Valentina Pyatkin",
    "text": "So, okay, a couple of things. I think, one thing that's very important for me is inclusivity. So I really want to create a welcoming environment wherever I go, be it at a conference or in the community in general, where I have this idea of 'come sit with me, come sit with us'. I don't want to be, I want to be the opposite of snobbish and say - no, no, you can't sit with me. I was like - come sit and come talk to me. And yeah, I think that's what's nice about the research community. And so that's what I like, what I would like people to remember. And otherwise I hope that people find my research interesting and I hope, that there's lot of opportunities for collaboration."
   },
   {
    "t": 4253,
+   "speaker": "Jekaterina Novikova",
    "text": "Amazing and thank you so much for sharing your insights with us today."
   },
   {
    "t": 4261,
+   "speaker": "Malikeh Ehghaghi",
    "text": "Thanks. Absolutely. It's been fascinating to learn about your personal journey, your research. I really enjoyed this episode. Thank you so much for joining us and we look forward to seeing what you work on next. And thank you to our listeners for joining us on this episode of WiAIR. You can find more information about Valentina's research and publications in this episode description. So definitely check those out. We'll see you in three weeks with another woman researcher pushing the boundaries of AI. Until then."
   }
  ]

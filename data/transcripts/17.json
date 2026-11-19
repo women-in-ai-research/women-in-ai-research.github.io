@@ -1,322 +1,486 @@
 {
  "episode": 17,
  "videoId": "rSC7L5WikcE",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 0,
-   "text": "Most users see a language model just producing, words and tokens, but in the background what happens is."
-  },
-  {
-   "t": 8,
-   "text": "putting out a single word, has this vector of probabilities that outputs, model which word should I pick out of all words It turns out that we can use those vectors of probabilities get back the input that has been provided to the model"
-  },
-  {
-   "t": 34,
-   "text": "the interesting thing is that I kind of stumbled onto a natural language processing research. I did not plan my career this way, so I was a master's student at Columbia when I just encountered this opportunity to do research for pay And as a student looking for sources of employment, I just applied for it."
+   "speaker": "Swabha Swayamdipta",
+   "text": "Most users see a language model just producing, words and tokens, but in the background what happens is. putting out a single word, has this vector of probabilities that outputs, model which word should I pick out of all words It turns out that we can use those vectors of probabilities get back the input that has been provided to the model the interesting thing is that I kind of stumbled onto a natural language processing research. I did not plan my career this way, so I was a master's student at Columbia when I just encountered this opportunity to do research for pay And as a student looking for sources of employment, I just applied for it."
   },
   {
    "t": 75,
+   "speaker": "Jekaterina Novikova",
    "text": "Our guest today is Dr. Swabha Swayamdipta. Swabha is an assistant professor of computer science at the University of Southern California and the co-associate director of the USC Center for AI and Society, where she leads the Data, Interpretability, Language and Learning Lab. Her research sits at the intersection of natural language processing, machine learning, and society, with a particular focus on how we interpret models' behavior and how we design language technologies that actually serve people. Stick around until the end, because Swabha offers an interesting reframing of the default ways we think about using AI, including when not using AI might be the better choice."
   },
   {
    "t": 128,
-   "text": "Welcome to the podcast, Swabha, and thank you for joining us today. Thank you for having me. Okay, so to start, could you please tell us a little bit about your research career trajectory Yeah, so the interesting thing is that I kind of stumbled onto a natural language processing research. I did not plan my career this way, so I was a master's student at Columbia when I just encountered this opportunity to do research for pay And as a student looking for sources of employment, I just applied for it. And the PI, Rambo, really liked me."
+   "speaker": "Jekaterina Novikova",
+   "text": "Welcome to the podcast, Swabha, and thank you for joining us today."
   },
   {
-   "t": 173,
-   "text": "And I started doing NLP research. I was always motivated by language, so it kind of worked out. I started getting more interested so much so that I wanted to do a PhD in it after that. But one thing that maybe I don't know if all of my collaborators know is that I had to pivot my research many times even within the field of NLP because the field has changed so much. I started by looking at influence campaigns. And then I pivoted to looking at more classical NLP problems such as syntax and semantics. And then when syntax and semantics seemed like they were problems that language models were able to do very well, we pivoted my research into evaluation and you know, looking at different kinds of biases in language models."
+   "t": 133,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Thank you for having me."
   },
   {
-   "t": 228,
-   "text": "and now, again, it had to be a pivot because language models are very good. And so I do a lot of research now in responsible AI and safe, safety and accountability of language models. So it has been like an interesting journey with lots of twists and turns. Right, it sounds really interesting. what motivated you to change the direction most of the time? Was it that the field is changing by itself or it was more motivated by your internal interest or a little bit of both?"
+   "t": 134,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, so to start, could you please tell us a little bit about your research career trajectory"
+  },
+  {
+   "t": 141,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, so the interesting thing is that I kind of stumbled onto a natural language processing research. I did not plan my career this way, so I was a master's student at Columbia when I just encountered this opportunity to do research for pay And as a student looking for sources of employment, I just applied for it. And the PI, Rambo, really liked me. And I started doing NLP research. I was always motivated by language, so it kind of worked out. I started getting more interested so much so that I wanted to do a PhD in it after that. But one thing that maybe I don't know if all of my collaborators know is that I had to pivot my research many times even within the field of NLP because the field has changed so much."
+  },
+  {
+   "t": 200,
+   "speaker": "Swabha Swayamdipta",
+   "text": "I started by looking at influence campaigns. And then I pivoted to looking at more classical NLP problems such as syntax and semantics. And then when syntax and semantics seemed like they were problems that language models were able to do very well, we pivoted my research into evaluation and you know, looking at different kinds of biases in language models. and now, again, it had to be a pivot because language models are very good. And so I do a lot of research now in responsible AI and safe, safety and accountability of language models. So it has been like an interesting journey with lots of twists and turns."
+  },
+  {
+   "t": 247,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, it sounds really interesting. what motivated you to change the direction most of the time? Was it that the field is changing by itself or it was more motivated by your internal interest or a little bit of both?"
   },
   {
    "t": 265,
-   "text": "Little bit of both. Absolutely. New problems started emerging. You know, every few years the field was growing so rapidly that every few years new problems would emerge, making some of the problems that we studied in the past a good foundation for exploring these new problems. Right, that's interesting. And it's always very interesting to see how the career trajectories of people change over time. I wonder did you have any low points and maybe like sometimes yeah tell about that absolutely. I wish that like, you know, all the research trajectory that was smooth, but it was absolutely not that. And in retrospect, I appreciate that it was not so smooth because I learned a lot from low points in my trajectory."
+   "speaker": "Swabha Swayamdipta",
+   "text": "Little bit of both. Absolutely. New problems started emerging. You know, every few years the field was growing so rapidly that every few years new problems would emerge, making some of the problems that we studied in the past a good foundation for exploring these new problems."
   },
   {
-   "t": 316,
-   "text": "So one concrete instance was early in my PhD. I had just moved to Seattle. And I was a transfer student from Carnegie Mellon to University of Washington, where my advisor had moved. And it was a new city. was the third US city that I had lived in three years. I am originally from India, had moved for grad school. And it was a lot of, you know, lot of new changes and adjustments. didn't have a very concrete social group at the time and PhD research was very hard. It took me a little bit of time to find my bearing and I had completed what I thought was like I put in so much hard work."
+   "t": 284,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, that's interesting. And it's always very interesting to see how the career trajectories of people change over time. I wonder did you have any low points and maybe like sometimes yeah tell about that"
   },
   {
-   "t": 363,
-   "text": "had completed my very first project, but the feedback that I got was that, this is This still needs improvement and you like you need to change many of the things that you've been following many of the practices that you've been following. Like for instance, you need to spend more time in, you know, problem formulation etc. Which was very surprising to me because I thought I had done that. So you know it was it was it took me a while to learn like what. the expectation from high quality research was and the time I was very young and didn't have the kind of support that I have now."
+   "t": 300,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Absolutely. I wish that like, you know, all the research trajectory that was smooth, but it was absolutely not that. And in retrospect, I appreciate that it was not so smooth because I learned a lot from low points in my trajectory. So one concrete instance was early in my PhD. I had just moved to Seattle. And I was a transfer student from Carnegie Mellon to University of Washington, where my advisor had moved. And it was a new city. was the third US city that I had lived in three years. I am originally from India, had moved for grad school. And it was a lot of, you know, lot of new changes and adjustments."
   },
   {
-   "t": 408,
-   "text": "So that was a hard time in my career, but I think it taught me a lot as well. I always go back to that experience thinking that if I could come out of that, can take up any challenge and face these challenges and come out on the other side. Right. you didn't have a lot of support at that time when that was like a very hard time for you and didn't have a lot of experience as well, right? It was the very beginning of your journey. So how did you deal with that? What helped you the most? Yes, great question. I think it's counterintuitive, but I think I was very vulnerable at the time. So you know, I didn't have too many friends that had just moved to a new city."
+   "t": 345,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Didn't have a very concrete social group at the time and PhD research was very hard. It took me a little bit of time to find my bearing and I had completed what I thought was like I put in so much hard work. had completed my very first project, but the feedback that I got was that, this is This still needs improvement and you like you need to change many of the things that you've been following many of the practices that you've been following. Like for instance, you need to spend more time in, you know, problem formulation etc. Which was very surprising to me because I thought I had done that."
   },
   {
-   "t": 458,
-   "text": "It was like very, very new, but I think I was vulnerable. I did share a lot with new people and I was surprised at how receptive people were to, you know, helping out and I actually formed a lot of good friendships in Seattle and grad school because I was vulnerable. So at first it seemed like, if I'm vulnerable, it kind of looks weak. But In retrospect, I think, that was a very strong thing that I did. And the other thing that also helps is that my personality is such that I don't admit defeat too easily. If I met a roadblock, I just am never satisfied. And so I keep trying, keep digging at it."
+   "t": 391,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So you know it was it was it took me a while to learn like what. the expectation from high quality research was and the time I was very young and didn't have the kind of support that I have now. So that was a hard time in my career, but I think it taught me a lot as well. I always go back to that experience thinking that if I could come out of that, can take up any challenge and face these challenges and come out on the other side."
   },
   {
-   "t": 506,
-   "text": "that might have helped, but I definitely reached out to a lot of people at the time, because I think I didn't have that much choice. And people were very kind and helped me a lot. So those were the two factors that really helped me out of that situation. I see, both seem really important. I often hear from people that, especially people in academia, they say that their network is one of the most important things."
+   "t": 427,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. you didn't have a lot of support at that time when that was like a very hard time for you and didn't have a lot of experience as well, right? It was the very beginning of your journey. So how did you deal with that? What helped you the most?"
+  },
+  {
+   "t": 444,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yes, great question. I think it's counterintuitive, but I think I was very vulnerable at the time. So you know, I didn't have too many friends that had just moved to a new city. It was like very, very new, but I think I was vulnerable. I did share a lot with new people and I was surprised at how receptive people were to, you know, helping out and I actually formed a lot of good friendships in Seattle and grad school because I was vulnerable. So at first it seemed like, if I'm vulnerable, it kind of looks weak. But In retrospect, I think, that was a very strong thing that I did."
+  },
+  {
+   "t": 490,
+   "speaker": "Swabha Swayamdipta",
+   "text": "And the other thing that also helps is that my personality is such that I don't admit defeat too easily. If I met a roadblock, I just am never satisfied. And so I keep trying, keep digging at it. that might have helped, but I definitely reached out to a lot of people at the time, because I think I didn't have that much choice. And people were very kind and helped me a lot. So those were the two factors that really helped me out of that situation."
   },
   {
    "t": 538,
-   "text": "Right now, I know that you work within the area of AI safety and reliability. And on your website, you also emphasize the importance of making AI systems reliable and safe, especially for real world deployment. I'm curious, was there any personal experience that sparked your interest in this aspect of AI. Well, absolutely. So like I said, I am originally from India. There is, you know. So my family is in not the most, you know that these large metropolitan areas there in a mid sized city and I see a lot of my family."
+   "speaker": "Jekaterina Novikova",
+   "text": "I see, both seem really important. I often hear from people that, especially people in academia, they say that their network is one of the most important things. Right now, I know that you work within the area of AI safety and reliability. And on your website, you also emphasize the importance of making AI systems reliable and safe, especially for real world deployment. I'm curious, was there any personal experience that sparked your interest in this aspect of AI."
   },
   {
-   "t": 586,
-   "text": "For instance, now they're like really into AI. They love. all these tools a lot, but sometimes they do use it without like really questioning whether or not the tool is doing the right job, whether it is correct, whether it has the right information. So, you know, having seen that for a long time, that also makes me think that, you know, we need to build these systems. So, you know, the onus is not so much on the user to always watch out whether the tool is doing the right job or not. We need to build these reliable mechanisms into the model so people can use it without putting in the additional thought."
+   "t": 568,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Well, absolutely. So like I said, I am originally from India. There is, you know. So my family is in not the most, you know that these large metropolitan areas there in a mid sized city and I see a lot of my family. For instance, now they're like really into AI. They love. all these tools a lot, but sometimes they do use it without like really questioning whether or not the tool is doing the right job, whether it is correct, whether it has the right information. So, you know, having seen that for a long time, that also makes me think that, you know, we need to build these systems. So, you know, the onus is not so much on the user to always watch out whether the tool is doing the right job or not."
   },
   {
-   "t": 631,
-   "text": "So how do we make these systems better for all kinds of users, no matter what their background is? So that is one thing that really shapes how I approach safety and reliability. in language models."
+   "t": 621,
+   "speaker": "Swabha Swayamdipta",
+   "text": "We need to build these reliable mechanisms into the model so people can use it without putting in the additional thought. So how do we make these systems better for all kinds of users, no matter what their background is? So that is one thing that really shapes how I approach safety and reliability. in language models."
   },
   {
    "t": 649,
-   "text": "Right. Then let's move into that research that you're doing within this area. as the AI researcher who works on building robust and reliable frameworks for safe AI deployment, what do you see as the most pressing security and privacy concerns that are there in today's language models? that the research community should be addressing, in your opinion. Yeah, so I mean, the strength of these models is the training data that the models have access to this training data. Mostly from the Internet where, you know, a lot of personal information, a lot of like copyrighted material is part of these language models training data without explicit consent from the creators."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. Then let's move into that research that you're doing within this area. as the AI researcher who works on building robust and reliable frameworks for safe AI deployment, what do you see as the most pressing security and privacy concerns that are there in today's language models? that the research community should be addressing, in your opinion."
   },
   {
-   "t": 701,
-   "text": "So that causes a lot of people to not have as much control over what kind of information they're giving out to language models, because this has been just a script off the internet taken from them without explicit content. Then there is also this problem of how easily manipulated these language models might be through, you know, like malicious actors trying to jailbreak these models, trying to get over the safeguards that the models have into giving the responses that they might want for various nefarious reasons. So these attackers can..."
+   "t": 677,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, so I mean, the strength of these models is the training data that the models have access to this training data. Mostly from the Internet where, you know, a lot of personal information, a lot of like copyrighted material is part of these language models training data without explicit consent from the creators. So that causes a lot of people to not have as much control over what kind of information they're giving out to language models, because this has been just a script off the internet taken from them without explicit content. Then there is also this problem of how easily manipulated these language models might be through, you know, like malicious actors trying to jailbreak these models, trying to get over the safeguards that the models have into giving the responses that they might want for various nefarious reasons."
   },
   {
-   "t": 747,
-   "text": "build these systems that can figure out what went into the model and manipulate that information to get what they want. This gets much more complicated when we have these agents which have access to different tools that they can execute in the course of getting the user the response that they care about. Access to tools. complicates this greatly. But yeah, these problems exist, but at the same time, there is like a slightly different concern on that. Like right now, the language model providers have all the control, right? Like they have all the control on the training data they use. They have all the control on the kind of mechanisms that they build for safeguards, et cetera."
+   "t": 745,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So these attackers can... build these systems that can figure out what went into the model and manipulate that information to get what they want. This gets much more complicated when we have these agents which have access to different tools that they can execute in the course of getting the user the response that they care about. Access to tools. complicates this greatly. But yeah, these problems exist, but at the same time, there is like a slightly different concern on that. Like right now, the language model providers have all the control, right? Like they have all the control on the training data they use. They have all the control on the kind of mechanisms that they build for safeguards, et cetera."
   },
   {
    "t": 794,
+   "speaker": "Swabha Swayamdipta",
    "text": "There is very little accountability of these language model providers or the designs that they make. Everything is very black box for competitive reasons, but there needs to be ways in which we hold language models accountable for their behaviors. So to me, those are some of the biggest questions that we need to study in the space of a language model safety, language model accountability."
   },
   {
    "t": 821,
-   "text": "Right. These are really important problems that we have. I know that you have that recent paper that is called Better Language Model Inversion by Compactly Representing Next-Token Distributions. And it introduced the new method that is way more effective with the recovery rates for hidden prompts comparing to the state of the art. Could you walk us through the motivation for this work and the several key insights that you have found while doing that? Yeah, so this is a very creative kind of task, so we did not come up with the task."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. These are really important problems that we have. I know that you have that recent paper that is called Better Language Model Inversion by Compactly Representing Next-Token Distributions. And it introduced the new method that is way more effective with the recovery rates for hidden prompts comparing to the state of the art. Could you walk us through the motivation for this work and the several key insights that you have found while doing that?"
   },
   {
-   "t": 869,
-   "text": "This task was, you know, folks at Cornell first came up with this task, so the way they did it is like so language model. Most users see a language model just producing, you know, language tool words and tokens, but in the background what happens is. before putting out a single word, has this vector of probabilities that it outputs, which tells a model which word should I pick out of all words in the language. It turns out that we can use those vectors of probabilities to get back the input that has been provided to the model Every model is given a prompt that makes it produce the next token, but we can take the probability vectors which are associated with the output and get back the input."
+   "t": 861,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, so this is a very creative kind of task, so we did not come up with the task. This task was, you know, folks at Cornell first came up with this task, so the way they did it is like so language model. Most users see a language model just producing, you know, language tool words and tokens, but in the background what happens is. before putting out a single word, has this vector of probabilities that it outputs, which tells a model which word should I pick out of all words in the language. It turns out that we can use those vectors of probabilities to get back the input that has been provided to the model Every model is given a prompt that makes it produce the next token, but we can take the probability vectors which are associated with the output and get back the input."
   },
   {
    "t": 930,
+   "speaker": "Swabha Swayamdipta",
    "text": "That is the problem of language model inversion. This is an important problem because in a lot of cases, we might not know what hidden prompts have been used in the language model before the user provides their own prompt or input that results in the language model generation. So that was the motivation of the work. How do we get that hidden prompt out? And this could be used for either malicious reasons, because somebody might want to see what safeguards have been put in place by the language model provider so they can circumvent it. They can try to break those safeguards in some ways, but it is also useful for holding the language model provider accountable to see whether or not they are doing enough to put the right kinds of safeguards in place."
   },
   {
    "t": 984,
+   "speaker": "Swabha Swayamdipta",
    "text": "So that is the motivation of the work. So the key innovation in our work is that We figured out so these vectors of probabilities that are used for this inversion problem, then it will be very large because every language has many, many thousands of tokens or words that are possible under it. So how do we take those extremely long vectors of probability and feed them as inputs to get the to get the input prompt or the hidden prompt? So we came up with this mechanism to really make this vector representation very efficient, which comes from this property of language models where actually the information is very dense, but it is kind of expanded to a very long sequence of vectors that is used in this problem."
   },
   {
    "t": 1041,
-   "text": "So we figured out how to make this representation very dense and compact without losing any information. That's how we were able to train a more effective model that achieves much higher performance by fitting in much more information than was previously possible. So that was the main. innovation of our paper and we showed that this can actually result in a very high improvement through this inversion accuracy. Right, so a couple of clarifications here. When you say a hidden prompt, you mean system prompt or those type of like hidden inputs, right? Exactly the system prompt which is not necessarily visible to the user. So the user is able to see what they input individually, but in addition to that, input is not only consists of that input, but also hidden prompt."
+   "speaker": "Swabha Swayamdipta",
+   "text": "So we figured out how to make this representation very dense and compact without losing any information. That's how we were able to train a more effective model that achieves much higher performance by fitting in much more information than was previously possible. So that was the main. innovation of our paper and we showed that this can actually result in a very high improvement through this inversion accuracy."
   },
   {
-   "t": 1097,
-   "text": "And when you're recovering that hidden input, your approach increases the performance of that recovery by up to three and a three and a half times, right? Comparing to state of that. What does it mean? Like three and a half times better than let's say 2 % is still like a small, you know, recovery level. So what are the numbers here? Yeah, these are very, these are very hard problems, especially like so to be like completely transparent here. The largest improvements that we see are on a somewhat easier problem of like just instead of the hidden system prompts, we're just trying to recover the user prompts."
+   "t": 1070,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, so a couple of clarifications here. When you say a hidden prompt, you mean system prompt or those type of like hidden inputs, right?"
   },
   {
-   "t": 1144,
-   "text": "So it's a slightly easier problem, but it is a first step. Like we need to be able to do well on that problem before we get to the hidden prompt. But even that is fairly hard and it's not always possible to get like, you know, 100 % accuracy. We actually don't do that. I forget the exact numbers, but we are in the 60s, which is much higher than what previous work showed. We do have an experiment on actually trying to recover this hidden system prompt which is very hard There we are like around 10 % accuracy. But I mean, this is a first step in that direction of research and it doesn't solve the problem entirely, but it is a big improvement over what used to be the case."
+   "t": 1080,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Exactly the system prompt which is not necessarily visible to the user."
+  },
+  {
+   "t": 1085,
+   "speaker": "Jekaterina Novikova",
+   "text": "So the user is able to see what they input individually, but in addition to that, input is not only consists of that input, but also hidden prompt. And when you're recovering that hidden input, your approach increases the performance of that recovery by up to three and a three and a half times, right? Comparing to state of that. What does it mean? Like three and a half times better than let's say 2 % is still like a small, you know, recovery level. So what are the numbers here?"
+  },
+  {
+   "t": 1123,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, these are very, these are very hard problems, especially like so to be like completely transparent here. The largest improvements that we see are on a somewhat easier problem of like just instead of the hidden system prompts, we're just trying to recover the user prompts. So it's a slightly easier problem, but it is a first step. Like we need to be able to do well on that problem before we get to the hidden prompt. But even that is fairly hard and it's not always possible to get like, you know, 100 % accuracy. We actually don't do that. I forget the exact numbers, but we are in the 60s, which is much higher than what previous work showed."
+  },
+  {
+   "t": 1172,
+   "speaker": "Swabha Swayamdipta",
+   "text": "We do have an experiment on actually trying to recover this hidden system prompt which is very hard There we are like around 10 % accuracy. But I mean, this is a first step in that direction of research and it doesn't solve the problem entirely, but it is a big improvement over what used to be the case."
   },
   {
    "t": 1198,
-   "text": "Right, and I think it's more of a situation when it's just a matter of time when we are there in terms of like the actual accuracy percentage or because the proof of concept seems to be there already, which also implies that there are or will be some really serious implications for API protected language models or any black box closed source language models."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and I think it's more of a situation when it's just a matter of time when we are there in terms of like the actual accuracy percentage or because the proof of concept seems to be there already, which also implies that there are or will be some really serious implications for API protected language models or any black box closed source language"
   },
   {
    "t": 1233,
-   "text": "And that could have implications in the areas in sensitive domains where organizations do not want or are not even allowed, for example, to share the information that is contained within that hidden input. Yeah, so you make a very good point. So there are certain domains where you know it might not be advisable to make this information available. So the fixes on the language model provider part. There are many, many different ways in which they can make this information less accessible. So for instance. The API could be so restricted that you don't. get access to that probability vector. mean, even now they don't have access to the entire probability vector."
+   "speaker": "Jekaterina Novikova",
+   "text": "Models. And that could have implications in the areas in sensitive domains where organizations do not want or are not even allowed, for example, to share the information that is contained within that hidden input."
   },
   {
-   "t": 1281,
-   "text": "They give access to some of the probabilities which users find helpful in building different applications. But if a provider wanted, they could give access to no probabilities. They would just give access to the top five tokens or something like that. And that could be one fix. It does, for general purpose language models, that does reduce the utility of the model in some sense because you are no longer giving the user a little more flexibility in how to use the language model. So there is a trade-off there. the main thing... that is missing is like a little more transparency from the language model providers into how they are, you know, like what data are they using to build the models, et cetera, because in the absence of that, it is very important for users to want to know what went into the model, what kind of safeguards."
+   "t": 1251,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, so you make a very good point. So there are certain domains where you know it might not be advisable to make this information available. So the fixes on the language model provider part. There are many, many different ways in which they can make this information less accessible. So for instance. The API could be so restricted that you don't. get access to that probability vector. mean, even now they don't have access to the entire probability vector. They give access to some of the probabilities which users find helpful in building different applications. But if a provider wanted, they could give access to no probabilities. They would just give access to the top five tokens or something like that."
+  },
+  {
+   "t": 1298,
+   "speaker": "Swabha Swayamdipta",
+   "text": "And that could be one fix. It does, for general purpose language models, that does reduce the utility of the model in some sense because you are no longer giving the user a little more flexibility in how to use the language model. So there is a trade-off there. the main thing... that is missing is like a little more transparency from the language model providers into how they are, you know, like what data are they using to build the models, et cetera, because in the absence of that, it is very important for users to want to know what went into the model, what kind of safeguards."
   },
   {
    "t": 1351,
-   "text": "the models have in place because that is not always revealed to the user. So there is that tension, right? Like the user deserves more information because ultimately it is the user's data that is, that has been used in training these models. So they deserve to have more information. On the other hand, there might be sensitive youth cases where system prompts can have bad repercussions, which is also undesirable. So there is that tension that we have to navigate, but from the point of view of a language model provider, giving more information about what went into building their model is very important. But again, this is not ideal from their end because they want to have like a competitive edge in the market."
+   "speaker": "Swabha Swayamdipta",
+   "text": "The models have in place because that is not always revealed to the user. So there is that tension, right? Like the user deserves more information because ultimately it is the user's data that is, that has been used in training these models. So they deserve to have more information. On the other hand, there might be sensitive youth cases where system prompts can have bad repercussions, which is also undesirable. So there is that tension that we have to navigate, but from the point of view of a language model provider, giving more information about what went into building their model is very important. But again, this is not ideal from their end because they want to have like a competitive edge in the market."
   },
   {
    "t": 1404,
-   "text": "So it's a little bit of. a push and pull situation, that is. Yeah, that's that's a very, you know, uncomfortable resolution for you know the question that you asked like it is it is. Solution that satisfies one party is not going to be satisfactory to the other party, so there will always be some tension. I think there is a similar trade-off when we speak about language model personalization and the... user modeling as a part of that. So personalization in my view, it introduces quite a serious tension in AI safety area, because on the one hand, we want models that adapt to individual users and better predict their preferences."
+   "speaker": "Swabha Swayamdipta",
+   "text": "So it's a little bit of. a push and pull situation, that is. Yeah, that's that's a very, you know, uncomfortable resolution for you know the question that you asked like it is it is. Solution that satisfies one party is not going to be satisfactory to the other party, so there will always be some tension."
   },
   {
-   "t": 1452,
-   "text": "But on the other hand, this creates new risks about privacy, manipulation, alignment. and What do you think about this tension? Yeah, no, this is a wonderful question. there is definitely that tension, right? Like how much information should users reveal? But one way of looking at this question of personalization is that when we allow personalization to be the main way in which users interact with language models, then the user has a little more control over what it can reveal to the language model. Instead of the language model, you know, searching its entire training data to find all the information it has about this particular user, why not let the user provide the information that they are comfortable providing to the language model to get a better response for their queries?"
+   "t": 1424,
+   "speaker": "Jekaterina Novikova",
+   "text": "I think there is a similar trade-off when we speak about language model personalization and the... user modeling as a part of that. So personalization in my view, it introduces quite a serious tension in AI safety area, because on the one hand, we want models that adapt to individual users and better predict their preferences. But on the other hand, this creates new risks about privacy, manipulation, alignment. What do you think about this tension?"
+  },
+  {
+   "t": 1462,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, no, this is a wonderful question. there is definitely that tension, right? Like how much information should users reveal? But one way of looking at this question of personalization is that when we allow personalization to be the main way in which users interact with language models, then the user has a little more control over what it can reveal to the language model. Instead of the language model, you know, searching its entire training data to find all the information it has about this particular user, why not let the user provide the information that they are comfortable providing to the language model to get a better response for their queries?"
   },
   {
    "t": 1509,
+   "speaker": "Swabha Swayamdipta",
    "text": "So If you think of personalization that way customized to each individual and giving them the control for what they want to share, what they are comfortable sharing, it might be, you know, like a better, you know, more equitable. So there might be some users who are not going to share any information. We see this a little bit with social media, right? Like in the beginning, people were not really thinking about How much to share in social media? People were just sharing everything and then with time people realized like OK, maybe I am. I have too much information out there. People started like really thinking about what they want to share, what they want and do not want to share, what they want to share only for a short period of time and so on."
   },
   {
    "t": 1554,
+   "speaker": "Swabha Swayamdipta",
    "text": "So the from the point of view of building better AI, this is this is actually a very good. approach because based on what people want to share, they might be able to build these more global models of what, you know, what most users are comfortable with, and they might be able to learn more about, you know, humans and, you know, just our preferences at a very large scale. But you're totally right that we need we need like more flexibility in these systems. Like for instance, if they I am comfortable sharing everything with the language model, but tomorrow I might think like actually, I don't want that information out there."
   },
   {
    "t": 1600,
-   "text": "There should be a mechanism for me to be able to remove that information from this language model, from the training data, or from the data that the language model has about me in a way that is under my control. And right now, we don't have a very good robust mechanism for that. So that could be... like a technology that we invest in. I see. That's a really interesting perspective."
+   "speaker": "Swabha Swayamdipta",
+   "text": "There should be a mechanism for me to be able to remove that information from this language model, from the training data, or from the data that the language model has about me in a way that is under my control. And right now, we don't have a very good robust mechanism for that. So that could be... like a technology that we invest in."
+  },
+  {
+   "t": 1625,
+   "speaker": "Jekaterina Novikova",
+   "text": "I see."
   },
   {
    "t": 1628,
-   "text": "And if we come back to understanding humanity, as you said, you have that paper that's titled, Improving Language Models Personas via Rationalization with Psychological Scaffolds. And it introduces psychology of behavior and judgments. that augments language model personas with the rationales grounded in psychological theories, like for example, the big five personality traits and the primal board beliefs. In general, like it's the interesting work because first of all, it looks like it's an interdisciplinary work and it's also about like understanding humanity from a psychological point of Can you share what led you to incorporating those psychological scaffolds into personal constructions for language models?"
+   "speaker": "Jekaterina Novikova",
+   "text": "That's a really interesting perspective. And if we come back to understanding humanity, as you said, you have that paper that's titled, Improving Language Models Personas via Rationalization with Psychological Scaffolds. And it introduces psychology of behavior and judgments. that augments language model personas with the rationales grounded in psychological theories, like for example, the big five personality traits and the primal board beliefs. In general, like it's the interesting work because first of all, it looks like it's an interdisciplinary work and it's also about like understanding humanity from a psychological point of Can you share what led you to incorporating those psychological scaffolds into personal constructions for language models?"
   },
   {
    "t": 1686,
+   "speaker": "Swabha Swayamdipta",
    "text": "Yeah, so that's a great question. So this was a collaborative effort. This is with this collaboration with folks from colleagues from Apple Research who have been collaborating with for over a year and I will credit my colleagues at Apple with this design. So I can tell you a little bit about like. why we chose this design or why this design makes a lot of sense is because we could we could just ask a language model to come up with some kind of a rationale for why a user made a decision, right? So that would be one way of going about doing it, but that does not give us a good, you know, grounding mechanism in."
   },
   {
    "t": 1734,
-   "text": "that are known frameworks of psychology that people have had around for decades now. This is why we chose these frameworks. So the language model is not just going out and doing whatever reasoning that it wants, but it is doing something based on existing frameworks of reasoning that have existing frameworks of psychology. that people have studied and proposed and have had success with for decades now. And so this is kind of like structuring the language model or guiding the language model in a way that is a little more controllable. And that is why we chose these psychological scaffolds. I mean, so it's kind of like again, not giving the language model full control of the process, but having some kind of guiding mechanism."
+   "speaker": "Swabha Swayamdipta",
+   "text": "That are known frameworks of psychology that people have had around for decades now. This is why we chose these frameworks. So the language model is not just going out and doing whatever reasoning that it wants, but it is doing something based on existing frameworks of reasoning that have existing frameworks of psychology. that people have studied and proposed and have had success with for decades now. And so this is kind of like structuring the language model or guiding the language model in a way that is a little more controllable. And that is why we chose these psychological scaffolds. I mean, so it's kind of like again, not giving the language model full control of the process, but having some kind of guiding mechanism."
   },
   {
    "t": 1788,
-   "text": "So the language model is relying on some strict principles or structured principles to come up with this rationale. Right, so what I hear is one of the reasons was like you tried not to reinvent the wheel basically, but rather take the knowledge that was already accumulated by other disciplines. But another point that is important in my opinion in this work is that"
+   "speaker": "Swabha Swayamdipta",
+   "text": "So the language model is relying on some strict principles or structured principles to come up with this rationale."
+  },
+  {
+   "t": 1797,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, so what I hear is one of the reasons was like you tried not to reinvent the wheel basically, but rather take the knowledge that was already accumulated by other disciplines."
   },
   {
    "t": 1819,
-   "text": "Your approach adds the why behind user judgments. So it's reasoning about their experiences, personality traits and beliefs. And this makes models more effective at predicting the behaviors of users. But at the same time, this makes models also potentially more persuasive. So what do you think about the responsible deployment of these persona-based models, again, especially in those higher-stake settings like political discourse or mental health support or maybe financial decision-making or other more sensitive domains."
+   "speaker": "Jekaterina Novikova",
+   "text": "But another point that is important in my opinion in this work is that Your approach adds the why behind user judgments. So it's reasoning about their experiences, personality traits and beliefs. And this makes models more effective at predicting the behaviors of users. But at the same time, this makes models also potentially more persuasive. So what do you think about the responsible deployment of these persona-based models, again, especially in those higher-stake settings like political discourse or mental health support or maybe financial decision-making or other more sensitive domains."
   },
   {
    "t": 1865,
+   "speaker": "Swabha Swayamdipta",
    "text": "Yeah, this is a wonderful question and this brings back that you know tension that we were talking about like two, you know principles that are you know at tension with each other. there are two things that are worth considering here. So this project was a little bit on. You know, trying to make better AI by using human information more effectively. But there is the other question, which is how human should use AI, which is, which is again like very big concern, something I take very seriously. Like when should they should human users over rely or rely on AI and when should they not? So that has like this whole aspect of like how we need to educate users, how do we teach users to figure out where their lines are, like when to make that decision, when to not."
   },
   {
    "t": 1922,
-   "text": "So I will say that these two problems are at odds with each other, and we need to think about them, both of them, very carefully. Moving beyond the challenges of personalisation that we talked about a lot, you've also been exploring how language models can be applied to critical social issues, from"
+   "speaker": "Swabha Swayamdipta",
+   "text": "So I will say that these two problems are at odds with each other, and we need to think about them, both of them, very carefully."
   },
   {
-   "t": 1945,
-   "text": "homelessness to suicide prevention. These are the means where the stakes are incredibly high. And the populations that are involved are also very vulnerable. So I wonder what drew you to this intersection of LLMs and the broader public domain? And what do you think are the unique responsibilities that come with this type of AI deployment in such contexts? Yeah, so in some ways I am extremely fortunate that I live in Los Angeles and I am at the University of Southern California where there are many research disciplines which are, you know, very, very strong in the universities and it's very fortunate that lot of them actually talk to each other."
+   "t": 1937,
+   "speaker": "Jekaterina Novikova",
+   "text": "Moving beyond the challenges of personalisation that we talked about a lot, you've also been exploring how language models can be applied to critical social issues, from homelessness to suicide prevention. These are the means where the stakes are incredibly high. And the populations that are involved are also very vulnerable. So I wonder what drew you to this intersection of LLMs and the broader public domain? And what do you think are the unique responsibilities that come with this type of AI deployment in such contexts?"
   },
   {
-   "t": 2001,
-   "text": "So I am an associate director at the Center for AI and Society at the University of Southern California, where it is a collaborative effort between AI research and mostly social work research and communications research. And so I am constantly in conversation with my colleagues from these other disciplines where we talk about these problems that they face that maybe AI can use as a tool for solutions. So that has really helped in my exposure to many of these problems. The other personal... a trajectory that helped me get to this place is that a lot of my research is about language model evaluation."
+   "t": 1976,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, so in some ways I am extremely fortunate that I live in Los Angeles and I am at the University of Southern California where there are many research disciplines which are, you know, very, very strong in the universities and it's very fortunate that lot of them actually talk to each other. So I am an associate director at the Center for AI and Society at the University of Southern California, where it is a collaborative effort between AI research and mostly social work research and communications research. And so I am constantly in conversation with my colleagues from these other disciplines where we talk about these problems that they face that maybe AI can use as a tool for solutions."
   },
   {
-   "t": 2054,
-   "text": "Language model evaluation usually proceeds in a somewhat restricted setting where we define these benchmarks which we report the language model performance on. the way we are creating these benchmarks these days mostly is moving more and more to be like very synthetic and very narrow. Whereas what we should actually be looking at is real world tasks, like where AI can have real world impact because people are using AI in many, many different settings. So why not use those settings directly? as a way to evaluate how well language models might be doing. So it's this nice combination of these two factors that led to some of this research where my perspective is still looking at how good our language models are, where can AI come in to help these real world problems and how good it is at helping with these real world problems."
+   "t": 2034,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So that has really helped in my exposure to many of these problems. The other personal... a trajectory that helped me get to this place is that a lot of my research is about language model evaluation. Language model evaluation usually proceeds in a somewhat restricted setting where we define these benchmarks which we report the language model performance on. the way we are creating these benchmarks these days mostly is moving more and more to be like very synthetic and very narrow. Whereas what we should actually be looking at is real world tasks, like where AI can have real world impact because people are using AI in many, many different settings."
+  },
+  {
+   "t": 2089,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So why not use those settings directly? as a way to evaluate how well language models might be doing. So it's this nice combination of these two factors that led to some of this research where my perspective is still looking at how good our language models are, where can AI come in to help these real world problems and how good it is at helping with these real world problems."
   },
   {
    "t": 2118,
+   "speaker": "Jekaterina Novikova",
    "text": "Right, your work on OATH-Frames specifically represents an application of language models to understanding complex social issues like homelessness. So first of all, can you give us a little bit of a brief overview of what this project sets up to accomplish and how you're using LLMs in order to achieve that."
   },
   {
    "t": 2145,
+   "speaker": "Swabha Swayamdipta",
    "text": "Yeah, so yeah, so this is one of the projects I did like in this interdisciplinary space, one of the first ones I did. So our goal was to understand the collaborators that we were talking to were in social work. They research homelessness, which is a very, very big problem in California, especially Southern California, where the homelessness populations are increasing and the support for people experiencing homelessness is almost decreasing by the day. So here, what we wanted to understand is as... You know this problem is getting more and more intense. How is public opinion about homelessness changing?"
   },
   {
    "t": 2194,
+   "speaker": "Swabha Swayamdipta",
    "text": "And one way to do this is to have like an actual survey out to people where you specifically ask this question. But our way was a little more indirect where we compiled a collection of. Close to 3 million tweets. from the platform now known as X, previously known as Twitter, where we looked at a subset of tweets where people are talking about homelessness. And this was done in the years between 2021 and 2023, if I remember correctly. And the reason why we wanted to do this is because it is more organic. people post about homelessness because they, you know, something compelled them to, as opposed to a survey asking for how you feel about homelessness, has a slightly different implication."
   },
   {
    "t": 2246,
+   "speaker": "Swabha Swayamdipta",
    "text": "So what we wanted to study is can, like this is a very large scale problem. This is 3 million tweets, which you know, if you were to manually go and, you know, look into what's happening in each tweet, it would take many, many years. But we wanted to use language models to help us with this analysis. The reason of doing this analysis can be many fold. We wanted to see how feuds change with time, how, as this problem goes, it grows more and more severe, people are reacting differently. And it also can have more practical implications such as like how do we help, you know, public officials formulate the most resonant message about homelessness awareness or, you know, tackling the problem of homelessness so it can get most people behind that message."
   },
   {
    "t": 2300,
+   "speaker": "Swabha Swayamdipta",
    "text": "So that was the idea behind. this and we did this all in collaboration with social work researchers who studied this problem well and yeah, the simple way to do this that people had been doing till now is just look at sentiment. Is it positive or negative? But when we started looking at the data, it happens to be like very, very complicated problem. People are not just saying positive, negative. People are often saying very nuanced things about homelessness. Like people are frustrated. But then again, lot of people have a ton of empathy and these very complex attitudes that people have are not captured in existing tools. So we even know what question to ask."
   },
   {
    "t": 2348,
-   "text": "We needed to engage with the data. we needed a collaborative effort between computer scientists and social scientists. You come up with what to even look for in these posts. And so that resulted in this very large effort called Oath Frames, which is a collection of close to three million tweets with online attitudes towards homelessness. which goes beyond what our current tools can provide us. Right, as one of the examples that I found very interesting in your work, in this work, that your analysis showed that sentiment and toxicity classifiers often mislabel that data that you were analyzing."
+   "speaker": "Swabha Swayamdipta",
+   "text": "We needed to engage with the data. we needed a collaborative effort between computer scientists and social scientists. You come up with what to even look for in these posts. And so that resulted in this very large effort called Oath Frames, which is a collection of close to three million tweets with online attitudes towards homelessness. which goes beyond what our current tools can provide us."
   },
   {
-   "t": 2401,
-   "text": "What do you think about that? What are the implications of that? Do you think it's a serious blind spot here? Are there any considerations around bias, interpretability that are related to this mislabeling, misclassification? Absolutely, so like I said, a traditional method would just be to use a sentiment classifier toxicity classifier, but you know there is a lot of subtle, you know. Subtle harm that people express in these tweets like a one example was that oh, I better get my you know act together or my father will make me homeless, which."
+   "t": 2377,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, as one of the examples that I found very interesting in your work, in this work, that your analysis showed that sentiment and toxicity classifiers often mislabel that data that you were analyzing. What do you think about that? What are the implications of that? Do you think it's a serious blind spot here? Are there any considerations around bias, interpretability that are related to this mislabeling, misclassification?"
   },
   {
-   "t": 2447,
-   "text": "you know, like some kid somewhere might have posted, which kind of has like this subtle derogatory attitude towards, you know, homeless people. And it kind of indicates that like, somehow that people who experience homelessness are responsible for their own situation, which may or may not always be true. So these are posts that these toxicity and sentiment classifiers cannot identify as like a negative sentiment because there is nothing like, you know, abjectly harmful or toxic in these posts, right? So it is, so this is the kind of bias that we discovered because this is not like... To the best of our knowledge, when we did this research, there was nothing that was trained specifically for homelessness."
+   "t": 2420,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Absolutely, so like I said, a traditional method would just be to use a sentiment classifier toxicity classifier, but you know there is a lot of subtle, you know. Subtle harm that people express in these tweets like a one example was that oh, I better get my you know act together or my father will make me homeless, which. you know, like some kid somewhere might have posted, which kind of has like this subtle derogatory attitude towards, you know, homeless people. And it kind of indicates that like, somehow that people who experience homelessness are responsible for their own situation, which may or may not always be true."
   },
   {
-   "t": 2495,
-   "text": "No classifier was trained for homelessness per se. So it was important for us to do the groundwork on like, how do you even try to understand the different possible labels that you can come up with homelessness? But yeah, so these kinds of, if we just really use off the shelf rules, we might get a very different picture than what is the reality. but the main thing is that me as a computer scientist, I shouldn't just go about, you know, using my favorite classifier on these problems and then discovering like, oh, there's actually not that much toxicity about homelessness. Or most people don't have negative sentiment about homelessness where the Reality is very complicated. This is why it was very important for us to involve social work folks who have like first hand knowledge of the problem."
+   "t": 2468,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So these are posts that these toxicity and sentiment classifiers cannot identify as like a negative sentiment because there is nothing like, you know, abjectly harmful or toxic in these posts, right? So it is, so this is the kind of bias that we discovered because this is not like... To the best of our knowledge, when we did this research, there was nothing that was trained specifically for homelessness. No classifier was trained for homelessness per se. So it was important for us to do the groundwork on like, how do you even try to understand the different possible labels that you can come up with homelessness? But yeah, so these kinds of, if we just really use off the shelf rules, we might get a very different picture than what is the reality."
   },
   {
-   "t": 2548,
-   "text": "And I believe any kind of these like high stakes sensitive domain problems could always be done in collaboration with experts who have studied this problem from many different angles. It slows down the research for sure because like it takes a while for two different disciplines to talk in each other's language or in way that we can communicate each other's concerns to clearly. But ultimately, it's very rewarding because if we had done this just on our own, it would be a very different kind of But because we involve them and went through the slow process of like figuring, looking at the data, figuring out what the label should be. We were able to write a very detailed once paper about it."
+   "t": 2520,
+   "speaker": "Swabha Swayamdipta",
+   "text": "But the main thing is that me as a computer scientist, I shouldn't just go about, you know, using my favorite classifier on these problems and then discovering like, oh, there's actually not that much toxicity about homelessness. Or most people don't have negative sentiment about homelessness where the Reality is very complicated. This is why it was very important for us to involve social work folks who have like first hand knowledge of the problem. And I believe any kind of these like high stakes sensitive domain problems could always be done in collaboration with experts who have studied this problem from many different angles. It slows down the research for sure because like it takes a while for two different disciplines to talk in each other's language or in way that we can communicate each other's concerns to clearly."
   },
   {
-   "t": 2600,
-   "text": "And it was also recognized with an outstanding paper award at EMNLP, which is their natural language processing conference last year. Congratulations on that award. I like how you speak about involvement or interdisciplinary collaboration here and having both computer scientists and social work professionals being involved in this work in order to make it better. How? What's your opinion about how to ensure that these tools that are being developed, they amplify rather than replace expert judgment, the judgment of those social work professionals that are actually very closely involved in these problems?"
+   "t": 2572,
+   "speaker": "Swabha Swayamdipta",
+   "text": "But ultimately, it's very rewarding because if we had done this just on our own, it would be a very different kind of But because we involve them and went through the slow process of like figuring, looking at the data, figuring out what the label should be. We were able to write a very detailed once paper about it. And it was also recognized with an outstanding paper award at EMNLP, which is their natural language processing conference last year."
+  },
+  {
+   "t": 2610,
+   "speaker": "Jekaterina Novikova",
+   "text": "Congratulations on that award. I like how you speak about involvement or interdisciplinary collaboration here and having both computer scientists and social work professionals being involved in this work in order to make it better. How? What's your opinion about how to ensure that these tools that are being developed, they amplify rather than replace expert judgment, the judgment of those social work professionals that are actually very closely involved in these problems?"
   },
   {
    "t": 2654,
+   "speaker": "Swabha Swayamdipta",
    "text": "Yeah, that's a great question. And I mean, in any problem where you want to do any kind of very large scale analysis, very large scale investigation, it's like these tools are indispensable. AI is indispensable. So. However, we want to. do this in a way such that whatever knowledge we have from human experts is being used by these language models and they're not being operated in a vacuum. So always ensuring there is that, you know, like human AI collaboration in these projects which have a big social angle, which have this sensitive data is very, very important."
   },
   {
    "t": 2701,
+   "speaker": "Swabha Swayamdipta",
    "text": "So. The way in which we can go about doing it is involving these collaborations or this interdisciplinary input right from the time when we are formulating the queries to the language model and also checking the language model at every step. it coming up with the answer that the humans would? What is the agreement between the language models answer and the humans? Is it coming to the answer for the right reasons? So language models are great at, you know, telling their rationale before making before talking about the decision. So it is very important for experts to have that. You know, critical view of what the rationale is for the language model and seeing if."
   },
   {
    "t": 2748,
-   "text": "they agree with it or not giving the right kind of feedback to the language models. So it has to be like a collaborative effort because no expert can look at millions of tweets in a matter of a couple of months and figure out what this analysis is. But at the same time, we cannot let language models do what they want to do without involving an expert. So it has to be some kind of collaboration between both. And without that, I think like we might end up barking up the wrong tree and like coming up with conclusions that do not really have too much merit in the real world. So we have to be very careful. We have to have mechanisms in place to, you know, design these models with input from collaborators as well as evaluate them with the help of"
-  },
-  {
-   "t": 2799,
-   "text": "these collaborators."
+   "speaker": "Swabha Swayamdipta",
+   "text": "They agree with it or not giving the right kind of feedback to the language models. So it has to be like a collaborative effort because no expert can look at millions of tweets in a matter of a couple of months and figure out what this analysis is. But at the same time, we cannot let language models do what they want to do without involving an expert. So it has to be some kind of collaboration between both. And without that, I think like we might end up barking up the wrong tree and like coming up with conclusions that do not really have too much merit in the real world. So we have to be very careful. We have to have mechanisms in place to, you know, design these models with input from collaborators as well as evaluate them with the help of these collaborators."
   },
   {
    "t": 2800,
-   "text": "Right, You have another work on applying LLMs to critical sensitive domains. For example, what I speak about is the paper Uncovering Intervention Opportunities for Suicide Prevention with Language Model Assistants. Can you briefly introduce the scope of this work and how it extends your thinking about the responsible use of LLMs in high stakes social and public health contexts? Yeah, thank you for bringing up this paper. This is one of the works that I'm the most proud of in the last few years that my lab has worked on. here we were approached by my colleague John Blosnich from the School of Social Work who studies suicide prevention."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, You have another work on applying LLMs to critical sensitive domains. For example, what I speak about is the paper Uncovering Intervention Opportunities for Suicide Prevention with Language Model Assistants. Can you briefly introduce the scope of this work and how it extends your thinking about the responsible use of LLMs in high stakes social and public health contexts?"
   },
   {
-   "t": 2851,
-   "text": "And in his experience, a lot of the work in suicide prevention had been on the clinical side, know, like looking at mental health. aspects, but he had this hypothesis that, you know, we have built a lot of interventions for mental health professionals for helping with suicide prevention, but what about non clinical professionals? So in his experience, he had observed that like victims of suicide in the days before their death might have a lot of other kinds of interactions. So for instance, a lot of people you know, because of life changes such as, you know, divorce or child custody, they get into these situations, these life factors that drive them towards suicide."
+   "t": 2832,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yeah, thank you for bringing up this paper. This is one of the works that I'm the most proud of in the last few years that my lab has worked on. here we were approached by my colleague John Blosnich from the School of Social Work who studies suicide prevention. And in his experience, a lot of the work in suicide prevention had been on the clinical side, know, like looking at mental health. aspects, but he had this hypothesis that, you know, we have built a lot of interventions for mental health professionals for helping with suicide prevention, but what about non clinical professionals? So in his experience, he had observed that like victims of suicide in the days before their death might have a lot of other kinds of interactions."
   },
   {
-   "t": 2899,
-   "text": "So they might be in conversation, for instance, with a lot of lawyers in the days before their death. And so John's hypothesis was that Is there enough evidence of this phenomena happening that victims of suicide are in conversation with legal professionals of one kind or the other in the days before their death? So we can design interventions that are catered towards those professionals. So we had a collection from the United States government. the Center for Disease Control has this large collection of suicide reports, which is called this NVDRS data set, which has more than 270,000 suicide reports over a collection of the past few years, where there is a short snippet that is collected the time of the discovery of a suicide, where they talk about what little information could be collected about the victim just at the scene."
+   "t": 2883,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So for instance, a lot of people you know, because of life changes such as, you know, divorce or child custody, they get into these situations, these life factors that drive them towards suicide. So they might be in conversation, for instance, with a lot of lawyers in the days before their death. And so John's hypothesis was that Is there enough evidence of this phenomena happening that victims of suicide are in conversation with legal professionals of one kind or the other in the days before their death? So we can design interventions that are catered towards those professionals. So we had a collection from the United States government."
   },
   {
-   "t": 2962,
-   "text": "And sometimes people do mention, the victim was about to see their lawyer or was going through a divorce or was going through child custody battle. Which gives this idea that like, OK, they were interacting with the lawyer and we wanted to use a language model to give us. give us this indication whether there might have been a legal interaction or not. So that was the goal of the project. Like, can we figure out from just these suicide reports whether there was like an implicit or an explicit interaction with the lawyer? So, and yeah, the result that we got was that 10 % of all the suicides that were recorded in the United States had some component either implicit or explicit of an interaction with a legal professional."
+   "t": 2932,
+   "speaker": "Swabha Swayamdipta",
+   "text": "The Center for Disease Control has this large collection of suicide reports, which is called this NVDRS data set, which has more than 270,000 suicide reports over a collection of the past few years, where there is a short snippet that is collected the time of the discovery of a suicide, where they talk about what little information could be collected about the victim just at the scene. And sometimes people do mention, the victim was about to see their lawyer or was going through a divorce or was going through child custody battle. Which gives this idea that like, OK, they were interacting with the lawyer and we wanted to use a language model to give us."
   },
   {
-   "t": 3012,
-   "text": "So that is 27,000 suicides over the course of a few years, which is very, very good indication that we might need to have like interventions for professionals for creating this kind of research. are these kinds of interventions. So that is what this project tried to do and it found and this 270,000 reports. First of all, No human should be reading these reports at length. These are extremely difficult to read. This is like, I have read many of these reports in the course of this research. is extremely hard data. is not. easy to, it takes an emotional toll on anybody who reads these reports."
+   "t": 2979,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Give us this indication whether there might have been a legal interaction or not. So that was the goal of the project. Like, can we figure out from just these suicide reports whether there was like an implicit or an explicit interaction with the lawyer? So, and yeah, the result that we got was that 10 % of all the suicides that were recorded in the United States had some component either implicit or explicit of an interaction with a legal professional. So that is 27,000 suicides over the course of a few years, which is very, very good indication that we might need to have like interventions for professionals for creating this kind of research."
   },
   {
-   "t": 3060,
-   "text": "So this is a great place where language models can step in and do a lot of that emotional labor that humans have had to do in the past. And the scale itself, 270,000 reports, this would take years, right? So that was the goal of this project. Right, how do you see the tools that are developed for the purpose to intervene and the solve or approach that problem of suicide? How do you see these tools to be deployed in the real world? Maybe not now, but like in the future. So again, these have to be like because this data is so sensitive and this is not data that we should be putting out to let's say ChatGPT because this is, yeah, someone's very personal data, very meaningful data to someone and we need to be very, very careful how we do research with this."
+   "t": 3029,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Are these kinds of interventions. So that is what this project tried to do and it found and this 270,000 reports. First of all, No human should be reading these reports at length. These are extremely difficult to read. This is like, I have read many of these reports in the course of this research. is extremely hard data. is not. easy to, it takes an emotional toll on anybody who reads these reports. So this is a great place where language models can step in and do a lot of that emotional labor that humans have had to do in the past. And the scale itself, 270,000 reports, this would take years, right? So that was the goal of this project."
   },
   {
-   "t": 3119,
-   "text": "So the tools that we build are all local tools which are built within the confines of University of Southern California. There are local models. We do not upload anything to these private API protected models, which we do not know how they are going to use the data. So we have to do everything in a very controlled way. And we have to involve a lot of experts. Right now, because this is used from like a social work research perspective, we can do this. But I do not think these tools should be out there in the world for anyone to, you know, do like whatever they like with this, with these tools, because this is very, very private sensitive data that we need to safeguard."
+   "t": 3077,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, how do you see the tools that are developed for the purpose to intervene and the solve or approach that problem of suicide? How do you see these tools to be deployed in the real world? Maybe not now, but like in the future."
   },
   {
-   "t": 3171,
-   "text": "We need to be respectful of people who have willingly shared this data for future research. So we need to keep some safeguards in place. at the time, a lot of the research that we do in this space is about how we can build better and better tools which are local and can not be misused by malicious actors in any way. So we try to build safeguards around them. Right, okay, let's move towards wrapping it up. as a wrap up, I would love to ask some reflection question. So across these three areas of work, starting from security vulnerabilities through prompt inversion that we spoke about in the beginning, then psychologically informed personalisation and those trade-offs that we have discussed, and finally the applications in sensitive public health domain like homelessness and suicide prevention."
+   "t": 3097,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So again, these have to be like because this data is so sensitive and this is not data that we should be putting out to let's say ChatGPT because this is, yeah, someone's very personal data, very meaningful data to someone and we need to be very, very careful how we do research with this. So the tools that we build are all local tools which are built within the confines of University of Southern California. There are local models. We do not upload anything to these private API protected models, which we do not know how they are going to use the data. So we have to do everything in a very controlled way."
   },
   {
-   "t": 3237,
-   "text": "There is a common thread. which is about the serious responsibility that comes to us as researchers with the building and deploying these powerful language models. What are the key lessons that you have learned about designing frameworks that allow AI systems to be both capable and also safely deployed, especially when it comes to applications with direct societal implications. Yes, so wonderful question and thank you for like, you know, summarizing all my research so succinctly. Yeah, so one theme that we keep on encountering in many of these research directions in my lab is this human component and so involving humans in a lot of these."
+   "t": 3143,
+   "speaker": "Swabha Swayamdipta",
+   "text": "And we have to involve a lot of experts. Right now, because this is used from like a social work research perspective, we can do this. But I do not think these tools should be out there in the world for anyone to, you know, do like whatever they like with this, with these tools, because this is very, very private sensitive data that we need to safeguard. We need to be respectful of people who have willingly shared this data for future research. So we need to keep some safeguards in place. at the time, a lot of the research that we do in this space is about how we can build better and better tools which are local and can not be misused by malicious actors in any way."
   },
   {
-   "t": 3293,
-   "text": "you know, technological problems. So having that, you know, human AI collaboration is very, very important. Everything that we build in computer science, there tends to be a bias to it's like building more technologically sophisticated systems. However, we are in a stage where the system that we have built these language models They interact very intimately with humans on a day-to-day basis. So we cannot leave humans out of these technological solutions. So it has to be some kind of a socio-technological effort. So that would be one of the main lessons in my research. The other thing is that the more targeted a model is for an application, the easier it is to build good safeguards around it."
+   "t": 3197,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So we try to build safeguards around them."
   },
   {
-   "t": 3345,
-   "text": "For general purpose language models where the same model can do many different kinds of tasks, it's very challenging to build the right kinds of safeguards. Now, is that something that we as academics can influence? It's hard to say because most of language model providers, like the kind of resources that they have to build these language models are not, these are not resources that we have in academia."
+   "t": 3200,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, okay, let's move towards wrapping it up. as a wrap up, I would love to ask some reflection question. So across these three areas of work, starting from security vulnerabilities through prompt inversion that we spoke about in the beginning, then psychologically informed personalisation and those trade-offs that we have discussed, and finally the applications in sensitive public health domain like homelessness and suicide prevention. There is a common thread. which is about the serious responsibility that comes to us as researchers with the building and deploying these powerful language models."
+  },
+  {
+   "t": 3252,
+   "speaker": "Jekaterina Novikova",
+   "text": "What are the key lessons that you have learned about designing frameworks that allow AI systems to be both capable and also safely deployed, especially when it comes to applications with direct societal implications."
+  },
+  {
+   "t": 3271,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Yes, so wonderful question and thank you for like, you know, summarizing all my research so succinctly. Yeah, so one theme that we keep on encountering in many of these research directions in my lab is this human component and so involving humans in a lot of these. you know, technological problems. So having that, you know, human AI collaboration is very, very important. Everything that we build in computer science, there tends to be a bias to it's like building more technologically sophisticated systems. However, we are in a stage where the system that we have built these language models They interact very intimately with humans on a day-to-day basis."
+  },
+  {
+   "t": 3321,
+   "speaker": "Swabha Swayamdipta",
+   "text": "So we cannot leave humans out of these technological solutions. So it has to be some kind of a socio-technological effort. So that would be one of the main lessons in my research. The other thing is that the more targeted a model is for an application, the easier it is to build good safeguards around it. For general purpose language models where the same model can do many different kinds of tasks, it's very challenging to build the right kinds of safeguards. Now, is that something that we as academics can influence?"
   },
   {
    "t": 3372,
-   "text": "However, when it comes to safety and reliability research, it is very important to build targeted safeguards which are effective in specific domains. And so that would be another lesson from my research. Right. And we have also talked today a lot about your research goal that involves designing frameworks that allow AI systems to be broadly and safely deployed. And of course, that requires some novel techniques that keep pace with the model performance that is increasing every month, probably. And looking forward, what do you think are the most critical methodological innovations that we need to achieve this?"
+   "speaker": "Swabha Swayamdipta",
+   "text": "It's hard to say because most of language model providers, like the kind of resources that they have to build these language models are not, these are not resources that we have in academia. However, when it comes to safety and reliability research, it is very important to build targeted safeguards which are effective in specific domains. And so that would be another lesson from my research."
+  },
+  {
+   "t": 3388,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. And we have also talked today a lot about your research goal that involves designing frameworks that allow AI systems to be broadly and safely deployed. And of course, that requires some novel techniques that keep pace with the model performance that is increasing every month, probably. And looking forward, what do you think are the most critical methodological innovations that we need to achieve this?"
   },
   {
    "t": 3424,
+   "speaker": "Swabha Swayamdipta",
    "text": "Yeah, so one very important problem that I'm encountering in every single research direction is this problem of large context. So language models are very good at doing like very targeted tasks. That is not how users typically interact with language models. Users will give the language model a lot of information. They want to use these models as fat models, right? So that means these models have to be very good at handling long context that are being provided by the user. However. It is increasingly obvious that the longer the context, more the language model struggles with maintaining a consistent response."
   },
   {
    "t": 3471,
+   "speaker": "Swabha Swayamdipta",
    "text": "And so that is something that I think is a direction that we need to collectively study. In my lab, we are starting to do some investigations into different kinds of architectures that might be better compared to the current architectures language models use for handling these kinds of long context problems. that is one outstanding problem. The other problem is controlling the output generation. So there are lots of features of these language model outputs. might be, know, so one is the whole personalization angle, like how do you control it so it becomes more and more catered to your own preferences?"
   },
   {
    "t": 3516,
+   "speaker": "Swabha Swayamdipta",
    "text": "But also, how do you put the correct kinds of safeguards in place for your specific application? How do you regulate the kind of attitudes that you want or attributes that you want in the language model output? You want a very sycophantic model. Do you want the model to just be very concise and not give you like an essay style answer, but like a very short answer for your query? So these are the kinds of controls that at the moment we don't have in place. This is something the language model provider decides like how they want the model to be. But how do you as a user manipulate your own preferences so you get the kind of output that you want."
   },
   {
    "t": 3564,
-   "text": "So these are these are some of the outstanding technical questions that I am interested in pursuing in the future in my research Very interesting and I look forward to seeing your future papers at the top conferences Thank you. is there anything that you would like to say to our audience, but I didn't ask you one message that I would like to have for everyone that is listening to this podcast is that, you know, AI is very, very powerful. And we shouldn't be like, shy in using AI. But I think if We have the bandwidth. We should always question like when to use AI."
+   "speaker": "Swabha Swayamdipta",
+   "text": "So these are these are some of the outstanding technical questions that I am interested in pursuing in the future in my research"
   },
   {
-   "t": 3612,
-   "text": "Because there might be places where. Using our own capabilities to come to a decision might have like benefits for us that we don't see in the short run. Like for instance there. There's a. component of like, you know, our brains that stay active when we do a lot of these problems on our own. Not every problem needs to be done manually, but some of the problems that we really care about that give us joy, those are things that we need to still do ourselves and not, you know, offload to AI. So When you know you use AI in your day to day life, just think about that. You know when should you be using AI for this or should you not just that tiny decision that you make can have like long term, you know benefits for our own capabilities, our own brain function."
+   "t": 3573,
+   "speaker": "Jekaterina Novikova",
+   "text": "Very interesting and I look forward to seeing your future papers at the top conferences is there anything that you would like to say to our audience, but I didn't ask you"
+  },
+  {
+   "t": 3588,
+   "speaker": "Swabha Swayamdipta",
+   "text": "One message that I would like to have for everyone that is listening to this podcast is that, you know, AI is very, very powerful. And we shouldn't be like, shy in using AI. But I think if We have the bandwidth. We should always question like when to use AI. Because there might be places where. Using our own capabilities to come to a decision might have like benefits for us that we don't see in the short run. Like for instance there. There's a. component of like, you know, our brains that stay active when we do a lot of these problems on our own."
+  },
+  {
+   "t": 3634,
+   "speaker": "Swabha Swayamdipta",
+   "text": "Not every problem needs to be done manually, but some of the problems that we really care about that give us joy, those are things that we need to still do ourselves and not, you know, offload to AI. So When you know you use AI in your day to day life, just think about that. You know when should you be using AI for this or should you not just that tiny decision that you make can have like long term, you know benefits for our own capabilities, our own brain function."
   },
   {
    "t": 3672,
+   "speaker": "Jekaterina Novikova",
    "text": "Our brain is also a wonderful model. let's not forget about that. Thank"
   }
  ]

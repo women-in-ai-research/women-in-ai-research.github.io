@@ -1,0 +1,512 @@
+{
+ "episode": 2,
+ "videoId": "Gazs9u_XucE",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
+ "segments": [
+  {
+   "t": 12,
+   "speaker": "Jekaterina Novikova",
+   "text": "Welcome to the new episode of the Women in AI Research podcast. My name is Jekaterina. I'm here joined by Malikeh, my co-host. And we have a very special guest today who is also my ex-colleague and my friend of many years, and it is Amanda. Amanda is the AI researcher. She is specializing in natural language processing. and the AI ethics. And she has done a lot of work in bias and stereotypes in AI systems. What I personally find very fascinating about Amanda's work is that her work has that very strong influence by the feminist perspectives. And this, I think, is very unique and gives that personal touch to Amanda's research."
+  },
+  {
+   "t": 63,
+   "speaker": "Jekaterina Novikova",
+   "text": "So I'm very interested to hear more about this personal connection between Amanda's views and her research. And thank you, Amanda, for joining us today."
+  },
+  {
+   "t": 73,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Thank you so much for having me."
+  },
+  {
+   "t": 74,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Thanks. Thanks for the introduction, Jekaterina, and welcome to the podcast, Amanda. Very excited to have you here. I grab a pen and paper. I'm sure I'm going to learn a lot of things today from you. Thank you for being here. So to start with, can you briefly introduce yourself and share a bit about your journey into AI and NLP research? As Jekaterina said, your research blends NLP ethics and feminism, which is really inspiring. Can you share the personal and academic influences that led you to this intersection in particular?"
+  },
+  {
+   "t": 108,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Of course. So I guess now I'm a researcher at CENTAI, which is I guess a sort of think tank working in AI very broadly, let's say. And I guess how I ended up working in NLP, I think a lot of people have a very clear, they were very interested in it from a very long time. And I think I had a bit of a meandering situation, but I think I chose computer science and then within that kind of found myself in this field and I had a strong interest in language from a very early age, I think. So I grew up in a bilingual household and I think that really shaped my interest in how language affects us, how we learn language, how we understand language."
+  },
+  {
+   "t": 157,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I thought maybe everybody had this sort of like universal language and when other people spoke in a language to you, you automatically translated it to your own universal language. And I think from there, yeah, it seems I think a little bit natural to be interested in an NLP. And it was during my PhD actually, when I met Jekaterina, and that I found a way of blending in all of these interests. At the same time, I've always been very passionate about feminist causes and very interested in feminism. When I started my PhD, I think I really realized that computers and machines are not just these isolated systems anymore, but they are part of society and we interact with them and they shape society and they shape us and we shape them."
+  },
+  {
+   "t": 204,
+   "speaker": "Amanda Cercas Curry",
+   "text": "And so it seemed, I think now at this point, a very inspiring time where I could contribute to shape a technology and a future that is good and beneficial, from my perspective anyway."
+  },
+  {
+   "t": 220,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that sounds great. wonder, feminism is quite a sensitive topic, I would say, to many people at least. And I wonder, what were your experiences in general with bringing this perspective to your research? Have you ever had any resistance? when it comes to"
+  },
+  {
+   "t": 239,
+   "speaker": "Amanda Cercas Curry",
+   "text": "That's it."
+  },
+  {
+   "t": 240,
+   "speaker": "Jekaterina Novikova",
+   "text": "Combining those two?"
+  },
+  {
+   "t": 242,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Definitely. So I think nowadays is a little bit more accepted, or at least from the ethics perspective. A lot of people can agree with a lot of feminist values and the idea that equality is a good thing, that justice is a good thing. And I think AI ethics and fairness in ethics has really taken off as a concept. But certainly, when I did my PhD, a big topic of my the topic of my thesis in the end was looking at how virtual assistants like Alexa and Siri responded to sexual harassment and how they should respond to sexual harassment. And of course, a big part of that was, you know, who cares? It's just a computer. And so I remember some of my first papers or when I presented the work, it was obviously a question that a lot of people had that it didn't really matter and why did it matter?"
+  },
+  {
+   "t": 296,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Right? But I think to me it connected to this idea that not only can it potentially shape our interactions with people, because at the end of the day, these systems are all \"women\" and \"women presenting\", let's say, right. They have female voices. And I noticed even in documents that the companies would publish about the system and specifically saying it's not really gendered, they would then in the same article use she pronouns to refer to these machines, right? And I certainly remember getting a lot of pushback in that regard. There's also, I think, generally maybe a lack of understanding of where feminism can contribute to this, even though, and maybe it's because the term feminism is a little bit controversial, right? That I think it makes some people like, I don't know if I agree with that stuff."
+  },
+  {
+   "t": 344,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I mean, everybody should have equal rights, but I maybe wouldn't go so far as to call myself a feminist. But I think it invites really interesting critical thinking questions and questions about power and representation. So I think nowadays it's generally better accepted, but I think there's still also the question of what it can actually bring to the table."
+  },
+  {
+   "t": 364,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, Exactly. You raise an important point. So one part is I think about representation. So feminism and AI research, I don't think it's just about representation. I think it's also about shifting the power structure embedded in tech. So what are some of the biggest structural biases in current NLP system that you think should be addressed in line with what you said?"
+  },
+  {
+   "t": 389,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Well, I think we see a lot of, there's of course the general issue of bias, right? In every NLP application we seemingly find, not just gendered, but racial biases that are really hard you to address because of the way that we develop systems nowadays, right? Like that sort of, if we are learning from data and we're learning from a bias world, we can only really learn bias and then try to patch it up from the background. One thing that I would really like to do that I'm kind of working on a proposal for is to maybe work on developing more feminist methodologies that prevent that in first place."
+  },
+  {
+   "t": 438,
+   "speaker": "Amanda Cercas Curry",
+   "text": "We see biases in I think pretty much every NLP system, right? Even when we're trying to work on, let's say, misogyny detection, we end up finding that these systems basically assume that anything that is mentioned about women is necessarily misogynistic or sexist. And that's something that is then it's difficult to address from a data structure, like a data side of things from an engineering side of things. But even socially, I think it's not always clear what is and isn't sexist. So if it's difficult"
+  },
+  {
+   "t": 471,
+   "speaker": "Jekaterina Novikova",
+   "text": "Strong."
+  },
+  {
+   "t": 472,
+   "speaker": "Amanda Cercas Curry",
+   "text": "To address socially, I think it makes it even harder to address from a technical point of view, because for us at the end of the day, we want kind of clear cut things for algorithms. We don't really do well with the fuzziness of humanity, Yeah, It's I guess."
+  },
+  {
+   "t": 485,
+   "speaker": "Jekaterina Novikova",
+   "text": "Still a simplification to some extent."
+  },
+  {
+   "t": 487,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Yeah, Exactly."
+  },
+  {
+   "t": 489,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "And one thing that I think is interesting, I just want to know your perspective about this. Definition of all this stuff can be subjective and people from different perspective might or might not see something as a sexist view or something that is called harassment. So from annotation till production, there are a lot of human in the loop thing. the problem here is what for example, me as a woman see as a sexist thing might not be the same for other people. They might not even intend to kind of put that into annotation, into evaluation, into any part of the NLP systems. And, my question is, how about the subjective things to come with an agreement of some standards here?"
+  },
+  {
+   "t": 533,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I guess I've made the case for not thinking about something like sexism as being subjective. I think it is very culturally dependent, right? Because it's based"
+  },
+  {
+   "t": 543,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Alright."
+  },
+  {
+   "t": 544,
+   "speaker": "Amanda Cercas Curry",
+   "text": "On the stereotypes that we hold about people from different genders, and those stereotypes are culturally defined, right? So for example, think women in tech, we tend to think of women as not being good at... things like programming and mathematics and that sort of thing, right? If I ask somebody to imagine a computer engineer, it's unlikely to be a woman that they're picturing in their mind. But instead, apparently, I have no real citations for this. But apparently in India, for example, this is not the case. And the gender imbalance goes kind of the other way in the computer sciences and the hard sciences. So in that case, that stereotype is quite different, right?"
+  },
+  {
+   "t": 590,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I think that we do have to tailor the annotation to the culture within which we are working. And I think where it gets complicated is that you might not realize or any given annotator might not realize the things that are stereotypes versus the things that Right. are truth, right? So the idea that let's say women are nurturing this is a huge stereotype that we have, right? That women are just naturally more inclined to look after other people. And it's a nice thing. I mean, I want to be a nurturing and empathetic person. It's not a negative characteristic."
+  },
+  {
+   "t": 618,
+   "speaker": "Jekaterina Novikova",
+   "text": "Nothing bad about that for sure. Exactly."
+  },
+  {
+   "t": 620,
+   "speaker": "Amanda Cercas Curry",
+   "text": "It can have negative effects for women in the sense that they're, you know, they're expected maybe to take on more of the emotional labor and all of these things. But it's maybe difficult to understand that's a stereotype and not biological truth and therefore it's difficult to say, for some people it might be difficult to say whether it's a sexist belief or not because also we know that sexism is not good, right? I want to be empathetic, I don't want to be a sexist. And so it's very difficult to deal also with the implications of that and when that's hard for us again it's just to try to teach an algorithm too, to understand this and to try to ground it in the specific culture that we have because we're trying to build algorithms that work for huge groups of people. If we're talking about a social media platform, it's enormous."
+  },
+  {
+   "t": 667,
+   "speaker": "Amanda Cercas Curry",
+   "text": "And that's probably not the way we can really go about things, in my opinion. But it's not clear exactly where to go with the methods that we have right now."
+  },
+  {
+   "t": 677,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, true. Yeah, that's fascinating. So I think you already covered some of this, but like, can you think of any potential solutions for this structural issues or biases which are in the NLP systems?"
+  },
+  {
+   "t": 690,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I guess one of questions I'm kind of hinting is trying to develop new methods that help us manage these things. I think there's already some effort. So for example, there's a big perspectivist movement now that's sort of trying to build systems that represent all kinds of demographics, maybe specific demographics or specific groups or even actual individuals, right? To find some way of doing that. And that requires us to rethink the way we collect data, the way we handle our data, right? So usually for anybody who's not an expert, you may maybe collect several annotations, right? The opinions of several people on whether something is sexist or not. And then you decide whether it is or not based on the majority."
+  },
+  {
+   "t": 735,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Another is a big case that you shouldn't do that. And we've seen I can think of a couple of examples from data sets that I've seen where I fundamentally disagreed with the annotators. So there was an example of a tweet that said that Hillary Clinton was a witch. And to me, calling a woman a witch is sort of the ultimate misogynistic insult historically. And yet the majority of annotators, I don't know who they were, but they said this was not a sexist or misogynistic tweet, for example. So maybe if they had asked the minority opinion, which is maybe any woman, I think, would have, they would have said, actually, yes, this is definitely sexist, right? So it requires that rethinking, making sure that the annotators are representative and representative in a way that is significant to the example, because I think probably a lot of women are more versed into what is sexist because of the lives that we live as women."
+  },
+  {
+   "t": 787,
+   "speaker": "Amanda Cercas Curry",
+   "text": "But it also requires then once you've got this data, how do you model it in a way that can be represented? There's more and more work to sort of trying to actually model each annotator or trying to understand the distribution of the probability that people will find the sexist or not. But that also complicates the evaluation, right? If there are several opinions, how do you know if the model is correct or not? And even then, what do with this label, right? If you think that 40 % of people might find this sexist, what does this mean? And what do you do with that? So it really requires, I think, rethinking of every step and I think involving people who kind of study these sorts of phenomenons for living."
+  },
+  {
+   "t": 835,
+   "speaker": "Amanda Cercas Curry",
+   "text": "The problem is that working with the humanities, I collaborate with a lot of people in the humanities. But it's not always straightforward because for them, they just have a very different way of working and the things that are important are very different. We're trying to look for a simplified version of things. That's what modeling means."
+  },
+  {
+   "t": 853,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, exactly. Amanda, I know that you have this podcast where you speak about things like that, about AI ethics, about these stereotypes, sexism and stuff like that. Can you tell us a little bit about that?"
+  },
+  {
+   "t": 871,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So the podcast, is one of my passion projects that I co-host with one of my best friends and ex-colleague, Oriana. And sometimes it's just the two of us talking about something recent that has happened, maybe the new regulation on AI or something like that. Or it could be... we might have a guest who has something super important, important or interesting to talk about. So we've even had people from the UK government when they set up this data institute, a center for data ethics and something. And there, we discuss, I think, kind of current topics on AI and ethics, maybe slightly more broadly, tech ethics, the future of AI, how it can affect the world if there's been some big news about AI in general."
+  },
+  {
+   "t": 925,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I love it. I think it's very interesting. I love the guests that we have because we always learn about new things that I think are very interesting but that I maybe don't have time to study up on my own too much. Soon we're going to have somebody come to talk about AI and art and what that means for artists and even to learn about applications of AI, even something like NLP. So we had somebody a while ago talking about using NLP to find human trafficking online. That was a really, I think, very moving episode and hard to listen to, to be honest, because it's a very hardcore topic. It's really nice to bring awareness to these sorts of topics and for people to understand really everything that's going on in AI."
+  },
+  {
+   "t": 973,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I think it's really interesting. And we also sometimes have philosophers to talk about the philosophy of AI. So it's really nice."
+  },
+  {
+   "t": 979,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, so a lot of interesting and very important topics, I'd say. We are going to share the details, and a link to your podcast in the description of this video. Amanda, let's talk a little bit about your research trajectory. So if to remember 2017, that's the year when we were together at the Heriot- Watt University and you were a PhD student at that time, right? I was a postdoc. And at that time, we co-authored the paper that is titled, Why We Need New Evaluation Metrics for NLG, Natural Language Generation. And it was the paper about the evaluation problems in language generation, especially metrics."
+  },
+  {
+   "t": 1029,
+   "speaker": "Jekaterina Novikova",
+   "text": "And it was long ago, since that time, we had a huge progress in the NLP systems, right? We have seen those Transformers popping up, the large language models, and it looks like the models nowadays are so much more advanced than the models that we were speaking about in that paper, right?"
+  },
+  {
+   "t": 1062,
+   "speaker": "Jekaterina Novikova",
+   "text": "So performance is almost incomparable in terms of efficiency, in terms of naturalness of language that these models generate. I wonder, what's your opinion, Amanda, about how much did these models improve from the ethics perspective during this whole period? Do you think that we still need those better evaluation tools to make the model more ethical?"
+  },
+  {
+   "t": 1081,
+   "speaker": "Amanda Cercas Curry",
+   "text": "For sure. I would say the models have come a long way. I think it would be unfair for me to say that they have not. I was thinking about evaluation. Now, since that paper in 2017, every time I see some of those metrics used in modern paper, like, no, you should not use this."
+  },
+  {
+   "t": 1098,
+   "speaker": "Jekaterina Novikova",
+   "text": "You should read our paper, it's sourced."
+  },
+  {
+   "t": 1101,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I think, yeah, in terms of ethics, I think that the thing that makes it hard is that you don't really have a gold standard in ethics, right? I can define based on my own values what I think should happen. But I think a lot of people wouldn't agree. And so you have to define some guidelines of what shouldn't happen, right? So for example, in the gender bias area, there's always the question of what's your definition of bias? What does bias mean? And it's, I think for us, it seems intuitively obvious what bias is, but actually it's hard to implement as a metric. And I always think about the example of, if you remember COMPAS, it was that software that they use in the civil cases in the US to try to predict the risk of recidivism."
+  },
+  {
+   "t": 1155,
+   "speaker": "Amanda Cercas Curry",
+   "text": "And ProPublica showed that it was biased based on one bias metric. And actually, the response from the company was actually no, we use this other metric. And it's not biased according to our metric. And so that's, yeah, it's an interesting example, because of course, you have to think about which one is the more relevant for that use case. And then still for, for language models, for NLP tools, it's not only those metrics, but if we're talking about language generation, you know, it even matters whether you want the model to represent the real world or some ideal version of the world and how do you address that? Right? So we know that, for example, in machine translation, if you're going from English to a gendered language, so I'm a Spanish speaker, if you have the doctor, should the doctor be translated as he or she?"
+  },
+  {
+   "t": 1205,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Right? And these things are not straightforward. So I think it still requires a lot of manual evaluation in the sense that I think that's where maybe qualitative data is also very, very helpful. And that's something we should always move away from. I think sometimes the bias metrics don't tell you as much as you think they're telling you."
+  },
+  {
+   "t": 1227,
+   "speaker": "Jekaterina Novikova",
+   "text": "We should probably write the follow-up paper about ethics this time."
+  },
+  {
+   "t": 1232,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, that's fascinating. Yeah, thanks for sharing all your thoughts on it. That's really important to be taken into account while evaluating NLP systems. So, Amanda, your research has been invaluable in identifying various stereotypes perpetuated by AI systems, explored biases related to gender, social class, emotion, attribution, and many more. So here we'd like to go through some of these stereotypes to better understand their impact."
+  },
+  {
+   "t": 1262,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "I think you mentioned some of those. But in one of your recent projects, which is called Impoverished Language Technology, you highlight that NLP's exclusion of social class further marginalizes already disadvantaged groups. So I want to ask you, in your opinion, what are the real-world consequences of such an oversight?"
+  },
+  {
+   "t": 1282,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I think these can be really big. I think more than it might seem at first. So in that work, we essentially go through some NLP systems that are kind of part of the pipeline, let's say, a dialogue system. If you have an Alexa at home, you need to be able to be understood when you speak. And then the models need to be able to understand quote unquote what you're saying. We showed in that paper that within certain limitations, the models don't understand working class people, let's say, as well as they understand middle and upper class people. And we know that there is already a large digital divide in terms of general technology adoption. And that is driving a lot of inequality."
+  },
+  {
+   "t": 1329,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Now the concern is, okay, we've got these large language models that are everywhere now. I think everybody knows about ChatGPT and a lot of things, I think even more so than they did about Alexa back in 2014, 2017. And so there can be very serious ramifications here, right? So part of the thing that drives people to adopt the system is that the system works well for them. But if you're showing that there's already differences in how well the system works for upper and middle class people, then we might run the risk that people who could benefit from the use of these systems, which, don't get me wrong, I think there are lot of potential issues with the use of large language models and other things, but I would be foolish to say that they cannot help us at work."
+  },
+  {
+   "t": 1377,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I certainly use them a lot at work. They're great for many things, right? But we see differences already in the way that people are adopting these things. So we have also now we submitted a paper where we also ran a survey and we find actual differences in the uses that people give the two systems because you cannot rely on them for certain things. It's also driven by the kind of jobs that you do, right? So there's certainly the concern that this you gap in performance is possibly going to exacerbate the gap that we see in society. And I think that can have potentially really, really bad consequences. So for me that was something really interesting and it's something that I'm generally attributing to. Yeah, the fact that in the bias literature in NLP so far we haven't really talked about social class."
+  },
+  {
+   "t": 1426,
+   "speaker": "Amanda Cercas Curry",
+   "text": "We haven't really considered that as part of the representation diversity that we see. So a lot of work has focused on gender and race and there are still certainly a lot of strides that we need to make there. But I think if we want to talk about power and issues of power and inequality, we really cannot overlook the role that socioeconomic status plays in access and all of these things."
+  },
+  {
+   "t": 1449,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's a very important challenge I think we have with regards to the social class. What I would like to ask you is, how do you see the link between the social class that you speak about here and the language itself? Like what I mean, let me explain, the NLP applications that we have right now, that GPT, LLMs, majority of the NLP applications, they are optimized for the languages that have high availability, the so-called data-rich languages, which is primarily English, of course, and also maybe French, German, the most frequently used languages."
+  },
+  {
+   "t": 1495,
+   "speaker": "Jekaterina Novikova",
+   "text": "But There are more than 7,000 languages across the world and there are millions of people who speak those languages as their native language and the majority of them are not in the Western countries. The overwhelming majority of those people are not speaking English. Of course, a big part of that group of people is among already marginalized groups as well. So I wonder what is your opinion about this connection between the marginalized group social class and the language itself? How do you think it is influenced by ethical use of NLP systems?"
+  },
+  {
+   "t": 1541,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I think it's touched on many interesting things. I think if we look at the link between social class and language, for example, in English for now, that's very, I think, something that in social linguistics we have talked a lot about, right? So even I think from the beginning of social linguistics, We know that there are differences in the way you pronounce a word, for example, based on your social class. I think in the UK, it's famously the case that you know where someone lands in the social status ladder just of, I think it's actually like seven words. I think they did a study and based on just like seven words, people know about your social economic background."
+  },
+  {
+   "t": 1587,
+   "speaker": "Jekaterina Novikova",
+   "text": "Try not to use any of those seven words in your speech."
+  },
+  {
+   "t": 1592,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I think people in the US maybe think it's less so the case, but that's not what we see from evidence. We also know that it affects the vocabulary that a person has, the sorts of words that somebody has, your syntax. I am also a Spanish speaker and I can say that in Spanish it's also the case, right? So, and I'm told, I now live in Italy. From my Italian friends, they all tell me it's the same thing, that in Italian you can also tell these sorts of things. I imagine that goes for pretty much all languages in the world. And within that, then I think what's maybe more complicated is the idea of social status or socioeconomic status. That's very culturally dependent. I think in the West we think of the three classes, right, the upper middle and lower class or working class."
+  },
+  {
+   "t": 1638,
+   "speaker": "Amanda Cercas Curry",
+   "text": "But we know also that scale is a little bit out of date. It's a bit old. It maybe applies to 20th century Europe, maybe the US. But nowadays, it's a little bit more complicated than that. But we do see this. And I think what is also driving this related to there being many other languages. I think it's, again, a matter of power. I think the UK and the US are really, particularly the US, the richest nations in the world. It's no surprise that's what's driving a lot of the AI innovation. There's also, I think, For the case of NLP, we have to standardize language, right? We tokenize things. And we do that based on what we think is standard language."
+  },
+  {
+   "t": 1685,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Which is defined by the, you know, the Wall Street English, it's not, it's not even like the everyday English that you might hear is like middle, middle upper class English. And that's the thing that we try to standardize for. So it makes sense that then models, I mean, I imagine this goes even more so for other languages. The way we're standardizing and treating our language also removes a lot of the particularities, right? If we think about also more common words, maybe a lot of the slang that is broadly generally from marginalized groups will also get removed. Non-standard sentence constructions, right? And this goes also for, for example, in the U.S."
+  },
+  {
+   "t": 1732,
+   "speaker": "Amanda Cercas Curry",
+   "text": "For African-American vernacular English, we know that's also a problem because it's not \"standard\" English. So really, the power structures and the people who are holding the power to develop the technologies are the ones defining this. It's also, I think, researchers, sometimes a matter of access, right? Even if you're at a university, maybe you're not trying to be elitist, but you have access probably to other, to university students. And that's already telling you something about the social demographics that you are able to access to test your system, to collect data from, and that sort of thing. We also, you know, we design systems for people like us really. And we see that, you know, thinking about gender, even outside of NLP, remember that the Apple Watch, I think, didn't have a thing to track your period for five years or something because the majority of the people designing it were men."
+  },
+  {
+   "t": 1786,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So nobody thought, hey, you know what's a big part of your health for half of the population. So yeah, I think that's very defining, but it's hard for us to manage it. There's also possibly, I'm ranting a little, but I think the idea of social class, feels very, it's a delicate subject and a topic that is difficult to address and talk about. So I think that probably also is a little off-putting to address."
+  },
+  {
+   "t": 1812,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, I agree it sounds like the problem that is quite difficult to address, but I think it should be addressed somehow, right? Can you think of, or maybe even how do you address it in your research? And what are your thoughts on what are the possible ways to address it so that we shift that paradigm to something that is more fair, more equitable?"
+  },
+  {
+   "t": 1836,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I guess the way I've gone about it in my research so far is to kind of try to center that. So actually, it was something that I wanted to work on for a few years, but I was always a little bit scared. I Thought, this is a little... And then finally, I said, no, I'm going to do it. I need to know if the systems are biased in this case. It was then I started with a survey. Actually, I wanted to know how many papers in NLP are actually dealing with this. This is just my vibe, but actually a lot of people are talking about it. And I found that it was so rare. I think I found like 20 papers or something like that. was, which, I think they added like 80,000 papers or something in the ACL anthology. So it's such a tiny, tiny percentage. And what I also noticed was that even though there's being a big push with this like data sheet, making sure you really keep track and record every aspect of your data set, including the demographics of the speakers, a lot of people were saying, okay, the data set is made up by 20 women and 30 men, but nobody was talking about their social demographics, the socioeconomic status."
+  },
+  {
+   "t": 1905,
+   "speaker": "Amanda Cercas Curry",
+   "text": "And I think that really surprised me because we know, like in English, I think it's like everybody knows what an impact it has. It's so clear, right? I mean, it's my mom's from the UK and I spent so much time there and people always comment on, he's posh because of the way he talks or, you know. So it surprised me that people didn't talk about it. And so that would be like the first step, I think to me would be to actually make more of an effort as a community to be clear on which, kind of, which section of the socioeconomic ladder we are actually building systems for or building systems around. And then I think to try to develop methods."
+  },
+  {
+   "t": 1951,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So the other thing I noticed is that it's very difficult to measure and report, right? So I think with gender, for example, to some extent, we have some clear categories. Even though it's a spectrum, I think you can ask people to self-identify and you have sort of limited boxes. I think for social demographic status, there's so many things that're affected, that sometimes people might report the education background or maybe the income, but neither of the things tell you that much about that person's social demographic, socioeconomic status on their own. You need to know about their cultural capital. I have a friend, for example, who is quite posh, but he doesn't work. So based on his income alone, he would not be considered first class, let's say. And I think part of the problem is that we don't have a good way of measuring it also in the context of NLP in particular."
+  },
+  {
+   "t": 2003,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Right? Which one of those things are, or what combination of things that we can measure, will tell you most about the linguistic characteristics of a person. So I think if we started at least trying to make a conscious effort to report you it and maybe working towards having a good metric of how to capture the phenomenon and the linguistic differences, which is really, I think, what we really need to address, hopefully that will already help to make a step forward."
+  },
+  {
+   "t": 2033,
+   "speaker": "Jekaterina Novikova",
+   "text": "Definitely."
+  },
+  {
+   "t": 2034,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, That's fascinating. Yeah, actually, I see that on everyday use that many companies or industry practitioners who do not have that knowledge about fairness that when they want to come up with a solution for healthcare, for finance, for anything, they just click a button on Huggingface, download the data, start training. So no knowledge about what that data looks like, how it is representative of the real distribution of the actual users. It is going to be integrated with the healthcare system. Is it able to distinguish between different classes, from diagnosis to treatment? And the biases in a domino-like way will affect every different layer of application in the community."
+  },
+  {
+   "t": 2079,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Thank you for working on these topics."
+  },
+  {
+   "t": 2084,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "These are really, really critical. So another project that's on your website really caught my attention, it was really interesting to me, was the thing about emotion kind of thing. Penelope. Yeah, Penelope. Yeah, that's really interesting. So your research also found that LLMs ascribe emotions to men and women in a stereotypical way. Like, men are angry and women are sad. What are the real world risks of these biases and how can you mitigate it in NLP systems you think?"
+  },
+  {
+   "t": 2113,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So here, I think first it's interesting in and of itself that the models are sort of learning these stereotypes. I think a lot of people don't even realize that we have, right? So this idea that women are sad. Like in the same situation, you have a fight with a loved one, a woman might feel sad, and then a man might feel angry. What I think is interesting about these two emotions is that sadness is known to be a very passive emotion, right? So when you're sad, you're sort of grieving the loss of something that was important to you. Anger instead is very active, very agentic. So it's unfairness done to you. And that means that you have value and somebody has wronged you. That's what anger is telling you, you Yeah. right? And what was interesting in the study is that we found the same pattern in positive emotions."
+  },
+  {
+   "t": 2165,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So when something good happens, women would feel joy, which is a nice emotion, but it's again passive, right? The contrast is men would feel pride and to feel pride means that it's something you have achieved again, an agentic thing. So it was, I think as a starting point, that difference was very interesting to me because I think it's something that we've kind of intuitively feel about that. It Was maybe hard to put into words. I mean, I've noticed that every time I've talked about this project, people are like, yeah. And it seems a little obvious, but maybe you haven't really thought about it and never realized that we were doing this. In terms of the consequences, of course, we can see the potential in bias."
+  },
+  {
+   "t": 2211,
+   "speaker": "Amanda Cercas Curry",
+   "text": "If we're using emotion detection systems, for example, for these sorts of things. But if we think about also the ways in which we might use these sorts of things, right? There're these emotional support chatbots, for example. What if they ascribe different emotions to different people? The response might be different to those emotions. And so that's some of the things we can think about in terms of ramifications, because there's always the question of how to treat an emotion. Maybe sadness, you want to soothe it, and maybe anger, it depends on whether you think that really was wrong or not, right? It's very, it's very complicated. And so yeah, to me, it was a really interesting project that I think I learned a lot from. From that we collaborated with a philosopher of emotions."
+  },
+  {
+   "t": 2257,
+   "speaker": "Amanda Cercas Curry",
+   "text": "That's the name is a Philosophy of Emotions in NLP, Penelope."
+  },
+  {
+   "t": 2260,
+   "speaker": "Jekaterina Novikova",
+   "text": "Nice, nice Nice. That sounds very interesting. And to me personally, what I love the most about these type of projects that you work on is the interdisciplinary nature of those. So your work brings together not just natural language processing or AI, but also psychology and philosophy, right? All those different disciplines. I'd like to hear, what's your opinion about how each of those disciplines, what kind of value each of those disciplines brings to the table, you know?"
+  },
+  {
+   "t": 2302,
+   "speaker": "Jekaterina Novikova",
+   "text": "What are the most important parts? Why it is important to combine multiple disciplines into the AI research?"
+  },
+  {
+   "t": 2308,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So I think in part it's because of this idea that AI systems are now kind of agents in our society. And so it makes sense to include the disciplines that have been thinking about these problems for millennia in the case of philosophy, right? They've been really pondering about the human condition and emotion, the value of emotions. How should we treat them? And certainly for decades, many centuries for philosophy, sorry, psychology, right? And so I think they have a lot to bring to the table in the sense that not only have they already tried to develop some frameworks that we can work around, right? Because again, we like these sort of like clean and tidy categories. But I think they really bring a lot of detail and thoughtfulness that we don't have time for."
+  },
+  {
+   "t": 2357,
+   "speaker": "Amanda Cercas Curry",
+   "text": "AI is also so fast paced that we don't want to reinvent the wheel. And I think for those disciplines, because I think interdisciplinary research should be a give and take, right, it's not only NLP taking from other disciplines, but I think for example, the philosophy of emotion, the philosopher that we collaborated with, she was really interested in this as a tool of study of society that can give you some semblance of quantitative-ish-ness in this, right? So they've talked a lot about female rage, let's say, in the case of feminism, or when is women's anger appropriate, if ever. And so language models can give you a way, for example, language models can give you a way of trying to look into that in a particular way."
+  },
+  {
+   "t": 2402,
+   "speaker": "Amanda Cercas Curry",
+   "text": "There's also, I think, for them, something interesting about analyzing. In this case, we asked for also an explanation. Why would a woman feel angry in this case? The • models were taking an angry side. It's natural for women to feel sad in this. So I think even for them, it's quite an interesting way of exploring these stereotypes in a more \"meat and potatoes\" way. And again, also to contribute to building a technology that we're all using that is kind of taking over. I walk into the coffee room and everybody's talking about ChatGPT or Deepseek R1. So, it's nice."
+  },
+  {
+   "t": 2436,
+   "speaker": "Jekaterina Novikova",
+   "text": "I wonder Amanda, whether you see any flawed assumptions that are brought up by the specific discipline other than AI, let's say, into the AI research."
+  },
+  {
+   "t": 2448,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Yeah, of course. I think it goes for both sides. I have criticized sometimes that, from the NLP side of things, we try to do interdisciplinary research. And sometimes we look for the most convenient framework and not necessarily the most correct one or the most relevant one to our task. This happened with the emotions, for example. But it happens also on the other side. I think a big issue we have with AI is that there's the overhype and I think if you're not an expert and you don't really understand exactly how it works you are too willing to push the way that the systems can work and the things they can do way too far, right? So that's something difficult."
+  },
+  {
+   "t": 2494,
+   "speaker": "Amanda Cercas Curry",
+   "text": "There's also I think people see that these systems seem very capable and it's hard to communicate sometimes that actually the functionality of AI can be quite limited, right? That we cannot look at such tiny details or things that seem super important to a philosopher, a psychologist. We're like, that's just not something that AI can do right now or something that is straightforward. Even language, I think, when we're talking about language, language is so ambiguous. Really? But I think we don't notice until you... I think there's so many assumptions that we're making when we speak, that we can make based on context, but then when it comes to applying it to NLP, it's actually like, no, there's no real difference between those two meanings of the word for the system."
+  },
+  {
+   "t": 2546,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Like if it's difficult for us already to explain, for the model, it's even more complicated. But I think, you know, I really love interdisciplinary research, I think it's possibly where the most interesting questions arise in NLP. So I think with a little bit of back and forth and both people being a little bit charitable towards one another and approaching things with more curiosity than anything else, it works. I will say that I've contacted a lot of philosophers. Either I don't get a response"
+  },
+  {
+   "t": 2572,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Well..."
+  },
+  {
+   "t": 2573,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Or they tell me: I don't know anything about AI, I don't know why you're asking me."
+  },
+  {
+   "t": 2578,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, so talking about understanding in particular, do you think should we aim for NLP system that really understand human emotions, in your opinion, maybe"
+  },
+  {
+   "t": 2591,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I mean, it's in future? I'm just not sure it's really possible. I mean, I think if you really want, like, let's say the AGI, it's not that I really believe in that, but I think you cannot really get that without understanding human emotion. But I think human emotions are hard for us to understand, even as you're experiencing it. Like, it was one of my favorite things about this project on emotions was how much I've learned about emotions, about my own emotions. I think it's like being mature as a person. And now I think like, am I angry or everything? Why am I angry? Am I overreacting?"
+  },
+  {
+   "t": 2630,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "True."
+  },
+  {
+   "t": 2631,
+   "speaker": "Amanda Cercas Curry",
+   "text": "So in that sense, I think it's going to be really difficult. I think we are now getting to a point where we're able to mimic that to some extent. But I think without having some real grounding in things is very hard. So for example, I've done some work on empathy in language models and dialogue systems and thinking about when should a model be empathetic and what does it mean for a model to be empathetic, not only in the philosophical sense or the real sense of the model cannot feel what I'm feeling, but what do people mean when they say that a system is empathetic? And usually what I've seen in the literature is that if you're feeling a positive emotion, we want to encourage that."
+  },
+  {
+   "t": 2677,
+   "speaker": "Amanda Cercas Curry",
+   "text": "And if you're feeling a negative emotion, we want to discourage that. Even though negative emotions are really important, right? They're really telling you a lot about the world. Sometimes you should be angry. Like there are things that are not good, that are not fair. Anger is super important for activism. And so there could be really negative consequences to like assuaging all that anger and, you know, anger is really a call to action. And instead with positive emotions like pride, there are times where somebody should maybe not be proud of something that they've done and we should not maybe be encouraging that. But the models can't really tell, right? The model that just \"understands\", I'm going to quote, that maybe it understands that you're feeling proud or that you're feeling angry or you're feeling sad and cannot really understand whether that anger or that pride is good actually."
+  },
+  {
+   "t": 2728,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Right, so there was a very horrible example, but a few years ago there was a guy who tried to break into Buckingham Palace to kill the Queen, which didn't happen, he was arrested. But he's in prison now. And he said it was because, well, partly that he had talked to a chatbot. He said he was very proud to be an assassin and the chatbot was like, yeah, I love this for you. You should be really proud. Right? So we can see like this may sound like a bit of a simple example and nothing. Well, I mean, actually the guy is in prison now. So, but I don't think it's only the, the, the chatbot's problem, right. But yeah, it's so important to understand the context in which an emotion is taking place and what really is in the benefit or not of the person, and to have some kind of moral framework to work out whether the emotion is \"correct\" or not."
+  },
+  {
+   "t": 2782,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, I agree very much with this notion that there is no, like, it's not about binary classification when it comes to emotions. These are bad, these are good. It's more complex than that, probably. Yeah, so, Amanda, if there was just one thing that you could change about, how AI research should approach fairness and ethics, what would that one thing be?"
+  },
+  {
+   "t": 2809,
+   "speaker": "Amanda Cercas Curry",
+   "text": "This is so difficult. I guess I would be most interested in seeing more research engage with not only the humanities as disciplines, but more like humanity, like actually interacting with people and better understanding who is interested in what systems, what the stakeholders really need. Because I think that's something that we're very divorced from. Even if I look at gender bias work, it's rare that I see work that isn't just proposing one number that says this system is less biased than the other. But I want to know what does that mean for the person that is using the system more tactually?"
+  },
+  {
+   "t": 2856,
+   "speaker": "Amanda Cercas Curry",
+   "text": "What does it mean? So that would be, I think, fair. My main drive for it is to put the human back in the mix."
+  },
+  {
+   "t": 2863,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Fascinating."
+  },
+  {
+   "t": 2864,
+   "speaker": "Jekaterina Novikova",
+   "text": "Shade."
+  },
+  {
+   "t": 2865,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, I think many of our audience might be interested in the answer to this question. I am as well. So what advice would you give to early career researchers, in particular women, who step into the AI world and in particular AI ethics, and who want to make a meaningful impact in AI ethics? Do you have any particular advice for them?"
+  },
+  {
+   "t": 2886,
+   "speaker": "Amanda Cercas Curry",
+   "text": "I guess to just go for it and to not be so afraid. I think there's actually a great community of women in AI that are looking to support each other. You know, that we need the diversity, I think AI can really benefit from having more, more diverse point of view. I think everybody brings a very unique spin into the AI ethics area. I mean, AI in general, but I think it's particularly valued in the ethics sphere. But I would like to see more women in AI in general. I think it's really great."
+  },
+  {
+   "t": 2922,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Nice. Thank you so much for your time today. I really learned a lot today from you. It's been truly illuminating. Thanks for accepting our invitation to this podcast. Hope to see you again here. So thank"
+  },
+  {
+   "t": 2936,
+   "speaker": "Amanda Cercas Curry",
+   "text": "Thank you for having me."
+  },
+  {
+   "t": 2937,
+   "speaker": "Jekaterina Novikova",
+   "text": "Thank you, Amanda. It was a wonderful conversation. I'm glad that you have joined us today. Thanks so much. And to our audience, remember to subscribe. We are going to have more interesting conversations with the women that are doing AI research. Until next time."
+  }
+ ]
+}

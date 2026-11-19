@@ -1,455 +1,617 @@
 {
  "episode": 13,
  "videoId": "L9Sp-zauXwo",
- "source": "Creator-uploaded YouTube captions, lightly cleaned (filler words removed)",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
  "segments": [
   {
    "t": 0,
+   "speaker": "Jekaterina Novikova",
    "text": "Ever noticed AI that works great in English, but not so much in the other languages? If you have felt that gap, you're not alone. And today we're diving into why multilingual AI still has a long way to go."
   },
   {
    "t": 30,
+   "speaker": "Jekaterina Novikova",
    "text": "Our guest today is Dr. Annie Lee, and I'm really glad to have her on the show. Annie is a key researcher in AI focused on a big question. How do we build language technology that speaks to everyone? She's an assistant professor at Ontario Tech University and holds a status-only appointment at the University of Toronto. She leads the Li-Language Lab, L-Cubed, a research group dedicated to language diversity, multilingualism, and making tech more culturally inclusive. Her work impact is broad. She has published in top venues like Nature, ACL, NAACL, COLING, and many others."
   },
   {
    "t": 78,
+   "speaker": "Jekaterina Novikova",
    "text": "But what makes Annie especially inspiring to me? goes beyond her research achievements. I often see her advance with her baby, balancing the demands of motherhood and the academia so gracefully. That kind of strength and courage to balance her family life with a full research career deeply inspires me. And this excellence has been recognized in many ways. She was nominated for the Tim McTiernan Student Mentorship Award and for the Women in AI Research of the Year Award. And she won the ARIA Spotlight Award for her work with the MSCIC program at the University of Toronto."
   },
   {
    "t": 124,
+   "speaker": "Jekaterina Novikova",
    "text": "Today, in our conversation, Annie walks us through the heart of her work on multilingual and multicultural AI. From the widening language gap, and the lack of benchmarks for underrepresented languages to why domain-specific data matters more than just scaling up models. And if you stay until the end, Annie shares a perspective that really stayed with me. How even tiny mistakes in AI outputs can quietly accumulate into systemic harm when billions of people rely on these systems. It's a powerful reminder of why multilingual and multicultural AI isn't just a research challenge, it's a responsibility."
   },
   {
    "t": 171,
-   "text": "And now let's dive in. Annie, welcome to the Women in AI Research. Thank you for having me. I was so excited when I hear that you were starting this podcast. it's very exciting to hear and highlight women and my fellow researchers in this area. excited to have you here as well. Let's start with your personal journey."
+   "speaker": "Jekaterina Novikova",
+   "text": "And now let's dive in. Annie, welcome to the Women in AI Research."
+  },
+  {
+   "t": 178,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Thank you for having me. I was so excited when I hear that you were starting this podcast. it's very exciting to hear and highlight women and my fellow researchers in this area."
+  },
+  {
+   "t": 194,
+   "speaker": "Jekaterina Novikova",
+   "text": "Excited to have you here as well. Let's start with your personal journey."
   },
   {
    "t": 202,
-   "text": "First of all, I wanted to ask you what brought you to the work on multilingual LLMs and what made you question the topic of linguistic diversity in AI? Yes, so when I was in computer science, I was one of the very few women in my class. And it was the same when I got into graduate school. And I've always really cared about inclusion and diversity and including as many people as possible into a technology. so, being a visible minority and a woman in computing, was really a lived experience for me that sometimes people assume that you don't code as well, or sometimes people assume you're not as smart."
+   "speaker": "Jekaterina Novikova",
+   "text": "First of all, I wanted to ask you what brought you to the work on multilingual LLMs and what made you question the topic of linguistic diversity in AI?"
   },
   {
-   "t": 259,
-   "text": "And there is also the imposter syndrome. So when it comes to language, so I got into NLP after I finished my PhD. I really enjoy working on text in NLP. After my PhD, I got into text and eventually I learned that there is this language gap, this widening language gap that is a barrier of access to lots of people around the world. mean, you speak a different language, I speak a different language. Canada is made up of diverse immigrant populations of people who speak different languages. And you realize that if you don't speak English, there really is a barrier to access in language models and language technologies."
+   "t": 218,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yes, so when I was in computer science, I was one of the very few women in my class. And it was the same when I got into graduate school. And I've always really cared about inclusion and diversity and including as many people as possible into a technology. so, being a visible minority and a woman in computing, was really a lived experience for me that sometimes people assume that you don't code as well, or sometimes people assume you're not as smart. And there is also the imposter syndrome."
+  },
+  {
+   "t": 263,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So when it comes to language, so I got into NLP after I finished my PhD. I really enjoy working on text in NLP. After my PhD, I got into text and eventually I learned that there is this language gap, this widening language gap that is a barrier of access to lots of people around the world. mean, you speak a different language, I speak a different language. Canada is made up of diverse immigrant populations of people who speak different languages. And you realize that if you don't speak English, there really is a barrier to access in language models and language technologies."
   },
   {
    "t": 309,
+   "speaker": "Annie En-Shiun Lee",
    "text": "And that really spoke to me as an experience coming from computer science. And I knew that I could contribute a lot in the topic that I'm very passionate about. And the research is important and significant."
   },
   {
    "t": 323,
-   "text": "That's super important. I like how you combine that diversity of cultures, languages, gender diversity, that all together motivates you. Amazing. Thanks for sharing that. Yeah. oh I'd also like to ask you this question, which is maybe slightly more personal."
+   "speaker": "Jekaterina Novikova",
+   "text": "That's super important. I like how you combine that diversity of cultures, languages, gender diversity, that all together motivates you. Amazing. Thanks for sharing that. Yeah."
   },
   {
-   "t": 350,
-   "text": "Hopefully you feel... Confident asking answering that I Know that many researchers in our space think that it is quite demanding to balance parenthood with academia and the it is Both demanding but on at the same time. It may be very transformative So I know that you have recently welcomed a baby and congratulations about that. So I'd like to ask, has this life transition influenced how you think about your research or the impact that you hope"
+   "t": 343,
+   "speaker": "Jekaterina Novikova",
+   "text": "Oh I'd also like to ask you this question, which is maybe slightly more personal. Hopefully you feel... Confident asking answering that I Know that many researchers in our space think that it is quite demanding to balance parenthood with academia and the it is Both demanding but on at the same time. It may be very transformative So I know that you have recently welcomed a baby and congratulations about that. So I'd like to ask, has this life transition influenced how you think about your research or the impact that you hope"
   },
   {
    "t": 399,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Yes. Yeah, so I think becoming more busy means that I get to focus more, I get to be more focused and being effective with my time. I get to focus on the initiatives that are the most important and spending time on things that I truly need to do. And so I cannot, as my supervisor always used to word meander, so I cannot meander as much. have to be laser focused on getting the things I want done. So that might mean that sometimes I cannot solve a problem for my students. They'll have to solve it for themselves, which is actually a good thing."
   },
   {
    "t": 445,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Or sometimes I might choose not to submit a grant, which is not as... is not as a grant that might not fit my research as well. So it just means that my time is limited and I have to let go a little bit more. I cannot do research the same way as I did during my graduate studies where I read every single word, read every single experiment. I have to trust my team to solve and work on the problem and not micromanage. every single aspect. But I think that's definitely a paradigm shift to let go because as PhD grads, as people who made it this far, we tend to know that we want to do as much as possible to drive the research and get it to the high, as high quality as possible."
   },
   {
    "t": 506,
+   "speaker": "Annie En-Shiun Lee",
    "text": "And sometimes you want to do everything, but I think also a part of becoming more senior and running a lab, is also learning how to build a build a team based on trust and psychological safety that everyone believes in each other and works really well with each other. And so I think one of the things I learned was it's very hard to go far on your own as a single person. But when you're on a team where everybody contributes a different perspective and a different skill set, you can go very, far. And so that's the philosophy I take in my collaborations, widely with transdisciplinary teams with different people."
   },
   {
    "t": 558,
+   "speaker": "Annie En-Shiun Lee",
    "text": "And that's the of the philosophy I bring to the students, especially undergrad students, we've been very successful at getting undergraduate students published together because no. somebody might, one person might be really good at writing and making arguments. One person might be very good at running experiments and one person might be very good at doing the linguistics aspect. And so when we all work together as a team and push hard together, we can truly go much farther than alone. So yes, I learned to be more senior and how to build very strong academic and research teams. And then managing my time better. And so those are the two things."
   },
   {
    "t": 603,
-   "text": "Right, Very insightful. I especially like that part that was about going far with the team. Reminds me of that saying that alone you can go fast, but with the team you go further. Yeah, you go far. And the other part about balancing learning how to balance the time better and managing your time."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, Very insightful. I especially like that part that was about going far with the team. Reminds me of that saying that alone you can go fast, but with the team you go further. Yeah, you go far."
   },
   {
    "t": 635,
-   "text": "It resonates with something that one of our previous guests in one of the previous episodes, Angelika Lim, she also talked about this in terms of like in relation to partnerhood and motherhood and she called the track system totally broken for women because it's essentially, as you said, asking people to push harder than ever during the same years that they might want to start a family. So I wonder, does your experience align with that?"
+   "speaker": "Jekaterina Novikova",
+   "text": "And the other part about balancing learning how to balance the time better and managing your time. It resonates with something that one of our previous guests in one of the previous episodes, Angelika Lim, she also talked about this in terms of like in relation to partnerhood and motherhood and she called the track system totally broken for women because it's essentially, as you said, asking people to push harder than ever during the same years that they might want to start a family."
+  },
+  {
+   "t": 677,
+   "speaker": "Jekaterina Novikova",
+   "text": "So I wonder, does your experience align with that?"
   },
   {
    "t": 683,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Yes, I think it's absolutely true. Yes, it's definitely an unfair, yes. So it's definitely true that if you go through the PhD process, the tenure track years or maybe the PhD years are those years that women have to start thinking about having children and having babies. I think the pro tip, like the secret is that you need to find an institution and seniors like bosses who are truly supportive of your journey. it's very hard, like they talk about, you know, finding supporters versus, you know, advocates."
   },
   {
    "t": 734,
+   "speaker": "Annie En-Shiun Lee",
    "text": "It's really truly finding someone who is going to help protect your career while you're on leave and also finding an institution that accepts the fact that you might be on leave. And in Canada, that's 12 months to 18 months. And so and so that is it's It definitely, so before giving birth, was very bewildered about potentially, know, stopping my research, stopping the train and getting off and not being able to do things and falling behind. And that was a fear. I don't know if many other mothers feel this fear before they have their baby while on the academic track."
   },
   {
    "t": 781,
+   "speaker": "Annie En-Shiun Lee",
    "text": "But I think someone told me, you know, the next train will come and you'll just get on it. And I think in some ways that's true, but I was very lucky with this baby. And I don't know if this is the right thing I should promote to everyone. I said that like for this baby, I didn't stop. Like I still brought the baby to all the Zoom meetings. Like post COVID, everything can be online, which is wonderful. So we still went to all the Zoom meetings. just, I couldn't micromanage things as much, right? Like I couldn't. answer that review or rebuttal in the full extent I wanted. I really had to trust my collaborators and my students all have co-supervisors and co-senior mentors. I really had to trust the infrastructure and the processes that I built up."
   },
   {
    "t": 830,
+   "speaker": "Annie En-Shiun Lee",
    "text": "I really had to trust that they would just rely on someone else rather than just me versus me having to do everything. And I think... I think distributing that responsibility, that mentorship and workload was also helpful. Yeah, it's definitely, and I just wanna encourage everyone that it's okay to bring your baby to things. It might be scary at first in a male-dominant industry, but it's okay and you should do it. So this baby, I started bringing this baby out at, I think three months. First on short trips to the university. Yes, yes. So first we went to like, you know, Ontario Tech, we went to Waterloo, we went to downtown Toronto, we went to Vector, like close by. And then we built that up to going, I guess a little bit farther."
   },
   {
    "t": 879,
+   "speaker": "Annie En-Shiun Lee",
    "text": "I, then I took him at seven, eight months to a conference in Taiwan, like international linguist. So I took him to International Linguistics Olympia on my own for. for seven days, it was very hard, but it's sort of like the PhD, you survive and you realize you are stronger by the end of it. And then we went to COLM Conference of Language Model in Montreal, our own. And then we just came back from a CIFAR symposium in Benz. COLM. know, IOL, I had to bring him to all the events. COLM had funded childcare, which was really fantastic. And CFAR also had funded childcare."
   },
   {
    "t": 930,
+   "speaker": "Annie En-Shiun Lee",
    "text": "So it's finding these conferences and organizations that has built-in structures that encourage parents. That's very important. And also being brave. Yeah, so I brought the baby out to University of Toronto for a panel. and for women, a mentoring panel for women. And I just wore the baby and the baby slept through the most of the panelist session. And I saw that people that I look up to, like they will bring the baby to the lab, they will keep going with the research. And so I saw that as, yeah, for my mentors and so I chose to do that as well. So yes, it is definitely, I think it is definitely hard to have the best part of your tenure track process sort of feel like it's slowed down by a baby, but at the same time, At the same time, it's still very encouraging that there's these systems in place that you can take advantage of, like you can make use of and come bring the baby."
   },
   {
    "t": 1005,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Yeah, so I would definitely encourage, like you don't have to slow down. It might feel hard, it might feel overwhelming, but you can do it. And I just want to say that now in Canada, the NSERC grants, depending on what kind of things you can for every, you can, you can add the time back and you can pause your tenure clock. So I think tenure clock is pause like one on one, like if you take one year off, you pause one year. But in some things like calculating early career chairs with the length of consideration for your NSERC, or even for COVID, some in some places you just add the time back, some places you can add double time, and some places you can add 1.5 time. So just make sure you do that."
   },
   {
    "t": 1052,
-   "text": "And it's not like I stopped my research. I just distributed my research so that my students have other collabs. So my collaborators are still publishing, and I'm still involved. Right. Thanks for opening up about this very personal experience. It was really interesting to hear about. it also sounds like the system is changing, maybe slower than we would wish to, but it's changing. So conferences are accepting people with the kids, with the babies. say it is in the minority so you have to find it. yes, the is changing and you should find the ones that are more modern, which is why you have to find superiors, need to find jobs and institutions, need to find conferences, you need to find grants that have this perspective of working mothers and that."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And it's not like I stopped my research. I just distributed my research so that my students have other collabs. So my collaborators are still publishing, and I'm still involved."
   },
   {
-   "t": 1119,
-   "text": "and adding the tenure pause and being very accepting of that. So I think I would just say that it sounds encouraging, but also be careful, right? Like you don't wanna get stuck in like an old boy's club and then being in an unfortunate situation. Like you have to find colleagues who are supportive and institutions and conferences that are open to that kind of things. That makes sense. That's fair enough. Yeah, as usual, you need to find your people. That's true. OK. And now let's dive into your research. You're doing research on language diversity and multilingual AI."
+   "t": 1065,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. Thanks for opening up about this very personal experience. It was really interesting to hear about. it also sounds like the system is changing, maybe slower than we would wish to, but it's changing. So conferences are accepting people with the kids, with the babies."
+  },
+  {
+   "t": 1089,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Say it is in the minority so you have to find it. yes, the is changing and you should find the ones that are more modern, which is why you have to find superiors, need to find jobs and institutions, need to find conferences, you need to find grants that have this perspective of working mothers and that. and adding the tenure pause and being very accepting of that. So I think I would just say that it sounds encouraging, but also be careful, right? Like you don't wanna get stuck in like an old boy's club and then being in an unfortunate situation."
+  },
+  {
+   "t": 1138,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Like you have to find colleagues who are supportive and institutions and conferences that are open to that kind of things."
+  },
+  {
+   "t": 1148,
+   "speaker": "Jekaterina Novikova",
+   "text": "That makes sense. That's fair enough. Yeah, as usual, you need to find your people. That's true. OK. And now let's dive into your research."
   },
   {
    "t": 1168,
-   "text": "So what do you see as the biggest challenge in evaluating multilingual language models today?"
+   "speaker": "Jekaterina Novikova",
+   "text": "You're doing research on language diversity and multilingual AI. So what do you see as the biggest challenge in evaluating multilingual language models today?"
   },
   {
    "t": 1178,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Yeah, so there are quite a few, there are a few multilingual language models out there. I think, you know, they're slowly adding different languages. You know, they're trying to cover 200 to like, you know, 500 languages. And they're doing it by curating and collecting data sets are high quality from annotators and injecting them, like including them into the model, which is very encouraging to see. I think in terms of the evaluation, the most difficult part again is the very simple thing is like the lack of data benchmarks. So anytime a new language gets included, because it's a long tail problem, right?"
   },
   {
    "t": 1224,
+   "speaker": "Annie En-Shiun Lee",
    "text": "You have your popular languages that is profitable for large companies to cover, then there's a long tail of thousands of languages and then even longer tails of dialects without written text. or variations of vernaculars. So it's a matter of how much data there is. And every time a new data set or benchmark gets included, it definitely gains a lot more attention from researchers and users being able to use that benchmark data set. Yeah, so that is one thing. Another thing is that English is always going to be the focal point. And so I think most corporations and technology companies would focus on English first versus everything else, which makes sense."
   },
   {
    "t": 1278,
-   "text": "But also English must never perform worse when you are creating a model. So that is essential criteria. So that is an English focus point when you're creating multilingual models. So then, maybe there's this argument for creating regional models instead for regions that do not predominantly speak English rather than just having a huge multilingual model."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "But also English must never perform worse when you are creating a model. So that is essential criteria. So that is an English focus point when you're creating multilingual models. So then, maybe there's this argument for creating regional models instead for regions that do not predominantly speak English rather than just having a huge multilingual model. Most models think in English, there's that issue. Another important thing that we wanted to sort of share with the community in our foundational paper on low resource language translation is, you know, the important, four important aspects to get across."
   },
   {
-   "t": 1310,
-   "text": "Most models think in English, there's that issue. Another important thing that we wanted to sort of share with the community in our foundational paper on low resource language translation is, you know, the important, four important aspects to get across. So one is creating new datasets and two is having these open toolkits and models."
+   "t": 1327,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So one is creating new datasets and two is having these open toolkits and models. the world language database is very important for the community to share, but also having your parsers and taggers for your language. or even OCR for your language. Community collaborations are very important, like Massacane, CCRA, Americas NLI, and then regional opportunities and funding and grants to the regions for collecting data, that is also incredibly important."
   },
   {
-   "t": 1336,
-   "text": "the world language database is very important for the community to share, but also having your parsers and taggers for your language. or even OCR for your language. Community collaborations are very important, like Massacane, CCRA, Americas NLI, and then regional opportunities and funding and grants to the regions for collecting data, that is also incredibly important. Okay, yeah, and then building on that first point that you mentioned about the long tail of languages."
+   "t": 1366,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, yeah, and then building on that first point that you mentioned about the long tail of languages. I know that you have that new paper on SIB 200 dataset. And in that work, you provide a topic classification benchmark for over 200 languages and dialects. And for many of these languages, that was the first publicly available evaluation data set for natural language understanding. So could you tell us a little bit about your motivation for this work and also how you approach creation of such a massive multilingual bench?"
   },
   {
-   "t": 1373,
-   "text": "I know that you have that new paper on SIB 200 dataset. And in that work, you provide a topic classification benchmark for over 200 languages and dialects. And for many of these languages, that was the first publicly available evaluation data set for natural language understanding. So could you tell us a little bit about your motivation for this work and also how you approach creation of such a massive multilingual bench? Right, right. Yeah, so a lot of times when you're annotating, you're annotating from English, especially with translation."
-  },
-  {
-   "t": 1424,
-   "text": "this is, so from SIP 200, what we did is we took the FLORUS dataset, which is multi-way parallel translations of 200 plus two. languages, the additional to is in Flores Plus. And so it's a multi-way parallel translations from English. already, so already you can see that like from a multilingual multicultural perspective, you know, everything is always rooted back in English. But anyway, back to this work. So in this work, what we did is we took those sentences and then we further classified those sentences to create a natural language understanding, like an entailment data set from English."
+   "t": 1415,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Right, right. Yeah, so a lot of times when you're annotating, you're annotating from English, especially with translation. this is, so from SIP 200, what we did is we took the FLORUS dataset, which is multi-way parallel translations of 200 plus two. languages, the additional to is in Flores Plus. And so it's a multi-way parallel translations from English. already, so already you can see that like from a multilingual multicultural perspective, you know, everything is always rooted back in English. But anyway, back to this work. So in this work, what we did is we took those sentences and then we further classified those sentences to create a natural language understanding, like an entailment data set from English."
   },
   {
    "t": 1471,
+   "speaker": "Annie En-Shiun Lee",
    "text": "And that we can talk about the challenges of that's starting to come up with multilingual multicultural work later. So that's what we did. And from there, we were able to benchmark the data set on various models and then explore the language families and the regional differences. And for sure, we start to see that even though it's the same data set for every language, it performed much worse for African languages, South American languages, and much better, of course, for English, European scripts. European languages. we definitely saw that there were regional differences there based on this benchmark data set."
   },
   {
    "t": 1522,
+   "speaker": "Jekaterina Novikova",
    "text": "Yeah, it reminds me of one of our previous episodes as well, where Veret Schwartz was speaking about regional differences across AI systems and she mentioned that like that geographical distance based metrics are Well, not always correctly represented the diversity of languages because let's say US and Australia are very distant in terms of actual physical distance, but the cultures are probably way closer to each other than let's say US and one of the African."
   },
   {
    "t": 1569,
-   "text": "that's the exciting part. I actually wanted to talk about one of the work we did, which is the World Languages Database that we've been working on, I think, the past two, three years. And this was a database built by CMU rather quickly. And then they published a paper. And now researchers, computer scientists who come from the language model world who are not steeped in linguistics, they use a database assuming that is perfect and correct. And then that the language vector they use, they use it as like a math vector, right? Like just added up a cosine similarity. So we did a reproducibility evaluation on database and we found that, you know, is the imputation method might not be right."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "That's the exciting part. I actually wanted to talk about one of the work we did, which is the World Languages Database that we've been working on, I think, the past two, three years. And this was a database built by CMU rather quickly. And then they published a paper. And now researchers, computer scientists who come from the language model world who are not steeped in linguistics, they use a database assuming that is perfect and correct. And then that the language vector they use, they use it as like a math vector, right? Like just added up a cosine similarity. So we did a reproducibility evaluation on database and we found that, you know, is the imputation method might not be right."
   },
   {
    "t": 1617,
+   "speaker": "Annie En-Shiun Lee",
    "text": "There's missing data, there's missing languages, there's missing features. And so we actually went and we've submitted two papers and published one so far on how to make this database stronger. So now it's called a Uriel Plus because the original database is called Uriel and we made it into Uriel Plus. So we gave it different... distance metrics that you can use. And geographical is one of them. But we take it, we recalculate the English distribution based on the number of speakers. And then we also calculate the language families based on their hierarchical tree structure based on the genealogy of the language."
   },
   {
    "t": 1664,
-   "text": "And then we also did a third distance calculation. And then we added scripts, right? script features, how a language is written, and we added more languages. So we actually did a lot of work on this database the last couple of years. So hopefully everyone will use it and it will help in a more transparent manner. And everyone will learn a little bit about linguistics before they blindly try to use a linguistics database, or at least they have some understanding when they use this database, because there's now different options of using different distances. And now there's more features and different methods for missing data. Right, that's great to hear about that because it's not just about the new artifact, like the new data dataset, but it's also that you have introduced those additional new metrics, right, that everyone could use to evaluate their own, let's say, dataset yeah, it's, I feel like we're doing important basic work on making this database better."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And then we also did a third distance calculation. And then we added scripts, right? script features, how a language is written, and we added more languages. So we actually did a lot of work on this database the last couple of years. So hopefully everyone will use it and it will help in a more transparent manner. And everyone will learn a little bit about linguistics before they blindly try to use a linguistics database, or at least they have some understanding when they use this database, because there's now different options of using different distances. And now there's more features and different methods for missing data."
   },
   {
-   "t": 1736,
-   "text": "for the community to use, especially for people working on language diversity and multilinguality. I think a lot of people will come across this database and maybe they want to choose a pivot language and this is the pivot language that you use. We also, so we did data. So we added more data. We improved the calculations of distances and then we added a benchmark suite. so that for anyone who's adding on top of it or for ourself when we're making improvements, we can always go back and benchmark and know whether we're doing better or worse. So it's not like blindly creating a database, it's creating a database, then having a world languages database for the community to use, and then have some sort of a baseline saying, is how much we're doing better or worse, and it's very transparent."
+   "t": 1704,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, that's great to hear about that because it's not just about the new artifact, like the new data dataset, but it's also that you have introduced those additional new metrics, right, that everyone could use to evaluate their own, let's say, dataset"
+  },
+  {
+   "t": 1728,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yeah, it's, I feel like we're doing important basic work on making this database better. for the community to use, especially for people working on language diversity and multilinguality. I think a lot of people will come across this database and maybe they want to choose a pivot language and this is the pivot language that you use. We also, so we did data. So we added more data. We improved the calculations of distances and then we added a benchmark suite. so that for anyone who's adding on top of it or for ourself when we're making improvements, we can always go back and benchmark and know whether we're doing better or worse. So it's not like blindly creating a database, it's creating a database, then having a world languages database for the community to use, and then have some sort of a baseline saying, is how much we're doing better or worse, and it's very transparent."
   },
   {
    "t": 1789,
+   "speaker": "Jekaterina Novikova",
    "text": "Right, that sounds like a super important and valuable new resource of information, metrics and data. Amazing. And thanks for working on that. I want to quickly come back to the SIP 200 work and mention that you in that work, you have found that simply scaling the number of languages in pre-training without scaling up the domains isn't that helpful? Can you elaborate a little bit on that point and how it can help with building multilingual models?"
   },
   {
    "t": 1836,
+   "speaker": "Annie En-Shiun Lee",
    "text": "So yeah, so before we started working on SIP-200, we were doing some similar to benchmarking, but we were looking at different factors that goes into training a model for different languages. And the central question, the research question we wanted to know is, okay, we have a model that we're gonna train. What should we be spending our limited resource on? Like every language would like to have a model for themselves, but should they be collecting unsupervised data for pre-training? Should they be collecting supervised data for labeling? Should they be collecting domain-specific data? What should they be spending time on? So we came up with five different data-dependent factors, so amount of pre-training data, amount of fine-tuning data, whether the data was noisy or clean, the domain similarity of the data, and then the language similarity."
   },
   {
    "t": 1900,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Maybe we can use, instead of English, we can use Spanish or French. Or instead of Hindi, we can use something in the Indic family, maybe like Punjabi. So those were the research questions and the variables we looked at. So we did some preliminary experiments, know, holding some variables fixed and then varying the other ones. And then we did a mathematical analysis of which factors is most important. And it turns out pre-training doesn't get a little bit of data. You really need a lot of data for pre-training to work, to build a model for that language. So we will... Nowadays, you really have to settle on fine-tuning, which is taking that little bit of multilingual data and then fine-tune the model on top of it."
   },
   {
    "t": 1954,
+   "speaker": "Annie En-Shiun Lee",
    "text": "And you can use different parameter-efficient methods, adapters, Q-Roll-Aura, to fine-tune your model. And then another thing we found that was very critical was domain similarity. It was very, very important for the data that you are fine-tuning. is exactly in the domain that you're working on. That is something that is the most important and you spend the most time in collecting your data on. And then language, it didn't work for us just because of the reproducibility issues that I talked about in the World Languages Database."
   },
   {
    "t": 1991,
-   "text": "Yeah, right, that's very interesting. em Let's move to a different work that you have done on multilingual models, which is called MR3."
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, right, that's very interesting."
   },
   {
-   "t": 2005,
-   "text": "And that's a multilingual version of R3, Rubric Agnostic Reward Reasoning model that In MRV3 is trained on 72 languages and it achieves the broadest language coverage in reward modeling today. Can you give us a little bit of introduction on what's motivated this work and the brief overview of what this work accomplishes? So I really have to give all the credit of this work to my collaborators, which is David Anugraha, who is currently a master's student at Stanford, and Jenta Winatra, who is working at Capital One in their research team."
+   "t": 1997,
+   "speaker": "Jekaterina Novikova",
+   "text": "Em Let's move to a different work that you have done on multilingual models, which is called MR3. And that's a multilingual version of R3, Rubric Agnostic Reward Reasoning model that In MRV3 is trained on 72 languages and it achieves the broadest language coverage in reward modeling today. Can you give us a little bit of introduction on what's motivated this work and the brief overview of what this work accomplishes?"
   },
   {
-   "t": 2060,
-   "text": "They're both prolific researchers doing a lot of exciting work in multilinguality, especially in the Southeast Asian crowd community. So it started off, I think the history and the story behind it is that David and Jenta worked on a rubric agnostic metric for the WMT 2024 competition last year. And they quickly came in first place. And because all of us, we work on multilinguality, it's a topic that we are passionate about. One of the most important things for us to do next was to scale this metric up. into multilinguality. So the idea is that we want to find evaluations using LLM judges."
+   "t": 2041,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So I really have to give all the credit of this work to my collaborators, which is David Anugraha, who is currently a master's student at Stanford, and Jenta Winatra, who is working at Capital One in their research team. They're both prolific researchers doing a lot of exciting work in multilinguality, especially in the Southeast Asian crowd community. So it started off, I think the history and the story behind it is that David and Jenta worked on a rubric agnostic metric for the WMT 2024 competition last year. And they quickly came in first place."
   },
   {
-   "t": 2108,
-   "text": "And these metrics and evaluations and LLMs, work well, as always, they work well for English. And that is true for all language technology and everything in research in general. But when you bring it to, you know, Other languages and then moving down to medium resource languages, low resource languages, they just do not generalize as well afterwards. And that was also true that when we were doing our translation work on multilingual translation, the traditional metrics like blue didn't work well for non-English. So we had to move to piecewise blue and character F."
+   "t": 2089,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And because all of us, we work on multilinguality, it's a topic that we are passionate about. One of the most important things for us to do next was to scale this metric up. into multilinguality. So the idea is that we want to find evaluations using LLM judges. And these metrics and evaluations and LLMs, work well, as always, they work well for English. And that is true for all language technology and everything in research in general. But when you bring it to, you know, Other languages and then moving down to medium resource languages, low resource languages, they just do not generalize as well afterwards."
   },
   {
-   "t": 2155,
-   "text": "plus and just different metrics for a multilingual context. And that was something that one of the students worked on was exploring all the different metrics and seeing which one actually worked realistically for the different languages that we were looking at. And that work was with Shravan Nayak, who is now at Milla, and Sarengika, who was a professor. in New Zealand, who was in Sri Lanka during the time we did the research. So I just want to make sure we credit everyone for their excellent work. Yeah, so for this metric system, we did notice that multilingual reward research is very, very limited."
+   "t": 2136,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And that was also true that when we were doing our translation work on multilingual translation, the traditional metrics like blue didn't work well for non-English. So we had to move to piecewise blue and character F. plus and just different metrics for a multilingual context. And that was something that one of the students worked on was exploring all the different metrics and seeing which one actually worked realistically for the different languages that we were looking at. And that work was with Shravan Nayak, who is now at Milla, and Sarengika, who was a professor."
   },
   {
-   "t": 2201,
-   "text": "There's really not a lot of available materials out there. So we introduced massively multilingual RUPEC, like agnostic reward. model. So we trained on 72 languages and part of it was also carefully selecting the data set and the curricular learning strategy so that it performs, you know, state-of-the-art reward for the benchmark. And we have another paper on data collection that is coming out at AACL that shows that, you know, by carefully selecting the most relevant languages. was the most related languages."
+   "t": 2185,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "In New Zealand, who was in Sri Lanka during the time we did the research. So I just want to make sure we credit everyone for their excellent work. Yeah, so for this metric system, we did notice that multilingual reward research is very, very limited. There's really not a lot of available materials out there. So we introduced massively multilingual RUPEC, like agnostic reward. model. So we trained on 72 languages and part of it was also carefully selecting the data set and the curricular learning strategy so that it performs, you know, state-of-the-art reward for the benchmark."
   },
   {
-   "t": 2248,
-   "text": "It actually makes a huge difference in the performance. And we also have another paper that's submitted that's on curriculum learning. But anyway, there's a lot of ongoing work, but this particular one, you know, we benchmarked it and it actually performs incredibly well. So it seems like what worked as a award like we came in the David and Jenda came in first place for the metric task at WMT last year seems to also work for multilingual."
+   "t": 2230,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And we have another paper on data collection that is coming out at AACL that shows that, you know, by carefully selecting the most relevant languages. was the most related languages. It actually makes a huge difference in the performance. And we also have another paper that's submitted that's on curriculum learning. But anyway, there's a lot of ongoing work, but this particular one, you know, we benchmarked it and it actually performs incredibly well. So it seems like what worked as a award like we came in the David and Jenda came in first place for the metric task at WMT last year seems to also work for multilingual."
   },
   {
    "t": 2283,
-   "text": "Yeah, that's interesting. That's interesting and I like how you have explored over several, over the series of work the impact of data, like both the initial training data set and where to put it during the training process. So it all seems to be"
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, that's interesting. That's interesting and I like how you have explored over several, over the series of work the impact of data, like both the initial training data set and where to put it during the training process. So it all seems to be sufficiently well explored right now with multiple studies being done on that."
   },
   {
-   "t": 2312,
-   "text": "sufficiently well explored right now with multiple studies being done on that. I'd like to ask about a different aspect, which is the model itself, the model size, because in this work, MR3, and I suspect in other works as well, you probably saw that"
-  },
-  {
-   "t": 2337,
-   "text": "effect that much smaller model can perform much better than the models of bigger sizes. So in MR3, for example, you surpassed the performance over the nine times bigger GPT-OS 120 billion parameters model."
+   "t": 2328,
+   "speaker": "Jekaterina Novikova",
+   "text": "I'd like to ask about a different aspect, which is the model itself, the model size, because in this work, MR3, and I suspect in other works as well, you probably saw that effect that much smaller model can perform much better than the models of bigger sizes. So in MR3, for example, you surpassed the performance over the nine times bigger GPT-OS 120 billion parameters model."
   },
   {
    "t": 2366,
+   "speaker": "Jekaterina Novikova",
    "text": "Can you elaborate on the design choices that make it possible?"
   },
   {
    "t": 2380,
-   "text": "Yeah, so I think there's definitely pushback against using the giant models and benchmarking these gigantic models and just, you know, paying"
-  },
-  {
-   "t": 2392,
-   "text": "a very large amount of fees to benchmark these multilingual, like these low resource data sets and these data sets, these languages that have low resource in terms of data and low resources in terms of financial capabilities and compute. I think the idea of using smaller models is absolutely... on par with this line of research versus using like a huge model because many countries might not have many regions might not have the financial capabilities to find two billions and billions of parameters We so what David under grow while we also publish a paper called proxy LM So we started off, you know trying to predict the performance of low resource languages for different tasks without needing lots and lots of big models, right, without using the big models."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yeah, so I think there's definitely pushback against using the giant models and benchmarking these gigantic models and just, you know, paying a very large amount of fees to benchmark these multilingual, like these low resource data sets and these data sets, these languages that have low resource in terms of data and low resources in terms of financial capabilities and compute. I think the idea of using smaller models is absolutely... on par with this line of research versus using like a huge model because many countries might not have many regions might not have the financial capabilities to find two billions and billions of parameters We so what David under grow while we also publish a paper called proxy LM So we started off, you know trying to predict the performance of low resource languages for different tasks without needing lots and lots of big models, right, without using the big models."
   },
   {
    "t": 2450,
+   "speaker": "Annie En-Shiun Lee",
    "text": "And that led to the work of trying to predict the performance using a proxy model. So instead of using the biggest model, we found that we were able to predict performance oh fairly well with a smaller model, obviously not like a vanilla transformer or small, small 100. And so using that work, we were able to have insights that maybe we don't have to use giant models all the time. Sometimes we do want to use small models and small LLMs are now becoming the way to go for resource scarce scenarios. also, even if you have a lot of resource, you do not need to use the biggest model all the time."
   },
   {
    "t": 2497,
-   "text": "So we do have work that benchmark the estimation, the performance prediction of using a proxy smaller model. And that came out in EMNLP 2024 findings. Yeah, so we were very excited to show that work. Proxy LLM, yeah, proxy LLM. So it's about using a smaller model as a proxy, as a stand-in for estimating a bigger model. Amazing. Great. so in a low resource language context. So I think all my work is the same as the NLP community, but in the specific context of considering low resource languages."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So we do have work that benchmark the estimation, the performance prediction of using a proxy smaller model. And that came out in EMNLP 2024 findings. Yeah, so we were very excited to show that work. Proxy LLM, yeah, proxy LLM. So it's about using a smaller model as a proxy, as a stand-in for estimating a bigger model."
   },
   {
-   "t": 2543,
-   "text": "maybe just for the audience, could you make it clear for everyone?"
+   "t": 2529,
+   "speaker": "Jekaterina Novikova",
+   "text": "Amazing. Great."
+  },
+  {
+   "t": 2530,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So in a low resource language context. So I think all my work is the same as the NLP community, but in the specific context of considering low resource languages."
   },
   {
    "t": 2549,
-   "text": "What do you mean by high resource language, medium resource language and low resource language? What do those concepts involve? So Joshi et al in 2020 defined the low resource language. So we use it based on this meaning, Low resource languages is based on the scarcity of data based on Joshi's definition. Joshi defines it on the amount of unlabeled data and labeled data. Unlabeled for the pre-training and the label for the fine tuning. Pre-training, just common crawl, scraped web. data on the internet."
+   "speaker": "Jekaterina Novikova",
+   "text": "Maybe just for the audience, could you make it clear for everyone? What do you mean by high resource language, medium resource language and low resource language? What do those concepts involve?"
   },
   {
-   "t": 2596,
-   "text": "And so five up here is your English with lots and lots of internet unlabeled data and lots of lots of labeled data. So labeled data like your sentiment analysis or your name entity recognition, things that require human annotation. So from five all the way down to zero, these clusters, zero for incredibly low resource, not even any label data, and then one, two, three, four, so on. So that's the definition of low resource language based on data. There's also other considerations, but when I talk about low resource, it's always going to be based on data. But other considerations includes not having a lot of computational resource, not having a lot of tools and models, as well as other considerations from the anthropology and social science perspective, know, having a writing system, the number of linguistics experts to define even the language itself, the number of surviving speakers in the community are also in consideration."
+   "t": 2560,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So Joshi et al in 2020 defined the low resource language. So we use it based on this meaning, Low resource languages is based on the scarcity of data based on Joshi's definition. Joshi defines it on the amount of unlabeled data and labeled data. Unlabeled for the pre-training and the label for the fine tuning. Pre-training, just common crawl, scraped web. data on the internet. And so five up here is your English with lots and lots of internet unlabeled data and lots of lots of labeled data. So labeled data like your sentiment analysis or your name entity recognition, things that require human annotation."
+  },
+  {
+   "t": 2612,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So from five all the way down to zero, these clusters, zero for incredibly low resource, not even any label data, and then one, two, three, four, so on. So that's the definition of low resource language based on data. There's also other considerations, but when I talk about low resource, it's always going to be based on data. But other considerations includes not having a lot of computational resource, not having a lot of tools and models, as well as other considerations from the anthropology and social science perspective, know, having a writing system, the number of linguistics experts to define even the language itself, the number of surviving speakers in the community are also in consideration."
   },
   {
    "t": 2665,
+   "speaker": "Annie En-Shiun Lee",
    "text": "So we've written a foundational survey paper on low resource language specifically for translation. So for translation is the task of translating from one language to another. And you might imagine that most of the time one of these language pairs, either the source or the target is English. So for our foundational paper, we categorize for the translation task. Medium resource is anything from one million to half a million based on like the two, two, three hundred, two hundred papers that we surveyed, know, 0.5 to 1 million is medium resource, 100,000 to 500,000, so 0.1 million to 0.5 million is low resource, and anything less than 100,000 sentences is considered extremely and low resource."
   },
   {
    "t": 2721,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Our follow-up paper to this, we actually found that, you know, 5,000 sentences are often enough. for a translation task. And I think the following year after our paper, Meta won the best paper that says, 5,000 is enough, but 1,000 is enough for a very, very low resource, barely resource sentence. It actually makes a difference for the data set."
   },
   {
    "t": 2756,
-   "text": "Right. then again, a lot of your work is on the diverse set of lower resource languages."
+   "speaker": "Jekaterina Novikova",
+   "text": "Right."
   },
   {
-   "t": 2768,
-   "text": "But there are several studies that are focusing specifically on very specific languages. I wonder what is what was your motivation to focus on that? Yeah, okay. So I just want to clarify that I do work on Taiwanese Hokkien, which is my mother tongue. So I do have several works in that, but I have to say that the paper is not as highly cited because these are, these Hokkien speakers, Taiwanese Hokkien speakers are only based in Taiwan. So they don't get as much visibility as the benchmark papers that includes like, know, tens or 20 languages. So basically the more languages you cover, the more highly cited the paper, like the more reach that paper would have."
+   "t": 2765,
+   "speaker": "Jekaterina Novikova",
+   "text": "Then again, a lot of your work is on the diverse set of lower resource languages. But there are several studies that are focusing specifically on very specific languages. I wonder what is what was your motivation to focus on that?"
   },
   {
-   "t": 2818,
-   "text": "So my native time is Taiwanese Hokkien, so not as much reach. We are collecting data sets on Chinese error translation. So it's like comet. which identifies very fine-grained errors in translation. So we're doing that for different Chinese dialects. we collected data sets for Mandarin, Cantonese, Wu Chinese, which is Shanghainese, we're in Taiwanese Hokkien and we're hoping to cover more. It's sort of like a long-term project. We're hoping to add more and more. Chinese dialect languages as we go. If it's, know, Hakka or Taishanhua or some indigenous languages in China and Taiwan, that would be really great."
+   "t": 2778,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yeah, okay. So I just want to clarify that I do work on Taiwanese Hokkien, which is my mother tongue. So I do have several works in that, but I have to say that the paper is not as highly cited because these are, these Hokkien speakers, Taiwanese Hokkien speakers are only based in Taiwan. So they don't get as much visibility as the benchmark papers that includes like, know, tens or 20 languages. So basically the more languages you cover, the more highly cited the paper, like the more reach that paper would have. So my native time is Taiwanese Hokkien, so not as much reach. We are collecting data sets on Chinese error translation."
+  },
+  {
+   "t": 2826,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So it's like comet. which identifies very fine-grained errors in translation. So we're doing that for different Chinese dialects. we collected data sets for Mandarin, Cantonese, Wu Chinese, which is Shanghainese, we're in Taiwanese Hokkien and we're hoping to cover more. It's sort of like a long-term project. We're hoping to add more and more. Chinese dialect languages as we go. If it's, know, Hakka or Taishanhua or some indigenous languages in China and Taiwan, that would be really great."
   },
   {
    "t": 2864,
+   "speaker": "Jekaterina Novikova",
    "text": "Yeah, also speaking about that, you mentioned previously and you also have findings that go back to this aspect in multiple studies and I'm speaking now about machine translation to or from English when we speak about non-English languages. What is your, what's your take? on this."
   },
   {
    "t": 2896,
-   "text": "What are the advantages and disadvantages of this approach? The approach of translating everything from English to non-English language or using English as a as a pivot? Yes, exactly. Yes. Yeah, so English is predominant. It is definitely the most strong, the highest resource, the language that we use, even in publishing research works. Sometimes it acts as a barrier of like who is included and who is not included. in research communities or in the research."
+   "speaker": "Jekaterina Novikova",
+   "text": "What are the advantages and disadvantages of this approach? The approach of translating everything from English to non-English language or using English as a as a pivot? Yes, exactly."
   },
   {
-   "t": 2945,
-   "text": "So, English is a pivot language. So you translate from your language. So there is works, there's papers that talk about that language models reason in English. because it has seen all the data in English and it does not reason in other languages because it hasn't seen it. And so what you're doing is when you're translating everything into English, you're changing it into like an English context. And then when you're translating it out, a lot of times you lose a meaning. So I was just talking to an ethics professor who teaches Mandarin Chinese and And she said that they would translate it from Chinese to English back to Chinese in their learning system."
+   "t": 2915,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yes. Yeah, so English is predominant. It is definitely the most strong, the highest resource, the language that we use, even in publishing research works. Sometimes it acts as a barrier of like who is included and who is not included. in research communities or in the research. So, English is a pivot language. So you translate from your language. So there is works, there's papers that talk about that language models reason in English."
   },
   {
-   "t": 3000,
-   "text": "And the translations are very strange. And so we come to the problem. So I'm walking you through the process. But the soundbite, the key point is LMS and reasons in English. So it doesn't contain the other... cultures and languages and ways of thinking and the ways of speaking. So you can imagine that when you translate from your language to English and then you feed it into a language model, like a foundational language model that everybody is feeding their thoughts and their work and their business APIs into."
+   "t": 2961,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Because it has seen all the data in English and it does not reason in other languages because it hasn't seen it. And so what you're doing is when you're translating everything into English, you're changing it into like an English context. And then when you're translating it out, a lot of times you lose a meaning. So I was just talking to an ethics professor who teaches Mandarin Chinese and And she said that they would translate it from Chinese to English back to Chinese in their learning system. And the translations are very strange. And so we come to the problem. So I'm walking you through the process."
   },
   {
-   "t": 3047,
-   "text": "This model only predominantly thinks in the English language and in the Westernized context. So it doesn't encapsulate the cultural nuances and it doesn't capture the values and the ethics of your language and your culture. if you, sorry, so if you think about it, right, like maybe in like certain cultures, they value harmony and group dynamics and sort of like the better. So in Asian cultures, there's this idea of preserving, doing what's good for everyone versus like maybe in the Western context, you really wanna sell yourself and promote yourself."
+   "t": 3007,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "But the soundbite, the key point is LMS and reasons in English. So it doesn't contain the other... cultures and languages and ways of thinking and the ways of speaking. So you can imagine that when you translate from your language to English and then you feed it into a language model, like a foundational language model that everybody is feeding their thoughts and their work and their business APIs into. This model only predominantly thinks in the English language and in the Westernized context."
   },
   {
-   "t": 3097,
-   "text": "But when you feed it into the language model, and it generates things now is now not capturing your context as well. Same thing with language, right? Like it could be a very straight dictionary translation. So, you know, something that is translated as to walk might be translated to something that's like, you know, to walk the land or to walk the land by the rivers. Now, that doesn't like all that nuance, cultural nuances, the beauty of the language, the underlying meanings, that's all lost. And so it's similar like when you're translating, it depends on what you translate to like, you know, when you in Cantonese culture, and in definitely like the Hokkien Taiwanese culture, when you say, have you eaten?"
+   "t": 3054,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So it doesn't encapsulate the cultural nuances and it doesn't capture the values and the ethics of your language and your culture. if you, sorry, so if you think about it, right, like maybe in like certain cultures, they value harmony and group dynamics and sort of like the better. So in Asian cultures, there's this idea of preserving, doing what's good for everyone versus like maybe in the Western context, you really wanna sell yourself and promote yourself. But when you feed it into the language model, and it generates things now is now not capturing your context as well."
   },
   {
-   "t": 3151,
-   "text": "So a common greeting, you don't say hello, how are you? Or like, how was your day or you know, how are things going or like, more informally, what's up? But the formal greeting when you talk to someone, when you call someone is have you eaten? And, know, from someone from the outside is like, have you eaten? Like, yes, I had breakfast like five minutes ago and this is what I ate. But in these cultures is a act of care. And so when you call someone, it's like, have you eaten? Or like, know, any time of the day. The formal greeting is have you eaten? And that's sort of conveying like, you know, a sense of care and like, you know, the care of their well-being."
+   "t": 3110,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Same thing with language, right? Like it could be a very straight dictionary translation. So, you know, something that is translated as to walk might be translated to something that's like, you know, to walk the land or to walk the land by the rivers. Now, that doesn't like all that nuance, cultural nuances, the beauty of the language, the underlying meanings, that's all lost. And so it's similar like when you're translating, it depends on what you translate to like, you know, when you in Cantonese culture, and in definitely like the Hokkien Taiwanese culture, when you say, have you eaten? So a common greeting, you don't say hello, how are you?"
   },
   {
-   "t": 3197,
-   "text": "So, yes, so this is a very non-technical answer to a very technical question, right? You're asking me, should everything be translated to English? And the technical answer is yes, we have papers on that. In fact, we just resubmitted something. The journal process is very, very long. So we just resubmitted something that translated everything from that language like Sinhala and Tamil to English and back and then only translated between Sinhala and Tamil and sort of cutting out the English middle. So yes, we do have technical results on that. But on the other hand, there's also now that with the cultural work and LLMs, is a lot of meaning that is lost."
+   "t": 3155,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Or like, how was your day or you know, how are things going or like, more informally, what's up? But the formal greeting when you talk to someone, when you call someone is have you eaten? And, know, from someone from the outside is like, have you eaten? Like, yes, I had breakfast like five minutes ago and this is what I ate. But in these cultures is a act of care. And so when you call someone, it's like, have you eaten? Or like, know, any time of the day. The formal greeting is have you eaten? And that's sort of conveying like, you know, a sense of care and like, you know, the care of their well-being. So, yes, so this is a very non-technical answer to a very technical question, right?"
   },
   {
-   "t": 3246,
-   "text": "that cultural meaning that is lost when you are translating everything into dominant, just English, just westernized dominant context. And you're sort of losing all the individual richness from every single language and every single culture when you're just doing it, feeding it through there."
+   "t": 3205,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "You're asking me, should everything be translated to English? And the technical answer is yes, we have papers on that. In fact, we just resubmitted something. The journal process is very, very long. So we just resubmitted something that translated everything from that language like Sinhala and Tamil to English and back and then only translated between Sinhala and Tamil and sort of cutting out the English middle. So yes, we do have technical results on that. But on the other hand, there's also now that with the cultural work and LLMs, is a lot of meaning that is lost. that cultural meaning that is lost when you are translating everything into dominant, just English, just westernized dominant context."
+  },
+  {
+   "t": 3259,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And you're sort of losing all the individual richness from every single language and every single culture when you're just doing it, feeding it through there."
   },
   {
    "t": 3268,
+   "speaker": "Jekaterina Novikova",
    "text": "Yeah, that's the awesome summary I would say of what we were speaking about in the previous episode with Vered Shwartz. I will link it to this video as well. But what I specifically like about what you said is that it almost sounds to me like if you just care about the numbers in the benchmarks and you want to achieve a higher score in the standard benchmark, then translate to English and back and have English as a language. That's what technically makes it better. But if you care about the actual meaning of what the model is doing, the actual cultural background knowledge and the meaning of that model is going to understand, then it's probably not the best way to move forward."
   },
   {
    "t": 3338,
-   "text": "I think the other problem is this information is not encoded digitally anywhere, right?"
-  },
-  {
-   "t": 3347,
-   "text": "So we're back to the issue, right? So we're back to the problem of like, what is really the interaction between, know, a senior, like a grandparent and a child and that information being transmitted through of the culture, the traditions, you know. your celebrations, that is missing when that child is only interacting with a language model. So, you know, I also worry about our education system, right? Like our students only writing their things with the help of a language model versus like maybe going out and actually talking to a human or to somebody who has that traditional knowledge."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "I think the other problem is this information is not encoded digitally anywhere, right? So we're back to the issue, right? So we're back to the problem of like, what is really the interaction between, know, a senior, like a grandparent and a child and that information being transmitted through of the culture, the traditions, you know. your celebrations, that is missing when that child is only interacting with a language model. So, you know, I also worry about our education system, right? Like our students only writing their things with the help of a language model versus like maybe going out and actually talking to a human or to somebody who has that traditional knowledge."
   },
   {
    "t": 3391,
-   "text": "Do I get it correctly that you're worrying that type of knowledge, cultural knowledge, it's not possible to even capture that by language alone? Yes. Oh, yes, for sure. the things that you experience in your culture, you know, the way of making a certain dish, the way of celebrating a certain festival, the way you talk about why a spiritual ritual, like why it's important to your family. That's very specific to your family and very specific to your culture. And even like, you know, like I said, like some of the cultures are very like regional specific too."
+   "speaker": "Jekaterina Novikova",
+   "text": "Do I get it correctly that you're worrying that type of knowledge, cultural knowledge, it's not possible to even capture that by language alone?"
   },
   {
-   "t": 3442,
-   "text": "Like that is not, I don't think that is fully captured by a language model that's just generically scraping things from the internet. then, know, having like the dominant, like, you know, most of the internet is English, right? Like how is it going to capture? And even like, even if some historian or anthropologist go and curate that material, it's still like a small amount of material. So right now, no. How are we going to do it? I don't know. Ethically, should we do it? You know, lots of interesting research questions. It'll be, it'll make a really great thesis, thesis topic. Yes, yes, for someone who is open to that, I would definitely recommend to consider that topic."
+   "t": 3406,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yes. Oh, yes, for sure. the things that you experience in your culture, you know, the way of making a certain dish, the way of celebrating a certain festival, the way you talk about why a spiritual ritual, like why it's important to your family. That's very specific to your family and very specific to your culture. And even like, you know, like I said, like some of the cultures are very like regional specific too. Like that is not, I don't think that is fully captured by a language model that's just generically scraping things from the internet. then, know, having like the dominant, like, you know, most of the internet is English, right?"
   },
   {
-   "t": 3493,
-   "text": "It's really interesting whether and to what extent we can learn culture from language only. We can to some extent for sure because English language models, English only language models show that we can capture that to some extent, but What is that extent is another question. Okay, interesting."
+   "t": 3458,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Like how is it going to capture? And even like, even if some historian or anthropologist go and curate that material, it's still like a small amount of material. So right now, no. How are we going to do it? I don't know. Ethically, should we do it? You know, lots of interesting research questions. It'll be, it'll make a really great thesis, thesis topic."
+  },
+  {
+   "t": 3486,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yes, yes, for someone who is open to that, I would definitely recommend to consider that topic. It's really interesting whether and to what extent we can learn culture from language only. We can to some extent for sure because English language models, English only language models show that we can capture that to some extent, but What is that extent is another question. Okay, interesting."
   },
   {
    "t": 3522,
-   "text": "So let's shift to another slightly different but very relevant topic, which is cross-lingual transfer, not just English only, but cross-lingual transfer. And the cross-lingual transfer has been a central promise of multilingual NLP, right? I would... probably call that maybe not everyone."
-  },
-  {
-   "t": 3548,
-   "text": "Based on your research, how well you think that aspect of cross-lingual transfer has been fulfilled by now in NLP?"
+   "speaker": "Jekaterina Novikova",
+   "text": "So let's shift to another slightly different but very relevant topic, which is cross-lingual transfer, not just English only, but cross-lingual transfer. And the cross-lingual transfer has been a central promise of multilingual NLP, right? I would... probably call that maybe not everyone. Based on your research, how well you think that aspect of cross-lingual transfer has been fulfilled by now in NLP?"
   },
   {
    "t": 3563,
-   "text": "thing is fulfilled at all. There's this idea of like the curse of multilingual, linguality. I think there's this, there is this idea that, you know, do we want to represent, do we just want one model or one, you know, for whatever, and one model that does everything, right? The one general model that does everything. It does all the languages. It does all the tasks. It does all the reasoning. You know, like a one central model that does it all. Or there's the debate whether we want regional models, right? Like one model for Africa, one model for Indic languages, one model for European. So there's EuroBert that came out. There's, yeah, there's, you know, do we want one model for every region?"
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Thing is fulfilled at all. There's this idea of like the curse of multilingual, linguality. I think there's this, there is this idea that, you know, do we want to represent, do we just want one model or one, you know, for whatever, and one model that does everything, right? The one general model that does everything. It does all the languages. It does all the tasks. It does all the reasoning. You know, like a one central model that does it all. Or there's the debate whether we want regional models, right? Like one model for Africa, one model for Indic languages, one model for European. So there's EuroBert that came out. There's, yeah, there's, you know, do we want one model for every region?"
   },
   {
    "t": 3612,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Or do we want to go even more fine-grained? Do we want a Hokkien model versus Africa, like a, you know, like maybe like an Aramaic model versus, you know, like a very specific language models. And there's also the mathematical idea is how much, because there's the idea that, you know, embeddings from the model, contain some sort of meaning, like some sort of semantic meaning, which is like some sort of ideas that these mathematical vectors capture. And then so then there's thoughts. So there's papers that says, you know, every language sort of encapsulate the physical world similarly."
   },
   {
    "t": 3659,
+   "speaker": "Annie En-Shiun Lee",
    "text": "So so the vectors should be similar, even though the words are different. Like a dog is a dog. Right. But I just said, like walking in one language might mean very different in a different language. So so we want to talk. Yeah. So we also want to think about. Yeah, so there's these thoughts that, you know, the models can be captured for different languages because we think about the physical world similarly, but then there's also these ideas that maybe the models eventually become saturated and then you cannot add more languages into the model. Well, cannot, well, this model only thinks in English and it doesn't appropriately capture the nuances of other languages. Yeah, so some very, very interesting things."
   },
   {
    "t": 3707,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Yeah, so for sure we're still falling short as I mentioned in CIP 200 we talk about in CIP 200 we definitely talk about you know regional languages from Africa, South America are definitely falling short compared to you know the dominant English and European languages."
   },
   {
    "t": 3733,
+   "speaker": "Jekaterina Novikova",
    "text": "Right. I also like that idea that you have mentioned that the idea of having the embedding as a representation of some specific aspects of physical worth, yes. And I think it's not, it relates, it is relevant to some extent to your aligned freeze research, which is not about embeddings but about the layers and freezing and unfreezing different layers to make the cross-lingual transfer possible. Can you speak a little bit about that and how you came up with this idea in the first place?"
   },
   {
    "t": 3785,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Okay, yeah, so in terms of the cross-lingual transfer, is, so we collaborate with Felix Gassi from France. His PhD topic was on alignment, right, aligning the model and how that could perform better for smaller models. So we stuck to the smaller, know, X and Y and BERT models. Yeah, and so the... Along the lines, think for a long time I always had this idea that different layers... So I did publish a paper in 2018. It was only on archive. But we look at the idea that different layers of the neurons might focus on different tasks."
   },
   {
    "t": 3836,
+   "speaker": "Annie En-Shiun Lee",
    "text": "So think Bertology also finds this in that maybe the lower layer neurons... attribute to the semantics and then the higher layer neurons might attribute to like maybe more of the task. So we only fine-tune the ultimate layer with the penultimate, the second last layer, ultimate and penultimate. So that idea was revisited here where we tried to freeze different layers of the neuron. The lead author Steve Backels is now doing, what's doing his masters on reinforcement learning and now has a, is starting his PhD on that. So the idea is that, you know, we want to take a look at different layers and freezing them differently and see if a particular one could be more efficient, or could have some language knowledge in it."
   },
   {
    "t": 3892,
-   "text": "Because I guess in 2018, we only studied like tasks and different, different semitic, like different units. But now we're looking at languages. And maybe we can also look at culture as well."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Because I guess in 2018, we only studied like tasks and different, different semitic, like different units. But now we're looking at languages. And maybe we can also look at culture as well. But the idea is that so then we started freezing different layers because we have limited compute and we can't be freezing individual neurons. We didn't get as far on the LR front either because of computational limitations. But from studying freezing different layers we did find that you know the lower layers did work better. for tasks, and especially for tasks like part of speech tagging, which is more like lower level, very much like a linguistic task."
   },
   {
-   "t": 3910,
-   "text": "But the idea is that so then we started freezing different layers because we have limited compute and we can't be freezing individual neurons. We didn't get as far on the LR front either because of computational limitations. But from studying freezing different layers we did find that you know the lower layers did work better. for tasks, and especially for tasks like part of speech tagging, which is more like lower level, very much like a linguistic task. It worked really well. We had to work a lot harder to get inference, which is a higher level problem, like reasoning, inference, natural language understanding. We did have to work harder on that."
+   "t": 3941,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "It worked really well. We had to work a lot harder to get inference, which is a higher level problem, like reasoning, inference, natural language understanding. We did have to work harder on that. And so we have a new AACL paper coming up where we are where we mixed the languages and it performs quite well for natural language inference as well as post-tagging. In the original Align Freeze, it did not really work as well for inference, but now with adding more data based on language similarity, that actually does make a difference. And then we are actually looking at future work."
   },
   {
-   "t": 3955,
-   "text": "And so we have a new AACL paper coming up where we are where we mixed the languages and it performs quite well for natural language inference as well as post-tagging. In the original Align Freeze, it did not really work as well for inference, but now with adding more data based on language similarity, that actually does make a difference. And then we are actually looking at future work. where we might look at multilingual neurons and also looking at different ways of mixing the data, the different languages in the input data."
+   "t": 3990,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Where we might look at multilingual neurons and also looking at different ways of mixing the data, the different languages in the input data."
   },
   {
    "t": 4006,
-   "text": "Interesting. So if to speak about layers, can you see any differences between multilingual and monolingual LLMs in terms of what do layers represent? Or is it quite different or is it maybe model specific? that is very interesting research. That's a very interesting question. We have not actually explored monolingual models. Mostly we focus on smaller multilingual models, encoder-decoder models, but we have been running experiments for larger decoder only models that are based on the English, like they're mostly trained on English language."
+   "speaker": "Jekaterina Novikova",
+   "text": "Interesting. So if to speak about layers, can you see any differences between multilingual and monolingual LLMs in terms of what do layers represent? Or is it quite different or is it maybe model specific?"
   },
   {
-   "t": 4061,
-   "text": "there's some preliminary results are interesting, but we haven't done like the linguistics analysis for that yet. So I think, I think that could be something that is interesting line of inquiry."
+   "t": 4029,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "That is very interesting research. That's a very interesting question. We have not actually explored monolingual models. Mostly we focus on smaller multilingual models, encoder-decoder models, but we have been running experiments for larger decoder only models that are based on the English, like they're mostly trained on English language. there's some preliminary results are interesting, but we haven't done like the linguistics analysis for that yet. So I think, I think that could be something that is interesting line of inquiry."
   },
   {
    "t": 4080,
+   "speaker": "Jekaterina Novikova",
    "text": "I'm looking forward to seeing some of your results in the future if you decide to go next year for sure."
   },
   {
    "t": 4093,
-   "text": "Your experiments with the aligned trees also revealed that languages that are using non-latent script are susceptible to some catastrophic forgetting during realignment. oh Can you elaborate a little bit on that? Why non-Latin scripts are that vulnerable in your opinion? And maybe you do some additional work on that as well. So this is not only true from Align Freeze. I think we can bring it back to IroquoBench. We can bring it back to all the languages. When you move away from the dominant script, when you move away from the dominant language, oh the performance definitely degradates."
+   "speaker": "Jekaterina Novikova",
+   "text": "Your experiments with the aligned trees also revealed that languages that are using non-latent script are susceptible to some catastrophic forgetting during realignment. oh Can you elaborate a little bit on that? Why non-Latin scripts are that vulnerable in your opinion? And maybe you do some additional work on that as well."
   },
   {
-   "t": 4146,
-   "text": "And part of the reason could be because the new architectures, right? Like there is tons of NLP tools and pre-processing that is very tailored to English and Latin scripts. Usually when I tell people about low resource language, I start off with a definition of what is considered low resources, low resource data, and compute, but also low resource in terms of the available tools. having your parsers, dependency parsers, having your taggers. Or some of these languages don't even have appropriate linguistics experts to formally define it and formalize it."
+   "t": 4125,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "So this is not only true from Align Freeze. I think we can bring it back to IroquoBench. We can bring it back to all the languages. When you move away from the dominant script, when you move away from the dominant language, oh the performance definitely degradates. And part of the reason could be because the new architectures, right? Like there is tons of NLP tools and pre-processing that is very tailored to English and Latin scripts. Usually when I tell people about low resource language, I start off with a definition of what is considered low resources, low resource data, and compute, but also low resource in terms of the available tools."
   },
   {
-   "t": 4196,
-   "text": "So for sure, for different languages and different scripts that starts to deviate away from English, it's less able to be captured because it's not clean properly, it's not parsed properly, it's... And there's all these issues related to it. We are currently working on something, some architectures to help include more languages and to help alleviate that. For African languages, we always come back to Aramaic because it is the single non-Latin script. But we also, yeah, so I think what is fascinating here is that we did use different strategies, taking from different models, from the embedding inputs, and we Frankenstein together a bunch of different architectures to try and make it more robust to natural language inference and to work well for Araimic which is a different script."
+   "t": 4182,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Having your parsers, dependency parsers, having your taggers. Or some of these languages don't even have appropriate linguistics experts to formally define it and formalize it. So for sure, for different languages and different scripts that starts to deviate away from English, it's less able to be captured because it's not clean properly, it's not parsed properly, it's... And there's all these issues related to it. We are currently working on something, some architectures to help include more languages and to help alleviate that. For African languages, we always come back to Aramaic because it is the single non-Latin script."
   },
   {
-   "t": 4267,
-   "text": "Yeah, so we are actively studying that. The work is ongoing. Hopefully we'll have a paper out so that I can talk more about it in the future. Okay, so it's time now to slowly wrap up our conversation. And I just wanted to ask you as one of the last questions. Throughout your work, you have worked a lot on the diversity of multiple different languages and the cultures as well. And this whole work definitely contributes to linguistic and cultural inclusion in the community."
+   "t": 4231,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "But we also, yeah, so I think what is fascinating here is that we did use different strategies, taking from different models, from the embedding inputs, and we Frankenstein together a bunch of different architectures to try and make it more robust to natural language inference and to work well for Araimic which is a different script. Yeah, so we are actively studying that. The work is ongoing. Hopefully we'll have a paper out so that I can talk more about it in the future."
+  },
+  {
+   "t": 4279,
+   "speaker": "Jekaterina Novikova",
+   "text": "Okay, so it's time now to slowly wrap up our conversation. And I just wanted to ask you as one of the last questions. Throughout your work, you have worked a lot on the diversity of multiple different languages and the cultures as well. And this whole work definitely contributes to linguistic and cultural inclusion in the community."
   },
   {
    "t": 4321,
-   "text": "What advice would you give to other researchers that want to work on underrepresented languages? What would you like for them to have? in mind, like on top of their head. yeah, so I think in the current landscape, there is not a lot of industry money to be made on not work on working in non English languages were non dominant languages. So as you go down, there's less industry. As you go down into the rare languages, you know, there is less there's less industry interests or funding."
+   "speaker": "Jekaterina Novikova",
+   "text": "What advice would you give to other researchers that want to work on underrepresented languages? What would you like for them to have? in mind, like on top of their head."
   },
   {
-   "t": 4368,
-   "text": "for like, you know, anything that's extremely low and extremely niche. So there's definitely some balance in that. I think one thing you also want to be delicate about, especially for me, work... collaboratively with lot of interdisciplinaries is that everyone is passionate about their language and so there's different poles from different languages and different issues in different language communities. So you just want to be respectful and honoring and be being inclusive and acceptable of their perspective. And as I'm I think as I mentioned in the past, you know It's always the best to start with your own language because you have that personal connection You have that lived experience is authentically, you know who you are So when I work on a particular language with students, I always encourage them to start with their own language even with myself I have quite a few projects on Taiwanese Hokkien, which is my mother tongue language."
+   "t": 4340,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yeah, so I think in the current landscape, there is not a lot of industry money to be made on not work on working in non English languages were non dominant languages. So as you go down, there's less industry. As you go down into the rare languages, you know, there is less there's less industry interests or funding. for like, you know, anything that's extremely low and extremely niche. So there's definitely some balance in that. I think one thing you also want to be delicate about, especially for me, work..."
+  },
+  {
+   "t": 4385,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Collaboratively with lot of interdisciplinaries is that everyone is passionate about their language and so there's different poles from different languages and different issues in different language communities. So you just want to be respectful and honoring and be being inclusive and acceptable of their perspective. And as I'm I think as I mentioned in the past, you know It's always the best to start with your own language because you have that personal connection You have that lived experience is authentically, you know who you are So when I work on a particular language with students, I always encourage them to start with their own language even with myself I have quite a few projects on Taiwanese Hokkien, which is my mother tongue language."
   },
   {
    "t": 4444,
-   "text": "And so then based on that learning and experience, I'm hoping to take what I learned and hope to, you know, train students to work on their own language as well."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "And so then based on that learning and experience, I'm hoping to take what I learned and hope to, you know, train students to work on their own language as well. yeah, so I think it's a very rewarding topic to work on. for me personally very fulfilling and it really just is doing something that's beneficial that's going to impact many people in the world. So that is what is exciting for me and just and I've sort of listed some of the more soft skills things that you need to watch out for."
   },
   {
-   "t": 4459,
-   "text": "yeah, so I think it's a very rewarding topic to work on. for me personally very fulfilling and it really just is doing something that's beneficial that's going to impact many people in the world. So that is what is exciting for me and just and I've sort of listed some of the more soft skills things that you need to watch out for. In terms of technicality you know, based on your background, you know, somebody who is from social sciences can focus on something that's more, you know, data collection, benchmarking, or applications."
-  },
-  {
-   "t": 4506,
-   "text": "And then if someone who is more mathematical or more technical and deep learning, then they can focus on, a lot of the architecture. And, and, creating new models, small models. so there's, there's definitely work to be done. all through the bra spectrum of disciplines."
+   "t": 4492,
+   "speaker": "Annie En-Shiun Lee",
+   "text": "In terms of technicality you know, based on your background, you know, somebody who is from social sciences can focus on something that's more, you know, data collection, benchmarking, or applications. And then if someone who is more mathematical or more technical and deep learning, then they can focus on, a lot of the architecture. And, and, creating new models, small models. so there's, there's definitely work to be done. all through the bra spectrum of disciplines."
   },
   {
    "t": 4529,
+   "speaker": "Jekaterina Novikova",
    "text": "Right, yeah, thank you for that advice and also thank you for actually working on this topic even though it's maybe not necessarily that topic that's going to get the most of the hype in the nearest future, but I think it's one of those topics that is extremely important and it's great to hear your approach on inviting interdisciplinary research into the topic as well. It's not just for computer scientists. It's not just for social scientists. It's the area where everyone can make, bring some value."
   },
   {
    "t": 4576,
+   "speaker": "Jekaterina Novikova",
    "text": "Yeah, and make some difference. So as we close, what do you hope people... take away from this conversation? And also, is there anything that you wanted to talk about, but I did not ask you?"
   },
   {
    "t": 4594,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Yes, so this is, as I mentioned, multilinguality and multiculturalism in the technology. It's very, very exciting. To me, it's trying to bring everybody to the table. I think when we're using these technologies, it's very neat, it's very cool. and exciting, but just think about, you know, the millions of people who don't have access to this because they don't speak English. And also the small perturbations of harms or the being left out because of the outputs of these models too, right? input wise, they are unable to access the technology, but output wise, some of these models might be outputting, you know, small in corrections that, you know, even though it's small, but there is billions of people in the world using the models, it adds up to a lot, right?"
   },
   {
    "t": 4658,
+   "speaker": "Annie En-Shiun Lee",
    "text": "Maybe, you know, imagine like you're from a certain culture. And, you know, maybe the model always outputs, you know, this culture, there's always something that's a little bit negative. And in a different culture is always something a little bit positive. Little things add up to a lot. I guess these are things that people call like systemic, right? Systemic biases. When your foundational model is built in, all these systemic things gets built up. Yeah, so I think is very exciting. Language models is changing the world because everyone's using it. But let's think about how it's affecting people who are marginalized in the fringes. So I'm even thinking like recently we've been talking about like the elderly as well as, know, immigrant elderlies who are definitely have less access to public services or who are less able to access government information."
   },
   {
    "t": 4722,
-   "text": "yeah, so if there's one, yeah, so going forward, there's lots of lots of exciting things. And I hope that others are also excited to join in solving this big problem."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Yeah, so if there's one, yeah, so going forward, there's lots of lots of exciting things. And I hope that others are also excited to join in solving this big problem."
   },
   {
    "t": 4738,
+   "speaker": "Jekaterina Novikova",
    "text": "Amazing. And this has been such a thought-provoking conversation about the critical importance of multilinguality in AI systems and the cultural inclusion in the AI systems. Thank you so much for sharing your research and insights with us today."
   },
   {
    "t": 4761,
-   "text": "Thank so much for inviting me. And thanks to our listeners as well for tuning into Women in AI Research. You can find more information about NS research and publications in the episode description. So check that out and we'll see you in three weeks with another deep dive with the women researcher pushing the boundaries of AI. Bye."
+   "speaker": "Annie En-Shiun Lee",
+   "text": "Thank so much for inviting me."
+  },
+  {
+   "t": 4764,
+   "speaker": "Jekaterina Novikova",
+   "text": "And thanks to our listeners as well for tuning into Women in AI Research. You can find more information about NS research and publications in the episode description. So check that out and we'll see you in three weeks with another deep dive with the women researcher pushing the boundaries of AI. Bye."
   }
  ]
 }

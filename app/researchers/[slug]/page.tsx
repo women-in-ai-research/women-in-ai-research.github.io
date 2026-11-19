@@ -50,8 +50,8 @@ export default function EventResearcherPage({ params }: { params: { slug: string
 
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 relative z-10">
         <div className={`${glass} flex flex-col md:flex-row gap-6 p-6`}>
-          <a href={v.youtubeUrl} target="_blank" rel="noopener noreferrer" className="block w-full md:w-96 shrink-0 aspect-video rounded-xl overflow-hidden">
-            <img src={v.thumbnailUrl} alt="" className="w-full h-full object-cover" />
+          <a href={v.youtubeUrl} target="_blank" rel="noopener noreferrer" className="block w-full md:w-80 aspect-video mx-auto md:mx-0 shrink-0 self-start rounded-xl overflow-hidden">
+            <img src={v.thumbnailUrl} alt={v.title} className="w-full h-full object-cover" />
           </a>
           <div>
             <p className="text-xs text-gray-400 mb-1">{[r.eventTitle, v.publishDate, formatDuration(v.durationSeconds)].join(" · ")}</p>

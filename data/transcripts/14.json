@@ -1,0 +1,597 @@
+{
+ "episode": 14,
+ "videoId": "P-R0mU8_0U0",
+ "source": "Creator-uploaded YouTube captions with speaker names from the recording transcript, lightly cleaned (filler words and crosstalk removed)",
+ "segments": [
+  {
+   "t": 0,
+   "speaker": "Jekaterina Novikova",
+   "text": "AI doesn't just process text. It takes in our cultures, and can make existing power structures even stronger. This episode explores how AI reflects society's values, biases, and blind spots across everything from research norms to reproductive health."
+  },
+  {
+   "t": 41,
+   "speaker": "Jekaterina Novikova",
+   "text": "Our guest today is Maria Antoniak. I was recommended to speak with her by several people, and I was genuinely curious to see what she had to say, especially because I... wasn't even sure I fully understood the area she works in, cultural analytics. I went into this conversation expecting a technical discussion. What I didn't expect was the feeling I had afterwards. Usually after an interview, I come away energized by intellectual curiosity. But this time, I felt something very different, warm, calm, grounded. And I think that's because we spent the entire conversation not talking about technology for its own sake, but about people, real people with real needs, real vulnerabilities and real stories."
+  },
+  {
+   "t": 94,
+   "speaker": "Jekaterina Novikova",
+   "text": "Maria cares about people deeply and her whole research agenda is built around bringing those people back into view, especially the ones our systems tend to overlook. Maria is an assistant professor of computer science at the University of Colorado Boulder. Before that, she was at the Allen Institute for AI. She earned her PhD in information science at Cornell University and worked at Microsoft Research, Twitter, and Facebook. In our conversation today, Maria talks about inclusivity in AI, the dynamics of cultural representation, what trust in AI really means, why LLMs tend to homogenize research cultures, and what maternal healthcare reveals about the deepest ethical challenges in this field."
+  },
+  {
+   "t": 148,
+   "speaker": "Jekaterina Novikova",
+   "text": "She also shares how her connection to Ukraine and her experiences in academia shaped her understanding of power, justice, and solidarity. Stick around until the very end. Maria gives an unexpected and thought-provoking answer to the question. scientists ethics? Let's dive in. Welcome to our podcast, Maria, and thank you for joining us today."
+  },
+  {
+   "t": 175,
+   "speaker": "Maria Antoniak",
+   "text": "Thank you for having me."
+  },
+  {
+   "t": 178,
+   "speaker": "Jekaterina Novikova",
+   "text": "Maria, when we first set up this interview, you asked me that question that people usually don't ask. And it was about whether this podcast takes an inclusive view on women, including trans women. So I think that's a really important question. And could you please share why inclusivity and AI and in our professional spaces matters to you personally."
+  },
+  {
+   "t": 215,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so I've learned kind of the hard way that's an important question to ask because not everyone has the same view on these topics, especially right now when things are really people are very divided and are being persuaded to be very divided on particular issues, especially around gender and trans rights. So I've also thought about this. deeply for myself. So when I was at Cornell as a PhD student, I saw a lot of things happening in terms of gender and inclusion, harassment, abuse. I think a lot of places in academia where you have these like big power differentials and in computer science where we do tend to have a gender imbalance as well."
+  },
+  {
+   "t": 263,
+   "speaker": "Maria Antoniak",
+   "text": "It's not something that's unique to where I was, but I just, saw a lot of cases of women being driven out of the fields, changing or reshaping their careers in response to harassment that they received. And I got really upset about it. And I also think like at a higher level, like inclusivity matters because justice, fairness, and good work matter. this isn't about, inclusivity isn't about making things unfair. It's about making things fair for everyone and creating this open playing field where we can all come together and bring our best selves and do our best work so that we can collectively tackle the really hard problems facing us as a society."
+  },
+  {
+   "t": 314,
+   "speaker": "Maria Antoniak",
+   "text": "And at this particular moment, because of what is happening politically in the US. I think it's important to be really clear, trans women are women and we need to care for our colleagues who are trans"
+  },
+  {
+   "t": 327,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, right, yes. I probably need to be very clear here as well that the vision of our podcast aligns 100 % with your view everyone is welcome on our podcast as well. and we are happy to speak about the work of all the women in the field. Thank you for sharing your view on that."
+  },
+  {
+   "t": 352,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, definitely. Thanks, Maria."
+  },
+  {
+   "t": 355,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "You used to call it AI for Humanists, a project that provides resources like tutorials, code, and glossary to help people in the humanities and social sciences understand and use large language models. Could you tell us what was important to you about this project in particular and what impact do you hope it will have?"
+  },
+  {
+   "t": 378,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so this project is actually also about inclusivity, just in a different, along a different axis. So what I really love about this project is that the idea is to like open up AI tools and like build AI literacy for people who don't have as much technical background in like how language models and different natural language processing and like AI methods work. But unlike a lot of other initiatives like this, it takes people seriously. It's like, believe you can code. We believe that you can understand the inside of these models. we're not going to only give you metaphors at a higher level. We're also going to bring you with us into the code, into the details of how the model works."
+  },
+  {
+   "t": 425,
+   "speaker": "Maria Antoniak",
+   "text": "We're going to look at diagrams from actual research papers about language models, and we're going to do it. together. And the reason for that is that we want all these scholars, journalists, the public even, the project is mostly aimed at other researchers from other fields. But we want all those people to be able to bring their questions, like from their different fields, and be able to tackle those questions in a way that's like grounded in the actual technology of today, not in some kind of like distorted view. or like oversimplified view of the technology. Like our critiques, for example, are gonna be a lot stronger if we can build that technical grounding as well."
+  },
+  {
+   "t": 472,
+   "speaker": "Maria Antoniak",
+   "text": "And that project, so I was one of the organizers along with Melanie Walsh, David Mimno, who was my PhD advisor, Matthew Wilkins, all of them. That was all when we were all at Cornell University. We also worked with Luca Saldini at the Allen Institute for AI for one of the tutorials. And we ran tutorials all over the place. So this project has had like a big life. And now there are new students at Cornell who've kind of taken over and are still building wonderful new tutorials, glossaries, and other resources for people."
+  },
+  {
+   "t": 509,
+   "speaker": "Jekaterina Novikova",
+   "text": "Another... slightly sensitive question given the situation that I have to you is I have found online your podcast with Chris Potts, where you were the guest and in that podcast you mentioned teaching in Ukraine before you moved to the computational linguistics field basically. I know that you stayed connected with the Ukrainian AI community even afterwards, like later in your career. You gave that talk for the AI for Ukraine series by AI House. And in general, it looks like Ukraine is important for you."
+  },
+  {
+   "t": 562,
+   "speaker": "Jekaterina Novikova",
+   "text": "It's an important part of your journey in the... AI, computational linguistics, So can you tell me what values or lessons from that connection with the Ukrainian community have influenced your research or maybe shaped how you think about your role in the broader research community?"
+  },
+  {
+   "t": 589,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, thank you for this question, because I'm always happy and eager to talk about Ukraine, even though on the other hand, I'm sad that this is all still ongoing and we have to still talk about Ukraine in such a sad way. So I also want to say, so my father is Ukrainian. I spent a year living in Lviv in Western Ukraine in my early twenties. So that's my connection. And yeah, it's so much, I feel very sad thinking about Ukraine, but I also want to emphasize Ukraine is such a beautiful place. It's full of really good food, really good music. really good people. It's a wonderful place to travel. And there's also a, yeah, a great AI community."
+  },
+  {
+   "t": 637,
+   "speaker": "Maria Antoniak",
+   "text": "I think Ukraine is a country like many others that values academia a lot and also like technical pursuits, like computer science. And there are a lot of startups and also tech companies where for example, US based companies outsourced to Ukraine. There's this really brilliant computer scientists and tech people there. And so when I was living in Ukraine, I hadn't yet actually really started my journey into NLP. Like that came afterward. So when I think about Ukraine, it's not that Ukraine has been an explicit part of my research, but there are like values and lessons. that I take from my time and my experience with Ukraine that underlie a lot of what I do."
+  },
+  {
+   "t": 685,
+   "speaker": "Maria Antoniak",
+   "text": "And I also see people, because I work in computational social science, I do often see, somewhat often, like see people use the Russian invasion of Ukraine as like this convenient case study for their research, for example, about social media. Some of that research is great. Some of it, I do think like coming from my perspective, All of those papers would be better if a Ukrainian were involved at some point in the research process, probably as a co-author. But yeah, so for me, kind of like behind the scenes, I think Ukraine has taught me a lot about what it means to have a family history from a colonized country and that we should be standing in solidarity with other colonized people. That's something that wasn't immediately clear to me growing up but it's something that actually through my education at Cornell and in information science and reading more about history and politics, understanding better that, what's happening in that one particular country is connected to what happens in many other countries."
+  },
+  {
+   "t": 754,
+   "speaker": "Maria Antoniak",
+   "text": "It's also given me a lot of food for thought about like the role of technology and shaping public opinion. A lot of those computational social science papers that I mentioned are about like disinformation campaigns and Russian social media campaigns, censorship. measuring censorship. So something that I've thought a lot more about in recent years because of that, and also the role of technology in the military. So I would say, sadly, I wish no one would understand these things, but because of what's been happening in Ukraine, and to be clear, like I'm at a distance, I haven't been to Ukraine in years, I'm not directly affected in the way that many people are, but I'm affected at secondhand. And it's given me this unfortunate understanding of war and violence that I didn't have before."
+  },
+  {
+   "t": 801,
+   "speaker": "Maria Antoniak",
+   "text": "So again, none of that like directly touches my work, but underlies a lot of the values that I have."
+  },
+  {
+   "t": 809,
+   "speaker": "Jekaterina Novikova",
+   "text": "Which is important because I think what are your values as a researcher defines a lot the type of research you're doing and the impact that you're having."
+  },
+  {
+   "t": 825,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, thanks Maria. think we're living in a too civilized world to still experience war and such unfortunate stuff. But life is life. Now, let's dive into your research. Millions of people are sharing their most personal thoughts and details with AI chatbots, yet at the same time expressing deep concerns about AI privacy and trustworthiness. In April 2025, while announcing improvements to chatty produce memory, Sam Altman expressed his excitement about AI systems that get to know you over your life, promising that this would make them extremely useful and personalized. I am personally worried about this long-term memory and super personalized chatbots, so I wanted to see what's your take on how trust actually works between human and AI."
+  },
+  {
+   "t": 879,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so I think my take here is that it's not about trust between humans and AI. It's about trust between humans and companies, at least at this point in time, given the technologies that are available to people and like how those technologies are available. They're available through companies. And those companies are based in, mostly based in San Francisco and Silicon Valley. And If you use their tools, your data is getting sent to those companies and there are young engineers working there who are probably one or two, maybe three social hops away from you and your social network. And those are the people that you're trusting with some of your most, for many people who using these chatbots, like their most intimate secrets that maybe no one else in the world knows about them, healthcare, sexual preferences, mental health, discussions, all kinds of very personal information."
+  },
+  {
+   "t": 947,
+   "speaker": "Maria Antoniak",
+   "text": "So again, it's not about trust between the user and the chatbot, although that might be the perception of the user. I think it's important that we call people to understand that behind that chat you interface, there's a whole company and Unfortunately, tech companies have a bad track record of caring for people's data and personal information is routinely sold to the highest bidder, which could include governments, police, insurance companies, stalkers, or pretty much anyone else. And I think people are in this kind of hopeless state. I feel this myself as well. I can feel really despondent about the state of technology and Well, and the state of our privacy and that like, well, this is just how things are."
+  },
+  {
+   "t": 995,
+   "speaker": "Maria Antoniak",
+   "text": "Like we're just trapped in this giant system where all of our data gets slurped up and sold and there's nothing I can do about it. But like there are things we can do about it. There are alternatives. Small local models are getting better and better. There are movements that have had more traction in other countries, but could have traction in the US as well around privacy and for example, outlawing surveillance advertising. which is what drives a lot of the incentives that lead tech companies to collect and sell data. So it's possible, we can do it. And those would be ways that companies could like rebuild trust, I think."
+  },
+  {
+   "t": 1035,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, and I know that you have a paper that is directly related to this topic the paper Trust No Bot. in that paper you discuss the personal disclosures of users that speak with the bots. Can you share with us some of the... most surprising findings of what people are willing to share with AI, with those bots. What was surprising for you personally?"
+  },
+  {
+   "t": 1071,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so that project was published last year and we were using a big data set called WildChat. We didn't collect that data, other researchers did. And it's a very large data set, now over a million conversations between real people and chat GPT. And the idea was that people were given free access to chat GPT in exchange for the researchers collecting all of their data. So at least in theory, the users knew that their data was being collected and they consented to that collection and the use of their data for research, like in the paper then that we wrote using that data. And despite this, so you might think that, okay, well, if they know their data is being collected, they might be more careful."
+  },
+  {
+   "t": 1121,
+   "speaker": "Maria Antoniak",
+   "text": "One could imagine that they might have a stronger sense of privacy in a chat window directly with ChatTPT versus in this research interface where they're being told your data is being collected for research. And yet, they still shared, to me, was just shocking amounts of personal information. And so then that was what the paper was all about was these different kinds of personal information that are revealed in those chats that maybe people are less aware of that researchers like maybe researchers are not aware that this is happening and maybe users aren't aware of the risks involved in sharing that information. So the first thing that was really shocking, I just loaded the data set onto my work. I was at work and I have like big monitors. I was in the open office, load the data set, topic model it, and then like display the topics up on my big monitors and It was like a catalog of different kinds of erotic content."
+  },
+  {
+   "t": 1181,
+   "speaker": "Maria Antoniak",
+   "text": "I just didn't know. I hadn't looked at this kind of data before because this kind of data is very difficult to access. If you're not working at a company like OpenAI or Anthropic, you don't have access to these chat logs. So it's kind of obvious in retrospect, but I just, I didn't expect it. And when I talked to people about this project and I asked them like, what do you think is the most common use case? for these text models, it's very rare that anyone will guess that erotic content is in one of the top use cases. So that was shocking. And then, yeah, it was shocking to see just the variety of personal information that people shared. So we have some examples in the paper that I think are particularly troubling, where we were able to very easily de-identify the people."
+  },
+  {
+   "t": 1233,
+   "speaker": "Maria Antoniak",
+   "text": "In the chat. So one particularly egregious case was a journalist who was using the tool and input the text messages between themself and their confidential source, who was"
+  },
+  {
+   "t": 1247,
+   "speaker": "Jekaterina Novikova",
+   "text": "My gosh."
+  },
+  {
+   "t": 1248,
+   "speaker": "Maria Antoniak",
+   "text": "A parent whose children had some like health issues and she was discussing this in these text messages along with names and other details, the health information. and the journalists just put all of that in to generate an article and that article was actually published. So was quite easy for us to find. So it's not only information about the person in the chat. There's often secondhand information about their friends, family, colleagues, workplaces, et cetera. There's a lot that's shocking in there. It's a wild data set."
+  },
+  {
+   "t": 1286,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, absolutely. It sounds slightly crazy to me that people are willing, knowing that it is going to be analyzed and willing to share all that information and somehow don't think about the fact that it's sensitive Yeah, super interesting."
+  },
+  {
+   "t": 1312,
+   "speaker": "Maria Antoniak",
+   "text": "And to be clear, we did notify the data set maintainers about what we found before we published the paper so that they could remove some of us if they want. But there's just so much personal information there. And part of our paper was pointing out that a lot of it is not easily detectable by traditional PII systems. So it's not an easy problem."
+  },
+  {
+   "t": 1336,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's very interesting. Maybe people don't have a good... definition of or understanding of what personnel is. So they don't know what to share, not to share. And So you created a taxonomy of tasks and sensitive topics that led people to disclose personal information to chatbots. Can you walk us through this taxonomy?"
+  },
+  {
+   "t": 1358,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so we had two taxonomies. One is for the tasks and then one is for like the sensitive information that people shared in the context of those different tasks. So the first part, just the tasks was interesting to think about like, what are people actually doing? So some of the really common tasks that we found were explanation, how to's and practical advice. That was one of the most common categories, along with information retrieval, code generation, generating documents, editing text, and then there's like a long tail. So we have a nice plot in the paper where you can see those different distributions and compare them. And then for the sensitive information, here we were trying to think about like take this quite liberal view of like what sensitive information might be."
+  },
+  {
+   "t": 1406,
+   "speaker": "Maria Antoniak",
+   "text": "So moving away from PII, which is a kind of a strict formal definition of things like names and identifiers towards like things like academic and educational information or quoted code. Because often what it looked like in those chats often was that code looked sometimes like industry code, like this person's at work and they're copying in source code from their company, which probably the company doesn't want to be public. We have a fandom category. Fandom is a really important lens in thinking about how people are using chatbots and the sensitive stuff that they're including in chatbots. I just read a great paper by Kenny Joseph and colleagues at the University of Buffalo about, specifically about fandom and chatbot conversations in that case about Character.AI prompts."
+  },
+  {
+   "t": 1464,
+   "speaker": "Maria Antoniak",
+   "text": "I highly recommend checking out that line of work. We also have hobbies and habits, financial and corporate information, sexual and erotic information. So there's a lot in there, very detailed information about people's, for example, sexual preferences, which they may or may not be comfortable with other people knowing. healthcare information, job visa and other kinds of applications, personal relationships, especially advice about personal relationships, emotions and mental health and politics and religion."
+  },
+  {
+   "t": 1501,
+   "speaker": "Jekaterina Novikova",
+   "text": "I wonder, Maria, after doing all this work, working on that data set, how your interactions with chatbots changed, if at all?"
+  },
+  {
+   "t": 1516,
+   "speaker": "Maria Antoniak",
+   "text": "I think they actually may have changed in the opposite way than expected. Because some of these use cases, just would never, again, it didn't occur to me that people would use bots in these ways. It hadn't occurred to me to try to use bots in these ways. Many of them I still wouldn't do because of the privacy issues that I mentioned before. I'm not comfortable having my deep dark secrets going. straight to Silicon Valley personally. But some of these, not that I have done it myself, but for example, personal advice, that's not something that I would do myself, but I find it really fascinating that people are using bots in that way."
+  },
+  {
+   "t": 1561,
+   "speaker": "Maria Antoniak",
+   "text": "And in my personal life, when I'm chatting with people outside of AI, and when AI comes up, I always ask people like, how are you? Do you use ChatGPT? What do you use it for? And very often people say they use it for personal advice. So like they get a text message and they want, they're not sure how to respond or there's an email and they're like, am I reading this right? They sound angry, but maybe I'm being defensive. Like these kinds of personal advice situations and like sounding bored. Again, I have not used bots that way myself, but I have tried. that, for example, like checking my own tone, like, am I phrasing this in a nice enough way?"
+  },
+  {
+   "t": 1610,
+   "speaker": "Maria Antoniak",
+   "text": "So I'm both like more aware of the risks involved and also more aware of the creative ways that people are using these models. And I guess my fear here is like, also those closed industry models, they are kind of the best. models that we have right now. I wish that open local models were better and they are becoming better. But at this moment, if you have some kind of like pressing task or question, like those closed models are the best option. And so I have myself like had healthcare queries where I was like kind of in a desperate situation. Like I need information. I've Googled, I've done things the traditional way."
+  },
+  {
+   "t": 1656,
+   "speaker": "Maria Antoniak",
+   "text": "Can't get to it. I'm not going to be able to see a specialist or get a specialist for my you know, whoever in my life needs this information for months. And I have turned to Claude, for example, for answers. So I think that is a good example of the tensions here of like, you know, that your privacy is being traded, but also if this is the best tool for the job, and if you feel that you really need it, then you can be driven to share in that personal information."
+  },
+  {
+   "t": 1685,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yeah, right. It's interesting. I like that aspect about balancing between knowing that you are disclosing some personal information and doing that anyways, As long as you Knowing what you're doing, I think that's probably fine. The ideal situation would be to have the option not to do that and still get that value. I hope we are moving towards that direction. I want to ask you about another paper that you have, which is the..."
+  },
+  {
+   "t": 1732,
+   "speaker": "Jekaterina Novikova",
+   "text": "Paper titled LLMs as Research Tools, a large-scale survey of researchers' usage and perceptions. Can you briefly describe the scope of that work for us?"
+  },
+  {
+   "t": 1748,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so that paper was led by Joseph Chang and Amy Zhang at the Allen Institute for AI and the University of Washington. And I was a part of this study through my time at the Allen Institute for AI. And I was working on the semantic scholar team. Semantic scholar is a tool very similar to Google Scholar. A lot of researchers use it to find papers. via Semantic Scholar, we have access to a lot of people, lot of researchers. And so the study was designed to use Semantic Scholar to recruit people, to recruit researchers to answer questions about their current usages and feelings about AI tools for research."
+  },
+  {
+   "t": 1799,
+   "speaker": "Maria Antoniak",
+   "text": "So we were able to recruit over 800 researchers from many different disciplines and backgrounds, And the difference from the previous study is like, yeah, this was very focused on research use cases, not general use cases. So the tasks were things like editing writing, assisting with designing experiments, assisting with literature review. those were the kinds of tasks that we asked people about here. And this is also self-reported survey data, whereas the wild chat data was observational description of what we see people doing in that particular data set. And a lot of interesting stuff came out of this paper, we finally presented this paper actually very recently at the Conference on Language Modeling, but this paper was a long time."
+  },
+  {
+   "t": 1850,
+   "speaker": "Maria Antoniak",
+   "text": "In the works, the survey took place, I think almost, at least a year and a half ago, if not more, And so the results that we found many have been confirmed in other research papers that have come out. we did find that like people with more expertise, so for example, people in computer science who use AI models more are more comfortable disclosing their usage of AI models. So we asked people about not just how are you using things, but how are you comfortable disclosing and how do you think other people should disclose. We did find these differences along the lines of like expertise."
+  },
+  {
+   "t": 1888,
+   "speaker": "Jekaterina Novikova",
+   "text": "Do you have any intuition based on the findings of these papers on whether the expertise that you can see in the researchers group? whether that expertise affects AI trust or not."
+  },
+  {
+   "t": 1908,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so we did find that people with more expertise, they're more comfortable disclosing their usage of models, for example. We also found that traditionally disadvantaged groups in academia, so non-white, non-native English speaking and junior researchers, report higher usage and perceive benefits and That surprised us at that time, but again, there's now been a lot of following work also finding this pattern. And we had some very, because we also had some free text responses. And so we received some quite passionate responses from people in those groups saying, this is an equity issue. Having access to these models and be able to use them has helped me in my work, for example, as a non-native English speaker, being able to kind of mask that they're a non-native English speaker."
+  },
+  {
+   "t": 1957,
+   "speaker": "Maria Antoniak",
+   "text": "Some other respondents in our survey felt that was an equity issue and that it was helpful to them. On the other hand, That's for sure. there were other groups."
+  },
+  {
+   "t": 1969,
+   "speaker": "Jekaterina Novikova",
+   "text": "Say here that's one of the ways I'm using ChatGPD or other chatbots myself. That's definitely a good use case."
+  },
+  {
+   "t": 1980,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, there's been following work showing that like it works and it is helpful from my read of those studies. On the other hand, we did find that other groups like women, non-binary people and senior researchers with more experience express greater ethical concerns. So there's a lot of different kinds of trade-offs here. And we also had a lot of people very passionately speaking against the use of AI models at all. And in particular, I guess, connecting a bit to the wild chat study, thinking about privacy and especially like privacy of research data. So if you're using any, if you've collected data that is private and you're studying that data, being very careful about where what kind of tools you're using to analyze that data and whether that data is getting sent somewhere else."
+  },
+  {
+   "t": 2037,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. You also found an interesting third-person effect where researchers trust their own AI usage but worry about others misusing these tools. How does this affect the design of transparency and consent mechanisms in particular?"
+  },
+  {
+   "t": 2054,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so think it's interesting because there is a lot of worry around certain use cases and that worry isn't totally unfounded. So for example, I think people worry a lot about like students or researchers that they're going to generate entire research papers. And that does happen. We should worry about it. It is a problem. But what we found in this particular survey is that our respondents mostly do not report using models in that way. they're more likely to use them to edit existing writing, to assist in their literature review. These are researchers who are not stupid and who are probably interested in what they do and finding other ways to use models."
+  },
+  {
+   "t": 2100,
+   "speaker": "Maria Antoniak",
+   "text": "So again, it's not that those other problems aren't problems, but they are often framed from this kind of bystander perspective of like, I wouldn't do that, but those other people are doing it. And maybe we should try and be precise about like, well, who actually is doing that? In what context are they doing that? Because it's not all context and it's definitely not all people."
+  },
+  {
+   "t": 2124,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "When we talk about bias in AI systems, we often focus on demographic fairness matrix, but culture is much richer and more complex than demographics. What do you think about cultural representation in AI system just having beyond just like having balanced data sets across different identity groups? I'm curious what's what your thoughts are here."
+  },
+  {
+   "t": 2152,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, I feel that very strongly. So first, I would say there's a great paper by Nathan Zhu at UC Berkeley, Culture is Not Trivia, Sociocultural Theory for Cultural NLP. I highly recommend this paper. It directly addresses in very clear ways a lot of the problems that you're bringing up in your question and this general problem that comes up a lot in, for example, in research around cultural alignment. that how we think about culture, how we define the different groups and then the ways that we test for cultural competency are often very limited and don't capture the things that we maybe actually care about. So I highly recommend checking out that paper."
+  },
+  {
+   "t": 2200,
+   "speaker": "Maria Antoniak",
+   "text": "But I would also say, so I work in NLP, but I also work in a field called cultural analytics. Cultural analytics and culture more generally, yeah, it's much richer than just which country do you belong to or which language you speak. It's also about art, literature, sports teams that you engage with, music, video games, and many, many, other things. But those are the kinds of cultural data sets that I find really interesting and center in my research. And are also like, I think good places for thinking about some of these questions about bias, cultural alignment. we could also call this just like personalization. Like what would you want to see from the output of a model in the context of a specific task for you?"
+  },
+  {
+   "t": 2251,
+   "speaker": "Maria Antoniak",
+   "text": "And a lot of those are questions about like taste. and again, like art and literature and these kinds of dimensions of culture."
+  },
+  {
+   "t": 2262,
+   "speaker": "Jekaterina Novikova",
+   "text": "Let's now turn into your recent position paper, Research Borderlands. In this paper, you critique recent cultural evaluation work in a similar way as you described your opinion right now about that. you say that the authors are relying on synthetic setups too much and also imperfect proxies of culture. Can you walk us through the approach that you took instead and how it differs from those typical cultural evaluation methods? What advantages your approach brings?"
+  },
+  {
+   "t": 2310,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so this project was led by Shaili Bhatt, and we collaborated on this project with Tal August, And Tal has expertise, not just in NLP, but also in HCI. And Shaili was really excited. As I said, she has expertise already in things like measuring cultural competency. but she was also really excited about bringing in some HCI methods to her work. And this seemed like a perfect opportunity to, as you're saying, like try to address some of the critiques I just leveled at other work in this area. So to sit down together, the three of us, and think really hard about like, okay, like if we were gonna try to do this, if we were gonna try to think about things like alignment or culture and do it in the way that would make us feel at least somewhat satisfied."
+  },
+  {
+   "t": 2359,
+   "speaker": "Maria Antoniak",
+   "text": "Like what would that look like? And so what we hit on was to think about culture in the sense of research cultures. So. You will know this if you're a researcher, and especially if you're an interdisciplinary researcher, if you've ever published in a community that's outside of your home community, that definitely there are cultural norms in our different research communities in how we write, how we give presentations, how we talk to each other, the language that we use, the assumptions that we make. That's our culture as well. It's another kind of culture. And so our intuition here was to think about interdisciplinary researchers in particular, because what we felt was that if we want to learn about cultural adaptation, who is the expert at cultural adaptation?"
+  },
+  {
+   "t": 2411,
+   "speaker": "Maria Antoniak",
+   "text": "Okay, the expert would be, in the context of research communities, it would be senior scholars who have long experience moving between different cultures. They're the ones who know how to adapt. They're these chameleons who are really good at this. So Shaili ran a survey. Then from that survey recruited these senior interdisciplinary scholars for interviews, long in-depth interviews, which she then analyzed again qualitatively to come up with a set of writing adaptations that these scholars have described using successfully to adapt a piece of writing written for one field to another field. And so that was the basic setup of the study and compared to other works in this space, there were some key things."
+  },
+  {
+   "t": 2466,
+   "speaker": "Maria Antoniak",
+   "text": "We didn't assume what culture meant. That's something that we asked people about in the survey. So we didn't tell them like, your culture is NLP. Your research culture is NLP. We asked them, like, how would you describe your research culture? And so some people would write NLP. Some people would write ACL. Some people would put STAR-CL. Some people would put ML or AI. So they might reference conferences. They might reference disciplines. So we let people tell us what culture you identify with and kind of take things from the ground up rather than talk down."
+  },
+  {
+   "t": 2502,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. So out of these interviews that you did with these researchers, can you share some examples of these differences that surprised you?"
+  },
+  {
+   "t": 2512,
+   "speaker": "Maria Antoniak",
+   "text": "A lot of them were not surprising. some things, you know, like there's more images in computer vision papers. Or we spent time thinking also together about like what makes an ACL paper an ACL paper? Like you might have this like figure one on the first page or the title is written in a certain way. we were asking people specifically about the introduction sections of their papers, because that's where you're often doing a lot of this framing and pitching and norm building. But yeah, different types of evidence, citations, writing style was an interesting one talking about writing style, and how that differs and also how that can maybe is also dependent on the like formatting requirements of the venue, right?"
+  },
+  {
+   "t": 2561,
+   "speaker": "Maria Antoniak",
+   "text": "So in star CL conferences, we have only eight pages. Everything needs to be really tight. You just do not have room for an extra word anywhere. It changes things stylistically versus if you're writing for CSCW or humanities journal where you maybe don't have any page limit and you can. be a bit more creative and also have these like digressions and go into more detail about things than you can in other venues."
+  },
+  {
+   "t": 2589,
+   "speaker": "Jekaterina Novikova",
+   "text": "Wow, I did not know about those lucky research fields where they don't have page limitations."
+  },
+  {
+   "t": 2598,
+   "speaker": "Maria Antoniak",
+   "text": "They're lucky in some ways, but imagine being a reviewer."
+  },
+  {
+   "t": 2602,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yes, true. Another interesting finding from your work that you have mentioned in your paper was that the LLMs tend to homogenize writings across different research cultures. Can you explain what you mean by that term, by homogenization, and why? you think it poses a risk."
+  },
+  {
+   "t": 2635,
+   "speaker": "Maria Antoniak",
+   "text": "So homogenization, it's a well-known problem at this point for language models, that models will tend to kind of flatten things in the writing that they generate. in that, prior work has shown that this happens stylistically, at the vocabulary level, syntactically, also like work on story evaluation by Violet Peng, very interesting. showing that generated stories tend to follow certain types of story shapes or like story arcs. So again, you get this homogenization effect where the models are all generating like stories with a certain kind of emotional shape to them, whereas humans will produce more diverse shapes. So it's happening in all different kinds of ways."
+  },
+  {
+   "t": 2681,
+   "speaker": "Maria Antoniak",
+   "text": "So we were not surprised to find in our case as well that So from the interviews, Shaili developed this framework. of different writing adaptations that people make, like the strategies I was mentioning before, and then turned all those into quantitative metrics that we could apply to large data sets of research introduction sections and then model adapted versions of those introduction sections. And so an interesting thing is like, you might say, well, maybe the model just doesn't know, like when you ask the model to adapt from ACL to CSCW, does it even know what those acronyms mean? And it seems like it does. And we know that in various ways. But we also see, so one of the metrics was not flattened. So that was the vocabulary."
+  },
+  {
+   "t": 2727,
+   "speaker": "Maria Antoniak",
+   "text": "So we do see some vocabulary differences when the model is asked to adapt. an introduction section from one research culture to another, but then across almost every other metric, things get flattened. It just makes the same kind of changes. So for example, the introduction sections that are generated, they're always shortened compared to the originals. And that's a problem in many ways."
+  },
+  {
+   "t": 2757,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "That's very interesting and based on your research what are some ways we could address this issue because this collapse in diversity and for pluralism or like homogenization as you said can be an issue in some ways so what do you think about the solution at least potential solutions?"
+  },
+  {
+   "t": 2776,
+   "speaker": "Maria Antoniak",
+   "text": "So one is, mean, you know, should we even be using models for that task? And then the other is, if we are using them, at the very least, as we attempted in this study, is to involve people and people who are experts. So maybe there's something about the design of these tools, not to do the writing for me, but to coach me or teach me a bit, or to point me towards good examples that I can learn from, because that's usually what we do pre-generative AI model, you look at examples. And then again, specific tasks, specific people, specific users, I think that's where we can start doing something more productive around like, Maybe, yeah, we need like a fine-tuned version of a model that is really good at this particular kind of task."
+  },
+  {
+   "t": 2829,
+   "speaker": "Maria Antoniak",
+   "text": "That might be the way forward."
+  },
+  {
+   "t": 2831,
+   "speaker": "Jekaterina Novikova",
+   "text": "Yes, culture is a difficult challenge. I'd say there are no easy ways to solve the problems that appear here, I guess. OK, let's speak for a while about another topic which is slightly different, about AI in health and reproductive health domains."
+  },
+  {
+   "t": 2861,
+   "speaker": "Jekaterina Novikova",
+   "text": "Reproductive and maternal health to me, it looks like a perfect case study for understanding AI ethics, because it sits in the intersection of medical care, social justice, historical trauma, and some very personal experiences. Maria, what do you think makes this domain particularly revealing about broader challenges in AI ethics."
+  },
+  {
+   "t": 2893,
+   "speaker": "Maria Antoniak",
+   "text": "So I agree with what you just said. And this is an area that I've worked in since the beginning of my PhD. And I've found it to be just a very fruitful area in thinking through many different things. It brings together many different problems. So one reason that we might be interested in maternal and reproductive health care. in the context of AI is like, first of all, there's just like a long history, not just in my work, but in other people's work and thinking about maternal reproductive health care. There's a lot of prior research and applications of NLP methods focused on maternal health care. And one of the reasons for that, and another reason why we might be interested again in this topic is that pregnancy, childbirth, reproductive health, these are things that touch many, many, many, many people, most people, we're thinking about reproductive health, most people think about reproductive health at some point in their lives."
+  },
+  {
+   "t": 2958,
+   "speaker": "Maria Antoniak",
+   "text": "And also things like pregnancy and childbirth, they might be a person's actually only or their only major interaction with the healthcare system during most of their life. And... That means that this is a very significant interaction. can shape that person's perceptions of healthcare and the healthcare systems. And it also means we have a lot of data and a lot of perspectives and different perspectives on this topic. And then third, yeah, as you were saying, maternal health is this kind of like perfect storm of healthcare vulnerabilities. So there are like long, horrible, historical biases and abuses of birthing people, all kinds of power dynamics that affect care."
+  },
+  {
+   "t": 3010,
+   "speaker": "Maria Antoniak",
+   "text": "So for example, maternal health in the US in recent years has received a lot of attention for high morbidity, mortality of birthing people and also significant racial inequalities. So in all these different ways, I think maternal reproductive health is an important and like fruitful site to sit down and like think seriously about like, what would it mean to involve technology and AI specifically in this setting? This like high stakes, frequent setting where we also have a lot of problems and need better solutions."
+  },
+  {
+   "t": 3050,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Interesting. let's discuss your work NLP for Maternal Health Care Perspectives and Guiding Principles in the Age of NLMs. Can you walk us through your methodology and the key principles that came out of this work?"
+  },
+  {
+   "t": 3065,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so this was a big collaborative paper that I led, again, while at the Allen Institute for AI. So some of the collaborators had more expertise in natural language processing. We had a collaborator, Carla, from the Association of American Medical Colleges, which is a nonprofit, and in particular their Center for Health Justice. and then also, two scholars who have expertise in NLP and machine learning, but also in fairness and accessibility and healthcare topics. And so we, ran a workshop And so we got a portion of a day in the spiritual event to interact with people."
+  },
+  {
+   "t": 3118,
+   "speaker": "Maria Antoniak",
+   "text": "We had a group of healthcare workers, maternal healthcare workers, quite a diverse group racially. all US-based English speaking, but racially diverse and then diverse across the different types of maternal healthcare work that they do. And we had designed a kind of like demo for them, a kind of wrapper around a chat bot. And we led them through interacting with that chat bot. We let them use it themselves and pose different kinds of maternal health questions for the chat bot based on their experience and their expertise. And then we surveyed them about the different, their experiences with this chat bot, their background with AI, like what expertise level they have, their feelings about AI and what kind of values they think should be prioritized in the design of any technology like this for maternal health."
+  },
+  {
+   "t": 3172,
+   "speaker": "Maria Antoniak",
+   "text": "And then we did a follow-up with a group of birthing people, people who have given birth in the previous five years, same setup, working with the chat bot survey, asking about values. And from all of this, we developed a set of like nine guiding principles for the use of AI in maternal healthcare. So I'll just quickly run through these. So the first thing was context, be aware of power dynamics and the care team, know the politics and implications of your measurements, and learn from maternal health traditions and communities. Then the second theme was measurements. So this included optimize for outcomes that support the whole person, protect all groups of birthing people, and hold onto the human, empathy, emotion, relationships, and complexity."
+  },
+  {
+   "t": 3222,
+   "speaker": "Maria Antoniak",
+   "text": "And then the last theme was values. Include the voices of those seeking care. Always center the agency and autonomy of the birthing person and respect and support your data sources. And this then was all documented not only in our paper, but in some beautiful artwork that came out of the workshop and in materials and training materials for the Association for American Medical Colleges and their other participants and medical professionals"
+  },
+  {
+   "t": 3251,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Amazing work. What did this stakeholder engagement reveal about whose voices are typically centered versus marginalized in healthcare AI development?"
+  },
+  {
+   "t": 3263,
+   "speaker": "Maria Antoniak",
+   "text": "So I think first of all, we don't often see voices at all in this kind of research in NLP and machine learning. in NLP, we see a lot of work that doesn't ask people or engage with people directly. So that's something that we really wanted to do in this study was engage with people directly. engage with people, both birthing people and healthcare workers, not one or the other, but both, and try to make one attempt at bringing those different perspectives together, comparing them and trying to draw insights from both. Because often the maternal healthcare worker context is privileged over the perspectives of the people who are seeking care."
+  },
+  {
+   "t": 3314,
+   "speaker": "Maria Antoniak",
+   "text": "And there's reasons for that. So a lot of NLP work focuses, for example, on electronic health records, because that's the text data. If we're doing NLP research, we need big amounts of text data. And where can we find big amounts of text data in health care? We can find it in EHR. So a lot of work focuses on EHR. And those are notes traditionally written from the perspective of the healthcare worker, not of the person taking care. So there are these kind of like structural reasons why the healthcare worker's gonna get privileges, also money involved, right? If you can build tools that hospitals will purchase, you'll probably have a better chance at making money than if you are designing things for patients who don't have a lot of money on resources."
+  },
+  {
+   "t": 3363,
+   "speaker": "Maria Antoniak",
+   "text": "So again, there can be structural reasons why that. happens. And then there's a lot of work on like social media. That's kind of the other big like text resource. And so there you do you can get the perspective of people seeking care, but often without directly speaking to them only by observing, But here we wanted to talk directly to people."
+  },
+  {
+   "t": 3390,
+   "speaker": "Jekaterina Novikova",
+   "text": "One of the nine ethical principles that you have listed before, one of them is related to what you just said. It sounds like be aware of power dynamics in the care team. Can you explain how AI systems might accidentally make existing hierarchies worse? even though these systems are designed to be helpful."
+  },
+  {
+   "t": 3424,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, so there's a long history here. Thinking about this from the US context, just to start, there's a long history about shifting power dynamics in the care team. So historically moving from a midwife centered practice of guiding childbirth to then physicians. and gender shifts as well in that transition and giving birth in a hospital setting to, you know, recent interests, for example, in home births, including again, midwives and doulas in the birthing process, structural things."
+  },
+  {
+   "t": 3470,
+   "speaker": "Maria Antoniak",
+   "text": "Like doulas, there's evidence showing that having a doula, a doula is kind of like a birth coach, distinct from like a nurse or a midwife or a clinician. And there's evidence showing that having a doula president present at well-giving birth in the US can improve many different kinds of outcomes from whether you survive to how complicated the birth was. But doulas are not a traditional part now of the hospital birthing system. Laws can vary around licensing and access. And this is something people have to seek out on their own. and often have to pay for on their own to have a doula present. and then, you can think, doulas are like a really great way to think about this because they're kind of inside and outside of the healthcare system."
+  },
+  {
+   "t": 3521,
+   "speaker": "Maria Antoniak",
+   "text": "They're included, but not included. And there's different kinds of like valuations and power hierarchies within the care team where often like the physician is on top, nurses are below. It's like a literal power hierarchy. And the doula occupies this interesting kind of independent space. And it's something I've explored in some of my prior work on people's birth narratives and how they write about doulas in the context of their experiences. And so all of this is complicated, historical, fragile, and anything that's introduced to this system could shift things one way or the other."
+  },
+  {
+   "t": 3566,
+   "speaker": "Maria Antoniak",
+   "text": "It could improve things. So we have these power problems already. Maybe there's a way to introduce a tool that helps shift things, like shift more power towards the person seeking care. Maybe that's possible. I don't know. But it could also mess things up. an instinct might be like, oh, we're gonna automate the role of this particular healthcare worker and the choice of which worker to automate could reflect that existing power hierarchy, just as one example of like how things could go wrong in a way that our participants, multiple of them called out."
+  },
+  {
+   "t": 3601,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "You also found that participants worried about AI being used for surveillance of birthing people rather than empowerment. And you noted that much existing NLP research in maternal health focus on data collection and surveillance. What does this pattern tell us about whose interests are actually driving health care AI research?"
+  },
+  {
+   "t": 3626,
+   "speaker": "Maria Antoniak",
+   "text": "Yeah, and I should shout out here, of course, to data feminism by Lauren Klein and Catherine DiNazio, which has helped my thinking about power and the centering of power in these conversations, which is also, I think, part of what's going on here. Who has power to run these studies? Researchers do. Again, these structural reasons why NLP researchers would look for certain kinds of data. And so, as I said, one of those other sources is social media data. So a lot of prior work in NLP on maternal health has been this kind of surveillance work, like trying to predict whether someone has postpartum depression from their tweets. And I think it's good to step back from that and think about like, who asked for this?"
+  },
+  {
+   "t": 3676,
+   "speaker": "Maria Antoniak",
+   "text": "Did the people with postpartum depression ask for this? Who would it help? Who does it empower? Who is this tool? Who would actually use this tool? Like, would it be used by clinicians to surveil their patients? And then what? what is the intended use case for this technology? But again, there are these structural reasons why that kind of work exists, which again is like, that's the data we have access to. These are the types of research questions we could possibly answer with that data. And so things get kind of funneled into certain research areas rather than others because the others might be harder. But it doesn't mean they're impossible. They're just harder."
+  },
+  {
+   "t": 3717,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right, another principle that you have defined is always center the agency and autonomy of the birthing person. And it seems like this principle contrasts with the reliance on automated decision making in healthcare. How would you suggest designing AI systems that enhance rather than reduce human agency, especially the agency of the birthing person?"
+  },
+  {
+   "t": 3755,
+   "speaker": "Maria Antoniak",
+   "text": "This is a really big problem in general, but especially for maternal health care, again, for historical reasons. There's been a history of, for example, researchers not expecting the agency of birthing people and experimenting on them without full consent. And there's also a history of clinicians making decisions for birthing people, again, without full consent. A lot of this is really horrifying. Again, this is something that I also learned a lot about in my prior work on birth narratives, where people are sharing their personal stories and experiences of what happened to them. And this is something that came up a lot in that study that the people telling these birth stories who were counting their experiences giving birth, they very often frame themselves as having the least amount of power and agency."
+  },
+  {
+   "t": 3805,
+   "speaker": "Maria Antoniak",
+   "text": "In the situation, everyone has more power than they do in their perspective. And that's not good. Like that, leads to just to start with really bad feelings about the experience. And so in terms of like designing systems that like enhance people's agency, again, I would say like things that could possibly shift power back to the person who's seeking care or the person who's giving birth that gives them more information. So more agency would mean like they need more information, more ability to make decision. We have some new work led by Dustin Wright that I participated in."
+  },
+  {
+   "t": 3853,
+   "speaker": "Maria Antoniak",
+   "text": "Dustin led this work on thinking about like epistemic bubbles that models might create. This is something that also already happens in the healthcare context. There's an idea of like epistemic injustice. So who's allowed to know things? And in the most absurd way, like even who's allowed to know things about your own body. When we think about things like pain, which is a really important part of birth, reproductive health in general, communicating about pain is very difficult. It's subjective. So who gets to decide how bad the pain is and what kind of treatment you should get? Those are hard questions. It is genuinely a hard question. It is subjective. We can't get into your brain and like, no, for sure."
+  },
+  {
+   "t": 3901,
+   "speaker": "Maria Antoniak",
+   "text": "But there's also a history there of women, for example, being given less pain treatment than men while reporting the equal levels of pain. So this is one example where this could play out. any technology that would involve the person seeking care more, that would give them more information, that would open things up for them more, increase transparency about what is happening and what their options are, that seems good to me."
+  },
+  {
+   "t": 3930,
+   "speaker": "Jekaterina Novikova",
+   "text": "I think that's... Again, that's another situation where very specific solutions probably will not work in all the cases. So just those general guidelines of what is important, what to think and have in mind, what to think about are the best that we can have."
+  },
+  {
+   "t": 3958,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Yeah, totally agree. And the last but not the least question I have about this area of research, you emphasize learning from maternal health traditions and communities rather than replacing them with AI. How do we ensure that healthcare area amplifies rather than displaces existing forms of care, particularly from marginalized groups?"
+  },
+  {
+   "t": 3982,
+   "speaker": "Maria Antoniak",
+   "text": "So throughout this section of questions, I keep talking about there's a long history of this. There's a long history of that. And I think it's something that we're not great at in tech and in computer science. We're not trained to think historically often. It's more about like what works now, what data can I get now? And I heard Virginia Eubanks she is a scholar who studies inequities created by technological systems, especially systems used, for example, by the government. And someone asked her, how do we teach computer scientists ethics? And she responded something like, we need to teach them history. And I just agree with that so much."
+  },
+  {
+   "t": 4028,
+   "speaker": "Maria Antoniak",
+   "text": "And I find that in my own work, the more that I can understand the history and the bad things that have happened before and the good thing, you know, in this case, the maternal health traditions and communities that have long existed, people have already found ways to support each other. How can we support that support rather than reinventing the wheel and perhaps messing things up in the process? And how can we avoid the mistakes that researchers and engineers and tech people have? made in the past. We're a part of that tradition as tech people and I find it very practical to think about that history and to involve people in the work who might know that history better than I do for a particular context."
+  },
+  {
+   "t": 4084,
+   "speaker": "Jekaterina Novikova",
+   "text": "Right. So I think it's time for us to wrap up. What advice would you give to AI researchers who want to make more ethical choices but are not sure how to get started?"
+  },
+  {
+   "t": 4101,
+   "speaker": "Maria Antoniak",
+   "text": "Thanks so much. And also I want to say that, you know, I'm not perfect, I'm also still learning. And some of the work that we talked about today, it's a progression from me doing more of that like social media analysis work to directly speaking to people and like growing in my own skills and understanding. And what I just said about learning history, I think that is really important. It's a lesson I learned from a course that I took also with Karen Levy early in my PhD. learning about histories of choices, ethical or unethical made by tech companies in the past. Some of those companies still exist today. so learning that history, I think is a great way to start."
+  },
+  {
+   "t": 4149,
+   "speaker": "Maria Antoniak",
+   "text": "And there's so many books. I recommend Virginia Eubanks work, for example, that I mentioned before. I recommend Data Feminism, which I mentioned before. There's newer books. I haven't read Karen Hao's Empire of AI yet, but I've heard only the best of things and it's in my shopping cart to purchase and to read. So there's a lot of books. I mentioned Ruha Benjamin's work earlier. She has multiple popular books and also multiple talks recorded and publicly available on the internet for anyone to watch. And she's a very inspiring and engaging speaker. So that would be a great entry point. So many other people, books and researchers and writers who I could shout out here, but that's probably a good reading list to start."
+  },
+  {
+   "t": 4196,
+   "speaker": "Maria Antoniak",
+   "text": "And then if you're an NLP, AI, ML person, I think what I would encourage is, I guess a few things. So one is like, how can you center your work and ground it in something specific? perhaps something specific that you have experience, personal experience with that you could actually speak to and understand that you're designing evaluations, methods, models that actually address something real in a real community. I would suggest trying to collaborate with people from other disciplines rather than reinventing the wheel. Like bring in a collaborator who has expertise in whatever topic it is that you're studying. and work with them in a way that puts their expertise in equal footing with yours."
+  },
+  {
+   "t": 4248,
+   "speaker": "Maria Antoniak",
+   "text": "It'll be hard, but you'll learn a lot."
+  },
+  {
+   "t": 4250,
+   "speaker": "Malikeh Ehghaghi",
+   "text": "Awesome, thank you so much Maria. I will keep these words with myself. How would you teach computer scientists ethics? them about history. That's very nice. Thank you so much for sharing your insights with us today."
+  },
+  {
+   "t": 4263,
+   "speaker": "Maria Antoniak",
+   "text": "Thank you so much for having me."
+  },
+  {
+   "t": 4266,
+   "speaker": "Jekaterina Novikova",
+   "text": "Thank you, Maria, for joining us today and for this conversation. to our audience, we're going to share some details and links to Maria's research papers in the description of this video. Check it out. And see you next time in three weeks"
+  }
+ ]
+}

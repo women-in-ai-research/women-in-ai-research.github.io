@@ -6,6 +6,7 @@ import { formatDuration } from "@/app/components/common/RichText";
 import { YouTubeButton, SpotifyButton, ApplePodcastsButton } from "@/app/components/common/Buttons";
 import { EventLogo } from "@/app/components/events/EventLogo";
 import type { Episode } from "@/app/components/podcast/EpisodeList";
+import { hasEpisodePage, episodePath } from "@/app/lib/episodePages";
 import episodesData from "@/app/data/episodes.json";
 import guestsData from "@/app/data/guests.json";
 import eventsData from "@/app/data/events.json";
@@ -270,9 +271,16 @@ export default function Page() {
                     <p className="font-semibold text-wiair-light">{ep.guests.join(", ")}</p>
                   )}
                   <p className="text-gray-300 leading-relaxed flex-grow">{hook(ep.description)}</p>
-                  <a href={ep.youtubeUrl} target="_blank" rel="noopener noreferrer" className={`${SECONDARY_BTN} self-start mt-2 !py-2.5 text-sm`}>
-                    <PlayIcon size={14} /> Watch
-                  </a>
+                  <div className="flex flex-wrap gap-3 mt-2">
+                    <a href={ep.youtubeUrl} target="_blank" rel="noopener noreferrer" className={`${SECONDARY_BTN} !py-2.5 text-sm`}>
+                      <PlayIcon size={14} /> Watch
+                    </a>
+                    {hasEpisodePage(ep) && (
+                      <a href={episodePath(ep)} className={`${SECONDARY_BTN} !py-2.5 text-sm`}>
+                        Episode page →
+                      </a>
+                    )}
+                  </div>
                 </div>
               </article>
             ))}
