@@ -17,7 +17,7 @@
     "id": "dr-greta-tuckute",
     "name": "Dr. Greta Tuckute",
     "title": "Research Fellow at the Kempner Institute, Harvard University, USA",
-    "bio": "",
+    "bio": "Dr. Greta Tuckute is a Kempner Research Fellow at the Kempner Institute for the Study of Natural and Artificial Intelligence at Harvard University, where she works at the intersection of neuroscience, cognitive science and AI. Her research follows three directions: precisely characterizing the neural architecture that supports language processing in the human brain, testing whether brains and artificial neural networks share representations and computational principles during language processing, and building biologically inspired models that learn language in more human-like ways. Originally from Lithuania, she earned her BSc and MSc at the University of Copenhagen and her PhD in Brain and Cognitive Sciences at MIT. She was named one of MIT Technology Review's Innovators Under 35.",
     "imageUrl": "/images/guests/greta-tuckute.jpg",
     "episodes": [
       {
@@ -31,7 +31,7 @@
     "id": "dr-elisa-kreiss",
     "name": "Dr. Elisa Kreiss",
     "title": "Assistant Professor of Communication at UCLA, USA",
-    "bio": "",
+    "bio": "Dr. Elisa Kreiss is an Assistant Professor of Communication at UCLA, where she leads the CoALAS Lab. Her work combines natural language processing, psycholinguistics and human-computer interaction to understand how communicative context shapes language use, with a particular focus on how we produce and understand language situated in the visual world. Her research has direct applications to image accessibility, the challenge of automatically generating image descriptions for blind and low-vision users, and includes datasets and metrics such as Concadia and ContextRef. She received her PhD in Linguistics from Stanford University in 2023 and a BS in Cognitive Science from Osnabrück University. Her work has been supported by a Google Research Award and Stanford HAI, and she received Stanford's Community Impact Award in 2022.",
     "imageUrl": "/images/guests/elisa-kreiss.png",
     "episodes": [
       {
@@ -45,7 +45,7 @@
     "id": "dr-malihe-alikhani",
     "name": "Dr. Malihe Alikhani",
     "title": "Assistant Professor at Northeastern University, USA",
-    "bio": "",
+    "bio": "Dr. Malihe Alikhani is an Assistant Professor in the Khoury College of Computer Sciences at Northeastern University, where her research goal is to design inclusive and equitable language technologies that communicate effectively with diverse populations. Her work spans natural language processing, machine learning and AI ethics, with a focus on safe and fair AI systems that support communication and decision-making. Before joining Northeastern, she spent three years as an Assistant Professor at the University of Pittsburgh. She earned her PhD in Computer Science from Rutgers University. She served as an AAAS Science and Technology Congressional AI Fellow, is a visiting fellow at the Brookings Center on Regulation and Markets, and serves as Ethics Chair of ACL Rolling Review.",
     "imageUrl": "/images/guests/malihe-alikhani.jpg",
     "episodes": [
       {
@@ -59,7 +59,7 @@
     "id": "dr-anna-ivanova",
     "name": "Dr. Anna Ivanova",
     "title": "Assistant Professor at Georgia Tech, USA",
-    "bio": "",
+    "bio": "Dr. Anna (Anya) Ivanova is an Assistant Professor of Psychology at the Georgia Institute of Technology, where she leads the Language, Intelligence & Thought (LIT) Lab. Her research examines the relationship between language and thought in humans and in large language models, combining human brain imaging, behavioral studies and computational modeling. She co-led the influential paper \"Dissociating Language and Thought in Large Language Models\", which distinguishes formal linguistic competence from functional reasoning abilities, and developed the EWoK framework for evaluating world knowledge in language models. She received her PhD from MIT's Department of Brain and Cognitive Sciences and completed her postdoctoral training at the MIT Quest for Intelligence. In 2024, she was named to MIT Technology Review's 35 Innovators Under 35.",
     "imageUrl": "/images/guests/anna-ivanova.jpg",
     "episodes": [
       {
@@ -73,7 +73,7 @@
     "id": "dr-saadia-gabriel",
     "name": "Dr. Saadia Gabriel",
     "title": "Assistant Professor at UCLA, USA",
-    "bio": "",
+    "bio": "Dr. Saadia Gabriel is an Assistant Professor of Computer Science at the UCLA Samueli School of Engineering, where she leads the Misinformation, AI and Responsible Society (MARS) Lab, and an affiliated faculty member of the Bunche Center for African-American Studies. Her research focuses on measuring the factuality and intent of human-written language and on the gap between scalability and safety in LLMs. She earned her PhD at the University of Washington, co-advised by Yejin Choi and Franziska Roesner, then was an MIT CSAIL postdoctoral fellow and an NYU Data Science Faculty Fellow. With Microsoft researchers, she developed (De)ToxiGen for detecting hate speech and toxic language. She was named to Forbes 30 Under 30 and received an Amazon Research Award for AI for African languages.",
     "imageUrl": "/images/guests/saadia-gabriel.png",
     "episodes": [
       {
@@ -92,7 +92,7 @@
     "id": "dr-hila-gonen",
     "name": "Dr. Hila Gonen",
     "title": "Assistant Professor at the University of British Columbia, Canada",
-    "bio": "",
+    "bio": "Dr. Hila Gonen is an Assistant Professor of Computer Science at the University of British Columbia and a Canada CIFAR AI Chair at Amii. Her research lies at the intersection of natural language processing and machine learning, with a long-term vision of making LLMs responsible, reliable and trustworthy systems that are fair across languages and socio-demographic groups. She works on understanding and controlling model behavior, on reliability, safety and bias mitigation, and on multilingual NLP, and has recently become interested in applying NLP to health. Before joining UBC, she was a postdoctoral researcher at the University of Washington, Meta AI and Amazon. She earned her PhD in Computer Science at Bar-Ilan University and her MSc at the Hebrew University. Her work received best paper awards at CoNLL 2019 and RepL4NLP 2022.",
     "imageUrl": "/images/guests/hila-gonen.jpg",
     "episodes": [
       {
@@ -106,7 +106,7 @@
     "id": "dr-letitia-parcalabescu",
     "name": "Dr. Letitia Parcalabescu",
     "title": "Creator of the AI Coffee Break YouTube channel",
-    "bio": "",
+    "bio": "Dr. Letitia Parcalabescu is an AI researcher at Aleph Alpha Research in Heidelberg, where she works on training reasoning models that are interpretable by design and on curating and synthesizing data for large-scale pre-training. With an academic background in physics and computer science, she earned her PhD in Computational Linguistics at Heidelberg University in 2024, supervised by Anette Frank. Her thesis, \"Measuring the Contributions of Vision and Text Modalities in Multimodal Transformers\", introduced new metrics for studying how vision-language models combine images and text, and how self-consistent and faithful their explanations are. Since 2020, she has run the YouTube channel \"AI Coffee Break with Letitia\", where the animated Ms. Coffee Bean explains the latest AI research in short, accessible videos. She is also a KlarText award winner for science communication.",
     "imageUrl": "/images/guests/letitia-parcalabescu.jpeg",
     "episodes": [
       {
@@ -120,7 +120,7 @@
     "id": "dr-swabha-swayamdipta",
     "name": "Dr. Swabha Swayamdipta",
     "title": "Assistant Professor at the University of Southern California, USA",
-    "bio": "",
+    "bio": "Dr. Swabha Swayamdipta is a Gabilan Assistant Professor of Computer Science at the USC Viterbi School of Engineering, where she has led the Data, Interpretability, Language and Learning (DILL) Lab since 2022. Her research in natural language processing and machine learning examines how datasets are constructed and how they shape model decisions, as well as the interpretability and evaluation of language models. She is also Associate Director of the USC Center for AI and Society and an Amazon Scholar. She received her PhD from the Language Technologies Institute at Carnegie Mellon University, advised by Noah Smith and Chris Dyer, followed by a postdoc at the Allen Institute for AI. Her recognitions include an Intel Rising Star Faculty Award and the AI2 Young Investigators Award.",
     "imageUrl": "/images/guests/swabha-swayamdipta.jpeg",
     "episodes": [
       {
@@ -134,7 +134,7 @@
     "id": "dr-maria-ryskina",
     "name": "Dr. Maria Ryskina",
     "title": "CIFAR AI Safety Postdoctoral Fellow at the Vector Institute for AI, Canada",
-    "bio": "",
+    "bio": "Dr. Maria Ryskina is a CIFAR AI Safety Postdoctoral Fellow at the Vector Institute for AI, where she works with Prof. Gillian Hadfield on interdisciplinary approaches to AI alignment, focusing on how multi-agent interaction can help normative reasoning emerge in large language models. Her research spans AI, natural language processing, linguistics and the cognitive and behavioural sciences. Previously, she was a postdoc in Ev Fedorenko's lab at MIT, using methods from cognitive neuroscience and NeuroAI to study how concepts are represented in the brain and in large language models. She completed her PhD at Carnegie Mellon University's Language Technologies Institute, modelling non-standard language use and the evolution of language norms, and earned her BSc and MSc at MIPT and Skoltech. She is a core organizer of Queer in AI.",
     "imageUrl": "/images/guests/maria-ryskina.jpg",
     "episodes": [
       {
@@ -148,7 +148,7 @@
     "id": "dr-maria-antoniak",
     "name": "Dr. Maria Antoniak",
     "title": "Assistant Professor at the University of Colorado Boulder, USA",
-    "bio": "",
+    "bio": "Dr. Maria Antoniak is an Assistant Professor of Computer Science at the University of Colorado Boulder, also affiliated with Information Science, where she leads the Antoniak Lab. Her research lies at the intersection of natural language processing and cultural analytics, with applications to narrative medicine, computational humanities and online communities. Her recent work studies personal disclosures in human-LLM conversations, storytelling across online communities, NLP for maternal healthcare, and writing across research cultures. Before joining CU Boulder, she was a Young Investigator at the Allen Institute for AI and a postdoc at the Pioneer Centre for AI at the University of Copenhagen. She earned her PhD in Information Science at Cornell University, advised by David Mimno, and her master's in Computational Linguistics at the University of Washington.",
     "imageUrl": "/images/guests/maria-antoniak.jpeg",
     "episodes": [
       {
@@ -162,7 +162,7 @@
     "id": "dr-annie-en-shiun-lee",
     "name": "Dr. Annie En-Shiun Lee",
     "title": "Assistant professor at the OntarioTech University and the University of Toronto (status-only), Canada",
-    "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to making language technology as inclusive and accessible to as many people as possible. She runs the Lee Langauge Lab (L^3) with research focusing on language diversity and multilinguiality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Survey, ACL, SIGCSE, IEEE TKDE, Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
+    "bio": "Annie En-Shiun Lee is an assistant professor at the OntarioTech University and the University of Toronto (status-only). Her goal is to make language technology as inclusive and accessible to as many people as possible. She runs the Lee Language Lab (L^3) with research focusing on language diversity and multilinguality. Professor Lee’s research has been published in Nature Digital Medicine, ACM Computing Surveys, ACL, SIGCSE, IEEE TKDE, and Bioinformatics. She serves as the demo co-chair for NAACL and has extensive experience transferring technology to industry.",
     "imageUrl": "/images/guests/annie-lee.jpeg",
     "episodes": [
       {
@@ -176,7 +176,7 @@
     "id": "dr-vered-shwartz",
     "name": "Dr. Vered Shwartz",
     "title": "Assistant professor at the University of British Columbia, Canada",
-    "bio": "Vered Shwartz is an Assistant Professor of Computer Science at the University of British Columbia, and a CIFAR AI Chair at the Vector Institute. My research interests focus on natural language processing, with the fundamental goal of building models capable of human-level understanding of natural language. My lab is currently working on testing and improving the capabilities of large language models and vision and language models, developing culturally-competent AI, and responsible NLP applications in sensitive domains (e.g., legal, medical).",
+    "bio": "Vered Shwartz is an Assistant Professor of Computer Science at the University of British Columbia, and a CIFAR AI Chair at the Vector Institute. Her research interests focus on natural language processing, with the fundamental goal of building models capable of human-level understanding of natural language. Her lab is currently working on testing and improving the capabilities of large language models and vision and language models, developing culturally-competent AI, and responsible NLP applications in sensitive domains (e.g., legal, medical).",
     "imageUrl": "/images/guests/vered-headshot.jpg",
     "episodes": [
       {
@@ -218,7 +218,7 @@
     "id": "sophia-simeng-han",
     "name": "Sophia Simeng Han",
     "title": "PhD student at Yale University and Research Intern at Meta FAIR, USA",
-    "bio": "Simeng Sophia Han is a final-year Ph.D. candidate at Yale University. She focuses on LLM complex reasoning, neuro-symbolic reasoning and reasoning evaluation. Her recent work on the FOLIO benchmark has had a profound impact on improving language models' reasoning capabilities. Outside of research, she deeply enjoys mentoring students, organizing conferences and workshops, and contributing to a more inclusive computer science community. She is also a chair for Widening NLP from 2025 to 2027. Beyond academia, Simeng is currently engaged in foundational research on LLM reasoning at Meta GenAI frontier reasoning team. She has also previously worked on information retrieval at Google Deepmind and retrieval-augmented generation at AWS NLP group.",
+    "bio": "Simeng Sophia Han is a final-year Ph.D. candidate at Yale University. She focuses on LLM complex reasoning, neuro-symbolic reasoning and reasoning evaluation. Her recent work on the FOLIO benchmark has had a profound impact on improving language models' reasoning capabilities. Outside of research, she deeply enjoys mentoring students, organizing conferences and workshops, and contributing to a more inclusive computer science community. She is also a chair for Widening NLP from 2025 to 2027. Beyond academia, Simeng is currently engaged in foundational research on LLM reasoning at Meta GenAI frontier reasoning team. She has also previously worked on information retrieval at Google DeepMind and retrieval-augmented generation at AWS NLP group.",
     "imageUrl": "/images/guests/simeng-headshot.jpg",
     "episodes": [
       {
@@ -232,7 +232,7 @@
     "id": "dr-abhilasha-ravichander",
     "name": "Dr. Abhilasha Ravichander",
     "title": "Assistant Professor at the Max Planck Institute for Software Systems, Germany",
-    "bio": "Until recently, Abhilasha Ravichander was a postdoctoral scholar at the University of Washington, and now she is a faculty at the Max Planck Institute for Software Systems. She received her PhD from Carnegie Mellon University in 2022. Her research focuses on improving the robustness and transparency of large-scale language models.  Abhilasha’s work has been presented at several top NLP conferences, receiving Best Resource Paper Award at ACL 2024, Best Theme Paper Award at ACL 2024, Best Paper Award at the Mid-Atlantic Student Colloquium 2024, Best Paper Award at the SoCalNLP 2022 symposium, Best Paper Award at the NAACL 2025 TrustNLP Workshop, and Area Chair Favorite Paper award at COLING 2018.  She has been recognized as a 'Rising Star in Generative AI' (2024), 'Rising Star in EECS' (2022), and 'Rising Star in Data Science' (2021).",
+    "bio": "Until recently, Abhilasha Ravichander was a postdoctoral scholar at the University of Washington, and now she is a faculty member at the Max Planck Institute for Software Systems. She received her PhD from Carnegie Mellon University in 2022. Her research focuses on improving the robustness and transparency of large-scale language models. Abhilasha’s work has been presented at several top NLP conferences, receiving Best Resource Paper Award at ACL 2024, Best Theme Paper Award at ACL 2024, Best Paper Award at the Mid-Atlantic Student Colloquium 2024, Best Paper Award at the SoCalNLP 2022 symposium, Best Paper Award at the NAACL 2025 TrustNLP Workshop, and Area Chair Favorite Paper award at COLING 2018. She has been recognized as a 'Rising Star in Generative AI' (2024), 'Rising Star in EECS' (2022), and 'Rising Star in Data Science' (2021).",
     "imageUrl": "/images/guests/abhilasha-headshot.png",
     "episodes": [
       {
@@ -260,7 +260,7 @@
     "id": "wanru-zhao",
     "name": "Wanru Zhao",
     "title": "PhD student at the University of Cambridge, UK",
-    "bio": "Wanru Zhao is a Ph.D. candidate in the Department of Computer Science and Technology at the University of Cambridge, where she is supervised by Prof. Nic Lane in the Cambridge Machine Learning Systems Lab (CaMLSys). Her research focuses on democratizing large model development through distributed learning, data curation, and modular model design. She develops frameworks that enable organizations to jointly train and adapt models across data silos and heterogenous compute, with the goal of making AI more accessible, efficient, and inclusive. Previously, she completed her M.Phil. in Advanced Computer Science from the University of Cambridge, graduating with Distinction.",
+    "bio": "Wanru Zhao is a Ph.D. candidate in the Department of Computer Science and Technology at the University of Cambridge, where she is supervised by Prof. Nic Lane in the Cambridge Machine Learning Systems Lab (CaMLSys). Her research focuses on democratizing large model development through distributed learning, data curation, and modular model design. She develops frameworks that enable organizations to jointly train and adapt models across data silos and heterogeneous compute, with the goal of making AI more accessible, efficient, and inclusive. Previously, she completed her M.Phil. in Advanced Computer Science at the University of Cambridge, graduating with Distinction.",
     "imageUrl": "/images/guests/wanru-headshot-sm.png",
     "episodes": [
       {
