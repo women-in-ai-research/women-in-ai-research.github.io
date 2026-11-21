@@ -362,7 +362,7 @@
     {
       "name": "Julie Kallini",
       "title": "PhD student at Stanford University, USA",
-      "bio": "",
+      "bio": "Julie Kallini is a fourth-year Computer Science PhD student at Stanford University, advised by Christopher Potts and Dan Jurafsky. Her research spans computational linguistics and cognitive science, tokenization, efficient language model architectures, and byte-level modeling. Her paper \"Mission: Impossible Language Models\", which tests whether language models can learn languages that humans cannot, won a Best Paper Award at ACL 2024. She also developed MrT5, which dynamically merges tokens to make byte-level language models more efficient. Her work is supported by the NSF Graduate Research Fellowship, the Stanford School of Engineering Graduate Fellowship and the Stanford EDGE Fellowship. Before her PhD, she was a software engineer at Meta working on machine learning for ads, and she graduated summa cum laude from Princeton University with a BSE in Computer Science and a minor in Linguistics.",
       "imageUrl": "/images/guests/julie-kallini.jpeg",
       "links": [
         {
